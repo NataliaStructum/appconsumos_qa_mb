@@ -1,0 +1,7 @@
+{
+    "Message": "Download in progress...",
+    "CompletionMessage": "Download Successful",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/DownloadOffline.action",
+    "_Type": "Action.Type.ProgressBanner"
+}

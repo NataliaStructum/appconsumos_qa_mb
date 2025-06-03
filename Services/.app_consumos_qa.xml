@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="appconsumos_qa" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="Empleados" EntityType="appconsumos_qa.Empleados"/>
+                <EntitySet Name="EmpleadosApp" EntityType="appconsumos_qa.EmpleadosApp"/>
+                <EntitySet Name="Almacenes" EntityType="appconsumos_qa.Almacenes"/>
+                <EntitySet Name="AlmacenesApp" EntityType="appconsumos_qa.AlmacenesApp"/>
+                <EntitySet Name="MaterialesAlmacen" EntityType="appconsumos_qa.MaterialesAlmacen"/>
+                <EntitySet Name="Inventario" EntityType="appconsumos_qa.Inventario"/>
+                <EntitySet Name="Equipos" EntityType="appconsumos_qa.Equipos"/>
+                <EntitySet Name="Ordenes" EntityType="appconsumos_qa.Ordenes"/>
+            </EntityContainer>
+            <EntityType Name="Empleados">
+                <Key>
+                    <PropertyRef Name="ficha"/>
+                </Key>
+                <Property Name="ficha" Type="Edm.String" MaxLength="8" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="50"/>
+                <Property Name="cargo" Type="Edm.String" MaxLength="25"/>
+            </EntityType>
+            <EntityType Name="EmpleadosApp">
+                <Key>
+                    <PropertyRef Name="ficha"/>
+                </Key>
+                <Property Name="ficha" Type="Edm.String" MaxLength="8" Nullable="false"/>
+                <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="correo" Type="Edm.String" MaxLength="50"/>
+                <Property Name="rol" Type="Edm.String"/>
+                <Property Name="cargo" Type="Edm.String" MaxLength="25"/>
+            </EntityType>
+            <EntityType Name="Almacenes">
+                <Key>
+                    <PropertyRef Name="sociedad"/>
+                    <PropertyRef Name="almacen"/>
+                    <PropertyRef Name="centro"/>
+                </Key>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="almacen" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="almacen_desc" Type="Edm.String" MaxLength="16"/>
+            </EntityType>
+            <EntityType Name="AlmacenesApp">
+                <Key>
+                    <PropertyRef Name="sociedad"/>
+                    <PropertyRef Name="almacen"/>
+                    <PropertyRef Name="centro"/>
+                </Key>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="almacen" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="almacen_desc" Type="Edm.String" MaxLength="16"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+            <EntityType Name="MaterialesAlmacen">
+                <Key>
+                    <PropertyRef Name="material"/>
+                    <PropertyRef Name="almacen"/>
+                    <PropertyRef Name="centro"/>
+                    <PropertyRef Name="sociedad"/>
+                </Key>
+                <Property Name="material" Type="Edm.String" MaxLength="18" Nullable="false"/>
+                <Property Name="almacen" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
+            </EntityType>
+            <EntityType Name="Inventario">
+                <Key>
+                    <PropertyRef Name="material"/>
+                    <PropertyRef Name="almacen"/>
+                    <PropertyRef Name="centro"/>
+                    <PropertyRef Name="sociedad"/>
+                </Key>
+                <Property Name="material" Type="Edm.String" MaxLength="18" Nullable="false"/>
+                <Property Name="almacen" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="stock_disponible" Type="Edm.Decimal" Precision="13" Scale="3"/>
+                <Property Name="stock_reservado" Type="Edm.Decimal" Precision="13" Scale="3"/>
+            </EntityType>
+            <EntityType Name="Equipos">
+                <Key>
+                    <PropertyRef Name="equipo"/>
+                </Key>
+                <Property Name="equipo" Type="Edm.String" MaxLength="18" Nullable="false"/>
+                <Property Name="equipo_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="centro" Type="Edm.String" MaxLength="4"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="10"/>
+                <Property Name="centro_plan" Type="Edm.String" MaxLength="4"/>
+                <Property Name="grupo_plan" Type="Edm.String" MaxLength="3"/>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4"/>
+            </EntityType>
+            <EntityType Name="Ordenes">
+                <Key>
+                    <PropertyRef Name="orden"/>
+                </Key>
+                <Property Name="orden" Type="Edm.String" MaxLength="12" Nullable="false"/>
+                <Property Name="orden_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="equipo" Type="Edm.String" MaxLength="18"/>
+                <Property Name="equipo_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="reserva" Type="Edm.String" MaxLength="10"/>
+                <Property Name="estado" Type="Edm.String" MaxLength="1"/>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="fecha_creacion" Type="Edm.String" MaxLength="8"/>
+                <Property Name="fecha_referencia" Type="Edm.String" MaxLength="8"/>
+                <Property Name="grupo_plan" Type="Edm.String" MaxLength="3"/>
+                <Property Name="centro_plan" Type="Edm.String" MaxLength="4"/>
+                <Property Name="hoja_ruta" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

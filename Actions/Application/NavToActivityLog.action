@@ -1,0 +1,5 @@
+{
+    "ModalPage": true,
+    "PageToOpen": "/appconsumos_qa_mb/Pages/Application/UserActivityLog.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,43 @@
+{
+    "Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+    "DefiningRequests": [{
+            "Name": "Almacenes",
+            "Query": "Almacenes"
+        },
+        {
+            "Name": "AlmacenesApp",
+            "Query": "AlmacenesApp"
+        },
+        {
+            "Name": "Empleados",
+            "Query": "Empleados"
+        },
+        {
+            "Name": "EmpleadosApp",
+            "Query": "EmpleadosApp"
+        },
+        {
+            "Name": "Equipos",
+            "Query": "Equipos"
+        },
+        {
+            "Name": "Inventario",
+            "Query": "Inventario"
+        },
+        {
+            "Name": "MaterialesAlmacen",
+            "Query": "MaterialesAlmacen"
+        },
+        {
+            "Name": "Ordenes",
+            "Query": "Ordenes"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOfflineFailureMessage.action"
+}
