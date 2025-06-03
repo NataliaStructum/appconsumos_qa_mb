@@ -9,8 +9,23 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "{#Application/#AppData/UserId}",
+						"Description": "Aplicación para llevar trazabilidad de consumos en Campo e Ingenio",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"HeadlineText": "Consumos APP",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell0",
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
@@ -22,25 +37,60 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"Buttons": [
+					"ContactCells": [
 						{
-							"_Type": "ButtonTable.Type.Button",
-							"_Name": "ButtonTableTypeButton0",
-							"Title": "Botón",
-							"Alignment": "Center",
-							"ButtonType": "Text",
-							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
-							"ImagePosition": "Leading",
-							"FullWidth": false,
-							"Visible": true,
-							"Enabled": true
+							"ContactCell": {
+								"_Name": "ContactCellItem0",
+								"DetailImage": "sap-icon://key-user-settings",
+								"Headline": "Administración",
+								"Subheadline": "Administrar Usuarios y Almacenes",
+								"Description": "",
+								"Visible": true,
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem1",
+								"DetailImage": "sap-icon://e-care",
+								"Headline": "Campo",
+								"Subheadline": "Gestionar Ordenes de Campo",
+								"Description": "",
+								"Visible": true,
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem2",
+								"DetailImage": "sap-icon://factory",
+								"Headline": "Ingenio",
+								"Subheadline": "Gestionar Ordenes de Ingenio",
+								"Description": "",
+								"Visible": true,
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"_Name": "ContactCellItem3",
+								"DetailImage": "sap-icon://customer-order-entry",
+								"Headline": "Inventario",
+								"Subheadline": "Gestionar Inventario de Almacenes",
+								"Description": "",
+								"Visible": true,
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								}
+							}
 						}
-					],
-					"Layout": {
-						"LayoutType": "Vertical",
-						"HorizontalAlignment": "Leading"
-					}
+					]
 				}
 			]
 		}
@@ -62,7 +112,7 @@
 		],
 		"_Name": "ActionBar1",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Main",
+		"Caption": "Inicio",
 		"PrefersLargeCaption": true
 	}
 }
