@@ -1,12 +1,5 @@
 {
-    "DestinationName": "app.consumos.qa",
-    "OfflineEnabled": true,
-    "LanguageURLParam": "",
-    "OnlineOptions": {},
-    "OfflineOptions": {
-	"StoreParameters": {}
-},
-    "PathSuffix": "",
-    "SourceType": "Mobile",
-    "ServiceUrl":""
+	"DestinationName": "app.consumos.qa",
+	"OfflineEnabled": true,
+	"SourceType": "Mobile"
 }

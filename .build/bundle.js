@@ -59,6 +59,9 @@ let appconsumos_qa_mb_globals_application_supportemail_global = __webpack_requir
 let appconsumos_qa_mb_globals_application_supportphone_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportPhone.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportPhone.global")
 let appconsumos_qa_mb_i18n_i18n_properties = __webpack_require__(/*! ./appconsumos_qa_mb/i18n/i18n.properties */ "./build.definitions/appconsumos_qa_mb/i18n/i18n.properties")
 let appconsumos_qa_mb_jsconfig_json = __webpack_require__(/*! ./appconsumos_qa_mb/jsconfig.json */ "./build.definitions/appconsumos_qa_mb/jsconfig.json")
+let appconsumos_qa_mb_pages_administracion_agregar_usuarios_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page")
+let appconsumos_qa_mb_pages_administracion_inicio_admin_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page")
+let appconsumos_qa_mb_pages_administracion_lista_empleados_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page")
 let appconsumos_qa_mb_pages_application_about_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/About.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/About.page")
 let appconsumos_qa_mb_pages_application_support_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/Support.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/Support.page")
 let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/UserActivityLog.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/UserActivityLog.page")
@@ -133,6 +136,9 @@ module.exports = {
 	appconsumos_qa_mb_globals_application_supportphone_global : appconsumos_qa_mb_globals_application_supportphone_global,
 	appconsumos_qa_mb_i18n_i18n_properties : appconsumos_qa_mb_i18n_i18n_properties,
 	appconsumos_qa_mb_jsconfig_json : appconsumos_qa_mb_jsconfig_json,
+	appconsumos_qa_mb_pages_administracion_agregar_usuarios_page : appconsumos_qa_mb_pages_administracion_agregar_usuarios_page,
+	appconsumos_qa_mb_pages_administracion_inicio_admin_page : appconsumos_qa_mb_pages_administracion_inicio_admin_page,
+	appconsumos_qa_mb_pages_administracion_lista_empleados_page : appconsumos_qa_mb_pages_administracion_lista_empleados_page,
 	appconsumos_qa_mb_pages_application_about_page : appconsumos_qa_mb_pages_application_about_page,
 	appconsumos_qa_mb_pages_application_support_page : appconsumos_qa_mb_pages_application_support_page,
 	appconsumos_qa_mb_pages_application_useractivitylog_page : appconsumos_qa_mb_pages_application_useractivitylog_page,
@@ -789,7 +795,22 @@ Page
 
 { color: @mdkYellow1; background-color: @mdkRed1; }
 */
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n"],"sourceRoot":""}]);
+ActionBar {
+  color: white;
+  background-color: #048c3c;
+}
+.HeaderAdmin {
+  color: white;
+  background-color: #048c3c;
+}
+.HeaderAdminTitle {
+  color: white;
+}
+.Button {
+  color: white;
+  background-color: #048c3c;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nActionBar {\n  color: white;\n  background-color: #048c3c;\n}\n.HeaderAdmin {\n  color: white;\n  background-color: #048c3c;\n}\n.HeaderAdminTitle {\n  color: white;\n}\n.Button {\n  color: white;\n  background-color: #048c3c;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -827,7 +848,26 @@ Page
 .MyButton
 
 { color: @mdkYellow1; background-color: @mdkRed1; }
-*/`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/"],"sourceRoot":""}]);
+*/
+
+ActionBar {
+    color:white;
+    background-color: #048c3c;
+}
+
+.HeaderAdmin{
+    color:white;
+    background-color: #048c3c;
+}
+
+.HeaderAdminTitle{
+    color:white;
+}
+
+.Button{
+    color:white; 
+    background-color: #048c3c;
+}`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\nActionBar {\n    color:white;\n    background-color: #048c3c;\n}\n\n.HeaderAdmin{\n    color:white;\n    background-color: #048c3c;\n}\n\n.HeaderAdminTitle{\n    color:white;\n}\n\n.Button{\n    color:white; \n    background-color: #048c3c;\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -845,7 +885,22 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.ns-light ActionBar {
+	color: white;
+	background-color: #048c3c;
+}
+.ns-light .HeaderAdmin {
+	color: white;
+	background-color: #048c3c;
+}
+.ns-light .HeaderAdminTitle {
+	color: white;
+}
+.ns-light .Button {
+	color: white;
+	background-color: #048c3c;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -863,7 +918,22 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `ActionBar {
+	font-color: white;
+	background-color: #048c3c;
+}
+HeaderAdmin {
+	font-color: white;
+	background-color: #048c3c;
+}
+HeaderAdminTitle {
+	font-color: white;
+}
+Button {
+	font-color: white;
+	background-color: #048c3c;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B","sourcesContent":["ActionBar {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\nHeaderAdmin {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\nHeaderAdminTitle {\n\tfont-color: white;\n}\nButton {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -991,6 +1061,36 @@ module.exports = function (item) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page":
+/*!****************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page ***!
+  \****************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker0","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":false,"Caption":"Seleccionar Empleados","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona uno o varios empleados","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar Empleados...","Mode":"Persistent"},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Empleados"},"ObjectCell":{"Description":"{cargo}","PreserveIconStackSpacing":false,"Subhead":"{nombre}","SubstatusText":"{sociedad}","Tags":[{"Color":"Grey","Text":"{correo}"}],"Title":"{ficha}","Visible":true},"ReturnValue":"{ficha}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker1","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para los usuarios","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Administrador","Autorizador","Auxiliar","Técnico"]},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker2","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar almacen ...","BarcodeScanner":true,"Mode":"Expandable"},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{almacen_desc}","SubstatusText":"{centro}","Title":"{almacen}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Crear","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true}],"Layout":{"NumberOfColumns":1}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Agregar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Empleados"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Agregar Usuarios"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page":
+/*!************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page ***!
+  \************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","DataSubscriptions":[],"_Name":"SectionObjectHeader0","ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo Administrador","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"Visible":true},{"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ContactCells":[{"ContactCell":{"_Name":"ContactCellItem0","DetailImage":"sap-icon://user-edit","Headline":"Administrar Usuarios","Subheadline":"Configurar roles y alces para los usuarios","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"}},"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}},{"ContactCell":{"_Name":"ContactCellItem1","DetailImage":"sap-icon://home","Headline":"Administrar Almacenes","Subheadline":"Asignar almacenes a campo o ingenio","Description":"","Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}}]}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Inicio_Admin","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No existen usuarios registrados aún.","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{ficha}","Subhead":"{nombre}","Footnote":"{cargo}","Description":"{correo}","DisplayDescriptionInMobile":true,"StatusText":"{rol}","SubstatusText":"{sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar empleado ...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Empleados","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Agregar Usuarios","Icon":"sap-icon://add-employee","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page","ModalPage":true}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Lista Empleados"}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/Application/About.page":
 /*!**************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/Application/About.page ***!
@@ -1047,7 +1147,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \*************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImage":"res://mdk_logo.png","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"Visible":true},{"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ContactCells":[{"ContactCell":{"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}},{"ContactCell":{"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}},{"ContactCell":{"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}},{"ContactCell":{"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImage":"res://mdk_logo.png","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page"}}}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -1467,7 +1567,7 @@ module.exports = {"Value":"1-800-677-7271","_Type":"String"}
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"DestinationName":"app.consumos.qa","OfflineEnabled":true,"LanguageURLParam":"","OnlineOptions":{},"OfflineOptions":{"StoreParameters":{}},"PathSuffix":"","SourceType":"Mobile","ServiceUrl":""}
+module.exports = {"DestinationName":"app.consumos.qa","OfflineEnabled":true,"SourceType":"Mobile"}
 
 /***/ }),
 
@@ -1530,7 +1630,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = {};
+module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#048c3c"},"HeaderAdmin":{"font-color":"white","background-color":"#048c3c"},"HeaderAdminTitle":{"font-color":"white"},"Button":{"font-color":"white","background-color":"#048c3c"}}');
 
 /***/ }),
 
