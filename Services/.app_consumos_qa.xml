@@ -26,6 +26,7 @@
                 <Property Name="nombre" Type="Edm.String" MaxLength="100"/>
                 <Property Name="correo" Type="Edm.String" MaxLength="50"/>
                 <Property Name="cargo" Type="Edm.String" MaxLength="25"/>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4"/>
             </EntityType>
             <EntityType Name="EmpleadosApp">
                 <Key>
@@ -36,6 +37,7 @@
                 <Property Name="correo" Type="Edm.String" MaxLength="50"/>
                 <Property Name="rol" Type="Edm.String"/>
                 <Property Name="cargo" Type="Edm.String" MaxLength="25"/>
+                <Property Name="sociedad" Type="Edm.String" MaxLength="4"/>
             </EntityType>
             <EntityType Name="Almacenes">
                 <Key>
