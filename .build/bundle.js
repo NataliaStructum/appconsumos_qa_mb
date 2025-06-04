@@ -53,6 +53,8 @@ let appconsumos_qa_mb_actions_logging_loguploadfailure_action = __webpack_requir
 let appconsumos_qa_mb_actions_logging_loguploadsuccessful_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/LogUploadSuccessful.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/LogUploadSuccessful.action")
 let appconsumos_qa_mb_actions_logging_uploadlog_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/UploadLog.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/UploadLog.action")
 let appconsumos_qa_mb_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action")
+let appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action")
+let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
 let appconsumos_qa_mb_globals_application_appdefinition_version_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global")
 let appconsumos_qa_mb_globals_application_applicationname_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/ApplicationName.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/ApplicationName.global")
 let appconsumos_qa_mb_globals_application_supportemail_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportEmail.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportEmail.global")
@@ -68,6 +70,7 @@ let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
 let appconsumos_qa_mb_pages_main_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Main.page */ "./build.definitions/appconsumos_qa_mb/Pages/Main.page")
+let appconsumos_qa_mb_rules_administracion_create_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js")
 let appconsumos_qa_mb_rules_app_consumos_qa_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js */ "./build.definitions/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js")
 let appconsumos_qa_mb_rules_application_appupdatefailure_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/AppUpdateFailure.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/AppUpdateFailure.js")
 let appconsumos_qa_mb_rules_application_appupdatesuccess_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/AppUpdateSuccess.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/AppUpdateSuccess.js")
@@ -130,6 +133,8 @@ module.exports = {
 	appconsumos_qa_mb_actions_logging_loguploadsuccessful_action : appconsumos_qa_mb_actions_logging_loguploadsuccessful_action,
 	appconsumos_qa_mb_actions_logging_uploadlog_action : appconsumos_qa_mb_actions_logging_uploadlog_action,
 	appconsumos_qa_mb_actions_logging_uploadlogprogress_action : appconsumos_qa_mb_actions_logging_uploadlogprogress_action,
+	appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action : appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action,
+	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
 	appconsumos_qa_mb_globals_application_appdefinition_version_global : appconsumos_qa_mb_globals_application_appdefinition_version_global,
 	appconsumos_qa_mb_globals_application_applicationname_global : appconsumos_qa_mb_globals_application_applicationname_global,
 	appconsumos_qa_mb_globals_application_supportemail_global : appconsumos_qa_mb_globals_application_supportemail_global,
@@ -145,6 +150,7 @@ module.exports = {
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
 	appconsumos_qa_mb_pages_main_page : appconsumos_qa_mb_pages_main_page,
+	appconsumos_qa_mb_rules_administracion_create_usuarios_js : appconsumos_qa_mb_rules_administracion_create_usuarios_js,
 	appconsumos_qa_mb_rules_app_consumos_qa_errorarchive_checkforsyncerror_js : appconsumos_qa_mb_rules_app_consumos_qa_errorarchive_checkforsyncerror_js,
 	appconsumos_qa_mb_rules_application_appupdatefailure_js : appconsumos_qa_mb_rules_application_appupdatefailure_js,
 	appconsumos_qa_mb_rules_application_appupdatesuccess_js : appconsumos_qa_mb_rules_application_appupdatesuccess_js,
@@ -169,6 +175,136 @@ module.exports = {
 	application_app : application_app,
 	tsconfig_json : tsconfig_json,
 	version_mdkbundlerversion : version_mdkbundlerversion
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js":
+/*!*************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Create_Usuarios)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {context} clientAPI
+ */
+async function Create_Usuarios(context) {
+  let lista_empleados = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:ListaEmpleados/#Value');
+  let rol = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:rol/#Value');
+  let repetidos = "";
+  let errores = [];
+  let exitosos = [];
+  if (lista_empleados.length < 1) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes seleccionar al menos un empleado de la lista para continuar`
+      }
+    });
+  }
+  if (!rol || rol.length < 1) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes seleccionar un rol para los usuarios`
+      }
+    });
+  }
+  let rol_value = rol[0].ReturnValue;
+  let promises = lista_empleados.map((empleado, i) => {
+    let nuevo_empleado = empleado.BindingObject;
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=ficha eq '${nuevo_empleado.ficha}'`).then(result => {
+      if (result.length === 0) {
+        return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action",
+          "Properties": {
+            "Properties": {
+              "ficha": nuevo_empleado.ficha,
+              "nombre": nuevo_empleado.nombre,
+              "correo": nuevo_empleado.correo,
+              "rol": rol_value,
+              "cargo": nuevo_empleado.cargo,
+              "sociedad": nuevo_empleado.sociedad
+            }
+          }
+        }).then(() => {
+          exitosos.push(`${nuevo_empleado.nombre} (${nuevo_empleado.ficha})`);
+        }).catch(() => {
+          errores.push(`${nuevo_empleado.nombre} (${nuevo_empleado.ficha})`);
+        });
+      }
+      repetidos += `${nuevo_empleado.nombre} (${nuevo_empleado.ficha}), `;
+      return Promise.resolve();
+    }).catch(() => {
+      errores.push(`${nuevo_empleado.nombre} (${nuevo_empleado.ficha})`);
+    });
+  });
+  Promise.allSettled(promises).then(() => {
+    // Primero mostramos repetidos (si existen)
+    let repetidosPromise = Promise.resolve();
+    if (repetidos.length > 0) {
+      repetidosPromise = context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Repetidos",
+          "Message": `Se encontraron usuarios ya creados: ${repetidos}`
+        }
+      });
+    }
+
+    // Después de mostrar repetidos mostramos los otros mensajes
+    repetidosPromise.then(() => {
+      let mensajePromise;
+      if (errores.length > 0 && exitosos.length === 0) {
+        // Si todo falló
+        mensajePromise = context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Error",
+            "Message": `Falló la creación de los usuarios.`
+          }
+        });
+      } else if (errores.length > 0 && exitosos.length > 0) {
+        // Algunos fallaron, otros no
+        mensajePromise = context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Alerta parcial",
+            "Message": `Algunos usuarios fueron creados exitosamente.\n\nUsuarios con error:\n${errores.join('\n')}`
+          }
+        });
+      } else {
+        // Todo fue exitoso
+        mensajePromise = context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Creación exitosa",
+            "Message": `Los usuarios fueron creados exitosamente`
+          }
+        });
+      }
+
+      // Finalmente, después de mostrar el mensaje final, cerramos la ventana
+      mensajePromise.then(() => {
+        context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+          "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"
+        });
+      });
+    });
+  });
+
+  //[0].ReturnValue
+  //(lista_empleados[0].BindingObject)
+  //alert(JSON.stringify(context.evaluateTargetPath("#Page:Agregar_Usuarios/#Control:ListaEmpleados/#Value/#Index:1/BindingObject/cargo")))
 }
 
 /***/ }),
@@ -1067,7 +1203,7 @@ module.exports = function (item) {
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker0","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":false,"Caption":"Seleccionar Empleados","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona uno o varios empleados","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar Empleados...","Mode":"Persistent"},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Empleados"},"ObjectCell":{"Description":"{cargo}","PreserveIconStackSpacing":false,"Subhead":"{nombre}","SubstatusText":"{sociedad}","Tags":[{"Color":"Grey","Text":"{correo}"}],"Title":"{ficha}","Visible":true},"ReturnValue":"{ficha}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker1","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para los usuarios","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Administrador","Autorizador","Auxiliar","Técnico"]},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker2","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar almacen ...","BarcodeScanner":true,"Mode":"Expandable"},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{almacen_desc}","SubstatusText":"{centro}","Title":"{almacen}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Crear","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true}],"Layout":{"NumberOfColumns":1}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Agregar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Empleados"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Agregar Usuarios"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"ListaEmpleados","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":false,"Caption":"Seleccionar Empleados","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona uno o varios empleados","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Empleados..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Empleados"},"ObjectCell":{"Description":"{cargo}","PreserveIconStackSpacing":false,"Subhead":"{nombre}","SubstatusText":"{sociedad}","Tags":[{"Color":"Grey","Text":"{correo}"}],"Title":"{ficha}","Visible":true},"ReturnValue":"{ficha}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para los usuarios","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Administrador","Autorizador","Auxiliar","Técnico"]},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker2","IsVisible":false,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","IsSelectedSectionEnabled":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar almacen ...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{almacen_desc}","SubstatusText":"{centro}","Title":"{almacen}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Crear","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Agregar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Empleados"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Agregar Usuarios"}}
 
 /***/ }),
 
@@ -1087,7 +1223,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \***************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No existen usuarios registrados aún.","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{ficha}","Subhead":"{nombre}","Footnote":"{cargo}","Description":"{correo}","DisplayDescriptionInMobile":true,"StatusText":"{rol}","SubstatusText":"{sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar empleado ...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Empleados","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Agregar Usuarios","Icon":"sap-icon://add-employee","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page","ModalPage":true}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Lista Empleados"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No existen usuarios registrados aún.","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{ficha}","Subhead":"{nombre}","Footnote":"{cargo}","Description":"{correo}","DisplayDescriptionInMobile":true,"StatusText":"{rol}","SubstatusText":"{sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar empleado ...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Cargando usuarios...","PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Empleados","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Agregar Usuarios","Icon":"sap-icon://add-employee","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page","ModalPage":true}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Lista Empleados"}}
 
 /***/ }),
 
@@ -1297,7 +1433,7 @@ module.exports = {"DismissModal":"Action.Type.ClosePage.Canceled","CancelPending
   \************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"DismissModal":"Action.Type.ClosePage.Completed","CancelPendingActions":false,"_Type":"Action.Type.ClosePage"}
+module.exports = {"_Type":"Action.Type.ClosePage","DismissModal":"Action.Type.ClosePage.Completed","CancelPendingActions":false}
 
 /***/ }),
 
@@ -1421,6 +1557,16 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action":
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action ***!
+  \***********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"ms_errorCreateEmpleadoApp"},"Message":"Falló en Crear el empleado - {#ActionResults:Create_EmpleadosApp/error}  ","Title":"Error","OKCaption":"Ok"}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa/Service/CloseOffline.action":
 /*!*************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa/Service/CloseOffline.action ***!
@@ -1518,6 +1664,16 @@ module.exports = {"Message":"Upload in progress...","CompletionMessage":"Sync co
 /***/ ((module) => {
 
 module.exports = {"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","_Type":"Action.Type.OfflineOData.Upload","ActionResult":{"_Name":"sync"},"OnSuccess":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/DownloadStartedMessage.action","OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action"}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action ***!
+  \**************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_EmpleadosApp"},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"Properties":{"ficha":"","nombre":"","correo":"","rol":"","cargo":"","sociedad":""}}
 
 /***/ }),
 
