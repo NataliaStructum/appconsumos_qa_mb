@@ -69,7 +69,8 @@
 						"BarcodeScanner": true
 					},
 					"DataPaging": {
-						"ShowLoadingIndicator": false,
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Cargando usuarios...",
 						"PageSize": 50
 					},
 					"HighlightSelectedItem": false,

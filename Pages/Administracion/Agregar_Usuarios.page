@@ -1,14 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -16,12 +16,10 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker0",
+							"_Name": "ListaEmpleados",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": true,
@@ -38,9 +36,9 @@
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"Search": {
+								"Mode": "Persistent",
 								"Enabled": true,
-								"Placeholder": "Buscar Empleados...",
-								"Mode": "Persistent"
+								"Placeholder": "Buscar Empleados..."
 							},
 							"PickerItems": {
 								"Target": {
@@ -66,7 +64,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker1",
+							"_Name": "rol",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -92,7 +90,7 @@
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "FormCellListPicker2",
-							"IsVisible": true,
+							"IsVisible": false,
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
@@ -103,14 +101,13 @@
 							},
 							"PickerPrompt": "Selecciona un almacen",
 							"IsSelectedSectionEnabled": false,
-							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"Search": {
+								"Mode": "Expandable",
 								"Enabled": true,
 								"Placeholder": "Buscar almacen ...",
-								"BarcodeScanner": true,
-								"Mode": "Expandable"
+								"BarcodeScanner": true
 							},
 							"PickerItems": {
 								"Target": {
@@ -142,18 +139,21 @@
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
 							"ImagePosition": "Leading",
-							"Enabled": true
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js"
 						}
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
