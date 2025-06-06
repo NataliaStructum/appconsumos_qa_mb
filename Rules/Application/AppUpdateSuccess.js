@@ -21,12 +21,12 @@ export default function AppUpdateSuccess(clientAPI) {
             return clientAPI.getPageProxy().executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/Application/AppUpdateSuccessMessage.action",
                 "Properties": {
-                    "Message": `You are already using the latest version: ${versionNum}`,
+                    "Message": `Ya estás usando la última versión: ${versionNum}`,
                     "NumberOfLines": 2
                 }
             });
         } else if (result === 'AppUpdate feature is not enabled or no new revision found.') {
-            message = 'No Application metadata found. Please deploy your application and try again.';
+            message = 'No se encontraron metadatos de la aplicación. Implemente su aplicación y vuelva a intentarlo.';
             return clientAPI.getPageProxy().executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/Application/AppUpdateSuccessMessage.action",
                 "Properties": {

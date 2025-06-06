@@ -1,10 +1,11 @@
 /**
  * Describe this function...
- * @param {context} clientAPI
+ * @param {IClientAPI} clientAPI
  */
 export default async function Create_Usuarios(context) {
     let lista_empleados = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:ListaEmpleados/#Value');
     let rol = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:rol/#Value');
+    let isadmin = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:isadmin/#Value');
     let repetidos = "";
     let errores = [];
     let exitosos = [];
@@ -30,7 +31,7 @@ export default async function Create_Usuarios(context) {
     }
 
     let rol_value = rol[0].ReturnValue;
-
+    
     let promises = lista_empleados.map((empleado, i) => {
         let nuevo_empleado = empleado.BindingObject;
 
@@ -45,6 +46,7 @@ export default async function Create_Usuarios(context) {
                                 "nombre": nuevo_empleado.nombre,
                                 "correo": nuevo_empleado.correo,
                                 "rol": rol_value,
+                                "isAdmin":isadmin,
                                 "cargo": nuevo_empleado.cargo,
                                 "sociedad": nuevo_empleado.sociedad
                             }
@@ -113,7 +115,7 @@ export default async function Create_Usuarios(context) {
             mensajePromise.then(() => {
                 context.executeAction({
                     "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
-                    "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"
+                    "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page"
                 });
             });
         });

@@ -1,13 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"DataSubscriptions": [],
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"DetailImageIsCircular": false,
 						"HeadlineText": "Modulo Administrador",
@@ -19,15 +20,12 @@
 							"HeadlineText": "HeaderAdminTitle"
 						}
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"DataSubscriptions": [],
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"_Type": "Section.Type.ContactCell",
-					"_Name": "SectionContactCell0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -35,9 +33,18 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"ContactCells": [
 						{
 							"ContactCell": {
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								},
 								"_Name": "ContactCellItem0",
 								"DetailImage": "sap-icon://user-edit",
 								"Headline": "Administrar Usuarios",
@@ -47,41 +54,34 @@
 								"OnPress": {
 									"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
 									"Properties": {
-										"PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"
+										"PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page"
 									}
-								},
-								"ContextMenu": {
-									"PerformFirstActionWithFullSwipe": true
 								}
 							}
 						},
 						{
 							"ContactCell": {
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								},
 								"_Name": "ContactCellItem1",
 								"DetailImage": "sap-icon://home",
 								"Headline": "Administrar Almacenes",
 								"Subheadline": "Asignar almacenes a campo o ingenio",
 								"Description": "",
-								"Visible": true,
-								"ContextMenu": {
-									"PerformFirstActionWithFullSwipe": true
-								}
+								"Visible": true
 							}
 						}
 					]
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Inicio_Admin",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

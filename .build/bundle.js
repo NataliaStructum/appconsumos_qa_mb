@@ -55,22 +55,32 @@ let appconsumos_qa_mb_actions_logging_uploadlog_action = __webpack_require__(/*!
 let appconsumos_qa_mb_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action")
 let appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action")
 let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
+let appconsumos_qa_mb_actions_odata_req_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action")
+let appconsumos_qa_mb_actions_odata_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action")
 let appconsumos_qa_mb_globals_application_appdefinition_version_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global")
 let appconsumos_qa_mb_globals_application_applicationname_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/ApplicationName.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/ApplicationName.global")
 let appconsumos_qa_mb_globals_application_supportemail_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportEmail.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportEmail.global")
 let appconsumos_qa_mb_globals_application_supportphone_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportPhone.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportPhone.global")
 let appconsumos_qa_mb_i18n_i18n_properties = __webpack_require__(/*! ./appconsumos_qa_mb/i18n/i18n.properties */ "./build.definitions/appconsumos_qa_mb/i18n/i18n.properties")
+let appconsumos_qa_mb_images_logo_both_png = __webpack_require__(/*! ./appconsumos_qa_mb/Images/logo_both.png */ "./build.definitions/appconsumos_qa_mb/Images/logo_both.png")
 let appconsumos_qa_mb_jsconfig_json = __webpack_require__(/*! ./appconsumos_qa_mb/jsconfig.json */ "./build.definitions/appconsumos_qa_mb/jsconfig.json")
 let appconsumos_qa_mb_pages_administracion_agregar_usuarios_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page")
+let appconsumos_qa_mb_pages_administracion_editar_usuarios_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page")
 let appconsumos_qa_mb_pages_administracion_inicio_admin_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page")
-let appconsumos_qa_mb_pages_administracion_lista_empleados_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page")
+let appconsumos_qa_mb_pages_administracion_lista_usuarios_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page")
 let appconsumos_qa_mb_pages_application_about_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/About.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/About.page")
 let appconsumos_qa_mb_pages_application_support_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/Support.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/Support.page")
 let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/UserActivityLog.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/UserActivityLog.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
 let appconsumos_qa_mb_pages_main_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Main.page */ "./build.definitions/appconsumos_qa_mb/Pages/Main.page")
+let appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js")
+let appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js")
 let appconsumos_qa_mb_rules_administracion_create_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js")
+let appconsumos_qa_mb_rules_administracion_get_estado_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/get_Estado.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Estado.js")
+let appconsumos_qa_mb_rules_administracion_get_rol_admin_list_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js")
+let appconsumos_qa_mb_rules_administracion_navto_administracion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js")
+let appconsumos_qa_mb_rules_administracion_switch_estado_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js")
 let appconsumos_qa_mb_rules_app_consumos_qa_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js */ "./build.definitions/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js")
 let appconsumos_qa_mb_rules_application_appupdatefailure_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/AppUpdateFailure.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/AppUpdateFailure.js")
 let appconsumos_qa_mb_rules_application_appupdatesuccess_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/AppUpdateSuccess.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/AppUpdateSuccess.js")
@@ -79,6 +89,7 @@ let appconsumos_qa_mb_rules_application_getclientsupportversions_js = __webpack_
 let appconsumos_qa_mb_rules_application_getclientversion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/GetClientVersion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/GetClientVersion.js")
 let appconsumos_qa_mb_rules_application_onwillupdate_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/OnWillUpdate.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js")
 let appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js")
+let appconsumos_qa_mb_rules_get_info_usuario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Info_Usuario.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js")
 let appconsumos_qa_mb_rules_logging_loglevels_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/LogLevels.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js")
 let appconsumos_qa_mb_rules_logging_settracecategories_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/SetTraceCategories.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/SetTraceCategories.js")
 let appconsumos_qa_mb_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/SetUserLogLevel.js")
@@ -135,22 +146,32 @@ module.exports = {
 	appconsumos_qa_mb_actions_logging_uploadlogprogress_action : appconsumos_qa_mb_actions_logging_uploadlogprogress_action,
 	appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action : appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action,
 	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
+	appconsumos_qa_mb_actions_odata_req_update_empleados_action : appconsumos_qa_mb_actions_odata_req_update_empleados_action,
+	appconsumos_qa_mb_actions_odata_update_empleados_action : appconsumos_qa_mb_actions_odata_update_empleados_action,
 	appconsumos_qa_mb_globals_application_appdefinition_version_global : appconsumos_qa_mb_globals_application_appdefinition_version_global,
 	appconsumos_qa_mb_globals_application_applicationname_global : appconsumos_qa_mb_globals_application_applicationname_global,
 	appconsumos_qa_mb_globals_application_supportemail_global : appconsumos_qa_mb_globals_application_supportemail_global,
 	appconsumos_qa_mb_globals_application_supportphone_global : appconsumos_qa_mb_globals_application_supportphone_global,
 	appconsumos_qa_mb_i18n_i18n_properties : appconsumos_qa_mb_i18n_i18n_properties,
+	appconsumos_qa_mb_images_logo_both_png : appconsumos_qa_mb_images_logo_both_png,
 	appconsumos_qa_mb_jsconfig_json : appconsumos_qa_mb_jsconfig_json,
 	appconsumos_qa_mb_pages_administracion_agregar_usuarios_page : appconsumos_qa_mb_pages_administracion_agregar_usuarios_page,
+	appconsumos_qa_mb_pages_administracion_editar_usuarios_page : appconsumos_qa_mb_pages_administracion_editar_usuarios_page,
 	appconsumos_qa_mb_pages_administracion_inicio_admin_page : appconsumos_qa_mb_pages_administracion_inicio_admin_page,
-	appconsumos_qa_mb_pages_administracion_lista_empleados_page : appconsumos_qa_mb_pages_administracion_lista_empleados_page,
+	appconsumos_qa_mb_pages_administracion_lista_usuarios_page : appconsumos_qa_mb_pages_administracion_lista_usuarios_page,
 	appconsumos_qa_mb_pages_application_about_page : appconsumos_qa_mb_pages_application_about_page,
 	appconsumos_qa_mb_pages_application_support_page : appconsumos_qa_mb_pages_application_support_page,
 	appconsumos_qa_mb_pages_application_useractivitylog_page : appconsumos_qa_mb_pages_application_useractivitylog_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
 	appconsumos_qa_mb_pages_main_page : appconsumos_qa_mb_pages_main_page,
+	appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js : appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js,
+	appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js : appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js,
 	appconsumos_qa_mb_rules_administracion_create_usuarios_js : appconsumos_qa_mb_rules_administracion_create_usuarios_js,
+	appconsumos_qa_mb_rules_administracion_get_estado_js : appconsumos_qa_mb_rules_administracion_get_estado_js,
+	appconsumos_qa_mb_rules_administracion_get_rol_admin_list_js : appconsumos_qa_mb_rules_administracion_get_rol_admin_list_js,
+	appconsumos_qa_mb_rules_administracion_navto_administracion_js : appconsumos_qa_mb_rules_administracion_navto_administracion_js,
+	appconsumos_qa_mb_rules_administracion_switch_estado_js : appconsumos_qa_mb_rules_administracion_switch_estado_js,
 	appconsumos_qa_mb_rules_app_consumos_qa_errorarchive_checkforsyncerror_js : appconsumos_qa_mb_rules_app_consumos_qa_errorarchive_checkforsyncerror_js,
 	appconsumos_qa_mb_rules_application_appupdatefailure_js : appconsumos_qa_mb_rules_application_appupdatefailure_js,
 	appconsumos_qa_mb_rules_application_appupdatesuccess_js : appconsumos_qa_mb_rules_application_appupdatesuccess_js,
@@ -159,6 +180,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_application_getclientversion_js : appconsumos_qa_mb_rules_application_getclientversion_js,
 	appconsumos_qa_mb_rules_application_onwillupdate_js : appconsumos_qa_mb_rules_application_onwillupdate_js,
 	appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js : appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js,
+	appconsumos_qa_mb_rules_get_info_usuario_js : appconsumos_qa_mb_rules_get_info_usuario_js,
 	appconsumos_qa_mb_rules_logging_loglevels_js : appconsumos_qa_mb_rules_logging_loglevels_js,
 	appconsumos_qa_mb_rules_logging_settracecategories_js : appconsumos_qa_mb_rules_logging_settracecategories_js,
 	appconsumos_qa_mb_rules_logging_setuserloglevel_js : appconsumos_qa_mb_rules_logging_setuserloglevel_js,
@@ -179,6 +201,72 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Bool_Estado_Usuarios)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Bool_Estado_Usuarios(context) {
+  try {
+    var object = context.binding;
+    var estado = object.estado;
+    if (estado == "Activo") {
+      return true;
+    }
+    if (estado == "Inactivo") {
+      return false;
+    }
+  } catch (error) {
+    console.error("Ocurrió un error al obtener el valor:", error);
+    alert("No se pudo obtener el valor: " + error.message);
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Color_Estado_Usuarios)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Color_Estado_Usuarios(context) {
+  try {
+    var object = context.binding;
+    var estado = object.estado;
+    if (estado == "Activo") {
+      return "Green";
+    }
+    if (estado == "Inactivo") {
+      return "Red";
+    }
+  } catch (error) {
+    console.error("Ocurrió un error al obtener el valor:", error);
+    alert("No se pudo obtener el valor: " + error.message);
+  }
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js":
 /*!*************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js ***!
@@ -192,11 +280,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /**
  * Describe this function...
- * @param {context} clientAPI
+ * @param {IClientAPI} clientAPI
  */
 async function Create_Usuarios(context) {
   let lista_empleados = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:ListaEmpleados/#Value');
   let rol = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:rol/#Value');
+  let isadmin = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:isadmin/#Value');
   let repetidos = "";
   let errores = [];
   let exitosos = [];
@@ -231,6 +320,7 @@ async function Create_Usuarios(context) {
               "nombre": nuevo_empleado.nombre,
               "correo": nuevo_empleado.correo,
               "rol": rol_value,
+              "isAdmin": isadmin,
               "cargo": nuevo_empleado.cargo,
               "sociedad": nuevo_empleado.sociedad
             }
@@ -296,7 +386,7 @@ async function Create_Usuarios(context) {
       mensajePromise.then(() => {
         context.executeAction({
           "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
-          "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"
+          "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page"
         });
       });
     });
@@ -305,6 +395,141 @@ async function Create_Usuarios(context) {
   //[0].ReturnValue
   //(lista_empleados[0].BindingObject)
   //alert(JSON.stringify(context.evaluateTargetPath("#Page:Agregar_Usuarios/#Control:ListaEmpleados/#Value/#Index:1/BindingObject/cargo")))
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavTo_Administracion)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function NavTo_Administracion(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info = clientData.info_user;
+  if (!clientData.info_user) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
+      "Properties": {
+        "Message": `Sincronizando datos, por favor espera un momento...`,
+        "Duration": 1
+      }
+    });
+  }
+  if (info.isAdmin && info.estado == 'Activo') {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+      "Properties": {
+        "PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page"
+      }
+    });
+  }
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+      "Title": "Alerta",
+      "Message": `No tienes permisos para ingresar a este modulo`
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Switch_Estado)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Switch_Estado(context) {
+  const pageProxy = context.getPageProxy();
+  var sw_component = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell1").getControl("estado_edit");
+  var estado_temp = context.getValue();
+  if (estado_temp) {
+    sw_component.setHelperText('Activo');
+  } else {
+    sw_component.setHelperText('Inactivo');
+  }
+
+  //alert(sw_component.getType())
+  //alert(JSON.stringify(object))
+  //alert(JSON.stringify(context.binding))
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Estado.js":
+/*!********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Estado.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_Estado)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function get_Estado(context) {
+  const pageProxy = context.getPageProxy();
+  var sw_component = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell1").getControl("estado_edit");
+  var estado_temp = sw_component.getValue();
+  if (estado_temp) {
+    return 'Activo';
+  } else {
+    return 'Inactivo';
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js":
+/*!****************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_Rol_Admin_List)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function get_Rol_Admin_List(context) {
+  try {
+    var object = context.binding;
+    var rol = object.rol;
+    var isadmin = object.isAdmin;
+    return isadmin ? rol + " - Admin" : rol;
+  } catch (error) {
+    console.error("Ocurrió un error al obtener el valor:", error);
+    alert("No se pudo obtener el valor: " + error.message);
+  }
 }
 
 /***/ }),
@@ -401,12 +626,12 @@ function AppUpdateSuccess(clientAPI) {
       return clientAPI.getPageProxy().executeAction({
         "Name": "/appconsumos_qa_mb/Actions/Application/AppUpdateSuccessMessage.action",
         "Properties": {
-          "Message": `You are already using the latest version: ${versionNum}`,
+          "Message": `Ya estás usando la última versión: ${versionNum}`,
           "NumberOfLines": 2
         }
       });
     } else if (result === 'AppUpdate feature is not enabled or no new revision found.') {
-      message = 'No Application metadata found. Please deploy your application and try again.';
+      message = 'No se encontraron metadatos de la aplicación. Implemente su aplicación y vuelva a intentarlo.';
       return clientAPI.getPageProxy().executeAction({
         "Name": "/appconsumos_qa_mb/Actions/Application/AppUpdateSuccessMessage.action",
         "Properties": {
@@ -858,11 +1083,12 @@ function Initialize(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
       "Properties": {
-        "Message": "Application Services Initialized",
+        "Message": "Servicio de la aplicación inicializado",
         "Animated": true,
         "Duration": 1,
         "IsIconHidden": true,
-        "NumberOfLines": 1
+        "NumberOfLines": 1,
+        "OnSuccess": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action"
       }
     });
   }).catch(() => {
@@ -883,6 +1109,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ CheckForSyncError)
 /* harmony export */ });
+/* harmony import */ var _get_Info_Usuario__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../get_Info_Usuario */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js");
+
 /**
  * Describe this function...
  * @param {IClientAPI} context
@@ -893,7 +1121,38 @@ function CheckForSyncError(context) {
       return context.getPageProxy().executeAction('/appconsumos_qa_mb/Actions/ErrorArchive/ErrorArchive_SyncFailure.action').then(function () {
         return Promise.reject(false);
       });
+    } else {
+      return (0,_get_Info_Usuario__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
     }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js":
+/*!***********************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_Info_Usuario)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function get_Info_Usuario(context) {
+  let email = context.evaluateTargetPath('#Application/#AppData/UserId').toUpperCase();
+  let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=correo eq '${email}'`).then(async results => {
+    if (results && results.length > 0) {
+      clientData.info_user = results.getItem(0);
+    }
+  }).catch(error => {
+    alert(`Error ${error.message}`);
   });
 }
 
@@ -932,21 +1191,21 @@ Page
 { color: @mdkYellow1; background-color: @mdkRed1; }
 */
 ActionBar {
-  color: white;
-  background-color: #048c3c;
+  color: white ;
+  background-color: #72BE44;
 }
 .HeaderAdmin {
   color: white;
-  background-color: #048c3c;
+  background-color: #72BE44;
 }
 .HeaderAdminTitle {
   color: white;
 }
 .Button {
   color: white;
-  background-color: #048c3c;
+  background-color: #72BE44;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nActionBar {\n  color: white;\n  background-color: #048c3c;\n}\n.HeaderAdmin {\n  color: white;\n  background-color: #048c3c;\n}\n.HeaderAdminTitle {\n  color: white;\n}\n.Button {\n  color: white;\n  background-color: #048c3c;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,aAAa;EACb,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nActionBar {\n  color: white ;\n  background-color: #72BE44;\n}\n.HeaderAdmin {\n  color: white;\n  background-color: #72BE44;\n}\n.HeaderAdminTitle {\n  color: white;\n}\n.Button {\n  color: white;\n  background-color: #72BE44;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -987,13 +1246,13 @@ Page
 */
 
 ActionBar {
-    color:white;
-    background-color: #048c3c;
+    color:white ; 
+    background-color: #72BE44;
 }
 
 .HeaderAdmin{
     color:white;
-    background-color: #048c3c;
+    background-color: #72BE44;
 }
 
 .HeaderAdminTitle{
@@ -1001,9 +1260,9 @@ ActionBar {
 }
 
 .Button{
-    color:white; 
-    background-color: #048c3c;
-}`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\nActionBar {\n    color:white;\n    background-color: #048c3c;\n}\n\n.HeaderAdmin{\n    color:white;\n    background-color: #048c3c;\n}\n\n.HeaderAdminTitle{\n    color:white;\n}\n\n.Button{\n    color:white; \n    background-color: #048c3c;\n}"],"sourceRoot":""}]);
+    color:white;
+    background-color: #72BE44;
+}`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\nActionBar {\n    color:white ; \n    background-color: #72BE44;\n}\n\n.HeaderAdmin{\n    color:white;\n    background-color: #72BE44;\n}\n\n.HeaderAdminTitle{\n    color:white;\n}\n\n.Button{\n    color:white;\n    background-color: #72BE44;\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1023,20 +1282,20 @@ var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOUR
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.ns-light ActionBar {
 	color: white;
-	background-color: #048c3c;
+	background-color: #72BE44;
 }
 .ns-light .HeaderAdmin {
 	color: white;
-	background-color: #048c3c;
+	background-color: #72BE44;
 }
 .ns-light .HeaderAdminTitle {
 	color: white;
 }
 .ns-light .Button {
 	color: white;
-	background-color: #048c3c;
+	background-color: #72BE44;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1056,20 +1315,20 @@ var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOUR
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `ActionBar {
 	font-color: white;
-	background-color: #048c3c;
+	background-color: #72BE44;
 }
 HeaderAdmin {
 	font-color: white;
-	background-color: #048c3c;
+	background-color: #72BE44;
 }
 HeaderAdminTitle {
 	font-color: white;
 }
 Button {
 	font-color: white;
-	background-color: #048c3c;
+	background-color: #72BE44;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B","sourcesContent":["ActionBar {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\nHeaderAdmin {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\nHeaderAdminTitle {\n\tfont-color: white;\n}\nButton {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B","sourcesContent":["ActionBar {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdmin {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdminTitle {\n\tfont-color: white;\n}\nButton {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1203,7 +1462,17 @@ module.exports = function (item) {
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"ListaEmpleados","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":false,"Caption":"Seleccionar Empleados","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona uno o varios empleados","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Empleados..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Empleados"},"ObjectCell":{"Description":"{cargo}","PreserveIconStackSpacing":false,"Subhead":"{nombre}","SubstatusText":"{sociedad}","Tags":[{"Color":"Grey","Text":"{correo}"}],"Title":"{ficha}","Visible":true},"ReturnValue":"{ficha}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para los usuarios","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Administrador","Autorizador","Auxiliar","Técnico"]},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker2","IsVisible":false,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","IsSelectedSectionEnabled":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar almacen ...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{almacen_desc}","SubstatusText":"{centro}","Title":"{almacen}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Crear","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Agregar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Empleados"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Agregar Usuarios"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"ListaEmpleados","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Seleccionar Empleados","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona uno o varios empleados","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Empleados..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Empleados"},"ObjectCell":{"Description":"{cargo}","PreserveIconStackSpacing":false,"Subhead":"{nombre}","SubstatusText":"{sociedad}","Tags":[{"Color":"Grey","Text":"{correo}"}],"Title":"{ficha}","Visible":true},"ReturnValue":"{ficha}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para los usuarios","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Autorizador","Auxiliar","Técnico"]},{"Value":false,"_Type":"Control.Type.FormCell.Switch","_Name":"isadmin","IsVisible":true,"Separator":true,"Caption":"¿Usuario Administrador?","HelperText":"Si activas este campo los usuarios se crearan como administradores de la aplicación","IsEditable":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker2","IsVisible":false,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","IsSelectedSectionEnabled":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar almacen ...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{almacen_desc}","SubstatusText":"{centro}","Title":"{almacen}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Crear","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Agregar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Agregar Usuarios"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{nombre}","Description":"{cargo}","StatusText":"{sociedad}","DetailImageIsCircular":false,"BodyText":"{correo}","HeadlineText":"{ficha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":["{rol}"],"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol_edit","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para el usuario","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Autorizador","Auxiliar","Técnico"]}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js","_Type":"Control.Type.FormCell.Switch","_Name":"estado_edit","IsVisible":true,"Separator":true,"Caption":"Estado","OnValueChange":"/appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js","HelperText":"{estado}","IsEditable":true},{"Value":"{isAdmin}","_Type":"Control.Type.FormCell.Switch","_Name":"isadmin_edit","IsVisible":true,"Separator":true,"Caption":"¿Usuario Administrador?","HelperText":"Si activas este campo el usuario será administrador de la aplicación","IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Actualizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"}]}],"_Type":"Page","_Name":"Editar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Editar Usuario"}}
 
 /***/ }),
 
@@ -1213,17 +1482,17 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","DataSubscriptions":[],"_Name":"SectionObjectHeader0","ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo Administrador","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"Visible":true},{"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ContactCells":[{"ContactCell":{"_Name":"ContactCellItem0","DetailImage":"sap-icon://user-edit","Headline":"Administrar Usuarios","Subheadline":"Configurar roles y alces para los usuarios","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"}},"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}},{"ContactCell":{"_Name":"ContactCellItem1","DetailImage":"sap-icon://home","Headline":"Administrar Almacenes","Subheadline":"Asignar almacenes a campo o ingenio","Description":"","Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}}]}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Inicio_Admin","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo Administrador","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","DataSubscriptions":[],"_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://user-edit","Headline":"Administrar Usuarios","Subheadline":"Configurar roles y alces para los usuarios","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page"}}}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://home","Headline":"Administrar Almacenes","Subheadline":"Asignar almacenes a campo o ingenio","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Inicio_Admin","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
-/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page":
-/*!***************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page ***!
-  \***************************************************************************************/
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page ***!
+  \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No existen usuarios registrados aún.","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{ficha}","Subhead":"{nombre}","Footnote":"{cargo}","Description":"{correo}","DisplayDescriptionInMobile":true,"StatusText":"{rol}","SubstatusText":"{sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar empleado ...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Cargando usuarios...","PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Empleados","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Agregar Usuarios","Icon":"sap-icon://add-employee","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page","ModalPage":true}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Lista Empleados"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"FastFilters":[{"_Type":"Control.Type.FastFilterItem","_Name":"FastFilter0","DisplayValue":"Administradores","ReturnValue":"isAdmin eq true","FilterType":"Filter"},{"_Type":"Control.Type.FastFilterItem","_Name":"FastFilter1","DisplayValue":"Auxiliares","ReturnValue":"rol eq 'Auxiliar'","FilterType":"Filter"},{"_Type":"Control.Type.FastFilterItem","_Name":"FastFilter2","DisplayValue":"Autorizadores","ReturnValue":"rol eq 'Autorizador'","FilterType":"Filter"},{"_Type":"Control.Type.FastFilterItem","_Name":"FastFilter3","DisplayValue":"Técnicos","ReturnValue":"rol eq 'Técnico'","FilterType":"Filter"}],"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No existen usuarios registrados aún.","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{ficha}","Subhead":"{nombre}","Footnote":"{cargo}","Description":"{correo}","DisplayDescriptionInMobile":true,"StatusText":"/appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js","SubstatusText":"{sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://edit","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page","ModalPage":true,"ModalPageFullscreen":false}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar empleado ...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Cargando usuarios...","PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Agregar Usuarios","Icon":"sap-icon://add-employee","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page","ModalPage":true}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Lista Usuarios"}}
 
 /***/ }),
 
@@ -1283,7 +1552,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \*************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImage":"res://mdk_logo.png","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page"}}}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.Image","_Name":"SectionImage0","Visible":true,"Image":"/appconsumos_qa_mb/Images/logo_both.png","Width":173,"Height":22,"Alignment":"Center","ContentMode":"Center","PaddingTop":10},{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -1293,7 +1562,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = {"_Name":"appconsumos_qa_mb","Version":"/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global","MainPage":"/appconsumos_qa_mb/Pages/Main.page","OnLaunch":"/appconsumos_qa_mb/Rules/Service/Initialize.js","OnWillUpdate":"/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/appconsumos_qa_mb/Rules/Service/Initialize.js","Styles":"/appconsumos_qa_mb/Styles/Styles.css","Localization":"/appconsumos_qa_mb/i18n/i18n.properties","_SchemaVersion":"24.11","StyleSheets":{"Styles":{"css":"/appconsumos_qa_mb/Styles/Styles.light.css","ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}},"SDKStyles":{"ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}}
+module.exports = {"MainPage":"/appconsumos_qa_mb/Pages/Main.page","OnLaunch":["/appconsumos_qa_mb/Rules/Service/Initialize.js"],"OnWillUpdate":"/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/appconsumos_qa_mb/Rules/Service/Initialize.js","Styles":"/appconsumos_qa_mb/Styles/Styles.css","Version":"/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global","OnSuspend":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","OnResume":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","Localization":"/appconsumos_qa_mb/i18n/i18n.properties","_SchemaVersion":"24.11","_Name":"appconsumos_qa_mb","StyleSheets":{"Styles":{"css":"/appconsumos_qa_mb/Styles/Styles.light.css","ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}},"SDKStyles":{"ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}}
 
 /***/ }),
 
@@ -1313,7 +1582,7 @@ module.exports = {"_Type":"Action.Type.ApplicationUpdate","ActionResult":{"_Name
   \************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Failed to update application - {#ActionResults:AppUpdate/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+module.exports = {"_Type":"Action.Type.BannerMessage","Message":"No se pudo actualizar la aplicación - {#ActionResults:AppUpdate/error}","Duration":7,"Animated":true}
 
 /***/ }),
 
@@ -1323,7 +1592,7 @@ module.exports = {"Message":"Failed to update application - {#ActionResults:AppU
   \************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Animated":true,"CompletionTimeout":3,"Message":"Checking for Updates...","OnSuccess":"/appconsumos_qa_mb/Actions/Application/AppUpdate.action","_Type":"Action.Type.ProgressBanner"}
+module.exports = {"_Type":"Action.Type.ProgressBanner","OnSuccess":"/appconsumos_qa_mb/Actions/Application/AppUpdate.action","Message":"Buscando actualizaciones...","CompletionTimeout":3,"Animated":true}
 
 /***/ }),
 
@@ -1333,7 +1602,7 @@ module.exports = {"Animated":true,"CompletionTimeout":3,"Message":"Checking for 
   \************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Animated":true,"Duration":2,"Message":"Update application complete","_Type":"Action.Type.ToastMessage"}
+module.exports = {"_Type":"Action.Type.ToastMessage","Message":"Actualización de la aplicación completada","Duration":2,"Animated":true}
 
 /***/ }),
 
@@ -1383,7 +1652,7 @@ module.exports = {"ModalPage":true,"NavigationType":"Cross","PageToOpen":"/appco
   \*************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.Message","Message":"A new version of the application is now ready to apply. Do you want to update to this version?","Title":"New Version Available!","OKCaption":"Now","CancelCaption":"Later","ActionResult":{"_Name":"OnWillUpdate"}}
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"OnWillUpdate"},"Message":"Ya está disponible una nueva versión de la aplicación. ¿Quieres actualizarla?","Title":"Nueva versión disponible!","OKCaption":"Actualizar","CancelCaption":"Cancelar"}
 
 /***/ }),
 
@@ -1403,7 +1672,7 @@ module.exports = {"_Type":"Action.Type.Logout","SkipReset":false}
   \*************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.Message","Message":"This action will remove all data and return to the Welcome screen. Any local data will be lost. Are you sure you want to continue?","Title":"Reset","OKCaption":"Yes","OnOK":"/appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js","CancelCaption":"No"}
+module.exports = {"_Type":"Action.Type.Message","Message":"Esta acción eliminará todos los datos y regresará a la pantalla de bienvenida. Se perderán todos los datos locales. ¿Seguro que desea continuar?","Title":"Reset","OKCaption":"Yes","OnOK":"/appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js","CancelCaption":"No"}
 
 /***/ }),
 
@@ -1583,7 +1852,7 @@ module.exports = {"_Type":"Action.Type.OfflineOData.Close","Service":"/appconsum
   \***************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Failure closing data service - {#ActionResults:close/error}","NumberOfLines":1,"Duration":3,"Animated":true,"IsIconHidden":true,"_Type":"Action.Type.ToastMessage"}
+module.exports = {"_Type":"Action.Type.ToastMessage","Message":"Falló al cerrar el servicio de datos - {#ActionResults:close/error}","NumberOfLines":1,"Duration":3,"IsIconHidden":true,"Animated":true}
 
 /***/ }),
 
@@ -1593,7 +1862,7 @@ module.exports = {"Message":"Failure closing data service - {#ActionResults:clos
   \***************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Data service closed successfully","NumberOfLines":1,"Duration":3,"Animated":true,"IsIconHidden":true,"_Type":"Action.Type.ToastMessage"}
+module.exports = {"_Type":"Action.Type.ToastMessage","Message":"El servicio de datos se cerró correctamente","NumberOfLines":1,"Duration":3,"IsIconHidden":true,"Animated":true}
 
 /***/ }),
 
@@ -1603,7 +1872,7 @@ module.exports = {"Message":"Data service closed successfully","NumberOfLines":1
   \****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"}],"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js"}
+module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"}]}
 
 /***/ }),
 
@@ -1613,7 +1882,7 @@ module.exports = {"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service
   \***********************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Download in progress...","CompletionMessage":"Download Successful","CompletionTimeout":7,"OnSuccess":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/DownloadOffline.action","_Type":"Action.Type.ProgressBanner"}
+module.exports = {"_Type":"Action.Type.ProgressBanner","OnSuccess":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/DownloadOffline.action","Message":"Sincronización en proceso...","CompletionMessage":"Sincronización Exitosa","CompletionTimeout":4}
 
 /***/ }),
 
@@ -1623,7 +1892,7 @@ module.exports = {"Message":"Download in progress...","CompletionMessage":"Downl
   \******************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"}],"_Type":"Action.Type.ODataService.Initialize","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","ActionResult":{"_Name":"init"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOfflineFailureMessage.action"}
+module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false}]}
 
 /***/ }),
 
@@ -1633,7 +1902,7 @@ module.exports = {"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service
   \********************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Failed to initialize application data service - {#ActionResults:init/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+module.exports = {"_Type":"Action.Type.BannerMessage","Message":"No se pudo inicializar el servicio de datos de la aplicación - {#ActionResults:init/error}","Duration":7,"Animated":true}
 
 /***/ }),
 
@@ -1643,7 +1912,7 @@ module.exports = {"Message":"Failed to initialize application data service - {#A
   \*******************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Sync offline data service failure - {#ActionResults:sync/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+module.exports = {"_Type":"Action.Type.BannerMessage","OnSuccess":"/appconsumos_qa_mb/Rules/get_Info_Usuario.js","Message":"La sincronización de los datos falló - {#ActionResults:sync/error}","Duration":7,"Animated":true}
 
 /***/ }),
 
@@ -1653,7 +1922,7 @@ module.exports = {"Message":"Sync offline data service failure - {#ActionResults
   \*******************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Upload in progress...","CompletionMessage":"Sync completed","CompletionTimeout":7,"OnSuccess":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","_Type":"Action.Type.ProgressBanner"}
+module.exports = {"_Type":"Action.Type.ProgressBanner","OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","Message":"Sincronización en proceso...","CompletionMessage":"Sincronización completada","CompletionTimeout":7}
 
 /***/ }),
 
@@ -1673,7 +1942,27 @@ module.exports = {"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service
   \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_EmpleadosApp"},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"Properties":{"ficha":"","nombre":"","correo":"","rol":"","cargo":"","sociedad":""}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_EmpleadosApp"},"ShowActivityIndicator":true,"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"Properties":{"ficha":"","nombre":"","correo":"","rol":"","cargo":"","sociedad":""}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.CheckRequiredFields","ActionResult":{"_Name":"Req_Update_Usuarios"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Debes seleccionar un rol para el usuario","Title":"Alerta","OKCaption":"Ok"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estas seguro que deseas actualizar el empleado?","Title":"Confirmación","OKCaption":"Actualizar","OnOK":"/appconsumos_qa_mb/Actions/oData/Update_Empleados.action","CancelCaption":"Cancelar"}},"ShowActivityIndicator":true,"RequiredFields":["rol_edit"]}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Empleados"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al actualizar el empleado: {#ActionResults:Update_Empleados/error}","Title":"Error al actualizar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}},"Message":"Empleado actualizado exitosamente","Title":"Actualización exitosa","OKCaption":"Ok"}},"ShowActivityIndicator":true,"ActivityIndicatorText":"Actualizando empleado...","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp","ReadLink":"{@odata.readLink}"},"Properties":{"rol":"#Page:Editar_Usuarios/#Control:rol_edit/#Value/#First/DisplayValue","isAdmin":"#Page:Editar_Usuarios/#Control:isadmin_edit/#Value","estado":"/appconsumos_qa_mb/Rules/Administracion/get_Estado.js"}}
 
 /***/ }),
 
@@ -1724,6 +2013,17 @@ module.exports = {"Value":"1-800-677-7271","_Type":"String"}
 /***/ ((module) => {
 
 module.exports = {"DestinationName":"app.consumos.qa","OfflineEnabled":true,"SourceType":"Mobile"}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Images/logo_both.png":
+/*!******************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Images/logo_both.png ***!
+  \******************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK0AAAAWCAYAAACyohz1AAAACXBIWXMAAAsSAAALEgHS3X78AAAHDUlEQVRoge2aMWzjyBWGPy+2SGf5gAPcrRIESLm6St0tCUjXLq9Lt9wugIrVgjhAVUx3voI4uRCQKqFTpVv5ijQUQApIETU5CVcFWGC5nYoLIDXBARecU8wb8YlL2zLOt/Ym/AGBGs68eW84/7x588i9i4sLLNqjjgOkFDgFQiAGnsq9KeDNepMVNX4y9vb2fnNxcfHPu7bjQ8KDUjmW6xr4HPCBHGgCB8Bz4AnQfx/G1ahRhQ1p26NOCDzCEDbHENYB9gFn1pusZr1JjPG0NWrcGR4CtEedJnCEIawDrIA50ACoQ4Ea9wkP5RoDC8SjArRHnSFFuFCjxr3Bg/ao48t/R3vUWW8SYjxujRr3Cg+B1qw3cS6p7wNpe9QJZ71JKGFECxi/J/v+7xGk3TESpglyIIvcJL4Tg94TgrTrURz4x4c/vP418LcvPnvzlz2d8qqCHNCO1K01JpvQBIYVIlemww7dEysLkC/TQX7onji2fpkOskP3pIFZHJt7FbIaq2U6mCsdnpJfLdPBO3ZqnRTxe1PJzCvaacyX6WCl7PJVXbxMB/klclu4LuUVpN0Mk7Ep4zRyk2uzOEHabQKNyE3m17X9KQjSbjNyk/wG7R1gHrlJJVeCtBsDz6R4dvjD69fAP7747M1fdyFthplMH/CAF5h02BDjcRty35FyLKFFJQ7dkznwWIqfYMj1J9XkAJMbfiHlc9E9pnryAFimgz3pvwV8U6o+sASTNh7wSopvl+mgWbLrc7kOMRmVKhwv00FYMSaAl1ULpQo3IK0buUkWpN0+8JVUL0p6F4AfuclcPJW2f03hZI6A48hNQtHRB77af/DjH37/0b9+ByyC7z6eU5AG4C3mjDNke34svgR+i9kFfGW/fTYHciumyPmDyUY1xc4DS+Ig7a4wmSuLTV05T1uFJxjvmc16kz7mwbwC5lIeSucZhlj99qjTqOro0D3pUzzkU8xWV57cIcUDWWO2iCHbhHVF3uJU+m9QHbp4yoZGSadfsmsqY4kpJnyBeehrJRdLfzHbxAGzgH8uZOq/XYjHFASOxYu9wjiUl5j8eo4hq50bT/XjAKx/fPCl6jeX/2fS/0rkQ6XX1h0DfxeZZ+IlyzZa259i5svO4dzqUoT1MZxaYBbLlr27kJZZb1LeWhaAL+TMxPgxxiPuU/HyQcgSSnFN8aZtv9RUr+6w4t65hAtjzMBd1S6mINq5ktET1FdtzjAPLVT1vpT3SzK2Hxf4RMIaX9k2pSC19iS3BT9IuyHFolzYCvGYdoxNbW/kJkOJfx2xzxfZx0HabQZptyH2Li7Z3uPITcLITVoYAr2gIH4suuPITbSzKBMXse8xxsP3IzfJ5FoV4vhytbu5lQd2JK2FxLdN1UGG8bj+rDfxlYIqb2s9MpiH6lBM7pp3MZUtVnvFNdAX7xbKr7FMByvxlro/vdAc2IQOR7qvkl3HctVb3xnGW4xFX3+ZDubSl7YtR3kVCUFuE8/E9kcY8vi2QkIIO94YGW/kJpltI15sjhnr13Lbo5jLeAcbbBs7t2mQdi+AN6rNQn5l4jpyzbgCEoPbXbWldD2VBbY7aSU1dkTx8sEq30yOEPeMkreVw4z2SGNKWzTvEtcXYmivlWOI80wG1limg7G0s3GeJaxDsbXsiw2h6mul+gIT24alNrZdLPqeAPagGFOQ3cZleit0uF28RLx85CbNioPVPvBWPFcOYCdZwZb/KFefm5G2eYlNL9W9FcWzt/MERbhRGToqaM/7gu1d1oMdSdsedexh6bmECjFmAE45U6CIq72tg5nYKYWHtFv06TIdjNmORY/V6XuqfivRO8V4RUcN1Lbxl+nAWaYDR/TY+00MmW05x6zkKSaUsJOXl3S2RO858Fy8vyf3pmK/1ecpuesm56aYy5ZaJiuRmzhi3yM5VNlnuXEMEic+BqYSBpxL+SlwftkpXsl7GALZ1/zapqFeINKXx7YjyuQa2rZB2m0EabdVUmXnwS4IF8OnTd0u2QPb4FhytbEIOxWxrpaLwZBYSH/bk3jvMetNsuva3DR7UFUXucmeECGXqk+BP2NIucYsMPtdiSPZBZ8ia/N8k/f9tnUBTIPvPs7YTnUi8h7GWZTrNt+kyCJCCJkB+2LjkCL0msq4rNwTTNbmFWbHaKpxtigyQr+0r3GvwqkoctqjTo4h35WEhQ1ZY3khMeSKdNX/MPZuoY8xZuKrFv0YyGyOVIjYAn4VuUlLyo7IDjEHJutRM4oYPgPg21aDIlOwUvVgFsQ4cpOVLBBdB/AL4HtUiCSLwwG8IO02Ijfpy8sSD7PzHcsYPLHhP0q/Rq71XetpYfOdLbCb9yjJNuoPbi5H/T3tzbETaWv8fKhJe3PcKOVVo8Z9QE3aGh8catLW+OBQk/bu8e+7NuBDw38B2P0KRzXYSrMAAAAASUVORK5CYII=";
 
 /***/ }),
 
@@ -1786,7 +2086,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#048c3c"},"HeaderAdmin":{"font-color":"white","background-color":"#048c3c"},"HeaderAdminTitle":{"font-color":"white"},"Button":{"font-color":"white","background-color":"#048c3c"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#72BE44"},"HeaderAdmin":{"font-color":"white","background-color":"#72BE44"},"HeaderAdminTitle":{"font-color":"white"},"Button":{"font-color":"white","background-color":"#72BE44"}}');
 
 /***/ }),
 
