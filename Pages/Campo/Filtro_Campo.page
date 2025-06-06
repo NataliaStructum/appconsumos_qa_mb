@@ -1,0 +1,110 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"DetailImageIsCircular": false,
+						"HeadlineText": "Modulo ordenes de mantemiento en Campo",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Styles": {
+							"ObjectHeader": "HeaderAdmin",
+							"HeadlineText": "HeaderAdminTitle"
+						}
+					},
+					"Visible": true
+				},
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "almacen_campo",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Almacen",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona un almacen",
+							"HelperText": "Debes seleccionar un alamacen para continuar",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Campo/Select_almacen.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "AlmacenesApp",
+									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"
+								},
+								"ObjectCell": {
+									"PreserveIconStackSpacing": false,
+									"StatusText": "{sociedad}",
+									"Subhead": "{tipo}",
+									"SubstatusText": "{centro}",
+									"Title": "{almacen} - {almacen_desc}",
+									"Visible": true
+								},
+								"ReturnValue": "{almacen}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Button": "Button"
+							},
+							"Title": "Ver listado",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": false,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Filtro_Campo",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Ordenes Campo"
+	}
+}

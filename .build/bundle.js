@@ -78,6 +78,8 @@ let appconsumos_qa_mb_pages_administracion_lista_usuarios_page = __webpack_requi
 let appconsumos_qa_mb_pages_application_about_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/About.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/About.page")
 let appconsumos_qa_mb_pages_application_support_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/Support.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/Support.page")
 let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/UserActivityLog.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/UserActivityLog.page")
+let appconsumos_qa_mb_pages_campo_filtro_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page")
+let appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
 let appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page")
@@ -99,6 +101,11 @@ let appconsumos_qa_mb_rules_application_getclientsupportversions_js = __webpack_
 let appconsumos_qa_mb_rules_application_getclientversion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/GetClientVersion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/GetClientVersion.js")
 let appconsumos_qa_mb_rules_application_onwillupdate_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/OnWillUpdate.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js")
 let appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js")
+let appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js")
+let appconsumos_qa_mb_rules_campo_navto_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js")
+let appconsumos_qa_mb_rules_campo_navto_list_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js")
+let appconsumos_qa_mb_rules_campo_select_almacen_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Select_almacen.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js")
+let appconsumos_qa_mb_rules_campo_target_lista_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js")
 let appconsumos_qa_mb_rules_get_info_usuario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Info_Usuario.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js")
 let appconsumos_qa_mb_rules_ingenio_actualizarequipos_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js")
 let appconsumos_qa_mb_rules_ingenio_filter_equipos_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Filter_Equipos_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Filter_Equipos_Ingenio.js")
@@ -182,6 +189,8 @@ module.exports = {
 	appconsumos_qa_mb_pages_application_about_page : appconsumos_qa_mb_pages_application_about_page,
 	appconsumos_qa_mb_pages_application_support_page : appconsumos_qa_mb_pages_application_support_page,
 	appconsumos_qa_mb_pages_application_useractivitylog_page : appconsumos_qa_mb_pages_application_useractivitylog_page,
+	appconsumos_qa_mb_pages_campo_filtro_campo_page : appconsumos_qa_mb_pages_campo_filtro_campo_page,
+	appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page : appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
 	appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page : appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page,
@@ -203,6 +212,11 @@ module.exports = {
 	appconsumos_qa_mb_rules_application_getclientversion_js : appconsumos_qa_mb_rules_application_getclientversion_js,
 	appconsumos_qa_mb_rules_application_onwillupdate_js : appconsumos_qa_mb_rules_application_onwillupdate_js,
 	appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js : appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js,
+	appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js : appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js,
+	appconsumos_qa_mb_rules_campo_navto_campo_js : appconsumos_qa_mb_rules_campo_navto_campo_js,
+	appconsumos_qa_mb_rules_campo_navto_list_campo_js : appconsumos_qa_mb_rules_campo_navto_list_campo_js,
+	appconsumos_qa_mb_rules_campo_select_almacen_js : appconsumos_qa_mb_rules_campo_select_almacen_js,
+	appconsumos_qa_mb_rules_campo_target_lista_campo_js : appconsumos_qa_mb_rules_campo_target_lista_campo_js,
 	appconsumos_qa_mb_rules_get_info_usuario_js : appconsumos_qa_mb_rules_get_info_usuario_js,
 	appconsumos_qa_mb_rules_ingenio_actualizarequipos_js : appconsumos_qa_mb_rules_ingenio_actualizarequipos_js,
 	appconsumos_qa_mb_rules_ingenio_filter_equipos_ingenio_js : appconsumos_qa_mb_rules_ingenio_filter_equipos_ingenio_js,
@@ -942,15 +956,31 @@ function ResetAppSettingsAndLogout(clientAPI) {
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js":
+/*!************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js ***!
+  \************************************************************************/
+=======
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js":
 /*!********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js ***!
   \********************************************************************************/
+>>>>>>> develop
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+<<<<<<< HEAD
+/* harmony export */   "default": () => (/* binding */ NavTo_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function NavTo_Campo(context) {
+=======
 /* harmony export */   "default": () => (/* binding */ ActualizarEquipos)
 /* harmony export */ });
 /**
@@ -1048,6 +1078,7 @@ __webpack_require__.r(__webpack_exports__);
  * @param {xontext} clientAPI
  */
 function NavTo_Ingenio(context) {
+>>>>>>> develop
   let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
   let info = clientData.info_user;
   if (!clientData.info_user) {
@@ -1063,7 +1094,11 @@ function NavTo_Ingenio(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
       "Properties": {
+<<<<<<< HEAD
+        "PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page"
+=======
         "PageToOpen": "/appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page"
+>>>>>>> develop
       }
     });
   }
@@ -1078,6 +1113,138 @@ function NavTo_Ingenio(context) {
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js":
+/*!*****************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavTo_List_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function NavTo_List_Campo(context) {
+  let centro = context.evaluateTargetPath('#Page:Filtro_Campo/#Control:almacen_campo/#Value')[0].BindingObject.centro;
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
+  clientData.centro = centro;
+  clientData.lista_campo = [];
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+    "Properties": {
+      "PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page"
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js":
+/*!***************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Select_almacen)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Select_almacen(context) {
+  let almacen = context.evaluateTargetPath('#Page:Filtro_Campo/#Control:almacen_campo/#Value');
+  const pageProxy = context.getPageProxy();
+  var btn_component = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton0");
+  if (almacen.length > 0) {
+    btn_component.setEnabled(true);
+  } else {
+    btn_component.setEnabled(false);
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Target_Lista_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Target_Lista_Campo(context) {
+  let target = context.evaluateTargetPath("#Page:Filtro_Campo/#ClientData/#Property:lista_campo");
+  let searchString = context.searchString;
+  if (searchString) {
+    let searchResult = target.filter(prod => {
+      return prod.orden.includes(searchString) || prod.orden_desc.includes(searchString) || prod.centro_plan.includes(searchString) || prod.grupo_plan.includes(searchString) || prod.equipo.includes(searchString) || prod.equipo_desc.includes(searchString) || prod.reserva.includes(searchString) || prod.sociedad.includes(searchString);
+    });
+    target = searchResult;
+  }
+  return target;
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js":
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_List_Campo_Equipo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function get_List_Campo_Equipo(context) {
+  const pageProxy = context.getPageProxy();
+  let equipos = context.evaluateTargetPath('#Page:Lista_Ordenes_Campo/#Control:filtro_equipos/#Value');
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
+  var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
+  if (equipos < 1) {
+    clientData.lista_campo = [];
+    return list_component.redraw();
+  }
+  let filtro = '$filter=';
+  equipos.forEach(e => {
+    filtro += `equipo eq '${e.BindingObject.equipo}' or`;
+  });
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Ordenes', [], filtro.slice(0, -3)).then(async results => {
+    if (results && results.length > 0) {
+      alert(results.length);
+      clientData.lista_campo = results;
+      list_component.redraw();
+    } else {
+      clientData.lista_campo = [];
+      list_component.redraw();
+    }
+  });
+}
+
+/***/ }),
+
+=======
+>>>>>>> develop
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js":
 /*!************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js ***!
@@ -1434,6 +1601,7 @@ __webpack_require__.r(__webpack_exports__);
 function get_Info_Usuario(context) {
   let email = context.evaluateTargetPath('#Application/#AppData/UserId').toUpperCase();
   let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  clientData.info_user = {};
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=correo eq '${email}'`).then(async results => {
     if (results && results.length > 0) {
       clientData.info_user = results.getItem(0);
@@ -1796,7 +1964,11 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \***************************************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{nombre}","Description":"{cargo}","StatusText":"{sociedad}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{correo}","HeadlineText":"{ficha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":["{rol}"],"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol_edit","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para el usuario","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Autorizador","Auxiliar","Técnico"]}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js","_Type":"Control.Type.FormCell.Switch","_Name":"estado_edit","IsVisible":true,"Separator":true,"Caption":"Estado","OnValueChange":"/appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js","HelperText":"{estado}","IsEditable":true},{"Value":"{isAdmin}","_Type":"Control.Type.FormCell.Switch","_Name":"isadmin_edit","IsVisible":true,"Separator":true,"Caption":"¿Usuario Administrador?","HelperText":"Si activas este campo el usuario será administrador de la aplicación","IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Actualizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"}]}],"_Type":"Page","_Name":"Editar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Editar Usuario"}}
+=======
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{nombre}","Description":"{cargo}","StatusText":"{sociedad}","DetailImageIsCircular":false,"BodyText":"{correo}","HeadlineText":"{ficha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":["{rol}"],"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol_edit","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para el usuario","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Autorizador","Auxiliar","Técnico"]}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js","_Type":"Control.Type.FormCell.Switch","_Name":"estado_edit","IsVisible":true,"Separator":true,"Caption":"Estado","OnValueChange":"/appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js","HelperText":"{estado}","IsEditable":true},{"Value":"{isAdmin}","_Type":"Control.Type.FormCell.Switch","_Name":"isadmin_edit","IsVisible":true,"Separator":true,"Caption":"¿Usuario Administrador?","HelperText":"Si activas este campo el usuario será administrador de la aplicación","IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Actualizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"}]}],"_Type":"Page","_Name":"Editar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Editar Usuario"}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -1860,6 +2032,26 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page":
+/*!***************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page ***!
+  \***************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo ordenes de mantemiento en Campo","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"Visible":true},{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"almacen_campo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","HelperText":"Debes seleccionar un alamacen para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/Select_almacen.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{tipo}","SubstatusText":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Ver listado","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js"}],"Layout":{"NumberOfColumns":1}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Filtro_Campo","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Ordenes Campo"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page":
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page ***!
+  \**********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"filtro_equipos","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Equipo","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona equipos","HelperText":"Debes seleccionar al menos un equipo para mostrar las ordenes asociadas","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar equipo...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Equipos","QueryOptions":"$filter=centro eq '{{#Page:Filtro_Campo/#ClientData/centro}}' and sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}'"},"ObjectCell":{"Description":"{equipo_desc}","PreserveIconStackSpacing":false,"StatusText":"{centro}","Subhead":"{tipo}","SubstatusText":"{sociedad}","Title":"{equipo}","Visible":true},"ReturnValue":"{equipo}"}}],"Layout":{"NumberOfColumns":1}},{"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay ordenes para mostrar","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"{orden}","Subhead":"{orden_desc}","Footnote":"{equipo}","Description":"{equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"{reserva}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Green","Text":"{estado}"}],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"Search":{"Enabled":true,"Placeholder":"Buscar...","BarcodeScanner":true,"Mode":"Persistent"},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Lista_Ordenes_Campo","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Lista Ordenes Campo"}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page":
 /*!*****************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page ***!
@@ -1906,7 +2098,11 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \*************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.Image","_Name":"SectionImage0","Visible":true,"Image":"/appconsumos_qa_mb/Images/logo_both.png","Width":720,"Height":82,"Alignment":"Center","ContentMode":"Center","PaddingTop":10},{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
+=======
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.Image","_Name":"SectionImage0","Visible":true,"Image":"/appconsumos_qa_mb/Images/logo_both.png","Width":173,"Height":22,"Alignment":"Center","ContentMode":"Center","PaddingTop":10},{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -2417,7 +2613,7 @@ module.exports = {"DestinationName":"app.consumos.qa","OfflineEnabled":true,"Sou
 /***/ ((module) => {
 
 "use strict";
-module.exports = "data:image/png;base64,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";
+module.exports = "data:image/png;base64,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";
 
 /***/ }),
 

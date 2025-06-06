@@ -13,6 +13,7 @@
 						"Subhead": "{nombre}",
 						"Description": "{cargo}",
 						"StatusText": "{sociedad}",
+						"DetailImage": "sap-icon://customer",
 						"DetailImageIsCircular": false,
 						"BodyText": "{correo}",
 						"HeadlineText": "{ficha}",
