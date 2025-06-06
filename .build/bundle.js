@@ -56,6 +56,11 @@ let appconsumos_qa_mb_actions_logging_uploadlogprogress_action = __webpack_requi
 let appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action")
 let appconsumos_qa_mb_actions_odata_create_almacenesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action")
 let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
+let appconsumos_qa_mb_actions_odata_delete_almacenesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Delete_AlmacenesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Delete_AlmacenesApp.action")
+let appconsumos_qa_mb_actions_odata_req_update_almacenes_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Req_Update_Almacenes.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Almacenes.action")
+let appconsumos_qa_mb_actions_odata_req_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action")
+let appconsumos_qa_mb_actions_odata_update_almacenes_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Almacenes.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Almacenes.action")
+let appconsumos_qa_mb_actions_odata_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action")
 let appconsumos_qa_mb_globals_application_appdefinition_version_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global")
 let appconsumos_qa_mb_globals_application_applicationname_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/ApplicationName.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/ApplicationName.global")
 let appconsumos_qa_mb_globals_application_supportemail_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportEmail.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportEmail.global")
@@ -65,14 +70,22 @@ let appconsumos_qa_mb_images_logo_both_png = __webpack_require__(/*! ./appconsum
 let appconsumos_qa_mb_jsconfig_json = __webpack_require__(/*! ./appconsumos_qa_mb/jsconfig.json */ "./build.definitions/appconsumos_qa_mb/jsconfig.json")
 let appconsumos_qa_mb_pages_administracion_agregar_almacenes_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Agregar_Almacenes.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Agregar_Almacenes.page")
 let appconsumos_qa_mb_pages_administracion_agregar_usuarios_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Agregar_Usuarios.page")
+let appconsumos_qa_mb_pages_administracion_editar_almacenes_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Editar_Almacenes.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Almacenes.page")
+let appconsumos_qa_mb_pages_administracion_editar_usuarios_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page")
 let appconsumos_qa_mb_pages_administracion_inicio_admin_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page")
-let appconsumos_qa_mb_pages_administracion_lista_empleados_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page")
+let appconsumos_qa_mb_pages_administracion_lista_almacenes_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page")
+let appconsumos_qa_mb_pages_administracion_lista_usuarios_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page */ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page")
 let appconsumos_qa_mb_pages_application_about_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/About.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/About.page")
 let appconsumos_qa_mb_pages_application_support_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/Support.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/Support.page")
 let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/UserActivityLog.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/UserActivityLog.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
+let appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page")
+let appconsumos_qa_mb_pages_ingenio_lista_ordenes_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Lista_Ordenes_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Lista_Ordenes_Ingenio.page")
 let appconsumos_qa_mb_pages_main_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Main.page */ "./build.definitions/appconsumos_qa_mb/Pages/Main.page")
+let appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js")
+let appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js")
+let appconsumos_qa_mb_rules_administracion_create_almacenes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Create_Almacenes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Almacenes.js")
 let appconsumos_qa_mb_rules_administracion_create_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js")
 let appconsumos_qa_mb_rules_administracion_get_estado_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/get_Estado.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Estado.js")
 let appconsumos_qa_mb_rules_administracion_get_rol_admin_list_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js")
@@ -87,6 +100,9 @@ let appconsumos_qa_mb_rules_application_getclientversion_js = __webpack_require_
 let appconsumos_qa_mb_rules_application_onwillupdate_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/OnWillUpdate.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js")
 let appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js")
 let appconsumos_qa_mb_rules_get_info_usuario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Info_Usuario.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js")
+let appconsumos_qa_mb_rules_ingenio_actualizarequipos_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js")
+let appconsumos_qa_mb_rules_ingenio_filter_equipos_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Filter_Equipos_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Filter_Equipos_Ingenio.js")
+let appconsumos_qa_mb_rules_ingenio_navto_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js")
 let appconsumos_qa_mb_rules_logging_loglevels_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/LogLevels.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js")
 let appconsumos_qa_mb_rules_logging_settracecategories_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/SetTraceCategories.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/SetTraceCategories.js")
 let appconsumos_qa_mb_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/SetUserLogLevel.js")
@@ -144,6 +160,11 @@ module.exports = {
 	appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action : appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action,
 	appconsumos_qa_mb_actions_odata_create_almacenesapp_action : appconsumos_qa_mb_actions_odata_create_almacenesapp_action,
 	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
+	appconsumos_qa_mb_actions_odata_delete_almacenesapp_action : appconsumos_qa_mb_actions_odata_delete_almacenesapp_action,
+	appconsumos_qa_mb_actions_odata_req_update_almacenes_action : appconsumos_qa_mb_actions_odata_req_update_almacenes_action,
+	appconsumos_qa_mb_actions_odata_req_update_empleados_action : appconsumos_qa_mb_actions_odata_req_update_empleados_action,
+	appconsumos_qa_mb_actions_odata_update_almacenes_action : appconsumos_qa_mb_actions_odata_update_almacenes_action,
+	appconsumos_qa_mb_actions_odata_update_empleados_action : appconsumos_qa_mb_actions_odata_update_empleados_action,
 	appconsumos_qa_mb_globals_application_appdefinition_version_global : appconsumos_qa_mb_globals_application_appdefinition_version_global,
 	appconsumos_qa_mb_globals_application_applicationname_global : appconsumos_qa_mb_globals_application_applicationname_global,
 	appconsumos_qa_mb_globals_application_supportemail_global : appconsumos_qa_mb_globals_application_supportemail_global,
@@ -153,14 +174,22 @@ module.exports = {
 	appconsumos_qa_mb_jsconfig_json : appconsumos_qa_mb_jsconfig_json,
 	appconsumos_qa_mb_pages_administracion_agregar_almacenes_page : appconsumos_qa_mb_pages_administracion_agregar_almacenes_page,
 	appconsumos_qa_mb_pages_administracion_agregar_usuarios_page : appconsumos_qa_mb_pages_administracion_agregar_usuarios_page,
+	appconsumos_qa_mb_pages_administracion_editar_almacenes_page : appconsumos_qa_mb_pages_administracion_editar_almacenes_page,
+	appconsumos_qa_mb_pages_administracion_editar_usuarios_page : appconsumos_qa_mb_pages_administracion_editar_usuarios_page,
 	appconsumos_qa_mb_pages_administracion_inicio_admin_page : appconsumos_qa_mb_pages_administracion_inicio_admin_page,
-	appconsumos_qa_mb_pages_administracion_lista_empleados_page : appconsumos_qa_mb_pages_administracion_lista_empleados_page,
+	appconsumos_qa_mb_pages_administracion_lista_almacenes_page : appconsumos_qa_mb_pages_administracion_lista_almacenes_page,
+	appconsumos_qa_mb_pages_administracion_lista_usuarios_page : appconsumos_qa_mb_pages_administracion_lista_usuarios_page,
 	appconsumos_qa_mb_pages_application_about_page : appconsumos_qa_mb_pages_application_about_page,
 	appconsumos_qa_mb_pages_application_support_page : appconsumos_qa_mb_pages_application_support_page,
 	appconsumos_qa_mb_pages_application_useractivitylog_page : appconsumos_qa_mb_pages_application_useractivitylog_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
+	appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page : appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page,
+	appconsumos_qa_mb_pages_ingenio_lista_ordenes_ingenio_page : appconsumos_qa_mb_pages_ingenio_lista_ordenes_ingenio_page,
 	appconsumos_qa_mb_pages_main_page : appconsumos_qa_mb_pages_main_page,
+	appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js : appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js,
+	appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js : appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js,
+	appconsumos_qa_mb_rules_administracion_create_almacenes_js : appconsumos_qa_mb_rules_administracion_create_almacenes_js,
 	appconsumos_qa_mb_rules_administracion_create_usuarios_js : appconsumos_qa_mb_rules_administracion_create_usuarios_js,
 	appconsumos_qa_mb_rules_administracion_get_estado_js : appconsumos_qa_mb_rules_administracion_get_estado_js,
 	appconsumos_qa_mb_rules_administracion_get_rol_admin_list_js : appconsumos_qa_mb_rules_administracion_get_rol_admin_list_js,
@@ -175,6 +204,9 @@ module.exports = {
 	appconsumos_qa_mb_rules_application_onwillupdate_js : appconsumos_qa_mb_rules_application_onwillupdate_js,
 	appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js : appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js,
 	appconsumos_qa_mb_rules_get_info_usuario_js : appconsumos_qa_mb_rules_get_info_usuario_js,
+	appconsumos_qa_mb_rules_ingenio_actualizarequipos_js : appconsumos_qa_mb_rules_ingenio_actualizarequipos_js,
+	appconsumos_qa_mb_rules_ingenio_filter_equipos_ingenio_js : appconsumos_qa_mb_rules_ingenio_filter_equipos_ingenio_js,
+	appconsumos_qa_mb_rules_ingenio_navto_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_ingenio_js,
 	appconsumos_qa_mb_rules_logging_loglevels_js : appconsumos_qa_mb_rules_logging_loglevels_js,
 	appconsumos_qa_mb_rules_logging_settracecategories_js : appconsumos_qa_mb_rules_logging_settracecategories_js,
 	appconsumos_qa_mb_rules_logging_setuserloglevel_js : appconsumos_qa_mb_rules_logging_setuserloglevel_js,
@@ -191,6 +223,197 @@ module.exports = {
 	application_app : application_app,
 	tsconfig_json : tsconfig_json,
 	version_mdkbundlerversion : version_mdkbundlerversion
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Bool_Estado_Usuarios)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Bool_Estado_Usuarios(context) {
+  try {
+    var object = context.binding;
+    var estado = object.estado;
+    if (estado == "Activo") {
+      return true;
+    }
+    if (estado == "Inactivo") {
+      return false;
+    }
+  } catch (error) {
+    console.error("Ocurrió un error al obtener el valor:", error);
+    alert("No se pudo obtener el valor: " + error.message);
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Color_Estado_Usuarios)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Color_Estado_Usuarios(context) {
+  try {
+    var object = context.binding;
+    var estado = object.estado;
+    if (estado == "Activo") {
+      return "Green";
+    }
+    if (estado == "Inactivo") {
+      return "Red";
+    }
+  } catch (error) {
+    console.error("Ocurrió un error al obtener el valor:", error);
+    alert("No se pudo obtener el valor: " + error.message);
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Almacenes.js":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Almacenes.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Create_Almacenes)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {context} clientAPI
+ */
+function Create_Almacenes(context) {
+  let lista_almacenes = context.evaluateTargetPath('#Page:Agregar_Almacenes/#Control:FormCellListPicker_Almacenes/#Value');
+  let tipo_almacen = context.evaluateTargetPath('#Page:Agregar_Almacenes/#Control:FormCellListPicker_Tipo/#Value');
+  let repetidos = "";
+  let errores = [];
+  let exitosos = [];
+  if (lista_almacenes.length < 1) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes seleccionar al menos un almacén de la lista para continuar.`
+      }
+    });
+  }
+  if (!tipo_almacen || tipo_almacen < 1) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes seleccionar un tipo de almacen.`
+      }
+    });
+  }
+  let tipoalmacen_value = tipo_almacen[0].ReturnValue;
+  let promises = lista_almacenes.map((almacen, i) => {
+    let nuevo_almacen = almacen.BindingObject;
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'AlmacenesApp', [], `$filter=almacen eq '${nuevo_almacen.almacen}'`).then(result => {
+      if (result.length === 0) {
+        return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action",
+          "Properties": {
+            "Properties": {
+              "sociedad": nuevo_almacen.sociedad,
+              "almacen": nuevo_almacen.almacen,
+              "centro": nuevo_almacen.centro,
+              "almacen_desc": nuevo_almacen.almacen_desc,
+              "tipo": tipoalmacen_value
+            }
+          }
+        }).then(() => {
+          exitosos.push(`${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc})`);
+        }).catch(() => {
+          errores.push(`${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc})`);
+        });
+      }
+      repetidos += `${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc}), `;
+      return Promise.resolve();
+    }).catch(() => {
+      errores.push(`${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc})`);
+    });
+  });
+  Promise.allSettled(promises).then(() => {
+    // Primero mostramos repetidos (si existen)
+    let repetidosPromise = Promise.resolve();
+    if (repetidos.length > 0) {
+      repetidosPromise = context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Repetidos",
+          "Message": `Se encontraron almacenes ya creados: ${repetidos}`
+        }
+      });
+    }
+
+    // Después de mostrar repetidos mostramos los otros mensajes
+    repetidosPromise.then(() => {
+      let mensajePromise;
+      if (errores.length > 0 && exitosos.length === 0) {
+        // Si todo falló
+        mensajePromise = context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Error",
+            "Message": `Falló la creación de los almacenes.`
+          }
+        });
+      } else if (errores.length > 0 && exitosos.length > 0) {
+        // Algunos fallaron, otros no
+        mensajePromise = context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Alerta parcial",
+            "Message": `Algunos almacenes fueron creados exitosamente.\n\nAlmacenes con error:\n${errores.join('\n')}`
+          }
+        });
+      } else {
+        // Todo fue exitoso
+        mensajePromise = context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Creación exitosa",
+            "Message": `Los Almacenes fueron creados exitosamente`
+          }
+        });
+      }
+
+      // Finalmente, después de mostrar el mensaje final, cerramos la ventana
+      mensajePromise.then(() => {
+        context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+          "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page"
+        });
+      });
+    });
+  });
 }
 
 /***/ }),
@@ -719,6 +942,142 @@ function ResetAppSettingsAndLogout(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js":
+/*!********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ActualizarEquipos)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {context} clientAPI
+ */
+function ActualizarEquipos(context) {
+  let formCell = context.getPageProxy().getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellListPicker_Equipos");
+  formCell.setVisible(false);
+  formCell.setValue('');
+  formCell.setVisible(true);
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Filter_Equipos_Ingenio.js":
+/*!*************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Filter_Equipos_Ingenio.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Filter_Equipos_Ingenio)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {context} clientAPI
+ */
+async function Filter_Equipos_Ingenio(context) {
+  /**
+   * 
+   *     const pageProxy = context.getPageProxy();
+   // Obtener el centro (almacén) seleccionado
+  let almacen = context.evaluateTargetPath('#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#SelectedValue');
+   // Obtener la sociedad del usuario actual
+  let sociedad = context.evaluateTargetPath('#Page:Main/#ClientData/info_user/sociedad');
+   // Validar que ambos valores existan
+  if (!almacen || !sociedad) {
+      console.log("Almacén o sociedad no definidos");
+      return;
+  }
+   // Construir el filtro OData
+  let query = `$filter=sociedad eq '${sociedad}' and centro eq '${almacen}'`;
+   // Leer los datos (opcional, para verificar si devuelve algo)
+  try {
+      let result = await context.read(
+          '/appconsumos_qa_mb/Services/app_consumos_qa.service',
+          'Equipos',
+          [],
+          query
+      );
+       // Referencia al picker de equipos
+      let formCell = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellListPicker_Equipos");
+       // Limpia el picker anterior y lo actualiza con el nuevo target
+      formCell.setValue('');
+      formCell.setTarget('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Equipos', query);
+      formCell.setEditable(true);
+       alert(`Equipos filtrados por centro: ${almacen} y sociedad: ${sociedad}`);
+      return result;
+  } catch (error) {
+      alert("Error al leer los equipos: " + error);
+  }
+    
+   */
+  // Leer el valor seleccionado del almacén
+
+  const pageProxy = context.getPageProxy();
+  const almacen = pageProxy.evaluateTargetPath('#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#SelectedValue');
+  const sociedad = pageProxy.evaluateTargetPath('#Page:Main/#ClientData/info_user/sociedad');
+  alert('Almacén:', almacen);
+  alert('Sociedad:', sociedad);
+  if (almacen && sociedad) {
+    return `$filter=sociedad eq '${sociedad}' and centro eq '${almacen}'`;
+  }
+  return '';
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js":
+/*!****************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavTo_Ingenio)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {xontext} clientAPI
+ */
+function NavTo_Ingenio(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info = clientData.info_user;
+  if (!clientData.info_user) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
+      "Properties": {
+        "Message": `Sincronizando datos, por favor espera un momento...`,
+        "Duration": 1
+      }
+    });
+  }
+  if (info.estado == 'Activo') {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+      "Properties": {
+        "PageToOpen": "/appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page"
+      }
+    });
+  }
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+      "Title": "Alerta",
+      "Message": `No tienes permisos para ingresar a este modulo`
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js":
 /*!************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js ***!
@@ -1133,7 +1492,11 @@ ActionBar {
   color: white;
   background-color: #72BE44;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nActionBar {\n  color: white;\n  background-color: #048c3c;\n}\n.HeaderAdmin {\n  color: white;\n  background-color: #048c3c;\n}\n.HeaderAdminTitle {\n  color: white;\n}\n.Button {\n  color: white;\n  background-color: #048c3c;\n}\n"],"sourceRoot":""}]);
+.Button_Eliminar {
+  color: white;
+  background-color: #dd1c1cd8;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,aAAa;EACb,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,2BAA2B;AAC7B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nActionBar {\n  color: white ;\n  background-color: #72BE44;\n}\n.HeaderAdmin {\n  color: white;\n  background-color: #72BE44;\n}\n.HeaderAdminTitle {\n  color: white;\n}\n.Button {\n  color: white;\n  background-color: #72BE44;\n}\n.Button_Eliminar {\n  color: white;\n  background-color: #dd1c1cd8;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1189,8 +1552,13 @@ ActionBar {
 
 .Button{
     color:white; 
-    background-color: #048c3c;
-}`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\nActionBar {\n    color:white;\n    background-color: #048c3c;\n}\n\n.HeaderAdmin{\n    color:white;\n    background-color: #048c3c;\n}\n\n.HeaderAdminTitle{\n    color:white;\n}\n\n.Button{\n    color:white; \n    background-color: #048c3c;\n}"],"sourceRoot":""}]);
+    background-color: #72BE44;
+}
+
+.Button_Eliminar{
+    color:white; 
+    background-color: #dd1c1cd8;
+}`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,2BAA2B;AAC/B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\nActionBar {\n    color:white ; \n    background-color: #72BE44;\n}\n\n.HeaderAdmin{\n    color:white;\n    background-color: #72BE44;\n}\n\n.HeaderAdminTitle{\n    color:white;\n}\n\n.Button{\n    color:white; \n    background-color: #72BE44;\n}\n\n.Button_Eliminar{\n    color:white; \n    background-color: #dd1c1cd8;\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1223,7 +1591,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ns-light ActionBar {
 	color: white;
 	background-color: #72BE44;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #048c3c;\n}\n"],"sourceRoot":""}]);
+.ns-light .Button_Eliminar {
+	color: white;
+	background-color: #dd1c1cd8;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,2BAA2B;AAC5B","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .Button_Eliminar {\n\tcolor: white;\n\tbackground-color: #dd1c1cd8;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1256,7 +1628,11 @@ Button {
 	font-color: white;
 	background-color: #72BE44;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B","sourcesContent":["ActionBar {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\nHeaderAdmin {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\nHeaderAdminTitle {\n\tfont-color: white;\n}\nButton {\n\tfont-color: white;\n\tbackground-color: #048c3c;\n}\n"],"sourceRoot":""}]);
+Button_Eliminar {
+	font-color: white;
+	background-color: #dd1c1cd8;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,2BAA2B;AAC5B","sourcesContent":["ActionBar {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdmin {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdminTitle {\n\tfont-color: white;\n}\nButton {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nButton_Eliminar {\n\tfont-color: white;\n\tbackground-color: #dd1c1cd8;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1400,7 +1776,27 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"ListaEmpleados","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":false,"Caption":"Seleccionar Empleados","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona uno o varios empleados","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Empleados..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Empleados"},"ObjectCell":{"Description":"{cargo}","PreserveIconStackSpacing":false,"Subhead":"{nombre}","SubstatusText":"{sociedad}","Tags":[{"Color":"Grey","Text":"{correo}"}],"Title":"{ficha}","Visible":true},"ReturnValue":"{ficha}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para los usuarios","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Administrador","Autorizador","Auxiliar","Técnico"]},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker2","IsVisible":false,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","IsSelectedSectionEnabled":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar almacen ...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{almacen_desc}","SubstatusText":"{centro}","Title":"{almacen}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Crear","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Agregar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Empleados"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Agregar Usuarios"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"ListaEmpleados","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Seleccionar Empleados","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona uno o varios empleados","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Empleados..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Empleados"},"ObjectCell":{"Description":"{cargo}","PreserveIconStackSpacing":false,"Subhead":"{nombre}","SubstatusText":"{sociedad}","Tags":[{"Color":"Grey","Text":"{correo}"}],"Title":"{ficha}","Visible":true},"ReturnValue":"{ficha}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para los usuarios","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Autorizador","Auxiliar","Técnico"]},{"Value":false,"_Type":"Control.Type.FormCell.Switch","_Name":"isadmin","IsVisible":true,"Separator":true,"Caption":"¿Usuario Administrador?","HelperText":"Si activas este campo los usuarios se crearan como administradores de la aplicación","IsEditable":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker2","IsVisible":false,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacen","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacen","IsSelectedSectionEnabled":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar almacen ...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{almacen_desc}","SubstatusText":"{centro}","Title":"{almacen}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Crear","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/Create_Usuarios.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Agregar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Agregar Usuarios"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Almacenes.page":
+/*!****************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Almacenes.page ***!
+  \****************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"Subhead":"{almacen_desc}","StatusText":"{centro}","SubstatusText":"{sociedad}","DetailImageIsCircular":false,"HeadlineText":"{almacen}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":["{tipo}"],"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Tipo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Tipo","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccione un solo tipo","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["INGENIO","CAMPO"]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton_Update","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Actualizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Actions/oData/Req_Update_Almacenes.action"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton_Delete","IsVisible":true,"Separator":true,"Styles":{"Button":"Button_Eliminar"},"Title":"Eliminar Almacén","Alignment":"Center","ButtonType":"Primary","Semantic":"Negative","ImagePosition":"Leading","Enabled":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Está seguro que desea eliminar el Almacén?","Title":"Eliminar","OKCaption":"Eliminar","OnOK":"/appconsumos_qa_mb/Actions/oData/Delete_AlmacenesApp.action","CancelCaption":"Cancelar"}}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Editar_Almacenes","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Editar Almacén"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{nombre}","Description":"{cargo}","StatusText":"{sociedad}","DetailImageIsCircular":false,"BodyText":"{correo}","HeadlineText":"{ficha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":["{rol}"],"_Type":"Control.Type.FormCell.ListPicker","_Name":"rol_edit","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Rol","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un rol para el usuario","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":["Autorizador","Auxiliar","Técnico"]}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js","_Type":"Control.Type.FormCell.Switch","_Name":"estado_edit","IsVisible":true,"Separator":true,"Caption":"Estado","OnValueChange":"/appconsumos_qa_mb/Rules/Administracion/Switch_Estado.js","HelperText":"{estado}","IsEditable":true},{"Value":"{isAdmin}","_Type":"Control.Type.FormCell.Switch","_Name":"isadmin_edit","IsVisible":true,"Separator":true,"Caption":"¿Usuario Administrador?","HelperText":"Si activas este campo el usuario será administrador de la aplicación","IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Actualizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"}]}],"_Type":"Page","_Name":"Editar_Usuarios","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}}}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Editar Usuario"}}
 
 /***/ }),
 
@@ -1410,7 +1806,17 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","DataSubscriptions":[],"_Name":"SectionObjectHeader0","ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo Administrador","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"Visible":true},{"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ContactCells":[{"ContactCell":{"_Name":"ContactCellItem0","DetailImage":"sap-icon://user-edit","Headline":"Administrar Usuarios","Subheadline":"Configurar roles y alces para los usuarios","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"}},"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}},{"ContactCell":{"_Name":"ContactCellItem1","DetailImage":"sap-icon://home","Headline":"Administrar Almacenes","Subheadline":"Asignar almacenes a campo o ingenio","Description":"","Visible":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true}}}]}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Inicio_Admin","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo Administrador","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","DataSubscriptions":[],"_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://user-edit","Headline":"Administrar Usuarios","Subheadline":"Configurar roles y alces para los usuarios","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page"}}}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://home","Headline":"Administrar Almacenes","Subheadline":"Asignar almacenes a campo o ingenio","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page"}}}}]}]}],"_Type":"Page","_Name":"Inicio_Admin","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"FastFilters":[{"_Type":"Control.Type.FastFilterItem","_Name":"FastFilter0","DisplayValue":"Campo","ReturnValue":"tipo eq 'CAMPO'","FilterType":"Filter"},{"_Type":"Control.Type.FastFilterItem","_Name":"FastFilter1","DisplayValue":"Ingenio","ReturnValue":"tipo eq 'INGENIO'","FilterType":"Filter"}],"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$orderby=almacen"},"_Name":"SectionObjectTable1","Visible":true,"EmptySection":{"Caption":"No hay Almacenes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{almacen} - {almacen_desc}","Subhead":"{tipo}","DisplayDescriptionInMobile":true,"StatusText":"{centro}","SubstatusText":"{sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://edit","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://home"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Editar_Almacenes.page","ModalPage":true}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Almacén...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Almacenes","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Agregar Almacenes","Icon":"sap-icon://sys-add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Administracion/Agregar_Almacenes.page","ModalPage":true}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Lista Almacenes"}}
 
 /***/ }),
 
@@ -1474,13 +1880,33 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page ***!
+  \*******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo Ordenes de mantenimiento de Ingenio","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Almacen_O","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccione un Almacén","OnValueChange":"/appconsumos_qa_mb/Rules/Ingenio/ActualizarEquipos.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'INGENIO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":true,"Subhead":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Equipos","IsVisible":false,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Equipos","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Equipos","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Filter_Equipos_Ingenio.js"},"ObjectCell":{"PreserveIconStackSpacing":false,"StatusText":"{centro}","Subhead":"{equipo_desc}","Title":"{equipo}","Visible":true},"ReturnValue":"{equipo}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton_Buscar","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Buscar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Ingenio/Lista_Ordenes_Ingenio.page"}}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Ingenio","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Ordenes Ingenio"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Lista_Ordenes_Ingenio.page":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Lista_Ordenes_Ingenio.page ***!
+  \**************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Ordenes"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"Title","Subhead":"Subhead","Footnote":"Footnote","Description":"Description","DisplayDescriptionInMobile":true,"StatusText":"Status","SubstatusText":"Substatus","PreserveIconStackSpacing":true,"AccessoryType":"None","ProgressIndicator":"InProgress","Tags":[{"Text":"tag"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Lista_Ordenes_Ingenio","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Ordenes Ingenio"}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/Main.page":
 /*!*************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/Main.page ***!
   \*************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.Image","_Name":"SectionImage0","Visible":true,"Image":"/appconsumos_qa_mb/Images/logo_both.png","Width":173,"Height":22,"Alignment":"Center","ContentMode":"Center","PaddingTop":10},{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.Image","_Name":"SectionImage0","Visible":true,"Image":"/appconsumos_qa_mb/Images/logo_both.png","Width":173,"Height":22,"Alignment":"Center","ContentMode":"Center","PaddingTop":10},{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Ordenes de Campo","Description":"","Visible":true}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Ordenes de Ingenio","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -1880,7 +2306,57 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
   \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_EmpleadosApp"},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"Properties":{"ficha":"","nombre":"","correo":"","rol":"","cargo":"","sociedad":""}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_EmpleadosApp"},"ShowActivityIndicator":true,"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp"},"Properties":{"ficha":"","nombre":"","correo":"","rol":"","cargo":"","sociedad":""}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Delete_AlmacenesApp.action":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Delete_AlmacenesApp.action ***!
+  \**************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.DeleteEntity","ActionResult":{"_Name":"Delete_AlmacenesApp"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al eliminar el almacén: {#ActionResults:Delete_AlmacenesApp/error}","Title":"Error al Eliminar","OKCaption":"Ok"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Message":"Eliminación Exitosa","Title":"Almacén eliminado exitosamente","OKCaption":"Ok"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","ReadLink":"{@odata.readLink}"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Almacenes.action":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Almacenes.action ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.CheckRequiredFields","ActionResult":{"_Name":"Req_Update_Almacenes"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Debe de Seleccionar el tipo del Almacén","Title":"Error","OKCaption":"Ok"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Seguro que desea actualizar el almacén?","Title":"Actualizar","OKCaption":"Sí","OnOK":"/appconsumos_qa_mb/Actions/oData/Update_Almacenes.action","CancelCaption":"No"}},"RequiredFields":["FormCellListPicker_Tipo"]}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action ***!
+  \***************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.CheckRequiredFields","ActionResult":{"_Name":"Req_Update_Usuarios"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Debes seleccionar un rol para el usuario","Title":"Alerta","OKCaption":"Ok"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estas seguro que deseas actualizar el empleado?","Title":"Confirmación","OKCaption":"Actualizar","OnOK":"/appconsumos_qa_mb/Actions/oData/Update_Empleados.action","CancelCaption":"Cancelar"}},"ShowActivityIndicator":true,"RequiredFields":["rol_edit"]}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Almacenes.action":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Almacenes.action ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Almacenes"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al actualizar el almacén: {#ActionResults:Update_Almacenes/error}","Title":"Error al actualizar","OKCaption":"Ok"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Message":"Almacén Actualizado correctamente","Title":"Actualizado","OKCaption":"Ok"}},"ShowActivityIndicator":true,"ActivityIndicatorText":"Actualizando Almacén...","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","ReadLink":"{@odata.readLink}"},"Properties":{"tipo":"#Page:Editar_Almacenes/#Control:FormCellListPicker_Tipo/#Value/#First/DisplayValue"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Empleados"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al actualizar el empleado: {#ActionResults:Update_Empleados/error}","Title":"Error al actualizar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}},"Message":"Empleado actualizado exitosamente","Title":"Actualización exitosa","OKCaption":"Ok"}},"ShowActivityIndicator":true,"ActivityIndicatorText":"Actualizando empleado...","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp","ReadLink":"{@odata.readLink}"},"Properties":{"rol":"#Page:Editar_Usuarios/#Control:rol_edit/#Value/#First/DisplayValue","isAdmin":"#Page:Editar_Usuarios/#Control:isadmin_edit/#Value","estado":"/appconsumos_qa_mb/Rules/Administracion/get_Estado.js"}}
 
 /***/ }),
 
@@ -2004,7 +2480,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#048c3c"},"HeaderAdmin":{"font-color":"white","background-color":"#048c3c"},"HeaderAdminTitle":{"font-color":"white"},"Button":{"font-color":"white","background-color":"#048c3c"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#72BE44"},"HeaderAdmin":{"font-color":"white","background-color":"#72BE44"},"HeaderAdminTitle":{"font-color":"white"},"Button":{"font-color":"white","background-color":"#72BE44"},"Button_Eliminar":{"font-color":"white","background-color":"#dd1c1cd8"}}');
 
 /***/ }),
 
