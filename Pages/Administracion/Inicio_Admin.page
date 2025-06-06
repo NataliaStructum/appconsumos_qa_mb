@@ -69,7 +69,13 @@
 								"Headline": "Administrar Almacenes",
 								"Subheadline": "Asignar almacenes a campo o ingenio",
 								"Description": "",
-								"Visible": true
+								"Visible": true,
+								"OnPress": {
+									"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page"
+									}
+								}
 							}
 						}
 					]
