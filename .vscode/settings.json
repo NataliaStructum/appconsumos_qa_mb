@@ -9,7 +9,8 @@
         },
         "right": {
             "visible": true,
-            "width": 359
-        }
+            "width": 367
+        },
+        "device": "phone"
     }
 }
