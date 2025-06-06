@@ -23,7 +23,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": true,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"Caption": "Seleccionar Empleados",
 							"DataPaging": {
 								"ShowLoadingIndicator": false,
@@ -68,7 +68,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"Caption": "Rol",
 							"DataPaging": {
 								"ShowLoadingIndicator": false,
@@ -81,11 +81,20 @@
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"PickerItems": [
-								"Administrador",
 								"Autorizador",
 								"Auxiliar",
 								"Técnico"
 							]
+						},
+						{
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch",
+							"_Name": "isadmin",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "¿Usuario Administrador?",
+							"HelperText": "Si activas este campo los usuarios se crearan como administradores de la aplicación",
+							"IsEditable": true
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
@@ -171,7 +180,7 @@
 				"OnPress": {
 					"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
 					"Properties": {
-						"NavigateBackToPage": "Lista_Empleados"
+						"NavigateBackToPage": "Lista_Usuarios"
 					}
 				}
 			}

@@ -15,11 +15,12 @@ export default function Initialize(context) {
 
             "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
             "Properties": {
-                "Message": "Application Services Initialized",
+                "Message": "Servicio de la aplicación inicializado",
                 "Animated": true,
                 "Duration": 1,
                 "IsIconHidden": true,
-                "NumberOfLines": 1
+                "NumberOfLines": 1,
+                "OnSuccess": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action",
             }
         });
     }).catch(() => {

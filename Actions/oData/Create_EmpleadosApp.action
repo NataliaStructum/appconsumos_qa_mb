@@ -3,6 +3,7 @@
 	"ActionResult": {
 		"_Name": "Create_EmpleadosApp"
 	},
+	"ShowActivityIndicator": true,
 	"Target": {
 		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 		"EntitySet": "EmpleadosApp"

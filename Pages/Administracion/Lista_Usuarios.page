@@ -2,7 +2,37 @@
 	"Controls": [
 		{
 			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
+				"ShowAllFilters": true,
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter0",
+						"DisplayValue": "Administradores",
+						"ReturnValue": "isAdmin eq true",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter1",
+						"DisplayValue": "Auxiliares",
+						"ReturnValue": "rol eq 'Auxiliar'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter2",
+						"DisplayValue": "Autorizadores",
+						"ReturnValue": "rol eq 'Autorizador'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter3",
+						"DisplayValue": "Técnicos",
+						"ReturnValue": "rol eq 'Técnico'",
+						"FilterType": "Filter"
+					}
+				],
 				"_Type": "Control.Type.FilterFeedbackBar"
 			},
 			"_Type": "Control.Type.SectionedTable",
@@ -40,16 +70,21 @@
 						"Footnote": "{cargo}",
 						"Description": "{correo}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{rol}",
+						"StatusText": "/appconsumos_qa_mb/Rules/Administracion/get_Rol_Admin_List.js",
 						"SubstatusText": "{sociedad}",
 						"PreserveIconStackSpacing": false,
-						"AccessoryType": "DisclosureIndicator",
-						"Tags": [],
+						"AccessoryType": "None",
+						"AccessoryButtonIcon": "sap-icon://edit",
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js",
+								"Text": "{estado}"
+							}
+						],
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "sap-icon://customer",
-									"ImageText": ""
+									"Image": "sap-icon://customer"
 								}
 							],
 							"ImageIsCircular": true,
@@ -58,6 +93,14 @@
 						"AvatarGrid": {
 							"Avatars": [],
 							"ImageIsCircular": true
+						},
+						"OnAccessoryButtonPress": {
+							"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Editar_Usuarios.page",
+								"ModalPage": true,
+								"ModalPageFullscreen": false
+							}
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
@@ -84,7 +127,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Lista_Empleados",
+	"_Name": "Lista_Usuarios",
 	"ActionBar": {
 		"Items": [
 			{
@@ -106,6 +149,6 @@
 		],
 		"_Name": "ActionBar1",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Lista Empleados"
+		"Caption": "Lista Usuarios"
 	}
 }

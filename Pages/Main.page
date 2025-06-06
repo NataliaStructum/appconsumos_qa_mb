@@ -9,10 +9,30 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"Image": "/appconsumos_qa_mb/Images/logo_both.png",
+					"Width": 173,
+					"Height": 22,
+					"Alignment": "Center",
+					"ContentMode": "Center",
+					"PaddingTop": 10
+				},
+				{
 					"ObjectHeader": {
 						"Subhead": "{#Application/#AppData/UserId}",
 						"Description": "Aplicación para llevar trazabilidad de consumos en Campo e Ingenio",
-						"DetailImage": "res://mdk_logo.png",
 						"DetailImageIsCircular": false,
 						"HeadlineText": "Consumos APP",
 						"StatusPosition": "Stacked",
@@ -49,12 +69,7 @@
 								"Subheadline": "Administrar Usuarios y Almacenes",
 								"Description": "",
 								"Visible": true,
-								"OnPress": {
-									"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
-									"Properties": {
-										"PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Inicio_Admin.page"
-									}
-								}
+								"OnPress": "/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js"
 							}
 						},
 						{

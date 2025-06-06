@@ -1,3 +1,4 @@
+import get_Info_Usuario from '../get_Info_Usuario';
 /**
  * Describe this function...
  * @param {IClientAPI} context
@@ -8,6 +9,8 @@ export default function CheckForSyncError(context) {
             return context.getPageProxy().executeAction('/appconsumos_qa_mb/Actions/ErrorArchive/ErrorArchive_SyncFailure.action').then(function() {
                 return Promise.reject(false);
             });
+        }else {
+            return get_Info_Usuario(context)
         }
     });
 }

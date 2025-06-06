@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.CheckRequiredFields",
+	"ActionResult": {
+		"_Name": "Req_Update_Usuarios"
+	},
+	"OnFailure": {
+		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Debes seleccionar un rol para el usuario",
+			"Title": "Alerta",
+			"OKCaption": "Ok"
+		}
+	},
+	"OnSuccess": {
+		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+		"Properties": {
+			"Message": "¿Estas seguro que deseas actualizar el empleado?",
+			"Title": "Confirmación",
+			"OKCaption": "Actualizar",
+			"OnOK": "/appconsumos_qa_mb/Actions/oData/Update_Empleados.action",
+			"CancelCaption": "Cancelar"
+		}
+	},
+	"ShowActivityIndicator": true,
+	"RequiredFields": [
+		"rol_edit"
+	]
+}

@@ -54,7 +54,7 @@
 								"OnPress": {
 									"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
 									"Properties": {
-										"PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"
+										"PageToOpen": "/appconsumos_qa_mb/Pages/Administracion/Lista_Usuarios.page"
 									}
 								}
 							}
