@@ -2,63 +2,63 @@
  * Describe this function...
  * @param {context} clientAPI
  */
-export default async function Create_Usuarios(context) {
-    let lista_empleados = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:ListaEmpleados/#Value');
-    let rol = context.evaluateTargetPath('#Page:Agregar_Usuarios/#Control:rol/#Value');
+export default function Create_Almacenes(context) {
+
+    let lista_almacenes = context.evaluateTargetPath('#Page:Agregar_Almacenes/#Control:FormCellListPicker_Almacenes/#Value');
+    let tipo_almacen = context.evaluateTargetPath('#Page:Agregar_Almacenes/#Control:FormCellListPicker_Tipo/#Value');
     let repetidos = "";
     let errores = [];
     let exitosos = [];
 
-    if (lista_empleados.length < 1) {
+    if (lista_almacenes.length < 1) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
                 "Title": "Alerta",
-                "Message": `Debes seleccionar al menos un empleado de la lista para continuar`
+                "Message": `Debes seleccionar al menos un almacén de la lista para continuar.`
             }
         });
     }
 
-    if (!rol || rol.length < 1) {
+    if (!tipo_almacen || tipo_almacen < 1) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
                 "Title": "Alerta",
-                "Message": `Debes seleccionar un rol para los usuarios`
+                "Message": `Debes seleccionar un tipo de almacen.`
             }
         });
     }
 
-    let rol_value = rol[0].ReturnValue;
+    let tipoalmacen_value = tipo_almacen[0].ReturnValue;
 
-    let promises = lista_empleados.map((empleado, i) => {
-        let nuevo_empleado = empleado.BindingObject;
+    let promises = lista_almacenes.map((almacen, i) => {
+        let nuevo_almacen = almacen.BindingObject;
 
-        return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=ficha eq '${nuevo_empleado.ficha}'`)
+        return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'AlmacenesApp', [], `$filter=almacen eq '${nuevo_almacen.almacen}'`)
             .then(result => {
                 if (result.length === 0) {
                     return context.executeAction({
-                        "Name": "/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action",
+                        "Name": "/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action",
                         "Properties": {
                             "Properties": {
-                                "ficha": nuevo_empleado.ficha,
-                                "nombre": nuevo_empleado.nombre,
-                                "correo": nuevo_empleado.correo,
-                                "rol": rol_value,
-                                "cargo": nuevo_empleado.cargo,
-                                "sociedad": nuevo_empleado.sociedad
+                                "sociedad": nuevo_almacen.sociedad,
+                                "almacen": nuevo_almacen.almacen,
+                               "centro": nuevo_almacen.centro,
+                                "almacen_desc": nuevo_almacen.almacen_desc,
+                                "tipo": tipoalmacen_value,
                             }
                         }
                     }).then(() => {
-                        exitosos.push(`${nuevo_empleado.nombre} (${nuevo_empleado.ficha})`);
+                        exitosos.push(`${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc})`);
                     }).catch(() => {
-                        errores.push(`${nuevo_empleado.nombre} (${nuevo_empleado.ficha})`);
+                        errores.push(`${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc})`);
                     });
                 }
-                repetidos += `${nuevo_empleado.nombre} (${nuevo_empleado.ficha}), `;
+                repetidos += `${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc}), `;
                 return Promise.resolve();
             }).catch(() => {
-                errores.push(`${nuevo_empleado.nombre} (${nuevo_empleado.ficha})`);
+                errores.push(`${nuevo_almacen.almacen} (${nuevo_almacen.almacen_desc})`);
             });
     });
 
@@ -71,7 +71,7 @@ export default async function Create_Usuarios(context) {
                 "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                 "Properties": {
                     "Title": "Repetidos",
-                    "Message": `Se encontraron usuarios ya creados: ${repetidos}`
+                    "Message": `Se encontraron almacenes ya creados: ${repetidos}`
                 }
             });
         }
@@ -86,7 +86,7 @@ export default async function Create_Usuarios(context) {
                     "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                     "Properties": {
                         "Title": "Error",
-                        "Message": `Falló la creación de los usuarios.`
+                        "Message": `Falló la creación de los almacenes.`
                     }
                 });
             } else if (errores.length > 0 && exitosos.length > 0) {
@@ -95,7 +95,7 @@ export default async function Create_Usuarios(context) {
                     "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                     "Properties": {
                         "Title": "Alerta parcial",
-                        "Message": `Algunos usuarios fueron creados exitosamente.\n\nUsuarios con error:\n${errores.join('\n')}`
+                        "Message": `Algunos almacenes fueron creados exitosamente.\n\nAlmacenes con error:\n${errores.join('\n')}`
                     }
                 });
             } else {
@@ -104,7 +104,7 @@ export default async function Create_Usuarios(context) {
                     "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                     "Properties": {
                         "Title": "Creación exitosa",
-                        "Message": `Se finalizó el proceso de creación exitosamente`
+                        "Message": `Los Almacenes fueron creados exitosamente`
                     }
                 });
             }
@@ -113,15 +113,11 @@ export default async function Create_Usuarios(context) {
             mensajePromise.then(() => {
                 context.executeAction({
                     "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
-                    "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Empleados.page"
+                    "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Administracion/Lista_Almacenes.page"
                 });
             });
         });
     });
 
-
-    //[0].ReturnValue
-    //(lista_empleados[0].BindingObject)
-    //alert(JSON.stringify(context.evaluateTargetPath("#Page:Agregar_Usuarios/#Control:ListaEmpleados/#Value/#Index:1/BindingObject/cargo")))
 
 }
