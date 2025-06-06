@@ -96,7 +96,8 @@
 								"Headline": "Ingenio",
 								"Subheadline": "Gestionar Ordenes de Ingenio",
 								"Description": "",
-								"Visible": true
+								"Visible": true,
+								"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js"
 							}
 						},
 						{

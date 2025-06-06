@@ -1,0 +1,111 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImageIsCircular": false,
+						"HeadlineText": "Modulo Ordenes de mantenimiento de Ingenio",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Styles": {
+							"ObjectHeader": "HeaderAdmin",
+							"HeadlineText": "HeaderAdminTitle"
+						}
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker_Almacen_O",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Almacén",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione un Almacén",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "AlmacenesApp",
+									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'INGENIO'&$orderby=almacen"
+								},
+								"ObjectCell": {
+									"PreserveIconStackSpacing": true,
+									"Subhead": "{centro}",
+									"Title": "{almacen} - {almacen_desc}",
+									"Visible": true
+								},
+								"ReturnValue": "{almacen}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton_Buscar",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Button": "Button"
+							},
+							"Title": "Ver Listado",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": {
+								"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/appconsumos_qa_mb/Pages/Ingenio/Lista_Ordenes_Ingenio.page"
+								}
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Filtro_Ingenio",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar4",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Ordenes Ingenio"
+	}
+}
