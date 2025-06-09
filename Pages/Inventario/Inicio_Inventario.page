@@ -1,0 +1,86 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"DetailImageIsCircular": false,
+						"HeadlineText": "Modulo Inventario",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Styles": {
+							"ObjectHeader": "HeaderAdmin",
+							"HeadlineText": "HeaderAdminTitle"
+						}
+					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"Visible": true
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ContactCell",
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ContactCells": [
+						{
+							"ContactCell": {
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								},
+								"_Name": "ContactCellItem0",
+								"DetailImage": "sap-icon://request",
+								"Headline": "Solicitudes de Reabastecimiento",
+								"Subheadline": "Ver listado de solicitudes de reabastecimiento y realizar solicitudes ",
+								"Description": "",
+								"Visible": true,
+								"OnPress": {
+									"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page"
+									}
+								}
+							}
+						},
+						{
+							"ContactCell": {
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								},
+								"_Name": "ContactCellItem1",
+								"DetailImage": "sap-icon://add-product",
+								"Headline": "Consultar Inventario",
+								"Subheadline": "Inventario de almacenes",
+								"Description": "",
+								"Visible": true
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Inicio_Inventario",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar2",
+		"_Type": "Control.Type.ActionBar"
+	}
+}
