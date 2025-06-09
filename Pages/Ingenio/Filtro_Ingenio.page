@@ -46,6 +46,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Seleccione un Almacén",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Ingenio/Select_Almacen_Ingenio.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
@@ -78,13 +79,8 @@
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
 							"ImagePosition": "Leading",
-							"Enabled": true,
-							"OnPress": {
-								"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
-								"Properties": {
-									"PageToOpen": "/appconsumos_qa_mb/Pages/Ingenio/Lista_Ordenes_Ingenio.page"
-								}
-							}
+							"Enabled": false,
+							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Ingenio.js"
 						}
 					],
 					"Layout": {
@@ -104,7 +100,7 @@
 	"_Name": "Filtro_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Ordenes Ingenio"
 	}
