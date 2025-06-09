@@ -32,6 +32,7 @@
                     <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
                     <NavigationPropertyBinding Path="solicitud" Target="Solicitudes"/>
                 </EntitySet>
+                <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
             </EntityContainer>
             <EntityType Name="Empleados">
                 <Key>
@@ -189,6 +190,7 @@
                 <Property Name="autorizador_ficha" Type="Edm.String" MaxLength="8"/>
                 <Property Name="observaciones_tec" Type="Edm.String" MaxLength="240"/>
                 <Property Name="estado" Type="Edm.String" MaxLength="10"/>
+                <Property Name="correo_creacion" Type="Edm.String" MaxLength="50"/>
                 <Property Name="fecha_creacion" Type="Edm.DateTimeOffset" Precision="7"/>
                 <Property Name="fecha_revision" Type="Edm.DateTimeOffset" Precision="7"/>
                 <Property Name="fecha_autorizado" Type="Edm.DateTimeOffset" Precision="7"/>
@@ -230,6 +232,54 @@
                 <Property Name="solicitud_id" Type="Edm.Guid"/>
                 <Property Name="cantidad_tomada" Type="Edm.Decimal" Scale="variable"/>
             </EntityType>
+            <EntityType Name="VerSolicitudesAbiertas">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="op_ficha" Type="Edm.String" MaxLength="8"/>
+                <Property Name="op_nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="op_rol" Type="Edm.String"/>
+                <Property Name="op_isAdmin" Type="Edm.Boolean" DefaultValue="false"/>
+                <Property Name="op_cargo" Type="Edm.String" MaxLength="25"/>
+                <Property Name="op_sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="alm_sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="alm_almacen" Type="Edm.String" MaxLength="4"/>
+                <Property Name="alm_centro" Type="Edm.String" MaxLength="4"/>
+                <Property Name="equipo_solicitud" Type="Edm.String" MaxLength="18"/>
+                <Property Name="eq_desc_solicitud" Type="Edm.String" MaxLength="40"/>
+                <Property Name="orden" Type="Edm.String" MaxLength="12"/>
+                <Property Name="or_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="or_sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="or_creacion" Type="Edm.String" MaxLength="8"/>
+                <Property Name="or_ref" Type="Edm.String" MaxLength="8"/>
+                <Property Name="or_grupo_plan" Type="Edm.String" MaxLength="3"/>
+                <Property Name="or_centro_plan" Type="Edm.String" MaxLength="4"/>
+                <Property Name="or_hoja_ruta" Type="Edm.String" MaxLength="10"/>
+                <Property Name="reserva" Type="Edm.String" MaxLength="10"/>
+                <Property Name="correo_creacion" Type="Edm.String" MaxLength="50"/>
+                <Property Name="ap_ficha" Type="Edm.String" MaxLength="8"/>
+                <Property Name="ap_nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="ap_rol" Type="Edm.String"/>
+                <Property Name="ap_isAdmin" Type="Edm.Boolean" DefaultValue="false"/>
+                <Property Name="ap_cargo" Type="Edm.String" MaxLength="25"/>
+                <Property Name="ap_sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="au_ficha" Type="Edm.String" MaxLength="8"/>
+                <Property Name="au_nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="au_rol" Type="Edm.String"/>
+                <Property Name="au_isAdmin" Type="Edm.Boolean" DefaultValue="false"/>
+                <Property Name="au_cargo" Type="Edm.String" MaxLength="25"/>
+                <Property Name="au_sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="observaciones_tec" Type="Edm.String" MaxLength="240"/>
+                <Property Name="estado" Type="Edm.String" MaxLength="10"/>
+                <Property Name="fecha_creacion" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="fecha_revision" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="fecha_autorizado" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="16"/>
+                <Property Name="memorando" Type="Edm.Boolean"/>
+                <Property Name="confirmacion_tec" Type="Edm.Boolean"/>
+            </EntityType>
             <Annotations Target="appconsumos_qa.Solicitudes/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
             </Annotations>
@@ -238,6 +288,12 @@
             </Annotations>
             <Annotations Target="appconsumos_qa.ComponentesSolicitud/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="appconsumos_qa.VerSolicitudesAbiertas/id">
+                <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="appconsumos_qa.VerSolicitudesAbiertas/fecha_creacion">
+                <Annotation Term="Core.Computed" Bool="true"/>
             </Annotations>
         </Schema>
     </edmx:DataServices>
