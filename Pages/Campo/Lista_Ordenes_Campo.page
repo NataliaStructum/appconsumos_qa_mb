@@ -91,6 +91,13 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js",
 					"_Name": "SectionObjectTable0",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Órdenes Abiertas"
+					},
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No hay ordenes para mostrar",
@@ -109,23 +116,22 @@
 						"Footnote": "{equipo}",
 						"Description": "{equipo_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{reserva}",
+						"StatusText": "res: {reserva}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
-						"Tags": [
-							{
-								"Color": "Green",
-								"Text": "{estado}"
-							}
-						],
+						"Tags": [],
 						"AvatarStack": {
-							"Avatars": [],
-							"ImageIsCircular": true,
+							"Avatars": [
+								{
+									"Image": "sap-icon://document-text"
+								}
+							],
+							"ImageIsCircular": false,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
 							"Avatars": [],
-							"ImageIsCircular": true
+							"ImageIsCircular": false
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
