@@ -8,21 +8,7 @@
 	"CF": {
 		"Target": "https://api.cf.us10-001.hana.ondemand.com",
 		"Organization": "7aeb1051-f376-490a-a497-6e09537a9c72",
-		"Space": "ff8da7b4-ab68-4732-bc64-7b7042519716",
-		"Deploy": {
-			"Description": "",
-			"WebClient": {
-				"Runtime": "",
-				"URL": ""
-			},
-			"Destination": [
-				{
-					"CF": "",
-					"MDK": "app.consumos.qa",
-					"URL": ""
-				}
-			]
-		}
+		"Space": "ff8da7b4-ab68-4732-bc64-7b7042519716"
 	},
 	"MobileService": {
 		"Type": "standard",
