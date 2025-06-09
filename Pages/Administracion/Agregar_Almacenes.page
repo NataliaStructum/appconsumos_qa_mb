@@ -29,7 +29,7 @@
 								"ShowLoadingIndicator": false,
 								"PageSize": 50
 							},
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Por favor seleccionar almacenes",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
@@ -67,7 +67,7 @@
 								"ShowLoadingIndicator": false,
 								"PageSize": 50
 							},
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Por favor seleccionar un tipo",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
