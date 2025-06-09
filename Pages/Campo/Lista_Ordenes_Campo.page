@@ -1,14 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -16,8 +16,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
@@ -32,7 +30,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona equipos",
-							"HelperText": "Debes seleccionar al menos un equipo para mostrar las ordenes asociadas",
+							"HelperText": "Debes seleccionar al menos un equipo para mostrar las órdenes asociadas",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": false,
@@ -40,6 +38,15 @@
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"Search": {
+								"Options": {
+									"CaseSensitive": false,
+									"NumberSearch": {
+										"Enabled": false
+									},
+									"UseSearchOverFilter": {
+										"Enabled": false
+									}
+								},
 								"Enabled": true,
 								"Placeholder": "Buscar equipo...",
 								"BarcodeScanner": true
@@ -65,9 +72,22 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				},
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js",
 					"_Name": "SectionObjectTable0",
@@ -76,14 +96,14 @@
 						"Caption": "No hay ordenes para mostrar",
 						"FooterVisible": false
 					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
 						"Title": "{orden}",
 						"Subhead": "{orden_desc}",
 						"Footnote": "{equipo}",
@@ -108,20 +128,13 @@
 							"ImageIsCircular": true
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						}
+						"Selected": false
 					},
 					"Search": {
+						"Mode": "Persistent",
 						"Enabled": true,
 						"Placeholder": "Buscar...",
-						"BarcodeScanner": true,
-						"Mode": "Persistent"
+						"BarcodeScanner": true
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -134,18 +147,14 @@
 						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Lista_Ordenes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Lista Ordenes Campo"
 	}
