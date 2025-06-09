@@ -48,7 +48,7 @@
 								"_Name": "ContactCellItem0",
 								"DetailImage": "sap-icon://user-edit",
 								"Headline": "Administrar Usuarios",
-								"Subheadline": "Configurar roles y alces para los usuarios",
+								"Subheadline": "Configurar usuarios y roles",
 								"Description": "",
 								"Visible": true,
 								"OnPress": {
@@ -87,7 +87,7 @@
 	"_Name": "Inicio_Admin",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

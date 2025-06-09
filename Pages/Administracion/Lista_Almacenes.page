@@ -67,7 +67,7 @@
 									"Image": "sap-icon://home"
 								}
 							],
-							"ImageIsCircular": true,
+							"ImageIsCircular": false,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {

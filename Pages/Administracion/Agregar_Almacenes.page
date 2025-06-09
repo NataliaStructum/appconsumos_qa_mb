@@ -23,13 +23,13 @@
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": true,
-							"AllowEmptySelection": false,
+							"AllowEmptySelection": true,
 							"Caption": "Seleccionar Almacenes",
 							"DataPaging": {
 								"ShowLoadingIndicator": false,
 								"PageSize": 50
 							},
-							"PickerPrompt": "Por favor seleccionar almacenes",
+							"PickerPrompt": "Seleccionar uno o varios almacenes",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": false,
 							"IsSearchCancelledAfterSelection": false,
@@ -42,7 +42,7 @@
 								"Target": {
 									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 									"EntitySet": "Almacenes",
-									"QueryOptions": "$orderby=almacen"
+									"QueryOptions": "$orderby=almacen,sociedad,centro"
 								},
 								"ObjectCell": {
 									"Description": "{centro}",
@@ -52,7 +52,7 @@
 									"Title": "{almacen}",
 									"Visible": true
 								},
-								"ReturnValue": "{almacen}"
+								"ReturnValue": "{almacen} {centro} {sociedad}"
 							}
 						},
 						{
@@ -67,7 +67,7 @@
 								"ShowLoadingIndicator": false,
 								"PageSize": 50
 							},
-							"PickerPrompt": "Por favor seleccionar un tipo",
+							"PickerPrompt": "Seleccionar un tipo",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,

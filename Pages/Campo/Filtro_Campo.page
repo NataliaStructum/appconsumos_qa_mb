@@ -40,13 +40,13 @@
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
-							"Caption": "Almacen",
+							"Caption": "Almacén",
 							"DataPaging": {
 								"ShowLoadingIndicator": false,
 								"PageSize": 50
 							},
-							"PickerPrompt": "Selecciona un almacen",
-							"HelperText": "Debes seleccionar un alamacen para continuar",
+							"PickerPrompt": "Selecciona un almacén",
+							"HelperText": "Debes seleccionar un almacén para continuar",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Campo/Select_almacen.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
