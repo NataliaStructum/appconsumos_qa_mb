@@ -6,6 +6,22 @@
 				"FastFilters": [
 					{
 						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter4",
+						"Label": "Estado",
+						"DisplayValue": "Activo",
+						"ReturnValue": "estado eq 'Activo'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter5",
+						"Label": "Estado",
+						"DisplayValue": "Inactivo",
+						"ReturnValue": "estado eq 'Inactivo'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
 						"_Name": "FastFilter0",
 						"DisplayValue": "Administradores",
 						"ReturnValue": "isAdmin eq true",
