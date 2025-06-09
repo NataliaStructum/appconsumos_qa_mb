@@ -54,6 +54,11 @@
 			"Name": "ComponentesSolicitud",
 			"Query": "ComponentesSolicitud",
 			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VerSolicitudesAbiertas",
+			"Query": "VerSolicitudesAbiertas",
+			"AutomaticallyRetrievesStreams": false
 		}
 	]
 }

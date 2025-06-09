@@ -38,6 +38,26 @@
 		{
 			"Name": "Ordenes",
 			"Query": "Ordenes"
+		},
+		{
+			"Name": "Solicitudes",
+			"Query": "Solicitudes",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ComponentesSolicitud",
+			"Query": "ComponentesSolicitud",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "DetalleReserva",
+			"Query": "DetalleReserva",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "VerSolicitudesAbiertas",
+			"Query": "VerSolicitudesAbiertas",
+			"AutomaticallyRetrievesStreams": false
 		}
 	]
 }

@@ -72,7 +72,7 @@
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton0",
-							"IsVisible": true,
+							"IsVisible": "/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js",
 							"Separator": true,
 							"Styles": {
 								"Button": "Button"
@@ -81,6 +81,7 @@
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
+							"Image": "sap-icon://create-form",
 							"ImagePosition": "Leading",
 							"Enabled": false,
 							"OnPress": "/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js"
@@ -90,22 +91,31 @@
 							"_Name": "FormCellButton1",
 							"IsVisible": true,
 							"Separator": true,
+							"Styles": {
+								"Button": "Button"
+							},
 							"Title": "Solicitudes Vigentes",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
+							"Image": "sap-icon://approvals",
 							"ImagePosition": "Leading",
-							"Enabled": false
+							"Enabled": false,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton2",
 							"IsVisible": true,
 							"Separator": true,
+							"Styles": {
+								"Button": "Button"
+							},
 							"Title": "Histórico de Solicitudes",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
+							"Image": "sap-icon://detail-view",
 							"ImagePosition": "Leading",
 							"Enabled": false
 						}

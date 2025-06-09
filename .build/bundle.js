@@ -80,6 +80,7 @@ let appconsumos_qa_mb_pages_application_support_page = __webpack_require__(/*! .
 let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/UserActivityLog.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/UserActivityLog.page")
 let appconsumos_qa_mb_pages_campo_filtro_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page")
 let appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page")
+let appconsumos_qa_mb_pages_campo_lista_solicitudes_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Lista_Solicitudes_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Solicitudes_Campo.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
 let appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Filtro_Ingenio.page")
@@ -101,11 +102,15 @@ let appconsumos_qa_mb_rules_application_getclientsupportversions_js = __webpack_
 let appconsumos_qa_mb_rules_application_getclientversion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/GetClientVersion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/GetClientVersion.js")
 let appconsumos_qa_mb_rules_application_onwillupdate_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/OnWillUpdate.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js")
 let appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js")
+let appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js")
 let appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js")
+let appconsumos_qa_mb_rules_campo_isvisible_btn_crearsolicitudes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js")
 let appconsumos_qa_mb_rules_campo_navto_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js")
 let appconsumos_qa_mb_rules_campo_navto_list_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js")
+let appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js")
 let appconsumos_qa_mb_rules_campo_select_almacen_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Select_almacen.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js")
 let appconsumos_qa_mb_rules_campo_target_lista_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js")
+let appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js")
 let appconsumos_qa_mb_rules_get_info_usuario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Info_Usuario.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js")
 let appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js")
 let appconsumos_qa_mb_rules_ingenio_navto_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js")
@@ -193,6 +198,7 @@ module.exports = {
 	appconsumos_qa_mb_pages_application_useractivitylog_page : appconsumos_qa_mb_pages_application_useractivitylog_page,
 	appconsumos_qa_mb_pages_campo_filtro_campo_page : appconsumos_qa_mb_pages_campo_filtro_campo_page,
 	appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page : appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page,
+	appconsumos_qa_mb_pages_campo_lista_solicitudes_campo_page : appconsumos_qa_mb_pages_campo_lista_solicitudes_campo_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
 	appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page : appconsumos_qa_mb_pages_ingenio_filtro_ingenio_page,
@@ -214,11 +220,15 @@ module.exports = {
 	appconsumos_qa_mb_rules_application_getclientversion_js : appconsumos_qa_mb_rules_application_getclientversion_js,
 	appconsumos_qa_mb_rules_application_onwillupdate_js : appconsumos_qa_mb_rules_application_onwillupdate_js,
 	appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js : appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js,
+	appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js : appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js,
 	appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js : appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js,
+	appconsumos_qa_mb_rules_campo_isvisible_btn_crearsolicitudes_js : appconsumos_qa_mb_rules_campo_isvisible_btn_crearsolicitudes_js,
 	appconsumos_qa_mb_rules_campo_navto_campo_js : appconsumos_qa_mb_rules_campo_navto_campo_js,
 	appconsumos_qa_mb_rules_campo_navto_list_campo_js : appconsumos_qa_mb_rules_campo_navto_list_campo_js,
+	appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js : appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js,
 	appconsumos_qa_mb_rules_campo_select_almacen_js : appconsumos_qa_mb_rules_campo_select_almacen_js,
 	appconsumos_qa_mb_rules_campo_target_lista_campo_js : appconsumos_qa_mb_rules_campo_target_lista_campo_js,
+	appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js : appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js,
 	appconsumos_qa_mb_rules_get_info_usuario_js : appconsumos_qa_mb_rules_get_info_usuario_js,
 	appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js : appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js,
 	appconsumos_qa_mb_rules_ingenio_navto_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_ingenio_js,
@@ -960,6 +970,45 @@ function ResetAppSettingsAndLogout(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Color_Estado_Sol_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Color_Estado_Sol_Campo(context) {
+  try {
+    var object = context.binding;
+    var estado = object.estado;
+    if (estado == "Enviado") {
+      return "Grey";
+    }
+    if (estado == "Aprobado") {
+      return "Mango";
+    }
+    if (estado == "Rechazado") {
+      return "Red";
+    }
+    if (estado == "Autorizado") {
+      return "Green";
+    }
+  } catch (error) {
+    console.error("Ocurrió un error al obtener el valor:", error);
+    alert("No se pudo obtener el valor: " + error.message);
+  }
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js":
 /*!************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js ***!
@@ -1036,6 +1085,58 @@ function NavTo_List_Campo(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavTo_List_Sol_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function NavTo_List_Sol_Campo(context) {
+  let data = context.evaluateTargetPath('#Page:Filtro_Campo/#Control:almacen_campo/#Value')[0].BindingObject;
+  let clientDataUser = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
+  clientData.centro = data.centro;
+  clientData.almacen = data.almacen;
+  clientData.sociedad = data.sociedad;
+  clientData.lista_sol_campo = [];
+  let filtro = `$filter=alm_sociedad eq '${data.sociedad}' and alm_almacen eq '${data.almacen}' and alm_centro eq '${data.centro}' and tipo eq 'CAMPO' &$orderby=fecha_creacion desc`;
+  let isTecnico = clientDataUser.info_user.rol === 'Técnico';
+  if (isTecnico) {
+    let correo = clientDataUser.info_user.correo;
+    //filtro += ` and correo_creacion eq ${correo}`
+    filtro = `$filter=alm_sociedad eq '${data.sociedad}' and alm_almacen eq '${data.almacen}' and alm_centro eq '${data.centro}' and tipo eq 'CAMPO' and correo_creacion eq '${correo}' &$orderby=fecha_creacion desc`;
+  }
+
+  //+"&$orderby=fecha_creacion desc"
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'VerSolicitudesAbiertas', [], filtro).then(async results => {
+    if (results && results.length > 0) {
+      alert(results.length);
+      clientData.lista_sol_campo = results;
+    } else {
+      clientData.lista_campo = [];
+    }
+    context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+      "Properties": {
+        "PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Lista_Solicitudes_Campo.page"
+      }
+    });
+  }).catch(error => {
+    alert(`Error ${error.message}`);
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js":
 /*!***************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js ***!
@@ -1099,6 +1200,35 @@ function Target_Lista_Campo(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Target_Lista_Solicitudes_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Target_Lista_Solicitudes_Campo(context) {
+  let target = context.evaluateTargetPath("#Page:Filtro_Campo/#ClientData/#Property:lista_sol_campo");
+  let searchString = context.searchString;
+  if (searchString) {
+    let searchResult = target.filter(prod => {
+      return prod.orden.includes(searchString) || prod.or_desc.includes(searchString) || prod.or_centro_plan.includes(searchString) || prod.or_grupo_plan.includes(searchString) || prod.equipo_solicitud.includes(searchString) || prod.eq_desc_solicitud.includes(searchString) || prod.reserva.includes(searchString) || prod.alm_sociedad.includes(searchString);
+    });
+    target = searchResult;
+  }
+  return target;
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js":
 /*!**********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js ***!
@@ -1137,6 +1267,29 @@ function get_List_Campo_Equipo(context) {
       list_component.redraw();
     }
   });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ isVisible_Btn_CrearSolicitudes)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function isVisible_Btn_CrearSolicitudes(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info = clientData.info_user;
+  return info.rol === 'Técnico';
 }
 
 /***/ }),
@@ -2105,7 +2258,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \***************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo órdenes de mantemiento en Campo","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"almacen_campo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacén","HelperText":"Debes seleccionar un almacén para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/Select_almacen.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{tipo}","SubstatusText":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Órdenes y Crear Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Solicitudes Vigentes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":false},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Title":"Histórico de Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Campo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Órdenes Campo"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo órdenes de mantemiento en Campo","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"almacen_campo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacén","HelperText":"Debes seleccionar un almacén para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/Select_almacen.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{tipo}","SubstatusText":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":"/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js","Separator":true,"Styles":{"Button":"Button"},"Title":"Órdenes y Crear Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://create-form","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Solicitudes Vigentes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://approvals","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Histórico de Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://detail-view","ImagePosition":"Leading","Enabled":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Campo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Órdenes Campo"}}
 
 /***/ }),
 
@@ -2116,6 +2269,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 /***/ ((module) => {
 
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"filtro_equipos","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Equipo","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona equipos","HelperText":"Debes seleccionar al menos un equipo para mostrar las órdenes asociadas","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Options":{"CaseSensitive":false,"NumberSearch":{"Enabled":false},"UseSearchOverFilter":{"Enabled":false}},"Enabled":true,"Placeholder":"Buscar equipo...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Equipos","QueryOptions":"$filter=centro eq '{{#Page:Filtro_Campo/#ClientData/centro}}' and sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}'"},"ObjectCell":{"Description":"{equipo_desc}","PreserveIconStackSpacing":false,"StatusText":"{centro}","Subhead":"{tipo}","SubstatusText":"{sociedad}","Title":"{equipo}","Visible":true},"ReturnValue":"{equipo}"}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js","_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Órdenes Abiertas"},"Visible":true,"EmptySection":{"Caption":"No hay ordenes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{orden}","Subhead":"{orden_desc}","Footnote":"{equipo}","Description":"{equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://document-text"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":false},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Ordenes_Campo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Lista Ordenes Campo"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Solicitudes_Campo.page":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Solicitudes_Campo.page ***!
+  \**************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js","_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes Órdenes Abiertas"},"Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"{orden}","Subhead":"$(DT,{fecha_creacion})","Footnote":"{or_desc}","Description":"{equipo_solicitud} {eq_desc_solicitud}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","SubstatusText":"{alm_almacen} - {alm_sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://form"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"Search":{"Enabled":true,"Placeholder":"Buscar solicitud...","Mode":"Persistent"},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Lista_Solicitudes_Campo","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Solicitudes Campo"}}
 
 /***/ }),
 
@@ -2485,7 +2648,7 @@ module.exports = {"_Type":"Action.Type.ToastMessage","Message":"El servicio de d
   \****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"}]}
+module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false}]}
 
 /***/ }),
 
@@ -2505,7 +2668,7 @@ module.exports = {"_Type":"Action.Type.ProgressBanner","OnSuccess":"/appconsumos
   \******************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false}]}
+module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false}]}
 
 /***/ }),
 
