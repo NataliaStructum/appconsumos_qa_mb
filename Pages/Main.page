@@ -23,8 +23,8 @@
 					"_Name": "SectionImage0",
 					"Visible": true,
 					"Image": "/appconsumos_qa_mb/Images/logo_both.png",
-					"Width": 720,
-					"Height": 82,
+					"Width": 477,
+					"Height": 52,
 					"Alignment": "Center",
 					"ContentMode": "Center",
 					"PaddingTop": 10

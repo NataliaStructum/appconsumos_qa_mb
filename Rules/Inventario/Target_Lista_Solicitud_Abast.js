@@ -3,9 +3,9 @@
  * @param {IClientAPI} clientAPI
  */
 export default function Target_Lista_Solicitud_Abast(context) {
-    let clientData = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
-        clientData.lista_abast = []
-    let target = context.evaluateTargetPath("#Page:Lista_Solicitud_Reabastecimiento/#ClientData/#Property:lista_abast");
+    //let clientData = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
+     //   clientData.lista_abast = []
+    let target = context.evaluateTargetPath("#Page:Inicio_Inventario/#ClientData/#Property:lista_abast");
 
     let searchString = context.searchString;
 

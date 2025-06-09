@@ -50,12 +50,7 @@
 								"Subheadline": "Ver listado de solicitudes de reabastecimiento y realizar solicitudes ",
 								"Description": "",
 								"Visible": true,
-								"OnPress": {
-									"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
-									"Properties": {
-										"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page"
-									}
-								}
+								"OnPress": "/appconsumos_qa_mb/Rules/Inventario/NavTo_List_Abastecimiento.js"
 							}
 						},
 						{
@@ -80,7 +75,7 @@
 	"_Name": "Inicio_Inventario",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
