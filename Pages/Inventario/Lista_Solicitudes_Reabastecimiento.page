@@ -1,0 +1,166 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker_Almacenes_Sol",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Selecciona Almacenes",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona los almacenes",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/get_List_Abastecimiento.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "AlmacenesApp",
+									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"
+								},
+								"ObjectCell": {
+									"PreserveIconStackSpacing": true,
+									"Subhead": "{centro}",
+									"SubstatusText": "{sociedad}",
+									"Title": "{almacen} - {almacen_desc}",
+									"Visible": true
+								},
+								"ReturnValue": "{almacen}"
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Solicitud_Abast.js",
+					"_Name": "SectionObjectTable0",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Solicitudes de Abastecimiento"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No tienes solicitudes para mostrar",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "$(DT,{fecha_creacion})",
+						"Subhead": "{operario_ficha}",
+						"Description": "{observaciones_tec}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "{almacen_sociedad}",
+						"SubstatusText": "{almacen_centro}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"AccessoryButtonIcon": "sap-icon://hr-approval",
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js",
+								"Text": "{estado}"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://cart-3"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"Mode": "Persistent"
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Lista_Solicitudes_Reabastecimiento",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Crear Solicitud",
+				"Icon": "sap-icon://add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Solicitudes de Reabastecimiento"
+	}
+}

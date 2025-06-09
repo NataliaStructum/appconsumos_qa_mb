@@ -110,7 +110,8 @@
 								"Headline": "Inventario",
 								"Subheadline": "Gestionar Inventario de Almacenes",
 								"Description": "",
-								"Visible": true
+								"Visible": true,
+								"OnPress": "/appconsumos_qa_mb/Rules/Inventario/NavTo_Inventario.js"
 							}
 						}
 					]
