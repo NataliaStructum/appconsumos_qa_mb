@@ -19,7 +19,7 @@ export default function get_List_Ingenio_Equipo(context) {
         filtro += `equipo eq '${e.BindingObject.equipo}' or`      
     });
 
-    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Ordenes', [], filtro.slice(0, -3)).then(async (results) => {
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Ordenes', [], filtro.slice(0, -3)+"&$orderby=fecha_creacion desc").then(async (results) => {
         if (results && results.length > 0) {
             alert(results.length)
             clientData.lista_ingenio = results

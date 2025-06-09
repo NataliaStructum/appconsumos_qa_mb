@@ -100,8 +100,8 @@
 	"_Name": "Filtro_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Ordenes Ingenio"
+		"Caption": "Órdenes Ingenio"
 	}
 }

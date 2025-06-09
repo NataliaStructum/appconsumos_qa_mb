@@ -30,7 +30,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona equipos",
-							"HelperText": "Debes seleccionar al menos un equipo para mostrar las ordenes asociadas",
+							"HelperText": "Debes seleccionar al menos un equipo para mostrar las órdenes asociadas",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": false,
@@ -80,6 +80,13 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Ingenio.js",
 					"_Name": "SectionObjectTable0",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Órdenes Abiertas"
+					},
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No hay ordenes para mostrar",
@@ -98,22 +105,17 @@
 						"Footnote": "{equipo}",
 						"Description": "{equipo_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{reserva}",
+						"StatusText": "res: {reserva}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
-						"Tags": [
-							{
-								"Color": "Green",
-								"Text": "{estado}"
-							}
-						],
+						"Tags": [],
 						"AvatarStack": {
 							"Avatars": [
 								{
 									"Image": "sap-icon://document-text"
 								}
 							],
-							"ImageIsCircular": true,
+							"ImageIsCircular": false,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
@@ -149,6 +151,6 @@
 		"Items": [],
 		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Ordenes Ingenio"
+		"Caption": "Órdenes Ingenio"
 	}
 }
