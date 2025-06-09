@@ -38,7 +38,8 @@
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"Search": {
-								"Enabled": true
+								"Enabled": true,
+								"BarcodeScanner": true
 							},
 							"PickerItems": {
 								"Target": {
