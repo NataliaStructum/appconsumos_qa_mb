@@ -99,6 +99,7 @@
 						},
 						"Title": "$(DT,{fecha_creacion})",
 						"Subhead": "{operario_ficha}",
+						"Footnote": "{operario/nombre}",
 						"Description": "{observaciones_tec}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{almacen_sociedad}",
@@ -123,6 +124,12 @@
 						"AvatarGrid": {
 							"Avatars": [],
 							"ImageIsCircular": true
+						},
+						"OnPress": {
+							"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page"
+							}
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
