@@ -78,9 +78,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": "/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Ingenio.js",
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
@@ -88,6 +85,9 @@
 						"UseTopPadding": true,
 						"Caption": "Órdenes Abiertas"
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Ingenio.js",
+					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No hay ordenes para mostrar",
@@ -123,14 +123,20 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
+						"OnPress": {
+							"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/appconsumos_qa_mb/Pages/Ingenio/Detalle_Orden_Ingenio.page"
+							}
+						},
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
 					"Search": {
+						"Mode": "Persistent",
 						"Enabled": true,
 						"Placeholder": "Buscar...",
-						"BarcodeScanner": true,
-						"Mode": "Persistent"
+						"BarcodeScanner": true
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -150,7 +156,7 @@
 	"_Name": "Lista_Ordenes_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Órdenes Ingenio"
 	}

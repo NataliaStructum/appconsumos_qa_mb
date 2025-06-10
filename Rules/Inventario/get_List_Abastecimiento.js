@@ -16,11 +16,11 @@ export default function get_List_Abastecimiento(context) {
     
 
     let data = almacenes[0].BindingObject;
-    let filtro = `$filter=almacen_sociedad eq '${data.sociedad}' and almacen_almacen eq '${data.almacen}' and almacen_centro eq '${data.centro}' and tipo eq 'ABASTECIMIENTO' &$orderby=fecha_creacion desc`
+    let filtro = `$filter=almacen_sociedad eq '${data.sociedad}' and almacen_almacen eq '${data.almacen}' and almacen_centro eq '${data.centro}' and tipo eq 'ABASTECIMIENTO' &$orderby=fecha_creacion desc &$expand=operario`
     let isTecnico = clientDataUser.info_user.rol === 'Técnico'
     if(isTecnico){
         let correo = clientDataUser.info_user.correo
-        filtro = `$filter=almacen_sociedad eq '${data.sociedad}' and almacen_almacen eq '${data.almacen}' and almacen_centro eq '${data.centro}' and tipo eq 'ABASTECIMIENTO' and correo_creacion eq '${correo}' &$orderby=fecha_creacion desc`
+        filtro = `$filter=almacen_sociedad eq '${data.sociedad}' and almacen_almacen eq '${data.almacen}' and almacen_centro eq '${data.centro}' and tipo eq 'ABASTECIMIENTO' and correo_creacion eq '${correo}' &$orderby=fecha_creacion desc &$expand=operario`
     }
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Solicitudes', [], filtro).then(async (results) => {
         
