@@ -1,0 +1,80 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "{operario_ficha}",
+						"Footnote": "{almacen_almacen} - {almacen_centro}",
+						"Description": "{correo_creacion}",
+						"StatusText": "{almacen_sociedad}",
+						"DetailImage": "sap-icon://cart-3",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js",
+								"Text": "{estado}"
+							}
+						],
+						"HeadlineText": "$(DT,{fecha_creacion})",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{operario/nombre}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue0",
+							"KeyName": "Nombre Operario",
+							"Visible": true
+						},
+						{
+							"Value": "{operario/cargo}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue1",
+							"KeyName": "Cargo",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Detalle_Solicitud_Reabastecimieto",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Detalle"
+	}
+}
