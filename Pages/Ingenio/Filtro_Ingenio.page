@@ -46,6 +46,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Seleccione un Almacén",
+							"HelperText": "Debes seleccionar un almacén para continuar",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Ingenio/Select_Almacen_Ingenio.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
@@ -134,7 +135,7 @@
 	"_Name": "Filtro_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar8",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Órdenes Ingenio"
 	}

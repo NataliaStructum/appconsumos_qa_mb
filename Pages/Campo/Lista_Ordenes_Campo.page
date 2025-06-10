@@ -88,9 +88,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js",
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
@@ -98,6 +95,9 @@
 						"UseTopPadding": true,
 						"Caption": "Órdenes Abiertas"
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js",
+					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No hay ordenes para mostrar",
@@ -133,6 +133,12 @@
 							"Avatars": [],
 							"ImageIsCircular": false
 						},
+						"OnPress": {
+							"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page"
+							}
+						},
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
@@ -160,7 +166,7 @@
 	"_Name": "Lista_Ordenes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Lista Ordenes Campo"
 	}
