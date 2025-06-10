@@ -30,6 +30,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona los almacenes",
+							"HelperText": "Debes seleccionar al menos un almacen para mostrar las solicitudes asociadas",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/get_List_Abastecimiento.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": false,
