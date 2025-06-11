@@ -78,6 +78,7 @@ let appconsumos_qa_mb_pages_administracion_lista_usuarios_page = __webpack_requi
 let appconsumos_qa_mb_pages_application_about_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/About.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/About.page")
 let appconsumos_qa_mb_pages_application_support_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/Support.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/Support.page")
 let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/UserActivityLog.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/UserActivityLog.page")
+let appconsumos_qa_mb_pages_campo_agregar_solicitud_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Agregar_Solicitud_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Agregar_Solicitud_Campo.page")
 let appconsumos_qa_mb_pages_campo_detalle_orden_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page")
 let appconsumos_qa_mb_pages_campo_filtro_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page")
 let appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page")
@@ -110,16 +111,20 @@ let appconsumos_qa_mb_rules_application_getclientsupportversions_js = __webpack_
 let appconsumos_qa_mb_rules_application_getclientversion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/GetClientVersion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/GetClientVersion.js")
 let appconsumos_qa_mb_rules_application_onwillupdate_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/OnWillUpdate.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js")
 let appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/appconsumos_qa_mb/Rules/Application/ResetAppSettingsAndLogout.js")
+let appconsumos_qa_mb_rules_campo_agregar_materiales_solicitud_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Agregar_Materiales_Solicitud.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Agregar_Materiales_Solicitud.js")
+let appconsumos_qa_mb_rules_campo_borrar_material_lista_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Borrar_Material_Lista.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Borrar_Material_Lista.js")
 let appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js")
 let appconsumos_qa_mb_rules_campo_get_date_creacion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js")
 let appconsumos_qa_mb_rules_campo_get_date_ref_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_Date_ref.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_Date_ref.js")
 let appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js")
 let appconsumos_qa_mb_rules_campo_isvisible_btn_crearsolicitudes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js")
+let appconsumos_qa_mb_rules_campo_navto_agregar_solicitud_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js")
 let appconsumos_qa_mb_rules_campo_navto_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js")
 let appconsumos_qa_mb_rules_campo_navto_list_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js")
 let appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js")
 let appconsumos_qa_mb_rules_campo_select_almacen_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Select_almacen.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js")
 let appconsumos_qa_mb_rules_campo_target_lista_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Campo.js")
+let appconsumos_qa_mb_rules_campo_target_lista_materiales_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js")
 let appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js")
 let appconsumos_qa_mb_rules_get_info_usuario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Info_Usuario.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js")
 let appconsumos_qa_mb_rules_ingenio_get_date_creacion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_Date_creacion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_Date_creacion.js")
@@ -222,6 +227,7 @@ module.exports = {
 	appconsumos_qa_mb_pages_application_about_page : appconsumos_qa_mb_pages_application_about_page,
 	appconsumos_qa_mb_pages_application_support_page : appconsumos_qa_mb_pages_application_support_page,
 	appconsumos_qa_mb_pages_application_useractivitylog_page : appconsumos_qa_mb_pages_application_useractivitylog_page,
+	appconsumos_qa_mb_pages_campo_agregar_solicitud_campo_page : appconsumos_qa_mb_pages_campo_agregar_solicitud_campo_page,
 	appconsumos_qa_mb_pages_campo_detalle_orden_campo_page : appconsumos_qa_mb_pages_campo_detalle_orden_campo_page,
 	appconsumos_qa_mb_pages_campo_filtro_campo_page : appconsumos_qa_mb_pages_campo_filtro_campo_page,
 	appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page : appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page,
@@ -254,16 +260,20 @@ module.exports = {
 	appconsumos_qa_mb_rules_application_getclientversion_js : appconsumos_qa_mb_rules_application_getclientversion_js,
 	appconsumos_qa_mb_rules_application_onwillupdate_js : appconsumos_qa_mb_rules_application_onwillupdate_js,
 	appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js : appconsumos_qa_mb_rules_application_resetappsettingsandlogout_js,
+	appconsumos_qa_mb_rules_campo_agregar_materiales_solicitud_js : appconsumos_qa_mb_rules_campo_agregar_materiales_solicitud_js,
+	appconsumos_qa_mb_rules_campo_borrar_material_lista_js : appconsumos_qa_mb_rules_campo_borrar_material_lista_js,
 	appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js : appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js,
 	appconsumos_qa_mb_rules_campo_get_date_creacion_js : appconsumos_qa_mb_rules_campo_get_date_creacion_js,
 	appconsumos_qa_mb_rules_campo_get_date_ref_js : appconsumos_qa_mb_rules_campo_get_date_ref_js,
 	appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js : appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js,
 	appconsumos_qa_mb_rules_campo_isvisible_btn_crearsolicitudes_js : appconsumos_qa_mb_rules_campo_isvisible_btn_crearsolicitudes_js,
+	appconsumos_qa_mb_rules_campo_navto_agregar_solicitud_campo_js : appconsumos_qa_mb_rules_campo_navto_agregar_solicitud_campo_js,
 	appconsumos_qa_mb_rules_campo_navto_campo_js : appconsumos_qa_mb_rules_campo_navto_campo_js,
 	appconsumos_qa_mb_rules_campo_navto_list_campo_js : appconsumos_qa_mb_rules_campo_navto_list_campo_js,
 	appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js : appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js,
 	appconsumos_qa_mb_rules_campo_select_almacen_js : appconsumos_qa_mb_rules_campo_select_almacen_js,
 	appconsumos_qa_mb_rules_campo_target_lista_campo_js : appconsumos_qa_mb_rules_campo_target_lista_campo_js,
+	appconsumos_qa_mb_rules_campo_target_lista_materiales_js : appconsumos_qa_mb_rules_campo_target_lista_materiales_js,
 	appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js : appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js,
 	appconsumos_qa_mb_rules_get_info_usuario_js : appconsumos_qa_mb_rules_get_info_usuario_js,
 	appconsumos_qa_mb_rules_ingenio_get_date_creacion_js : appconsumos_qa_mb_rules_ingenio_get_date_creacion_js,
@@ -1022,6 +1032,145 @@ function ResetAppSettingsAndLogout(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Agregar_Materiales_Solicitud.js":
+/*!*****************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Agregar_Materiales_Solicitud.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Agregar_Materiales_Solicitud)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Agregar_Materiales_Solicitud(context) {
+  const pageProxy = context.getPageProxy();
+  let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Orden_Campo').getClientData();
+  let material = context.evaluateTargetPath('#Page:Agregar_Solicitud_Campo/#Control:material/#Value');
+  let cant = context.evaluateTargetPath('#Page:Agregar_Solicitud_Campo/#Control:cantidad/#Value');
+  var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
+  if (material.length < 1) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes seleccionar un material para continuar`
+      }
+    });
+  }
+  let data = material[0].BindingObject;
+  let stock = data.stock_disponible;
+
+  //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
+  /*if(stock == 0){
+      return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+              "Title": "Alerta",
+              "Message": `No hay stock disponible para este material`
+          }
+      });
+  }*/
+
+  if (!cant || cant < 0) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes ingresar una cantidad valida para continuar`
+      }
+    });
+  }
+
+  //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
+  /*if(cant > stock){
+      return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+              "Title": "Alerta",
+              "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und`
+          }
+      });
+  }*/
+
+  /*var nuevo = {
+      id: data.almacen.almacen_desc+"-"+data.material,
+      material: data.material,
+      material_desc: data.material_desc,
+      almacen: data.almacen.almacen , 
+      almacen_desc: data.almacen.almacen_desc,
+      centro: data.centro,
+      cant : cant,
+      stock_disponible: data.stock_disponible,
+      stock_reservado: data.stock_reservado
+  }*/
+
+  const duplicado = clientData.lista_materiales.filter(m => m.material === data.material && m.almacen.almacen === data.almacen.almacen).length > 0;
+  if (duplicado) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `El material ya fue ingresado anteriormente`
+      }
+    });
+  }
+  data.cant = cant;
+  clientData.lista_materiales.push(data);
+  list_component.redraw();
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
+    "Properties": {
+      "Message": `Nuevo material agregado`,
+      "Duration": 1,
+      "ShowActivityIndicator": true
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Borrar_Material_Lista.js":
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Borrar_Material_Lista.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Borrar_Material_Lista)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Borrar_Material_Lista(context) {
+  var data = context.binding;
+  const pageProxy = context.getPageProxy();
+  let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Orden_Campo').getClientData();
+  var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
+  const index = clientData.lista_materiales.findIndex(item => item.material === data.material && item.almacen.almacen === data.almacen.almacen);
+  if (index !== -1) {
+    clientData.lista_materiales.splice(index, 1); // Elimina el elemento en esa posición
+  }
+  list_component.redraw();
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
+    "Properties": {
+      "Message": `Material '${data.material_desc}' del ${data.almacen.almacen_desc} eliminado`,
+      "Duration": 1,
+      "ShowActivityIndicator": true
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js":
 /*!***********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js ***!
@@ -1057,6 +1206,36 @@ function Color_Estado_Sol_Campo(context) {
     console.error("Ocurrió un error al obtener el valor:", error);
     alert("No se pudo obtener el valor: " + error.message);
   }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavTo_Agregar_Solicitud_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function NavTo_Agregar_Solicitud_Campo(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Orden_Campo').getClientData();
+  clientData.lista_materiales = [];
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+    "Properties": {
+      "PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Agregar_Solicitud_Campo.page",
+      "ModalPage": true,
+      "ModalPageFullscreen": true
+    }
+  });
 }
 
 /***/ }),
@@ -1251,6 +1430,35 @@ function Target_Lista_Campo(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js":
+/*!************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Target_Lista_Materiales)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Target_Lista_Materiales(context) {
+  let target = context.evaluateTargetPath("#Page:Detalle_Orden_Campo/#ClientData/#Property:lista_materiales");
+  let searchString = context.searchString;
+  if (searchString) {
+    let searchResult = target.filter(prod => {
+      return prod.material.includes(searchString) || prod.material_desc.includes(searchString);
+    });
+    target = searchResult;
+  }
+  return target;
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js":
 /*!*******************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js ***!
@@ -1348,7 +1556,7 @@ function get_List_Campo_Equipo(context) {
   let equipos = context.evaluateTargetPath('#Page:Lista_Ordenes_Campo/#Control:filtro_equipos/#Value');
   let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
   var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
-  if (equipos < 1) {
+  if (equipos.length < 1) {
     clientData.lista_campo = [];
     return list_component.redraw();
   }
@@ -1680,7 +1888,7 @@ function get_List_Ingenio_Equipo(context) {
   let equipos = context.evaluateTargetPath('#Page:Lista_Ordenes_Ingenio/#Control:FormCellListPicker_Equipos_Ord/#Value');
   let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
   var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
-  if (equipos < 1) {
+  if (equipos.length < 1) {
     clientData.lista_ingenio = [];
     return list_component.redraw();
   }
@@ -2554,11 +2762,24 @@ ActionBar {
   color: white;
   background-color: #72BE44;
 }
+.ButtonText {
+  color: #72BE44;
+}
+.ButtonText2 {
+  color: #174087;
+}
+.Button2 {
+  color: white;
+  background-color: #174087;
+}
 .Button_Eliminar {
   color: white;
   background-color: #dd1c1cd8;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,aAAa;EACb,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,2BAA2B;AAC7B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nActionBar {\n  color: white ;\n  background-color: #72BE44;\n}\n.HeaderAdmin {\n  color: white;\n  background-color: #72BE44;\n}\n.HeaderAdminTitle {\n  color: white;\n}\n.Button {\n  color: white;\n  background-color: #72BE44;\n}\n.Button_Eliminar {\n  color: white;\n  background-color: #dd1c1cd8;\n}\n"],"sourceRoot":""}]);
+.fondoForm {
+  background-color: gray;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;AACD;EACE,aAAa;EACb,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,2BAA2B;AAC7B;AACA;EACE,sBAAsB;AACxB","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\nActionBar {\n  color: white ;\n  background-color: #72BE44;\n}\n.HeaderAdmin {\n  color: white;\n  background-color: #72BE44;\n}\n.HeaderAdminTitle {\n  color: white;\n}\n.Button {\n  color: white;\n  background-color: #72BE44;\n}\n.ButtonText {\n  color: #72BE44;\n}\n.ButtonText2 {\n  color: #174087;\n}\n.Button2 {\n  color: white;\n  background-color: #174087;\n}\n.Button_Eliminar {\n  color: white;\n  background-color: #dd1c1cd8;\n}\n.fondoForm {\n  background-color: gray;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2617,10 +2838,27 @@ ActionBar {
     background-color: #72BE44;
 }
 
+.ButtonText{
+    color:#72BE44;
+}
+
+.ButtonText2{
+    color:#174087;;
+}
+
+.Button2{
+    color:white; 
+    background-color: #174087;
+}
+
 .Button_Eliminar{
     color:white; 
     background-color: #dd1c1cd8;
-}`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,2BAA2B;AAC/B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\nActionBar {\n    color:white ; \n    background-color: #72BE44;\n}\n\n.HeaderAdmin{\n    color:white;\n    background-color: #72BE44;\n}\n\n.HeaderAdminTitle{\n    color:white;\n}\n\n.Button{\n    color:white; \n    background-color: #72BE44;\n}\n\n.Button_Eliminar{\n    color:white; \n    background-color: #dd1c1cd8;\n}"],"sourceRoot":""}]);
+}
+
+.fondoForm{
+    background-color: gray;
+}`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.less"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;CAoBC;;AAED;IACI,YAAY;IACZ,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,yBAAyB;AAC7B;;AAEA;IACI,WAAW;IACX,2BAA2B;AAC/B;;AAEA;IACI,sBAAsB;AAC1B","sourcesContent":["/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.\n\nExamples:\n\n@mdkYellow1: #ffbb33;\n@mdkRed1: #ff0000;\n\n//// By-Type style: All Pages in the application will now have a yellow background\nPage\n\n{ background-color: @mdkYellow1; }\n//// By-Name style: All Buttons with _Name == \"BlueButton\" will now have this style\n#BlueButton\n\n{ color: @mdkYellow1; background-color: #0000FF; }\n//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function\n\n.MyButton\n\n{ color: @mdkYellow1; background-color: @mdkRed1; }\n*/\n\nActionBar {\n    color:white ; \n    background-color: #72BE44;\n}\n\n.HeaderAdmin{\n    color:white;\n    background-color: #72BE44;\n}\n\n.HeaderAdminTitle{\n    color:white;\n}\n\n.Button{\n    color:white; \n    background-color: #72BE44;\n}\n\n.ButtonText{\n    color:#72BE44;\n}\n\n.ButtonText2{\n    color:#174087;;\n}\n\n.Button2{\n    color:white; \n    background-color: #174087;\n}\n\n.Button_Eliminar{\n    color:white; \n    background-color: #dd1c1cd8;\n}\n\n.fondoForm{\n    background-color: gray;\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2653,11 +2891,24 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ns-light ActionBar {
 	color: white;
 	background-color: #72BE44;
 }
+.ns-light .ButtonText {
+	color: #72BE44;
+}
+.ns-light .ButtonText2 {
+	color: #174087;
+}
+.ns-light .Button2 {
+	color: white;
+	background-color: #174087;
+}
 .ns-light .Button_Eliminar {
 	color: white;
 	background-color: #dd1c1cd8;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,2BAA2B;AAC5B","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .Button_Eliminar {\n\tcolor: white;\n\tbackground-color: #dd1c1cd8;\n}\n"],"sourceRoot":""}]);
+.ns-light .fondoForm {
+	background-color: gray;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,cAAc;AACf;AACA;CACC,cAAc;AACf;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,2BAA2B;AAC5B;AACA;CACC,sBAAsB;AACvB","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .ButtonText {\n\tcolor: #72BE44;\n}\n.ns-light .ButtonText2 {\n\tcolor: #174087;\n}\n.ns-light .Button2 {\n\tcolor: white;\n\tbackground-color: #174087;\n}\n.ns-light .Button_Eliminar {\n\tcolor: white;\n\tbackground-color: #dd1c1cd8;\n}\n.ns-light .fondoForm {\n\tbackground-color: gray;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2690,11 +2941,24 @@ Button {
 	font-color: white;
 	background-color: #72BE44;
 }
+ButtonText {
+	font-color: #72BE44;
+}
+ButtonText2 {
+	font-color: #174087;
+}
+Button2 {
+	font-color: white;
+	background-color: #174087;
+}
 Button_Eliminar {
 	font-color: white;
 	background-color: #dd1c1cd8;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,2BAA2B;AAC5B","sourcesContent":["ActionBar {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdmin {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdminTitle {\n\tfont-color: white;\n}\nButton {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nButton_Eliminar {\n\tfont-color: white;\n\tbackground-color: #dd1c1cd8;\n}\n"],"sourceRoot":""}]);
+fondoForm {
+	background-color: gray;
+}
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;AAClB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,iBAAiB;CACjB,yBAAyB;AAC1B;AACA;CACC,iBAAiB;CACjB,2BAA2B;AAC5B;AACA;CACC,sBAAsB;AACvB","sourcesContent":["ActionBar {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdmin {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nHeaderAdminTitle {\n\tfont-color: white;\n}\nButton {\n\tfont-color: white;\n\tbackground-color: #72BE44;\n}\nButtonText {\n\tfont-color: #72BE44;\n}\nButtonText2 {\n\tfont-color: #174087;\n}\nButton2 {\n\tfont-color: white;\n\tbackground-color: #174087;\n}\nButton_Eliminar {\n\tfont-color: white;\n\tbackground-color: #dd1c1cd8;\n}\nfondoForm {\n\tbackground-color: gray;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2922,13 +3186,27 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Agregar_Solicitud_Campo.page":
+/*!**************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Agregar_Solicitud_Campo.page ***!
+  \**************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Res: {reserva}","Footnote":"No. Orden: {orden}","Description":"{orden_desc}","SubstatusText":"Centro: {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/centro}","DetailImageIsCircular":false,"Tags":["#Page:Main/#ClientData/info_user/correo"],"BodyText":"{equipo} - {equipo_desc} ","HeadlineText":"Almacen: {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen} - {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty2","IsVisible":true,"Separator":false,"Caption":"Ficha Operario *","PlaceHolder":"Ingresa el número de ficha","KeyboardType":"Number","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":false,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones en la solicitud","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Material","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"material","IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","Label":"Selecciona un material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleciona un material","HelperText":"Verifica que el material seleccionado provenga del almacén donde se realizó el consumo.","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Material...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Inventario","QueryOptions":"$expand=almacen&$filter=almacen/tipo eq 'CAMPO' and almacen_sociedad eq '{{#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/sociedad}}'&$orderby=almacen_almacen","ReadLink":"{@odata.readLink}"},"ObjectCell":{"Description":"{material_desc}","DisplayDescriptionInMobile":true,"Footnote":"Stock: disp {stock_disponible} / res: {stock_disponible}","PreserveIconStackSpacing":false,"Subhead":"{almacen/almacen} - {almacen/almacen_desc}","Title":"{almacen/almacen_desc} - {material}","Visible":true},"ReturnValue":"{almacen/almacen_desc} - {material}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"cantidad","IsVisible":true,"Separator":false,"Caption":"Cantidad *","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","AlternateInput":"None","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":false,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Agregar_Materiales_Solicitud.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales Agregados a la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay materiales aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{material}","Subhead":"Tomado de: {almacen/almacen_desc} ({almacen/almacen})","Description":"{material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant: {cant} de {stock_disponible}","PreserveIconStackSpacing":false,"AccessoryType":"DetailButton","AccessoryButtonIcon":"sap-icon://delete","AccessoryButtonText":"Borrar","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Campo/Borrar_Material_Lista.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Agregar_Solicitud_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"close","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estas seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Orden_Campo"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Nueva Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Solicitud Campo","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://save","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page":
 /*!**********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page ***!
   \**********************************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"/appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js","Footnote":"{orden_desc}","Description":"{equipo} - {equipo_desc}","StatusText":"{grupo_plan} - {centro_plan}","DetailImage":"sap-icon://inspection","DetailImageIsCircular":false,"BodyText":"/appconsumos_qa_mb/Rules/Campo/get_Date_ref.js","HeadlineText":"{orden}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{reserva}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"No. Reserva","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Detalle Reserva"},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"DetalleReserva","QueryOptions":"$filter=reserva eq '{reserva}'&$orderby=posicion","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay componentes aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"Pos: {posicion}","Subhead":"Material: {material}","Footnote":"{material_desc}","Description":"Cantidad tomada: {cant_tomada} de {cant_solicitada}","DisplayDescriptionInMobile":true,"SubstatusText":"Op: {operacion}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Orden_Campo","ActionBar":{"Items":[],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Detalle Orden"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Solicitud","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js","Image":"sap-icon://create","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+=======
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"/appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js","Footnote":"{orden_desc}","Description":"{equipo} - {equipo_desc}","StatusText":"{grupo_plan} - {centro_plan}","DetailImage":"sap-icon://inspection","DetailImageIsCircular":false,"BodyText":"/appconsumos_qa_mb/Rules/Campo/get_Date_ref.js","HeadlineText":"{orden}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{reserva}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"No. Reserva","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"DetalleReserva","QueryOptions":"$filter=reserva eq '{reserva}'&$orderby=posicion","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Detalle Reserva"},"Visible":true,"EmptySection":{"Caption":"No hay componentes aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"Pos: {posicion}","Subhead":"Material: {material}","Footnote":"{material_desc}","Description":"Cantidad tomada: {cant_tomada} de {cant_solicitada}","DisplayDescriptionInMobile":true,"SubstatusText":"Op: {operacion}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Orden_Campo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Detalle Orden"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Solicitud","Styles":{"Button":"Button"},"Image":"sap-icon://create","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -2938,7 +3216,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \***************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo órdenes de mantemiento en Campo","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"almacen_campo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacén","HelperText":"Debes seleccionar un almacén para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/Select_almacen.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{tipo}","SubstatusText":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":"/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js","Separator":true,"Styles":{"Button":"Button"},"Title":"Órdenes y Crear Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://create-form","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Solicitudes Vigentes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://approvals","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Styles":{"Button":"Button"},"Title":"Histórico de Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://detail-view","ImagePosition":"Leading","Enabled":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Campo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Órdenes Campo"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Modulo órdenes de mantemiento en Campo","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"almacen_campo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un almacén","HelperText":"Debes seleccionar un almacén para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/Select_almacen.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":false,"StatusText":"{sociedad}","Subhead":"{tipo}","SubstatusText":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":"/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js","Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Órdenes y Crear Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://create-form","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Solicitudes Vigentes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://approvals","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Histórico de Solicitudes","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://detail-view","ImagePosition":"Leading","Enabled":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Campo","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Órdenes Campo"}}
 
 /***/ }),
 
@@ -3068,7 +3346,11 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \******************************************************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Almacenes_Sol","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Selecciona Almacenes","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona los almacenes","HelperText":"Debes seleccionar al menos un almacen para mostrar las solicitudes asociadas","OnValueChange":"/appconsumos_qa_mb/Rules/Inventario/get_List_Abastecimiento.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":true,"Subhead":"{centro}","SubstatusText":"{sociedad}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes de Abastecimiento"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Solicitud_Abast.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"$(DT,{fecha_creacion})","Subhead":"{operario_ficha}","Footnote":"{operario/nombre}","Description":"{observaciones_tec}","DisplayDescriptionInMobile":true,"StatusText":"{almacen_sociedad}","SubstatusText":"{almacen_centro}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://cart-3"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Crear Solicitud","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Solicitudes de Reabastecimiento"}}
+=======
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes de Abastecimiento"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"$(DT,{fecha_creacion})","Subhead":"{operario_ficha}","Footnote":"{operario/nombre}","Description":"{observaciones_tec}","DisplayDescriptionInMobile":true,"StatusText":"{almacen_sociedad}","SubstatusText":"{almacen_centro}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://cart-3"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Crear Solicitud","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Solicitudes de Reabastecimiento"}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -3288,7 +3570,7 @@ module.exports = {"_Type":"Action.Type.BannerMessage","ActionResult":{"_Name":"G
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"GenericMessageBox"},"Message":"Message","OKCaption":"OK"}
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"GenericMessageBox"},"Message":"Message","OKCaption":"OK","Styles":{"OKButton":"ButtonText2","CancelButton":"ButtonText2"}}
 
 /***/ }),
 
@@ -3652,7 +3934,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#72BE44"},"HeaderAdmin":{"font-color":"white","background-color":"#72BE44"},"HeaderAdminTitle":{"font-color":"white"},"Button":{"font-color":"white","background-color":"#72BE44"},"Button_Eliminar":{"font-color":"white","background-color":"#dd1c1cd8"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#72BE44"},"HeaderAdmin":{"font-color":"white","background-color":"#72BE44"},"HeaderAdminTitle":{"font-color":"white"},"Button":{"font-color":"white","background-color":"#72BE44"},"ButtonText":{"font-color":"#72BE44"},"ButtonText2":{"font-color":"#174087"},"Button2":{"font-color":"white","background-color":"#174087"},"Button_Eliminar":{"font-color":"white","background-color":"#dd1c1cd8"},"fondoForm":{"background-color":"gray"}}');
 
 /***/ }),
 

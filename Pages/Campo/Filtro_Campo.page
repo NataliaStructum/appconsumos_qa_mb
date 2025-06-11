@@ -75,6 +75,7 @@
 							"IsVisible": "/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js",
 							"Separator": true,
 							"Styles": {
+								"Image": "Button",
 								"Button": "Button"
 							},
 							"Title": "Órdenes y Crear Solicitudes",
@@ -92,6 +93,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
+								"Image": "Button",
 								"Button": "Button"
 							},
 							"Title": "Solicitudes Vigentes",
@@ -109,6 +111,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
+								"Image": "Button",
 								"Button": "Button"
 							},
 							"Title": "Histórico de Solicitudes",
@@ -137,7 +140,7 @@
 	"_Name": "Filtro_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Órdenes Campo"
 	}

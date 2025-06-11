@@ -62,6 +62,13 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Detalle Reserva"
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
@@ -70,13 +77,6 @@
 						"ReadLink": "{@odata.readLink}"
 					},
 					"_Name": "SectionObjectTable0",
-					"Header": {
-						"_Type": "SectionCommon.Type.Header",
-						"_Name": "SectionCommonTypeHeader0",
-						"AccessoryType": "None",
-						"UseTopPadding": true,
-						"Caption": "Detalle Reserva"
-					},
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No hay componentes aún",
@@ -134,7 +134,7 @@
 	"_Name": "Detalle_Orden_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Orden"
 	},
@@ -148,8 +148,10 @@
 				"Visible": true,
 				"Title": "Crear Solicitud",
 				"Styles": {
+					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js",
 				"Image": "sap-icon://create",
 				"Enabled": true,
 				"ButtonType": "Primary",
