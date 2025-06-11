@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "Create_SolicitudApp_Abastecimiento"
+	},
+	"Target": {
+		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+		"EntitySet": "Solicitudes"
+	},
+	"Properties": {
+		"id": "",
+		"operario_ficha": "",
+		"almacen_sociedad": "",
+		"almacen_almacen": "",
+		"almacen_centro": "",
+		"estado": "",
+		"correo_creacion": "",
+		"tipo": ""
+	}
+}
