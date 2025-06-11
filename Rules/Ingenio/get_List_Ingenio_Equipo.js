@@ -8,7 +8,7 @@ export default function get_List_Ingenio_Equipo(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0")
 
-    if (equipos < 1) {
+    if (equipos.length < 1) {
         clientData.lista_ingenio = []
         return list_component.redraw()
     }

@@ -7,6 +7,7 @@ export default function NavTo_List_Campo(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
     clientData.centro = centro
     clientData.lista_campo = []
+    
 
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",

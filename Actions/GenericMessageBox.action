@@ -4,5 +4,9 @@
 		"_Name": "GenericMessageBox"
 	},
 	"Message": "Message",
-	"OKCaption": "OK"
+	"OKCaption": "OK",
+	"Styles": {
+		"OKButton": "ButtonText2",
+		"CancelButton": "ButtonText2"
+	}
 }

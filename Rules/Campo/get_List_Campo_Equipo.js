@@ -8,7 +8,7 @@ export default function get_List_Campo_Equipo(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0")
 
-    if (equipos < 1) {
+    if (equipos.length < 1) {
         clientData.lista_campo = []
         return list_component.redraw()
     }
