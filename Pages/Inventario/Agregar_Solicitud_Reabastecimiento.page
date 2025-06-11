@@ -10,7 +10,7 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Subhead": "Correo: {#Page:Main/#ClientData/info_user/correo}",
+						"Description": "Correo: {#Page:Main/#ClientData/info_user/correo}",
 						"StatusText": "{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro} - {#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}",
 						"DetailImageIsCircular": false,
 						"HeadlineText": "{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen} -{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen_desc}",
@@ -35,8 +35,8 @@
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_Ficha",
 							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Ficha Operario",
+							"Separator": false,
+							"Caption": "Ficha Operario *",
 							"PlaceHolder": "Ingresa el número de ficha",
 							"KeyboardType": "Number",
 							"AlternateInput": "None",
@@ -47,73 +47,12 @@
 							"_Type": "Control.Type.FormCell.Note",
 							"_Name": "FormCellNote_Observaciones",
 							"IsVisible": true,
-							"Separator": true,
+							"Separator": false,
 							"Caption": "Observaciones",
 							"PlaceHolder": "Ingresa las observaciones de la solicitud",
 							"MinNumberOfLines": 3,
 							"Enabled": true,
 							"IsEditable": true
-						},
-						{
-							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker_Materiales",
-							"IsVisible": true,
-							"Separator": true,
-							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
-							"Caption": "Materiales",
-							"DataPaging": {
-								"ShowLoadingIndicator": false,
-								"PageSize": 50
-							},
-							"PickerPrompt": "Seleccionar materiales",
-							"IsSelectedSectionEnabled": false,
-							"IsPickerDismissedOnSelection": true,
-							"AllowDefaultValueIfOneItem": false,
-							"IsEditable": true,
-							"Search": {
-								"Enabled": true
-							},
-							"PickerItems": {
-								"Target": {
-									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-									"EntitySet": "Inventario",
-									"QueryOptions": "$expand=almacen&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"
-								},
-								"ObjectCell": {
-									"Description": "{material_desc}",
-									"PreserveIconStackSpacing": true,
-									"Subhead": "Disponible: {stock_disponible}",
-									"Title": "{material}",
-									"Visible": true
-								},
-								"ReturnValue": "{material}"
-							}
-						},
-						{
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty_Cantidad",
-							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Cantidad",
-							"PlaceHolder": "Ingresa la cantidad del material",
-							"KeyboardType": "Number",
-							"Enabled": true,
-							"IsEditable": true
-						},
-						{
-							"_Type": "Control.Type.FormCell.Button",
-							"_Name": "FormCellButton_Add_Material",
-							"IsVisible": true,
-							"Separator": true,
-							"Title": "Agregar Material",
-							"Alignment": "Right",
-							"ButtonType": "Text",
-							"Semantic": "Tint",
-							"Image": "sap-icon://add-product",
-							"ImagePosition": "Leading",
-							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js"
 						}
 					],
 					"Layout": {
@@ -127,12 +66,107 @@
 					"_Name": "SectionFormCell0"
 				},
 				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": true,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Label",
+							"_Name": "FormCellLabel0",
+							"IsVisible": true,
+							"Separator": true,
+							"Text": "Agregar Material",
+							"TextWrap": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker_Materiales",
+							"IsVisible": true,
+							"Separator": false,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Material *",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccionar materiales",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Buscar Material ..."
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "Inventario",
+									"QueryOptions": "$expand=almacen&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"
+								},
+								"ObjectCell": {
+									"Description": "{material_desc}",
+									"Footnote": "Disponible: {stock_disponible} / Reservado: {stock_disponible}",
+									"PreserveIconStackSpacing": false,
+									"Title": "{material}",
+									"Visible": true
+								},
+								"ReturnValue": "{material}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_Cantidad",
+							"IsVisible": true,
+							"Separator": false,
+							"Caption": "Cantidad *",
+							"PlaceHolder": "Ingresa la cantidad del material",
+							"KeyboardType": "Number",
+							"HelperText": "Debe ser un número mayor a 0",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton_Add_Material",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"Title": "Agregar Material",
+							"Alignment": "Right",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://add-product",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Materiales de la solicitud"
+						"Caption": "Materiales de la Solicitud"
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
@@ -181,6 +215,11 @@
 						"OnAccessoryButtonPress": "/appconsumos_qa_mb/Rules/Inventario/Borrar_Material_Lista_Abaste.js",
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Buscar Material...",
+						"Mode": "Expandable"
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -238,6 +277,10 @@
 				"_Name": "ToolbarItem0",
 				"Visible": true,
 				"Title": "Crear Solicitud",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
 				"Image": "sap-icon://save",
 				"Enabled": true,
 				"ButtonType": "Primary",

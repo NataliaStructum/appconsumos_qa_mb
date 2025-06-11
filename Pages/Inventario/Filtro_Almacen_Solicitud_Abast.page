@@ -62,7 +62,7 @@
 									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"
 								},
 								"ObjectCell": {
-									"PreserveIconStackSpacing": true,
+									"PreserveIconStackSpacing": false,
 									"Subhead": "{centro}",
 									"SubstatusText": "{sociedad}",
 									"Title": "{almacen} - {almacen_desc}",
@@ -105,7 +105,7 @@
 	"_Name": "Filtro_Almacen_Solicitud_Abast",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Almacén"
 	}

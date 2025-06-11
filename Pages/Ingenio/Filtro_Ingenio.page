@@ -59,7 +59,7 @@
 									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'INGENIO'&$orderby=almacen"
 								},
 								"ObjectCell": {
-									"PreserveIconStackSpacing": true,
+									"PreserveIconStackSpacing": false,
 									"Subhead": "{centro}",
 									"Title": "{almacen} - {almacen_desc}",
 									"Visible": true
@@ -135,7 +135,7 @@
 	"_Name": "Filtro_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar8",
+		"_Name": "ActionBar9",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Órdenes Ingenio"
 	}

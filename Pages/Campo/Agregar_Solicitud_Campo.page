@@ -123,7 +123,7 @@
 								"ObjectCell": {
 									"Description": "{material_desc}",
 									"DisplayDescriptionInMobile": true,
-									"Footnote": "Stock: disp {stock_disponible} / res: {stock_disponible}",
+									"Footnote": "Disponible: {stock_disponible} / Reservado: {stock_disponible}",
 									"PreserveIconStackSpacing": false,
 									"Subhead": "{almacen/almacen} - {almacen/almacen_desc}",
 									"Title": "{almacen/almacen_desc} - {material}",
@@ -180,7 +180,7 @@
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Materiales Agregados a la Solicitud"
+						"Caption": "Materiales de la Solicitud"
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
