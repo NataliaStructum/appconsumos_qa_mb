@@ -9,64 +9,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
-					"Controls": [
-						{
-							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker_Almacenes_Sol",
-							"IsVisible": true,
-							"Separator": true,
-							"AllowMultipleSelection": false,
-							"AllowEmptySelection": true,
-							"Caption": "Selecciona Almacenes",
-							"DataPaging": {
-								"ShowLoadingIndicator": false,
-								"PageSize": 50
-							},
-							"PickerPrompt": "Selecciona los almacenes",
-							"HelperText": "Debes seleccionar al menos un almacen para mostrar las solicitudes asociadas",
-							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/get_List_Abastecimiento.js",
-							"IsSelectedSectionEnabled": false,
-							"IsPickerDismissedOnSelection": false,
-							"AllowDefaultValueIfOneItem": false,
-							"IsEditable": true,
-							"Search": {
-								"Enabled": true
-							},
-							"PickerItems": {
-								"Target": {
-									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-									"EntitySet": "AlmacenesApp",
-									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"
-								},
-								"ObjectCell": {
-									"PreserveIconStackSpacing": true,
-									"Subhead": "{centro}",
-									"SubstatusText": "{sociedad}",
-									"Title": "{almacen} - {almacen_desc}",
-									"Visible": true
-								},
-								"ReturnValue": "{almacen}"
-							}
-						}
-					],
-					"Layout": {
-						"NumberOfColumns": 1
-					},
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0"
-				},
-				{
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
@@ -82,7 +24,11 @@
 						"ControlSeparator": true
 					},
 					"_Type": "Section.Type.ObjectTable",
-					"Target": "/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Solicitud_Abast.js",
+					"Target": {
+						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+						"EntitySet": "Solicitudes",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js"
+					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
@@ -163,7 +109,8 @@
 				"Icon": "sap-icon://add",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"Visible": true
+				"Visible": true,
+				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js"
 			}
 		],
 		"_Name": "ActionBar0",

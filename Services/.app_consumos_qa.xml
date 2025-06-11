@@ -14,7 +14,9 @@
                 <EntitySet Name="Almacenes" EntityType="appconsumos_qa.Almacenes"/>
                 <EntitySet Name="AlmacenesApp" EntityType="appconsumos_qa.AlmacenesApp"/>
                 <EntitySet Name="MaterialesAlmacen" EntityType="appconsumos_qa.MaterialesAlmacen"/>
-                <EntitySet Name="Inventario" EntityType="appconsumos_qa.Inventario"/>
+                <EntitySet Name="Inventario" EntityType="appconsumos_qa.Inventario">
+                    <NavigationPropertyBinding Path="almacen" Target="AlmacenesApp"/>
+                </EntitySet>
                 <EntitySet Name="Equipos" EntityType="appconsumos_qa.Equipos"/>
                 <EntitySet Name="Ordenes" EntityType="appconsumos_qa.Ordenes"/>
                 <EntitySet Name="DetalleReserva" EntityType="appconsumos_qa.DetalleReserva"/>
@@ -96,14 +98,20 @@
             <EntityType Name="Inventario">
                 <Key>
                     <PropertyRef Name="material"/>
-                    <PropertyRef Name="almacen"/>
-                    <PropertyRef Name="centro"/>
-                    <PropertyRef Name="sociedad"/>
+                    <PropertyRef Name="almacen_sociedad"/>
+                    <PropertyRef Name="almacen_almacen"/>
+                    <PropertyRef Name="almacen_centro"/>
                 </Key>
                 <Property Name="material" Type="Edm.String" MaxLength="18" Nullable="false"/>
-                <Property Name="almacen" Type="Edm.String" MaxLength="4" Nullable="false"/>
-                <Property Name="centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
-                <Property Name="sociedad" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <NavigationProperty Name="almacen" Type="appconsumos_qa.AlmacenesApp">
+                    <ReferentialConstraint Property="almacen_sociedad" ReferencedProperty="sociedad"/>
+                    <ReferentialConstraint Property="almacen_almacen" ReferencedProperty="almacen"/>
+                    <ReferentialConstraint Property="almacen_centro" ReferencedProperty="centro"/>
+                </NavigationProperty>
+                <Property Name="almacen_sociedad" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="almacen_almacen" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="almacen_centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
                 <Property Name="stock_disponible" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="stock_reservado" Type="Edm.Decimal" Precision="13" Scale="3"/>
             </EntityType>
@@ -196,8 +204,6 @@
                 <Property Name="fecha_autorizado" Type="Edm.DateTimeOffset" Precision="7"/>
                 <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="16"/>
-                <Property Name="memorando" Type="Edm.Boolean"/>
-                <Property Name="confirmacion_tec" Type="Edm.Boolean"/>
             </EntityType>
             <EntityType Name="ComponentesSolicitud">
                 <Key>
@@ -231,6 +237,8 @@
                 </NavigationProperty>
                 <Property Name="solicitud_id" Type="Edm.Guid"/>
                 <Property Name="cantidad_tomada" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="confirmacion_tec" Type="Edm.Boolean"/>
+                <Property Name="memorando" Type="Edm.Boolean"/>
             </EntityType>
             <EntityType Name="VerSolicitudesAbiertas">
                 <Key>
@@ -277,8 +285,6 @@
                 <Property Name="fecha_autorizado" Type="Edm.DateTimeOffset" Precision="7"/>
                 <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="16"/>
-                <Property Name="memorando" Type="Edm.Boolean"/>
-                <Property Name="confirmacion_tec" Type="Edm.Boolean"/>
             </EntityType>
             <Annotations Target="appconsumos_qa.Solicitudes/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
