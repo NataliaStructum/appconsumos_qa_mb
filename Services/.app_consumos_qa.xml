@@ -236,7 +236,13 @@
                     <ReferentialConstraint Property="solicitud_id" ReferencedProperty="id"/>
                 </NavigationProperty>
                 <Property Name="solicitud_id" Type="Edm.Guid"/>
+                <Property Name="mat_nuevo" Type="Edm.String" MaxLength="18"/>
+                <Property Name="mat_nuevo_centro" Type="Edm.String" MaxLength="4"/>
+                <Property Name="mat_nuevo_almacen" Type="Edm.String" MaxLength="4"/>
+                <Property Name="mat_nuevo_desc" Type="Edm.String" MaxLength="40"/>
                 <Property Name="cantidad_tomada" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="cantidad_aprobada" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="aprobado" Type="Edm.Boolean"/>
                 <Property Name="confirmacion_tec" Type="Edm.Boolean"/>
                 <Property Name="memorando" Type="Edm.Boolean"/>
             </EntityType>

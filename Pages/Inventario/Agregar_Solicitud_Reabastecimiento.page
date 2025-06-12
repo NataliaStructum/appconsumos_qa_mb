@@ -66,10 +66,6 @@
 					"_Name": "SectionFormCell0"
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": true,
 						"BottomSectionSeparator": true,
@@ -77,8 +73,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell1",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Label",
@@ -158,7 +152,13 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
 				},
 				{
 					"Header": {
@@ -217,9 +217,9 @@
 						"Selected": false
 					},
 					"Search": {
+						"Mode": "Expandable",
 						"Enabled": true,
-						"Placeholder": "Buscar Material...",
-						"Mode": "Expandable"
+						"Placeholder": "Buscar Material..."
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -281,6 +281,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js",
 				"Image": "sap-icon://save",
 				"Enabled": true,
 				"ButtonType": "Primary",

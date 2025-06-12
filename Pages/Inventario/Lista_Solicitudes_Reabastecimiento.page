@@ -48,7 +48,7 @@
 						"Footnote": "{operario/nombre}",
 						"Description": "{observaciones_tec}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "{almacen_sociedad}",
+						"StatusText": "{almacen_sociedad} - {id}",
 						"SubstatusText": "{almacen_centro}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
