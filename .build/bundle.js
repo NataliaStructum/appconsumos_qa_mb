@@ -56,6 +56,7 @@ let appconsumos_qa_mb_actions_logging_uploadlogprogress_action = __webpack_requi
 let appconsumos_qa_mb_actions_mensajes_ms_confirmacioncreatesolicitudcampo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Mensajes/ms_confirmacionCreateSolicitudCampo.action */ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_confirmacionCreateSolicitudCampo.action")
 let appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action")
 let appconsumos_qa_mb_actions_odata_create_almacenesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action")
+let appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action")
 let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
 let appconsumos_qa_mb_actions_odata_create_solicitud_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Solicitud_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Solicitud_Campo.action")
 let appconsumos_qa_mb_actions_odata_create_solicitudapp_abastecimiento_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_SolicitudApp_Abastecimiento.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_SolicitudApp_Abastecimiento.action")
@@ -154,6 +155,7 @@ let appconsumos_qa_mb_rules_inventario_navto_list_abastecimiento_js = __webpack_
 let appconsumos_qa_mb_rules_inventario_query_lista_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js")
 let appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Sol_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Sol_Abast.js")
 let appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js")
+let appconsumos_qa_mb_rules_inventario_validate_create_solicitud_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js")
 let appconsumos_qa_mb_rules_logging_loglevels_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/LogLevels.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js")
 let appconsumos_qa_mb_rules_logging_settracecategories_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/SetTraceCategories.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/SetTraceCategories.js")
 let appconsumos_qa_mb_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/SetUserLogLevel.js")
@@ -211,6 +213,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_mensajes_ms_confirmacioncreatesolicitudcampo_action : appconsumos_qa_mb_actions_mensajes_ms_confirmacioncreatesolicitudcampo_action,
 	appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action : appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action,
 	appconsumos_qa_mb_actions_odata_create_almacenesapp_action : appconsumos_qa_mb_actions_odata_create_almacenesapp_action,
+	appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action : appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action,
 	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
 	appconsumos_qa_mb_actions_odata_create_solicitud_campo_action : appconsumos_qa_mb_actions_odata_create_solicitud_campo_action,
 	appconsumos_qa_mb_actions_odata_create_solicitudapp_abastecimiento_action : appconsumos_qa_mb_actions_odata_create_solicitudapp_abastecimiento_action,
@@ -309,6 +312,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_inventario_query_lista_abast_js : appconsumos_qa_mb_rules_inventario_query_lista_abast_js,
 	appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js : appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js,
 	appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js : appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js,
+	appconsumos_qa_mb_rules_inventario_validate_create_solicitud_abast_js : appconsumos_qa_mb_rules_inventario_validate_create_solicitud_abast_js,
 	appconsumos_qa_mb_rules_logging_loglevels_js : appconsumos_qa_mb_rules_logging_loglevels_js,
 	appconsumos_qa_mb_rules_logging_settracecategories_js : appconsumos_qa_mb_rules_logging_settracecategories_js,
 	appconsumos_qa_mb_rules_logging_setuserloglevel_js : appconsumos_qa_mb_rules_logging_setuserloglevel_js,
@@ -2276,11 +2280,72 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Create_Solicitud_Abastecimiento)
 /* harmony export */ });
+/* harmony import */ var _guid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../guid */ "./build.definitions/appconsumos_qa_mb/Rules/guid.js");
 /**
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
-function Create_Solicitud_Abastecimiento(context) {}
+
+function Create_Solicitud_Abastecimiento(context) {
+  let actionResult = context.getActionResult("Create_SolicitudApp_Abastecimiento");
+  let data = JSON.parse(actionResult.data);
+  let idSolicitud = data.id;
+  let clientData = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
+  let lista_materiales = clientData.lista_materiales;
+
+  // Obtener datos del almacén desde ClientData
+  let clientDataAlmacen = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Solicitud_Abast').getClientData();
+  let dataAlmacen = clientDataAlmacen.almacen_abast;
+  let exitosos = [];
+  let errores = [];
+
+  // Create de la solicitud
+  let promises = lista_materiales.map(material => {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action",
+      "Properties": {
+        "Properties": {
+          "id": (0,_guid__WEBPACK_IMPORTED_MODULE_0__["default"])(context),
+          "material_material": material.material,
+          "almacen_sociedad": dataAlmacen.sociedad,
+          "almacen_almacen": dataAlmacen.almacen,
+          "almacen_centro": dataAlmacen.centro,
+          "solicitud_id": idSolicitud,
+          "cantidad_tomada": material.cant
+        }
+      }
+    }).then(() => {
+      exitosos.push(`${material.material} (${material.material_desc})`);
+    }).catch(() => {
+      errores.push(`${material.material} (${material.material_desc})`);
+    });
+  });
+
+  // Procesar los resultados
+  return Promise.allSettled(promises).then(() => {
+    let mensaje = '';
+    if (errores.length === 0) {
+      mensaje = 'Todos los materiales fueron agregados exitosamente a la solicitud.';
+    } else if (exitosos.length === 0) {
+      mensaje = `Falló la creación de todos los materiales:\n${errores.join('\n')}`;
+    } else {
+      mensaje = `Algunos materiales fueron agregados con éxito.\n\nErrores:\n${errores.join('\n')}`;
+    }
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Resultado",
+        "Message": mensaje
+      }
+    }).then(() => {
+      // Finalmente cerrar el modal
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+        "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page"
+      });
+    });
+  });
+}
 
 /***/ }),
 
@@ -2504,6 +2569,71 @@ function Target_Lista_Materiales_Agregados(context) {
     target = searchResult;
   }
   return target;
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js":
+/*!*************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Validate_Create_Solicitud_Abast)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Validate_Create_Solicitud_Abast(context) {
+  let clientDataDetalle = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
+  clientDataDetalle.lista_materiales;
+  let ficha = context.evaluateTargetPath('#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellSimpleProperty_Ficha/#Value');
+  if (ficha) {
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=ficha eq '${ficha}'`).then(async results => {
+      if (results && results.length > 0) {
+        if (clientDataDetalle.lista_materiales && clientDataDetalle.lista_materiales.length > 0) {
+          return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+              "Title": "Confirmación",
+              "Message": `¿Estás seguro que quieres crear la solicitud?`,
+              "OKCaption": "Aceptar",
+              "OnOK": "/appconsumos_qa_mb/Actions/oData/Create_SolicitudApp_Abastecimiento.action",
+              "CancelCaption": "Cancelar"
+            }
+          });
+          //return context.executeAction("/appconsumos_qa_mb/Actions/oData/Create_Solicitud_Campo.action");
+        }
+        return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Alerta",
+            "Message": `Debes ingresar al menos un material a la solicitud para continuar`
+          }
+        });
+      }
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Alerta",
+          "Message": `Número de ficha no encontrada. Debes ingresar un número de ficha válido para continuar`
+        }
+      });
+    }).catch(error => {
+      alert(`Error al encontrar la ficha ${error.message}`);
+    });
+  }
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+      "Title": "Alerta",
+      "Message": `Debes ingresar el número de ficha para continuar`
+    }
+  });
 }
 
 /***/ }),
@@ -3490,7 +3620,11 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \******************************************************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Description":"Correo: {#Page:Main/#ClientData/info_user/correo}","StatusText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro} - {#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}","DetailImageIsCircular":false,"HeadlineText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen} -{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Operario *","PlaceHolder":"Ingresa el número de ficha","KeyboardType":"Number","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote_Observaciones","IsVisible":true,"Separator":false,"Caption":"Observaciones","PlaceHolder":"Ingresa las observaciones de la solicitud","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":true,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1","Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Material","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales","IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccionar materiales","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar Material ..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Inventario","QueryOptions":"$expand=almacen&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"},"ObjectCell":{"Description":"{material_desc}","Footnote":"Disponible: {stock_disponible} / Reservado: {stock_disponible}","PreserveIconStackSpacing":false,"Title":"{material}","Visible":true},"ReturnValue":"{material}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad","IsVisible":true,"Separator":false,"Caption":"Cantidad *","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton_Add_Material","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js"}],"Layout":{"NumberOfColumns":1}},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay materiales aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{material}","Description":"{material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant: {cant} de {stock_disponible}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Inventario/Borrar_Material_Lista_Abaste.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Enabled":true,"Placeholder":"Buscar Material...","Mode":"Expandable"},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Agregar_Solicitud_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estás seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Solicitudes_Reabastecimiento"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Nueva Solicitud Abastecimiento"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Solicitud","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://save","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+=======
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Description":"Correo: {#Page:Main/#ClientData/info_user/correo}","StatusText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro} - {#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}","DetailImageIsCircular":false,"HeadlineText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen} -{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Operario *","PlaceHolder":"Ingresa el número de ficha","KeyboardType":"Number","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote_Observaciones","IsVisible":true,"Separator":false,"Caption":"Observaciones","PlaceHolder":"Ingresa las observaciones de la solicitud","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":true,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Material","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales","IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccionar materiales","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar Material ..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Inventario","QueryOptions":"$expand=almacen&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"},"ObjectCell":{"Description":"{material_desc}","Footnote":"Disponible: {stock_disponible} / Reservado: {stock_disponible}","PreserveIconStackSpacing":false,"Title":"{material}","Visible":true},"ReturnValue":"{material}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad","IsVisible":true,"Separator":false,"Caption":"Cantidad *","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton_Add_Material","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay materiales aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{material}","Description":"{material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant: {cant} de {stock_disponible}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Inventario/Borrar_Material_Lista_Abaste.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Agregar_Solicitud_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estás seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Solicitudes_Reabastecimiento"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Nueva Solicitud Abastecimiento"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Solicitud","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js","Image":"sap-icon://save","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -3500,7 +3634,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"Subhead":"{operario_ficha}","Footnote":"{almacen_almacen} - {almacen_centro}","Description":"{correo_creacion}","StatusText":"{almacen_sociedad}","DetailImage":"sap-icon://cart-3","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"HeadlineText":"$(DT,{fecha_creacion})","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"Visible":true},{"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{operario/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Nombre Operario","Visible":true},{"Value":"{operario/cargo}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Cargo","Visible":true}],"MaxItemCount":1,"Layout":{"NumberOfColumns":2}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Detalle_Solicitud_Reabastecimieto","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Detalle"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{operario_ficha}","Footnote":"{almacen_almacen} - {almacen_centro}","Description":"{correo_creacion}","StatusText":"{almacen_sociedad}","DetailImage":"sap-icon://cart-3","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"HeadlineText":"$(DT,{fecha_creacion})","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{operario/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Nombre Operario","Visible":true},{"Value":"{operario/cargo}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Cargo","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"$filter=solicitud_id eq '{Solicitudes/id}'"},"_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Detalle Solicitud"},"Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"Material: {material_material}","Description":"Cantidad tomada: {cantidad_tomada}","DisplayDescriptionInMobile":true,"PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Indigo","Text":"Entregado: {confirmacion_tec}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitud_Reabastecimieto","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Detalle"}}
 
 /***/ }),
 
@@ -3530,7 +3664,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \******************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes de Abastecimiento"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"$(DT,{fecha_creacion})","Subhead":"{operario_ficha}","Footnote":"{operario/nombre}","Description":"{observaciones_tec}","DisplayDescriptionInMobile":true,"StatusText":"{almacen_sociedad}","SubstatusText":"{almacen_centro}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://cart-3"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Crear Solicitud","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Solicitudes de Reabastecimiento"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes de Abastecimiento"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"$(DT,{fecha_creacion})","Subhead":"{operario_ficha}","Footnote":"{operario/nombre}","Description":"{observaciones_tec}","DisplayDescriptionInMobile":true,"StatusText":"{almacen_sociedad} - {id}","SubstatusText":"{almacen_centro}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://cart-3"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Crear Solicitud","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Solicitudes de Reabastecimiento"}}
 
 /***/ }),
 
@@ -3944,6 +4078,16 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action":
+/*!*************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action ***!
+  \*************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_ComponentesSolicitudApp"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"#ActionResults:Create_ComponentesSolicitudApp/error","Title":"No se pudo crear la solicitud :C","OKCaption":"ok","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Solicitudes_Reabastecimiento"}}}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud"},"Properties":{"id":""}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action":
 /*!**************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action ***!
@@ -3960,7 +4104,7 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
   \*****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_SolicitudApp_Abastecimiento"},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes"},"Properties":{"id":"","operario_ficha":"","almacen_sociedad":"","almacen_almacen":"","almacen_centro":"","estado":"","correo_creacion":"","tipo":""}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_SolicitudApp_Abastecimiento"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error - {#ActionResults:Create_SolicitudApp_Abastecimiento/error}","Title":"Error al crear la solicitud","OKCaption":"Ok"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Inventario/Create_Solicitud_Abastecimiento.js","ShowActivityIndicator":true,"ActivityIndicatorText":"Creando Solicitud de Abastecimiento","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes"},"Properties":{"id":"/appconsumos_qa_mb/Rules/guid.js","operario_ficha":"#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellSimpleProperty_Ficha/#Value","almacen_sociedad":"#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad","almacen_almacen":"#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen","almacen_centro":"#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro","observaciones_tec":"#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellNote_Observaciones/#Value","estado":"Enviado","correo_creacion":"#Page:Main/#ClientData/info_user/correo","tipo":"ABASTECIMIENTO"}}
 
 /***/ }),
 
