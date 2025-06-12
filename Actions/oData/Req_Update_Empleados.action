@@ -14,7 +14,7 @@
 	"OnSuccess": {
 		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 		"Properties": {
-			"Message": "¿Estas seguro que deseas actualizar el empleado?",
+			"Message": "¿Estás seguro que deseas actualizar el empleado?",
 			"Title": "Confirmación",
 			"OKCaption": "Actualizar",
 			"OnOK": "/appconsumos_qa_mb/Actions/oData/Update_Empleados.action",
