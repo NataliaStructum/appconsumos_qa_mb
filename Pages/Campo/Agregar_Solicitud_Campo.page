@@ -39,7 +39,7 @@
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty2",
+							"_Name": "ficha",
 							"IsVisible": true,
 							"Separator": false,
 							"Caption": "Ficha Operario *",
@@ -51,7 +51,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.Note",
-							"_Name": "FormCellNote0",
+							"_Name": "observaciones",
 							"IsVisible": true,
 							"Separator": false,
 							"Caption": "Observaciones",
@@ -266,7 +266,7 @@
 				"OnPress": {
 					"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 					"Properties": {
-						"Message": "¿Estas seguro que quieres salir?",
+						"Message": "¿Estás seguro que quieres salir?",
 						"Title": "Confirmación",
 						"OKCaption": "Aceptar",
 						"OnOK": {
@@ -297,6 +297,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js",
 				"Image": "sap-icon://save",
 				"Enabled": true,
 				"ButtonType": "Primary",

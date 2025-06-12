@@ -39,7 +39,7 @@ export default function Agregar_Materiales_Solicitud(context) {
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
                 "Title": "Alerta",
-                "Message": `Debes ingresar una cantidad valida para continuar`
+                "Message": `Debes ingresar una cantidad válida para continuar`
             }
         });
     }
