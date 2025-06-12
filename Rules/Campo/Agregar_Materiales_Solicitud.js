@@ -54,20 +54,6 @@ export default function Agregar_Materiales_Solicitud(context) {
             }
         });
     }*/
-
-    
-
-    /*var nuevo = {
-        id: data.almacen.almacen_desc+"-"+data.material,
-        material: data.material,
-        material_desc: data.material_desc,
-        almacen: data.almacen.almacen , 
-        almacen_desc: data.almacen.almacen_desc,
-        centro: data.centro,
-        cant : cant,
-        stock_disponible: data.stock_disponible,
-        stock_reservado: data.stock_reservado
-    }*/
     
     const duplicado = clientData.lista_materiales.filter(m => m.material === data.material && m.almacen.almacen === data.almacen.almacen).length > 0
     

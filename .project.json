@@ -15,7 +15,8 @@
 		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/7aeb1051-f376-490a-a497-6e09537a9c72/space/ff8da7b4-ab68-4732-bc64-7b7042519716",
 		"AppId": "app.consumos.qa",
 		"Destination": [
-			"app.consumos.qa"
+			"app.consumos.qa",
+			"ZBODEGA_AGO_SRV"
 		]
 	},
 	"Onboarding": {
