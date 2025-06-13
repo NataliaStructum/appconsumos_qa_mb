@@ -77,7 +77,9 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-						"EntitySet": "ComponentesSolicitud"
+						"EntitySet": "ComponentesSolicitud",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js",
+						"ReadLink": "{@odata.readLink}"
 					},
 					"_Name": "SectionObjectTable0",
 					"Header": {
@@ -101,6 +103,7 @@
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "Material: {material_material}",
+						"Subhead": "{material/material_desc}",
 						"Description": "Cantidad tomada: {cantidad_tomada}",
 						"DisplayDescriptionInMobile": true,
 						"PreserveIconStackSpacing": false,

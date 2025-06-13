@@ -7,7 +7,6 @@ export default function NavTo_List_Ingenio(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
     clientData.centro_ingenio = centro
     clientData.lista_ingenio = []
-    alert
 
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
