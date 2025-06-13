@@ -1,24 +1,20 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectTable",
-					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js",
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Solicitudes Órdenes Abiertas"
-					},
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No tienes solicitudes para mostrar",
-						"FooterVisible": false
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
@@ -27,11 +23,26 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js",
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No tienes solicitudes para mostrar",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
 						"Title": "{orden}",
 						"Subhead": "$(DT,{fecha_creacion})",
 						"Footnote": "{or_desc}",
-						"Description": "{equipo_solicitud} {eq_desc_solicitud}",
+						"Description": "{equipo_solicitud} - {eq_desc_solicitud}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "res: {reserva}",
 						"SubstatusText": "{alm_almacen} - {alm_sociedad}",
@@ -57,19 +68,12 @@
 							"ImageIsCircular": true
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						}
+						"Selected": false
 					},
 					"Search": {
+						"Mode": "Persistent",
 						"Enabled": true,
-						"Placeholder": "Buscar solicitud...",
-						"Mode": "Persistent"
+						"Placeholder": "Buscar solicitud..."
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -82,18 +86,14 @@
 						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Lista_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Solicitudes Campo"
 	}

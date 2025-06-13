@@ -27,6 +27,9 @@ export default function Create_Componentes_Solicitud(context) {
                 "Properties": {
                     "id": guid(context),
                     "material_material": material.material,
+                    "material_almacen": material.almacen.almacen,
+                    "material_centro": material.almacen.centro,
+                    "material_sociedad": material.almacen.sociedad,
                     "almacen_sociedad": dataAlmacen.sociedad,
                     "almacen_almacen": dataAlmacen.almacen,
                     "almacen_centro": dataAlmacen.centro,

@@ -88,6 +88,12 @@
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,

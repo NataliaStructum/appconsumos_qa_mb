@@ -65,6 +65,16 @@ let appconsumos_qa_mb_actions_odata_req_update_almacenes_action = __webpack_requ
 let appconsumos_qa_mb_actions_odata_req_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Req_Update_Empleados.action")
 let appconsumos_qa_mb_actions_odata_update_almacenes_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Almacenes.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Almacenes.action")
 let appconsumos_qa_mb_actions_odata_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadstartedmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOfflineFailureMessage.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncfailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncstartedmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action")
+let appconsumos_qa_mb_actions_zbodega_ago_srv_service_uploadoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action")
 let appconsumos_qa_mb_globals_application_appdefinition_version_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global")
 let appconsumos_qa_mb_globals_application_applicationname_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/ApplicationName.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/ApplicationName.global")
 let appconsumos_qa_mb_globals_application_supportemail_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportEmail.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportEmail.global")
@@ -150,11 +160,16 @@ let appconsumos_qa_mb_rules_ingenio_select_almacen_ingenio_js = __webpack_requir
 let appconsumos_qa_mb_rules_ingenio_target_lista_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Materiales.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Materiales.js")
 let appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js")
+<<<<<<< HEAD
+let appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js")
+=======
 let appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js")
+>>>>>>> develop
 let appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js")
 let appconsumos_qa_mb_rules_inventario_borrar_material_lista_abaste_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Borrar_Material_Lista_Abaste.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Borrar_Material_Lista_Abaste.js")
 let appconsumos_qa_mb_rules_inventario_color_estado_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js")
 let appconsumos_qa_mb_rules_inventario_create_solicitud_abastecimiento_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Create_Solicitud_Abastecimiento.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Create_Solicitud_Abastecimiento.js")
+let appconsumos_qa_mb_rules_inventario_get_list_materiales_nuevos_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js")
 let appconsumos_qa_mb_rules_inventario_navto_agregar_solicitud_reabastecimiento_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js")
 let appconsumos_qa_mb_rules_inventario_navto_filtro_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_Filtro_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Filtro_Abast.js")
 let appconsumos_qa_mb_rules_inventario_navto_inventario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_Inventario.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Inventario.js")
@@ -162,6 +177,8 @@ let appconsumos_qa_mb_rules_inventario_navto_list_abastecimiento_js = __webpack_
 let appconsumos_qa_mb_rules_inventario_query_detalle_componentes_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js")
 let appconsumos_qa_mb_rules_inventario_query_lista_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js")
 let appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Sol_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Sol_Abast.js")
+let appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js")
+let appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialnuevo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js")
 let appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js")
 let appconsumos_qa_mb_rules_inventario_validate_create_solicitud_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js")
 let appconsumos_qa_mb_rules_logging_loglevels_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/LogLevels.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/LogLevels.js")
@@ -171,7 +188,9 @@ let appconsumos_qa_mb_rules_logging_togglelogging_js = __webpack_require__(/*! .
 let appconsumos_qa_mb_rules_logging_tracecategories_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/TraceCategories.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/TraceCategories.js")
 let appconsumos_qa_mb_rules_logging_userlogsetting_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/UserLogSetting.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/UserLogSetting.js")
 let appconsumos_qa_mb_rules_service_initialize_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Service/Initialize.js */ "./build.definitions/appconsumos_qa_mb/Rules/Service/Initialize.js")
+let appconsumos_qa_mb_rules_zbodega_ago_srv_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js */ "./build.definitions/appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js")
 let appconsumos_qa_mb_services_app_consumos_qa_service = __webpack_require__(/*! ./appconsumos_qa_mb/Services/app_consumos_qa.service */ "./build.definitions/appconsumos_qa_mb/Services/app_consumos_qa.service")
+let appconsumos_qa_mb_services_zbodega_ago_srv_service = __webpack_require__(/*! ./appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service */ "./build.definitions/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service")
 let appconsumos_qa_mb_styles_styles_css = __webpack_require__(/*! ./appconsumos_qa_mb/Styles/Styles.css */ "./build.definitions/appconsumos_qa_mb/Styles/Styles.css")
 let appconsumos_qa_mb_styles_styles_less = __webpack_require__(/*! ./appconsumos_qa_mb/Styles/Styles.less */ "./build.definitions/appconsumos_qa_mb/Styles/Styles.less")
 let appconsumos_qa_mb_styles_styles_light_css = __webpack_require__(/*! ./appconsumos_qa_mb/Styles/Styles.light.css */ "./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css")
@@ -230,6 +249,16 @@ module.exports = {
 	appconsumos_qa_mb_actions_odata_req_update_empleados_action : appconsumos_qa_mb_actions_odata_req_update_empleados_action,
 	appconsumos_qa_mb_actions_odata_update_almacenes_action : appconsumos_qa_mb_actions_odata_update_almacenes_action,
 	appconsumos_qa_mb_actions_odata_update_empleados_action : appconsumos_qa_mb_actions_odata_update_empleados_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadoffline_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadstartedmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadstartedmessage_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeoffline_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeofflinefailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeofflinefailuremessage_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncfailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncfailuremessage_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncstartedmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncstartedmessage_action,
+	appconsumos_qa_mb_actions_zbodega_ago_srv_service_uploadoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_uploadoffline_action,
 	appconsumos_qa_mb_globals_application_appdefinition_version_global : appconsumos_qa_mb_globals_application_appdefinition_version_global,
 	appconsumos_qa_mb_globals_application_applicationname_global : appconsumos_qa_mb_globals_application_applicationname_global,
 	appconsumos_qa_mb_globals_application_supportemail_global : appconsumos_qa_mb_globals_application_supportemail_global,
@@ -315,11 +344,16 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_target_lista_ingenio_js : appconsumos_qa_mb_rules_ingenio_target_lista_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js : appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js,
 	appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js : appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js,
+<<<<<<< HEAD
+	appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js : appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js,
+=======
 	appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js,
+>>>>>>> develop
 	appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js : appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js,
 	appconsumos_qa_mb_rules_inventario_borrar_material_lista_abaste_js : appconsumos_qa_mb_rules_inventario_borrar_material_lista_abaste_js,
 	appconsumos_qa_mb_rules_inventario_color_estado_abast_js : appconsumos_qa_mb_rules_inventario_color_estado_abast_js,
 	appconsumos_qa_mb_rules_inventario_create_solicitud_abastecimiento_js : appconsumos_qa_mb_rules_inventario_create_solicitud_abastecimiento_js,
+	appconsumos_qa_mb_rules_inventario_get_list_materiales_nuevos_js : appconsumos_qa_mb_rules_inventario_get_list_materiales_nuevos_js,
 	appconsumos_qa_mb_rules_inventario_navto_agregar_solicitud_reabastecimiento_js : appconsumos_qa_mb_rules_inventario_navto_agregar_solicitud_reabastecimiento_js,
 	appconsumos_qa_mb_rules_inventario_navto_filtro_abast_js : appconsumos_qa_mb_rules_inventario_navto_filtro_abast_js,
 	appconsumos_qa_mb_rules_inventario_navto_inventario_js : appconsumos_qa_mb_rules_inventario_navto_inventario_js,
@@ -327,6 +361,8 @@ module.exports = {
 	appconsumos_qa_mb_rules_inventario_query_detalle_componentes_abast_js : appconsumos_qa_mb_rules_inventario_query_detalle_componentes_abast_js,
 	appconsumos_qa_mb_rules_inventario_query_lista_abast_js : appconsumos_qa_mb_rules_inventario_query_lista_abast_js,
 	appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js : appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js,
+	appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js : appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js,
+	appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialnuevo_js : appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialnuevo_js,
 	appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js : appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js,
 	appconsumos_qa_mb_rules_inventario_validate_create_solicitud_abast_js : appconsumos_qa_mb_rules_inventario_validate_create_solicitud_abast_js,
 	appconsumos_qa_mb_rules_logging_loglevels_js : appconsumos_qa_mb_rules_logging_loglevels_js,
@@ -336,7 +372,9 @@ module.exports = {
 	appconsumos_qa_mb_rules_logging_tracecategories_js : appconsumos_qa_mb_rules_logging_tracecategories_js,
 	appconsumos_qa_mb_rules_logging_userlogsetting_js : appconsumos_qa_mb_rules_logging_userlogsetting_js,
 	appconsumos_qa_mb_rules_service_initialize_js : appconsumos_qa_mb_rules_service_initialize_js,
+	appconsumos_qa_mb_rules_zbodega_ago_srv_errorarchive_checkforsyncerror_js : appconsumos_qa_mb_rules_zbodega_ago_srv_errorarchive_checkforsyncerror_js,
 	appconsumos_qa_mb_services_app_consumos_qa_service : appconsumos_qa_mb_services_app_consumos_qa_service,
+	appconsumos_qa_mb_services_zbodega_ago_srv_service : appconsumos_qa_mb_services_zbodega_ago_srv_service,
 	appconsumos_qa_mb_styles_styles_css : appconsumos_qa_mb_styles_styles_css,
 	appconsumos_qa_mb_styles_styles_less : appconsumos_qa_mb_styles_styles_less,
 	appconsumos_qa_mb_styles_styles_light_css : appconsumos_qa_mb_styles_styles_light_css,
@@ -1013,7 +1051,13 @@ __webpack_require__.r(__webpack_exports__);
 function OnWillUpdate(clientAPI) {
   return clientAPI.executeAction('/appconsumos_qa_mb/Actions/Application/OnWillUpdate.action').then(result => {
     if (result.data) {
-      return clientAPI.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa/Service/CloseOffline.action').then(success => Promise.resolve(success), failure => Promise.reject('Offline Odata Close Failed ' + failure));
+      let _app_consumos_qa = clientAPI.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action');
+      let ZBODEGA_AGO_SRV = clientAPI.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action');
+      return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV]).then(() => {
+        Promise.resolve();
+      }).catch(err => {
+        Promise.reject('Error al cerrar Odatas sin conexión ' + err.message);
+      });
     } else {
       return Promise.reject('User Deferred');
     }
@@ -1127,18 +1171,6 @@ function Agregar_Materiales_Solicitud(context) {
               "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und`
           }
       });
-  }*/
-
-  /*var nuevo = {
-      id: data.almacen.almacen_desc+"-"+data.material,
-      material: data.material,
-      material_desc: data.material_desc,
-      almacen: data.almacen.almacen , 
-      almacen_desc: data.almacen.almacen_desc,
-      centro: data.centro,
-      cant : cant,
-      stock_disponible: data.stock_disponible,
-      stock_reservado: data.stock_reservado
   }*/
 
   const duplicado = clientData.lista_materiales.filter(m => m.material === data.material && m.almacen.almacen === data.almacen.almacen).length > 0;
@@ -1280,6 +1312,12 @@ function Create_Componentes_Solicitud(context) {
         "Properties": {
           "id": (0,_guid__WEBPACK_IMPORTED_MODULE_0__["default"])(context),
           "material_material": material.material,
+<<<<<<< HEAD
+          "material_almacen": material.almacen.almacen,
+          "material_centro": material.almacen.centro,
+          "material_sociedad": material.almacen.sociedad,
+=======
+>>>>>>> develop
           "almacen_sociedad": dataAlmacen.sociedad,
           "almacen_almacen": dataAlmacen.almacen,
           "almacen_centro": dataAlmacen.centro,
@@ -2450,6 +2488,79 @@ function isVisible_Btn_CrearSolicitudes(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js":
+/*!**************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Agregar_Materiales_Nuevos_Reabas)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Agregar_Materiales_Nuevos_Reabas(context) {
+  const pageProxy = context.getPageProxy();
+  let clientData = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
+  let material = context.evaluateTargetPath('#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellListPicker_Materiales_Nuevo/#Value');
+  let cant = context.evaluateTargetPath('#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellSimpleProperty_Cantidad_Nuevo/#Value');
+  var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
+  if (material.length < 1) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes seleccionar un material para continuar`
+      }
+    });
+  }
+  let data = material[0].BindingObject;
+  let stock = data.stock_disponible;
+  if (!cant || cant < 0) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `Debes ingresar una cantidad valida para continuar`
+      }
+    });
+  }
+  var nuevo = {
+    material: data.material,
+    material_desc: data.material_desc,
+    cant: cant,
+    stock_disponible: data.stock_disponible,
+    stock_reservado: data.stock_reservado,
+    nuevo: true
+  };
+  const duplicado = clientData.lista_materiales.filter(m => m.material === data.material).length > 0;
+  if (duplicado) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Alerta",
+        "Message": `El material ya fue ingresado anteriormente`
+      }
+    });
+  }
+  clientData.lista_materiales.push(nuevo);
+  list_component.redraw();
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
+    "Properties": {
+      "Message": `Nuevo material agregado`,
+      "Duration": 1,
+      "ShowActivityIndicator": true
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js":
 /*!*****************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js ***!
@@ -2520,7 +2631,8 @@ function Agregar_Materiales_Solicitud_Reabas(context) {
     material_desc: data.material_desc,
     cant: cant,
     stock_disponible: data.stock_disponible,
-    stock_reservado: data.stock_reservado
+    stock_reservado: data.stock_reservado,
+    nuevo: false
   };
   const duplicado = clientData.lista_materiales.filter(m => m.material === data.material).length > 0;
   if (duplicado) {
@@ -2705,6 +2817,38 @@ function Create_Solicitud_Abastecimiento(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Get_List_Materiales_Nuevos)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Get_List_Materiales_Nuevos(context) {
+  let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Solicitud_Abast').getClientData();
+  let materiales = clientDataFiltro.materiales_nuevos;
+  const resultado = materiales.map(item => ({
+    ObjectCell: {
+      Title: item.Matnr,
+      Subhead: item.Txtmd,
+      PreserveIconStackSpacing: true,
+      Visible: true
+    },
+    ReturnValue: item.Matnr
+  }));
+  return resultado;
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js":
 /*!**********************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js ***!
@@ -2722,7 +2866,18 @@ __webpack_require__.r(__webpack_exports__);
  */
 function NavTo_Agregar_Solicitud_Reabastecimiento(context) {
   let clientData = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
+  let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Solicitud_Abast').getClientData();
+  let materialesNuevos = clientDataFiltro.materiales_nuevos;
   clientData.lista_materiales = [];
+  if (!materialesNuevos) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
+      "Properties": {
+        "Message": `Cargando materiales, por favor espera un momento...`,
+        "Duration": 1
+      }
+    });
+  }
   return context.executeAction({
     "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
     "Properties": {
@@ -2830,6 +2985,23 @@ function NavTo_List_Abastecimiento(context) {
   clientData.almacen_abast = almacen;
   //alert(JSON.stringify(clientData.almacen_abast))
 
+  let filtro = `$filter=Werks eq '${almacen.centro}' and Spras eq 'ES' and Lgort ne '${almacen.almacen}' and contains(Txtmd, 'BORRADO') eq false&$orderby=Lgort`;
+  context.read('/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service', 'ZBIW_MARDTSet', [], filtro).then(async results => {
+    clientData.materiales_nuevos = [];
+    context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
+      "Properties": {
+        "Message": `Los materiales ya están disponibles. Puedes crear nuevas solicitudes.`,
+        "Duration": 1
+      }
+    });
+    if (results && results.length > 0) {
+      const materialesUnicos = results.filter((item, index, self) => index === self.findIndex(m => m.Matnr === item.Matnr));
+      clientData.materiales_nuevos = materialesUnicos;
+    }
+  }).catch(error => {
+    alert(`Error al obtener los materiales del ERP ${error.message}`);
+  });
   return context.executeAction({
     "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
     "Properties": {
@@ -3013,6 +3185,56 @@ function Validate_Create_Solicitud_Abast(context) {
       "Message": `Debes ingresar el número de ficha para continuar`
     }
   });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js":
+/*!*****************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js ***!
+  \*****************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ set_VisibleAgregarMaterialExistente)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function set_VisibleAgregarMaterialExistente(context) {
+  const pageProxy = context.getPageProxy();
+  var agregarMaterialExistente = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell1");
+  var agregarMaterialNuevo = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell2");
+  agregarMaterialExistente.setVisible(true);
+  agregarMaterialNuevo.setVisible(false);
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js":
+/*!*************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ set_VisibleAgregarMaterialNuevo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function set_VisibleAgregarMaterialNuevo(context) {
+  const pageProxy = context.getPageProxy();
+  var agregarMaterialExistente = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell1");
+  var agregarMaterialNuevo = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell2");
+  agregarMaterialExistente.setVisible(false);
+  agregarMaterialNuevo.setVisible(true);
 }
 
 /***/ }),
@@ -3299,17 +3521,18 @@ function Initialize(context) {
 
   // Initialize all your Data sources
   let _app_consumos_qa = context.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOffline.action');
+  let ZBODEGA_AGO_SRV = context.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action');
 
   //You can add more service initialize actions here
 
-  return Promise.all([_app_consumos_qa]).then(() => {
+  return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV]).then(() => {
     // After Initializing the DB connections
 
     // Display successful initialization  message to the user
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
       "Properties": {
-        "Message": "Servicio de la aplicación inicializado",
+        "Message": "Servicios de la aplicación inicializados",
         "Animated": true,
         "Duration": 1,
         "IsIconHidden": true,
@@ -3319,6 +3542,33 @@ function Initialize(context) {
     });
   }).catch(() => {
     return false;
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js":
+/*!*****************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js ***!
+  \*****************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CheckForSyncError)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function CheckForSyncError(context) {
+  context.count('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/.service', 'ErrorArchive', '').then(errorCount => {
+    if (errorCount > 0) {
+      return context.getPageProxy().executeAction('/appconsumos_qa_mb/Actions/ErrorArchive/ErrorArchive_SyncFailure.action').then(function () {
+        return Promise.reject(false);
+      });
+    }
   });
 }
 
@@ -3374,6 +3624,9 @@ function get_Info_Usuario(context) {
   let email = context.evaluateTargetPath('#Application/#AppData/UserId').toUpperCase();
   let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
   clientData.info_user = {};
+
+  //Syncroniza el servicio de datos del ERP
+  context.executeAction("/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action");
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=correo eq '${email}'`).then(async results => {
     if (results && results.length > 0) {
       clientData.info_user = results.getItem(0);
@@ -3929,7 +4182,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js","_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes Órdenes Abiertas"},"Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"{orden}","Subhead":"$(DT,{fecha_creacion})","Footnote":"{or_desc}","Description":"{equipo_solicitud} {eq_desc_solicitud}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","SubstatusText":"{alm_almacen} - {alm_sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://form"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"Search":{"Enabled":true,"Placeholder":"Buscar solicitud...","Mode":"Persistent"},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Lista_Solicitudes_Campo","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Solicitudes Campo"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes Órdenes Abiertas"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{orden}","Subhead":"$(DT,{fecha_creacion})","Footnote":"{or_desc}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","SubstatusText":"{alm_almacen} - {alm_sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://form"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar solicitud..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Campo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Solicitudes Campo"}}
 
 /***/ }),
 
@@ -4009,7 +4262,11 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \******************************************************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Description":"Correo: {#Page:Main/#ClientData/info_user/correo}","StatusText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro} - {#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}","DetailImageIsCircular":false,"HeadlineText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen} -{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Operario *","PlaceHolder":"Ingresa el número de ficha","KeyboardType":"Number","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote_Observaciones","IsVisible":true,"Separator":false,"Caption":"Observaciones","PlaceHolder":"Ingresa las observaciones de la solicitud","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton2","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material Registrado","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://task","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton3","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material Nuevo","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-document","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js"}],"Layout":{"NumberOfColumns":2},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell3"},{"Separators":{"TopSectionSeparator":true,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Material Registrado","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales","IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un material","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar Material ..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Inventario","QueryOptions":"$expand=almacen&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"},"ObjectCell":{"Description":"{material_desc}","Footnote":"Disponible: {stock_disponible} / Reservado: {stock_disponible}","PreserveIconStackSpacing":false,"Title":"{material}","Visible":true},"ReturnValue":"{material}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad","IsVisible":true,"Separator":false,"Caption":"Cantidad *","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton_Add_Material","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js"}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel1","IsVisible":true,"Separator":true,"Text":"Agregar Material Nuevo","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales_Nuevo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Cargando datos...","PageSize":25},"PickerPrompt":"Selecciona un material","HelperText":"Espera un segundo mientras se cargan las opciones disponibles.","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Escribe al menos 3 letras para buscar...","Delay":2,"Mode":"Expandable","MinimumCharacterThreshold":3,"Options":{"CaseSensitive":false,"NumberSearch":{"Enabled":false},"UseSearchOverFilter":{"Enabled":false}}},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service","EntitySet":"ZBIW_MARDTSet","QueryOptions":"$filter=Werks eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro}}' and Spras eq 'ES' and Lgort ne '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and contains(Txtmd, 'BORRADO') eq false&$orderby=Lgort","ReadLink":"{@odata.readLink}"},"ObjectCell":{"Description":"{Txtmd}","Footnote":"Disponible: {Labst} / Reservado: {Klabs}","PreserveIconStackSpacing":false,"StatusText":"Centro: {Werks}","Subhead":"Almacen: {Lgort}","Title":"{Matnr}","Visible":true},"ReturnValue":"{Lgort} - {Matnr}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker1","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material prueba group*","DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Cargando datos...","PageSize":25},"PickerPrompt":"Selecciona un material","PlaceHolder":"PlaceHolder","HelperText":"Espera un segundo mientras se cargan las opciones disponibles.","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Escribe al menos 3 letras para buscar...","Delay":2,"Mode":"Expandable","MinimumCharacterThreshold":3,"Options":{"CaseSensitive":false,"NumberSearch":{"Enabled":false},"UseSearchOverFilter":{"Enabled":false}}},"PickerItems":"/appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad_Nuevo","IsVisible":true,"Separator":true,"Caption":"Cantidad","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js"}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay materiales aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{material}","Description":"{material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant: {cant} de {stock_disponible}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Inventario/Borrar_Material_Lista_Abaste.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Agregar_Solicitud_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estás seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Solicitudes_Reabastecimiento"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Nueva Solicitud Abastecimiento"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Solicitud","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js","Image":"sap-icon://save","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+=======
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Description":"Correo: {#Page:Main/#ClientData/info_user/correo}","StatusText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro} - {#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}","DetailImageIsCircular":false,"HeadlineText":"{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen} -{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Operario *","PlaceHolder":"Ingresa el número de ficha","KeyboardType":"Number","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote_Observaciones","IsVisible":true,"Separator":false,"Caption":"Observaciones","PlaceHolder":"Ingresa las observaciones de la solicitud","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":true,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Material","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales","IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccionar materiales","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Buscar Material ..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Inventario","QueryOptions":"$expand=almacen&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"},"ObjectCell":{"Description":"{material_desc}","Footnote":"Disponible: {stock_disponible} / Reservado: {stock_disponible}","PreserveIconStackSpacing":false,"Title":"{material}","Visible":true},"ReturnValue":"{material}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad","IsVisible":true,"Separator":false,"Caption":"Cantidad *","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton_Add_Material","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay materiales aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{material}","Description":"{material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant: {cant} de {stock_disponible}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Inventario/Borrar_Material_Lista_Abaste.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Agregar_Solicitud_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estás seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Lista_Solicitudes_Reabastecimiento"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Nueva Solicitud Abastecimiento"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Solicitud","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js","Image":"sap-icon://save","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -4019,7 +4276,11 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*****************************************************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{operario_ficha}","Footnote":"{almacen_almacen} - {almacen_centro}","Description":"{correo_creacion}","StatusText":"{almacen_sociedad}","DetailImage":"sap-icon://cart-3","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"HeadlineText":"$(DT,{fecha_creacion})","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{operario/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Nombre Operario","Visible":true},{"Value":"{operario/cargo}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Cargo","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud"},"_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Detalle Solicitud"},"Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"Material: {material_material}","Description":"Cantidad tomada: {cantidad_tomada}","DisplayDescriptionInMobile":true,"PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Indigo","Text":"Entregado: {confirmacion_tec}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitud_Reabastecimieto","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Detalle"}}
+=======
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{operario_ficha}","Footnote":"{almacen_almacen} - {almacen_centro}","Description":"{correo_creacion}","StatusText":"{almacen_sociedad}","DetailImage":"sap-icon://cart-3","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"HeadlineText":"$(DT,{fecha_creacion})","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{operario/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Nombre Operario","Visible":true},{"Value":"{operario/cargo}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Cargo","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Detalle Solicitud"},"Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"Material: {material_material}","Subhead":"{material/material_desc}","Description":"Cantidad tomada: {cantidad_tomada}","DisplayDescriptionInMobile":true,"PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Indigo","Text":"Entregado: {confirmacion_tec}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[{"Image":"sap-icon://customer","ImageText":""}],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitud_Reabastecimieto","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Detalle"}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -4049,7 +4310,11 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \******************************************************************************************************/
 /***/ ((module) => {
 
+<<<<<<< HEAD
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes de Abastecimiento"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"$(DT,{fecha_creacion})","Subhead":"{operario_ficha}","Footnote":"{operario/nombre}","Description":"{observaciones_tec}","DisplayDescriptionInMobile":true,"StatusText":"{almacen_sociedad} - {id}","SubstatusText":"{almacen_centro}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://cart-3"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Crear Solicitud","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Solicitudes de Reabastecimiento"}}
+=======
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes de Abastecimiento"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Lista_Abast.js"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"$(DT,{fecha_creacion})","Subhead":"{operario_ficha}","Footnote":"{operario/nombre}","Description":"{observaciones_tec}","DisplayDescriptionInMobile":true,"StatusText":"{almacen_sociedad}","SubstatusText":"{almacen_centro}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://cart-3"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Crear Solicitud","Icon":"sap-icon://add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Solicitudes de Reabastecimiento"}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -4159,7 +4424,7 @@ module.exports = {"ModalPage":true,"NavigationType":"Cross","PageToOpen":"/appco
   \*************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"OnWillUpdate"},"Message":"Ya está disponible una nueva versión de la aplicación. ¿Quieres actualizarla?","Title":"Nueva versión disponible!","OKCaption":"Actualizar","CancelCaption":"Cancelar"}
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"OnWillUpdate"},"Message":"Ya está disponible una nueva versión de la aplicación. ¿Quieres actualizarla?","Title":"¡Nueva versión disponible!","OKCaption":"Actualizar","CancelCaption":"Cancelar"}
 
 /***/ }),
 
@@ -4340,6 +4605,106 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"ms_errorCreateEmpleadoApp"},"Message":"Falló en Crear el empleado - {#ActionResults:Create_EmpleadosApp/error}  ","Title":"Error","OKCaption":"Ok"}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action":
+/*!*************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action ***!
+  \*************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.OfflineOData.Close","ActionResult":{"_Name":"close"},"OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action","Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service","Force":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action":
+/*!***************************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action ***!
+  \***************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ToastMessage","Message":"Falló al cerrar el servicio - {#ActionResults:close/error}","NumberOfLines":1,"Duration":3,"IsIconHidden":true,"Animated":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action":
+/*!***************************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action ***!
+  \***************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ToastMessage","Message":" El servicio de datos del ERP se cerró correctamente","NumberOfLines":1,"Duration":3,"IsIconHidden":true,"Animated":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action":
+/*!****************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action ***!
+  \****************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service","DefiningRequests":[{"Name":"ZBIW_MARDTSet","Query":"ZBIW_MARDTSet","AutomaticallyRetrievesStreams":true}]}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action":
+/*!***********************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action ***!
+  \***********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ProgressBanner","OnSuccess":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action","Message":"Descarga en proceso (ERP)...","CompletionMessage":"Descarga Exitosa","CompletionTimeout":3}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action":
+/*!******************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action ***!
+  \******************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"InitializeOffline"},"OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOfflineFailureMessage.action","Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service","DefiningRequests":[{"Name":"ZBIW_MARDTSet","Query":"ZBIW_MARDTSet","AutomaticallyRetrievesStreams":false}]}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOfflineFailureMessage.action":
+/*!********************************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOfflineFailureMessage.action ***!
+  \********************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.BannerMessage","Message":"No se pudo inicializar el servicio de datos de la aplicación - {#ActionResults:init/error}","Duration":7,"Animated":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action":
+/*!*******************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action ***!
+  \*******************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.BannerMessage","Message":"La sincronización de los datos (ERP) falló - {#ActionResults:sync/error}","Duration":7,"Animated":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action":
+/*!*******************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action ***!
+  \*******************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ProgressBanner","OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action","Message":"Carga de datos del ERP en proceso...","CompletionMessage":"Sincronización Completa","CompletionTimeout":7}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action":
+/*!**************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action ***!
+  \**************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.OfflineOData.Upload","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action","Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service"}
 
 /***/ }),
 
@@ -4590,6 +4955,16 @@ module.exports = {"Value":"support@mycompany.com","_Type":"String"}
 /***/ ((module) => {
 
 module.exports = {"Value":"1-800-677-7271","_Type":"String"}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service":
+/*!******************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DestinationName":"ZBODEGA_AGO_SRV","OfflineEnabled":true,"SourceType":"Mobile"}
 
 /***/ }),
 
