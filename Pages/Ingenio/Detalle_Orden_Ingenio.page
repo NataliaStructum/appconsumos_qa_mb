@@ -120,6 +120,12 @@
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
@@ -134,7 +140,7 @@
 	"_Name": "Detalle_Orden_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Orden"
 	},
@@ -150,6 +156,7 @@
 				"Styles": {
 					"Button": "Button"
 				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/NavTo_Agregar_Solicitud_Ingenio.js",
 				"Image": "sap-icon://create",
 				"Enabled": true,
 				"ButtonType": "Primary",
