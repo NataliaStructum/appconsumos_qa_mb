@@ -1,14 +1,13 @@
 /**
  * Describe this function...
- * @param {IClientAPI} clientAPI
+ * @param {IClientAPI} context
  */
-export default function Agregar_Materiales_Solicitud_Reabas(context) {
-
+export default function Agregar_Materiales_Nuevos_Reabas(context) {
     const pageProxy = context.getPageProxy();
     let clientData = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
 
-    let material = context.evaluateTargetPath('#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellListPicker_Materiales/#Value');
-    let cant = context.evaluateTargetPath('#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellSimpleProperty_Cantidad/#Value');
+    let material = context.evaluateTargetPath('#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellListPicker_Materiales_Nuevo/#Value');
+    let cant = context.evaluateTargetPath('#Page:Agregar_Solicitud_Reabastecimiento/#Control:FormCellSimpleProperty_Cantidad_Nuevo/#Value');
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0")
     if (material.length < 1) {
         return context.executeAction({
@@ -23,16 +22,6 @@ export default function Agregar_Materiales_Solicitud_Reabas(context) {
     let data = material[0].BindingObject
     let stock = data.stock_disponible
  
-    //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*if(stock == 0){
-        return context.executeAction({
-            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-            "Properties": {
-                "Title": "Alerta",
-                "Message": `No hay stock disponible para este material`
-            }
-        });
-    }*/
  
     if (!cant || cant < 0) {
         return context.executeAction({
@@ -43,27 +32,14 @@ export default function Agregar_Materiales_Solicitud_Reabas(context) {
             }
         });
     }
- 
-    //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*if(cant > stock){
-        return context.executeAction({
-            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-            "Properties": {
-                "Title": "Alerta",
-                "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und`
-            }
-        });
-    }*/
- 
-   
- 
+  
     var nuevo = {
         material: data.material,
         material_desc: data.material_desc,
         cant : cant,
         stock_disponible: data.stock_disponible,
         stock_reservado: data.stock_reservado,
-        nuevo: false
+        nuevo: true
     }
  
    
@@ -89,7 +65,4 @@ export default function Agregar_Materiales_Solicitud_Reabas(context) {
             "ShowActivityIndicator": true,
         }
     });
-
-
-
 }
