@@ -944,8 +944,9 @@ interface IControlContainerProxy extends IClientAPI {
    * Sets the MinuteInterval property of the FormCell's control.
    * Accepted values are: "Date", "Datetime", "Time"
    * @param {Integer} mode value to set.
+   * @returns {Promise<any>}
    */
-  setMinuteInterval(mode: number) 
+  setMinuteInterval(mode: number): Promise<any>;
 
   /**
    * Returns the MinuteInterval property value defined for the FormCell's control.
@@ -957,8 +958,9 @@ interface IControlContainerProxy extends IClientAPI {
    * Sets the Unit property of the FormCell's control.
    * Accepted values are: "Date", "Datetime", "Time"
    * @param mode value to set.
+   * @returns {Promise<any>}
    */
-  setUnit(mode: string) 
+  setUnit(mode: string): Promise<any>;
 
   /**
    * Returns the Unit property value defined for the FormCell's control.
@@ -977,8 +979,9 @@ interface IControlContainerProxy extends IClientAPI {
    * Sets the Mode property of the FormCell's control.
    * Accepted values are: "Date", "Datetime","Time"
    * @param mode value to set.
+   * @returns {Promise<any>}
    */
-  setMode(mode: string) 
+  setMode(mode: string): Promise<any>;
 
   /**
    * Returns the Mode property value defined for the FormCell's control.
@@ -1055,8 +1058,9 @@ interface IFormCellProxy extends IControlProxy {
   /**
    * Sets the Editable property of the FormCell's control.
    * @param {boolean} isEditable true if this form cell is editable. False otherwise.
+   * @returns {Promise<any>}
    */
-  setEditable(isEditable: boolean): void;
+  setEditable(isEditable: boolean): Promise<any>;
 
   /**
    * Returns the Editable property value defined for the control.
@@ -1067,14 +1071,16 @@ interface IFormCellProxy extends IControlProxy {
   /**
    * Sets the Enable property of the FormCell's control.
    * @param {boolean} isEnable true enables and false disables.
+   * @returns {Promise<any>}
    */
-   setEnable(isEnable: boolean): void;
+   setEnable(isEnable: boolean): Promise<any>;
 
    /**
    * Sets the Enabled property of the FormCell's control.
    * @param {boolean} isEnabled true enables and false disables.
+   * @returns {Promise<any>}
    */
-  setEnabled(isEnabled: boolean): void;
+  setEnabled(isEnabled: boolean): Promise<any>;
 
   /**
    * Returns the Enable property value defined for the control.
@@ -1091,8 +1097,9 @@ interface IFormCellProxy extends IControlProxy {
   /**
    * Sets the Caption property of the FormCell's control.
    * @param {string} caption value to set.
+   * @returns {Promise<any>}
    */
-  setCaption(caption: string): void;
+  setCaption(caption: string): Promise<any>;
   
   /**
    * Returns the Caption property value defined for the control.
@@ -1103,8 +1110,9 @@ interface IFormCellProxy extends IControlProxy {
   /**
    * Sets the HelperText property of the FormCell's control.
    * @param {string}  helperText value to set.
+   * @returns {Promise<any>}
    */
-  setHelperText(helperText: string): void;
+  setHelperText(helperText: string): Promise<any>;
 
   /**
    * Returns the HelperText property value defined for the control.
@@ -1155,8 +1163,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
   /**
    * Sets the MaxNumberOfLines property of the FormCell's control.
    * @param {number} maxNumberOfLines value to set.
+   * @returns {Promise<any>}
    */
-  setMaxNumberOfLines(MaxNumberOfLines: number) 
+  setMaxNumberOfLines(MaxNumberOfLines: number): Promise<any>;
 
   /**
    * Returns the MaxNumberOfLines property value defined for the FormCell's control.
@@ -1167,8 +1176,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
   /**
    * Sets the MinNumberOfLines property of the FormCell's control.
    * @param {number} minNumberOfLines  value to set.
+   * @returns {Promise<any>}
    */
-  setMinNumberOfLines(minNumberOfLines: number);
+  setMinNumberOfLines(minNumberOfLines: number): Promise<any>;
 
   /**
    * Returns the MinNumberOfLines property value defined for the FormCell's control.
@@ -1179,8 +1189,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
   /**
    * Sets the PlaceHolder property of the FormCell's FormCell's control.
    * @param {string} placeHolder {string} value to set.
+   * @returns {Promise<any>}
    */
-  setPlaceHolder(title: string): void;
+  setPlaceHolder(title: string): Promise<any>;
 
   /**
    * Returns the PlaceHolder property value defined for the FormCell's control.
@@ -1197,11 +1208,25 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
  interface IInlineSignatureCaptureFormCellProxy extends IFormCellProxy {
 
   /**
+   * Sets the InitialStatusText property of the FormCell's control.
+   * @param {string} initialStatusText  value to set.
+   * @returns {Promise<any>}
+   */
+  setInitialStatusText(initialStatusText: string): Promise<any>;
+
+  /**
+   * Returns the InitialStatusText property value defined for the FormCell's control.
+   * @return {string}
+   */
+  getInitialStatusText(): string;
+
+  /**
    * Sets the ShowTimestampInImage property of the FormCell's FormCell's control.
    * On iOS not supported.
    * @param {boolean} showTimestampInImage value to set.
+   * @returns {Promise<any>}
    */
-  setShowTimestampInImage(showTimestampInImage: boolean): void;
+  setShowTimestampInImage(showTimestampInImage: boolean): Promise<any>;
 
   /**
    * Returns the ShowTimestampInImage property value defined for the FormCell's control.
@@ -1214,8 +1239,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
    * Sets the ShowUnderline property of the FormCell's FormCell's control.
    * On iOS not supported.
    * @param {boolean} showUnderline value to set.
+   * @returns {Promise<any>}
    */
-  setShowUnderline(Underline: boolean);
+  setShowUnderline(Underline: boolean): Promise<any>;
 
   /**
    * Returns the ShowUnderline property value defined for the FormCell's control.
@@ -1228,8 +1254,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
    * Sets the ShowXMark property of the FormCell's FormCell's control.
    * On iOS not supported.
    * @param {boolean} showXMark value to set.
+   * @returns {Promise<any>}
    */
-  setShowXMark(showXMark: boolean);
+  setShowXMark(showXMark: boolean): Promise<any>;
 
   /**
    * Returns the ShowXMark property value defined for the FormCell's control.
@@ -1241,8 +1268,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
   /**
    * Sets the TimestampFormatter property of the FormCell's control.
    * @param {string} timestampFormatter  value to set.
+   * @returns {Promise<any>}
    */
-  setTimestampFormatter(timestampFormatter: string);
+  setTimestampFormatter(timestampFormatter: string): Promise<any>;
 
   /**
    * Returns the TimestampFormatter property value defined for the FormCell's control.
@@ -1253,8 +1281,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
   /**
    * Sets the WatermarkText property of the FormCell's control.
    * @param {string} watermarkText  value to set.
+   * @returns {Promise<any>}
    */
-  setWatermarkText(watermarkText: string);
+  setWatermarkText(watermarkText: string): Promise<any>;
 
   /**
    * Returns the WatermarkText property value defined for the FormCell's control.
@@ -1265,8 +1294,9 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
   /**
    * Sets the WatermarkTextMaxLines property of the FormCell's control.
    * @param {number} watermarkTextMaxLines value to set.
+   * @returns {Promise<any>}
    */
-  setWatermarkTextMaxLines(watermarkTextMaxLines: number)
+  setWatermarkTextMaxLines(watermarkTextMaxLines: number): Promise<any>;
 
   /**
    * Returns the WatermarkTextMaxLines property value defined for the FormCell's control.
@@ -1285,10 +1315,37 @@ interface IMultiSorterFormCellProxy extends IFormCellProxy {
 interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
 
   /**
+   * Sets the CapturedStatusText property of the FormCell's control.
+   * @param {string} capturedStatusText value to set.
+   * @returns {Promise<any>}
+   */
+  setCapturedStatusText(capturedStatusText: string): Promise<any>;
+
+  /**
+   * Returns the CapturedStatusText property value defined for the FormCell's control.
+   * @return {string}
+   */
+  getCapturedStatusText(): string;
+
+  /**
+   * Sets the InitialStatusText property of the FormCell's control.
+   * @param {string} initialStatusText  value to set.
+   * @returns {Promise<any>}
+   */
+  setInitialStatusText(initialStatusText: string): Promise<any>;
+
+  /**
+   * Returns the InitialStatusText property value defined for the FormCell's control.
+   * @return {string}
+   */
+  getInitialStatusText(): string;
+
+  /**
    * Sets the ShowTimestampInImage property of the FormCell's FormCell's control.
    * @param {boolean} showTimestampInImage value to set.
+   * @returns {Promise<any>}
    */
-  setShowTimestampInImage(showTimestampInImage: boolean): void;
+  setShowTimestampInImage(showTimestampInImage: boolean): Promise<any>;
 
   /**
    * Returns the ShowTimestampInImage property value defined for the FormCell's control.
@@ -1299,8 +1356,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
   /**
    * Sets the ShowUnderline property of the FormCell's FormCell's control.
    * @param {boolean} showUnderline value to set.
+   * @returns {Promise<any>}
    */
-  setShowUnderline(Underline: boolean);
+  setShowUnderline(Underline: boolean): Promise<any>;
 
   /**
    * Returns the ShowUnderline property value defined for the FormCell's control.
@@ -1311,8 +1369,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
   /**
    * Sets the ShowXMark property of the FormCell's FormCell's control.
    * @param {boolean} showXMark value to set.
+   * @returns {Promise<any>}
    */
-  setShowXMark(showXMark: boolean);
+  setShowXMark(showXMark: boolean): Promise<any>;
 
   /**
    * Returns the ShowXMark property value defined for the FormCell's control.
@@ -1323,8 +1382,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
   /**
    * Sets the TimestampFormatter property of the FormCell's control.
    * @param {string} timestampFormatter  value to set.
+   * @returns {Promise<any>}
    */
-  setTimestampFormatter(timestampFormatter: string);
+  setTimestampFormatter(timestampFormatter: string): Promise<any>;
 
   /**
    * Returns the TimestampFormatter property value defined for the FormCell's control.
@@ -1335,8 +1395,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
   /**
    * Sets the WatermarkText property of the FormCell's control.
    * @param {string} watermarkText  value to set.
+   * @returns {Promise<any>}
    */
-  setWatermarkText(watermarkText: string);
+  setWatermarkText(watermarkText: string): Promise<any>;
 
   /**
    * Returns the WatermarkText property value defined for the FormCell's control.
@@ -1347,8 +1408,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
   /**
    * Sets the WatermarkTextMaxLines property of the FormCell's control.
    * @param {number} watermarkTextMaxLines value to set.
+   * @returns {Promise<any>}
    */
-  setWatermarkTextMaxLines(watermarkTextMaxLines: number)
+  setWatermarkTextMaxLines(watermarkTextMaxLines: number): Promise<any>;
 
   /**
    * Returns the WatermarkTextMaxLines property value defined for the FormCell's control.
@@ -1370,8 +1432,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
    * the value of the AttachmentTitle property. The default value is 'Attachment (%d)', where %d
    * is substituted by tha actual count of the attachments.
    * @param {string} title value to set.
+   * @returns {Promise<any>}
    */
-    setAttachmentTitle(title: string);
+    setAttachmentTitle(title: string): Promise<any>;
   
     /**
      * Returns the AttachmentTitle property value defined for the FormCell's control.
@@ -1383,8 +1446,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
      * This method is for setting the title bar of the add attachment menu, i.e. for 
      * changing the value of the AttachmentAddTitle property. The default value is 'Add Attachment'.
      * @param {string} addTitle value to set.
+     * @returns {Promise<any>}
      */
-    setAttachmentAddTitle(addTitle: string);
+    setAttachmentAddTitle(addTitle: string): Promise<any>;
   
     /**
      * Returns the AttachmentAddTitle property value defined for the FormCell's control.
@@ -1396,8 +1460,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
      * This method is for setting the title of the cancel button on the add attachment menu, i.e. for changing 
      * the value of the AttachmentCancelTitle property. The default value is 'Cancel'.
      * @param {string} cancelTitle value to set.
+     * @returns {Promise<any>}
      */
-    setAttachmentCancelTitle(cancelTitle: string);
+    setAttachmentCancelTitle(cancelTitle: string): Promise<any>;
   
     /**
      * Returns the AttachmentCancelTitle property value defined for the FormCell's control.
@@ -1411,8 +1476,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
      * are supported as attachment sources, so the value can contain just the values 'AddPhoto'
      * and/or "TakePhoto" and/or "SelectFile".
      * @param {string[]} fileType value to set.
+     * @returns {Promise<any>}
      */
-    setAttachmentActionType(actionType: [string]);
+    setAttachmentActionType(actionType: [string]): Promise<any>;
   
     /**
      * Returns the AttachmentActionType property value defined for the FormCell's control.
@@ -1425,8 +1491,9 @@ interface ISignatureCaptureFormCellProxy extends IFormCellProxy {
      * If no specified value for this the AllowedFileTypes property, it allow user select any type of file;
      * this property can contain the values just like ["pdf","jpg", "..."].
      * @param {string[]} fileType value to set.
+     * @returns {Promise<any>}
      */
-    setAllowedFileTypes(fileType: [string]);
+    setAllowedFileTypes(fileType: [string]): Promise<any>;
   
     /**
      * Returns the AllowedFileTypes property value defined for the FormCell's control.
@@ -1520,8 +1587,9 @@ interface IAttachmentEntryProxy extends IElementProxy {
    * Sets the ButtonType property of the FormCell's control.
    * Accepted values are: "Button", "Normal".
    * @param {string} type value to set.
+   * @returns {Promise<any>}
    */
-  setButtonType(type: string) 
+  setButtonType(type: string): Promise<any>;
 
   /**
    * Returns the ButtonType property value defined for the FormCell's control.
@@ -1533,8 +1601,9 @@ interface IAttachmentEntryProxy extends IElementProxy {
    * Sets the TextAlignment property of the FormCell's control.
    * Accepted values are: "left", "right", "center".
    * @param {string} alignment  value to set.
+   * @returns {Promise<any>}
    */
-  setTextAlignment(alignment: string);
+  setTextAlignment(alignment: string): Promise<any>;
 
   /**
    * Returns the TextAlignment property value defined for the FormCell's control.
@@ -1545,8 +1614,9 @@ interface IAttachmentEntryProxy extends IElementProxy {
   /**
    * Sets the Title property of the FormCell's FormCell's control.
    * @param {string} title {string} value to set.
+   * @returns {Promise<any>}
    */
-  setTitle(title: string): void;
+  setTitle(title: string): Promise<any>;
 
   /**
    * Returns the Title property value defined for the FormCell's control.
@@ -1557,8 +1627,9 @@ interface IAttachmentEntryProxy extends IElementProxy {
   /**
    * Sets the Image property of the Button FormCell's   control.
    * @param {string} image {string} value to set.
+   * @returns {Promise<any>}
    */
-  setImage(image: string): void;
+  setImage(image: string): Promise<any>;
 
   /**
    * Returns the Image property value defined for the FormCell's control.
@@ -1569,8 +1640,9 @@ interface IAttachmentEntryProxy extends IElementProxy {
   /**
    * Sets the Semantic property of the Button FormCell's control.
    * @param {string} semantic {string} value to set.
+   * @returns {Promise<any>}
    */
-  setSemantic(semantic: string): void;
+  setSemantic(semantic: string): Promise<any>;
  
   /**
    * Returns the Semantic property value defined for the Button FormCell's control.
@@ -1581,8 +1653,9 @@ interface IAttachmentEntryProxy extends IElementProxy {
   /**
    * Sets the ImagePosition property of the Button FormCell's control.
    * @param {string} imagePosition {string} value to set.
+   * @returns {Promise<any>}
    */
-  setImagePosition(imagePosition: string): void;
+  setImagePosition(imagePosition: string): Promise<any>;
  
   /**
    * Returns the ImagePosition property value defined for the Button FormCell's control.
@@ -1593,8 +1666,9 @@ interface IAttachmentEntryProxy extends IElementProxy {
   /**
    * Sets the ImageSize property of the Button FormCell's control.
    * @param {Object} imageSize {Object} value to set.
+   * @returns {Promise<any>}
    */
-  setImageSize(imageSize: Object): void;
+  setImageSize(imageSize: Object): Promise<any>;
 
   /**
    * Returns the ImageSize property value defined for the Button FormCell's control.
@@ -1614,8 +1688,9 @@ interface ITitleFormCellProxy extends IFormCellProxy {
   /**
    * Sets the PlaceHolder property value defined for the FormCell's control.
    * @param {string} placeHolder value to set.
+   * @returns {Promise<any>}
    */
-  setPlaceHolder(placeHolder: string): void
+  setPlaceHolder(placeHolder: string): Promise<any>;
 
   /**
    * Returns the PlaceHolder property value defined for the FormCell's control.
@@ -1647,8 +1722,9 @@ interface ISimplePropertyFormCellProxy extends IFormCellProxy {
    * Sets the AlternateInput property of the FormCell's control.
    * Accepted values are: "None", "Barcode".
    * @param {string} alternateInput value to set.
+   * @returns {Promise<any>}
    */
-   setAlternateInput(alternateInput: string)
+   setAlternateInput(alternateInput: string): Promise<any>;
 
   /**
    * Returns the AlternateInput property value defined for the FormCell's control.
@@ -1660,8 +1736,9 @@ interface ISimplePropertyFormCellProxy extends IFormCellProxy {
    * Sets the KeyboardType property of the FormCell's control.
    * Accepted values are:  "DateTime", "Default", "Email", "Number", "Phone", "Url","Password", "NumberPassword"
    * @param {string} keyboardType  value to set.
+   * @returns {Promise<any>}
    */
-   setKeyboardType(keyboardType: string);
+   setKeyboardType(keyboardType: string): Promise<any>;
 
   /**
    * Returns the KeyboardType property of the FormCell's FormCell's control.
@@ -1672,8 +1749,9 @@ interface ISimplePropertyFormCellProxy extends IFormCellProxy {
   /**
    * Sets the PlaceHolder property value defined for the FormCell's control.
    * @param {string} placeHolder value to set.
+   * @returns {Promise<any>}
    */
-  setPlaceHolder(placeHolder: string): void
+  setPlaceHolder(placeHolder: string): Promise<any>;
 
   /**
    * Returns the PlaceHolder property value defined for the FormCell's control.
@@ -1692,8 +1770,9 @@ interface ISegmentedFormCellProxy extends IFormCellProxy {
   /**
    * Sets the ApportionsSegmentWidthsByContent property of the FormCell's control.
    * @param {boolean} apportionsSegmentWidthsByContent value to set.
+   * @returns {Promise<any>}
    */
-  setApportionsSegmentWidthsByContent(apportionsSegmentWidthsByContent: boolean)
+  setApportionsSegmentWidthsByContent(apportionsSegmentWidthsByContent: boolean): Promise<any>;
 
   /**
    * Returns the ApportionsSegmentWidthsByContent property value defined for the FormCell's control.
@@ -1704,14 +1783,28 @@ interface ISegmentedFormCellProxy extends IFormCellProxy {
   /**
    * Sets the Segments property of the FormCell's control.
    * @param {any} segments  value to set.
+   * @returns {Promise<any>}
    */
-  setSegments(segments: any);
+  setSegments(segments: any): Promise<any>;
 
   /**
    * Returns the Segments property of the FormCell's FormCell's control.
    * @param {any}
    */
   getSegments(): any;
+
+  /**
+   * Sets the CaptionPosition property of the FormCell's control.
+   * @param {string} captionPosition value to set.
+   * @returns {Promise<any>}
+   */
+  setCaptionPosition(captionPosition: string): Promise<any>;
+
+  /**
+   * Returns the CaptionPosition property value defined for the FormCell's control.
+   * @return {string}
+   */
+  getCaptionPosition(): string;
 }
 
 /**
@@ -1860,8 +1953,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the AllowDefaultValueIfOneItem property of the FormCell's control.
    * @param {boolean} allowDefaultValueIfOneItem value to set.
+   * @returns {Promise<any>}
    */
-  setAllowDefaultValueIfOneItem(allowDefaultValueIfOneItem: boolean);
+  setAllowDefaultValueIfOneItem(allowDefaultValueIfOneItem: boolean): Promise<any>;
 
   /**
    * Returns the AllowDefaultValueIfOneItem property value defined for the FormCell's control.
@@ -1872,8 +1966,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the AllowEmptySelection property of the FormCell's control.
    * @param {boolean} allowEmptySelection value to set.
+   * @returns {Promise<any>}
    */
-  setAllowEmptySelection(allowEmptySelection: boolean);
+  setAllowEmptySelection(allowEmptySelection: boolean): Promise<any>;
 
   /**
    * Returns the AllowEmptySelection property value defined for the FormCell's control.
@@ -1884,8 +1979,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the AllowMultipleSelection property of the FormCell's control.
    * @param {boolean} allowMultipleSelection value to set.
+   * @returns {Promise<any>}
    */
-  setAllowMultipleSelection(allowMultipleSelection: boolean);
+  setAllowMultipleSelection(allowMultipleSelection: boolean): Promise<any>;
 
   /**
    * Returns the AllowMultipleSelection property value defined for the FormCell's control.
@@ -1896,8 +1992,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the DataPaging property of the FormCell's control.
    * @param {Object} dataPaging value to set.
+   * @returns {Promise<any>}
    */
-  setDataPaging(dataPaging: Object);
+  setDataPaging(dataPaging: Object): Promise<any>;
 
   /**
    * Returns the DataPaging property value defined for the FormCell's control.
@@ -1908,8 +2005,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the FilterProperty property of the FormCell's control.
    * @param {string} filterProperty value to set.
+   * @returns {Promise<any>}
    */
-  setFilterProperty(filterProperty: string);
+  setFilterProperty(filterProperty: string): Promise<any>;
 
   /**
    * Returns the FilterProperty property value defined for the FormCell's control.
@@ -1920,8 +2018,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the FilterValue property of the FormCell's control.
    * @param {string[]} filterValue value to set.
+   * @returns {Promise<any>}
    */
-  setFilterValue(filterValue: string[]);
+  setFilterValue(filterValue: string[]): Promise<any>;
 
   /**
    * Returns the FilterValue property value defined for the FormCell's control.
@@ -1932,8 +2031,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the IsPickerDismissedOnSelection property of the FormCell's control.
    * @param {boolean} isPickerDismissedOnSelection value to set.
+   * @returns {Promise<any>}
    */
-  setIsPickerDismissedOnSelection(isPickerDismissedOnSelection: boolean);
+  setIsPickerDismissedOnSelection(isPickerDismissedOnSelection: boolean): Promise<any>;
 
   /**
    * Returns the IsPickerDismissedOnSelection property value defined for the FormCell's control.
@@ -1944,8 +2044,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the IsSearchCancelledAfterSelection property of the FormCell's control.
    * @param {boolean} isSearchCancelledAfterSelection value to set.
+   * @returns {Promise<any>}
    */
-  setIsSearchCancelledAfterSelection(alternateInput: boolean);
+  setIsSearchCancelledAfterSelection(alternateInput: boolean): Promise<any>;
 
   /**
    * Returns the IsSearchCancelledAfterSelection property value defined for the FormCell's control.
@@ -1956,9 +2057,10 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the IsSelectedSectionEnabled property of the FormCell's control.
    * @param {boolean} isSelectedSectionEnabled value to set.
+   * @returns {Promise<any>}
    */
 
-  setIsSelectedSectionEnabled(isSelectedSectionEnabled: boolean);
+  setIsSelectedSectionEnabled(isSelectedSectionEnabled: boolean): Promise<any>;
 
   /**
    * Returns the IsSelectedSectionEnabled property value defined for the FormCell's control.
@@ -1969,8 +2071,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the PickerItems property of the FormCell's control.
    * @param {any} pickerItems value to set.
+   * @returns {Promise<any>}
    */
-  setPickerItems(pickerItems: any);
+  setPickerItems(pickerItems: any): Promise<any>;
 
   /**
    * Returns the PickerItems property value defined for the FormCell's control.
@@ -1981,8 +2084,9 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   /**
    * Sets the PickerPrompt property of the FormCell's control.
    * @param {string} pickerPrompt value to set.
+   * @returns {Promise<any>}
    */
-  setPickerPrompt(pickerPrompt: string);
+  setPickerPrompt(pickerPrompt: string): Promise<any>;
 
   /**
    * Returns the PickerPrompt property value defined for the FormCell's control.
@@ -1991,10 +2095,24 @@ interface IListPickerFormCellTargetProxy extends IFormCellTargetProxy {
   getPickerPrompt(): string;
 
   /**
+   * Sets the PlaceHolder property of the FormCell's FormCell's control.
+   * @param {string} placeHolder {string} value to set.
+   * @returns {Promise<any>}
+   */
+  setPlaceHolder(title: string): Promise<any>;
+
+  /**
+   * Returns the PlaceHolder property value defined for the FormCell's control.
+   * @return {string}
+   */
+  getPlaceHolder(): string
+
+  /**
    * Sets the Search property of the FormCell's control.
    * @param {ISearch} search value to set.
+   * @returns {Promise<any>}
    */
-  setSearch(search: ISearch);
+  setSearch(search: ISearch): Promise<any>;
 
   /**
    * Returns the Search property value defined for the FormCell's control.
@@ -2027,8 +2145,9 @@ interface ILabelFormCellProxy extends IFormCellProxy {
   /**
    * Sets the text value of the Label FormCell.
    * @param {string} text value to set.
+   * @returns {Promise<any>}
    */
-  setText(text: string);
+  setText(text: string): Promise<any>;
 
   /**
    * Returns the textWrap property value of the Label FormCell.
@@ -2039,8 +2158,9 @@ interface ILabelFormCellProxy extends IFormCellProxy {
   /**
    * Sets the textWrap property of the Label FormCell.
    * @param {boolean} textWrap value to set.
+   * @returns {Promise<any>}
    */
-  setTextWrap(textWrap: boolean);
+  setTextWrap(textWrap: boolean): Promise<any>;
 
   /**
    * Returns the maxLines property value of the Label FormCell.
@@ -2051,8 +2171,9 @@ interface ILabelFormCellProxy extends IFormCellProxy {
   /**
    * Sets the maxLines property of the Label FormCell.
    * @param {number} maxLines value to set.
+   * @returns {Promise<any>}
    */
-  setMaxLines(maxLines: number);
+  setMaxLines(maxLines: number): Promise<any>;
 
   /**
    * Returns the style class value of the Label FormCell.
