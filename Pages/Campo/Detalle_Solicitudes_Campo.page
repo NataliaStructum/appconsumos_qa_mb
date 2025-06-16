@@ -210,8 +210,56 @@
 	"_Name": "Detalle_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Campo"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Autorizar",
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js",
+				"Title": "Autorizar",
+				"Styles": {
+					"Button": "Button"
+				},
+				"Image": "sap-icon://accounting-document-verification",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Revisar",
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js",
+				"Title": "Revisar",
+				"Styles": {
+					"Button": "Button"
+				},
+				"Image": "sap-icon://write-new-document",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Liquidar",
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js",
+				"Title": "Liquidar",
+				"Styles": {
+					"Button": "Button"
+				},
+				"Image": "sap-icon://paid-leave",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }

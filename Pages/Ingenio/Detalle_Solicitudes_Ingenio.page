@@ -121,14 +121,6 @@
 					"_Name": "SectionFormCell0"
 				},
 				{
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-						"EntitySet": "ComponentesSolicitud",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js",
-						"ReadLink": "{@odata.readLink}"
-					},
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
@@ -153,7 +145,7 @@
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 						"EntitySet": "ComponentesSolicitud",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js",
 						"ReadLink": "{@odata.readLink}"
 					},
 					"_Name": "SectionObjectTable0",
@@ -218,7 +210,7 @@
 	"_Name": "Detalle_Solicitudes_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Ingenio"
 	},
