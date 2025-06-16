@@ -407,7 +407,7 @@
 						"Title": "{material}",
 						"Description": "{material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant. Solicitada: {cant} und",
+						"StatusText": "Cant. Solicitada: {cant}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"AccessoryButtonIcon": "sap-icon://delete",
