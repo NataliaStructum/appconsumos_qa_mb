@@ -11,7 +11,7 @@
 				{
 					"ObjectHeader": {
 						"DetailImageIsCircular": false,
-						"HeadlineText": "Modulo Inventario",
+						"HeadlineText": "Módulo Inventario",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading",
@@ -75,7 +75,7 @@
 	"_Name": "Inicio_Inventario",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

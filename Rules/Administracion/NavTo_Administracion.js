@@ -29,7 +29,7 @@ export default function NavTo_Administracion(context) {
         "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
         "Properties": {
             "Title": "Alerta",
-            "Message": `No tienes permisos para ingresar a este modulo`
+            "Message": `No tienes permisos para ingresar a este módulo`
         }
     });
 

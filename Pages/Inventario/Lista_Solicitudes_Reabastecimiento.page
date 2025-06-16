@@ -118,7 +118,8 @@
 					},
 					"Search": {
 						"Mode": "Persistent",
-						"Enabled": true
+						"Enabled": true,
+						"Placeholder": "Buscar Solicitud..."
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,

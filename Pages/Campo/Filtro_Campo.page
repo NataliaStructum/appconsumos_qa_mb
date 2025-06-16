@@ -11,7 +11,7 @@
 				{
 					"ObjectHeader": {
 						"DetailImageIsCircular": false,
-						"HeadlineText": "Modulo órdenes de mantemiento en Campo",
+						"HeadlineText": "Módulo órdenes de mantemiento en Campo",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading",
@@ -140,7 +140,7 @@
 	"_Name": "Filtro_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Órdenes Campo"
 	}

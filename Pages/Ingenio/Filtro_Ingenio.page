@@ -11,7 +11,7 @@
 				{
 					"ObjectHeader": {
 						"DetailImageIsCircular": false,
-						"HeadlineText": "Modulo Ordenes de mantenimiento de Ingenio",
+						"HeadlineText": "Módulo Ordenes de mantenimiento de Ingenio",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading",
@@ -138,7 +138,7 @@
 	"_Name": "Filtro_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar10",
+		"_Name": "ActionBar11",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Órdenes Ingenio"
 	}

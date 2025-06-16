@@ -173,7 +173,7 @@
 						"Tags": [
 							{
 								"Color": "Grey",
-								"Text": "Entregado: {confirmacion_tec}"
+								"Text": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"
 							}
 						],
 						"AvatarStack": {
@@ -210,7 +210,7 @@
 	"_Name": "Detalle_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Campo"
 	},
