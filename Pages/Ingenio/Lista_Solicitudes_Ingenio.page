@@ -3,6 +3,43 @@
 		{
 			"FilterFeedbackBar": {
 				"ShowAllFilters": false,
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter0",
+						"DisplayValue": "Enviados",
+						"ReturnValue": "estado eq 'Enviado'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter1",
+						"DisplayValue": "Autorizados",
+						"ReturnValue": "estado eq 'Autorizado'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter2",
+						"DisplayValue": "Aprobados",
+						"ReturnValue": "estado eq 'Aprobados'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter3",
+						"DisplayValue": "Rechazados",
+						"ReturnValue": "estado eq 'Rechazados'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter4",
+						"DisplayValue": "Tramitados",
+						"ReturnValue": "estado eq 'Tramitados'",
+						"FilterType": "Filter"
+					}
+				],
 				"_Type": "Control.Type.FilterFeedbackBar"
 			},
 			"_Type": "Control.Type.SectionedTable",
@@ -22,6 +59,12 @@
 						"HeaderSeparator": true,
 						"FooterSeparator": true,
 						"ControlSeparator": true
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js",
@@ -85,12 +128,6 @@
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
 					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
-					},
 					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
@@ -105,7 +142,7 @@
 	"_Name": "Lista_Solicitudes_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Solicitudes Ingenio"
 	}
