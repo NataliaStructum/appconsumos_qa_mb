@@ -19,6 +19,9 @@ export default function Color_Estado_Abast(context) {
         if(estado == "Autorizado"){
             return "Green"
         }
+        if(estado == "Tramitado"){
+            return "Teal"
+        }
     } catch (error) {
         console.error("Ocurrió un error al obtener el valor:", error);
         alert("No se pudo obtener el valor: " + error.message);
