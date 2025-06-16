@@ -1,34 +1,39 @@
 {
 	"Controls": [
 		{
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
-						"StatusText": "Centro: {almacen_centro}",
-						"SubstatusText": "{almacen_sociedad}",
+						"Subhead": "Reserva: {reserva}",
+						"Description": "{equipo_solicitud} - {eq_desc_solicitud}",
+						"StatusText": "Almacén: {alm_almacen}",
+						"SubstatusText": "Sociedad: {alm_sociedad}",
 						"DetailImageIsCircular": false,
 						"Tags": [
 							{
-								"Color": "/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js",
-								"Text": "{estado}"
+								"Color": "/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js",
+								"Text": "Estado: {estado}"
 							}
 						],
-						"HeadlineText": "Almacén: {almacen_almacen} - {almacen/almacen_desc}",
+						"BodyText": "{or_desc}",
+						"HeadlineText": "No. Orden: {orden}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
 					},
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -38,7 +43,7 @@
 					},
 					"KeyAndValues": [
 						{
-							"Value": "Creado por {operario_ficha} - {operario/nombre}",
+							"Value": "Creado por {op_ficha} - {op_nombre}",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue0",
 							"KeyName": "Creado el $(DT,{fecha_creacion})",
@@ -47,32 +52,26 @@
 						{
 							"Value": "{correo_creacion}",
 							"_Type": "KeyValue.Type.Item",
-							"_Name": "KeyValue1",
+							"_Name": "KeyValue3",
 							"KeyName": "Correo de Creación Solicitud",
 							"Visible": true
 						},
 						{
-							"Value": "Revisado por {aprobador/nombre}",
+							"Value": "Revisado por {au_nombre}",
 							"_Type": "KeyValue.Type.Item",
-							"_Name": "KeyValue2",
+							"_Name": "KeyValue1",
 							"KeyName": "Revisado el $(DT,{fecha_revision})",
 							"Visible": true
 						},
 						{
-							"Value": "Autorizado por {autorizador/nombre}",
+							"Value": "Autorizado por {au_nombre}",
 							"_Type": "KeyValue.Type.Item",
-							"_Name": "KeyValue3",
+							"_Name": "KeyValue2",
 							"KeyName": "Autorizado el $(DT,{fecha_autorizado})",
 							"Visible": true
 						}
 					],
 					"MaxItemCount": 1,
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Layout": {
 						"NumberOfColumns": 1
 					}
@@ -118,26 +117,6 @@
 					}
 				},
 				{
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
-					"Header": {
-						"_Type": "SectionCommon.Type.Header",
-						"_Name": "SectionCommonTypeHeader0",
-						"AccessoryType": "None",
-						"UseTopPadding": true,
-						"Caption": "Materiales de la Solicitud"
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
-					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
@@ -146,60 +125,18 @@
 						"ReadLink": "{@odata.readLink}"
 					},
 					"_Name": "SectionObjectTable0",
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Materiales de la Solicitud"
+					},
 					"Visible": true,
 					"EmptySection": {
+						"Caption": "No hay elementos para mostrar",
 						"FooterVisible": false
 					},
-					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						},
-						"Title": "{material_material}",
-						"Footnote": "Entregado: {confirmacion_tec}",
-						"Description": "{material/material_desc}",
-						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant. Solicitada: {cantidad_tomada}",
-						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada}",
-						"PreserveIconStackSpacing": false,
-						"AccessoryType": "None",
-						"Tags": [
-							{
-								"Color": "Grey",
-								"Text": "Registrado"
-							}
-						],
-						"AvatarStack": {
-							"Avatars": [
-								{
-									"Image": "sap-icon://product"
-								}
-							],
-							"ImageIsCircular": true,
-							"ImageHasBorder": false
-						},
-						"AvatarGrid": {
-							"Avatars": [],
-							"ImageIsCircular": true
-						},
-						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false
-					},
-					"DataPaging": {
-						"ShowLoadingIndicator": false,
-						"PageSize": 50
-					},
-					"HighlightSelectedItem": false,
-					"Selection": {
-						"ExitOnLastDeselect": true,
-						"LongPressToEnable": "None",
-						"Mode": "None"
-					}
-				},
-				{
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -207,34 +144,9 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
-					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-						"EntitySet": "ComponentesSolicitud",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast_Nuevo.js",
-						"ReadLink": "{@odata.readLink}"
-					},
-					"_Name": "SectionObjectTable1",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"ObjectCell": {
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						},
-						"Title": "{mat_nuevo}",
-						"Footnote": "Entregado: {confirmacion_tec}",
+						"Title": "Material: {mat_nuevo}",
+						"Subhead": "Tomado de: {almacen_almacen}",
 						"Description": "{mat_nuevo_desc}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cant. Solicitada: {cantidad_tomada}",
@@ -243,8 +155,8 @@
 						"AccessoryType": "None",
 						"Tags": [
 							{
-								"Color": "Mango",
-								"Text": "Nuevo"
+								"Color": "Grey",
+								"Text": "Entregado: {confirmacion_tec}"
 							}
 						],
 						"AvatarStack": {
@@ -261,7 +173,14 @@
 							"ImageIsCircular": true
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						}
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -280,15 +199,67 @@
 						"Mode": "None"
 					}
 				}
-			]
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Detalle_Solicitud_Reabastecimieto",
+	"_Name": "Detalle_Solicitudes_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar1",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Detalle Solicitud Abastecimiento"
+		"Caption": "Detalle Solicitud Ingenio"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Autorizar",
+				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnAutorizar.js",
+				"Title": "Autorizar",
+				"Styles": {
+					"Button": "Button"
+				},
+				"Image": "sap-icon://accounting-document-verification",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Revisar",
+				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnRevisar.js",
+				"Title": "Revisar",
+				"Styles": {
+					"Button": "Button"
+				},
+				"Image": "sap-icon://write-new-document",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Netear",
+				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnNetear.js",
+				"Title": "Netear",
+				"Styles": {
+					"Button": "Button"
+				},
+				"Image": "sap-icon://inspect-down",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }

@@ -12,7 +12,7 @@
 					"ObjectHeader": {
 						"Subhead": "/appconsumos_qa_mb/Rules/Ingenio/get_Date_creacion.js",
 						"Footnote": "{orden_desc}",
-						"Description": "{equipo} - {equipo_desc}",
+						"Description": "{equipo_equipo}",
 						"StatusText": "{grupo_plan} - {centro_plan}",
 						"DetailImage": "sap-icon://inspection",
 						"DetailImageIsCircular": false,
@@ -69,6 +69,12 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
@@ -120,12 +126,6 @@
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
 					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
-					},
 					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
@@ -140,7 +140,7 @@
 	"_Name": "Detalle_Orden_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Orden"
 	},

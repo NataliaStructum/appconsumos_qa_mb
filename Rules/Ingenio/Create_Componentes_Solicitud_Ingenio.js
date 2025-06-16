@@ -26,18 +26,19 @@ export default function Create_Componentes_Solicitud_Ingenio(context) {
                 "Properties": {
                     "Properties": {
                         "id": guid(context),
-                        "material_material": material.material,
+                        "mat_nuevo": material.Matnr,
+                        "mat_nuevo_desc": material.Txtmd,
                         "almacen_sociedad": dataAlmacen.sociedad,
-                        "almacen_almacen": dataAlmacen.almacen,
-                        "almacen_centro": dataAlmacen.centro,
+                        "almacen_almacen": material.Lgort,
+                        "almacen_centro": material.Werks,
                         "solicitud_id": idSolicitud,
                         "cantidad_tomada": material.cant
                     }
                 }
             }).then(() => {
-                exitosos.push(`${material.almacen.almacen_desc} - ${material.material_desc}`);
+                exitosos.push(`${material.Lgort} - ${material.Txtmd}`);
             }).catch(() => {
-                errores.push(`${material.almacen.almacen_desc} - ${material.material_desc}`);
+                errores.push(`${material.Lgort} - ${material.Txtmd}`);
             });
         });
 
