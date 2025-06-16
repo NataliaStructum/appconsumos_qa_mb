@@ -29,10 +29,9 @@
                     <NavigationPropertyBinding Path="autorizador" Target="EmpleadosApp"/>
                 </EntitySet>
                 <EntitySet Name="ComponentesSolicitud" EntityType="appconsumos_qa.ComponentesSolicitud">
+                    <NavigationPropertyBinding Path="solicitud" Target="Solicitudes"/>
                     <NavigationPropertyBinding Path="material" Target="MaterialesAlmacen"/>
                     <NavigationPropertyBinding Path="almacen" Target="AlmacenesApp"/>
-                    <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
-                    <NavigationPropertyBinding Path="solicitud" Target="Solicitudes"/>
                 </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
             </EntityContainer>
@@ -210,6 +209,10 @@
                     <PropertyRef Name="id"/>
                 </Key>
                 <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="solicitud" Type="appconsumos_qa.Solicitudes">
+                    <ReferentialConstraint Property="solicitud_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="solicitud_id" Type="Edm.Guid"/>
                 <NavigationProperty Name="material" Type="appconsumos_qa.MaterialesAlmacen">
                     <ReferentialConstraint Property="material_material" ReferencedProperty="material"/>
                     <ReferentialConstraint Property="material_almacen" ReferencedProperty="almacen"/>
@@ -228,17 +231,7 @@
                 <Property Name="almacen_sociedad" Type="Edm.String" MaxLength="4"/>
                 <Property Name="almacen_almacen" Type="Edm.String" MaxLength="4"/>
                 <Property Name="almacen_centro" Type="Edm.String" MaxLength="4"/>
-                <NavigationProperty Name="equipo" Type="appconsumos_qa.Equipos">
-                    <ReferentialConstraint Property="equipo_equipo" ReferencedProperty="equipo"/>
-                </NavigationProperty>
-                <Property Name="equipo_equipo" Type="Edm.String" MaxLength="18"/>
-                <NavigationProperty Name="solicitud" Type="appconsumos_qa.Solicitudes">
-                    <ReferentialConstraint Property="solicitud_id" ReferencedProperty="id"/>
-                </NavigationProperty>
-                <Property Name="solicitud_id" Type="Edm.Guid"/>
                 <Property Name="mat_nuevo" Type="Edm.String" MaxLength="18"/>
-                <Property Name="mat_nuevo_centro" Type="Edm.String" MaxLength="4"/>
-                <Property Name="mat_nuevo_almacen" Type="Edm.String" MaxLength="4"/>
                 <Property Name="mat_nuevo_desc" Type="Edm.String" MaxLength="40"/>
                 <Property Name="cantidad_tomada" Type="Edm.Decimal" Scale="variable"/>
                 <Property Name="cantidad_aprobada" Type="Edm.Decimal" Scale="variable"/>
@@ -260,6 +253,7 @@
                 <Property Name="alm_sociedad" Type="Edm.String" MaxLength="4"/>
                 <Property Name="alm_almacen" Type="Edm.String" MaxLength="4"/>
                 <Property Name="alm_centro" Type="Edm.String" MaxLength="4"/>
+                <Property Name="alm_desc" Type="Edm.String" MaxLength="16"/>
                 <Property Name="equipo_solicitud" Type="Edm.String" MaxLength="18"/>
                 <Property Name="eq_desc_solicitud" Type="Edm.String" MaxLength="40"/>
                 <Property Name="orden" Type="Edm.String" MaxLength="12"/>
