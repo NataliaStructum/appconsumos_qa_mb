@@ -1,12 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"Subhead": "Reserva: {reserva}",
 						"Description": "{equipo_solicitud} - {eq_desc_solicitud}",
@@ -25,15 +27,11 @@
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -72,15 +70,17 @@
 						}
 					],
 					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 1
 					}
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -88,8 +88,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"Value": "{observaciones_tec}",
@@ -114,28 +112,21 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				},
 				{
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-						"EntitySet": "ComponentesSolicitud",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js",
-						"ReadLink": "{@odata.readLink}"
-					},
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
 						"Caption": "Materiales de la Solicitud"
-					},
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No hay elementos para mostrar",
-						"FooterVisible": false
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
@@ -144,10 +135,36 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+						"EntitySet": "ComponentesSolicitud",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js",
+						"ReadLink": "{@odata.readLink}"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay elementos para mostrar",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
-						"Title": "Material: {mat_nuevo}",
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
+						"Title": "{material_material}",
 						"Subhead": "Tomado de: {almacen_almacen}",
-						"Description": "{mat_nuevo_desc}",
+						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cant. Solicitada: {cantidad_tomada}",
 						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada}",
@@ -173,24 +190,11 @@
 							"ImageIsCircular": true
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						}
+						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {
@@ -199,67 +203,15 @@
 						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Detalle_Solicitudes_Ingenio",
+	"_Name": "Detalle_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Detalle Solicitud Ingenio"
-	},
-	"FioriToolbar": {
-		"_Type": "Control.Type.FioriToolbar",
-		"_Name": "FioriToolbar0",
-		"Items": [
-			{
-				"_Type": "FioriToolbarItem.Type.Button",
-				"_Name": "btn_Autorizar",
-				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnAutorizar.js",
-				"Title": "Autorizar",
-				"Styles": {
-					"Button": "Button"
-				},
-				"Image": "sap-icon://accounting-document-verification",
-				"Enabled": true,
-				"ButtonType": "Primary",
-				"Semantic": "Tint",
-				"ImagePosition": "Leading"
-			},
-			{
-				"_Type": "FioriToolbarItem.Type.Button",
-				"_Name": "btn_Revisar",
-				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnRevisar.js",
-				"Title": "Revisar",
-				"Styles": {
-					"Button": "Button"
-				},
-				"Image": "sap-icon://write-new-document",
-				"Enabled": true,
-				"ButtonType": "Primary",
-				"Semantic": "Tint",
-				"ImagePosition": "Leading"
-			},
-			{
-				"_Type": "FioriToolbarItem.Type.Button",
-				"_Name": "btn_Netear",
-				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnNetear.js",
-				"Title": "Netear",
-				"Styles": {
-					"Button": "Button"
-				},
-				"Image": "sap-icon://inspect-down",
-				"Enabled": true,
-				"ButtonType": "Primary",
-				"Semantic": "Tint",
-				"ImagePosition": "Leading"
-			}
-		]
+		"Caption": "Detalle Solicitud Campo"
 	}
 }

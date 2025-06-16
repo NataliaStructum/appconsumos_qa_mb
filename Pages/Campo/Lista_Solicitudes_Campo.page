@@ -67,6 +67,12 @@
 							"Avatars": [],
 							"ImageIsCircular": true
 						},
+						"OnPress": {
+							"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+							"Properties": {
+								"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Detalle_Solicitudes_Campo.page"
+							}
+						},
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
@@ -78,6 +84,12 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {
@@ -93,7 +105,7 @@
 	"_Name": "Lista_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar3",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Solicitudes Campo"
 	}
