@@ -70,7 +70,7 @@ export default function Agregar_Materiales_Solicitud(context) {
         stock_reservado: data.stock_reservado
     }*/
 
-    const duplicado = clientData.lista_materiales.filter(m => m.material === data.material && m.almacen.almacen === data.almacen.almacen).length > 0
+    const duplicado = clientData.lista_materiales.filter(m => m.Matnr === data.Matnr && m.Lgort === data.Lgort).length > 0
 
     if (duplicado) {
         return context.executeAction({
