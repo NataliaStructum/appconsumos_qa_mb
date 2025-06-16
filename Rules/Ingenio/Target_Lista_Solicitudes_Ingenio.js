@@ -4,21 +4,26 @@
  */
 export default function Target_Lista_Solicitudes_Ingenio(context) {
     let target = context.evaluateTargetPath("#Page:Filtro_Ingenio/#ClientData/#Property:lista_sol_ingenio");
-
     let searchString = context.searchString;
 
     if (searchString) {
-        let searchResult = target.filter(prod => { 
-            return prod.orden.includes(searchString) || 
-                   prod.or_desc.includes(searchString) ||
-                   prod.or_centro_plan.includes(searchString) ||
-                   prod.or_grupo_plan.includes(searchString) ||
-                   prod.equipo_solicitud.includes(searchString) ||
-                   prod.eq_desc_solicitud.includes(searchString) ||
-                   prod.reserva.includes(searchString) ||
-                   prod.alm_sociedad.includes(searchString)
+        let lowerSearch = searchString.toLowerCase();
+
+        let searchResult = target.filter(prod => {
+            return (prod.orden || "").toLowerCase().includes(lowerSearch) ||
+                (prod.or_desc || "").toLowerCase().includes(lowerSearch) ||
+                (prod.or_centro_plan || "").toLowerCase().includes(lowerSearch) ||
+                (prod.or_grupo_plan || "").toLowerCase().includes(lowerSearch) ||
+                (prod.equipo_solicitud || "").toLowerCase().includes(lowerSearch) ||
+                (prod.eq_desc_solicitud || "").toLowerCase().includes(lowerSearch) ||
+                (prod.reserva || "").toLowerCase().includes(lowerSearch) ||
+                (prod.alm_sociedad || "").toLowerCase().includes(lowerSearch) ||
+                (prod.estado || "").toLowerCase().includes(lowerSearch);
         });
+
         target = searchResult;
     }
+
     return target;
+
 }

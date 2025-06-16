@@ -11,7 +11,7 @@
 				{
 					"ObjectHeader": {
 						"DetailImageIsCircular": false,
-						"HeadlineText": "Modulo Administrador",
+						"HeadlineText": "Módulo Administrador",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading",
@@ -87,7 +87,7 @@
 	"_Name": "Inicio_Admin",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
