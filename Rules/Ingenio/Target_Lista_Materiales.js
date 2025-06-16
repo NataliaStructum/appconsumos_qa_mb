@@ -9,8 +9,8 @@ export default function Target_Lista_Materiales(context) {
 
     if (searchString) {
         let searchResult = target.filter(prod => { 
-            return prod.material.includes(searchString) || 
-                   prod.material_desc.includes(searchString)
+            return prod.Matnr.includes(searchString) || 
+                   prod.Txtmd.includes(searchString)
         });
         target = searchResult;
     }

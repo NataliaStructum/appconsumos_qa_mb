@@ -45,7 +45,7 @@
 							"Caption": "Ficha Operario *",
 							"PlaceHolder": "Ingresa el número de ficha",
 							"KeyboardType": "Number",
-							"AlternateInput": "None",
+							"AlternateInput": "Barcode",
 							"Enabled": true,
 							"IsEditable": true
 						},
@@ -115,21 +115,21 @@
 							},
 							"PickerItems": {
 								"Target": {
-									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-									"EntitySet": "Inventario",
-									"QueryOptions": "$expand=almacen&$filter=almacen/tipo eq 'CAMPO' and almacen_sociedad eq '{{#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#Value/#First/BindingObject/sociedad}}'&$orderby=almacen_almacen",
+									"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
+									"EntitySet": "ZBIW_MARDTSet",
+									"QueryOptions": "/appconsumos_qa_mb/Rules/Ingenio/Filter_Materiales_Almacenes_Ingenio.js",
 									"ReadLink": "{@odata.readLink}"
 								},
 								"ObjectCell": {
-									"Description": "{material_desc}",
+									"Description": "{Txtmd}",
 									"DisplayDescriptionInMobile": true,
-									"Footnote": "Disponible: {stock_disponible} / Reservado: {stock_disponible}",
+									"Footnote": "Disponible: {Labst} / Reservado: {Klabs}",
 									"PreserveIconStackSpacing": false,
-									"Subhead": "{almacen/almacen} - {almacen/almacen_desc}",
-									"Title": "{almacen/almacen_desc} - {material}",
+									"Subhead": "{Lgort}",
+									"Title": "{Matnr}",
 									"Visible": true
 								},
-								"ReturnValue": "{almacen/almacen_desc} - {material}"
+								"ReturnValue": "{Lgort} - {Matnr}"
 							}
 						},
 						{
@@ -189,6 +189,12 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Materiales.js",
 					"_Name": "SectionObjectTable0",
@@ -205,11 +211,11 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{material}",
-						"Subhead": "Tomado de: {almacen/almacen_desc} ({almacen/almacen})",
-						"Description": "{material_desc}",
+						"Title": "{Matnr}",
+						"Subhead": "Tomado de: {Lgort}",
+						"Description": "{Txtmd}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant: {cant} de {stock_disponible}",
+						"StatusText": "Cant: {cant} de {Labst}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "DetailButton",
 						"AccessoryButtonIcon": "sap-icon://delete",
@@ -240,12 +246,6 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {

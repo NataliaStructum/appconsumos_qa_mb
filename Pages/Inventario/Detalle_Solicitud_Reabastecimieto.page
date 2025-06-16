@@ -74,6 +74,13 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Detalle Solicitud"
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
@@ -82,13 +89,6 @@
 						"ReadLink": "{@odata.readLink}"
 					},
 					"_Name": "SectionObjectTable0",
-					"Header": {
-						"_Type": "SectionCommon.Type.Header",
-						"_Name": "SectionCommonTypeHeader0",
-						"AccessoryType": "None",
-						"UseTopPadding": true,
-						"Caption": "Detalle Solicitud"
-					},
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No hay elementos para mostrar",
@@ -117,20 +117,14 @@
 						"AvatarStack": {
 							"Avatars": [
 								{
-									"Image": "sap-icon://customer",
-									"ImageText": ""
+									"Image": "sap-icon://basket"
 								}
 							],
 							"ImageIsCircular": true,
 							"ImageHasBorder": false
 						},
 						"AvatarGrid": {
-							"Avatars": [
-								{
-									"Image": "sap-icon://customer",
-									"ImageText": ""
-								}
-							],
+							"Avatars": [],
 							"ImageIsCircular": true
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
@@ -139,6 +133,12 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {
@@ -154,7 +154,7 @@
 	"_Name": "Detalle_Solicitud_Reabastecimieto",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle"
 	}
