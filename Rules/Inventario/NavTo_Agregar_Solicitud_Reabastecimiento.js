@@ -5,10 +5,10 @@
 export default function NavTo_Agregar_Solicitud_Reabastecimiento(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Lista_Solicitudes_Reabastecimiento').getClientData();
     let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Solicitud_Abast').getClientData();
-    let materialesNuevos = clientDataFiltro.materiales_nuevos
+    //let materialesNuevos = clientDataFiltro.materiales_nuevos
     clientData.lista_materiales = []
 
-    if(!materialesNuevos){
+    /*if(!materialesNuevos){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
             "Properties": {
@@ -16,7 +16,7 @@ export default function NavTo_Agregar_Solicitud_Reabastecimiento(context) {
                 "Duration": 1
             }
         });
-    }
+    }*/
  
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",

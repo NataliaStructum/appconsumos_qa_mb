@@ -11,9 +11,9 @@ export default function NavTo_List_Abastecimiento(context) {
 
     let filtro = `$filter=Werks eq '${almacen.centro}' and Spras eq 'ES' and Lgort ne '${almacen.almacen}' and contains(Txtmd, 'BORRADO') eq false&$orderby=Lgort`
 
-    context.read('/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service', 'ZBIW_MARDTSet', [], filtro).then(async (results) => {
+    /*context.read('/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service', 'ZBIW_MARDTSet', [], filtro).then(async (results) => {
 
-        /*clientData.materiales_nuevos = []
+        clientData.materiales_nuevos = []
         context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
             "Properties": {
@@ -30,11 +30,11 @@ export default function NavTo_List_Abastecimiento(context) {
 
             clientData.materiales_nuevos = materialesUnicos
             
-        }*/
+        }
     }).catch((error) => {
 
         alert(`Error al obtener los materiales del ERP ${error.message}`)
-    });
+    });*/
 
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",

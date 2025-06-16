@@ -23,21 +23,31 @@ export default function Create_Solicitud_Abastecimiento(context) {
 
     // Create de la solicitud
     let promises = lista_materiales.map(material => {
+        let props = {
+            id: guid(context),
+            solicitud_id: idSolicitud,
+            cantidad_tomada: material.cant
+        };
+    
+        if (material.tipo === "Nuevo") {
+            props.mat_nuevo = material.material;
+            props.mat_nuevo_desc = material.material_desc;
+        } else if (material.tipo === "Registrado") {
+            Object.assign(props, {
+                material_material: material.material,
+                material_almacen: dataAlmacen.almacen,
+                material_centro: dataAlmacen.centro,
+                material_sociedad: dataAlmacen.sociedad,
+                almacen_sociedad: dataAlmacen.sociedad,
+                almacen_almacen: dataAlmacen.almacen,
+                almacen_centro: dataAlmacen.centro
+            });
+        }
+    
         return context.executeAction({
-            "Name": "/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action",
-            "Properties": {
-                "Properties": {
-                    "id": guid(context),
-                    "material_material": material.material,
-                    "material_almacen": dataAlmacen.almacen,
-                    "material_centro": dataAlmacen.centro,
-                    "material_sociedad": dataAlmacen.sociedad,
-                    "almacen_sociedad": dataAlmacen.sociedad,
-                    "almacen_almacen": dataAlmacen.almacen,
-                    "almacen_centro": dataAlmacen.centro,
-                    "solicitud_id": idSolicitud,
-                    "cantidad_tomada": material.cant
-                }
+            Name: "/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action",
+            Properties: {
+                Properties: props
             }
         }).then(() => {
             exitosos.push(`${material.material} (${material.material_desc})`);
@@ -45,7 +55,7 @@ export default function Create_Solicitud_Abastecimiento(context) {
             errores.push(`${material.material} (${material.material_desc})`);
         });
     });
-
+   
     // Procesar los resultados
     return Promise.allSettled(promises).then(() => {
         let mensaje = '';

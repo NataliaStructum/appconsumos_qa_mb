@@ -39,7 +39,7 @@
 							"Caption": "Ficha Operario *",
 							"PlaceHolder": "Ingresa el número de ficha",
 							"KeyboardType": "Number",
-							"AlternateInput": "None",
+							"AlternateInput": "Barcode",
 							"Enabled": true,
 							"IsEditable": true
 						},
@@ -108,7 +108,7 @@
 							"Image": "sap-icon://add-document",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/filter_Read_ZBIW_MARDT.js"
 						}
 					],
 					"Layout": {
@@ -230,17 +230,17 @@
 							"_Name": "FormCellLabel1",
 							"IsVisible": true,
 							"Separator": true,
-							"Text": "Agregar Material Nuevo",
+							"Text": "Agregar Nuevo Material",
 							"TextWrap": true
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker_Materiales_Nuevo",
-							"IsVisible": true,
+							"_Name": "FormCellListPicker_Materiales_Nuevo_invisible",
+							"IsVisible": false,
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
-							"Caption": "Material *",
+							"Caption": "Material invisible*",
 							"DataPaging": {
 								"ShowLoadingIndicator": true,
 								"LoadingIndicatorText": "Cargando datos...",
@@ -253,11 +253,7 @@
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"Search": {
-								"Enabled": true,
-								"Placeholder": "Escribe al menos 3 letras para buscar...",
-								"Delay": 2,
 								"Mode": "Expandable",
-								"MinimumCharacterThreshold": 3,
 								"Options": {
 									"CaseSensitive": false,
 									"NumberSearch": {
@@ -266,7 +262,11 @@
 									"UseSearchOverFilter": {
 										"Enabled": false
 									}
-								}
+								},
+								"Enabled": true,
+								"Placeholder": "Escribe al menos 3 letras para buscar...",
+								"Delay": 2,
+								"MinimumCharacterThreshold": 3
 							},
 							"PickerItems": {
 								"Target": {
@@ -289,12 +289,12 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker1",
+							"_Name": "FormCellListPicker_Materiales_Nuevo",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
-							"Caption": "Material prueba group*",
+							"Caption": "Nuevo Material *",
 							"DataPaging": {
 								"ShowLoadingIndicator": true,
 								"LoadingIndicatorText": "Cargando datos...",
@@ -309,11 +309,7 @@
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"Search": {
-								"Enabled": true,
-								"Placeholder": "Escribe al menos 3 letras para buscar...",
-								"Delay": 2,
 								"Mode": "Expandable",
-								"MinimumCharacterThreshold": 3,
 								"Options": {
 									"CaseSensitive": false,
 									"NumberSearch": {
@@ -322,7 +318,11 @@
 									"UseSearchOverFilter": {
 										"Enabled": false
 									}
-								}
+								},
+								"Enabled": true,
+								"Placeholder": "Escribe al menos 3 letras para buscar...",
+								"Delay": 2,
+								"MinimumCharacterThreshold": 3
 							},
 							"PickerItems": "/appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js"
 						},
@@ -343,6 +343,10 @@
 							"_Name": "FormCellButton1",
 							"IsVisible": true,
 							"Separator": true,
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
 							"Title": "Agregar Material",
 							"Alignment": "Right",
 							"ButtonType": "Text",
@@ -378,6 +382,12 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js",
 					"_Name": "SectionObjectTable0",
@@ -397,11 +407,16 @@
 						"Title": "{material}",
 						"Description": "{material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant: {cant} de {stock_disponible}",
+						"StatusText": "Cant. Solicitada: {cant} und",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"AccessoryButtonIcon": "sap-icon://delete",
-						"Tags": [],
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Inventario/Color_Tipo_ListaMaterial.js",
+								"Text": "{tipo}"
+							}
+						],
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -427,12 +442,6 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {

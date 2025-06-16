@@ -63,7 +63,7 @@ export default function Agregar_Materiales_Solicitud_Reabas(context) {
         cant : cant,
         stock_disponible: data.stock_disponible,
         stock_reservado: data.stock_reservado,
-        nuevo: false
+        tipo: "Registrado"
     }
  
    
