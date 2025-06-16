@@ -9,11 +9,11 @@ export default function Query_Lista_Abast(context) {
 
     let dataAlmacen = clientDataAlmacen.almacen_abast;
 
-    let filtro = `$filter=almacen_sociedad eq '${dataAlmacen.sociedad}' and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}' and tipo eq 'ABASTECIMIENTO' &$orderby=fecha_creacion desc &$expand=operario`
+    let filtro = `$filter=almacen_sociedad eq '${dataAlmacen.sociedad}' and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}' and tipo eq 'ABASTECIMIENTO' &$orderby=fecha_creacion desc &$expand=operario,aprobador,autorizador,almacen`
     let isTecnico = clientDataUser.info_user.rol === 'Técnico'
     if(isTecnico){
         let correo = clientDataUser.info_user.correo
-        filtro = `$filter=almacen_sociedad eq '${dataAlmacen.sociedad}' and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}' and tipo eq 'ABASTECIMIENTO' and correo_creacion eq '${correo}' &$orderby=fecha_creacion desc &$expand=operario`
+        filtro = `$filter=almacen_sociedad eq '${dataAlmacen.sociedad}' and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}' and tipo eq 'ABASTECIMIENTO' and correo_creacion eq '${correo}' &$orderby=fecha_creacion desc &$expand=operario,aprobador,autorizador,almacen`
     }
     return filtro;
     //lista_abast

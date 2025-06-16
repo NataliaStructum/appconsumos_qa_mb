@@ -19,9 +19,8 @@ export default function Agregar_Materiales_Nuevos_Reabas(context) {
         });
     }
    
-    let data = material[0].BindingObject
-    let stock = data.stock_disponible
- 
+
+    let data = material[0]    
  
     if (!cant || cant < 0) {
         return context.executeAction({
@@ -34,16 +33,15 @@ export default function Agregar_Materiales_Nuevos_Reabas(context) {
     }
   
     var nuevo = {
-        material: data.material,
-        material_desc: data.material_desc,
+        material: data.ReturnValue,
+        material_desc: data.DisplayValue.Subhead,
         cant : cant,
-        stock_disponible: data.stock_disponible,
-        stock_reservado: data.stock_reservado,
-        nuevo: true
+        stock_disponible: null,
+        stock_reservado: null,
+        tipo: "Nuevo"
     }
- 
    
-    const duplicado = clientData.lista_materiales.filter(m => m.material === data.material).length > 0
+    const duplicado = clientData.lista_materiales.filter(m => m.material === nuevo.material).length > 0
    
     if (duplicado) {
         return context.executeAction({

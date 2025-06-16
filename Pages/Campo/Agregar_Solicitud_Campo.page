@@ -45,7 +45,7 @@
 							"Caption": "Ficha Operario *",
 							"PlaceHolder": "Ingresa el número de ficha",
 							"KeyboardType": "Number",
-							"AlternateInput": "None",
+							"AlternateInput": "Barcode",
 							"Enabled": true,
 							"IsEditable": true
 						},
@@ -240,6 +240,12 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {
