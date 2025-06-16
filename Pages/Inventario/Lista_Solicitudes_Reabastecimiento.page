@@ -3,6 +3,43 @@
 		{
 			"FilterFeedbackBar": {
 				"ShowAllFilters": false,
+				"FastFilters": [
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter0",
+						"DisplayValue": "Enviados",
+						"ReturnValue": "estado eq 'Enviado'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter1",
+						"DisplayValue": "Autorizados",
+						"ReturnValue": "estado eq 'Autorizado'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter2",
+						"DisplayValue": "Aprobados",
+						"ReturnValue": "estado eq 'Aprobado'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter3",
+						"DisplayValue": "Rechazados",
+						"ReturnValue": "estado eq 'Rechazado'",
+						"FilterType": "Filter"
+					},
+					{
+						"_Type": "Control.Type.FastFilterItem",
+						"_Name": "FastFilter4",
+						"DisplayValue": "Tramitados",
+						"ReturnValue": "estado eq 'Tramitado'",
+						"FilterType": "Filter"
+					}
+				],
 				"_Type": "Control.Type.FilterFeedbackBar"
 			},
 			"_Type": "Control.Type.SectionedTable",

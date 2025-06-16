@@ -243,7 +243,7 @@
 						"AccessoryType": "None",
 						"Tags": [
 							{
-								"Color": "Mango",
+								"Color": "Pink",
 								"Text": "Nuevo"
 							}
 						],
@@ -292,7 +292,7 @@
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem0",
-				"Visible": true,
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js",
 				"Title": "Revisar",
 				"Styles": {
 					"Image": "Button",
@@ -307,8 +307,12 @@
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem1",
-				"Visible": true,
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js",
 				"Title": "Autorizar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
 				"Image": "sap-icon://accounting-document-verification",
 				"Enabled": true,
 				"ButtonType": "Primary",
@@ -318,8 +322,12 @@
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem2",
-				"Visible": true,
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js",
 				"Title": "Salida",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
 				"Image": "sap-icon://arrow-right",
 				"Enabled": true,
 				"ButtonType": "Primary",
@@ -329,8 +337,12 @@
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem3",
-				"Visible": true,
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnConfirmar.js",
 				"Title": "Confirmar Materiales",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
 				"Image": "sap-icon://sys-enter-2",
 				"Enabled": true,
 				"ButtonType": "Primary",
