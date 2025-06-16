@@ -1,12 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"Subhead": "Reserva: {reserva}",
 						"Description": "{equipo_solicitud} - {eq_desc_solicitud}",
@@ -25,15 +27,11 @@
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -72,15 +70,17 @@
 						}
 					],
 					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 1
 					}
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -88,8 +88,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"Value": "{observaciones_tec}",
@@ -114,7 +112,13 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				},
 				{
 					"_Type": "Section.Type.ObjectTable",
@@ -132,11 +136,6 @@
 						"UseTopPadding": true,
 						"Caption": "Materiales de la Solicitud"
 					},
-					"Visible": true,
-					"EmptySection": {
-						"Caption": "No hay elementos para mostrar",
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -144,7 +143,33 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+						"EntitySet": "ComponentesSolicitud",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js",
+						"ReadLink": "{@odata.readLink}"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay elementos para mostrar",
+						"FooterVisible": false
+					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
 						"Title": "Material: {mat_nuevo}",
 						"Subhead": "Tomado de: {almacen_almacen}",
 						"Description": "{mat_nuevo_desc}",
@@ -173,24 +198,11 @@
 							"ImageIsCircular": true
 						},
 						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						}
+						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {
@@ -199,18 +211,14 @@
 						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Detalle_Solicitudes_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Ingenio"
 	},
@@ -221,7 +229,7 @@
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "btn_Autorizar",
-				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnAutorizar.js",
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js",
 				"Title": "Autorizar",
 				"Styles": {
 					"Button": "Button"
@@ -235,7 +243,7 @@
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "btn_Revisar",
-				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnRevisar.js",
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js",
 				"Title": "Revisar",
 				"Styles": {
 					"Button": "Button"
@@ -249,7 +257,7 @@
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "btn_Netear",
-				"Visible": "/appconsumos_qa_mb/Rules/Ingenio/set_VisibleBtnNetear.js",
+				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js",
 				"Title": "Netear",
 				"Styles": {
 					"Button": "Button"

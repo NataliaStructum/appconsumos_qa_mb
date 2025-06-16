@@ -78,10 +78,6 @@
 					}
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -89,8 +85,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"Value": "{observaciones_tec}",
@@ -115,7 +109,13 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				},
 				{
 					"Separators": {
@@ -267,12 +267,6 @@
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
 					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
-					},
 					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
@@ -287,8 +281,62 @@
 	"_Name": "Detalle_Solicitud_Reabastecimieto",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Abastecimiento"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem0",
+				"Visible": true,
+				"Title": "Revisar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"Image": "sap-icon://write-new-document",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem1",
+				"Visible": true,
+				"Title": "Autorizar",
+				"Image": "sap-icon://accounting-document-verification",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem2",
+				"Visible": true,
+				"Title": "Salida",
+				"Image": "sap-icon://arrow-right",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem3",
+				"Visible": true,
+				"Title": "Confirmar Materiales",
+				"Image": "sap-icon://sys-enter-2",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }
