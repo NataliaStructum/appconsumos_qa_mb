@@ -11,7 +11,7 @@ export default function Color_Tipo_ListaMaterial(context) {
             return "Grey"
         }
         if(tipo == "Nuevo"){
-            return "Green"
+            return "Indigo"
         }
     } catch (error) {
         console.error("Ocurrió un error al obtener el color del tipo:", error);

@@ -11,7 +11,7 @@
 				{
 					"ObjectHeader": {
 						"DetailImageIsCircular": false,
-						"HeadlineText": "Módulo de Reabastecimiento de Materiales",
+						"HeadlineText": "Módulo de Abastecimiento de Materiales",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading",
@@ -107,7 +107,7 @@
 	"_Name": "Filtro_Almacen_Solicitud_Abast",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Almacén"
 	}

@@ -10,7 +10,7 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Description": "Correo: {#Page:Main/#ClientData/info_user/correo}",
+						"Description": "Correo de Creación: {#Page:Main/#ClientData/info_user/correo}",
 						"StatusText": "{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/centro} - {#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}",
 						"DetailImageIsCircular": false,
 						"HeadlineText": "{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen} - {#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen_desc}",

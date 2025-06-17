@@ -41,10 +41,10 @@
 					},
 					"KeyAndValues": [
 						{
-							"Value": "Creado por {op_ficha} - {op_nombre}",
+							"Value": "por {op_ficha} - {op_nombre}",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue0",
-							"KeyName": "Creado el $(DT,{fecha_creacion})",
+							"KeyName": "Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})",
 							"Visible": true
 						},
 						{
@@ -55,17 +55,17 @@
 							"Visible": true
 						},
 						{
-							"Value": "Revisado por {au_nombre}",
+							"Value": "por {ap_nombre}",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue1",
-							"KeyName": "Revisado el $(DT,{fecha_revision})",
+							"KeyName": "Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})",
 							"Visible": true
 						},
 						{
-							"Value": "Autorizado por {au_nombre}",
+							"Value": "por {au_nombre}",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue2",
-							"KeyName": "Autorizado el $(DT,{fecha_autorizado})",
+							"KeyName": "Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})",
 							"Visible": true
 						}
 					],
@@ -96,6 +96,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones Técnico",
+							"PlaceHolder": "No hay comentarios registrados",
 							"Enabled": true,
 							"IsEditable": false
 						},
@@ -106,6 +107,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones Auxiliar",
+							"PlaceHolder": "No hay comentarios registrados",
 							"Enabled": true,
 							"IsEditable": false
 						}
@@ -210,7 +212,7 @@
 	"_Name": "Detalle_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar9",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Campo"
 	},
