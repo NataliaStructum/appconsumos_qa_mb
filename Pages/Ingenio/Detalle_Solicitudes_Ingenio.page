@@ -207,7 +207,7 @@
 	"_Name": "Detalle_Solicitudes_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar8",
+		"_Name": "ActionBar10",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Ingenio"
 	},
@@ -239,6 +239,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js",
 				"Image": "sap-icon://write-new-document",
 				"Enabled": true,
 				"ButtonType": "Primary",
