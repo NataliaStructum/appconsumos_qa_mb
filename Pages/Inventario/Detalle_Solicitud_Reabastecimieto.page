@@ -38,10 +38,10 @@
 					},
 					"KeyAndValues": [
 						{
-							"Value": "Creado por {operario_ficha} - {operario/nombre}",
+							"Value": "por {operario_ficha} - {operario/nombre}",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue0",
-							"KeyName": "Creado el $(DT,{fecha_creacion})",
+							"KeyName": "Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})",
 							"Visible": true
 						},
 						{
@@ -52,17 +52,17 @@
 							"Visible": true
 						},
 						{
-							"Value": "Revisado por {aprobador/nombre}",
+							"Value": "por {aprobador/nombre}",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue2",
-							"KeyName": "Revisado el $(DT,{fecha_revision})",
+							"KeyName": "Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})",
 							"Visible": true
 						},
 						{
-							"Value": "Autorizado por {autorizador/nombre}",
+							"Value": "por {autorizador/nombre}",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue3",
-							"KeyName": "Autorizado el $(DT,{fecha_autorizado})",
+							"KeyName": "Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})",
 							"Visible": true
 						}
 					],
@@ -93,6 +93,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones Técnico",
+							"PlaceHolder": "No hay comentarios registrados",
 							"Enabled": true,
 							"IsEditable": false
 						},
@@ -103,6 +104,7 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones Auxiliar",
+							"PlaceHolder": "No hay comentarios registrados",
 							"Enabled": true,
 							"IsEditable": false
 						}
@@ -281,7 +283,7 @@
 	"_Name": "Detalle_Solicitud_Reabastecimieto",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar9",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Abastecimiento"
 	},
