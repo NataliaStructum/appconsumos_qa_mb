@@ -212,7 +212,7 @@
 	"_Name": "Detalle_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar9",
+		"_Name": "ActionBar11",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Campo"
 	},
@@ -244,6 +244,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js",
 				"Image": "sap-icon://write-new-document",
 				"Enabled": true,
 				"ButtonType": "Primary",
