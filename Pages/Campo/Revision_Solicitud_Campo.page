@@ -1,0 +1,271 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Note",
+							"_Name": "FormCellNote0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Observaciones *",
+							"PlaceHolder": "Ingresa observaciones de la revisión",
+							"MinNumberOfLines": 3,
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": false
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Label",
+							"_Name": "FormCellLabel0",
+							"IsVisible": true,
+							"Separator": true,
+							"Text": "Revisión de Materiales",
+							"TextWrap": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "materiales_solicitud",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Materiales Solicitud",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona un material",
+							"PlaceHolder": "PlaceHolder",
+							"HelperText": "Selecciona un material de la solicitud",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Campo/onChange_MaterialesRevision.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Mode": "Expandable",
+								"Enabled": true,
+								"Placeholder": "Buscar Material..."
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "ComponentesSolicitud",
+									"QueryOptions": "/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js",
+									"ReadLink": "{@odata.readLink}"
+								},
+								"ObjectCell": {
+									"Description": "{material/material_desc}",
+									"PreserveIconStackSpacing": false,
+									"StatusText": "{almacen_almacen} - {almacen/almacen_desc}",
+									"Subhead": "Cant. Solicitada: {cantidad_tomada}",
+									"Title": "{material_material}",
+									"Visible": true
+								},
+								"ReturnValue": "{material_material}"
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Horizontal",
+						"HorizontalAlignment": "Center"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton0",
+							"Title": "Aprobar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://accept",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js"
+						},
+						{
+							"Styles": {
+								"Image": "Button_Eliminar",
+								"Button": "Button_Eliminar"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton1",
+							"Title": "Rechazar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://sys-cancel",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true
+						}
+					]
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": false,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Label",
+							"_Name": "FormCellLabel1",
+							"IsVisible": true,
+							"Separator": true,
+							"Text": "Cantidad Solicitada ",
+							"TextWrap": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "cantidad_revision",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Cantidad a Aprobar",
+							"PlaceHolder": "Ingresa la cantidad a aprobar para este material",
+							"KeyboardType": "Number",
+							"AlternateInput": "None",
+							"HelperText": "Haz clic en 'Agregar Material' para confirmar la revisión del material",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"Title": "Agregar Material",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://add-product",
+							"ImagePosition": "Leading",
+							"Enabled": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton4",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Image": "Button_Eliminar",
+								"Button": "Button_Eliminar"
+							},
+							"Title": "Rechazar",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Negative",
+							"Image": "sap-icon://sys-cancel",
+							"ImagePosition": "Leading",
+							"Enabled": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell2"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Revision_Solicitud_Campo",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://decline",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+					"Properties": {
+						"NavigateBackToPage": "Detalle_Solicitudes_Campo"
+					}
+				}
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Revisión Solicitud Campo"
+	}
+}
