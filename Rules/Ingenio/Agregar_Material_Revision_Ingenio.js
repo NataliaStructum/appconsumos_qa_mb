@@ -12,14 +12,24 @@ export default function Agregar_Material_Revision_Ingenio(context) {
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
 
     let data = material[0].BindingObject
+    let cantSolicitada = data.cantidad_tomada
     let stock = data.stock_disponible
 
     if (!cant || cant < 0) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Alerta",
+                "Title": "Material no Agregado",
                 "Message": `Debes ingresar una cantidad válida para continuar`
+            }
+        });
+    }
+    if (cant > cantSolicitada) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Material no Agregado",
+                "Message": `La cantidad aprobada (${cant}) es mayor a la solicitada (${cantSolicitada}).`
             }
         });
     }
@@ -30,7 +40,7 @@ export default function Agregar_Material_Revision_Ingenio(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Alerta",
+                "Title": "Material no Agregado",
                 "Message": `El material ya fue ingresado anteriormente`
             }
         });

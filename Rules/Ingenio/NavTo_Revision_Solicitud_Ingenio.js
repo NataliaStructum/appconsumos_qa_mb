@@ -5,6 +5,7 @@
 export default function NavTo_Revision_Solicitud_Ingenio(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Ingenio').getClientData();
     clientData.lista_mat_solicitud_ing = []
+    clientData.id_de_solicitud = context.binding.id;
 
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
