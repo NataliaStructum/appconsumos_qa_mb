@@ -5,7 +5,7 @@
 export default function NavTo_Agregar_Solicitud_Ingenio(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Orden_Ingenio').getClientData();
     clientData.lista_materiales = []
-
+    
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
         "Properties": {
