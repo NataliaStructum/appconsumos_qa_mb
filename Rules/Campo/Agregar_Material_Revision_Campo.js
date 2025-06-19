@@ -18,7 +18,7 @@ export default function Agregar_Material_Revision_Campo(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Alerta",
+                "Title": "Material no Agregado",
                 "Message": `Debes ingresar una cantidad válida para continuar`
             }
         });
@@ -28,8 +28,8 @@ export default function Agregar_Material_Revision_Campo(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Alerta",
-                "Message": `Debes ingresar una cantidad menor para continuar. La cantidad solicitada es de ${solicitada} und`
+                "Title": "Material no Agregado",
+                "Message": `La cantidad a aprobar (${cant}) es mayor a la  cantidad solicitada (${solicitada})`
             }
         });
     }
@@ -40,7 +40,7 @@ export default function Agregar_Material_Revision_Campo(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Alerta",
+                "Title": "Material no Agregado",
                 "Message": `El material ya fue ingresado anteriormente`
             }
         });

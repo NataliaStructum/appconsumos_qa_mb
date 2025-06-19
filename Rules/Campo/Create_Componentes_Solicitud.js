@@ -30,9 +30,9 @@ export default function Create_Componentes_Solicitud(context) {
                     "material_almacen": material.almacen.almacen,
                     "material_centro": material.almacen.centro,
                     "material_sociedad": material.almacen.sociedad,
-                    "almacen_sociedad": dataAlmacen.sociedad,
-                    "almacen_almacen": dataAlmacen.almacen,
-                    "almacen_centro": dataAlmacen.centro,
+                    "almacen_sociedad": material.almacen.sociedad,
+                    "almacen_almacen": material.almacen.almacen,
+                    "almacen_centro": material.almacen.centro,
                     "solicitud_id": idSolicitud,
                     "cantidad_tomada": material.cant
                 }
