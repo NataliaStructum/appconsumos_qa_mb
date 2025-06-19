@@ -6,6 +6,7 @@
 				"_Type": "Control.Type.FilterFeedbackBar"
 			},
 			"_Type": "Control.Type.SectionedTable",
+			"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
@@ -38,6 +39,96 @@
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Label",
+							"_Name": "FormCellLabel3",
+							"IsVisible": true,
+							"Separator": true,
+							"Text": "* Para aprobar o rechazar ítems individualmente, haz clic en \"Aprobar por ítems\". Si no, puedes gestionar toda la solicitud directamente.",
+							"TextWrap": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell3"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": true,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					"Layout": {
+						"LayoutType": "Horizontal",
+						"HorizontalAlignment": "Trailing"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton4",
+							"Alignment": "Right",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://message-information",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"OnPress": {
+								"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+								"Properties": {
+									"Message": "Para aprobar o rechazar ítems individualmente, haz clic en \"Aprobar por ítems\". Si no, puedes gestionar toda la solicitud directamente.",
+									"Title": "Información",
+									"OKCaption": "Aceptar"
+								}
+							}
+						},
+						{
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton3",
+							"Title": "Aprobar por Ítems",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Trailing",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/setVisible_ConModificaciones.js"
+						}
+					]
 				},
 				{
 					"Separators": {
@@ -103,7 +194,7 @@
 					"Layout": {
 						"NumberOfColumns": 1
 					},
-					"Visible": true,
+					"Visible": false,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -124,7 +215,7 @@
 					},
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
-					"Visible": true,
+					"Visible": false,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -162,7 +253,8 @@
 							"ImagePosition": "Leading",
 							"FullWidth": false,
 							"Visible": true,
-							"Enabled": true
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js"
 						}
 					]
 				},
@@ -211,7 +303,8 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://add-product",
 							"ImagePosition": "Leading",
-							"Enabled": true
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/Agregar_Material_Revision_Campo.js"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -228,7 +321,8 @@
 							"Semantic": "Negative",
 							"Image": "sap-icon://sys-cancel",
 							"ImagePosition": "Leading",
-							"Enabled": true
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js"
 						}
 					],
 					"Layout": {
@@ -240,6 +334,85 @@
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "SectionFormCell2"
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Materiales de la Revisión"
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js",
+					"_Name": "SectionObjectTable0",
+					"Visible": false,
+					"EmptySection": {
+						"Caption": "No hay elementos para mostrar",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
+						"Title": "{material_material}",
+						"Subhead": "Tomado de: {almacen_almacen}",
+						"Description": "{material/material_desc}",
+						"DisplayDescriptionInMobile": true,
+						"SubstatusText": "Cant aprobada: {cant} de {cantidad_tomada}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"AccessoryButtonIcon": "sap-icon://delete",
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js",
+								"Text": "{aprobado}"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://product"
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"OnAccessoryButtonPress": "/appconsumos_qa_mb/Rules/Campo/Borrar_Materiales_Revision_Campo.js",
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
 				}
 			]
 		}
@@ -267,5 +440,42 @@
 		"_Name": "ActionBar0",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Revisión Solicitud Campo"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Visible": true,
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem0",
+				"Visible": true,
+				"Title": "Confirmar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem1",
+				"Visible": true,
+				"Title": "Rechazar",
+				"Styles": {
+					"Image": "Button_Eliminar",
+					"Button": "Button_Eliminar"
+				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }
