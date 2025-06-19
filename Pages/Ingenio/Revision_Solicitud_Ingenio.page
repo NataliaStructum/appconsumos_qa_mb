@@ -40,6 +40,68 @@
 					"_Name": "SectionFormCell0"
 				},
 				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Buttons": [
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton4",
+							"Alignment": "Right",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://message-information",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"Styles": {
+								"Image": "ButtonText2",
+								"Button": "ButtonText2"
+							},
+							"OnPress": {
+								"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+								"Properties": {
+									"Message": "Para aprobar o rechazar ítems individualmente, haz clic en \"Aprobar por ítems\". Si no, puedes gestionar toda la solicitud directamente.",
+									"Title": "Información",
+									"OKCaption": "Aceptar"
+								}
+							}
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton3",
+							"Title": "Aprobar por Item",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"ImagePosition": "Trailing",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/setVisible_ConModificaciones_Ingenio.js"
+						}
+					],
+					"Layout": {
+						"LayoutType": "Horizontal",
+						"HorizontalAlignment": "Trailing"
+					}
+				},
+				{
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -100,7 +162,7 @@
 					"Layout": {
 						"NumberOfColumns": 1
 					},
-					"Visible": true,
+					"Visible": false,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -121,7 +183,7 @@
 					},
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
-					"Visible": true,
+					"Visible": false,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -264,7 +326,7 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js",
 					"_Name": "SectionObjectTable0",
-					"Visible": true,
+					"Visible": false,
 					"EmptySection": {
 						"Caption": "No hay elementos para mostrar",
 						"FooterVisible": false
@@ -360,6 +422,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/Confirmar_ComponentesLista_Revision_Ingenio.js",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
