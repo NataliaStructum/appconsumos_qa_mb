@@ -5,7 +5,7 @@
 export default function NavTo_RevisionSolicitudCampo(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
     clientData.lista_mat_solicitud_campo = []
-    
+    clientData.id_de_solicitud = context.binding.id;
     
  
     return context.executeAction({

@@ -68,6 +68,7 @@ let appconsumos_qa_mb_actions_odata_update_almacenes_action = __webpack_require_
 let appconsumos_qa_mb_actions_odata_update_componentessolicitudapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action")
 let appconsumos_qa_mb_actions_odata_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action")
+let appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Campo.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action")
@@ -152,6 +153,7 @@ let appconsumos_qa_mb_rules_campo_navto_revisionsolicitudcampo_js = __webpack_re
 let appconsumos_qa_mb_rules_campo_onchange_materialesrevision_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/onChange_MaterialesRevision.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/onChange_MaterialesRevision.js")
 let appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js")
 let appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js")
+let appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js")
 let appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js")
 let appconsumos_qa_mb_rules_campo_select_almacen_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Select_almacen.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js")
 let appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js")
@@ -165,6 +167,7 @@ let appconsumos_qa_mb_rules_color_aprobado_solicitud_js = __webpack_require__(/*
 let appconsumos_qa_mb_rules_filter_estado_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/filter_Estado.js */ "./build.definitions/appconsumos_qa_mb/Rules/filter_Estado.js")
 let appconsumos_qa_mb_rules_get_confirmaciontec_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_ConfirmacionTec.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js")
 let appconsumos_qa_mb_rules_get_info_usuario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Info_Usuario.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js")
+let appconsumos_qa_mb_rules_get_now_datetime_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Now_Datetime.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Now_Datetime.js")
 let appconsumos_qa_mb_rules_guid_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/guid.js */ "./build.definitions/appconsumos_qa_mb/Rules/guid.js")
 let appconsumos_qa_mb_rules_ingenio_agregar_material_revision_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Agregar_Material_Revision_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Agregar_Material_Revision_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_agregar_materiales_solicitud_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Agregar_Materiales_Solicitud.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Agregar_Materiales_Solicitud.js")
@@ -291,6 +294,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_odata_update_componentessolicitudapp_action : appconsumos_qa_mb_actions_odata_update_componentessolicitudapp_action,
 	appconsumos_qa_mb_actions_odata_update_empleados_action : appconsumos_qa_mb_actions_odata_update_empleados_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_action,
+	appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_campo_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_campo_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action,
@@ -375,6 +379,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_onchange_materialesrevision_js : appconsumos_qa_mb_rules_campo_onchange_materialesrevision_js,
 	appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js : appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js,
 	appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js : appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js,
+	appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js : appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js,
 	appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js : appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js,
 	appconsumos_qa_mb_rules_campo_select_almacen_js : appconsumos_qa_mb_rules_campo_select_almacen_js,
 	appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js : appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js,
@@ -388,6 +393,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_filter_estado_js : appconsumos_qa_mb_rules_filter_estado_js,
 	appconsumos_qa_mb_rules_get_confirmaciontec_js : appconsumos_qa_mb_rules_get_confirmaciontec_js,
 	appconsumos_qa_mb_rules_get_info_usuario_js : appconsumos_qa_mb_rules_get_info_usuario_js,
+	appconsumos_qa_mb_rules_get_now_datetime_js : appconsumos_qa_mb_rules_get_now_datetime_js,
 	appconsumos_qa_mb_rules_guid_js : appconsumos_qa_mb_rules_guid_js,
 	appconsumos_qa_mb_rules_ingenio_agregar_material_revision_ingenio_js : appconsumos_qa_mb_rules_ingenio_agregar_material_revision_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_agregar_materiales_solicitud_js : appconsumos_qa_mb_rules_ingenio_agregar_materiales_solicitud_js,
@@ -1215,7 +1221,7 @@ function Agregar_Material_Revision_Campo(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
       "Properties": {
-        "Title": "Alerta",
+        "Title": "Material no Agregado",
         "Message": `Debes ingresar una cantidad válida para continuar`
       }
     });
@@ -1224,8 +1230,8 @@ function Agregar_Material_Revision_Campo(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
       "Properties": {
-        "Title": "Alerta",
-        "Message": `Debes ingresar una cantidad menor para continuar. La cantidad solicitada es de ${solicitada} und`
+        "Title": "Material no Agregado",
+        "Message": `La cantidad a aprobar (${cant}) es mayor a la  cantidad solicitada (${solicitada})`
       }
     });
   }
@@ -1234,7 +1240,7 @@ function Agregar_Material_Revision_Campo(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
       "Properties": {
-        "Title": "Alerta",
+        "Title": "Material no Agregado",
         "Message": `El material ya fue ingresado anteriormente`
       }
     });
@@ -1479,18 +1485,47 @@ __webpack_require__.r(__webpack_exports__);
 function ConfirmarSolicitudCampo(context) {
   const pageProxy = context.getPageProxy();
   var materiales = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell1");
+  let id_solicitud = context.binding.id;
+  //let filtro = `$expand=almacen&$filter=solicitud_id eq ${id_solicitud}`;
+  let filtro = `$filter=solicitud_id eq ${id_solicitud}`;
+  let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
+  let listaDeAgregados = clientData.lista_mat_solicitud_campo;
   if (materiales.getVisible()) {
-    //Falta validar que si se hayan agregado todos los materiales a la solicitud
-
-    return context.executeAction({
-      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-      "Properties": {
-        "Title": "Confirmación",
-        "Message": "¿Estás seguro de que deseas confirmar la solicitud aprobada por ítems?",
-        "OKCaption": "Aceptar",
-        "OnOK": "",
-        "CancelCaption": "Cancelar"
+    //validar que si se hayan agregado todos los materiales a la solicitud
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then(async results => {
+      if (results && results.length > 0) {
+        let totalComponentes = results.length;
+        if (listaDeAgregados.length == totalComponentes) {
+          return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+              "Title": "Confirmación",
+              "Message": "¿Estás seguro de que deseas confirmar la solicitud aprobada por ítems?",
+              "OKCaption": "Aceptar",
+              "OnOK": "",
+              "CancelCaption": "Cancelar"
+            }
+          });
+        } else if (listaDeAgregados.length < totalComponentes) {
+          return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+              "Title": "Solicitud No Confirmada",
+              "Message": "No puedes confirmar la solicitud hasta que se hayan agregado todos los materiales."
+            }
+          });
+        }
+      } else {
+        return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Error",
+            "Message": "Error al tratar de traer los componentes de la solicitud"
+          }
+        });
       }
+    }).catch(error => {
+      alert(`Error ${error.message}`);
     });
   } else {
     return context.executeAction({
@@ -1549,9 +1584,9 @@ function Create_Componentes_Solicitud(context) {
           "material_almacen": material.almacen.almacen,
           "material_centro": material.almacen.centro,
           "material_sociedad": material.almacen.sociedad,
-          "almacen_sociedad": dataAlmacen.sociedad,
-          "almacen_almacen": dataAlmacen.almacen,
-          "almacen_centro": dataAlmacen.centro,
+          "almacen_sociedad": material.almacen.sociedad,
+          "almacen_almacen": material.almacen.almacen,
+          "almacen_centro": material.almacen.centro,
           "solicitud_id": idSolicitud,
           "cantidad_tomada": material.cant
         }
@@ -1766,6 +1801,7 @@ __webpack_require__.r(__webpack_exports__);
 function NavTo_RevisionSolicitudCampo(context) {
   let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
   clientData.lista_mat_solicitud_campo = [];
+  clientData.id_de_solicitud = context.binding.id;
   return context.executeAction({
     "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
     "Properties": {
@@ -1823,7 +1859,7 @@ function RechazarSolicitudCampo(context) {
       "Title": "Confirmación",
       "Message": "¿Estás seguro de que deseas rechazar la solicitud completa? Todos los materiales serán rechazados.",
       "OKCaption": "Aceptar",
-      "OnOK": "",
+      "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Campo.action",
       "CancelCaption": "Cancelar"
     }
   });
@@ -1886,6 +1922,25 @@ function Rechazar_Material_Revision_Campo(context) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js":
+/*!**********************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js ***!
+  \**********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Rechazar_Solicitud_Revision_Componentes_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Rechazar_Solicitud_Revision_Componentes_Campo(clientAPI) {}
 
 /***/ }),
 
@@ -2287,7 +2342,6 @@ function setVisible_CantAprobadaRevision(context) {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/setVisible_ConModificaciones.js":
 /*!*****************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/setVisible_ConModificaciones.js ***!
@@ -2310,8 +2364,9 @@ function setVisible_ConModificaciones(context) {
   var btn_materiales = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable0");
   var botones = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable1");
   var lista = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
-  var mensajes = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell3");
-  mensajes.setVisible(false);
+  //var mensajes = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell3")
+
+  //mensajes.setVisible(false)
   botones.setVisible(false);
   //observaciones.setVisible(true)
   materiales.setVisible(true);
@@ -2321,8 +2376,6 @@ function setVisible_ConModificaciones(context) {
 
 /***/ }),
 
-=======
->>>>>>> develop
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js":
 /*!*******************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js ***!
@@ -2386,10 +2439,6 @@ function Agregar_Material_Revision_Ingenio(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
       "Properties": {
-<<<<<<< HEAD
-        "Title": "Alerta",
-        "Message": `Debes ingresar una cantidad válida para continuar`
-=======
         "Title": "Material no Agregado",
         "Message": `Debes ingresar una cantidad válida para continuar`
       }
@@ -2401,7 +2450,6 @@ function Agregar_Material_Revision_Ingenio(context) {
       "Properties": {
         "Title": "Material no Agregado",
         "Message": `La cantidad aprobada (${cant}) es mayor a la solicitada (${cantSolicitada}).`
->>>>>>> develop
       }
     });
   }
@@ -3102,7 +3150,6 @@ __webpack_require__.r(__webpack_exports__);
  * @param {IClientAPI} context
  */
 function Rechazar_Solicitud_Revision_Ingenio(context) {
-  alert("entró");
   let id_solicitud = context.binding.id;
   let filtro = `$expand=almacen&$filter=solicitud_id eq ${id_solicitud}`;
   let materialesRechazados = [];
@@ -4920,6 +4967,30 @@ function get_Info_Usuario(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/get_Now_Datetime.js":
+/*!***********************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/get_Now_Datetime.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_Now_Datetime)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function get_Now_Datetime(context) {
+  //para esta opcion el campo debe ser un String(100)
+  //let fechaColombia = new Date().toLocaleString("es-CO", { timeZone: "America/Bogota" });
+  let fecha = new Date().toISOString();
+  return fecha;
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/guid.js":
 /*!***********************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/guid.js ***!
@@ -5593,7 +5664,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \***************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones *","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel3","IsVisible":true,"Separator":true,"Text":"* Para aprobar o rechazar ítems individualmente, haz clic en \"Aprobar por ítems\". Si no, puedes gestionar toda la solicitud directamente.","TextWrap":true}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell3"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":true,"FooterSeparator":false,"ControlSeparator":false},"Layout":{"LayoutType":"Horizontal","HorizontalAlignment":"Trailing"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable1","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton4","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://message-information","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"Styles":{"Image":"Button2","Button":"Button2"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Para aprobar o rechazar ítems individualmente, haz clic en \"Aprobar por ítems\". Si no, puedes gestionar toda la solicitud directamente.","Title":"Información","OKCaption":"Aceptar"}}},{"Styles":{"Image":"Button2","Button":"Button2"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton3","Title":"Aprobar por Ítems","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/setVisible_ConModificaciones.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":false},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Revisión de Materiales","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"materiales_solicitud","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Materiales Solicitud","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un material","PlaceHolder":"PlaceHolder","HelperText":"Selecciona un material de la solicitud","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/onChange_MaterialesRevision.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"ObjectCell":{"Description":"{material/material_desc}","PreserveIconStackSpacing":false,"StatusText":"{almacen_almacen} - {almacen/almacen_desc}","Subhead":"Cant. Solicitada: {cantidad_tomada}","Title":"{material_material}","Visible":true},"ReturnValue":"{material_material}"}}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Horizontal","HorizontalAlignment":"Center"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":false,"EmptySection":{"FooterVisible":false},"Buttons":[{"Styles":{"Image":"Button","Button":"Button"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton0","Title":"Aprobar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://accept","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js"},{"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton1","Title":"Rechazar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":false,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel1","IsVisible":true,"Separator":true,"Text":"Cantidad Solicitada ","TextWrap":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"cantidad_revision","IsVisible":true,"Separator":true,"Caption":"Cantidad a Aprobar","PlaceHolder":"Ingresa la cantidad a aprobar para este material","KeyboardType":"Number","AlternateInput":"None","HelperText":"Haz clic en 'Agregar Material' para confirmar la revisión del material","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Agregar_Material_Revision_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton4","IsVisible":true,"Separator":true,"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"Title":"Rechazar","Alignment":"Right","ButtonType":"Primary","Semantic":"Negative","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js"}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js","_Name":"SectionObjectTable0","Visible":false,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{material_material}","Subhead":"Tomado de: {almacen_almacen}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"SubstatusText":"Cant aprobada: {cant} de {cantidad_tomada}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js","Text":"{aprobado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Campo/Borrar_Materiales_Revision_Campo.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revision_Solicitud_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitudes_Campo"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Visible":true,"Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"comentarios_aux","IsVisible":true,"Separator":true,"Caption":"Observaciones *","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":true,"FooterSeparator":false,"ControlSeparator":false},"Layout":{"LayoutType":"Horizontal","HorizontalAlignment":"Trailing"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable1","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"Styles":{"Image":"ButtonText2"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton4","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://message-information","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Para aprobar o rechazar ítems individualmente, haz clic en \"Aprobar por ítems\". Si no, puedes gestionar toda la solicitud directamente.","Title":"Información","OKCaption":"Aceptar"}}},{"Styles":{"Image":"Button2","Button":"Button2"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton3","Title":"Aprobar por Ítems","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Trailing","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/setVisible_ConModificaciones.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":false},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Revisión de Materiales","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"materiales_solicitud","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Materiales Solicitud","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un material","PlaceHolder":"PlaceHolder","HelperText":"Selecciona un material de la solicitud","OnValueChange":"/appconsumos_qa_mb/Rules/Campo/onChange_MaterialesRevision.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"ObjectCell":{"Description":"{material/material_desc}","PreserveIconStackSpacing":false,"StatusText":"{almacen_almacen} - {almacen/almacen_desc}","Subhead":"Cant. Solicitada: {cantidad_tomada}","Title":"{material_material}","Visible":true},"ReturnValue":"{almacen_almacen} - {material_material} "}}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Horizontal","HorizontalAlignment":"Center"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":false,"EmptySection":{"FooterVisible":false},"Buttons":[{"Styles":{"Image":"Button","Button":"Button"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton0","Title":"Aprobar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://accept","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js"},{"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton1","Title":"Rechazar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":false,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel1","IsVisible":true,"Separator":true,"Text":"Cantidad Solicitada ","TextWrap":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"cantidad_revision","IsVisible":true,"Separator":true,"Caption":"Cantidad a Aprobar","PlaceHolder":"Ingresa la cantidad a aprobar para este material","KeyboardType":"Number","AlternateInput":"None","HelperText":"Haz clic en 'Agregar Material' para confirmar la revisión del material","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Agregar_Material_Revision_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton4","IsVisible":true,"Separator":true,"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"Title":"Rechazar","Alignment":"Right","ButtonType":"Primary","Semantic":"Negative","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js"}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js","_Name":"SectionObjectTable0","Visible":false,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{material_material}","Subhead":"Tomado de: {almacen_almacen}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"SubstatusText":"Cant aprobada: {cant} de {cantidad_tomada}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js","Text":"{aprobado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Campo/Borrar_Materiales_Revision_Campo.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revision_Solicitud_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estás seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitudes_Campo"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Visible":true,"Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -5683,11 +5754,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \*******************************************************************************************/
 /***/ ((module) => {
 
-<<<<<<< HEAD
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Revisión de Materiales","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Materiales Solicitud","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un material","PlaceHolder":"PlaceHolder","HelperText":"Selecciona un material de la solicitud  ","OnValueChange":"/appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js"},"ObjectCell":{"Description":"{mat_nuevo_desc}","PreserveIconStackSpacing":false,"Subhead":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"{almacen_almacen} - {almacen/almacen_desc}","Title":"{mat_nuevo}","Visible":true},"ReturnValue":"{mat_nuevo}"}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Horizontal","HorizontalAlignment":"Center"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton1","Title":"Aprobar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://accept","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/setVisible_CantAprobadaRevision_Ingenio.js"},{"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton2","Title":"Rechazar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel1","IsVisible":true,"Separator":true,"Text":"Cantidad Solicitada","TextWrap":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad","IsVisible":true,"Separator":true,"Caption":"Cantidad Aprobada","PlaceHolder":"Ingrese la Cantidad","KeyboardType":"Number","HelperText":"Haz click en 'Agregar Material' para confirmar la revisión del material","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Materiales","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Agregar_Material_Revision_Ingenio.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton3","IsVisible":true,"Separator":true,"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"Title":"Rechazar","Alignment":"Right","ButtonType":"Primary","Semantic":"Negative","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{mat_nuevo}","Subhead":"Tomado de: {almacen_almacen}","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"SubstatusText":"Cant aprobada: {cant} de {cantidad_tomada}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","AccessoryButtonText":"Borrar","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js","Text":"{aprobado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Ingenio/Borrar_Materiales_Revision_Ingenio.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revision_Solicitud_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitudes_Ingenio"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Solicitud Ingenio"}}
-=======
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Revisión de Materiales","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Materiales Solicitud","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un material","PlaceHolder":"PlaceHolder","HelperText":"Selecciona un material de la solicitud  ","OnValueChange":"/appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js"},"ObjectCell":{"Description":"{mat_nuevo_desc}","PreserveIconStackSpacing":false,"Subhead":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"{almacen_almacen} - {almacen/almacen_desc}","Title":"{mat_nuevo}","Visible":true},"ReturnValue":"{mat_nuevo}"}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Horizontal","HorizontalAlignment":"Center"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"Styles":{"Image":"Button","Button":"Button"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton1","Title":"Aprobar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://accept","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/setVisible_CantAprobadaRevision_Ingenio.js"},{"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton2","Title":"Rechazar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel1","IsVisible":true,"Separator":true,"Text":"Cantidad Solicitada","TextWrap":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad","IsVisible":true,"Separator":true,"Caption":"Cantidad Aprobada","PlaceHolder":"Ingrese la Cantidad","KeyboardType":"Number","HelperText":"Haz click en 'Agregar Material' para confirmar la revisión del material","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Materiales","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Agregar_Material_Revision_Ingenio.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton3","IsVisible":true,"Separator":true,"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"Title":"Rechazar","Alignment":"Right","ButtonType":"Primary","Semantic":"Negative","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{mat_nuevo}","Subhead":"Tomado de: {almacen_almacen}","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"SubstatusText":"Cant aprobada: {cant} de {cantidad_tomada}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","AccessoryButtonText":"Borrar","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js","Text":"{aprobado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Ingenio/Borrar_Materiales_Revision_Ingenio.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revision_Solicitud_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitudes_Ingenio"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Solicitud Ingenio"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar_Confirmar_Solicitud","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_confirmar","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_rechazar","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
->>>>>>> develop
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Revisión de Materiales","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Materiales","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Materiales Solicitud","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un material","PlaceHolder":"PlaceHolder","HelperText":"Selecciona un material de la solicitud  ","OnValueChange":"/appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js"},"ObjectCell":{"Description":"{mat_nuevo_desc}","PreserveIconStackSpacing":false,"Subhead":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"{almacen_almacen} - {almacen/almacen_desc}","Title":"{mat_nuevo}","Visible":true},"ReturnValue":"{mat_nuevo}"}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Horizontal","HorizontalAlignment":"Center"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":true,"EmptySection":{"FooterVisible":false},"Buttons":[{"Styles":{"Image":"Button","Button":"Button"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton1","Title":"Aprobar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://accept","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/setVisible_CantAprobadaRevision_Ingenio.js"},{"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton2","Title":"Rechazar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","FullWidth":false,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel1","IsVisible":true,"Separator":true,"Text":"Cantidad Solicitada","TextWrap":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_Cantidad","IsVisible":true,"Separator":true,"Caption":"Cantidad Aprobada","PlaceHolder":"Ingrese la Cantidad","KeyboardType":"Number","HelperText":"Haz click en 'Agregar Material' para confirmar la revisión del material","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button2","Button":"Button2"},"Title":"Agregar Materiales","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Agregar_Material_Revision_Ingenio.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton3","IsVisible":true,"Separator":true,"Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"Title":"Rechazar","Alignment":"Right","ButtonType":"Primary","Semantic":"Negative","Image":"sap-icon://sys-cancel","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{mat_nuevo}","Subhead":"Tomado de: {almacen_almacen}","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"SubstatusText":"Cant aprobada: {cant} de {cantidad_tomada}","PreserveIconStackSpacing":false,"AccessoryType":"None","AccessoryButtonIcon":"sap-icon://delete","AccessoryButtonText":"Borrar","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js","Text":"{aprobado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Ingenio/Borrar_Materiales_Revision_Ingenio.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revision_Solicitud_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Cancelar","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitudes_Ingenio"}}}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Solicitud Ingenio"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar_Confirmar_Solicitud","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_confirmar","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button","Button":"Button"},"Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_rechazar","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -6368,6 +6435,16 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"#ActionResults:Update_SolicitudesApp/error","Title":"Error","OKCaption":"Ok","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitudes_Ingenio"}}}},"OnSuccess":"/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Solicitud_Revision_Ingenio.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Detalle_Solicitudes_Ingenio/#ClientData/id_de_solicitud}}"},"Properties":{"estado":"Rechazado"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Campo.action":
+/*!*******************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Campo.action ***!
+  \*******************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Rechazar_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error actualizando la solicitud - {#ActionResults:Update_SolicitudesApp_Rechazar_Campo/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Detalle_Solicitudes_Campo/#ClientData/id_de_solicitud}}"},"Properties":{"estado":"Rechazado","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","comentarios_aux":"#Page:Revision_Solicitud_Campo/#Control:comentarios_aux/#Value"}}
 
 /***/ }),
 

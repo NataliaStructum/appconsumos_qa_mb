@@ -20,7 +20,7 @@
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Note",
-							"_Name": "FormCellNote0",
+							"_Name": "comentarios_aux",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones *",
@@ -43,34 +43,6 @@
 				{
 					"Separators": {
 						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
-					"Controls": [
-						{
-							"_Type": "Control.Type.FormCell.Label",
-							"_Name": "FormCellLabel3",
-							"IsVisible": true,
-							"Separator": true,
-							"Text": "* Para aprobar o rechazar ítems individualmente, haz clic en \"Aprobar por ítems\". Si no, puedes gestionar toda la solicitud directamente.",
-							"TextWrap": true
-						}
-					],
-					"Layout": {
-						"NumberOfColumns": 1
-					},
-					"Visible": false,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell3"
-				},
-				{
-					"Separators": {
-						"TopSectionSeparator": false,
 						"BottomSectionSeparator": false,
 						"HeaderSeparator": true,
 						"FooterSeparator": false,
@@ -88,6 +60,9 @@
 					},
 					"Buttons": [
 						{
+							"Styles": {
+								"Image": "ButtonText2"
+							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton4",
 							"Alignment": "Right",
@@ -98,10 +73,6 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
-							},
 							"OnPress": {
 								"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 								"Properties": {
@@ -187,7 +158,7 @@
 									"Title": "{material_material}",
 									"Visible": true
 								},
-								"ReturnValue": "{material_material}"
+								"ReturnValue": "{almacen_almacen} - {material_material} "
 							}
 						}
 					],
@@ -430,9 +401,18 @@
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": {
-					"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+					"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 					"Properties": {
-						"NavigateBackToPage": "Detalle_Solicitudes_Campo"
+						"Message": "¿Estás seguro que quieres salir?",
+						"Title": "Confirmación",
+						"OKCaption": "Aceptar",
+						"OnOK": {
+							"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+							"Properties": {
+								"NavigateBackToPage": "Detalle_Solicitudes_Campo"
+							}
+						},
+						"CancelCaption": "Cancelar"
 					}
 				}
 			}

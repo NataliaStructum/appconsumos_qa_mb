@@ -10,9 +10,9 @@ export default function setVisible_ConModificaciones(context) {
     var btn_materiales = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable0")
     var botones = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable1")
     var lista = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0")
-    var mensajes = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell3")
+    //var mensajes = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell3")
 
-    mensajes.setVisible(false)
+    //mensajes.setVisible(false)
     botones.setVisible(false)
     //observaciones.setVisible(true)
     materiales.setVisible(true)
