@@ -127,6 +127,10 @@
 					},
 					"Buttons": [
 						{
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton1",
 							"Title": "Aprobar",
@@ -138,13 +142,13 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"Styles": {
-								"Image": "Button",
-								"Button": "Button"
-							},
 							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/setVisible_CantAprobadaRevision_Ingenio.js"
 						},
 						{
+							"Styles": {
+								"Image": "Button_Eliminar",
+								"Button": "Button_Eliminar"
+							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton2",
 							"Title": "Rechazar",
@@ -156,10 +160,6 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"Styles": {
-								"Image": "Button_Eliminar",
-								"Button": "Button_Eliminar"
-							},
 							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"
 						}
 					]
@@ -266,6 +266,7 @@
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
+						"Caption": "No hay elementos para mostrar",
 						"FooterVisible": false
 					},
 					"ObjectCell": {
@@ -345,5 +346,40 @@
 		"_Name": "ActionBar0",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Revisión Solicitud Ingenio"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar_Confirmar_Solicitud",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_confirmar",
+				"Visible": true,
+				"Title": "Confirmar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_rechazar",
+				"Visible": true,
+				"Title": "Rechazar",
+				"Styles": {
+					"Image": "Button_Eliminar",
+					"Button": "Button_Eliminar"
+				},
+				"OnPress": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }

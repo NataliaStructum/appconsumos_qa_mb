@@ -17,7 +17,7 @@ export default function Rechazar_Material_Revision_Ingenio(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Alerta",
+                "Title": "Material no Agregado",
                 "Message": `Debes seleccionar un material para continuar`
             }
         });
@@ -29,7 +29,7 @@ export default function Rechazar_Material_Revision_Ingenio(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Alerta",
+                "Title": "Material no Agregado",
                 "Message": `El material ya fue agregado anteriormente`
             }
         });
