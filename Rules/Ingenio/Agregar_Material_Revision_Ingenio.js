@@ -29,7 +29,7 @@ export default function Agregar_Material_Revision_Ingenio(context) {
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
                 "Title": "Material no Agregado",
-                "Message": `La cantidad aprobada (${cant}) es mayor a la solicitada (${cantSolicitada}).`
+                "Message": `La cantidad a aprobar (${cant}) es mayor a la cantidad solicitada (${cantSolicitada}).`
             }
         });
     }
