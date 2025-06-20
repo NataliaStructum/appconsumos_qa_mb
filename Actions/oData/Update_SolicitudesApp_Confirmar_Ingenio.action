@@ -1,23 +1,9 @@
 {
 	"_Type": "Action.Type.ODataService.UpdateEntity",
 	"ActionResult": {
-		"_Name": "Update_SolicitudesApp"
+		"_Name": "Update_SolicitudesApp_Confirmar_Ingenio"
 	},
-	"OnFailure": {
-		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-		"Properties": {
-			"Message": "#ActionResults:Update_SolicitudesApp/error",
-			"Title": "Error",
-			"OKCaption": "Ok",
-			"OnOK": {
-				"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
-				"Properties": {
-					"NavigateBackToPage": "Detalle_Solicitudes_Ingenio"
-				}
-			}
-		}
-	},
-	"OnSuccess": "/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Solicitud_Revision_Ingenio.js",
+	"OnSuccess": "/appconsumos_qa_mb/Rules/Ingenio/Confirmar_Solicitud_Revision_Items_Ingenio.js",
 	"Target": {
 		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 		"EntitySet": "Solicitudes",
@@ -25,7 +11,7 @@
 	},
 	"Properties": {
 		"aprobador_ficha": "#Page:Main/#ClientData/info_user/ficha",
-		"estado": "Rechazado",
+		"estado": "Aprobado",
 		"fecha_revision": "/appconsumos_qa_mb/Rules/get_Now_Datetime.js",
 		"comentarios_aux": "#Page:Revision_Solicitud_Ingenio/#Control:FormCellNote_observaciones/#Value"
 	}

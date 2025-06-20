@@ -19,7 +19,7 @@
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Note",
-							"_Name": "FormCellNote0",
+							"_Name": "FormCellNote_observaciones",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones",
@@ -40,12 +40,6 @@
 					"_Name": "SectionFormCell0"
 				},
 				{
-					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable1",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -53,8 +47,22 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Layout": {
+						"LayoutType": "Horizontal",
+						"HorizontalAlignment": "Trailing"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Buttons": [
 						{
+							"Styles": {
+								"Image": "ButtonText2",
+								"Button": "ButtonText2"
+							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton4",
 							"Alignment": "Right",
@@ -65,10 +73,6 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"Styles": {
-								"Image": "ButtonText2",
-								"Button": "ButtonText2"
-							},
 							"OnPress": {
 								"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 								"Properties": {
@@ -79,6 +83,10 @@
 							}
 						},
 						{
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton3",
 							"Title": "Aprobar por Item",
@@ -89,17 +97,9 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
-							},
 							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/setVisible_ConModificaciones_Ingenio.js"
 						}
-					],
-					"Layout": {
-						"LayoutType": "Horizontal",
-						"HorizontalAlignment": "Trailing"
-					}
+					]
 				},
 				{
 					"Separators": {
@@ -398,9 +398,17 @@
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": {
-					"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+					"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 					"Properties": {
-						"NavigateBackToPage": "Detalle_Solicitudes_Ingenio"
+						"Title": "¿Seguro que desea cancelar la revisión? Se perderán todos los datos registrados",
+						"OKCaption": "Sí",
+						"OnOK": {
+							"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+							"Properties": {
+								"NavigateBackToPage": "Detalle_Solicitudes_Ingenio"
+							}
+						},
+						"CancelCaption": "No"
 					}
 				}
 			}
@@ -422,7 +430,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
-				"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/Confirmar_ComponentesLista_Revision_Ingenio.js",
+				"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/Confirmar_Revision_Ingenio.js",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
