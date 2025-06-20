@@ -2,7 +2,7 @@
  * Describe this function...
  * @param {IClientAPI}  context
  */
-export default function OnlySync(context) {
+export default function SyncRevisarCampo(context) {
 
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/ClosePage.action",
