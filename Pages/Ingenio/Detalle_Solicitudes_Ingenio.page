@@ -206,7 +206,17 @@
 	"_Type": "Page",
 	"_Name": "Detalle_Solicitudes_Ingenio",
 	"ActionBar": {
-		"Items": [],
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Sincronizar",
+				"Icon": "sap-icon://synchronize",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
 		"_Name": "ActionBar10",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Ingenio"
