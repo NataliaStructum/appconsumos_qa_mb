@@ -93,7 +93,8 @@
 							"Alignment": "Right",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
-							"ImagePosition": "Trailing",
+							"Image": "sap-icon://survey",
+							"ImagePosition": "Leading",
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
@@ -155,7 +156,7 @@
 									"PreserveIconStackSpacing": false,
 									"StatusText": "{almacen_almacen} - {almacen/almacen_desc}",
 									"Subhead": "Cant. Solicitada: {cantidad_tomada}",
-									"Title": "{material_material}",
+									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 									"Visible": true
 								},
 								"ReturnValue": "{almacen_almacen} - {material_material} "
@@ -343,7 +344,7 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{material_material}",
+						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Subhead": "Tomado de: {almacen_almacen}",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,

@@ -1,9 +1,9 @@
 {
-    "Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-    "_Type": "Action.Type.OfflineOData.Upload",
-    "ActionResult": {
-        "_Name": "sync"
-    },
-    "OnSuccess": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/DownloadStartedMessage.action",
-    "OnFailure": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action"
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action",
+	"OnSuccess": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/DownloadStartedMessage.action",
+	"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service"
 }

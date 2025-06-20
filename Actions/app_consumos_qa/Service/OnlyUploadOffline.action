@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "onlysync"
+	},
+	"OnFailure": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncFailureMessage.action",
+	"OnSuccess": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlyDownloadStartedMessage.action",
+	"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service"
+}

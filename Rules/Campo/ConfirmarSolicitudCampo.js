@@ -27,7 +27,7 @@ export default function ConfirmarSolicitudCampo(context) {
                             "Title": "Confirmación",
                             "Message": "¿Estás seguro de que deseas confirmar la solicitud aprobada por ítems?",
                             "OKCaption": "Aceptar",
-                            "OnOK": "",
+                            "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action",
                             "CancelCaption": "Cancelar"
                         }
                     })
@@ -66,7 +66,7 @@ export default function ConfirmarSolicitudCampo(context) {
                 "Title": "Confirmación",
                 "Message": "¿Estás seguro de que deseas confirmar la solicitud con las cantidades originales solicitadas?",
                 "OKCaption": "Aceptar",
-                "OnOK": "",
+                "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action",
                 "CancelCaption": "Cancelar"
             }
         })

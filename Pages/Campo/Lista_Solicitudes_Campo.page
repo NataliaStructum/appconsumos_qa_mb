@@ -45,7 +45,7 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{orden}",
+						"Title": "/appconsumos_qa_mb/Rules/formatOrdenId.js",
 						"Subhead": "$(DT,{fecha_creacion})",
 						"Footnote": "{or_desc}",
 						"Description": "{equipo_solicitud} - {eq_desc_solicitud}",
@@ -105,7 +105,7 @@
 	"_Name": "Lista_Solicitudes_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Solicitudes Campo"
 	}
