@@ -19,7 +19,6 @@
 	},
 	"Properties": {
 		"estado": "Rechazado",
-		"fecha_revision": "/appconsumos_qa_mb/Rules/get_Now_Datetime.js",
 		"comentarios_aux": "#Page:Revision_Solicitud_Campo/#Control:comentarios_aux/#Value"
 	}
 }
