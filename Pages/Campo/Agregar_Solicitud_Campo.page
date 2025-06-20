@@ -11,7 +11,7 @@
 				{
 					"ObjectHeader": {
 						"Subhead": "No. Res: {reserva}",
-						"Footnote": "No. Orden: {orden}",
+						"Footnote": "/appconsumos_qa_mb/Rules/formatOrdenId.js",
 						"Description": "{orden_desc}",
 						"SubstatusText": "Centro: {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/centro}",
 						"DetailImageIsCircular": false,
@@ -126,7 +126,7 @@
 									"Footnote": "Disponible: {stock_disponible} / Reservado: {stock_disponible}",
 									"PreserveIconStackSpacing": false,
 									"Subhead": "{almacen/almacen} - {almacen/almacen_desc}",
-									"Title": "{almacen/almacen_desc} - {material}",
+									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 									"Visible": true
 								},
 								"ReturnValue": "{almacen/almacen_desc} - {material}"
@@ -189,6 +189,12 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": "/appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js",
 					"_Name": "SectionObjectTable0",
@@ -205,7 +211,7 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{material}",
+						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Subhead": "Tomado de: {almacen/almacen_desc} ({almacen/almacen})",
 						"Description": "{material_desc}",
 						"DisplayDescriptionInMobile": true,
@@ -240,12 +246,6 @@
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {

@@ -24,7 +24,7 @@ export default function Agregar_Materiales_Solicitud(context) {
     let stock = data.stock_disponible
 
     //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*if(stock == 0){
+    if(stock == 0){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
@@ -32,7 +32,7 @@ export default function Agregar_Materiales_Solicitud(context) {
                 "Message": `No hay stock disponible para este material`
             }
         });
-    }*/
+    }
 
     if (!cant || cant < 0) {
         return context.executeAction({
@@ -45,7 +45,7 @@ export default function Agregar_Materiales_Solicitud(context) {
     }
 
     //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*if(cant > stock){
+    if(cant > stock){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
@@ -53,7 +53,7 @@ export default function Agregar_Materiales_Solicitud(context) {
                 "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und`
             }
         });
-    }*/
+    }
     
     const duplicado = clientData.lista_materiales.filter(m => m.material === data.material && m.almacen.almacen === data.almacen.almacen).length > 0
     

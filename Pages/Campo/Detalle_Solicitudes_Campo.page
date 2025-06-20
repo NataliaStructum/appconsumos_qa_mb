@@ -22,7 +22,7 @@
 							}
 						],
 						"BodyText": "{or_desc}",
-						"HeadlineText": "/appconsumos_qa_mb/Rules/formatOrdenIdOrden.js",
+						"HeadlineText": "/appconsumos_qa_mb/Rules/formatOrdenId.js",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
@@ -220,7 +220,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/appconsumos_qa_mb/Rules/app_consumos_qa/OnlySync.js"
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"
 			}
 		],
 		"_Name": "ActionBar11",
