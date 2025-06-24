@@ -283,7 +283,7 @@
 	"_Name": "Detalle_Solicitud_Reabastecimieto",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar10",
+		"_Name": "ActionBar11",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Abastecimiento"
 	},
@@ -300,14 +300,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
-				"OnPress": {
-					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
-					"Properties": {
-						"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Revision_Solicitud_Reabastecimiento.page",
-						"ModalPage": true,
-						"ModalPageFullscreen": true
-					}
-				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/NavTo_RevisionSolicitudAbast.js",
 				"Image": "sap-icon://write-new-document",
 				"Enabled": true,
 				"ButtonType": "Primary",

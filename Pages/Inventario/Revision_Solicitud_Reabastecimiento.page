@@ -51,8 +51,16 @@
 					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
+							"_Type": "Control.Type.FormCell.Label",
+							"_Name": "FormCellLabel0",
+							"IsVisible": true,
+							"Separator": true,
+							"Text": "Revisión de Materiales",
+							"TextWrap": true
+						},
+						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "FormCellListPicker0",
+							"_Name": "materiales_revision_abast",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -62,8 +70,10 @@
 								"ShowLoadingIndicator": false,
 								"PageSize": 50
 							},
-							"PickerPrompt": "Please select one single item",
+							"PickerPrompt": "Selecciona un material",
 							"PlaceHolder": "PlaceHolder",
+							"HelperText": "Selecciona un material de la solicitud",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/Select_Material_Revisar_Abast.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
@@ -81,6 +91,7 @@
 									"ReadLink": "{@odata.readLink}"
 								},
 								"ObjectCell": {
+									"Description": "/appconsumos_qa_mb/Rules/Inventario/get_desc_Material_Revisar.js",
 									"PreserveIconStackSpacing": false,
 									"Subhead": "Cant. Solicitada: {cantidad_tomada}",
 									"Tags": [
@@ -92,7 +103,32 @@
 									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 									"Visible": true
 								},
-								"ReturnValue": "{material_material}"
+								"ReturnValue": "/appconsumos_qa_mb/Rules/formatMaterialId.js"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "btn_almacenes",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"Title": "Ir a almacenes",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://inventory",
+							"ImagePosition": "Leading",
+							"Enabled": false,
+							"OnPress": {
+								"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Revision_Sol_Almacenes_Abast.page",
+									"ModalPage": true,
+									"ModalPageFullscreen": false
+								}
 							}
 						}
 					],
@@ -120,9 +156,18 @@
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": {
-					"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+					"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 					"Properties": {
-						"NavigateBackToPage": "Detalle_Solicitud_Reabastecimieto"
+						"Message": "¿Estás seguro que quieres salir?",
+						"Title": "Confirmación",
+						"OKCaption": "Aceptar",
+						"OnOK": {
+							"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+							"Properties": {
+								"NavigateBackToPage": "Detalle_Solicitud_Reabastecimieto"
+							}
+						},
+						"CancelCaption": "Cancelar"
 					}
 				}
 			}
