@@ -125,9 +125,7 @@
 							"OnPress": {
 								"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
 								"Properties": {
-									"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Revision_Sol_Almacenes_Abast.page",
-									"ModalPage": true,
-									"ModalPageFullscreen": false
+									"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Revision_Sol_Almacenes_Abast.page"
 								}
 							}
 						}
