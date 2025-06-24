@@ -11,7 +11,7 @@
 				{
 					"ObjectHeader": {
 						"Subhead": "No. Res: {reserva}",
-						"Footnote": "No. Orden: {orden}",
+						"Footnote": "/appconsumos_qa_mb/Rules/formatOrdenId.js",
 						"Description": "{orden_desc}",
 						"SubstatusText": "Centro: {#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#Value/#First/BindingObject/centro}",
 						"DetailImageIsCircular": false,
