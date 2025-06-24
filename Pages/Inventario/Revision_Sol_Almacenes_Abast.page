@@ -3,6 +3,196 @@
 		{
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "Cant. Solicitada: {cantidad_tomada}",
+						"Description": "/appconsumos_qa_mb/Rules/Inventario/get_desc_Material_Revisar.js",
+						"DetailImageIsCircular": false,
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Inventario/Color_Tipo_Material_Revisar.js",
+								"Text": "/appconsumos_qa_mb/Rules/Campo/get_tag_Material_Revisar.js"
+							}
+						],
+						"HeadlineText": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading",
+						"Target": "/appconsumos_qa_mb/Rules/Inventario/Target_Revisar_Almacenes_Abast.js"
+					},
+					"Visible": true
+				},
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "almacen",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Inventario",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"LoadingIndicatorText": "Cargando datos",
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona un material",
+							"PlaceHolder": "PlaceHolder",
+							"HelperText": "Debes seleccionar el almacén desde el cual se tomará el material.",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/onChange_Materiales_Revision_Abast.js",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
+									"EntitySet": "ZBIW_MARDTSet",
+									"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/get_Matnr_QueryRevisionAlmacenes.js",
+									"ReadLink": "{@odata.readLink}"
+								},
+								"ObjectCell": {
+									"Description": "{Txtmd}",
+									"Footnote": "Disponible: {Labst} / Reservado: {Klabs}",
+									"PreserveIconStackSpacing": false,
+									"Subhead": "{Matnr}",
+									"Title": "{Lgort}",
+									"Visible": true
+								},
+								"ReturnValue": "{Lgort}"
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				},
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": false,
+						"FooterSeparator": true,
+						"ControlSeparator": false
+					},
+					"Buttons": [
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton1",
+							"Title": "Aprobar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://accept",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/setVisible_CantAprobadaRevision_Abast.js"
+						},
+						{
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton0",
+							"Title": "Rechazar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://sys-cancel",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"Styles": {
+								"Image": "Button_Eliminar",
+								"Button": "Button_Eliminar"
+							},
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Rechazar_Material_Revision_Abast.js"
+						}
+					],
+					"Layout": {
+						"LayoutType": "Horizontal",
+						"HorizontalAlignment": "Center"
+					}
+				},
+				{
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_Cantidad",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Cantidad Aprobada",
+							"PlaceHolder": "Ingrese la Cantidad",
+							"KeyboardType": "Number",
+							"AlternateInput": "None",
+							"HelperText": "Haz click en 'Aprobar' para confirmar la revisión del material",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"Title": "Agregar Material",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://add-product",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Aprobar_Material_Revision_Abast.js"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					}
+				}
+			],
 			"FilterFeedbackBar": {
 				"ShowAllFilters": false,
 				"_Type": "Control.Type.FilterFeedbackBar"
