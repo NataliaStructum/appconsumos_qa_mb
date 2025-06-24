@@ -17,7 +17,7 @@
 						"DetailImage": "sap-icon://inspection",
 						"DetailImageIsCircular": false,
 						"BodyText": "/appconsumos_qa_mb/Rules/Ingenio/get_Date_ref.js",
-						"HeadlineText": "{orden}",
+						"HeadlineText": "/appconsumos_qa_mb/Rules/formatOrdenId.js",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
@@ -97,7 +97,7 @@
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "Pos: {posicion}",
-						"Subhead": "Material: {material}",
+						"Subhead": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Footnote": "{material_desc}",
 						"Description": "Cantidad tomada: {cant_tomada} de {cant_solicitada}",
 						"DisplayDescriptionInMobile": true,
@@ -140,7 +140,7 @@
 	"_Name": "Detalle_Orden_Ingenio",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar8",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Orden"
 	},

@@ -169,7 +169,7 @@
 									"Description": "{material_desc}",
 									"Footnote": "Disponible: {stock_disponible} / Reservado: {stock_disponible}",
 									"PreserveIconStackSpacing": false,
-									"Title": "{material}",
+									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 									"Visible": true
 								},
 								"ReturnValue": "{material}"
@@ -404,7 +404,7 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{material}",
+						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Description": "{material_desc}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cant. Solicitada: {cant}",

@@ -108,7 +108,18 @@
 	"_Type": "Page",
 	"_Name": "Lista_Solicitudes_Ingenio",
 	"ActionBar": {
-		"Items": [],
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://synchronize",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncStartedMessage.action"
+			}
+		],
 		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Solicitudes Ingenio"
