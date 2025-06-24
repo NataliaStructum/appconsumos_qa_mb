@@ -160,7 +160,7 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{material_material}",
+						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Footnote": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
@@ -235,7 +235,7 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{mat_nuevo}",
+						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Footnote": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js",
 						"Description": "{mat_nuevo_desc}",
 						"DisplayDescriptionInMobile": true,
