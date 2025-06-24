@@ -38,9 +38,9 @@ export default function Create_Solicitud_Abastecimiento(context) {
                 material_almacen: dataAlmacen.almacen,
                 material_centro: dataAlmacen.centro,
                 material_sociedad: dataAlmacen.sociedad,
-                almacen_sociedad: dataAlmacen.sociedad,
-                almacen_almacen: dataAlmacen.almacen,
-                almacen_centro: dataAlmacen.centro
+                //almacen_sociedad: dataAlmacen.sociedad,
+                //almacen_almacen: dataAlmacen.almacen,
+                //almacen_centro: dataAlmacen.centro
             });
         }
     
