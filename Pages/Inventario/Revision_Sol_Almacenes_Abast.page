@@ -12,19 +12,8 @@
 	"_Type": "Page",
 	"_Name": "Revision_Sol_Almacenes_Abast",
 	"ActionBar": {
-		"Items": [
-			{
-				"_Type": "Control.Type.ActionBarItem",
-				"_Name": "ActionBarItem0",
-				"Caption": "Item",
-				"Icon": "sap-icon://decline",
-				"Position": "Right",
-				"IsIconCircular": false,
-				"Visible": true,
-				"OnPress": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"
-			}
-		],
-		"_Name": "ActionBar0",
+		"Items": [],
+		"_Name": "ActionBar1",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Seleccionar Almacen de Material"
 	}
