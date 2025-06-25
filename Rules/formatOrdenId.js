@@ -14,7 +14,7 @@ export default function formatOrdenId(context) {
         return `Orden: ${limpio}`;
     }
 
-    if (titulo == "Detalle_Orden_Campo" || titulo == "Lista_Ordenes_Campo" || titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Orden_Ingenio") {
+    if (titulo == "Detalle_Orden_Campo" || titulo == "Lista_Ordenes_Campo" || titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Orden_Ingenio" || titulo == "Lista_Ordenes_Ingenio" || titulo == "Lista_Solicitudes_Ingenio") {
         let valor = context.binding.orden;
         let limpio = valor.replace(/^0+/, '');
 

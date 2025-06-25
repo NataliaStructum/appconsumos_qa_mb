@@ -282,19 +282,8 @@
 	"_Type": "Page",
 	"_Name": "Detalle_Solicitud_Reabastecimieto",
 	"ActionBar": {
-		"Items": [
-			{
-				"_Type": "Control.Type.ActionBarItem",
-				"_Name": "ActionBarItem0",
-				"Caption": "Item",
-				"Icon": "sap-icon://synchronize",
-				"Position": "Right",
-				"IsIconCircular": false,
-				"Visible": true,
-				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/SyncRevisarAbast.js"
-			}
-		],
-		"_Name": "ActionBar11",
+		"Items": [],
+		"_Name": "ActionBar12",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Abastecimiento"
 	},

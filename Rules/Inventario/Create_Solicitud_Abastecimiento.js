@@ -28,7 +28,7 @@ export default function Create_Solicitud_Abastecimiento(context) {
             solicitud_id: idSolicitud,
             cantidad_tomada: material.cant
         };
-    
+
         if (material.tipo === "Nuevo") {
             props.mat_nuevo = material.material;
             props.mat_nuevo_desc = material.material_desc;
@@ -43,7 +43,7 @@ export default function Create_Solicitud_Abastecimiento(context) {
                 //almacen_centro: dataAlmacen.centro
             });
         }
-    
+
         return context.executeAction({
             Name: "/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action",
             Properties: {
@@ -55,7 +55,7 @@ export default function Create_Solicitud_Abastecimiento(context) {
             errores.push(`${material.material} (${material.material_desc})`);
         });
     });
-   
+
     // Procesar los resultados
     return Promise.allSettled(promises).then(() => {
         let mensaje = '';
@@ -78,7 +78,12 @@ export default function Create_Solicitud_Abastecimiento(context) {
             // Finalmente cerrar el modal
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
-                "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page"
+                "Properties": {
+                    "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page",
+                }
+            }).then(() => {
+                // Finalmente cerrar el modal
+                return context.executeAction("/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncStartedMessage.action");
             });
         });
     });

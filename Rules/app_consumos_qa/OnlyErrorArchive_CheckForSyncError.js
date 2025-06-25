@@ -1,4 +1,5 @@
 import get_SolicitudesOrdenesAbiertas from '../Campo/get_SolicitudesOrdenesAbiertas';
+import get_SolicitudesOrdenesAbiertasIngenio from '../Ingenio/get_SolicitudesOrdenesAbiertasIngenio';
 
 /**
  * Describe this function...
@@ -20,7 +21,12 @@ export default function OnlyCheckForSyncError(context) {
             }      
             
             if(caption == "Lista_Solicitudes_Ingenio"){
+                return get_SolicitudesOrdenesAbiertasIngenio(context)
                 
+            }
+
+            if(caption == "Lista_Solicitudes_Reabastecimiento"){
+                //No es necesario redibujar la lista
             }
 
         }
