@@ -200,6 +200,7 @@ let appconsumos_qa_mb_rules_ingenio_filter_materiales_almacenes_ingenio_js = __w
 let appconsumos_qa_mb_rules_ingenio_get_date_creacion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_Date_creacion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_Date_creacion.js")
 let appconsumos_qa_mb_rules_ingenio_get_date_ref_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_Date_ref.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_Date_ref.js")
 let appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js")
+let appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js")
 let appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_CrearSolicitudes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_CrearSolicitudes.js")
 let appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Agregar_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Agregar_Solicitud_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_navto_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js")
@@ -255,7 +256,6 @@ let appconsumos_qa_mb_rules_inventario_select_material_revisar_abast_js = __webp
 let appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js")
 let appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialnuevo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialNuevo.js")
 let appconsumos_qa_mb_rules_inventario_setvisible_cantaprobadarevision_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/setVisible_CantAprobadaRevision_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/setVisible_CantAprobadaRevision_Abast.js")
-let appconsumos_qa_mb_rules_inventario_syncrevisarabast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/SyncRevisarAbast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/SyncRevisarAbast.js")
 let appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Target_Lista_Materiales_Agregados.js")
 let appconsumos_qa_mb_rules_inventario_target_materiales_revision_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Target_Materiales_Revision_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Target_Materiales_Revision_Abast.js")
 let appconsumos_qa_mb_rules_inventario_target_revisar_almacenes_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Target_Revisar_Almacenes_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Target_Revisar_Almacenes_Abast.js")
@@ -467,6 +467,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_get_date_creacion_js : appconsumos_qa_mb_rules_ingenio_get_date_creacion_js,
 	appconsumos_qa_mb_rules_ingenio_get_date_ref_js : appconsumos_qa_mb_rules_ingenio_get_date_ref_js,
 	appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js : appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js,
+	appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js : appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js,
 	appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js : appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js,
 	appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_navto_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_ingenio_js,
@@ -522,7 +523,6 @@ module.exports = {
 	appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js : appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js,
 	appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialnuevo_js : appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialnuevo_js,
 	appconsumos_qa_mb_rules_inventario_setvisible_cantaprobadarevision_abast_js : appconsumos_qa_mb_rules_inventario_setvisible_cantaprobadarevision_abast_js,
-	appconsumos_qa_mb_rules_inventario_syncrevisarabast_js : appconsumos_qa_mb_rules_inventario_syncrevisarabast_js,
 	appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js : appconsumos_qa_mb_rules_inventario_target_lista_materiales_agregados_js,
 	appconsumos_qa_mb_rules_inventario_target_materiales_revision_abast_js : appconsumos_qa_mb_rules_inventario_target_materiales_revision_abast_js,
 	appconsumos_qa_mb_rules_inventario_target_revisar_almacenes_abast_js : appconsumos_qa_mb_rules_inventario_target_revisar_almacenes_abast_js,
@@ -3621,7 +3621,7 @@ function NavTo_List_Sol_Ingenio(context) {
   clientData.centro = data.centro;
   clientData.almacen = data.almacen;
   clientData.sociedad = data.sociedad;
-  clientData.lista_sol_campo = [];
+  clientData.lista_sol_ingenio = [];
   let filtro = `$filter=alm_sociedad eq '${data.sociedad}' and alm_almacen eq '${data.almacen}' and alm_centro eq '${data.centro}' and tipo eq 'INGENIO' &$orderby=fecha_creacion desc`;
   let isTecnico = clientDataUser.info_user.rol === 'Técnico';
   if (isTecnico) {
@@ -3631,7 +3631,7 @@ function NavTo_List_Sol_Ingenio(context) {
   }
 
   //+"&$orderby=fecha_creacion desc"
-  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'VerSolicitudesAbiertas', [], `$filter=alm_sociedad eq '${data.sociedad}' and alm_almacen eq '${data.almacen}' and alm_centro eq '${data.centro}' and tipo eq 'INGENIO' &$orderby=fecha_creacion desc`).then(async results => {
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'VerSolicitudesAbiertas', [], filtro).then(async results => {
     if (results && results.length > 0) {
       clientData.lista_sol_ingenio = results;
     } else {
@@ -4207,6 +4207,52 @@ function get_List_Ingenio_Equipo(context) {
       clientData.lista_ingenio = [];
       list_component.redraw();
     }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js":
+/*!****************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js ***!
+  \****************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_SolicitudesOrdenesAbiertasIngenio)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function get_SolicitudesOrdenesAbiertasIngenio(context) {
+  let proxy = context.getPageProxy();
+  //alert(proxy.getCaption())
+
+  let data = context.evaluateTargetPath('#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#Value')[0].BindingObject;
+  let clientDataUser = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
+  clientData.lista_sol_ingenio = [];
+  let filtro = `$filter=alm_sociedad eq '${data.sociedad}' and alm_almacen eq '${data.almacen}' and alm_centro eq '${data.centro}' and tipo eq 'INGENIO' &$orderby=fecha_creacion desc`;
+  let isTecnico = clientDataUser.info_user.rol === 'Técnico';
+  if (isTecnico) {
+    let correo = clientDataUser.info_user.correo;
+    //filtro += ` and correo_creacion eq ${correo}`
+    filtro = `$filter=alm_sociedad eq '${data.sociedad}' and alm_almacen eq '${data.almacen}' and alm_centro eq '${data.centro}' and tipo eq 'INGENIO' and correo_creacion eq '${correo}' &$orderby=fecha_creacion desc`;
+  }
+
+  //+"&$orderby=fecha_creacion desc"
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'VerSolicitudesAbiertas', [], filtro).then(async results => {
+    if (results && results.length > 0) {
+      clientData.lista_sol_ingenio = results;
+    } else {
+      clientData.lista_sol_ingenio = [];
+    }
+    proxy.redraw();
+  }).catch(error => {
+    alert(`Error ${error.message}`);
   });
 }
 
@@ -4849,8 +4895,6 @@ function Confirmar_Revision_Abast(context) {
           }
         });
       }
-
-      // Si llega aquí, significa que hay materiales agregados pero sin estado claro
       return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
         "Properties": {
@@ -5087,7 +5131,12 @@ function Create_Solicitud_Abastecimiento(context) {
       // Finalmente cerrar el modal
       return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
-        "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page"
+        "Properties": {
+          "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page"
+        }
+      }).then(() => {
+        // Finalmente cerrar el modal
+        return context.executeAction("/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncStartedMessage.action");
       });
     });
   });
@@ -5736,34 +5785,6 @@ function Select_Material_Revisar_Abast(context) {
   } else {
     btn_almacenes.setEnabled(false);
   }
-}
-
-/***/ }),
-
-/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/SyncRevisarAbast.js":
-/*!**********************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/SyncRevisarAbast.js ***!
-  \**********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ SyncRevisarAbast)
-/* harmony export */ });
-/**
- * Describe this function...
- * @param {IClientAPI} context
- */
-function SyncRevisarAbast(context) {
-  return context.executeAction({
-    "Name": "/appconsumos_qa_mb/Actions/ClosePage.action",
-    "Properties": {
-      "NavigateBackToPage": "Lista_Solicitudes_Reabastecimiento"
-    }
-  }).then(() => {
-    return context.executeAction("/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncStartedMessage.action");
-  });
 }
 
 /***/ }),
@@ -6556,6 +6577,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ OnlyCheckForSyncError)
 /* harmony export */ });
 /* harmony import */ var _Campo_get_SolicitudesOrdenesAbiertas__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Campo/get_SolicitudesOrdenesAbiertas */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_SolicitudesOrdenesAbiertas.js");
+/* harmony import */ var _Ingenio_get_SolicitudesOrdenesAbiertasIngenio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Ingenio/get_SolicitudesOrdenesAbiertasIngenio */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js");
+
 
 
 /**
@@ -6576,7 +6599,12 @@ function OnlyCheckForSyncError(context) {
       if (caption == "Lista_Solicitudes_Campo") {
         return (0,_Campo_get_SolicitudesOrdenesAbiertas__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
       }
-      if (caption == "Lista_Solicitudes_Ingenio") {}
+      if (caption == "Lista_Solicitudes_Ingenio") {
+        return (0,_Ingenio_get_SolicitudesOrdenesAbiertasIngenio__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
+      }
+      if (caption == "Lista_Solicitudes_Reabastecimiento") {
+        //No es necesario redibujar la lista
+      }
     }
   });
 }
@@ -6652,7 +6680,7 @@ function formatOrdenId(context) {
     let limpio = valor.replace(/^0+/, '');
     return `Orden: ${limpio}`;
   }
-  if (titulo == "Detalle_Orden_Campo" || titulo == "Lista_Ordenes_Campo" || titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Orden_Ingenio") {
+  if (titulo == "Detalle_Orden_Campo" || titulo == "Lista_Ordenes_Campo" || titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Orden_Ingenio" || titulo == "Lista_Ordenes_Ingenio" || titulo == "Lista_Solicitudes_Ingenio") {
     let valor = context.binding.orden;
     let limpio = valor.replace(/^0+/, '');
     return limpio;
@@ -7487,7 +7515,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Equipos_Ord","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Equipos","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona equipos","HelperText":"Debes seleccionar al menos un equipo para mostrar las órdenes asociadas","OnValueChange":"/appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Equipos","QueryOptions":"$filter=centro eq '{{#Page:Filtro_Ingenio/#ClientData/centro_ingenio}}' and sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}'"},"ObjectCell":{"Description":"{equipo_desc}","PreserveIconStackSpacing":false,"StatusText":"{centro}","Subhead":"{tipo}","SubstatusText":"{sociedad}","Title":"{equipo}","Visible":true},"ReturnValue":"{equipo}"}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell_Equipos"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Órdenes Abiertas"},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Ingenio.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay ordenes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{orden}","Subhead":"{orden_desc}","Footnote":"{equipo}","Description":"{equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://document-text"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Ingenio/Detalle_Orden_Ingenio.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Ordenes_Ingenio","ActionBar":{"Items":[],"_Name":"ActionBar5","_Type":"Control.Type.ActionBar","Caption":"Órdenes Ingenio"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Equipos_Ord","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Equipos","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona equipos","HelperText":"Debes seleccionar al menos un equipo para mostrar las órdenes asociadas","OnValueChange":"/appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Equipos","QueryOptions":"$filter=centro eq '{{#Page:Filtro_Ingenio/#ClientData/centro_ingenio}}' and sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}'"},"ObjectCell":{"Description":"{equipo_desc}","PreserveIconStackSpacing":false,"StatusText":"{centro}","Subhead":"{tipo}","SubstatusText":"{sociedad}","Title":"{equipo}","Visible":true},"ReturnValue":"{equipo}"}}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell_Equipos"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Órdenes Abiertas"},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Ingenio.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay ordenes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Subhead":"{orden_desc}","Footnote":"{equipo}","Description":"{equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://document-text"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Ingenio/Detalle_Orden_Ingenio.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar...","BarcodeScanner":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Ordenes_Ingenio","ActionBar":{"Items":[],"_Name":"ActionBar6","_Type":"Control.Type.ActionBar","Caption":"Órdenes Ingenio"}}
 
 /***/ }),
 
@@ -7497,7 +7525,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \******************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes Órdenes Abiertas"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{orden}","Subhead":"$(DT,{fecha_creacion})","Footnote":"{or_desc}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","SubstatusText":"{alm_almacen} - {alm_sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://form"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Ingenio/Detalle_Solicitudes_Ingenio.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar solicitud..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"LoadingIndicator":{"Enabled":true},"Filters":"/appconsumos_qa_mb/Rules/filter_Estado.js"}],"_Type":"Page","_Name":"Lista_Solicitudes_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncStartedMessage.action"}],"_Name":"ActionBar5","_Type":"Control.Type.ActionBar","Caption":"Solicitudes Ingenio"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes Órdenes Abiertas"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Subhead":"$(DT,{fecha_creacion})","Footnote":"{or_desc}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","SubstatusText":"{alm_almacen} - {alm_sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://form"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Ingenio/Detalle_Solicitudes_Ingenio.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar solicitud..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}],"LoadingIndicator":{"Enabled":true},"Filters":"/appconsumos_qa_mb/Rules/filter_Estado.js"}],"_Type":"Page","_Name":"Lista_Solicitudes_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncStartedMessage.action"}],"_Name":"ActionBar5","_Type":"Control.Type.ActionBar","Caption":"Solicitudes Ingenio"}}
 
 /***/ }),
 
@@ -7527,7 +7555,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"StatusText":"Centro: {almacen_centro}","SubstatusText":"{almacen_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"HeadlineText":"Almacén: {almacen_almacen} - {almacen/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {operario_ficha} - {operario/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {aprobador/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {autorizador/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Registrado"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast_Nuevo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable1","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Indigo","Text":"Nuevo"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitud_Reabastecimieto","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/SyncRevisarAbast.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Abastecimiento"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_RevisionSolicitudAbast.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem2","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Salida","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://arrow-right","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem3","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnConfirmar.js","Title":"Confirmar Materiales","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://sys-enter-2","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"StatusText":"Centro: {almacen_centro}","SubstatusText":"{almacen_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"HeadlineText":"Almacén: {almacen_almacen} - {almacen/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {operario_ficha} - {operario/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {aprobador/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {autorizador/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Registrado"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast_Nuevo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable1","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Indigo","Text":"Nuevo"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitud_Reabastecimieto","ActionBar":{"Items":[],"_Name":"ActionBar12","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Abastecimiento"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_RevisionSolicitudAbast.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem2","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Salida","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://arrow-right","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem3","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnConfirmar.js","Title":"Confirmar Materiales","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://sys-enter-2","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
