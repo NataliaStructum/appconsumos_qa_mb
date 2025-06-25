@@ -266,16 +266,7 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
-				"OnPress": {
-					"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-					"Properties": {
-						"Message": "¿Estas seguro que deseas aprobar la solicitud?",
-						"Title": "Confirmación",
-						"OKCaption": "Aceptar",
-						"OnOK": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Abast.action",
-						"CancelCaption": "Cancelar"
-					}
-				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Confirmar_Revision_Abast.js",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
