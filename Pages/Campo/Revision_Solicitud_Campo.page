@@ -404,7 +404,7 @@
 				"OnPress": {
 					"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 					"Properties": {
-						"Message": "¿Estás seguro que quieres salir?",
+						"Message": "¿Seguro que desea cancelar la revisión? Se perderán todos los datos registrados",
 						"Title": "Confirmación",
 						"OKCaption": "Aceptar",
 						"OnOK": {

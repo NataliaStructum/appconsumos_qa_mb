@@ -123,7 +123,9 @@ let appconsumos_qa_mb_pages_ingenio_lista_ordenes_ingenio_page = __webpack_requi
 let appconsumos_qa_mb_pages_ingenio_lista_solicitudes_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Lista_Solicitudes_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Lista_Solicitudes_Ingenio.page")
 let appconsumos_qa_mb_pages_ingenio_revision_solicitud_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Revision_Solicitud_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Revision_Solicitud_Ingenio.page")
 let appconsumos_qa_mb_pages_inventario_agregar_solicitud_reabastecimiento_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Agregar_Solicitud_Reabastecimiento.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Agregar_Solicitud_Reabastecimiento.page")
+let appconsumos_qa_mb_pages_inventario_consultar_inventario_almacenes_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Consultar_Inventario_Almacenes.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Consultar_Inventario_Almacenes.page")
 let appconsumos_qa_mb_pages_inventario_detalle_solicitud_reabastecimieto_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page")
+let appconsumos_qa_mb_pages_inventario_filtro_almacen_inventario_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Inventario.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Inventario.page")
 let appconsumos_qa_mb_pages_inventario_filtro_almacen_solicitud_abast_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Solicitud_Abast.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Solicitud_Abast.page")
 let appconsumos_qa_mb_pages_inventario_inicio_inventario_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Inicio_Inventario.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Inicio_Inventario.page")
 let appconsumos_qa_mb_pages_inventario_lista_solicitudes_reabastecimiento_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Lista_Solicitudes_Reabastecimiento.page")
@@ -233,11 +235,14 @@ let appconsumos_qa_mb_rules_inventario_confirmar_revision_abast_js = __webpack_r
 let appconsumos_qa_mb_rules_inventario_confirmar_sol_abast_revision_items_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Confirmar_Sol_Abast_Revision_Items.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Confirmar_Sol_Abast_Revision_Items.js")
 let appconsumos_qa_mb_rules_inventario_create_solicitud_abastecimiento_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Create_Solicitud_Abastecimiento.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Create_Solicitud_Abastecimiento.js")
 let appconsumos_qa_mb_rules_inventario_filter_read_zbiw_mardt_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/filter_Read_ZBIW_MARDT.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/filter_Read_ZBIW_MARDT.js")
+let appconsumos_qa_mb_rules_inventario_filtro_centro_material_inv_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Filtro_Centro_Material_Inv.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Filtro_Centro_Material_Inv.js")
+let appconsumos_qa_mb_rules_inventario_filtro_material_almacenes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js")
 let appconsumos_qa_mb_rules_inventario_get_desc_material_revisar_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/get_desc_Material_Revisar.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/get_desc_Material_Revisar.js")
 let appconsumos_qa_mb_rules_inventario_get_filterread_zbiw_mardt_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Get_FilterRead_ZBIW_MARDT.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Get_FilterRead_ZBIW_MARDT.js")
 let appconsumos_qa_mb_rules_inventario_get_list_materiales_nuevos_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Get_List_Materiales_Nuevos.js")
 let appconsumos_qa_mb_rules_inventario_get_matnr_queryrevisionalmacenes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/get_Matnr_QueryRevisionAlmacenes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/get_Matnr_QueryRevisionAlmacenes.js")
 let appconsumos_qa_mb_rules_inventario_navto_agregar_solicitud_reabastecimiento_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js")
+let appconsumos_qa_mb_rules_inventario_navto_consultarinv_almacen_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_ConsultarInv_Almacen.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_ConsultarInv_Almacen.js")
 let appconsumos_qa_mb_rules_inventario_navto_filtro_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_Filtro_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Filtro_Abast.js")
 let appconsumos_qa_mb_rules_inventario_navto_inventario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_Inventario.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_Inventario.js")
 let appconsumos_qa_mb_rules_inventario_navto_list_abastecimiento_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/NavTo_List_Abastecimiento.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_List_Abastecimiento.js")
@@ -251,6 +256,7 @@ let appconsumos_qa_mb_rules_inventario_query_revisar_abast_js = __webpack_requir
 let appconsumos_qa_mb_rules_inventario_rechazar_material_revision_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Rechazar_Material_Revision_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Rechazar_Material_Revision_Abast.js")
 let appconsumos_qa_mb_rules_inventario_rechazar_solicitud_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Rechazar_Solicitud_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Rechazar_Solicitud_Abast.js")
 let appconsumos_qa_mb_rules_inventario_redraw_list_revisar_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Redraw_List_Revisar.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Redraw_List_Revisar.js")
+let appconsumos_qa_mb_rules_inventario_select_almacen_filtro_inventario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Filtro_Inventario.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Filtro_Inventario.js")
 let appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Sol_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Sol_Abast.js")
 let appconsumos_qa_mb_rules_inventario_select_material_revisar_abast_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Select_Material_Revisar_Abast.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Select_Material_Revisar_Abast.js")
 let appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/set_VisibleAgregarMaterialExistente.js")
@@ -390,7 +396,9 @@ module.exports = {
 	appconsumos_qa_mb_pages_ingenio_lista_solicitudes_ingenio_page : appconsumos_qa_mb_pages_ingenio_lista_solicitudes_ingenio_page,
 	appconsumos_qa_mb_pages_ingenio_revision_solicitud_ingenio_page : appconsumos_qa_mb_pages_ingenio_revision_solicitud_ingenio_page,
 	appconsumos_qa_mb_pages_inventario_agregar_solicitud_reabastecimiento_page : appconsumos_qa_mb_pages_inventario_agregar_solicitud_reabastecimiento_page,
+	appconsumos_qa_mb_pages_inventario_consultar_inventario_almacenes_page : appconsumos_qa_mb_pages_inventario_consultar_inventario_almacenes_page,
 	appconsumos_qa_mb_pages_inventario_detalle_solicitud_reabastecimieto_page : appconsumos_qa_mb_pages_inventario_detalle_solicitud_reabastecimieto_page,
+	appconsumos_qa_mb_pages_inventario_filtro_almacen_inventario_page : appconsumos_qa_mb_pages_inventario_filtro_almacen_inventario_page,
 	appconsumos_qa_mb_pages_inventario_filtro_almacen_solicitud_abast_page : appconsumos_qa_mb_pages_inventario_filtro_almacen_solicitud_abast_page,
 	appconsumos_qa_mb_pages_inventario_inicio_inventario_page : appconsumos_qa_mb_pages_inventario_inicio_inventario_page,
 	appconsumos_qa_mb_pages_inventario_lista_solicitudes_reabastecimiento_page : appconsumos_qa_mb_pages_inventario_lista_solicitudes_reabastecimiento_page,
@@ -500,11 +508,14 @@ module.exports = {
 	appconsumos_qa_mb_rules_inventario_confirmar_sol_abast_revision_items_js : appconsumos_qa_mb_rules_inventario_confirmar_sol_abast_revision_items_js,
 	appconsumos_qa_mb_rules_inventario_create_solicitud_abastecimiento_js : appconsumos_qa_mb_rules_inventario_create_solicitud_abastecimiento_js,
 	appconsumos_qa_mb_rules_inventario_filter_read_zbiw_mardt_js : appconsumos_qa_mb_rules_inventario_filter_read_zbiw_mardt_js,
+	appconsumos_qa_mb_rules_inventario_filtro_centro_material_inv_js : appconsumos_qa_mb_rules_inventario_filtro_centro_material_inv_js,
+	appconsumos_qa_mb_rules_inventario_filtro_material_almacenes_js : appconsumos_qa_mb_rules_inventario_filtro_material_almacenes_js,
 	appconsumos_qa_mb_rules_inventario_get_desc_material_revisar_js : appconsumos_qa_mb_rules_inventario_get_desc_material_revisar_js,
 	appconsumos_qa_mb_rules_inventario_get_filterread_zbiw_mardt_js : appconsumos_qa_mb_rules_inventario_get_filterread_zbiw_mardt_js,
 	appconsumos_qa_mb_rules_inventario_get_list_materiales_nuevos_js : appconsumos_qa_mb_rules_inventario_get_list_materiales_nuevos_js,
 	appconsumos_qa_mb_rules_inventario_get_matnr_queryrevisionalmacenes_js : appconsumos_qa_mb_rules_inventario_get_matnr_queryrevisionalmacenes_js,
 	appconsumos_qa_mb_rules_inventario_navto_agregar_solicitud_reabastecimiento_js : appconsumos_qa_mb_rules_inventario_navto_agregar_solicitud_reabastecimiento_js,
+	appconsumos_qa_mb_rules_inventario_navto_consultarinv_almacen_js : appconsumos_qa_mb_rules_inventario_navto_consultarinv_almacen_js,
 	appconsumos_qa_mb_rules_inventario_navto_filtro_abast_js : appconsumos_qa_mb_rules_inventario_navto_filtro_abast_js,
 	appconsumos_qa_mb_rules_inventario_navto_inventario_js : appconsumos_qa_mb_rules_inventario_navto_inventario_js,
 	appconsumos_qa_mb_rules_inventario_navto_list_abastecimiento_js : appconsumos_qa_mb_rules_inventario_navto_list_abastecimiento_js,
@@ -518,6 +529,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_inventario_rechazar_material_revision_abast_js : appconsumos_qa_mb_rules_inventario_rechazar_material_revision_abast_js,
 	appconsumos_qa_mb_rules_inventario_rechazar_solicitud_abast_js : appconsumos_qa_mb_rules_inventario_rechazar_solicitud_abast_js,
 	appconsumos_qa_mb_rules_inventario_redraw_list_revisar_js : appconsumos_qa_mb_rules_inventario_redraw_list_revisar_js,
+	appconsumos_qa_mb_rules_inventario_select_almacen_filtro_inventario_js : appconsumos_qa_mb_rules_inventario_select_almacen_filtro_inventario_js,
 	appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js : appconsumos_qa_mb_rules_inventario_select_almacen_sol_abast_js,
 	appconsumos_qa_mb_rules_inventario_select_material_revisar_abast_js : appconsumos_qa_mb_rules_inventario_select_material_revisar_abast_js,
 	appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js : appconsumos_qa_mb_rules_inventario_set_visibleagregarmaterialexistente_js,
@@ -5144,6 +5156,80 @@ function Create_Solicitud_Abastecimiento(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Filtro_Centro_Material_Inv.js":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Filtro_Centro_Material_Inv.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Filtro_Centro_Material_Inv)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Filtro_Centro_Material_Inv(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info_sociedad = clientData.info_user.sociedad;
+  let centroFiltro = '';
+  if (info_sociedad == "AI01") {
+    centroFiltro = "centro ge '2000' and centro le '2199'";
+  } else if (info_sociedad == "AI08") {
+    centroFiltro = "centro ge '2200'";
+  }
+  let filtro = `$filter=${centroFiltro}&$orderby=almacen`;
+  return filtro;
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Filtro_Material_Almacenes)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Filtro_Material_Almacenes(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Inventario').getClientData();
+  let almacenesSeleccionados = clientData.almacen_inventario;
+  if (almacenesSeleccionados && almacenesSeleccionados.length > 0) {
+    // Tomar el centro desde el primer almacén
+    let centro = almacenesSeleccionados[0].BindingObject.centro;
+
+    // Iniciar filtro
+    let filtro = `$filter=Werks eq '${centro}' and Spras eq 'ES' and contains(Txtmd, 'BORRADO') eq false and contains(Txtmd, 'BORRAR') eq false and contains(Txtmd, 'BORRAD_') eq false and (`;
+
+    // Agregar cada almacén con OR
+    almacenesSeleccionados.forEach(item => {
+      filtro += `Lgort eq '${item.BindingObject.almacen}' or `;
+    });
+
+    // Quitar el último " or " y cerrar
+    filtro = filtro.slice(0, -4) + `)&$orderby=Matnr`;
+
+    // Puedes guardar este filtro en ClientData si lo deseas
+    clientData.filtroMaterial = filtro;
+    alert(filtro);
+    return filtro;
+  } else {
+    alert("Error: No se seleccionaron almacenes.");
+  }
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Get_FilterRead_ZBIW_MARDT.js":
 /*!*******************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Get_FilterRead_ZBIW_MARDT.js ***!
@@ -5226,6 +5312,37 @@ function NavTo_Agregar_Solicitud_Reabastecimiento(context) {
       "PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Agregar_Solicitud_Reabastecimiento.page",
       "ModalPage": true,
       "ModalPageFullscreen": true
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_ConsultarInv_Almacen.js":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/NavTo_ConsultarInv_Almacen.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NavTo_ConsultarInv_Almacen)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function NavTo_ConsultarInv_Almacen(context) {
+  let almacen = context.evaluateTargetPath('#Page:Filtro_Almacen_Inventario/#Control:FormCellListPicker_Almacen_Inv/#Value');
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Inventario').getClientData();
+  clientData.almacen_inventario = almacen;
+  //alert(JSON.stringify(clientData.almacen_inventario[0]))
+
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+    "Properties": {
+      "PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Consultar_Inventario_Almacenes.page"
     }
   });
 }
@@ -5729,6 +5846,34 @@ function Redraw_List_Revisar(context) {
   const pageProxy = context.getPageProxy();
   var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
   list_component.redraw();
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Filtro_Inventario.js":
+/*!**************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Filtro_Inventario.js ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Select_Almacen_Filtro_Inventario)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Select_Almacen_Filtro_Inventario(context) {
+  let almacenLPInv = context.evaluateTargetPath('#Page:Filtro_Almacen_Inventario/#Control:FormCellListPicker_Almacen_Inv/#Value');
+  const pageProxy = context.getPageProxy();
+  var btn_inventario = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("btn_inventario");
+  if (almacenLPInv.length > 0) {
+    btn_inventario.setEnabled(true);
+  } else {
+    btn_inventario.setEnabled(false);
+  }
 }
 
 /***/ }),
@@ -7549,6 +7694,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Consultar_Inventario_Almacenes.page":
+/*!**************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Inventario/Consultar_Inventario_Almacenes.page ***!
+  \**************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service","EntitySet":"ZBIW_MARDTSet","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js"},"_Name":"SectionObjectTable0","Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales"},"Visible":true,"EmptySection":{"Caption":"No hay materiales para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{Matnr}","Subhead":"Almacén: {Lgort}","Footnote":"Disponible: {Labst} / Reservado: {Klabs}","Description":"{Txtmd}","DisplayDescriptionInMobile":true,"StatusText":"{Werks}","SubstatusText":"#Page:Main/#ClientData/info_user/sociedad","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Enabled":true},"DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Cargando materiales...","PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Consultar_Inventario_Almacenes","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar","Caption":"Consultar Inventario"}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page":
 /*!*****************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/Inventario/Detalle_Solicitud_Reabastecimieto.page ***!
@@ -7556,6 +7711,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 /***/ ((module) => {
 
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"StatusText":"Centro: {almacen_centro}","SubstatusText":"{almacen_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Inventario/Color_Estado_Abast.js","Text":"{estado}"}],"HeadlineText":"Almacén: {almacen_almacen} - {almacen/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {operario_ficha} - {operario/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {aprobador/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {autorizador/nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Registrado"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Query_Detalle_Componentes_Abast_Nuevo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable1","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Indigo","Text":"Nuevo"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitud_Reabastecimieto","ActionBar":{"Items":[],"_Name":"ActionBar12","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Abastecimiento"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_RevisionSolicitudAbast.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem2","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Salida","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://arrow-right","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem3","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnConfirmar.js","Title":"Confirmar Materiales","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://sys-enter-2","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Inventario.page":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Inventario.page ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Módulo de Consulta de Inventario","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker_Almacen_Inv","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Selecciona un Almacén","PlaceHolder":"PlaceHolder","HelperText":"Debes seleccionar un almacén para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Filtro_Inventario.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"/appconsumos_qa_mb/Rules/Inventario/Filtro_Centro_Material_Inv.js"},"ObjectCell":{"Description":"{tipo}","PreserveIconStackSpacing":false,"Subhead":"{almacen}","Title":"{almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"btn_inventario","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Consultar Inventario","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://browse-folder","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_ConsultarInv_Almacen.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Almacen_Inventario","ActionBar":{"Items":[],"_Name":"ActionBar5","_Type":"Control.Type.ActionBar","Caption":"Almacén"}}
 
 /***/ }),
 
@@ -7575,7 +7740,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Módulo Inventario","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://request","Headline":"Solicitudes de Abastecimiento","Subheadline":"Ver listado de solicitudes de abastecimiento y realizar solicitudes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Filtro_Abast.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://add-product","Headline":"Consultar Inventario","Subheadline":"Inventario de almacenes","Description":"","Visible":true}}]}]}],"_Type":"Page","_Name":"Inicio_Inventario","ActionBar":{"Items":[],"_Name":"ActionBar6","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Módulo Inventario","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://request","Headline":"Solicitudes de Abastecimiento","Subheadline":"Ver listado de solicitudes de abastecimiento y realizar solicitudes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Filtro_Abast.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://add-product","Headline":"Consultar Inventario","Subheadline":"Inventario de almacenes","Description":"","Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Inventario.page"}}}}]}]}],"_Type":"Page","_Name":"Inicio_Inventario","ActionBar":{"Items":[],"_Name":"ActionBar7","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 

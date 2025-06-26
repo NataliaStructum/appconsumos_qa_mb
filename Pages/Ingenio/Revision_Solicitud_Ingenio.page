@@ -400,15 +400,16 @@
 				"OnPress": {
 					"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 					"Properties": {
-						"Title": "¿Seguro que desea cancelar la revisión? Se perderán todos los datos registrados",
-						"OKCaption": "Sí",
+						"Message": "¿Seguro que desea cancelar la revisión? Se perderán todos los datos registrados",
+						"Title": "Confirmación",
+						"OKCaption": "Aceptar",
 						"OnOK": {
 							"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
 							"Properties": {
 								"NavigateBackToPage": "Detalle_Solicitudes_Ingenio"
 							}
 						},
-						"CancelCaption": "No"
+						"CancelCaption": "Cancelar"
 					}
 				}
 			}

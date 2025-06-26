@@ -63,7 +63,13 @@
 								"Headline": "Consultar Inventario",
 								"Subheadline": "Inventario de almacenes",
 								"Description": "",
-								"Visible": true
+								"Visible": true,
+								"OnPress": {
+									"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+									"Properties": {
+										"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Filtro_Almacen_Inventario.page"
+									}
+								}
 							}
 						}
 					]
@@ -75,7 +81,7 @@
 	"_Name": "Inicio_Inventario",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar6",
+		"_Name": "ActionBar7",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
