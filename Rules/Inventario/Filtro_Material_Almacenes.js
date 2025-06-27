@@ -24,7 +24,7 @@ export default function Filtro_Material_Almacenes(context) {
         // Puedes guardar este filtro en ClientData si lo deseas
         clientData.filtroMaterial = filtro;
 
-        alert(filtro);
+        //alert(filtro);
         return filtro;
         
     } else {

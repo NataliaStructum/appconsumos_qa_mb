@@ -22,13 +22,6 @@
 							"Items": []
 						}
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
-						"EntitySet": "ZBIW_MARDTSet",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js"
-					},
-					"_Name": "SectionObjectTable0",
 					"Header": {
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
@@ -36,6 +29,13 @@
 						"UseTopPadding": true,
 						"Caption": "Materiales"
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
+						"EntitySet": "ZBIW_MARDTSet",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js"
+					},
+					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
 						"Caption": "No hay materiales para mostrar",
@@ -76,7 +76,9 @@
 						"Selected": false
 					},
 					"Search": {
-						"Enabled": true
+						"Enabled": true,
+						"Placeholder": "Buscar...",
+						"BarcodeScanner": true
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": true,
@@ -97,7 +99,7 @@
 	"_Name": "Consultar_Inventario_Almacenes",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Consultar Inventario"
 	}
