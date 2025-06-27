@@ -33,6 +33,11 @@ let appconsumos_qa_mb_actions_app_consumos_qa_service_onlyuploadoffline_action =
 let appconsumos_qa_mb_actions_app_consumos_qa_service_syncfailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action")
 let appconsumos_qa_mb_actions_app_consumos_qa_service_syncstartedmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncStartedMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncStartedMessage.action")
 let appconsumos_qa_mb_actions_app_consumos_qa_service_uploadoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action")
+let appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOffline.action")
+let appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineFailureMessage.action")
+let appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeofflinesuccessmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineSuccessMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineSuccessMessage.action")
+let appconsumos_qa_mb_actions_app_consumos_qa_v2_service_initializeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOffline.action")
+let appconsumos_qa_mb_actions_app_consumos_qa_v2_service_initializeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOfflineFailureMessage.action")
 let appconsumos_qa_mb_actions_application_appupdate_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Application/AppUpdate.action */ "./build.definitions/appconsumos_qa_mb/Actions/Application/AppUpdate.action")
 let appconsumos_qa_mb_actions_application_appupdatefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Application/AppUpdateFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/Application/AppUpdateFailureMessage.action")
 let appconsumos_qa_mb_actions_application_appupdateprogressbanner_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Application/AppUpdateProgressBanner.action */ "./build.definitions/appconsumos_qa_mb/Actions/Application/AppUpdateProgressBanner.action")
@@ -45,6 +50,7 @@ let appconsumos_qa_mb_actions_application_onwillupdate_action = __webpack_requir
 let appconsumos_qa_mb_actions_application_reset_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Application/Reset.action */ "./build.definitions/appconsumos_qa_mb/Actions/Application/Reset.action")
 let appconsumos_qa_mb_actions_application_resetmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Application/ResetMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/Application/ResetMessage.action")
 let appconsumos_qa_mb_actions_application_usermenupopover_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Application/UserMenuPopover.action */ "./build.definitions/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action")
+let appconsumos_qa_mb_actions_call_firmarpdf_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_FirmarPDF.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_FirmarPDF.action")
 let appconsumos_qa_mb_actions_closemodalpage_cancel_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action")
 let appconsumos_qa_mb_actions_closemodalpage_complete_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Complete.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action")
 let appconsumos_qa_mb_actions_closepage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ClosePage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ClosePage.action")
@@ -60,6 +66,7 @@ let appconsumos_qa_mb_actions_logging_loguploadsuccessful_action = __webpack_req
 let appconsumos_qa_mb_actions_logging_uploadlog_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/UploadLog.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/UploadLog.action")
 let appconsumos_qa_mb_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action")
 let appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action")
+let appconsumos_qa_mb_actions_odata_call_firmarpdf_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Call_firmarPDF.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Call_firmarPDF.action")
 let appconsumos_qa_mb_actions_odata_create_almacenesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action")
 let appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action")
 let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
@@ -107,6 +114,7 @@ let appconsumos_qa_mb_pages_application_about_page = __webpack_require__(/*! ./a
 let appconsumos_qa_mb_pages_application_support_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/Support.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/Support.page")
 let appconsumos_qa_mb_pages_application_useractivitylog_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Application/UserActivityLog.page */ "./build.definitions/appconsumos_qa_mb/Pages/Application/UserActivityLog.page")
 let appconsumos_qa_mb_pages_campo_agregar_solicitud_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Agregar_Solicitud_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Agregar_Solicitud_Campo.page")
+let appconsumos_qa_mb_pages_campo_autorizar_solicitud_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page")
 let appconsumos_qa_mb_pages_campo_detalle_orden_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page")
 let appconsumos_qa_mb_pages_campo_detalle_solicitudes_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Detalle_Solicitudes_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Detalle_Solicitudes_Campo.page")
 let appconsumos_qa_mb_pages_campo_filtro_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Filtro_Campo.page")
@@ -155,6 +163,7 @@ let appconsumos_qa_mb_rules_campo_borrar_materiales_revision_campo_js = __webpac
 let appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js")
 let appconsumos_qa_mb_rules_campo_confirmarsolicitudcampo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js")
 let appconsumos_qa_mb_rules_campo_create_componentes_solicitud_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js")
+let appconsumos_qa_mb_rules_campo_firmarsolicitud_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js")
 let appconsumos_qa_mb_rules_campo_get_date_creacion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js")
 let appconsumos_qa_mb_rules_campo_get_date_ref_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_Date_ref.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_Date_ref.js")
 let appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_List_Campo_Equipo.js")
@@ -171,6 +180,7 @@ let appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js = __webpack
 let appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js")
 let appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js")
 let appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js")
+let appconsumos_qa_mb_rules_campo_response_firmarpdf_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js")
 let appconsumos_qa_mb_rules_campo_select_almacen_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Select_almacen.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js")
 let appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js")
 let appconsumos_qa_mb_rules_campo_setvisible_conmodificaciones_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/setVisible_ConModificaciones.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/setVisible_ConModificaciones.js")
@@ -273,6 +283,8 @@ let appconsumos_qa_mb_rules_set_visiblebtnnetear_js = __webpack_require__(/*! ./
 let appconsumos_qa_mb_rules_set_visiblebtnrevisar_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js */ "./build.definitions/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js")
 let appconsumos_qa_mb_rules_zbodega_ago_srv_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js */ "./build.definitions/appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js")
 let appconsumos_qa_mb_services_app_consumos_qa_service = __webpack_require__(/*! ./appconsumos_qa_mb/Services/app_consumos_qa.service */ "./build.definitions/appconsumos_qa_mb/Services/app_consumos_qa.service")
+let appconsumos_qa_mb_services_app_consumos_qa_v2_service = __webpack_require__(/*! ./appconsumos_qa_mb/Services/app_consumos_qa_v2.service */ "./build.definitions/appconsumos_qa_mb/Services/app_consumos_qa_v2.service")
+let appconsumos_qa_mb_services_backend_rest_service = __webpack_require__(/*! ./appconsumos_qa_mb/Services/backend_REST.service */ "./build.definitions/appconsumos_qa_mb/Services/backend_REST.service")
 let appconsumos_qa_mb_services_zbodega_ago_srv_service = __webpack_require__(/*! ./appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service */ "./build.definitions/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service")
 let appconsumos_qa_mb_styles_styles_css = __webpack_require__(/*! ./appconsumos_qa_mb/Styles/Styles.css */ "./build.definitions/appconsumos_qa_mb/Styles/Styles.css")
 let appconsumos_qa_mb_styles_styles_less = __webpack_require__(/*! ./appconsumos_qa_mb/Styles/Styles.less */ "./build.definitions/appconsumos_qa_mb/Styles/Styles.less")
@@ -300,6 +312,11 @@ module.exports = {
 	appconsumos_qa_mb_actions_app_consumos_qa_service_syncfailuremessage_action : appconsumos_qa_mb_actions_app_consumos_qa_service_syncfailuremessage_action,
 	appconsumos_qa_mb_actions_app_consumos_qa_service_syncstartedmessage_action : appconsumos_qa_mb_actions_app_consumos_qa_service_syncstartedmessage_action,
 	appconsumos_qa_mb_actions_app_consumos_qa_service_uploadoffline_action : appconsumos_qa_mb_actions_app_consumos_qa_service_uploadoffline_action,
+	appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeoffline_action : appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeoffline_action,
+	appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeofflinefailuremessage_action : appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeofflinefailuremessage_action,
+	appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeofflinesuccessmessage_action : appconsumos_qa_mb_actions_app_consumos_qa_v2_service_closeofflinesuccessmessage_action,
+	appconsumos_qa_mb_actions_app_consumos_qa_v2_service_initializeoffline_action : appconsumos_qa_mb_actions_app_consumos_qa_v2_service_initializeoffline_action,
+	appconsumos_qa_mb_actions_app_consumos_qa_v2_service_initializeofflinefailuremessage_action : appconsumos_qa_mb_actions_app_consumos_qa_v2_service_initializeofflinefailuremessage_action,
 	appconsumos_qa_mb_actions_application_appupdate_action : appconsumos_qa_mb_actions_application_appupdate_action,
 	appconsumos_qa_mb_actions_application_appupdatefailuremessage_action : appconsumos_qa_mb_actions_application_appupdatefailuremessage_action,
 	appconsumos_qa_mb_actions_application_appupdateprogressbanner_action : appconsumos_qa_mb_actions_application_appupdateprogressbanner_action,
@@ -312,6 +329,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_application_reset_action : appconsumos_qa_mb_actions_application_reset_action,
 	appconsumos_qa_mb_actions_application_resetmessage_action : appconsumos_qa_mb_actions_application_resetmessage_action,
 	appconsumos_qa_mb_actions_application_usermenupopover_action : appconsumos_qa_mb_actions_application_usermenupopover_action,
+	appconsumos_qa_mb_actions_call_firmarpdf_action : appconsumos_qa_mb_actions_call_firmarpdf_action,
 	appconsumos_qa_mb_actions_closemodalpage_cancel_action : appconsumos_qa_mb_actions_closemodalpage_cancel_action,
 	appconsumos_qa_mb_actions_closemodalpage_complete_action : appconsumos_qa_mb_actions_closemodalpage_complete_action,
 	appconsumos_qa_mb_actions_closepage_action : appconsumos_qa_mb_actions_closepage_action,
@@ -327,6 +345,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_logging_uploadlog_action : appconsumos_qa_mb_actions_logging_uploadlog_action,
 	appconsumos_qa_mb_actions_logging_uploadlogprogress_action : appconsumos_qa_mb_actions_logging_uploadlogprogress_action,
 	appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action : appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action,
+	appconsumos_qa_mb_actions_odata_call_firmarpdf_action : appconsumos_qa_mb_actions_odata_call_firmarpdf_action,
 	appconsumos_qa_mb_actions_odata_create_almacenesapp_action : appconsumos_qa_mb_actions_odata_create_almacenesapp_action,
 	appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action : appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action,
 	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
@@ -374,6 +393,7 @@ module.exports = {
 	appconsumos_qa_mb_pages_application_support_page : appconsumos_qa_mb_pages_application_support_page,
 	appconsumos_qa_mb_pages_application_useractivitylog_page : appconsumos_qa_mb_pages_application_useractivitylog_page,
 	appconsumos_qa_mb_pages_campo_agregar_solicitud_campo_page : appconsumos_qa_mb_pages_campo_agregar_solicitud_campo_page,
+	appconsumos_qa_mb_pages_campo_autorizar_solicitud_campo_page : appconsumos_qa_mb_pages_campo_autorizar_solicitud_campo_page,
 	appconsumos_qa_mb_pages_campo_detalle_orden_campo_page : appconsumos_qa_mb_pages_campo_detalle_orden_campo_page,
 	appconsumos_qa_mb_pages_campo_detalle_solicitudes_campo_page : appconsumos_qa_mb_pages_campo_detalle_solicitudes_campo_page,
 	appconsumos_qa_mb_pages_campo_filtro_campo_page : appconsumos_qa_mb_pages_campo_filtro_campo_page,
@@ -422,6 +442,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js : appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js,
 	appconsumos_qa_mb_rules_campo_confirmarsolicitudcampo_js : appconsumos_qa_mb_rules_campo_confirmarsolicitudcampo_js,
 	appconsumos_qa_mb_rules_campo_create_componentes_solicitud_js : appconsumos_qa_mb_rules_campo_create_componentes_solicitud_js,
+	appconsumos_qa_mb_rules_campo_firmarsolicitud_campo_js : appconsumos_qa_mb_rules_campo_firmarsolicitud_campo_js,
 	appconsumos_qa_mb_rules_campo_get_date_creacion_js : appconsumos_qa_mb_rules_campo_get_date_creacion_js,
 	appconsumos_qa_mb_rules_campo_get_date_ref_js : appconsumos_qa_mb_rules_campo_get_date_ref_js,
 	appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js : appconsumos_qa_mb_rules_campo_get_list_campo_equipo_js,
@@ -438,6 +459,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js : appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js,
 	appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js : appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js,
 	appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js : appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js,
+	appconsumos_qa_mb_rules_campo_response_firmarpdf_js : appconsumos_qa_mb_rules_campo_response_firmarpdf_js,
 	appconsumos_qa_mb_rules_campo_select_almacen_js : appconsumos_qa_mb_rules_campo_select_almacen_js,
 	appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js : appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js,
 	appconsumos_qa_mb_rules_campo_setvisible_conmodificaciones_js : appconsumos_qa_mb_rules_campo_setvisible_conmodificaciones_js,
@@ -540,6 +562,8 @@ module.exports = {
 	appconsumos_qa_mb_rules_set_visiblebtnrevisar_js : appconsumos_qa_mb_rules_set_visiblebtnrevisar_js,
 	appconsumos_qa_mb_rules_zbodega_ago_srv_errorarchive_checkforsyncerror_js : appconsumos_qa_mb_rules_zbodega_ago_srv_errorarchive_checkforsyncerror_js,
 	appconsumos_qa_mb_services_app_consumos_qa_service : appconsumos_qa_mb_services_app_consumos_qa_service,
+	appconsumos_qa_mb_services_app_consumos_qa_v2_service : appconsumos_qa_mb_services_app_consumos_qa_v2_service,
+	appconsumos_qa_mb_services_backend_rest_service : appconsumos_qa_mb_services_backend_rest_service,
 	appconsumos_qa_mb_services_zbodega_ago_srv_service : appconsumos_qa_mb_services_zbodega_ago_srv_service,
 	appconsumos_qa_mb_styles_styles_css : appconsumos_qa_mb_styles_styles_css,
 	appconsumos_qa_mb_styles_styles_less : appconsumos_qa_mb_styles_styles_less,
@@ -1217,9 +1241,10 @@ __webpack_require__.r(__webpack_exports__);
 function OnWillUpdate(clientAPI) {
   return clientAPI.executeAction('/appconsumos_qa_mb/Actions/Application/OnWillUpdate.action').then(result => {
     if (result.data) {
-      let _app_consumos_qa = clientAPI.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action');
+      let _app_consumos_qa = clientAPI.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa/Service/CloseOffline.action');
+      let _app_consumos_qa_v2 = clientAPI.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOffline.action');
       let ZBODEGA_AGO_SRV = clientAPI.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action');
-      return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV]).then(() => {
+      return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV, _app_consumos_qa_v2]).then(() => {
         Promise.resolve();
       }).catch(err => {
         Promise.reject('Error al cerrar Odatas sin conexión ' + err.message);
@@ -1853,6 +1878,144 @@ function Create_Componentes_Solicitud(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js":
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FirmarSolicitud_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+async function FirmarSolicitud_Campo(context) {
+  const base64Pdf = `JVBERi0xLjMKJf////8KNyAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDEgMCBSCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9Db250ZW50cyA1IDAgUgovUmVzb3VyY2VzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Qcm9jU2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXQovRm9udCA8PAovRjEgOCAwIFIKPj4KL0NvbG9yU3BhY2UgPDwKPj4KPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0xlbmd0aCAyOTUKL0ZpbHRlciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCniclZO7TsQwEEV7f8X8wC7zvJNIUQokKOgQ6RAFWpJuC/j/AiXQQBytLEuWZVlzfI/HQkxMJyGm7JUu1/JZZLd3P/1uCil3Z0XP7JScZ07QdC13j0LS0bSU1yEUkYwldaSTMw3pCGUYFszK6RDoSMo04AJRzl4ZFyxILCPxG01P5WEqzyWYhJkkeD39NZeXW7eLIKRXb8WpWOAZsPR/IOVmkvIhyg2COR091qz+B2XtoexGqoChr6jTZnVRz/Ox5XlfZ0jaXl0baVNXR5kY73W1lbfjJOoWOhuvY6fLm3XZwZuMFGtzx/oDZF1VpbXxNml1oHV7ZW3F7TiNurnO1lWVoVmZ1DtMf3oLc+1jtlE2UXWMicVeVVt5O06hbqmzxU7VN8QUFdoKZW5kc3RyZWFtCmVuZG9iagoxMCAwIG9iagooUERGS2l0KQplbmRvYmoKMTEgMCBvYmoKKFBERktpdCkKZW5kb2JqCjEyIDAgb2JqCihEOjIwMjUwNjI3MTUyMDQwWikKZW5kb2JqCjkgMCBvYmoKPDwKL1Byb2R1Y2VyIDEwIDAgUgovQ3JlYXRvciAxMSAwIFIKL0NyZWF0aW9uRGF0ZSAxMiAwIFIKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL0Jhc2VGb250IC9IZWx2ZXRpY2EKL1N1YnR5cGUgL1R5cGUxCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCj4+CmVuZG9iago0IDAgb2JqCjw8Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9DYXRhbG9nCi9QYWdlcyAxIDAgUgovTmFtZXMgMiAwIFIKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFs3IDAgUl0KPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Rlc3RzIDw8CiAgL05hbWVzIFsKXQo+Pgo+PgplbmRvYmoKeHJlZgowIDEzCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDkzNCAwMDAwMCBuIAowMDAwMDAwOTkxIDAwMDAwIG4gCjAwMDAwMDA4NzIgMDAwMDAgbiAKMDAwMDAwMDg1MSAwMDAwMCBuIAowMDAwMDAwMjI2IDAwMDAwIG4gCjAwMDAwMDAxMTkgMDAwMDAgbiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwNzU0IDAwMDAwIG4gCjAwMDAwMDA2NzkgMDAwMDAgbiAKMDAwMDAwMDU5MyAwMDAwMCBuIAowMDAwMDAwNjE4IDAwMDAwIG4gCjAwMDAwMDA2NDMgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSAxMwovUm9vdCAzIDAgUgovSW5mbyA5IDAgUgovSUQgWzwwODRjMzgzN2I5NjMxNmVhYmQ5N2E0NDk1YmIwZmVkND4gPDA4NGMzODM3Yjk2MzE2ZWFiZDk3YTQ0OTViYjBmZWQ0Pl0KPj4Kc3RhcnR4cmVmCjEwMzgKJSVFT0YK`;
+
+  //const pageProxy = context.getPageProxy();
+  const platform = context.nativescript.platformModule;
+  const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
+  let signatureContent;
+  if (platform.isAndroid) {
+    signatureContent = android.util.Base64.encodeToString(signatureObject.content, android.util.Base64.DEFAULT);
+  } else if (platform.isIOS) {
+    signatureContent = signatureObject.content.base64Encoding();
+  }
+  alert("entro firmar");
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/Call_FirmarPDF.action",
+    "Properties": {
+      "OnFailure": "",
+      "OnSuccess": "",
+      "Target": {
+        "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+        "Path": "/firmarPDF",
+        "RequestProperties": {
+          "Method": "POST",
+          "Body": {
+            "pdf": `${base64Pdf}`,
+            "image": `${signatureContent}`
+          }
+        }
+      }
+    }
+  }).then(result => {
+    alert("sisiii");
+    if (result && result.data) {
+      alert(`${JSON.stringify(actionResult.data)}`);
+      let code = result.data.Code;
+      //let mensaje = result.data.Message;
+
+      if (code == 200) {} else {}
+    }
+  }).catch(error => {
+    alert(error);
+  });
+
+  /*let servicePath = "/appconsumos_qa_mb/Services/app_consumos_qa.service";
+  let functionDef = {
+      "Name": "firmarPDF",
+      "Parameters": {
+          "pdf": `${base64Pdf}`,
+          "image":`${signatureContent}`
+      }
+  };
+  let headers = null;
+  return context.callFunction(servicePath, functionDef, headers).then((result) => {
+      // Si el servicio devuelve un string plano
+      alert(result)
+      alert(JSON.stringify(result))
+      if (result && typeof result === "string") {
+          alert(`Resultado: ${result}`);
+      } else if (result && result.value) {
+          alert(`Resultado: ${result.value}`);
+      } else {
+          alert("La acción no devolvió resultado esperado.");
+      }
+  }).catch((error) => {
+      alert(`Error al ejecutar firmaPDF: ${error}`);
+  });*/
+
+  /*alert("entro")
+  let result;
+  try {
+      result = await context.invokeFunction("firmarPDF", { pdf: `${base64Pdf}`, image: `${signatureContent}` });
+      if (result.data) {
+          // Handle the result (e.g., display it in a message)
+          alert("res exitosa")
+      }
+  } catch (error) {
+      alert("Error al firmar el PDF:");
+      alert(error)
+  }*/
+
+  /*let servicePath = "/appconsumos_qa_mb/Services/app_consumos_qa.service";
+  let functionDef = {
+      "Name": "firmarPDF",
+      "Parameters": {
+          "pdf": `${base64Pdf}`,
+          "image":`${signatureContent}`
+      }
+  };
+  let headers = null;
+  return context.callFunction(servicePath, functionDef, headers).then((result) => {
+      //Because this Function Import return an Edm.Int64 type data, the result in result will simply be an integer value.
+      alert("res exitosa")
+      return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js",
+      });
+  }).catch((error) => {
+      alert(error)
+  });*/
+
+  /*return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/oData/Call_firmarPDF.action",
+      "Properties": {
+          "OnFailure": {
+              "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+              "Properties": {
+                  "Message": "Error - {#ActionResults:Call_firmarPDF/error}"
+              }
+          },
+          "OnSuccess": "/appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js",
+          "Target": {
+              "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+              "Path": `/firmarPDF(pdf='${base64Pdf}',image='${signatureContent}')`,
+              "RequestProperties": {
+                  "Method": "GET",
+                  "FetchCSRF": true
+              }
+          }
+      }
+  })*/
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js":
 /*!******************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_Agregar_Solicitud_Campo.js ***!
@@ -2244,6 +2407,32 @@ function Rechazar_Solicitud_Revision_Componentes_Campo(context) {
   }).catch(error => {
     alert(`Error ${error.message}`);
   });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js":
+/*!*******************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Response_firmarPDF)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Response_firmarPDF(context) {
+  let actionResult = context.getActionResult("Call_FirmarPDF2");
+  alert("1");
+  //let data = JSON.parse(actionResult.data)
+  //alert(JSON.stringify(data))
+  //alert("2")
+  //alert(JSON.stringify(context.data))
 }
 
 /***/ }),
@@ -5493,6 +5682,7 @@ function Query_Lista_Abast(context) {
     filtro = `$filter=almacen_sociedad eq '${dataAlmacen.sociedad}' and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}' and tipo eq 'ABASTECIMIENTO' and correo_creacion eq '${correo}' &$orderby=fecha_creacion desc &$expand=operario,aprobador,autorizador,almacen`;
   }
   return filtro;
+
   //lista_abast
 }
 
@@ -6481,11 +6671,12 @@ function Initialize(context) {
 
   // Initialize all your Data sources
   let _app_consumos_qa = context.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOffline.action');
+  let _app_consumos_qa_v2 = context.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOffline.action');
   let ZBODEGA_AGO_SRV = context.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action');
 
   //You can add more service initialize actions here
 
-  return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV]).then(() => {
+  return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV, _app_consumos_qa_v2]).then(() => {
     // After Initializing the DB connections
 
     // Display successful initialization  message to the user
@@ -7389,6 +7580,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page":
+/*!****************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page ***!
+  \****************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Add Inline Signature","ShowTimestampInImage":false,"ShowXMark":true,"ShowUnderline":true,"WatermarkText":"","WatermarkTextMaxLines":5},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Title":"Autorizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Campo","ActionBar":{"Items":[],"_Name":"ActionBar3","_Type":"Control.Type.ActionBar"}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page":
 /*!**********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Detalle_Orden_Campo.page ***!
@@ -7405,7 +7606,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page"}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -7746,6 +7947,16 @@ module.exports = {"_Type":"Action.Type.Message","Message":"Esta acción eliminar
 /***/ ((module) => {
 
 module.exports = {"PopoverItems":[{"Enabled":true,"Icon":"sap-icon://synchronize","OnPress":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncStartedMessage.action","Title":"Sync Changes","Visible":"$(PLT,true,true,false)"},{"Enabled":true,"Icon":"sap-icon://headset","OnPress":"/appconsumos_qa_mb/Actions/Application/NavToSupport.action","Title":"Support","Visible":true},{"Enabled":true,"Icon":"sap-icon://refresh","OnPress":"/appconsumos_qa_mb/Actions/Application/AppUpdateProgressBanner.action","Title":"Check for Updates","Visible":"$(PLT,true,true,false)"},{"Enabled":true,"Icon":"sap-icon://hint","OnPress":"/appconsumos_qa_mb/Actions/Application/NavToAbout.action","Title":"About","Visible":true},{"Enabled":true,"Icon":"sap-icon://reset","OnPress":"/appconsumos_qa_mb/Actions/Application/ResetMessage.action","Title":"Reset","Visible":true},{"Enabled":true,"Icon":"sap-icon://log","OnPress":"/appconsumos_qa_mb/Actions/Application/Logout.action","Title":"Logout","Visible":"/appconsumos_qa_mb/Rules/Application/ClientIsMultiUserMode.js"}],"_Type":"Action.Type.PopoverMenu"}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/Call_FirmarPDF.action":
+/*!***************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/Call_FirmarPDF.action ***!
+  \***************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_FirmarPDF2"},"Target":{"Service":"/appconsumos_qa_mb/Services/backend_REST.service","Path":"/firmarPDF","RequestProperties":{"Method":"POST","FetchCSRF":true}}}
 
 /***/ }),
 
@@ -8159,6 +8370,66 @@ module.exports = {"_Type":"Action.Type.OfflineOData.Upload","ActionResult":{"_Na
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOffline.action":
+/*!****************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOffline.action ***!
+  \****************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.OfflineOData.Close","ActionResult":{"_Name":"close"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineSuccessMessage.action","Service":"/appconsumos_qa_mb/Services/backend_REST.service","Force":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineFailureMessage.action":
+/*!******************************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineFailureMessage.action ***!
+  \******************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ToastMessage","Message":"Falló al cerrar el servicio de datos v2 - {#ActionResults:close/error}","NumberOfLines":1,"Duration":3,"IsIconHidden":true,"Animated":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineSuccessMessage.action":
+/*!******************************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/CloseOfflineSuccessMessage.action ***!
+  \******************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ToastMessage","Message":"El servicio de datos v2 se cerró correctamente","NumberOfLines":1,"Duration":3,"IsIconHidden":true,"Animated":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOffline.action":
+/*!*********************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOffline.action ***!
+  \*********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/appconsumos_qa_mb/Services/backend_REST.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false}]}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOfflineFailureMessage.action":
+/*!***********************************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOfflineFailureMessage.action ***!
+  \***********************************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.BannerMessage","Message":"No se pudo inicializar el servicio de datos v2 de la aplicación - {#ActionResults:init/error}","Duration":7,"Animated":true}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Call_firmarPDF.action":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Call_firmarPDF.action ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CallFunction","ActionResult":{"_Name":"Call_firmarPDF"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error - {#ActionResults:Call_firmarPDF/error}"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa_v2.service","Function":{"Name":"firmarPDF","Parameters":{"image":"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","pdf":"JVBERi0xLjMKJf////8KNyAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDEgMCBSCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9Db250ZW50cyA1IDAgUgovUmVzb3VyY2VzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Qcm9jU2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXQovRm9udCA8PAovRjEgOCAwIFIKPj4KL1hPYmplY3QgPDwKL0kxIDkgMCBSCj4+Ci9Db2xvclNwYWNlIDw8Cj4+Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9MZW5ndGggMzIyCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nJWTz0rEMBCH73mKeYHdnf/TwtKDqKC3xd7Eg9T0tsj6/gdJVw/alCUUShvCfPl9mSFAQNgRIETPMJ3TJdFq7W78WSRg7PbsPaJCYOwxHMZzOjwSUAfjnF6Pxm6BPgcPsFOEY6gbo4vPnhlDnZwHYISjT06M0TP65LOHzwPgG4zP6WFMp2QIhAhkWHZ/5fRy63Rm4KHVU2Gwz65hLqH/QIzNJMZNlIqT51DvvWTVPyhpDyU3UpmL9xV13KzO6nk+ljzv5e0UslbXRlrU1VFCgmtdbeVlOwmrGGfB8qx0abMu2biTAaw0t5UJoPJVldbGW6TVgdKtlbUVl+00rKKcpasq82ZlVO8wvvaW59pgtlEWUXWMkNhaVVt52U7BKsFZbKXqksrEX4vyPqLr0QDBO/39mc7p8ERw/5lO6RuC0x8HCmVuZHN0cmVhbQplbmRvYmoKMTEgMCBvYmoKKFBERktpdCkKZW5kb2JqCjEyIDAgb2JqCihQREZLaXQpCmVuZG9iagoxMyAwIG9iagooRDoyMDI1MDYyNzE0MjgyMFopCmVuZG9iagoxMCAwIG9iago8PAovUHJvZHVjZXIgMTEgMCBSCi9DcmVhdG9yIDEyIDAgUgovQ3JlYXRpb25EYXRlIDEzIDAgUgo+PgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvRm9udAovQmFzZUZvbnQgL0hlbHZldGljYQovU3VidHlwZSAvVHlwZTEKL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKPj4KZW5kb2JqCjQgMCBvYmoKPDwKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL1BhZ2VzIDEgMCBSCi9OYW1lcyAyIDAgUgo+PgplbmRvYmoKMSAwIG9iago8PAovVHlwZSAvUGFnZXMKL0NvdW50IDEKL0tpZHMgWzcgMCBSXQo+PgplbmRvYmoKMiAwIG9iago8PAovRGVzdHMgPDwKICAvTmFtZXMgWwpdCj4+Cj4+CmVuZG9iagoxNCAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL0hlaWdodCA2MwovV2lkdGggNDkzCi9CaXRzUGVyQ29tcG9uZW50IDgKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0NvbG9yU3BhY2UgL0RldmljZUdyYXkKL0RlY29kZSBbMCAxXQovTGVuZ3RoIDI1NTgKPj4Kc3RyZWFtCnic7Zy5teU2DECZOHHEc9yAMqcqgQ34HJWgElQCS1AJjCZW4sSRSlAJKkEd0J8AQYKb3ps/9l+ehGDmaaNIXAAEF30hgnSrlxEO5aBBlBSXkt///OwafISs1svRvx3qIxxOn12zD5U//vrsGnyADEB2XXdrj04Ya+3u3NwxN59dt4+UK8CWh7WbtVrIzdptsvZQeN5hV59duw+UK8CerV37Ny/ugPabX490Zb2Wa18AtrLWDruL48LTDpcGOHkZuQDszdodU7LB0w6X1A37tURj4j0N1h5SCHnDfl3pwKmPUYjF2lkIccN+XVnD8Nol5eqG/cICQ+yth9+TtdsN+3XFebPdaFZ0tXa6Yb+szMkkWe9m0G7YLypuiK3ZsbZ2uWG/qGxstsyJ3K29Yb+maEzDmagb9otKd2x9fs7csF9T1q3cnADpeTi6Yb+KDKa2EWW01obz0w2b7+NZ13XW32LNd/DVXToh9fzGU9fvY8uaLl+bP7KOnywtz54tl0N/g91amGm79Nv8/U+boSO8KCcj7ly5jrRga5vK/uWV0vuaGiHmHz9OHLY/mBVjBmcSy/4Ghv0+eRa2m1X+2mIiq36udtdeRg4WYKdhzDbivxDG9xTut9R+hypc6f2RBp9Q85rJwob7cqGz+XZHujDwjhRKHE1eolFPFJjJ07BPO7dOKfXfuH4xVsrFxd/qheCvY/VyELfmuQ2uGLfLdEP6hxx9E1XbtQduDKSgRcTJGp/umUJ3iQXFy5kDUZG7e//Cyve7qTJRDwvM5Rw2/Oz9eztmr7wPVwb1fKCxgQ0Gy0Cr60cwb8lKWCZvHX1qse54YaXDk15TcvKt3met8LlgHNFfl/MWz3FlpAfTGNHBR28na8u1iSiw6MProrZgm1vNT4IZiCywJA7SkbmqMPvjc4oq61DLZoGFPAGbrGxSrNSQsnUrO+t0DzExepd79oCFRasFLwHv5pu6vU5Wtk6Fmw18PSbW2VoFz8WBEyvlvM9dU59YeqquwR9N1yaILsgy/Q+MvNN/Fysya63J5ynC8owhDULcl0P5U0Lz0FqHPqevFHgex5+CjY3RGaryVeAineXe5XYBuZypBts3tgKb0w71SKNjBhtVbEoVFpJtOHTb03TU9th07S7WMPFeE8lsaTUX7qG+QWlE5kGIOgnw5YmXuIf7J/bq9VGBpTwFW9Rgg0Y8633Vy0604e0EC6yyb8GmuFnAZrSpHl6Jq9bLVsIGez+w4z5vcTaDFtdAsS1jy7Wpmh2PuK7tgQz4WozvjprMHTvrz2PxyZ2SR/RoWBsvv39QYEV+2rMVZKKoWl+pAwKbGPBATpZ51wbqSGBDEFU+JiuRQhtJq4G2rwdqFHNTIac9gw2qmn3TT+N4Adu/ybHeoeZLzbWT7Cyxz4HIzOklzUBR5kQRmcgOmcKz6DBz8Ki5lV06LbAiT8HGd08RFToSfkkTsWBEMRDvPIWOWp3DdqmbRUNI+97QHPJPrAc2mTGQyXODN3b8/7TnymHvWH34bAT77a7i2uR4cCG4ciJQUIxdzsRFr1AoGfXgNrotJLLBYVUe+6NjQwTyBSr5oMCaPAFbUjbOUIFSlfQqJsFuDe/H5k30s4Tt+Q0t2BRdsR6Ttfk8Nn+ODAfj+OkIhMOewrQKfBkkfZZmSqWRyscsiDNRInHsio+F/rWngeKeNxreS7elL6v0LScF1uQctkv+Vl/MylGB7tWY2xI8NcJp9K6NVF+BjSHINGF72gh7s8XAgj2HVjeFIHQ2AmGwnV8MQWuoTFeALopIsjNKm1MxIkmcawssFJ11LKNjqsgDRzZor8SrdoFVeXpS5egYKjS3zuSlY+4N/25BR6NowAZr3DH7xtg0TB7iEfWHsG2ZeDHYU2jn4zgeYbtW+DuX4OKgwCP/BowMsGe9d6YfMJWYOHdsxk3zWoaJHFbT0C8P/KBLBnIbn1ZDEw0ddlHgr8F2qgBUxnn7gYa3YprGZIPzwQigFClasEGFSbaj/VltAm24R1lbZE0M9h5t4WEcD7CdN5sIOPRGpnQR3iMGFnOaponEsTU/wqJ6W5GFvzL15SwVVCymYPv6WndytmT7JGzIgrOBU18EYAIAtj95CAup+Kdg+ybPT8Eu1XgSzALsNRiFSQfn0dBIeHZGLHbJdYSzpkH7LlkLR1hvuduaJFldxxqT5XuGH6kHBf4C7HVGq09gH36QlDqRB3DgBaj38D7Ygr6utY9hl5PRzbWMCNuEccSUR7+84+fZGVM4szFcKY1KG7hVYCH1nh7uJGoufA50kOZ7YGd0aX5U4Ltgp+c4bFjyXIt7DgTg4/gcw3wV9hZg+z57YrDpW2q4p7PlsCLAlmU4O0lKfZVjIj6Wf4AB6h/OdSFFZe4087UXbyvx2PWr9JultDApgU2lGE89FV5cw3wYhAo2Q/PWUdM1TA/OCmzIT8M2fro3zO0M+R2zr+QElsgGUDlsaUPPn2fjOp0IpFwukfAcXwkgaa+eYbPGUJEKayGS1HNhZdLM9M4juq9+MT8YrCIbR4OwsVLlKQRaX1MZHhbYkJ+Grfz/rrXwQh7HV8sC09YzrddgL6iLFmxG29+bZprhObhtpxXl0Nk3BIoLqx+Q5VQ2JppoAjw7S1UcBkx+Xq+WMGFFQkCI/QtL8NfiKT9TWDOfY2wUyG2yLu+BjeY9UycSXzcFy4I7FmZnFdjYkq4NO9L2N6d7iOg5HJ1EQzjO7dsV14exVYM10sbXjd6KYDor2SUgsz0Dkm4NQuu4io6ZNv2pnr3Cyxja2U15iaN8psC6vAu2pEA+JMY1+ZUEPjykayVsfIPJp0slgx1okyPscUImGsnsjYZjOrFvl7BuNEhw3XFjG5p5vb+38i7YCHmXpNh16EU3rERPsBk/UiSD7UbqtEjmylh5EJ41h02046DSqE50at7Zqle+0jXwepSywaoBejNMnLXMwjzaC/Dt5H2wqbstRz2kY58rhg6dwWay9/kSkk1h+35QlBNXATae52vYuPrWarGJHQKYUnuoYvwUaL7964tLO115J2xkoAracbhi0560Chu3H53CRo+Ov0rYS4EWq9SCqMg2pN4f7HQwJ9uMvq6059BasDG1SzUB3urx4WYBmOSJI6Q9KliG5WoEZSHUJmuDfn9kNhGk4ZhZp2PsV6bi36G0Wwf37RKtauc5Fta9GceTvaQnsy+Otivk5WF3vgtNTvJT6T5at6twSdJAnxqStWC6SaW6J1V2Z+izVf7iPhYjB9iyuEw9Pac6XhNe97bLRnoP/3ap6fIKfn1pN/yFv/VqCw1oxsefAzzc2vyd5JKwryo37AvJDftCcsO+kNywLyQ37AvJDftCcsO+kNywLyQ37AvJDftCcsO+kNywLyQ37AvJDftCcsO+kPz2x2fX4H+TfwHEocVNCmVuZHN0cmVhbQplbmRvYmoKOSAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL0JpdHNQZXJDb21wb25lbnQgOAovV2lkdGggNDkzCi9IZWlnaHQgNjMKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0NvbG9yU3BhY2UgL0RldmljZVJHQgovU01hc2sgMTQgMCBSCi9MZW5ndGggMTY2MQo+PgpzdHJlYW0KeJztncGNIzcQRQ+7G4BzcAA+OALDByfkFAw4AAezaTggrw8DDASpm/z1q8gm1e+hT1KxWEVJr6UWNfPjR4df//m9cWSCATbly9dvX75+u7oKAJW2mR/l3I3E5PAeoHHYCMXMH3IWIzE5vAFoHHbBlnY3z0UNAdSAxmEXvLffSra5fQAUg8ZhC5T326G32Wgc3gY0DlsgXuJG43BD0DisT+jLSjQOdwONw+IY0kbjcCvQOCxO+4vLttvFtOObABgIGoeViW4gfLpFzDyyA4DhoHFYFn0D4dnmQzH5sA4AZoDGYVm8bSd8xQl3A43DmuhCPoxH43Af0DisSVSzaBxuCxqHBfEci8bhnqBxWI2MYNE43BA0DquRsSsahxuCxmEp8moVTY7G4W0o0fif3//Qj6LCYQO6z4S/v//8eXwMKZFqaJ85GofdqXo3HjI5Pr8P7Uf/VeMlnG0jN7aXA6zPhRrH5G9P96EfpPHMP3HD/7AdaBzGYVxUqcJT8VVv43/67a/DQ4l5CmtH6jm7h9eROFzPtk7XtS2HuFbjI0z+3meKCR0Vrt5VJ3FPxV5Yvtq8fMSwQpvNdJqYJ6/6ZNdvqfFuQK3wQ8P15Iep/vv3l9cj00h0HZIrkywgs3SXaFwJOByimDxZat5RnsavFZqutdr1Gdd1YcsG0zR+FpaXhjE8pJTDyCeHG63ZXTSqUlrILGBo3swpIImiWe8yS+NGjxI5fwbPtFlSaHmNR8PGdV3bssHuGvcy6D45i8xrvPsBIaRx3aiZBdQ17j2aVSiC1S93d01u11nlcEXjoYRiZKgjw2n5Isu7Ht2yx2SN15o8k0EseKjGvV4a8cqaZx6LjMajp54Mtsb1sJI35HmRPsaXmPkx2DBSodNK2tELiyYc0bLNmu/G2/HtVN6MYsGftysaF8toT/RaT6j91+BuSe2xtRofZPIqjbcvvCQ1Lr7YQ5YoSRitMFPq0PUJFeZ1XduyzeIabyS3VawLsBET1XijksO7jAUPadwwqq7xs+SLa7wdoG9lUcgrxVNHlfCjHUWdVtLO6K5rW86w5k4Vb2yoPPv08YGncV1xxoKLp49ua6F5xdqUuwoxNN6+9+zLzREaV2JsbwySTDdnocZHLOMKLWdYYd94icZLKmwPebzL1rj44SLZTiO4UYNC6JShaHyEyaPbVNr36j8REsurUu4iDlc6Ck0qFnlt17UtJ1lf43qefIXt+Md7Mxo/lGG0TbuXswJE3kDj3taURsAIjZc4/PKtGkbCfIUTvtksX8MkK/wYP29+r8jMx//1NX4WnLyyYWg8GpCnUNHdKaIm39rhVdeHk4a8dpNhect5VvgLh1to/CnVahrXvz8dqnHjaTDC5KKl2/d2nby4xsVJn+InOzzUeG3Y/L/H0ljJJJdoPD+2SuPijVtoXPz+9M4aj25N0ScSB5YoxRBFidBC7XhOU8Ku7bq85RLm//xHGetJLDpRo/Ju/o00rswlLmB7ZWyHz9F4ucMPBzbGVnnM+NpuhHmqhFb4MWREeaNbLuE9NO59xdm4fajGvRnbSfTFbA+3501qvNbkr0Yd5PDD4WcZ8h6LhinBnnY8RyX7mq/cCS2XsKbGz27P7JcLnRT21bi4F9F+vHbUeGZ7YXTGswy1cp6s8VDCxip1R00rco7Dp+1XWVnjhT8kaQcbelnt5z/KLG2Niw+Z/nBkHpEkjzqd4PDDVE/3JjVuZBPjo3rMqCm5CNFJC7se2nKe7TRuiKgbOU3jejvt5bL3b9vi7Z5u8hovNLm4G7DQ4a8Jk6kAdBbXuGHyM+F40stoXDy6BSjdiQurX0qKXvyJPgEu13i5w1/TliQE6LK+xpOXtcXCQsHX/qHa0EWYdkdGtYfZPCdP1ng7oGpqcZ8MB0fhU25TjWcEKNYwQeNKAUmN1+70trfZ62uuDOzSeMmMfkE9zdKel+POR+HzbejPf+yx0fxJh0c1/vqPOJNnE+MUEFrq0bN7j/44jYe0WTXjYQFGPRw3OQqfbCUat1/IZ8PFKcQybKXoGhf/pXJ09kHONGow6ixccI/JL6WzAvRiOG51FD7Tqt6NAyzItNdRo4AJs8DNQeMAAFuDxgEAtgaNAwBsDRoHANgaNA4AsDVoHABga9A4AMDWoHEAgK1B4wAAW4PGAQC2Bo0DAGwNGgcA2Bo0DgCwNWgcAGBr0DgAwNagcQCArUHjsBT/A2bVT9EKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTUKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwOTg3IDAwMDAwIG4gCjAwMDAwMDEwNDQgMDAwMDAgbiAKMDAwMDAwMDkyNSAwMDAwMCBuIAowMDAwMDAwOTA0IDAwMDAwIG4gCjAwMDAwMDAyNTEgMDAwMDAgbiAKMDAwMDAwMDExOSAwMDAwMCBuIAowMDAwMDAwMDE1IDAwMDAwIG4gCjAwMDAwMDA4MDcgMDAwMDAgbiAKMDAwMDAwMzgzNCAwMDAwMCBuIAowMDAwMDAwNzMxIDAwMDAwIG4gCjAwMDAwMDA2NDUgMDAwMDAgbiAKMDAwMDAwMDY3MCAwMDAwMCBuIAowMDAwMDAwNjk1IDAwMDAwIG4gCjAwMDAwMDEwOTEgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSAxNQovUm9vdCAzIDAgUgovSW5mbyAxMCAwIFIKL0lEIFs8OWUxZjQ5YjdmNDM1Y2EwNTRhYTdiNTljZTM3YmI2ZTc+IDw5ZTFmNDliN2Y0MzVjYTA1NGFhN2I1OWNlMzdiYjZlNz5dCj4+CnN0YXJ0eHJlZgo1Njc4CiUlRU9GCg=="}}}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action":
 /*!**************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action ***!
@@ -8406,6 +8677,26 @@ module.exports = {"DestinationName":"ZBODEGA_AGO_SRV","OfflineEnabled":true,"Sou
 /***/ ((module) => {
 
 module.exports = {"DestinationName":"app.consumos.qa","OfflineEnabled":true,"SourceType":"Mobile"}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Services/app_consumos_qa_v2.service":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Services/app_consumos_qa_v2.service ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DestinationName":"app.consumos.qa.v2","OfflineEnabled":true,"SourceType":"Mobile","RestService":false}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Services/backend_REST.service":
+/*!***************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Services/backend_REST.service ***!
+  \***************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"DestinationName":"app.consumos.qa","OfflineEnabled":false,"SourceType":"Mobile","RestService":true}
 
 /***/ }),
 
