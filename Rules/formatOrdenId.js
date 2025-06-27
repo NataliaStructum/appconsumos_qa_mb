@@ -22,6 +22,13 @@ export default function formatOrdenId(context) {
 
     }
 
+    if (titulo =="Lista_Historico_Ingenio" || titulo =="Detalle_Historico_Ingenio" || titulo =="Lista_Historico_Campo"|| titulo =="Detalle_Historico_Campo") {
+        let valor = context.binding.orden_orden;
+        let limpio = valor.replace(/^0+/, '');
+        return limpio;
+
+    }
+
 
 
 
