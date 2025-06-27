@@ -42,8 +42,18 @@ export default async function FirmarSolicitud_Campo(context) {
         alert("sisiii")
         if (result && result.data) {
 
-            alert(`${JSON.stringify(actionResult.data)}`);
+            alert(`${JSON.stringify(result.data)}`);
+            alert(result.data.value)//el pdf en base64
             let code = result.data.Code;
+
+            /*context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
+                "Properties":{
+                    "Path": result.data.value,
+                    "MimeType": "application/pdf",
+                    "OnSuccess":""
+                }
+            });*/
             //let mensaje = result.data.Message;
 
             if (code == 200) {

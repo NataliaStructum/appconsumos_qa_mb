@@ -86,6 +86,7 @@ let appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_abast_action
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_ingenio_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Ingenio.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Ingenio.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_abast_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Abast.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Abast.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Rechazar_Campo.action")
+let appconsumos_qa_mb_actions_opendocument_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/openDocument.action */ "./build.definitions/appconsumos_qa_mb/Actions/openDocument.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action")
@@ -365,6 +366,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_ingenio_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_ingenio_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_abast_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_abast_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_campo_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_rechazar_campo_action,
+	appconsumos_qa_mb_actions_opendocument_action : appconsumos_qa_mb_actions_opendocument_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action,
@@ -1926,8 +1928,17 @@ async function FirmarSolicitud_Campo(context) {
   }).then(result => {
     alert("sisiii");
     if (result && result.data) {
-      alert(`${JSON.stringify(actionResult.data)}`);
+      alert(`${JSON.stringify(result.data)}`);
+      alert(result.data.value); //el pdf en base64
       let code = result.data.Code;
+      context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
+        "Properties": {
+          "Path": result.data.value,
+          "MimeType": "application/pdf",
+          "OnSuccess": ""
+        }
+      });
       //let mensaje = result.data.Message;
 
       if (code == 200) {} else {}
@@ -8617,6 +8628,16 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Rechazar_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error actualizando la solicitud - {#ActionResults:Update_SolicitudesApp_Rechazar_Campo/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Detalle_Solicitudes_Campo/#ClientData/id_de_solicitud}}"},"Properties":{"aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha","estado":"Rechazado","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","comentarios_aux":"#Page:Revision_Solicitud_Campo/#Control:comentarios_aux/#Value"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/openDocument.action":
+/*!*************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/openDocument.action ***!
+  \*************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.OpenDocument","ActionResult":{"_Name":"openDocument"},"Path":"\"\"","MimeType":"application/pdf"}
 
 /***/ }),
 

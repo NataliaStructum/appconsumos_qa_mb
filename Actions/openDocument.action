@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.OpenDocument",
+	"ActionResult": {
+		"_Name": "openDocument"
+	},
+	"Path": "\"\"",
+	"MimeType": "application/pdf"
+}
