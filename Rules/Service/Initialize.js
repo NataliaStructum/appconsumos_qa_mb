@@ -4,11 +4,12 @@ export default function Initialize(context) {
 
     // Initialize all your Data sources
     let _app_consumos_qa = context.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOffline.action');
+    let _app_consumos_qa_v2 = context.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOffline.action');
     let ZBODEGA_AGO_SRV = context.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action');
 
     //You can add more service initialize actions here
 
-    return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV]).then(() => {
+    return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV, _app_consumos_qa_v2]).then(() => {
         // After Initializing the DB connections
 
         // Display successful initialization  message to the user

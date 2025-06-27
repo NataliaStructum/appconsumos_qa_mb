@@ -240,6 +240,12 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page"
+					}
+				},
 				"Image": "sap-icon://accounting-document-verification",
 				"Enabled": true,
 				"ButtonType": "Primary",

@@ -1,0 +1,6 @@
+{
+	"DestinationName": "app.consumos.qa",
+	"OfflineEnabled": false,
+	"SourceType": "Mobile",
+	"RestService": true
+}

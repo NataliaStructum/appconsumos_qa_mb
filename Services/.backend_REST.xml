@@ -35,7 +35,7 @@
                 </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
                 <FunctionImport Name="generatePDF" Function="appconsumos_qa.generatePDF"/>
-                <FunctionImport Name="firmarPDF" Function="appconsumos_qa.firmarPDF"/>
+                <ActionImport Name="firmarPDF" Action="appconsumos_qa.firmarPDF"/>
             </EntityContainer>
             <EntityType Name="Empleados">
                 <Key>
@@ -292,11 +292,11 @@
                 <Parameter Name="image" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
             </Function>
-            <Function Name="firmarPDF" IsBound="false" IsComposable="false">
+            <Action Name="firmarPDF" IsBound="false">
                 <Parameter Name="pdf" Type="Edm.String"/>
                 <Parameter Name="image" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
-            </Function>
+            </Action>
             <Annotations Target="appconsumos_qa.Solicitudes/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
             </Annotations>
