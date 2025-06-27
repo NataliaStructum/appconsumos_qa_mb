@@ -106,7 +106,7 @@
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton2",
-							"IsVisible": true,
+							"IsVisible": "/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js",
 							"Separator": true,
 							"Styles": {
 								"Image": "Button",
@@ -118,7 +118,8 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://detail-view",
 							"ImagePosition": "Leading",
-							"Enabled": false
+							"Enabled": false,
+							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Historico_Sol_Ingenio.js"
 						}
 					],
 					"Layout": {

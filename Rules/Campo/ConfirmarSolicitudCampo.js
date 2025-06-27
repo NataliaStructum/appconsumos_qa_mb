@@ -21,16 +21,31 @@ export default function ConfirmarSolicitudCampo(context) {
                 let totalComponentes = results.length;
 
                 if (listaDeAgregados.length == totalComponentes) {
-                    return context.executeAction({
-                        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-                        "Properties": {
-                            "Title": "Confirmación",
-                            "Message": "¿Estás seguro de que deseas confirmar la solicitud aprobada por ítems?",
-                            "OKCaption": "Aceptar",
-                            "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action",
-                            "CancelCaption": "Cancelar"
-                        }
-                    })
+                    // Validaciones sobre el campo 'aprobado'
+                    let todosRechazados = listaDeAgregados.every(m => m.aprobado === 'Rechazado');
+                    let alMenosUnoAprobado = listaDeAgregados.some(m => m.aprobado === 'Aprobado');
+
+                    if (todosRechazados) {
+                        return context.executeAction({
+                            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                            "Properties": {
+                                "Title": "Solicitud No Aprobada",
+                                "Message": "No se puede aprobar la solicitud porque todos los materiales fueron rechazados."
+                            }
+                        });
+                    }
+                    if (alMenosUnoAprobado) {
+                        return context.executeAction({
+                            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                            "Properties": {
+                                "Title": "Confirmación",
+                                "Message": "¿Estás seguro de que deseas confirmar la solicitud aprobada por ítems?",
+                                "OKCaption": "Aceptar",
+                                "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action",
+                                "CancelCaption": "Cancelar"
+                            }
+                        })
+                    }
 
                 } else if (listaDeAgregados.length < totalComponentes) {
                     return context.executeAction({
