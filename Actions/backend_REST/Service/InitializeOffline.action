@@ -3,7 +3,7 @@
 	"ActionResult": {
 		"_Name": "init"
 	},
-	"OnFailure": "/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOfflineFailureMessage.action",
+	"OnFailure": "/appconsumos_qa_mb/Actions/backend_REST/Service/InitializeOfflineFailureMessage.action",
 	"ShowActivityIndicator": true,
 	"ActivityIndicatorText": "Downloading...",
 	"Service": "/appconsumos_qa_mb/Services/backend_REST.service",
