@@ -4,7 +4,7 @@ export default function Initialize(context) {
 
     // Initialize all your Data sources
     let _app_consumos_qa = context.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOffline.action');
-    let _app_consumos_qa_v2 = context.executeAction('/appconsumos_qa_mb/Actions/app_consumos_qa_v2/Service/InitializeOffline.action');
+    let _app_consumos_qa_v2 = context.executeAction('/appconsumos_qa_mb/Actions/backend_REST/Service/InitializeOffline.action');
     let ZBODEGA_AGO_SRV = context.executeAction('/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action');
 
     //You can add more service initialize actions here

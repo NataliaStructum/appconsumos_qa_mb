@@ -17,7 +17,7 @@ export default async function FirmarSolicitud_Campo(context) {
         signatureContent = signatureObject.content.base64Encoding();
     }
 
-    alert("entro firmar")
+    //alert("entro firmar")
 
 
     return context.executeAction({
@@ -39,12 +39,12 @@ export default async function FirmarSolicitud_Campo(context) {
             }
         }
     }).then((result) => {
-        alert("sisiii")
+        //alert("sisiii")
         if (result && result.data) {
 
-            alert(`${JSON.stringify(result.data)}`);
+            //alert(`${JSON.stringify(result.data)}`);
             alert(result.data.value)//el pdf en base64
-            let code = result.data.Code;
+            
 
             /*context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
@@ -56,11 +56,6 @@ export default async function FirmarSolicitud_Campo(context) {
             });*/
             //let mensaje = result.data.Message;
 
-            if (code == 200) {
-
-            } else {
-
-            }
         }
 
 

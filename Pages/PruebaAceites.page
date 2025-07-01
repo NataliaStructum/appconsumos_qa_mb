@@ -1,0 +1,59 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "Subhead",
+						"Footnote": "Footnote",
+						"Description": "Description",
+						"StatusText": "Status",
+						"SubstatusText": "Substatus",
+						"DetailImage": "res://mdk_logo.png",
+						"DetailImageIsCircular": false,
+						"BodyText": "Show the body text",
+						"HeadlineText": "Headline",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		},
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "TabItem0",
+					"_Name": "Motor"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "TabItem0",
+					"_Name": "Hidraulico"
+				}
+			],
+			"Position": "Top",
+			"TabStripType": "Normal",
+			"SwipeEnabled": true
+		}
+	],
+	"_Type": "Page",
+	"_Name": "PruebaAceites",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

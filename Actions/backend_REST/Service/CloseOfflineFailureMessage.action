@@ -1,6 +1,6 @@
 {
 	"_Type": "Action.Type.ToastMessage",
-	"Message": "Falló al cerrar el servicio de datos v2 - {#ActionResults:close/error}",
+	"Message": "Falló al cerrar el servicio de datos REST - {#ActionResults:close/error}",
 	"NumberOfLines": 1,
 	"Duration": 3,
 	"IsIconHidden": true,
