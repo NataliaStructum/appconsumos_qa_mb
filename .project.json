@@ -16,8 +16,7 @@
 		"AppId": "app.consumos.qa",
 		"Destination": [
 			"app.consumos.qa",
-			"ZBODEGA_AGO_SRV",
-			"app.consumos.qa.v2"
+			"ZBODEGA_AGO_SRV"
 		]
 	},
 	"Onboarding": {
