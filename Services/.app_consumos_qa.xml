@@ -33,9 +33,17 @@
                     <NavigationPropertyBinding Path="material" Target="MaterialesAlmacen"/>
                     <NavigationPropertyBinding Path="almacen" Target="AlmacenesApp"/>
                 </EntitySet>
+                <EntitySet Name="PlanillasAceites" EntityType="appconsumos_qa.PlanillasAceites">
+                    <NavigationPropertyBinding Path="almacen" Target="AlmacenesApp"/>
+                    <NavigationPropertyBinding Path="operario" Target="EmpleadosApp"/>
+                </EntitySet>
+                <EntitySet Name="ItemPlanillasAceites" EntityType="appconsumos_qa.ItemPlanillasAceites">
+                    <NavigationPropertyBinding Path="planilla" Target="PlanillasAceites"/>
+                    <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
+                </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
                 <FunctionImport Name="generatePDF" Function="appconsumos_qa.generatePDF"/>
-                <FunctionImport Name="firmarPDF" Function="appconsumos_qa.firmarPDF"/>
+                <ActionImport Name="firmarPDF" Action="appconsumos_qa.firmarPDF"/>
             </EntityContainer>
             <EntityType Name="Empleados">
                 <Key>
@@ -241,6 +249,54 @@
                 <Property Name="confirmacion_tec" Type="Edm.Boolean"/>
                 <Property Name="memorando" Type="Edm.Boolean"/>
             </EntityType>
+            <EntityType Name="PlanillasAceites">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="numero" Type="Edm.Int32"/>
+                <Property Name="fecha" Type="Edm.Date"/>
+                <NavigationProperty Name="almacen" Type="appconsumos_qa.AlmacenesApp">
+                    <ReferentialConstraint Property="almacen_sociedad" ReferencedProperty="sociedad"/>
+                    <ReferentialConstraint Property="almacen_almacen" ReferencedProperty="almacen"/>
+                    <ReferentialConstraint Property="almacen_centro" ReferencedProperty="centro"/>
+                </NavigationProperty>
+                <Property Name="almacen_sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="almacen_almacen" Type="Edm.String" MaxLength="4"/>
+                <Property Name="almacen_centro" Type="Edm.String" MaxLength="4"/>
+                <Property Name="contador_ini" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="contador_fin" Type="Edm.Decimal" Scale="variable"/>
+                <NavigationProperty Name="operario" Type="appconsumos_qa.EmpleadosApp">
+                    <ReferentialConstraint Property="operario_ficha" ReferencedProperty="ficha"/>
+                </NavigationProperty>
+                <Property Name="operario_ficha" Type="Edm.String" MaxLength="8"/>
+                <Property Name="material" Type="Edm.String" MaxLength="18"/>
+                <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="estado" Type="Edm.String" MaxLength="80"/>
+                <Property Name="total" Type="Edm.Decimal" Scale="variable"/>
+            </EntityType>
+            <EntityType Name="ItemPlanillasAceites">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <NavigationProperty Name="planilla" Type="appconsumos_qa.PlanillasAceites">
+                    <ReferentialConstraint Property="planilla_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="planilla_id" Type="Edm.Guid"/>
+                <NavigationProperty Name="equipo" Type="appconsumos_qa.Equipos">
+                    <ReferentialConstraint Property="equipo_equipo" ReferencedProperty="equipo"/>
+                </NavigationProperty>
+                <Property Name="equipo_equipo" Type="Edm.String" MaxLength="18"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="7"/>
+                <Property Name="kilometraje" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="consumo" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="op_ficha" Type="Edm.String" MaxLength="8"/>
+                <Property Name="op_nombre" Type="Edm.String" MaxLength="100"/>
+                <Property Name="contador_ini" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="contador_fin" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="observacion" Type="Edm.String" MaxLength="5"/>
+            </EntityType>
             <EntityType Name="VerSolicitudesAbiertas">
                 <Key>
                     <PropertyRef Name="id"/>
@@ -292,11 +348,11 @@
                 <Parameter Name="image" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
             </Function>
-            <Function Name="firmarPDF" IsBound="false" IsComposable="false">
+            <Action Name="firmarPDF" IsBound="false">
                 <Parameter Name="pdf" Type="Edm.String"/>
                 <Parameter Name="image" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
-            </Function>
+            </Action>
             <Annotations Target="appconsumos_qa.Solicitudes/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
             </Annotations>
@@ -304,6 +360,12 @@
                 <Annotation Term="Core.Computed" Bool="true"/>
             </Annotations>
             <Annotations Target="appconsumos_qa.ComponentesSolicitud/id">
+                <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="appconsumos_qa.PlanillasAceites/id">
+                <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="appconsumos_qa.ItemPlanillasAceites/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
             </Annotations>
             <Annotations Target="appconsumos_qa.VerSolicitudesAbiertas/id">
