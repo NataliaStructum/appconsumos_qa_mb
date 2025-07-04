@@ -113,6 +113,20 @@
 								"Visible": true,
 								"OnPress": "/appconsumos_qa_mb/Rules/Inventario/NavTo_Inventario.js"
 							}
+						},
+						{
+							"ContactCell": {
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								},
+								"_Name": "ContactCellItem4",
+								"DetailImage": "sap-icon://mileage",
+								"Headline": "Aceites y Lubricantes",
+								"Subheadline": "Gestionar Consumos de Aceites y Lubricantes",
+								"Description": "",
+								"Visible": true,
+								"OnPress": "/appconsumos_qa_mb/Rules/Aceites/NavTo_Aceites.js"
+							}
 						}
 					]
 				}
