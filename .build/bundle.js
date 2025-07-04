@@ -51,6 +51,7 @@ let appconsumos_qa_mb_actions_backend_rest_service_closeofflinesuccessmessage_ac
 let appconsumos_qa_mb_actions_backend_rest_service_initializeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/backend_REST/Service/InitializeOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/backend_REST/Service/InitializeOffline.action")
 let appconsumos_qa_mb_actions_backend_rest_service_initializeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/backend_REST/Service/InitializeOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/backend_REST/Service/InitializeOfflineFailureMessage.action")
 let appconsumos_qa_mb_actions_call_firmarpdf_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_FirmarPDF.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_FirmarPDF.action")
+let appconsumos_qa_mb_actions_call_sendmail_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_Sendmail.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_Sendmail.action")
 let appconsumos_qa_mb_actions_closemodalpage_cancel_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action")
 let appconsumos_qa_mb_actions_closemodalpage_complete_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Complete.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action")
 let appconsumos_qa_mb_actions_closepage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ClosePage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ClosePage.action")
@@ -291,6 +292,8 @@ let appconsumos_qa_mb_rules_logging_setuserloglevel_js = __webpack_require__(/*!
 let appconsumos_qa_mb_rules_logging_togglelogging_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/ToggleLogging.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/ToggleLogging.js")
 let appconsumos_qa_mb_rules_logging_tracecategories_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/TraceCategories.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/TraceCategories.js")
 let appconsumos_qa_mb_rules_logging_userlogsetting_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Logging/UserLogSetting.js */ "./build.definitions/appconsumos_qa_mb/Rules/Logging/UserLogSetting.js")
+let appconsumos_qa_mb_rules_rule_opendocumentoand_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js")
+let appconsumos_qa_mb_rules_rule_opendocumentoios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js")
 let appconsumos_qa_mb_rules_service_initialize_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Service/Initialize.js */ "./build.definitions/appconsumos_qa_mb/Rules/Service/Initialize.js")
 let appconsumos_qa_mb_rules_set_visiblebtnautorizar_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js */ "./build.definitions/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js")
 let appconsumos_qa_mb_rules_set_visiblebtnconfirmar_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/set_VisibleBtnConfirmar.js */ "./build.definitions/appconsumos_qa_mb/Rules/set_VisibleBtnConfirmar.js")
@@ -344,6 +347,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_backend_rest_service_initializeoffline_action : appconsumos_qa_mb_actions_backend_rest_service_initializeoffline_action,
 	appconsumos_qa_mb_actions_backend_rest_service_initializeofflinefailuremessage_action : appconsumos_qa_mb_actions_backend_rest_service_initializeofflinefailuremessage_action,
 	appconsumos_qa_mb_actions_call_firmarpdf_action : appconsumos_qa_mb_actions_call_firmarpdf_action,
+	appconsumos_qa_mb_actions_call_sendmail_action : appconsumos_qa_mb_actions_call_sendmail_action,
 	appconsumos_qa_mb_actions_closemodalpage_cancel_action : appconsumos_qa_mb_actions_closemodalpage_cancel_action,
 	appconsumos_qa_mb_actions_closemodalpage_complete_action : appconsumos_qa_mb_actions_closemodalpage_complete_action,
 	appconsumos_qa_mb_actions_closepage_action : appconsumos_qa_mb_actions_closepage_action,
@@ -584,6 +588,8 @@ module.exports = {
 	appconsumos_qa_mb_rules_logging_togglelogging_js : appconsumos_qa_mb_rules_logging_togglelogging_js,
 	appconsumos_qa_mb_rules_logging_tracecategories_js : appconsumos_qa_mb_rules_logging_tracecategories_js,
 	appconsumos_qa_mb_rules_logging_userlogsetting_js : appconsumos_qa_mb_rules_logging_userlogsetting_js,
+	appconsumos_qa_mb_rules_rule_opendocumentoand_js : appconsumos_qa_mb_rules_rule_opendocumentoand_js,
+	appconsumos_qa_mb_rules_rule_opendocumentoios_js : appconsumos_qa_mb_rules_rule_opendocumentoios_js,
 	appconsumos_qa_mb_rules_service_initialize_js : appconsumos_qa_mb_rules_service_initialize_js,
 	appconsumos_qa_mb_rules_set_visiblebtnautorizar_js : appconsumos_qa_mb_rules_set_visiblebtnautorizar_js,
 	appconsumos_qa_mb_rules_set_visiblebtnconfirmar_js : appconsumos_qa_mb_rules_set_visiblebtnconfirmar_js,
@@ -1931,11 +1937,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ FirmarSolicitud_Campo)
 /* harmony export */ });
+/* harmony import */ var _Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Rule_openDocumentoAnd.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js");
+/* harmony import */ var _Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Rule_openDocumentoIOS.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js");
+
+
 /**
  * Describe this function...
  * @param {IClientAPI} context
  */
+
 async function FirmarSolicitud_Campo(context) {
+  function sendEmail(pdf, image) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+      "Properties": {
+        "OnFailure": "",
+        "OnSuccess": "",
+        "Target": {
+          "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+          "Path": "/sendmail",
+          "RequestProperties": {
+            "Method": "POST",
+            "Body": {
+              "sender": "natalia.lopez@structum-co.com",
+              "to": "nlopez8066@outlook.com",
+              "subject": "Prueba",
+              "body": `${image}`,
+              "nombre": "pdfprueba.pdf",
+              "adj": `${pdf}`
+            }
+          }
+        }
+      }
+    }).then(result => {
+      if (result && result.data) {
+        alert(JSON.stringify(result));
+      }
+    }).catch(error => {
+      alert(error);
+    });
+  }
   const base64Pdf = `JVBERi0xLjMKJf////8KNyAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDEgMCBSCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9Db250ZW50cyA1IDAgUgovUmVzb3VyY2VzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Qcm9jU2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXQovRm9udCA8PAovRjEgOCAwIFIKPj4KL0NvbG9yU3BhY2UgPDwKPj4KPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0xlbmd0aCAyOTUKL0ZpbHRlciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCniclZO7TsQwEEV7f8X8wC7zvJNIUQokKOgQ6RAFWpJuC/j/AiXQQBytLEuWZVlzfI/HQkxMJyGm7JUu1/JZZLd3P/1uCil3Z0XP7JScZ07QdC13j0LS0bSU1yEUkYwldaSTMw3pCGUYFszK6RDoSMo04AJRzl4ZFyxILCPxG01P5WEqzyWYhJkkeD39NZeXW7eLIKRXb8WpWOAZsPR/IOVmkvIhyg2COR091qz+B2XtoexGqoChr6jTZnVRz/Ox5XlfZ0jaXl0baVNXR5kY73W1lbfjJOoWOhuvY6fLm3XZwZuMFGtzx/oDZF1VpbXxNml1oHV7ZW3F7TiNurnO1lWVoVmZ1DtMf3oLc+1jtlE2UXWMicVeVVt5O06hbqmzxU7VN8QUFdoKZW5kc3RyZWFtCmVuZG9iagoxMCAwIG9iagooUERGS2l0KQplbmRvYmoKMTEgMCBvYmoKKFBERktpdCkKZW5kb2JqCjEyIDAgb2JqCihEOjIwMjUwNjI3MTUyMDQwWikKZW5kb2JqCjkgMCBvYmoKPDwKL1Byb2R1Y2VyIDEwIDAgUgovQ3JlYXRvciAxMSAwIFIKL0NyZWF0aW9uRGF0ZSAxMiAwIFIKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL0Jhc2VGb250IC9IZWx2ZXRpY2EKL1N1YnR5cGUgL1R5cGUxCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCj4+CmVuZG9iago0IDAgb2JqCjw8Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9DYXRhbG9nCi9QYWdlcyAxIDAgUgovTmFtZXMgMiAwIFIKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFs3IDAgUl0KPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Rlc3RzIDw8CiAgL05hbWVzIFsKXQo+Pgo+PgplbmRvYmoKeHJlZgowIDEzCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDkzNCAwMDAwMCBuIAowMDAwMDAwOTkxIDAwMDAwIG4gCjAwMDAwMDA4NzIgMDAwMDAgbiAKMDAwMDAwMDg1MSAwMDAwMCBuIAowMDAwMDAwMjI2IDAwMDAwIG4gCjAwMDAwMDAxMTkgMDAwMDAgbiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwNzU0IDAwMDAwIG4gCjAwMDAwMDA2NzkgMDAwMDAgbiAKMDAwMDAwMDU5MyAwMDAwMCBuIAowMDAwMDAwNjE4IDAwMDAwIG4gCjAwMDAwMDA2NDMgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSAxMwovUm9vdCAzIDAgUgovSW5mbyA5IDAgUgovSUQgWzwwODRjMzgzN2I5NjMxNmVhYmQ5N2E0NDk1YmIwZmVkND4gPDA4NGMzODM3Yjk2MzE2ZWFiZDk3YTQ0OTViYjBmZWQ0Pl0KPj4Kc3RhcnR4cmVmCjEwMzgKJSVFT0YK`;
 
   //const pageProxy = context.getPageProxy();
@@ -1947,9 +1988,7 @@ async function FirmarSolicitud_Campo(context) {
   } else if (platform.isIOS) {
     signatureContent = signatureObject.content.base64Encoding();
   }
-
-  //alert("entro firmar")
-
+  alert("entro firmar");
   return context.executeAction({
     "Name": "/appconsumos_qa_mb/Actions/Call_FirmarPDF.action",
     "Properties": {
@@ -1968,10 +2007,15 @@ async function FirmarSolicitud_Campo(context) {
       }
     }
   }).then(result => {
-    //alert("sisiii")
     if (result && result.data) {
-      //alert(`${JSON.stringify(result.data)}`);
-      alert(result.data.value); //el pdf en base64
+      //alert(result.data.value)//el pdf en base64
+      context.b64Data = result.data.value;
+      sendEmail(result.data.value, signatureContent);
+      if (platform.isAndroid) {
+        return (0,_Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+      } else if (platform.isIOS) {
+        return (0,_Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
+      }
 
       /*context.executeAction({
           "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
@@ -7062,6 +7106,184 @@ function UserLogSetting(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js":
+/*!****************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Rule_openDocumentoAnd)
+/* harmony export */ });
+//import * as fs from '@nativescript/core/file-system';
+//import { isAndroid } from "@nativescript/core/platform";
+
+function Rule_openDocumentoAnd(context) {
+  const fs = context.nativescript.fileSystemModule;
+  //const platform = context.nativescript.platformModule;  
+
+  //let actionResult = context.getActionResult("GetArchivo");
+  //let b64Data = actionResult.data.Archivo;
+  //let formato = actionResult.data.FormatoArc.toLowerCase();
+  let b64Data = context.b64Data;
+  let formato = "pdf";
+
+  //Para generar un nombre aleatorio al documento
+  function generateRandomWithSpecialChars() {
+    const specialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', '<', '>', '?', '/', '.', ',', '`', '~'];
+    const randomIndex1 = Math.floor(Math.random() * specialChars.length);
+    const randomIndex2 = Math.floor(Math.random() * specialChars.length);
+    const randomNumber = Math.floor(Math.random() * 1001); // Genera un número entre 0 y 1000
+
+    return specialChars[randomIndex1] + randomNumber + specialChars[randomIndex2];
+  }
+
+  //Para convertir un data buffer a native byte array
+  let _Cover = function (byteArray) {
+    let array = android.util.Base64.decode(byteArray, android.util.Base64.DEFAULT);
+
+    /*if (platform.isAndroid) {
+        array = android.util.Base64.decode(byteArray, android.util.Base64.DEFAULT);
+    } else if(platform.isIOS){
+        alert("entro");
+        array = NSData.dataWithBytesLength(byteArray, byteArray.byteLength);
+    }*/
+    return array;
+  };
+  let mimeType = "";
+  switch (formato) {
+    case "pdf":
+      mimeType = "application/pdf";
+      break;
+    case "png":
+      mimeType = "image/png";
+      break;
+    case "jpg":
+      mimeType = "image/jpeg";
+    default:
+      mimeType = "text/plain";
+  }
+  ;
+  let docConver = _Cover(b64Data);
+  let filename = `${generateRandomWithSpecialChars()}.${formato}`;
+  var tempDir = fs.knownFolders.documents();
+  var folder = "Files";
+  if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
+    fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
+  }
+  var filePath = fs.path.join(tempDir.path, folder, filename);
+  var productFile = fs.File.fromPath(filePath);
+  //alert("Saving the file at: " + filePath);
+
+  try {
+    productFile.writeSync(docConver);
+  } catch (err) {
+    productFile.remove();
+    alert("WRITE SYNC FAILED: " + err);
+  }
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
+    "Properties": {
+      "Path": filePath,
+      "MimeType": mimeType,
+      "OnSuccess": ""
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js":
+/*!****************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Rule_openDocumentoIOS)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+async function Rule_openDocumentoIOS(context) {
+  const fs = context.nativescript.fileSystemModule;
+
+  //let actionResult = context.getActionResult("GetArchivo");
+  //let b64Data = actionResult.data.Archivo;
+  //let formato = actionResult.data.FormatoArc.toLowerCase();
+  let b64Data = context.b64Data;
+  let formato = "pdf";
+  function generateRandomWithSpecialChars() {
+    const specialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', '<', '>', '?', '/', '.', ',', '`', '~'];
+    const randomIndex1 = Math.floor(Math.random() * specialChars.length);
+    const randomIndex2 = Math.floor(Math.random() * specialChars.length);
+    const randomNumber = Math.floor(Math.random() * 1001); // Genera un número entre 0 y 1000
+
+    return specialChars[randomIndex1] + randomNumber + specialChars[randomIndex2];
+  }
+  function Cover(byteArray) {
+    var array = NSData.dataWithBytesLength(byteArray.bytes, byteArray.length);
+    return array;
+  }
+  let mimeType = "";
+  switch (formato) {
+    case "pdf":
+      mimeType = "application/pdf";
+      break;
+    case "png":
+      mimeType = "image/png";
+      break;
+    case "jpg":
+      mimeType = "image/jpeg";
+    default:
+      mimeType = "text/plain";
+  }
+  ;
+  let docConver = null;
+  //let imageData = `data:${mimeType};base64,${b64Data}`;
+
+  await context.base64StringToBinary(b64Data).then(result => {
+    docConver = Cover(result);
+  }).catch(error => {
+    alert("Error: " + error.message);
+    throw error;
+  });
+  let filename = `${generateRandomWithSpecialChars()}.${formato}`;
+  var tempDir = fs.knownFolders.documents();
+  var folder = "Files";
+  if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
+    fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
+  }
+  var filePath = fs.path.join(tempDir.path, folder, filename);
+  var productFile = fs.File.fromPath(filePath);
+  //alert("Saving the file at: " + filePath);
+
+  if (docConver != null) {
+    try {
+      productFile.writeSync(docConver);
+    } catch (err) {
+      productFile.remove();
+      alert("WRITE SYNC FAILED: " + err);
+    }
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
+      "Properties": {
+        "Path": filePath,
+        "MimeType": mimeType
+      }
+    });
+  } else {
+    alert("No OK");
+  }
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Service/Initialize.js":
 /*!*************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Service/Initialize.js ***!
@@ -8432,6 +8654,16 @@ module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/Call_Sendmail.action":
+/*!**************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/Call_Sendmail.action ***!
+  \**************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_Sendmail"},"Target":{"Service":"/appconsumos_qa_mb/Services/backend_REST.service","Path":"/sendmail","RequestProperties":{"Method":"POST","FetchCSRF":true}}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action":
 /*!**********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action ***!
@@ -8738,7 +8970,7 @@ module.exports = {"_Type":"Action.Type.ProgressBanner","OnSuccess":"/appconsumos
   \******************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false}]}
+module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{"_Name":"init"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/InitializeOfflineFailureMessage.action","ShowActivityIndicator":true,"ActivityIndicatorText":"Downloading...","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false},{"Name":"PlanillasAceites","Query":"PlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"ItemPlanillasAceites","Query":"ItemPlanillasAceites","AutomaticallyRetrievesStreams":false}]}
 
 /***/ }),
 
