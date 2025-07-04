@@ -1,11 +1,47 @@
+import Rule_openDocumentoAnd from '../Rule_openDocumentoAnd.js';
+import Rule_openDocumentoIOS from '../Rule_openDocumentoIOS.js';
 /**
  * Describe this function...
  * @param {IClientAPI} context
  */
+
 export default async function FirmarSolicitud_Campo(context) {
 
-    const base64Pdf = `JVBERi0xLjMKJf////8KNyAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDEgMCBSCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9Db250ZW50cyA1IDAgUgovUmVzb3VyY2VzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Qcm9jU2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXQovRm9udCA8PAovRjEgOCAwIFIKPj4KL0NvbG9yU3BhY2UgPDwKPj4KPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0xlbmd0aCAyOTUKL0ZpbHRlciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCniclZO7TsQwEEV7f8X8wC7zvJNIUQokKOgQ6RAFWpJuC/j/AiXQQBytLEuWZVlzfI/HQkxMJyGm7JUu1/JZZLd3P/1uCil3Z0XP7JScZ07QdC13j0LS0bSU1yEUkYwldaSTMw3pCGUYFszK6RDoSMo04AJRzl4ZFyxILCPxG01P5WEqzyWYhJkkeD39NZeXW7eLIKRXb8WpWOAZsPR/IOVmkvIhyg2COR091qz+B2XtoexGqoChr6jTZnVRz/Ox5XlfZ0jaXl0baVNXR5kY73W1lbfjJOoWOhuvY6fLm3XZwZuMFGtzx/oDZF1VpbXxNml1oHV7ZW3F7TiNurnO1lWVoVmZ1DtMf3oLc+1jtlE2UXWMicVeVVt5O06hbqmzxU7VN8QUFdoKZW5kc3RyZWFtCmVuZG9iagoxMCAwIG9iagooUERGS2l0KQplbmRvYmoKMTEgMCBvYmoKKFBERktpdCkKZW5kb2JqCjEyIDAgb2JqCihEOjIwMjUwNjI3MTUyMDQwWikKZW5kb2JqCjkgMCBvYmoKPDwKL1Byb2R1Y2VyIDEwIDAgUgovQ3JlYXRvciAxMSAwIFIKL0NyZWF0aW9uRGF0ZSAxMiAwIFIKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL0Jhc2VGb250IC9IZWx2ZXRpY2EKL1N1YnR5cGUgL1R5cGUxCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCj4+CmVuZG9iago0IDAgb2JqCjw8Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9DYXRhbG9nCi9QYWdlcyAxIDAgUgovTmFtZXMgMiAwIFIKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFs3IDAgUl0KPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Rlc3RzIDw8CiAgL05hbWVzIFsKXQo+Pgo+PgplbmRvYmoKeHJlZgowIDEzCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDkzNCAwMDAwMCBuIAowMDAwMDAwOTkxIDAwMDAwIG4gCjAwMDAwMDA4NzIgMDAwMDAgbiAKMDAwMDAwMDg1MSAwMDAwMCBuIAowMDAwMDAwMjI2IDAwMDAwIG4gCjAwMDAwMDAxMTkgMDAwMDAgbiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwNzU0IDAwMDAwIG4gCjAwMDAwMDA2NzkgMDAwMDAgbiAKMDAwMDAwMDU5MyAwMDAwMCBuIAowMDAwMDAwNjE4IDAwMDAwIG4gCjAwMDAwMDA2NDMgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSAxMwovUm9vdCAzIDAgUgovSW5mbyA5IDAgUgovSUQgWzwwODRjMzgzN2I5NjMxNmVhYmQ5N2E0NDk1YmIwZmVkND4gPDA4NGMzODM3Yjk2MzE2ZWFiZDk3YTQ0OTViYjBmZWQ0Pl0KPj4Kc3RhcnR4cmVmCjEwMzgKJSVFT0YK`
+    function sendEmail(pdf) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+            "Properties": {
+                "OnFailure": "",
+                "OnSuccess": "",
+                "Target": {
+                    "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                    "Path": "/sendmail",
+                    "RequestProperties": {
+                        "Method": "POST",
+                        "Body": {
+                            "sender": "natalia.lopez@structum-co.com",
+                            "to": "nlopez8066@outlook.com",
+                            "subject": "Prueba",
+                            "body": `Cuerpo prueba`,
+                            "nombre": "pdfprueba.pdf",
+                            "adj":`${pdf}`
+                        },
 
+                    }
+                }
+            }
+        }).then((result) => {
+            if (result && result.data) {
+                alert(JSON.stringify(result))
+            }
+
+        }).catch((error) => {
+            alert(error)
+        });
+    }
+
+    const base64Pdf = `JVBERi0xLjMKJf////8KNyAwIG9iago8PAovVHlwZSAvUGFnZQovUGFyZW50IDEgMCBSCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9Db250ZW50cyA1IDAgUgovUmVzb3VyY2VzIDYgMCBSCj4+CmVuZG9iago2IDAgb2JqCjw8Ci9Qcm9jU2V0IFsvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJXQovRm9udCA8PAovRjEgOCAwIFIKPj4KL0NvbG9yU3BhY2UgPDwKPj4KPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0xlbmd0aCAyOTUKL0ZpbHRlciAvRmxhdGVEZWNvZGUKPj4Kc3RyZWFtCniclZO7TsQwEEV7f8X8wC7zvJNIUQokKOgQ6RAFWpJuC/j/AiXQQBytLEuWZVlzfI/HQkxMJyGm7JUu1/JZZLd3P/1uCil3Z0XP7JScZ07QdC13j0LS0bSU1yEUkYwldaSTMw3pCGUYFszK6RDoSMo04AJRzl4ZFyxILCPxG01P5WEqzyWYhJkkeD39NZeXW7eLIKRXb8WpWOAZsPR/IOVmkvIhyg2COR091qz+B2XtoexGqoChr6jTZnVRz/Ox5XlfZ0jaXl0baVNXR5kY73W1lbfjJOoWOhuvY6fLm3XZwZuMFGtzx/oDZF1VpbXxNml1oHV7ZW3F7TiNurnO1lWVoVmZ1DtMf3oLc+1jtlE2UXWMicVeVVt5O06hbqmzxU7VN8QUFdoKZW5kc3RyZWFtCmVuZG9iagoxMCAwIG9iagooUERGS2l0KQplbmRvYmoKMTEgMCBvYmoKKFBERktpdCkKZW5kb2JqCjEyIDAgb2JqCihEOjIwMjUwNjI3MTUyMDQwWikKZW5kb2JqCjkgMCBvYmoKPDwKL1Byb2R1Y2VyIDEwIDAgUgovQ3JlYXRvciAxMSAwIFIKL0NyZWF0aW9uRGF0ZSAxMiAwIFIKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL0Jhc2VGb250IC9IZWx2ZXRpY2EKL1N1YnR5cGUgL1R5cGUxCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCj4+CmVuZG9iago0IDAgb2JqCjw8Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9DYXRhbG9nCi9QYWdlcyAxIDAgUgovTmFtZXMgMiAwIFIKPj4KZW5kb2JqCjEgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFs3IDAgUl0KPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Rlc3RzIDw8CiAgL05hbWVzIFsKXQo+Pgo+PgplbmRvYmoKeHJlZgowIDEzCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDkzNCAwMDAwMCBuIAowMDAwMDAwOTkxIDAwMDAwIG4gCjAwMDAwMDA4NzIgMDAwMDAgbiAKMDAwMDAwMDg1MSAwMDAwMCBuIAowMDAwMDAwMjI2IDAwMDAwIG4gCjAwMDAwMDAxMTkgMDAwMDAgbiAKMDAwMDAwMDAxNSAwMDAwMCBuIAowMDAwMDAwNzU0IDAwMDAwIG4gCjAwMDAwMDA2NzkgMDAwMDAgbiAKMDAwMDAwMDU5MyAwMDAwMCBuIAowMDAwMDAwNjE4IDAwMDAwIG4gCjAwMDAwMDA2NDMgMDAwMDAgbiAKdHJhaWxlcgo8PAovU2l6ZSAxMwovUm9vdCAzIDAgUgovSW5mbyA5IDAgUgovSUQgWzwwODRjMzgzN2I5NjMxNmVhYmQ5N2E0NDk1YmIwZmVkND4gPDA4NGMzODM3Yjk2MzE2ZWFiZDk3YTQ0OTViYjBmZWQ0Pl0KPj4Kc3RhcnR4cmVmCjEwMzgKJSVFT0YK`
+    
     //const pageProxy = context.getPageProxy();
     const platform = context.nativescript.platformModule;
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
@@ -17,7 +53,7 @@ export default async function FirmarSolicitud_Campo(context) {
         signatureContent = signatureObject.content.base64Encoding();
     }
 
-    //alert("entro firmar")
+    alert("entro firmar")
 
 
     return context.executeAction({
@@ -39,12 +75,17 @@ export default async function FirmarSolicitud_Campo(context) {
             }
         }
     }).then((result) => {
-        //alert("sisiii")
         if (result && result.data) {
 
-            //alert(`${JSON.stringify(result.data)}`);
-            alert(result.data.value)//el pdf en base64
-            
+            //alert(result.data.value)//el pdf en base64
+            context.b64Data = result.data.value
+            sendEmail(result.data.value)
+            if (platform.isAndroid) {
+                return Rule_openDocumentoAnd(context)
+            } else if (platform.isIOS) {
+                return Rule_openDocumentoIOS(context)
+            }
+
 
             /*context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
