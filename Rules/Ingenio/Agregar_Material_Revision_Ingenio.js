@@ -34,7 +34,7 @@ export default function Agregar_Material_Revision_Ingenio(context) {
         });
     }
 
-    const duplicado = clientData.lista_mat_solicitud_ing.filter(m => m.mat_nuevo === data.mat_nuevo && m.almacen_almacen === data.almacen_almacen).length > 0
+   const duplicado = clientData.lista_mat_solicitud_ing.filter(m => m.mat_nuevo === data.mat_nuevo && m.almacen_almacen === data.almacen_almacen).length > 0
 
     if (duplicado) {
         return context.executeAction({

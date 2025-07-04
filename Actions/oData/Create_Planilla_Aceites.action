@@ -1,0 +1,27 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "Create_Planilla_Aceites"
+	},
+	"OnFailure": {
+		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Error al crear la solicitud {#ActionResults:Create_Planilla_Aceites/error}",
+			"Title": "No creada",
+			"OKCaption": "Ok"
+		}
+	},
+	"OnSuccess": {
+		"Name": "/appconsumos_qa_mb/Actions/ClosePage.action",
+		"Properties": {
+			"NavigateBackToPage": "Filtro_Aceites"
+		}
+	},
+	"Target": {
+		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+		"EntitySet": "PlanillasAceites"
+	},
+	"Properties": {
+		"id": ""
+	}
+}

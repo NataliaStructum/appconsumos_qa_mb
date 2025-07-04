@@ -58,6 +58,16 @@
 			"Name": "VerSolicitudesAbiertas",
 			"Query": "VerSolicitudesAbiertas",
 			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "PlanillasAceites",
+			"Query": "PlanillasAceites",
+			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "ItemPlanillasAceites",
+			"Query": "ItemPlanillasAceites",
+			"AutomaticallyRetrievesStreams": false
 		}
 	]
 }
