@@ -47,7 +47,7 @@
 								"_Name": "ContactCellItem0",
 								"DetailImage": "sap-icon://request",
 								"Headline": "Solicitudes de Abastecimiento",
-								"Subheadline": "Ver listado de solicitudes de abastecimiento y realizar solicitudes",
+								"Subheadline": "Ver y realizar solicitudes de abastecimiento",
 								"Description": "",
 								"Visible": true,
 								"OnPress": "/appconsumos_qa_mb/Rules/Inventario/NavTo_Filtro_Abast.js"
@@ -81,7 +81,7 @@
 	"_Name": "Inicio_Inventario",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar8",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

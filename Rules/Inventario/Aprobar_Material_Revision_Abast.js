@@ -99,7 +99,7 @@ export default function Aprobar_Material_Revision_Abast(context) {
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
         "Properties": {
-            "Message": `Material Rechazado`,
+            "Message": `Material Aprobado`,
             "Duration": 1,
             "ShowActivityIndicator": true,
         }

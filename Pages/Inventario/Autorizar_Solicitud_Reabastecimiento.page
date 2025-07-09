@@ -22,25 +22,31 @@
 							"_Name": "FormCellInlineSignatureCapture0",
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Add Inline Signature",
-							"ShowTimestampInImage": false,
+							"Caption": "Firmar documento",
+							"ShowTimestampInImage": true,
 							"ShowXMark": true,
-							"ShowUnderline": true,
+							"ShowUnderline": false,
 							"WatermarkText": "",
-							"WatermarkTextMaxLines": 5
+							"WatermarkTextMaxLines": 3,
+							"HelperText": "Toque para firmar"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton0",
 							"IsVisible": true,
 							"Separator": true,
-							"Title": "Autorizar",
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"Title": "Generar Documento Salida",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
+							"Image": "sap-icon://arrow-right",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Autorizar_Solicitud_Abast.js"
 						}
 					],
 					"Layout": {
@@ -57,10 +63,27 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Autorizar_Solicitud_Campo",
+	"_Name": "Autorizar_Solicitud_Reabastecimiento",
 	"ActionBar": {
-		"Items": [],
-		"_Name": "ActionBar4",
-		"_Type": "Control.Type.ActionBar"
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://decline",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action",
+					"Properties": {
+						"NavigateBackToPage": "Detalle_Solicitud_Reabastecimieto"
+					}
+				}
+			}
+		],
+		"_Name": "ActionBar2",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Autorizar Solicitud Abastecimiento"
 	}
 }

@@ -84,8 +84,8 @@
 						},
 						{
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton3",
@@ -93,7 +93,8 @@
 							"Alignment": "Right",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
-							"ImagePosition": "Trailing",
+							"Image": "sap-icon://survey",
+							"ImagePosition": "Leading",
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
@@ -190,24 +191,6 @@
 					"Buttons": [
 						{
 							"Styles": {
-								"Image": "Button",
-								"Button": "Button"
-							},
-							"_Type": "ButtonTable.Type.Button",
-							"_Name": "ButtonTableTypeButton1",
-							"Title": "Aprobar",
-							"Alignment": "Center",
-							"ButtonType": "Primary",
-							"Semantic": "Tint",
-							"Image": "sap-icon://accept",
-							"ImagePosition": "Leading",
-							"FullWidth": false,
-							"Visible": true,
-							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/setVisible_CantAprobadaRevision_Ingenio.js"
-						},
-						{
-							"Styles": {
 								"Image": "Button_Eliminar",
 								"Button": "Button_Eliminar"
 							},
@@ -223,6 +206,24 @@
 							"Visible": true,
 							"Enabled": true,
 							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js"
+						},
+						{
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton1",
+							"Title": "Aprobar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://accept",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/setVisible_CantAprobadaRevision_Ingenio.js"
 						}
 					]
 				},
@@ -261,8 +262,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Materiales",
 							"Alignment": "Right",
@@ -428,8 +429,8 @@
 				"Visible": true,
 				"Title": "Confirmar",
 				"Styles": {
-					"Image": "Button",
-					"Button": "Button"
+					"Image": "Button2",
+					"Button": "Button2"
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/Confirmar_Revision_Ingenio.js",
 				"Enabled": true,

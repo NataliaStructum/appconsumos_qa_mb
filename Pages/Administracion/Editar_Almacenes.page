@@ -9,8 +9,6 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"Subhead": "{almacen_desc}",
 						"StatusText": "{centro}",
@@ -21,6 +19,8 @@
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
@@ -65,10 +65,11 @@
 							"Styles": {
 								"Button": "Button"
 							},
-							"Title": "Actualizar",
+							"Title": "Actualizar Almacén",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
+							"Image": "sap-icon://save",
 							"ImagePosition": "Leading",
 							"Enabled": true,
 							"OnPress": "/appconsumos_qa_mb/Actions/oData/Req_Update_Almacenes.action"
@@ -85,6 +86,7 @@
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Negative",
+							"Image": "sap-icon://decline",
 							"ImagePosition": "Leading",
 							"Enabled": true,
 							"OnPress": {

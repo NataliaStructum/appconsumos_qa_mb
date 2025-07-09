@@ -80,8 +80,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Material Registrado",
 							"Alignment": "Center",
@@ -98,8 +98,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Material Nuevo",
 							"Alignment": "Center",
@@ -193,8 +193,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Material",
 							"Alignment": "Right",
@@ -344,8 +344,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Material",
 							"Alignment": "Right",
@@ -496,8 +496,8 @@
 				"Visible": true,
 				"Title": "Crear Solicitud",
 				"Styles": {
-					"Image": "Button",
-					"Button": "Button"
+					"Image": "Button2",
+					"Button": "Button2"
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Validate_Create_Solicitud_Abast.js",
 				"Image": "sap-icon://save",

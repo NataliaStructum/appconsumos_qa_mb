@@ -1,12 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ObjectHeader",
-					"_Name": "SectionObjectHeader0",
 					"ObjectHeader": {
 						"Subhead": "Cant. Solicitada: {cantidad_tomada}",
 						"Description": "/appconsumos_qa_mb/Rules/Inventario/get_desc_Material_Revisar.js",
@@ -23,13 +25,11 @@
 						"SubstatusImagePosition": "Leading",
 						"Target": "/appconsumos_qa_mb/Rules/Inventario/Target_Revisar_Almacenes_Abast.js"
 					},
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
 					"Visible": true
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -37,8 +37,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
@@ -82,15 +80,15 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
-				},
-				{
-					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable0",
+					},
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -98,26 +96,22 @@
 						"FooterSeparator": true,
 						"ControlSeparator": false
 					},
+					"Layout": {
+						"LayoutType": "Horizontal",
+						"HorizontalAlignment": "Center"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Buttons": [
 						{
-							"_Type": "ButtonTable.Type.Button",
-							"_Name": "ButtonTableTypeButton1",
-							"Title": "Aprobar",
-							"Alignment": "Center",
-							"ButtonType": "Primary",
-							"Semantic": "Tint",
-							"Image": "sap-icon://accept",
-							"ImagePosition": "Leading",
-							"FullWidth": false,
-							"Visible": true,
-							"Enabled": true,
 							"Styles": {
-								"Image": "Button",
-								"Button": "Button"
+								"Image": "Button_Eliminar",
+								"Button": "Button_Eliminar"
 							},
-							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/setVisible_CantAprobadaRevision_Abast.js"
-						},
-						{
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton0",
 							"Title": "Rechazar",
@@ -129,23 +123,29 @@
 							"FullWidth": false,
 							"Visible": true,
 							"Enabled": true,
-							"Styles": {
-								"Image": "Button_Eliminar",
-								"Button": "Button_Eliminar"
-							},
 							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Rechazar_Material_Revision_Abast.js"
+						},
+						{
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton1",
+							"Title": "Aprobar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://accept",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/setVisible_CantAprobadaRevision_Abast.js"
 						}
-					],
-					"Layout": {
-						"LayoutType": "Horizontal",
-						"HorizontalAlignment": "Center"
-					}
+					]
 				},
 				{
-					"Visible": false,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -153,8 +153,6 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell1",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
@@ -175,8 +173,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Material",
 							"Alignment": "Right",
@@ -190,20 +188,22 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					}
+					},
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Revision_Sol_Almacenes_Abast",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Seleccionar Almacen de Material"
 	}

@@ -161,7 +161,8 @@
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
-						"Footnote": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js",
+						"Subhead": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js",
+						"Footnote": "Tomado de: {almacen_almacen} - {almacen/almacen_desc}",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cant. Solicitada: {cantidad_tomada}",
@@ -236,7 +237,8 @@
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
-						"Footnote": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js",
+						"Subhead": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js",
+						"Footnote": "Tomado de: {almacen_almacen} - {almacen/almacen_desc}",
 						"Description": "{mat_nuevo_desc}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cant. Solicitada: {cantidad_tomada}",
@@ -283,7 +285,7 @@
 	"_Name": "Detalle_Solicitud_Reabastecimieto",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar12",
+		"_Name": "ActionBar15",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Abastecimiento"
 	},
@@ -316,6 +318,14 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Autorizar_Solicitud_Reabastecimiento.page",
+						"ModalPage": true,
+						"ModalPageFullscreen": true
+					}
+				},
 				"Image": "sap-icon://accounting-document-verification",
 				"Enabled": true,
 				"ButtonType": "Primary",
@@ -345,6 +355,14 @@
 				"Styles": {
 					"Image": "Button",
 					"Button": "Button"
+				},
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Confirmar_Solicitud_Rebastecimiento.page",
+						"ModalPage": true,
+						"ModalPageFullscreen": true
+					}
 				},
 				"Image": "sap-icon://sys-enter-2",
 				"Enabled": true,
