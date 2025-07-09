@@ -4,8 +4,6 @@
  */
 import fechaFormateada from '../get_Now_DateTime_Col';
 export default function NavTo_Crear_Registro_Consumo(context) {
-
-
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
     const almacen_aceites = context.evaluateTargetPath('#Page:Filtro_Aceites/#Control:almacen_aceites/#Value');
     clientData.centro_aceite_registro = almacen_aceites[0].BindingObject.centro

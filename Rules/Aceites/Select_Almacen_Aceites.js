@@ -26,7 +26,7 @@ export default async function Select_Almacen_Aceites(context) {
  
     const filtro = `$filter=cast('${fechaHoy}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
  
-    // Habilita boton alidar por defecto
+    // Habilita boton validar por defecto
     //btn_registrar.setEnabled(true);
     btn_validar.setEnabled(true);
  
