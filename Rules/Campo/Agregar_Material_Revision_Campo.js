@@ -54,7 +54,7 @@ export default function Agregar_Material_Revision_Campo(context) {
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
         "Properties": {
-            "Message": `Material aprobado`,
+            "Message": `Material Aprobado`,
             "Duration": 1,
             "ShowActivityIndicator": true,
         }

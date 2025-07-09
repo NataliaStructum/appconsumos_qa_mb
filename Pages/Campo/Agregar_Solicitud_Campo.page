@@ -151,8 +151,8 @@
 							"IsVisible": true,
 							"Separator": false,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Material",
 							"Alignment": "Right",
@@ -300,8 +300,8 @@
 				"Visible": true,
 				"Title": "Crear Solicitud Campo",
 				"Styles": {
-					"Image": "Button",
-					"Button": "Button"
+					"Image": "Button2",
+					"Button": "Button2"
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js",
 				"Image": "sap-icon://save",

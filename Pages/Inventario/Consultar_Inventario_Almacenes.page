@@ -51,14 +51,22 @@
 						},
 						"Title": "{Matnr}",
 						"Subhead": "Almacén: {Lgort}",
-						"Footnote": "Disponible: {Labst} / Reservado: {Klabs}",
 						"Description": "{Txtmd}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{Werks}",
 						"SubstatusText": "#Page:Main/#ClientData/info_user/sociedad",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
-						"Tags": [],
+						"Tags": [
+							{
+								"Color": "Green",
+								"Text": "Disponible: {Labst} "
+							},
+							{
+								"Color": "Mango",
+								"Text": "Reservado: {Klabs}"
+							}
+						],
 						"AvatarStack": {
 							"Avatars": [
 								{
@@ -99,7 +107,7 @@
 	"_Name": "Consultar_Inventario_Almacenes",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Consultar Inventario"
 	}

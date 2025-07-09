@@ -42,8 +42,9 @@
                     <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
                 </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
-                <FunctionImport Name="generatePDF" Function="appconsumos_qa.generatePDF"/>
+                <ActionImport Name="generatePDF" Action="appconsumos_qa.generatePDF"/>
                 <ActionImport Name="firmarPDF" Action="appconsumos_qa.firmarPDF"/>
+                <ActionImport Name="sendmail" Action="appconsumos_qa.sendmail"/>
             </EntityContainer>
             <EntityType Name="Empleados">
                 <Key>
@@ -243,8 +244,8 @@
                 <Property Name="almacen_centro" Type="Edm.String" MaxLength="4"/>
                 <Property Name="mat_nuevo" Type="Edm.String" MaxLength="18"/>
                 <Property Name="mat_nuevo_desc" Type="Edm.String" MaxLength="40"/>
-                <Property Name="cantidad_tomada" Type="Edm.Decimal" Scale="variable"/>
-                <Property Name="cantidad_aprobada" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="cantidad_tomada" Type="Edm.Decimal" Precision="13" Scale="3"/>
+                <Property Name="cantidad_aprobada" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="aprobado" Type="Edm.Boolean"/>
                 <Property Name="confirmacion_tec" Type="Edm.Boolean"/>
                 <Property Name="memorando" Type="Edm.Boolean"/>
@@ -264,8 +265,8 @@
                 <Property Name="almacen_sociedad" Type="Edm.String" MaxLength="4"/>
                 <Property Name="almacen_almacen" Type="Edm.String" MaxLength="4"/>
                 <Property Name="almacen_centro" Type="Edm.String" MaxLength="4"/>
-                <Property Name="contador_ini" Type="Edm.Decimal" Scale="variable"/>
-                <Property Name="contador_fin" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="contador_ini" Type="Edm.Decimal" Precision="13" Scale="3"/>
+                <Property Name="contador_fin" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <NavigationProperty Name="operario" Type="appconsumos_qa.EmpleadosApp">
                     <ReferentialConstraint Property="operario_ficha" ReferencedProperty="ficha"/>
                 </NavigationProperty>
@@ -273,28 +274,31 @@
                 <Property Name="material" Type="Edm.String" MaxLength="18"/>
                 <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
                 <Property Name="estado" Type="Edm.String" MaxLength="80"/>
-                <Property Name="total" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="total" Type="Edm.Decimal" Precision="13" Scale="3"/>
             </EntityType>
             <EntityType Name="ItemPlanillasAceites">
                 <Key>
                     <PropertyRef Name="id"/>
+                    <PropertyRef Name="pos"/>
+                    <PropertyRef Name="planilla_id"/>
                 </Key>
                 <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="pos" Type="Edm.Int32" Nullable="false"/>
                 <NavigationProperty Name="planilla" Type="appconsumos_qa.PlanillasAceites">
                     <ReferentialConstraint Property="planilla_id" ReferencedProperty="id"/>
                 </NavigationProperty>
-                <Property Name="planilla_id" Type="Edm.Guid"/>
+                <Property Name="planilla_id" Type="Edm.Guid" Nullable="false"/>
                 <NavigationProperty Name="equipo" Type="appconsumos_qa.Equipos">
                     <ReferentialConstraint Property="equipo_equipo" ReferencedProperty="equipo"/>
                 </NavigationProperty>
                 <Property Name="equipo_equipo" Type="Edm.String" MaxLength="18"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="7"/>
-                <Property Name="kilometraje" Type="Edm.Decimal" Scale="variable"/>
-                <Property Name="consumo" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="kilometraje" Type="Edm.Decimal" Precision="13" Scale="3"/>
+                <Property Name="consumo" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="op_ficha" Type="Edm.String" MaxLength="8"/>
                 <Property Name="op_nombre" Type="Edm.String" MaxLength="100"/>
-                <Property Name="contador_ini" Type="Edm.Decimal" Scale="variable"/>
-                <Property Name="contador_fin" Type="Edm.Decimal" Scale="variable"/>
+                <Property Name="contador_ini" Type="Edm.Decimal" Precision="13" Scale="3"/>
+                <Property Name="contador_fin" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="observacion" Type="Edm.String" MaxLength="5"/>
             </EntityType>
             <EntityType Name="VerSolicitudesAbiertas">
@@ -344,13 +348,39 @@
                 <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="16"/>
             </EntityType>
-            <Function Name="generatePDF" IsBound="false" IsComposable="false">
+            <ComplexType Name="item">
+                <Property Name="alce" Type="Edm.String"/>
+                <Property Name="sap" Type="Edm.String"/>
+                <Property Name="desc" Type="Edm.String"/>
+                <Property Name="cant" Type="Edm.String"/>
+                <Property Name="um" Type="Edm.String"/>
+            </ComplexType>
+            <ComplexType Name="header">
+                <Property Name="fecha" Type="Edm.String"/>
+                <Property Name="pEntrega" Type="Edm.String"/>
+                <Property Name="pEntregaficha" Type="Edm.String"/>
+                <Property Name="pAutoriza" Type="Edm.String"/>
+                <Property Name="pAutorizaficha" Type="Edm.String"/>
+            </ComplexType>
+            <Action Name="generatePDF" IsBound="false">
+                <Parameter Name="data" Type="appconsumos_qa.header"/>
                 <Parameter Name="image" Type="Edm.String"/>
+                <Parameter Name="items" Type="Collection(appconsumos_qa.item)" Nullable="false"/>
+                <Parameter Name="logo" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
-            </Function>
+            </Action>
             <Action Name="firmarPDF" IsBound="false">
                 <Parameter Name="pdf" Type="Edm.String"/>
                 <Parameter Name="image" Type="Edm.String"/>
+                <ReturnType Type="Edm.String"/>
+            </Action>
+            <Action Name="sendmail" IsBound="false">
+                <Parameter Name="sender" Type="Edm.String"/>
+                <Parameter Name="to" Type="Edm.String"/>
+                <Parameter Name="subject" Type="Edm.String"/>
+                <Parameter Name="body" Type="Edm.String"/>
+                <Parameter Name="adj" Type="Edm.String"/>
+                <Parameter Name="nombre" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
             </Action>
             <Annotations Target="appconsumos_qa.Solicitudes/id">

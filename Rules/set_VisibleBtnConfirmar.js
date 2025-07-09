@@ -8,5 +8,5 @@ export default function set_VisibleBtnConfirmar(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
     let info = clientData.info_user;
 
-    return estado === 'Tramitado' && info.rol === 'Técnico';
+    return estado === 'Autorizado' && info.rol === 'Técnico';
 }

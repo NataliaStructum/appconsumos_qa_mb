@@ -9,6 +9,6 @@ export default function set_VisibleBtnNetear(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
     let info = clientData.info_user;
 
-    return estado === 'Autorizado' && info.rol === 'Auxiliar';
-    
+    //return estado === 'Autorizado' && info.rol === 'Auxiliar';
+    return false
 }

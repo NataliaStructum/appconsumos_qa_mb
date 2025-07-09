@@ -4,14 +4,16 @@
  */
 export default async function Rule_openDocumentoIOS(context) {
 
+    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
     const fs = context.nativescript.fileSystemModule;
 
     //let actionResult = context.getActionResult("GetArchivo");
     //let b64Data = actionResult.data.Archivo;
     //let formato = actionResult.data.FormatoArc.toLowerCase();
-    let b64Data = context.b64Data
+    let b64Data = clientDataAutorizar.b64Data
     let formato = "pdf"
 
+    
     function generateRandomWithSpecialChars() {
         const specialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', '<', '>', '?', '/', '.', ',', '`', '~'];
         const randomIndex1 = Math.floor(Math.random() * specialChars.length);

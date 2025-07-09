@@ -3,13 +3,13 @@
 
 export default function Rule_openDocumentoAnd(context) {
 
+    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
     const fs = context.nativescript.fileSystemModule;
     //const platform = context.nativescript.platformModule;  
-
     //let actionResult = context.getActionResult("GetArchivo");
     //let b64Data = actionResult.data.Archivo;
     //let formato = actionResult.data.FormatoArc.toLowerCase();
-    let b64Data = context.b64Data
+    let b64Data = clientDataAutorizar.b64Data
     let formato = "pdf"
 
     //Para generar un nombre aleatorio al documento

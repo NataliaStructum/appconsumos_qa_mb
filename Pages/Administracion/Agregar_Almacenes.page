@@ -85,10 +85,11 @@
 							"Styles": {
 								"Button": "Button"
 							},
-							"Title": "Crear",
+							"Title": "Agregar Almacenes",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
+							"Image": "sap-icon://add",
 							"ImagePosition": "Leading",
 							"Enabled": true,
 							"OnPress": "/appconsumos_qa_mb/Rules/Administracion/Create_Almacenes.js"

@@ -61,7 +61,8 @@
 					"Buttons": [
 						{
 							"Styles": {
-								"Image": "ButtonText2"
+								"Image": "ButtonText2",
+								"Button": "ButtonText2"
 							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton4",
@@ -84,8 +85,8 @@
 						},
 						{
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton3",
@@ -194,24 +195,6 @@
 					"Buttons": [
 						{
 							"Styles": {
-								"Image": "Button",
-								"Button": "Button"
-							},
-							"_Type": "ButtonTable.Type.Button",
-							"_Name": "ButtonTableTypeButton0",
-							"Title": "Aprobar",
-							"Alignment": "Center",
-							"ButtonType": "Primary",
-							"Semantic": "Tint",
-							"Image": "sap-icon://accept",
-							"ImagePosition": "Leading",
-							"FullWidth": false,
-							"Visible": true,
-							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js"
-						},
-						{
-							"Styles": {
 								"Image": "Button_Eliminar",
 								"Button": "Button_Eliminar"
 							},
@@ -227,6 +210,24 @@
 							"Visible": true,
 							"Enabled": true,
 							"OnPress": "/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js"
+						},
+						{
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton0",
+							"Title": "Aprobar",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://accept",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js"
 						}
 					]
 				},
@@ -266,8 +267,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Agregar Material",
 							"Alignment": "Right",
@@ -433,8 +434,8 @@
 				"Visible": true,
 				"Title": "Confirmar",
 				"Styles": {
-					"Image": "Button",
-					"Button": "Button"
+					"Image": "Button2",
+					"Button": "Button2"
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js",
 				"Enabled": true,

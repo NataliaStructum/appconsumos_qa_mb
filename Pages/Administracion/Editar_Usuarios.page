@@ -109,9 +109,10 @@
 							"Styles": {
 								"Button": "Button"
 							},
-							"Title": "Actualizar",
+							"Title": "Actualizar Usuario",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
+							"Image":"sap-icon://save",
 							"Semantic": "Tint",
 							"ImagePosition": "Leading",
 							"Enabled": true,

@@ -143,7 +143,8 @@
 							"Styles": {
 								"Button": "Button"
 							},
-							"Title": "Crear",
+							"Image": "sap-icon://add",
+							"Title": "Agregar Usuarios",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",

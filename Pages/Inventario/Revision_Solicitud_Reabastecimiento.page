@@ -109,8 +109,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"Title": "Ir a almacenes",
 							"Alignment": "Right",
@@ -263,8 +263,8 @@
 				"Visible": true,
 				"Title": "Confirmar",
 				"Styles": {
-					"Image": "Button",
-					"Button": "Button"
+					"Image": "Button2",
+					"Button": "Button2"
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Confirmar_Revision_Abast.js",
 				"Enabled": true,
