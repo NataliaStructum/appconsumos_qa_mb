@@ -221,7 +221,7 @@
 	"_Name": "Crear_Planilla_Consumo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar6",
+		"_Name": "ActionBar7",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Planilla Control de Consumo"
 	},
@@ -235,8 +235,8 @@
 				"Visible": true,
 				"Title": "Crear Planillas",
 				"Styles": {
-					"Image": "Button",
-					"Button": "Button"
+					"Image": "Button2",
+					"Button": "Button2"
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites.js",
 				"Image": "sap-icon://create",

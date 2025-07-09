@@ -78,8 +78,8 @@
 					"Buttons": [
 						{
 							"Styles": {
-								"Image": "Button2",
-								"Button": "Button2"
+								"Image": "Button",
+								"Button": "Button"
 							},
 							"_Type": "ButtonTable.Type.Button",
 							"_Name": "ButtonTableTypeButton_visible",
@@ -370,7 +370,7 @@
 	"_Name": "Registrar_Aceite_Motor",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar11",
+		"_Name": "ActionBar12",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
