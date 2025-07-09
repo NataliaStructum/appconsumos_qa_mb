@@ -47,7 +47,7 @@ export default function Crear_Planillas_Aceites(context) {
                     "operario_ficha": fichaOperario || "",
                     "material": material.material,
                     "material_desc": "", 
-                    "estado": "Enviado"
+                    "estado": "Pendiente"
                 }
             }
         }).then((result) => {
@@ -91,6 +91,11 @@ export default function Crear_Planillas_Aceites(context) {
                 Message: mensaje,
                 CloseCaption: "Cerrar"
             }
+        }).then(() => {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/ClosePage.action",
+                "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Aceites/Filtro_Aceites.page"
+            });
         });
     }
 

@@ -74,56 +74,6 @@
 					},
 					"Controls": [
 						{
-							"Value": "1511617",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty_id_material",
-							"IsVisible": false,
-							"Separator": true,
-							"Caption": "Aceite Hidraulico",
-							"PlaceHolder": "PlaceHolder",
-							"AlternateInput": "None",
-							"Enabled": true,
-							"IsEditable": true
-						},
-						{
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty_cant_ini_hid",
-							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Contador Inicial",
-							"PlaceHolder": "Ingrese cantidad Inicial",
-							"KeyboardType": "Number",
-							"Enabled": true,
-							"IsEditable": true
-						}
-					],
-					"Layout": {
-						"NumberOfColumns": 1
-					},
-					"Header": {
-						"_Type": "SectionCommon.Type.Header",
-						"_Name": "SectionCommonTypeHeader0",
-						"AccessoryType": "None",
-						"UseTopPadding": true,
-						"Caption": "Aceite Hidráulico - 1511617"
-					},
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell1_hidraulico"
-				},
-				{
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
-					"Controls": [
-						{
 							"Value": "1546081",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_mat_motor",
@@ -163,6 +113,56 @@
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "SectionFormCell2_motor"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "1511617",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_id_material",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Aceite Hidraulico",
+							"PlaceHolder": "PlaceHolder",
+							"AlternateInput": "None",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_cant_ini_hid",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Contador Inicial",
+							"PlaceHolder": "Ingrese cantidad Inicial",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Aceite Hidráulico - 1511617"
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1_hidraulico"
 				},
 				{
 					"Separators": {
@@ -221,7 +221,7 @@
 	"_Name": "Crear_Planilla_Consumo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Planilla Control de Consumo"
 	},
@@ -233,11 +233,13 @@
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem0",
 				"Visible": true,
-				"Title": "Crear",
+				"Title": "Crear Planillas",
 				"Styles": {
+					"Image": "Button",
 					"Button": "Button"
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites.js",
+				"Image": "sap-icon://create",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",

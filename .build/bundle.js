@@ -70,6 +70,7 @@ let appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action = __webp
 let appconsumos_qa_mb_actions_odata_create_almacenesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action")
 let appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action")
 let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
+let appconsumos_qa_mb_actions_odata_create_items_planillas_aceites_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Items_Planillas_Aceites.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Items_Planillas_Aceites.action")
 let appconsumos_qa_mb_actions_odata_create_planilla_aceites_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Planilla_Aceites.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Planilla_Aceites.action")
 let appconsumos_qa_mb_actions_odata_create_solicitud_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Solicitud_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Solicitud_Campo.action")
 let appconsumos_qa_mb_actions_odata_create_solicitud_ingenio_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Solicitud_Ingenio.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Solicitud_Ingenio.action")
@@ -81,6 +82,7 @@ let appconsumos_qa_mb_actions_odata_req_update_empleados_action = __webpack_requ
 let appconsumos_qa_mb_actions_odata_update_almacenes_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Almacenes.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Almacenes.action")
 let appconsumos_qa_mb_actions_odata_update_componentessolicitudapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action")
 let appconsumos_qa_mb_actions_odata_update_empleados_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Empleados.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Empleados.action")
+let appconsumos_qa_mb_actions_odata_update_planilla_aceite_motor_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Motor.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Motor.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_aprobar_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_abast_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Abast.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Abast.action")
@@ -153,15 +155,23 @@ let appconsumos_qa_mb_pages_inventario_lista_solicitudes_reabastecimiento_page =
 let appconsumos_qa_mb_pages_inventario_revision_sol_almacenes_abast_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Revision_Sol_Almacenes_Abast.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Revision_Sol_Almacenes_Abast.page")
 let appconsumos_qa_mb_pages_inventario_revision_solicitud_reabastecimiento_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Inventario/Revision_Solicitud_Reabastecimiento.page */ "./build.definitions/appconsumos_qa_mb/Pages/Inventario/Revision_Solicitud_Reabastecimiento.page")
 let appconsumos_qa_mb_pages_main_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Main.page */ "./build.definitions/appconsumos_qa_mb/Pages/Main.page")
-let appconsumos_qa_mb_pages_pruebaaceites_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/PruebaAceites.page */ "./build.definitions/appconsumos_qa_mb/Pages/PruebaAceites.page")
 let appconsumos_qa_mb_rules_aceites_agregar_planilla_aceites_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites.js")
+let appconsumos_qa_mb_rules_aceites_cerrar_planilla_aceite_motor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Cerrar_Planilla_Aceite_Motor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Cerrar_Planilla_Aceite_Motor.js")
+let appconsumos_qa_mb_rules_aceites_color_aceites_tipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js")
 let appconsumos_qa_mb_rules_aceites_crear_planillas_aceites_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Crear_Planillas_Aceites.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Crear_Planillas_Aceites.js")
+let appconsumos_qa_mb_rules_aceites_enviar_planilla_aceite_motor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Motor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Motor.js")
+let appconsumos_qa_mb_rules_aceites_get_contador_final_motor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/get_contador_final_Motor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/get_contador_final_Motor.js")
 let appconsumos_qa_mb_rules_aceites_get_day_only_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/get_Day_Only.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/get_Day_Only.js")
+let appconsumos_qa_mb_rules_aceites_get_total_consumos_motor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/get_Total_Consumos_Motor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/get_Total_Consumos_Motor.js")
 let appconsumos_qa_mb_rules_aceites_navto_aceites_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/NavTo_Aceites.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/NavTo_Aceites.js")
 let appconsumos_qa_mb_rules_aceites_navto_crear_planilla_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Planilla.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Planilla.js")
 let appconsumos_qa_mb_rules_aceites_navto_crear_registro_consumo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Registro_Consumo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Registro_Consumo.js")
+let appconsumos_qa_mb_rules_aceites_query_registro_planilla_id_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id.js")
+let appconsumos_qa_mb_rules_aceites_registrar_items_aceite_motor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Motor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Motor.js")
 let appconsumos_qa_mb_rules_aceites_select_almacen_aceites_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js")
+let appconsumos_qa_mb_rules_aceites_set_contador_inicial_motor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Motor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Motor.js")
 let appconsumos_qa_mb_rules_aceites_setvisible_aceite_ic_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/setVisible_Aceite_IC.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/setVisible_Aceite_IC.js")
+let appconsumos_qa_mb_rules_aceites_setvisible_botones_planillas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js")
 let appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js")
 let appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js")
 let appconsumos_qa_mb_rules_administracion_create_almacenes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Administracion/Create_Almacenes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Administracion/Create_Almacenes.js")
@@ -384,6 +394,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_odata_create_almacenesapp_action : appconsumos_qa_mb_actions_odata_create_almacenesapp_action,
 	appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action : appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action,
 	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
+	appconsumos_qa_mb_actions_odata_create_items_planillas_aceites_action : appconsumos_qa_mb_actions_odata_create_items_planillas_aceites_action,
 	appconsumos_qa_mb_actions_odata_create_planilla_aceites_action : appconsumos_qa_mb_actions_odata_create_planilla_aceites_action,
 	appconsumos_qa_mb_actions_odata_create_solicitud_campo_action : appconsumos_qa_mb_actions_odata_create_solicitud_campo_action,
 	appconsumos_qa_mb_actions_odata_create_solicitud_ingenio_action : appconsumos_qa_mb_actions_odata_create_solicitud_ingenio_action,
@@ -395,6 +406,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_odata_update_almacenes_action : appconsumos_qa_mb_actions_odata_update_almacenes_action,
 	appconsumos_qa_mb_actions_odata_update_componentessolicitudapp_action : appconsumos_qa_mb_actions_odata_update_componentessolicitudapp_action,
 	appconsumos_qa_mb_actions_odata_update_empleados_action : appconsumos_qa_mb_actions_odata_update_empleados_action,
+	appconsumos_qa_mb_actions_odata_update_planilla_aceite_motor_action : appconsumos_qa_mb_actions_odata_update_planilla_aceite_motor_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_aprobar_campo_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_aprobar_campo_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_abast_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_abast_action,
@@ -467,15 +479,23 @@ module.exports = {
 	appconsumos_qa_mb_pages_inventario_revision_sol_almacenes_abast_page : appconsumos_qa_mb_pages_inventario_revision_sol_almacenes_abast_page,
 	appconsumos_qa_mb_pages_inventario_revision_solicitud_reabastecimiento_page : appconsumos_qa_mb_pages_inventario_revision_solicitud_reabastecimiento_page,
 	appconsumos_qa_mb_pages_main_page : appconsumos_qa_mb_pages_main_page,
-	appconsumos_qa_mb_pages_pruebaaceites_page : appconsumos_qa_mb_pages_pruebaaceites_page,
 	appconsumos_qa_mb_rules_aceites_agregar_planilla_aceites_js : appconsumos_qa_mb_rules_aceites_agregar_planilla_aceites_js,
+	appconsumos_qa_mb_rules_aceites_cerrar_planilla_aceite_motor_js : appconsumos_qa_mb_rules_aceites_cerrar_planilla_aceite_motor_js,
+	appconsumos_qa_mb_rules_aceites_color_aceites_tipo_js : appconsumos_qa_mb_rules_aceites_color_aceites_tipo_js,
 	appconsumos_qa_mb_rules_aceites_crear_planillas_aceites_js : appconsumos_qa_mb_rules_aceites_crear_planillas_aceites_js,
+	appconsumos_qa_mb_rules_aceites_enviar_planilla_aceite_motor_js : appconsumos_qa_mb_rules_aceites_enviar_planilla_aceite_motor_js,
+	appconsumos_qa_mb_rules_aceites_get_contador_final_motor_js : appconsumos_qa_mb_rules_aceites_get_contador_final_motor_js,
 	appconsumos_qa_mb_rules_aceites_get_day_only_js : appconsumos_qa_mb_rules_aceites_get_day_only_js,
+	appconsumos_qa_mb_rules_aceites_get_total_consumos_motor_js : appconsumos_qa_mb_rules_aceites_get_total_consumos_motor_js,
 	appconsumos_qa_mb_rules_aceites_navto_aceites_js : appconsumos_qa_mb_rules_aceites_navto_aceites_js,
 	appconsumos_qa_mb_rules_aceites_navto_crear_planilla_js : appconsumos_qa_mb_rules_aceites_navto_crear_planilla_js,
 	appconsumos_qa_mb_rules_aceites_navto_crear_registro_consumo_js : appconsumos_qa_mb_rules_aceites_navto_crear_registro_consumo_js,
+	appconsumos_qa_mb_rules_aceites_query_registro_planilla_id_js : appconsumos_qa_mb_rules_aceites_query_registro_planilla_id_js,
+	appconsumos_qa_mb_rules_aceites_registrar_items_aceite_motor_js : appconsumos_qa_mb_rules_aceites_registrar_items_aceite_motor_js,
 	appconsumos_qa_mb_rules_aceites_select_almacen_aceites_js : appconsumos_qa_mb_rules_aceites_select_almacen_aceites_js,
+	appconsumos_qa_mb_rules_aceites_set_contador_inicial_motor_js : appconsumos_qa_mb_rules_aceites_set_contador_inicial_motor_js,
 	appconsumos_qa_mb_rules_aceites_setvisible_aceite_ic_js : appconsumos_qa_mb_rules_aceites_setvisible_aceite_ic_js,
+	appconsumos_qa_mb_rules_aceites_setvisible_botones_planillas_js : appconsumos_qa_mb_rules_aceites_setvisible_botones_planillas_js,
 	appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js : appconsumos_qa_mb_rules_administracion_bool_estado_usuarios_js,
 	appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js : appconsumos_qa_mb_rules_administracion_color_estado_usuarios_js,
 	appconsumos_qa_mb_rules_administracion_create_almacenes_js : appconsumos_qa_mb_rules_administracion_create_almacenes_js,
@@ -845,6 +865,95 @@ function Agregar_Planilla_Aceites(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Cerrar_Planilla_Aceite_Motor.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Cerrar_Planilla_Aceite_Motor.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Cerrar_Planilla_Aceite_Motor)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Cerrar_Planilla_Aceite_Motor(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  let id_planilla = clientData.data_planilla_motor.id;
+  let filtro = `$filter=id eq ${id_planilla}`;
+  let pageProxy = context.getPageProxy();
+  //acceder al keyvalue section
+  var keyvalueSection = pageProxy.getControl("SectionedTable0").getSection("SectionKeyValue0");
+  var btn_agregar = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable0");
+  var form_add = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0");
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'PlanillasAceites', [], filtro).then(async results => {
+    if (results && results.length > 0) {
+      clientData.data_planilla_motor.total = results.getItem(0).total;
+      clientData.data_planilla_motor.contador_fin = results.getItem(0).contador_fin;
+      clientData.data_planilla_motor.estado = results.getItem(0).estado;
+      btn_agregar.setVisible(false);
+      form_add.setVisible(false);
+      keyvalueSection.redraw();
+      pageProxy.redraw();
+    } else {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Sin datos",
+          "Message": "No se encontró la planilla",
+          "OKCaption": "Aceptar"
+        }
+      });
+    }
+  }).catch(error => {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Error",
+        "Message": `Error al consultar datos: ${error.message}`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js":
+/*!*********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Color_Aceites_Tipo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Color_Aceites_Tipo(context) {
+  try {
+    var object = context.binding;
+    var tipo = object.tipo;
+    if (tipo == "Cambio") {
+      return "Mango";
+    }
+    if (tipo == "Full") {
+      return "Blue";
+    }
+  } catch (error) {
+    alert("No se pudo obtener el valor: " + error.message);
+  }
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Crear_Planillas_Aceites.js":
 /*!**************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Crear_Planillas_Aceites.js ***!
@@ -900,7 +1009,7 @@ function Crear_Planillas_Aceites(context) {
           "operario_ficha": fichaOperario || "",
           "material": material.material,
           "material_desc": "",
-          "estado": "Enviado"
+          "estado": "Pendiente"
         }
       }
     }).then(result => {
@@ -940,11 +1049,73 @@ function Crear_Planillas_Aceites(context) {
         Message: mensaje,
         CloseCaption: "Cerrar"
       }
+    }).then(() => {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/ClosePage.action",
+        "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Aceites/Filtro_Aceites.page"
+      });
     });
   }
 
   // Iniciar creación secuencial
   return crearPlanillasSecuencial(listaAceites);
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Motor.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Motor.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Enviar_Planilla_Aceite_Motor)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Enviar_Planilla_Aceite_Motor(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  let id_planilla = clientData.data_planilla_motor.id;
+  let filtro = `$filter=planilla_id eq ${id_planilla}`;
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async results => {
+    //si hay items en la planilla
+    if (results && results.length > 0) {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Confirmación",
+          "Message": "¿Está seguro que desea enviar la planilla?",
+          "OKCaption": "Aceptar",
+          "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Motor.action",
+          "CancelCaption": "Cancelar"
+        }
+      });
+    } else {
+      //Si no hay items en la planilla
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Consumo no Enviado",
+          "Message": "La planilla no tiene items registrados.",
+          "OKCaption": "Aceptar"
+        }
+      });
+    }
+  }).catch(error => {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Error",
+        "Message": `Error al consultar datos: ${error.message}`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  });
 }
 
 /***/ }),
@@ -1120,6 +1291,211 @@ function NavTo_Crear_Registro_Consumo(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id.js":
+/*!*****************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Query_Registro_Planilla_Id)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Query_Registro_Planilla_Id(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  let id_planilla = clientData.data_planilla_motor.id;
+  //let filtro = `$expand=equipo&$filter=planilla_id eq ${id_planilla}&$orderby=pos`
+  let filtro = `$expand=equipo&$filter=planilla_id eq ${id_planilla}&$orderby=pos`;
+  return filtro;
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Motor.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Motor.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Registrar_Items_Aceite_Motor)
+/* harmony export */ });
+/* harmony import */ var _guid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../guid */ "./build.definitions/appconsumos_qa_mb/Rules/guid.js");
+/**
+ * Función para registrar items de aceite de motor en la planilla
+ * @param {IClientAPI} context - Contexto de la aplicación MDK
+ */
+
+function Registrar_Items_Aceite_Motor(context) {
+  try {
+    // Obtener valores de los controles
+    let equipo = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:equipo_motor/#Value');
+    let tipo = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:tipo_motor/#Value');
+    let kmh = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:kmh_motor/#Value');
+    let operario_motor = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:operario_motor/#Value');
+    let cont_inicial = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:cont_inicial_motor/#Value');
+    let cont_final = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:con_final_motor/#Value');
+    let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+    let id_planilla = clientData.data_planilla_motor.id;
+
+    // Obtener controles del formulario
+    const pageProxy = context.getPageProxy();
+    const form_add = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0");
+    const btn_agregar = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable0");
+
+    // Conversión de datos
+    let contadorIniNum = parseFloat(cont_inicial) || 0;
+    let contadorFinNum = parseFloat(cont_final) || 0;
+    let kilometrajeNum = parseFloat(kmh) || 0;
+    let operario_motorString = String(operario_motor) || "";
+    let equipoData = null;
+    let tipoData = null;
+    if (equipo && Array.isArray(equipo) && equipo.length > 0 && equipo[0] && equipo[0].BindingObject) {
+      equipoData = equipo[0].BindingObject.equipo;
+    }
+    if (tipo && Array.isArray(tipo) && tipo.length > 0 && tipo[0]) {
+      tipoData = tipo[0].DisplayValue;
+    }
+
+    // Validación de campos obligatorios
+    if (!equipoData || !tipoData || !kilometrajeNum || !contadorFinNum) {
+      return context.executeAction({
+        Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        Properties: {
+          Title: "Error de validación",
+          Message: "Faltan campos obligatorios: " + (!equipoData ? "Equipo " : "") + (!tipoData ? "Tipo " : "") + (!kilometrajeNum ? "Kilometraje " : "") + (!contadorFinNum ? "Contador Final " : ""),
+          CloseCaption: "Cerrar"
+        }
+      });
+    }
+    if (kilometrajeNum < 0 || contadorFinNum < 0) {
+      return context.executeAction({
+        Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        Properties: {
+          Title: "Valor Incorrecto",
+          Message: "No se permiten números negativos en los campos de kilometraje ni contadores.",
+          CloseCaption: "Cerrar"
+        }
+      });
+    }
+    // Validar contador inicial
+    if (contadorIniNum <= 0) {
+      return context.executeAction({
+        Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        Properties: {
+          Title: "Aceite No disponible",
+          Message: "El contador inicial es cero. No es posible registrar más consumos de aceite.",
+          CloseCaption: "Cerrar"
+        }
+      });
+    }
+
+    // Validar contadores
+    if (contadorFinNum >= contadorIniNum) {
+      return context.executeAction({
+        Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        Properties: {
+          Title: "Error de validación",
+          Message: "El contador inicial debe ser mayor que el contador final",
+          CloseCaption: "Cerrar"
+        }
+      });
+    }
+
+    // Calcular consumo
+    let consumo = parseFloat(((contadorIniNum - contadorFinNum) / 4).toFixed(2));
+    kilometrajeNum = parseFloat(kilometrajeNum.toFixed(2));
+    const filtro = `$filter=planilla_id eq ${id_planilla}`;
+
+    // Validar operario
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Empleados', [], `$filter=ficha eq '${operario_motor}'`).then(results => {
+      if (!results || results.length === 0) {
+        return context.executeAction({
+          Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          Properties: {
+            Title: "Ficha no Encontrada",
+            Message: "Número de ficha no encontrada. Debes ingresar un número de ficha válido para continuar",
+            CloseCaption: "Cerrar"
+          }
+        });
+      }
+      const nombre_op = results.getItem(0).nombre;
+
+      // Buscar posición
+      return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(items => {
+        let nueva_pos = 1;
+        if (items && items.length > 0) {
+          const posiciones = items.map(item => parseInt(item.pos)).filter(p => !isNaN(p));
+          nueva_pos = Math.max(...posiciones) + 1;
+        }
+        const nuevoItem = {
+          id: (0,_guid__WEBPACK_IMPORTED_MODULE_0__["default"])(context),
+          pos: nueva_pos,
+          planilla_id: id_planilla,
+          equipo_equipo: equipoData,
+          tipo: tipoData,
+          kilometraje: kilometrajeNum,
+          consumo: consumo,
+          op_ficha: operario_motorString,
+          op_nombre: nombre_op,
+          contador_ini: contadorIniNum,
+          contador_fin: contadorFinNum,
+          observacion: ""
+        };
+
+        // Crear item
+        return context.executeAction({
+          Name: "/appconsumos_qa_mb/Actions/oData/Create_Items_Planillas_Aceites.action",
+          Properties: {
+            Properties: nuevoItem
+          }
+        }).then(() => {
+          // Mostrar mensaje de éxito
+          return context.executeAction({
+            Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            Properties: {
+              Title: "Éxito",
+              Message: `Item creado exitosamente:\n` + `Equipo: ${equipoData}\n` + `Tipo: ${tipoData}\n` + `Kilometraje: ${kilometrajeNum}\n` + `Consumo: ${consumo}\n` + `Contador inicial: ${contadorIniNum}\n` + `Contador final: ${contadorFinNum}`,
+              CloseCaption: "Cerrar"
+            }
+          }).then(() => {
+            // Ocultar formulario y mostrar botón de agregar
+            form_add.setVisible(false);
+            btn_agregar.setVisible(true);
+          });
+        });
+      });
+    }).catch(error => {
+      return context.executeAction({
+        Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        Properties: {
+          Title: "Error",
+          Message: `Error al crear el item: ${error.message || 'Error desconocido'}`,
+          CloseCaption: "Cerrar"
+        }
+      });
+    });
+  } catch (error) {
+    return context.executeAction({
+      Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      Properties: {
+        Title: "Error",
+        Message: `Error inesperado: ${error.message || 'Error desconocido'}`,
+        CloseCaption: "Cerrar"
+      }
+    });
+  }
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js":
 /*!*************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js ***!
@@ -1155,7 +1531,7 @@ async function Select_Almacen_Aceites(context) {
   const fechaHoy = (0,_get_Now_DateTime_Col__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
   const filtro = `$filter=cast('${fechaHoy}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
 
-  // Habilita boton alidar por defecto
+  // Habilita boton validar por defecto
   //btn_registrar.setEnabled(true);
   btn_validar.setEnabled(true);
   try {
@@ -1207,6 +1583,81 @@ function get_Day_Only(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/get_Total_Consumos_Motor.js":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/get_Total_Consumos_Motor.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_Total_Consumos_Motor)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function get_Total_Consumos_Motor(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  let id_planilla = clientData.data_planilla_motor.id;
+  const filtro = `$filter=planilla_id eq ${id_planilla}`;
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(items => {
+    if (items && items.length > 0) {
+      // Convertir cada consumo a número (float) y sumar
+      const total = items.map(item => parseFloat(item.consumo)).filter(c => !isNaN(c)).reduce((acc, val) => acc + val, 0);
+      return total.toFixed(2);
+    }
+    return 0;
+  }).catch(error => {
+    alert(error);
+    return 0;
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/get_contador_final_Motor.js":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/get_contador_final_Motor.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_contador_final_Motor)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function get_contador_final_Motor(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  let id_planilla = clientData.data_planilla_motor.id;
+  const filtro = `$filter=planilla_id eq ${id_planilla}`;
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(items => {
+    if (items && items.length > 0) {
+      // Buscar el ítem con la posición más alta
+      const itemConPosMaxima = items.reduce((maxItem, currentItem) => {
+        const posActual = parseInt(currentItem.pos);
+        const posMax = parseInt(maxItem.pos);
+        return !isNaN(posActual) && posActual > posMax ? currentItem : maxItem;
+      }, items[0]);
+
+      // Obtener y devolver contador_fin como decimal
+      const contadorFin = parseFloat(itemConPosMaxima.contador_fin);
+      return isNaN(contadorFin) ? 0 : contadorFin;
+    }
+    return 0;
+  }).catch(error => {
+    console.error('Error al obtener el contador final:', error);
+    return 0;
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/setVisible_Aceite_IC.js":
 /*!***********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/setVisible_Aceite_IC.js ***!
@@ -1232,6 +1683,115 @@ function setVisible_Aceite_IC(context) {
   } else {
     alert("no hay sociedad");
   }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ setVisible_Botones_Planillas)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function setVisible_Botones_Planillas(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  let estado = clientData.data_planilla_motor.estado;
+  return estado === 'Pendiente';
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Motor.js":
+/*!*****************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Motor.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ set_Contador_Inicial_Motor)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function set_Contador_Inicial_Motor(context) {
+  const pageProxy = context.getPageProxy();
+  var form_add = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0");
+  var cont_inicial_motor = form_add.getControl("cont_inicial_motor");
+  var btn_agregar = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable0");
+  //obtener los controlasdores del formulario
+  let equipo = form_add.getControl("equipo_motor");
+  let tipo = form_add.getControl("tipo_motor");
+  let kmh = form_add.getControl("kmh_motor");
+  let operario_motor = form_add.getControl("operario_motor");
+  let cont_final = form_add.getControl("con_final_motor");
+  let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  let id_planilla = clientData.data_planilla_motor.id;
+  let cantidad_ini;
+  const filtro = `$filter=planilla_id eq ${id_planilla}`;
+
+  //Leer los datos de items planilla
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async results => {
+    //si hay items en la planilla
+    if (results && results.length > 0) {
+      //alert("ya hay items en la planilla");
+
+      // Trabajar directamente con el array results
+      // Encontrar el item con la posición más alta
+      let ultimoItem = null;
+      let maxPos = -1;
+      results.forEach(item => {
+        const pos = parseInt(item.pos);
+        if (!isNaN(pos) && pos > maxPos) {
+          maxPos = pos;
+          ultimoItem = item;
+        }
+      });
+
+      // Validar que tenga el campo 'contador_fin'
+      if (ultimoItem && ultimoItem.contador_fin !== undefined && ultimoItem.contador_fin !== null) {
+        cantidad_ini = ultimoItem.contador_fin;
+      } else {
+        cantidad_ini = clientData.data_planilla_motor.contador_ini;
+      }
+    } else {
+      //alert(id_planilla);
+      cantidad_ini = clientData.data_planilla_motor.contador_ini;
+    }
+    form_add.setVisible(true);
+    var cant_inicial_planilla = cantidad_ini;
+    //alert(cant_inicial_planilla)
+    cont_inicial_motor.setValue(cant_inicial_planilla);
+    //----
+    equipo.setValue("");
+    tipo.setValue("");
+    kmh.setValue("");
+    operario_motor.setValue("");
+    cont_final.setValue("");
+    //----
+
+    btn_agregar.setVisible(false);
+  }).catch(error => {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Error",
+        "Message": `Error al consultar datos: ${error.message}`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  });
 }
 
 /***/ }),
@@ -2572,7 +3132,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 async function FirmarSolicitud_Campo(context) {
-  function sendEmail(pdf, image) {
+  function sendEmail(pdf) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
       "Properties": {
@@ -2587,7 +3147,7 @@ async function FirmarSolicitud_Campo(context) {
               "sender": "natalia.lopez@structum-co.com",
               "to": "nlopez8066@outlook.com",
               "subject": "Prueba",
-              "body": `${image}`,
+              "body": `Cuerpo prueba`,
               "nombre": "pdfprueba.pdf",
               "adj": `${pdf}`
             }
@@ -2635,7 +3195,7 @@ async function FirmarSolicitud_Campo(context) {
     if (result && result.data) {
       //alert(result.data.value)//el pdf en base64
       context.b64Data = result.data.value;
-      sendEmail(result.data.value, signatureContent);
+      sendEmail(result.data.value);
       if (platform.isAndroid) {
         return (0,_Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
       } else if (platform.isIOS) {
@@ -8763,7 +9323,7 @@ module.exports = function (item) {
   \***************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Almacén: {#Page:Filtro_Aceites/#ClientData/almacen_aceite_planilla}","StatusText":"/appconsumos_qa_mb/Rules/Aceites/get_Day_Only.js","DetailImageIsCircular":false,"HeadlineText":"/appconsumos_qa_mb/Rules/get_Now_DateTime_Col.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","BodyText":"HeaderAdminTitle","Description":"HeaderAdminTitle","Footnote":"HeaderAdminTitle","HeadlineText":"HeaderAdminTitle","StatusText":"HeaderAdminTitle","Subhead":"HeaderAdminTitle","SubstatusText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Operario","PlaceHolder":"Ingrese Ficha Operario","KeyboardType":"Number","AlternateInput":"Barcode","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"1511617","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_id_material","IsVisible":false,"Separator":true,"Caption":"Aceite Hidraulico","PlaceHolder":"PlaceHolder","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_cant_ini_hid","IsVisible":true,"Separator":true,"Caption":"Contador Inicial","PlaceHolder":"Ingrese cantidad Inicial","KeyboardType":"Number","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Aceite Hidráulico - 1511617"},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1_hidraulico"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"1546081","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_id_mat_motor","IsVisible":false,"Separator":true,"Caption":"Aceite de Motor","PlaceHolder":"PlaceHolder","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_cant_ini_motor","IsVisible":true,"Separator":true,"Caption":"Contador Inicial","PlaceHolder":"Ingrese cantidad Inicial","KeyboardType":"Number","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader1","AccessoryType":"None","UseTopPadding":true,"Caption":"Aceite de Motor - 1546081"},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2_motor"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"1546082","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_id_mat_diferen","IsVisible":false,"Separator":true,"Caption":"Aceite Diferencial","PlaceHolder":"PlaceHolder","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_cant_ini_dif","IsVisible":true,"Separator":true,"Caption":"Contador Inicial","PlaceHolder":"Ingrese cantidad Inicial","KeyboardType":"Number","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader2","AccessoryType":"None","UseTopPadding":true,"Caption":"Aceite Diferencial - 1546082"},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_Aceite_IC.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"}]}],"_Type":"Page","_Name":"Crear_Planilla_Consumo","ActionBar":{"Items":[],"_Name":"ActionBar5","_Type":"Control.Type.ActionBar","Caption":"Planilla Control de Consumo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear","Styles":{"Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Almacén: {#Page:Filtro_Aceites/#ClientData/almacen_aceite_planilla}","StatusText":"/appconsumos_qa_mb/Rules/Aceites/get_Day_Only.js","DetailImageIsCircular":false,"HeadlineText":"/appconsumos_qa_mb/Rules/get_Now_DateTime_Col.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","BodyText":"HeaderAdminTitle","Description":"HeaderAdminTitle","Footnote":"HeaderAdminTitle","HeadlineText":"HeaderAdminTitle","StatusText":"HeaderAdminTitle","Subhead":"HeaderAdminTitle","SubstatusText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Operario","PlaceHolder":"Ingrese Ficha Operario","KeyboardType":"Number","AlternateInput":"Barcode","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"1546081","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_id_mat_motor","IsVisible":false,"Separator":true,"Caption":"Aceite de Motor","PlaceHolder":"PlaceHolder","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_cant_ini_motor","IsVisible":true,"Separator":true,"Caption":"Contador Inicial","PlaceHolder":"Ingrese cantidad Inicial","KeyboardType":"Number","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader1","AccessoryType":"None","UseTopPadding":true,"Caption":"Aceite de Motor - 1546081"},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2_motor"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"1511617","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_id_material","IsVisible":false,"Separator":true,"Caption":"Aceite Hidraulico","PlaceHolder":"PlaceHolder","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_cant_ini_hid","IsVisible":true,"Separator":true,"Caption":"Contador Inicial","PlaceHolder":"Ingrese cantidad Inicial","KeyboardType":"Number","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Aceite Hidráulico - 1511617"},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1_hidraulico"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"1546082","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_id_mat_diferen","IsVisible":false,"Separator":true,"Caption":"Aceite Diferencial","PlaceHolder":"PlaceHolder","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FormCellSimpleProperty_cant_ini_dif","IsVisible":true,"Separator":true,"Caption":"Contador Inicial","PlaceHolder":"Ingrese cantidad Inicial","KeyboardType":"Number","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader2","AccessoryType":"None","UseTopPadding":true,"Caption":"Aceite Diferencial - 1546082"},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_Aceite_IC.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell2"}]}],"_Type":"Page","_Name":"Crear_Planilla_Consumo","ActionBar":{"Items":[],"_Name":"ActionBar6","_Type":"Control.Type.ActionBar","Caption":"Planilla Control de Consumo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Planillas","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites.js","Image":"sap-icon://create","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -8773,7 +9333,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*******************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Módulo Consumo de Aceites y Lubricantes","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"almacen_aceites","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccione un Almacén","HelperText":"Debes seleccionar un almacén para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":false,"Subhead":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"btn_crear","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Crear Planilla","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://create-form","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Planilla.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"btn_registrar","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Registrar Consumos Aceites","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-activity-2","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Registro_Consumo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"btn_validar","IsVisible":"/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js","Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Validar Consumos Aceites","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://approvals","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Historico_Sol_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Aceites","ActionBar":{"Items":[],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Aceites y Lubricantes"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"DetailImageIsCircular":false,"HeadlineText":"Módulo Consumo de Aceites y Lubricantes","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading","Styles":{"ObjectHeader":"HeaderAdmin","HeadlineText":"HeaderAdminTitle"}},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"almacen_aceites","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Almacén","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccione un Almacén","HelperText":"Debes seleccionar un almacén para continuar","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"AlmacenesApp","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}' and tipo eq 'CAMPO'&$orderby=almacen"},"ObjectCell":{"PreserveIconStackSpacing":false,"Subhead":"{centro}","Title":"{almacen} - {almacen_desc}","Visible":true},"ReturnValue":"{almacen}"}},{"_Type":"Control.Type.FormCell.Button","_Name":"btn_crear","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Crear Planilla","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://create-form","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Planilla.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"btn_registrar","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Consumo Diario Aceites","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-activity-2","ImagePosition":"Leading","Enabled":false,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/NavTo_Crear_Registro_Consumo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"btn_validar","IsVisible":"/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js","Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Validar Consumos Aceites","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://approvals","ImagePosition":"Leading","Enabled":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Filtro_Aceites","OnReturning":"/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js","OnResume":"/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js","ActionBar":{"Items":[],"_Name":"ActionBar5","_Type":"Control.Type.ActionBar","Caption":"Aceites y Lubricantes"}}
 
 /***/ }),
 
@@ -8803,7 +9363,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \***************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":" {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_ini} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Contador Inicial","Visible":true},{"Value":" {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_fin} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Contador Final","Visible":true}],"MaxItemCount":1,"Layout":{"NumberOfColumns":2}},{"Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0","Controls":[],"Layout":{"NumberOfColumns":1}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Registrar_Aceite_Motor","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":" {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_ini} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue_inicial","KeyName":"Contador Inicial","Visible":true},{"Value":" {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_fin} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue_final","KeyName":"Contador Final","Visible":true},{"Value":" {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/estado} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue_estado","KeyName":"Estado","Visible":true},{"Value":" {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/total} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue_consumo","KeyName":"Total Consumo","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Layout":{"LayoutType":"Vertical","HorizontalAlignment":"Leading"},"_Type":"Section.Type.ButtonTable","_Name":"SectionButtonTable0","Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js","EmptySection":{"FooterVisible":false},"Buttons":[{"Styles":{"Image":"Button2","Button":"Button2"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton_visible","Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://sys-add","ImagePosition":"Leading","FullWidth":true,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Motor.js"},{"Styles":{"Image":"Button2","Button":"Button2"},"_Type":"ButtonTable.Type.Button","_Name":"ButtonTableTypeButton_enviar","Title":"Enviar Planilla","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://open-command-field","ImagePosition":"Leading","FullWidth":true,"Visible":true,"Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Motor.js"}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"equipo_motor","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Equipo","DataPaging":{"ShowLoadingIndicator":true,"LoadingIndicatorText":"Cargando equipos...","PageSize":50},"PickerPrompt":"Selecciona un equipo","PlaceHolder":"PlaceHolder","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true,"Placeholder":"Equipo..."},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Equipos","QueryOptions":"$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}'&$orderby=equipo"},"ObjectCell":{"Description":"{equipo_desc}","PreserveIconStackSpacing":false,"StatusText":"{centro}","Subhead":"{tipo}","SubstatusText":"{sociedad}","Title":"{equipo}","Visible":true},"ReturnValue":"{equipo}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"tipo_motor","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Tipo","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleccione el tipo","PlaceHolder":"PlaceHolder","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"IsSearchCancelledAfterSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Placeholder":"Tipo..."},"PickerItems":[{"DisplayValue":"Full","ReturnValue":"Full"},{"DisplayValue":"Cambio","ReturnValue":"Cambio"}]},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"kmh_motor","IsVisible":true,"Separator":true,"Caption":"Kilometraje Horómetro","PlaceHolder":"Ingrese valor","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"operario_motor","IsVisible":true,"Separator":true,"Caption":"Ficha Operario","PlaceHolder":"Ingrese ficha","KeyboardType":"Number","AlternateInput":"Barcode","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"cont_inicial_motor","IsVisible":true,"Separator":true,"Caption":"Contador Inicial","PlaceHolder":"Ingrese contador Inicial","KeyboardType":"Number","Enabled":true,"IsEditable":false},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"con_final_motor","IsVisible":true,"Separator":true,"Caption":"Contador Final","PlaceHolder":"Ingrese contador final","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Registrar Consumo","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-activity-2","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Motor.js"}],"Layout":{"NumberOfColumns":1},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Agregar Consumo de Aceite Motor"},"Visible":false,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader1","AccessoryType":"None","UseTopPadding":true,"Caption":"Consumos de Aceite Motor"},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id.js"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar...","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{equipo_equipo}","Subhead":"{op_ficha} - {op_nombre}","Footnote":"Consumo: {consumo}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"LoadingIndicatorText":"Cargando datos...","PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Registrar_Aceite_Motor","ActionBar":{"Items":[],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -8813,7 +9373,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \*******************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Ficha: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/operario_ficha} ","StatusText":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/numero}","SubstatusText":"{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen/almacen_desc}","DetailImageIsCircular":false,"BodyText":"{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/operario/nombre}","HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true}]},{"_Type":"Control.Type.Tabs","_Name":"Tabs0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Motor","PageToOpen":"/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Motor.page","_Name":"Motor_Page"},{"_Type":"Control.Type.TabItem","Caption":"Hidráulico","Image":"sap-icon://performance","PageToOpen":"/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Hidraulico.page","_Name":"Hidra_Page"}],"Position":"Top","TabStripType":"Normal","SwipeEnabled":true}],"_Type":"Page","_Name":"Registrar_Planilla_Consumo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Planilla Consumos de Aceite"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Ficha: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/operario_ficha} ","StatusText":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/numero}","SubstatusText":"{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen/almacen_desc}","DetailImageIsCircular":false,"BodyText":"{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/operario/nombre}","HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true}]},{"_Type":"Control.Type.Tabs","_Name":"Tabs0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Motor","PageToOpen":"/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Motor.page","_Name":"Motor_Page"},{"_Type":"Control.Type.TabItem","Caption":"Hidráulico","PageToOpen":"/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Hidraulico.page","_Name":"Hidra_Page"}],"Position":"Top","TabStripType":"Normal","SwipeEnabled":true}],"_Type":"Page","_Name":"Registrar_Planilla_Consumo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Planilla Consumos de Aceite"}}
 
 /***/ }),
 
@@ -9234,16 +9794,6 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 /***/ ((module) => {
 
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.Image","_Name":"SectionImage0","Visible":true,"Image":"/appconsumos_qa_mb/Images/logo_both.png","Width":477,"Height":52,"Alignment":"Center","ContentMode":"Center","PaddingTop":10},{"ObjectHeader":{"Subhead":"{#Application/#AppData/UserId}","Description":"Aplicación para llevar trazabilidad de consumos en Campo e Ingenio","DetailImageIsCircular":false,"HeadlineText":"Consumos APP","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCells":[{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem0","DetailImage":"sap-icon://key-user-settings","Headline":"Administración","Subheadline":"Administrar Usuarios y Almacenes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Administracion/NavTo_Administracion.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem1","DetailImage":"sap-icon://e-care","Headline":"Campo","Subheadline":"Gestionar Órdenes de Campo","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_Campo.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem2","DetailImage":"sap-icon://factory","Headline":"Ingenio","Subheadline":"Gestionar Órdenes de Ingenio","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_Ingenio.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem3","DetailImage":"sap-icon://customer-order-entry","Headline":"Inventario","Subheadline":"Gestionar Inventario de Almacenes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/NavTo_Inventario.js"}},{"ContactCell":{"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Name":"ContactCellItem4","DetailImage":"sap-icon://mileage","Headline":"Aceites y Lubricantes","Subheadline":"Gestionar Consumos de Aceites y Lubricantes","Description":"","Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/NavTo_Aceites.js"}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/Application/UserMenuPopover.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Inicio","PrefersLargeCaption":true}}
-
-/***/ }),
-
-/***/ "./build.definitions/appconsumos_qa_mb/Pages/PruebaAceites.page":
-/*!**********************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Pages/PruebaAceites.page ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"Subhead":"Subhead","Footnote":"Footnote","Description":"Description","StatusText":"Status","SubstatusText":"Substatus","DetailImage":"res://mdk_logo.png","DetailImageIsCircular":false,"BodyText":"Show the body text","HeadlineText":"Headline","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"Visible":true}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}},{"_Type":"Control.Type.Tabs","_Name":"Tabs0","Items":[{"_Type":"Control.Type.TabItem","Caption":"TabItem0","_Name":"Motor"},{"_Type":"Control.Type.TabItem","Caption":"TabItem0","_Name":"Hidraulico"}],"Position":"Top","TabStripType":"Normal","SwipeEnabled":true}],"_Type":"Page","_Name":"PruebaAceites","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -9887,13 +10437,23 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Items_Planillas_Aceites.action":
+/*!*************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Items_Planillas_Aceites.action ***!
+  \*************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_Items_Planillas_Aceites"},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites"},"Properties":{"id":""}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Planilla_Aceites.action":
 /*!******************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Planilla_Aceites.action ***!
   \******************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_Planilla_Aceites"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al crear la solicitud {#ActionResults:Create_Planilla_Aceites/error}","Title":"No creada","OKCaption":"Ok"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/ClosePage.action","Properties":{"NavigateBackToPage":"Filtro_Aceites"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites"},"Properties":{"id":""}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_Planilla_Aceites"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al crear la solicitud {#ActionResults:Create_Planilla_Aceites/error}","Title":"No creada","OKCaption":"Ok"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites"},"Properties":{"id":""}}
 
 /***/ }),
 
@@ -9994,6 +10554,16 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Empleados"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al actualizar el empleado: {#ActionResults:Update_Empleados/error}","Title":"Error al actualizar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Properties":{"NavigateBackToPage":"Lista_Usuarios"}},"Message":"Empleado actualizado exitosamente","Title":"Actualización exitosa","OKCaption":"Ok"}},"ShowActivityIndicator":true,"ActivityIndicatorText":"Actualizando empleado...","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"EmpleadosApp","ReadLink":"{@odata.readLink}"},"Properties":{"rol":"#Page:Editar_Usuarios/#Control:rol_edit/#Value/#First/DisplayValue","isAdmin":"#Page:Editar_Usuarios/#Control:isadmin_edit/#Value","estado":"/appconsumos_qa_mb/Rules/Administracion/get_Estado.js"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Motor.action":
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Motor.action ***!
+  \***********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Motor"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error: {#ActionResults:Update_Planilla_Aceite_Motor/error}","Title":"Error","OKCaption":"Ok"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Se ha enviado la planilla correctamente","Title":"Envío Exitoso","OKCaption":"Aceptar","OnOK":"/appconsumos_qa_mb/Rules/Aceites/Cerrar_Planilla_Aceite_Motor.js"}},"ShowActivityIndicator":true,"ActivityIndicatorText":"Enviando Planilla Aceites...","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/id}}"},"Properties":{"contador_fin":"/appconsumos_qa_mb/Rules/Aceites/get_contador_final_Motor.js","estado":"Enviado","total":"/appconsumos_qa_mb/Rules/Aceites/get_Total_Consumos_Motor.js"}}
 
 /***/ }),
 

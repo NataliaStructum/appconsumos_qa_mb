@@ -1,16 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -22,28 +20,44 @@
 						{
 							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_ini} ",
 							"_Type": "KeyValue.Type.Item",
-							"_Name": "KeyValue0",
+							"_Name": "KeyValue_inicial",
 							"KeyName": "Contador Inicial",
 							"Visible": true
 						},
 						{
 							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_fin} ",
 							"_Type": "KeyValue.Type.Item",
-							"_Name": "KeyValue1",
+							"_Name": "KeyValue_final",
 							"KeyName": "Contador Final",
+							"Visible": true
+						},
+						{
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/estado} ",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue_estado",
+							"KeyName": "Estado",
+							"Visible": true
+						},
+						{
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/total} ",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue_consumo",
+							"KeyName": "Total Consumo",
 							"Visible": true
 						}
 					],
 					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -51,25 +65,312 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
-					"Controls": [],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton_visible",
+							"Title": "Agregar Consumo",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://sys-add",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Motor.js"
+						},
+						{
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton_enviar",
+							"Title": "Enviar Planilla",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://open-command-field",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Motor.js"
+						}
+					]
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "equipo_motor",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Equipo",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"LoadingIndicatorText": "Cargando equipos...",
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona un equipo",
+							"PlaceHolder": "PlaceHolder",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Equipo..."
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "Equipos",
+									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}'&$orderby=equipo"
+								},
+								"ObjectCell": {
+									"Description": "{equipo_desc}",
+									"PreserveIconStackSpacing": false,
+									"StatusText": "{centro}",
+									"Subhead": "{tipo}",
+									"SubstatusText": "{sociedad}",
+									"Title": "{equipo}",
+									"Visible": true
+								},
+								"ReturnValue": "{equipo}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "tipo_motor",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Tipo",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione el tipo",
+							"PlaceHolder": "PlaceHolder",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Placeholder": "Tipo..."
+							},
+							"PickerItems": [
+								{
+									"DisplayValue": "Full",
+									"ReturnValue": "Full"
+								},
+								{
+									"DisplayValue": "Cambio",
+									"ReturnValue": "Cambio"
+								}
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "kmh_motor",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Kilometraje Horómetro",
+							"PlaceHolder": "Ingrese valor",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "operario_motor",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Ficha Operario",
+							"PlaceHolder": "Ingrese ficha",
+							"KeyboardType": "Number",
+							"AlternateInput": "Barcode",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "cont_inicial_motor",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Contador Inicial",
+							"PlaceHolder": "Ingrese contador Inicial",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "con_final_motor",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Contador Final",
+							"PlaceHolder": "Ingrese contador final",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"Title": "Registrar Consumo",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://add-activity-2",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Motor.js"
+						}
+					],
 					"Layout": {
 						"NumberOfColumns": 1
+					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Agregar Consumo de Aceite Motor"
+					},
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Consumos de Aceite Motor"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+						"EntitySet": "ItemPlanillasAceites",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id.js"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay elementos para mostrar...",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
+						"Title": "{equipo_equipo}",
+						"Subhead": "{op_ficha} - {op_nombre}",
+						"Footnote": "Consumo: {consumo}",
+						"Description": "{equipo/equipo_desc}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Cont Inicial: {contador_ini}",
+						"SubstatusText": "Cont Final: {contador_fin}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js",
+								"Text": "{tipo}"
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://measurement-document"
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"LoadingIndicatorText": "Cargando datos...",
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Registrar_Aceite_Motor",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar11",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

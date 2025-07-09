@@ -95,7 +95,7 @@
 								"Image": "Button",
 								"Button": "Button"
 							},
-							"Title": "Registrar Consumos Aceites",
+							"Title": "Consumo Diario Aceites",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
@@ -119,8 +119,7 @@
 							"Semantic": "Tint",
 							"Image": "sap-icon://approvals",
 							"ImagePosition": "Leading",
-							"Enabled": false,
-							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Historico_Sol_Ingenio.js"
+							"Enabled": false
 						}
 					],
 					"Layout": {
@@ -138,9 +137,11 @@
 	],
 	"_Type": "Page",
 	"_Name": "Filtro_Aceites",
+	"OnReturning": "/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js",
+	"OnResume": "/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Aceites y Lubricantes"
 	}

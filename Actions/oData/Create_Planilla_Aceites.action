@@ -11,12 +11,6 @@
 			"OKCaption": "Ok"
 		}
 	},
-	"OnSuccess": {
-		"Name": "/appconsumos_qa_mb/Actions/ClosePage.action",
-		"Properties": {
-			"NavigateBackToPage": "Filtro_Aceites"
-		}
-	},
 	"Target": {
 		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 		"EntitySet": "PlanillasAceites"
