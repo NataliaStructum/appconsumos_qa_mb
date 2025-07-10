@@ -275,6 +275,7 @@
                 <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
                 <Property Name="estado" Type="Edm.String" MaxLength="80"/>
                 <Property Name="total" Type="Edm.Decimal" Precision="13" Scale="3"/>
+                <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
             </EntityType>
             <EntityType Name="ItemPlanillasAceites">
                 <Key>

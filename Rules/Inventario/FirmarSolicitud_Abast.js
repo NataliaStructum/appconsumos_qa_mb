@@ -42,7 +42,7 @@ export default function FirmarSolicitud_Abast(context) {
     }
 
     function sendEmail(pdf) {
-        /*return context.executeAction({
+        return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
             "Properties": {
                 "OnFailure": "",
@@ -64,7 +64,7 @@ export default function FirmarSolicitud_Abast(context) {
                     }
                 }
             }
-        })*//*.then((result) => {
+        })/*.then((result) => {
             if (result && result.data) {
                 //alert(JSON.stringify(result))
                 return;
@@ -97,11 +97,21 @@ export default function FirmarSolicitud_Abast(context) {
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], `$expand=material,almacen&$filter=solicitud_id eq ${BindingData.id}`).then(async (results) => {
         if (results && results.length > 0) {
             results.forEach(e => {
+                let sap = ""
+                let desc = ""
+                if(typeof e.mat_nuevo_desc === 'string'){
+                    sap = e.mat_nuevo
+                    desc = e.mat_nuevo_desc
+                }
+                if(typeof e.material_material === 'string'){
+                    sap = e.material_material
+                    desc = e.material.material_desc
+                }
                 if (e.aprobado) {
                     datajson.push({
                         alce: almacen,
-                        sap: e.material_material.replace(/^0+/, ''),
-                        desc: e.material.material_desc,
+                        sap: sap.replace(/^0+/, ''),
+                        desc: desc,
                         cant: String(e.cantidad_aprobada),
                         um: ""
                     })

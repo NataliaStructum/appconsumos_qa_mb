@@ -80,7 +80,7 @@
 								"Image": "Button",
 								"Button": "Button"
 							},
-							"Title": "Crear y Ver Solicitudes",
+							"Title": "Solicitudes de Abastecimiento",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
@@ -107,7 +107,7 @@
 	"_Name": "Filtro_Almacen_Solicitud_Abast",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar6",
+		"_Name": "ActionBar7",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Almacén"
 	}
