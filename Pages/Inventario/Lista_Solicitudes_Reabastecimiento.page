@@ -146,7 +146,7 @@
 				"Icon": "sap-icon://add",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"Visible": true,
+				"Visible": "/appconsumos_qa_mb/Rules/Inventario/setVisible_CrearSolicitudAbast.js",
 				"OnPress": "/appconsumos_qa_mb/Rules/Inventario/NavTo_Agregar_Solicitud_Reabastecimiento.js"
 			}
 		],
