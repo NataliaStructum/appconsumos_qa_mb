@@ -1,21 +1,21 @@
 /**
- * Función para registrar items de aceite de motor en la planilla
- * @param {IClientAPI} context - Contexto de la aplicación MDK
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
  */
-import guid from '../guid'
 
-export default function Registrar_Items_Aceite_Motor(context) {
+import guid from '../guid'
+export default function Registrar_Items_Aceite_Hidraulico(context) {
     try {
         // Obtener valores de los controles
-        let equipo = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:equipo_motor/#Value');
-        let tipo = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:tipo_motor/#Value');
-        let kmh = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:kmh_motor/#Value');
-        let operario_motor = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:operario_motor/#Value');
-        let cont_inicial = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:cont_inicial_motor/#Value');
-        let cont_final = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:con_final_motor/#Value');
-        let observaciones = context.evaluateTargetPath('#Page:Registrar_Aceite_Motor/#Control:observaciones_motor/#Value');
+        let equipo = context.evaluateTargetPath('#Page:Registrar_Aceite_Hidraulico/#Control:equipo_hidraulico/#Value');
+        let tipo = context.evaluateTargetPath('#Page:Registrar_Aceite_Hidraulico/#Control:tipo_hidraulico/#Value');
+        let kmh = context.evaluateTargetPath('#Page:Registrar_Aceite_Hidraulico/#Control:kmh_hidraulico/#Value');
+        let operario_hidraulico = context.evaluateTargetPath('#Page:Registrar_Aceite_Hidraulico/#Control:operario_hidraulico/#Value');
+        let cont_inicial = context.evaluateTargetPath('#Page:Registrar_Aceite_Hidraulico/#Control:cont_inicial_hidraulico/#Value');
+        let cont_final = context.evaluateTargetPath('#Page:Registrar_Aceite_Hidraulico/#Control:con_final_hidraulico/#Value');
+        let observaciones = context.evaluateTargetPath('#Page:Registrar_Aceite_Hidraulico/#Control:observaciones_hidraulico/#Value');
         let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
-        let id_planilla = clientData.data_planilla_motor.id;
+        let id_planilla = clientData.data_planilla_hidraulico.id;
 
         // Obtener controles del formulario
         const pageProxy = context.getPageProxy();
@@ -26,16 +26,16 @@ export default function Registrar_Items_Aceite_Motor(context) {
         let contadorIniNum = parseFloat(cont_inicial) || 0;
         let contadorFinNum = parseFloat(cont_final) || 0;
         let kilometrajeNum = parseFloat(kmh) || 0;
-        let operario_motorString = String(operario_motor) || "";
+        let operario_hidraulicoString = String(operario_hidraulico) || "";
         let equipoData = null;
         let tipoData = null;
         let observacionesData = null;
         let observacionesTxtData = null;
-        
+
         if (equipo && Array.isArray(equipo) && equipo.length > 0 && equipo[0] && equipo[0].BindingObject) {
             equipoData = equipo[0].BindingObject.equipo;
         }
-        
+
         if (tipo && Array.isArray(tipo) && tipo.length > 0 && tipo[0]) {
             tipoData = tipo[0].DisplayValue;
         }
@@ -52,18 +52,18 @@ export default function Registrar_Items_Aceite_Motor(context) {
                 Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                 Properties: {
                     Title: "Error de validación",
-                    Message: "Faltan campos obligatorios: " + 
-                             (!equipoData ? "Equipo " : "") +
-                             (!tipoData ? "Tipo " : "") +
-                             (!kilometrajeNum ? "Kilometraje " : "") +
-                             (!contadorFinNum ? "Contador Final " : "")+
-                             (!observacionesData ? "Observaciones " : ""),
+                    Message: "Faltan campos obligatorios: " +
+                        (!equipoData ? "Equipo " : "") +
+                        (!tipoData ? "Tipo " : "") +
+                        (!kilometrajeNum ? "Kilometraje " : "") +
+                        (!contadorFinNum ? "Contador Final " : "") +
+                        (!observacionesData ? "Observaciones " : ""),
                     CloseCaption: "Cerrar"
                 }
             });
         }
 
-        if (kilometrajeNum < 0 || contadorFinNum  < 0) {
+        if (kilometrajeNum < 0 || contadorFinNum < 0) {
             return context.executeAction({
                 Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                 Properties: {
@@ -103,7 +103,7 @@ export default function Registrar_Items_Aceite_Motor(context) {
         const filtro = `$filter=planilla_id eq ${id_planilla}`;
 
         // Validar operario
-        return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Empleados', [], `$filter=ficha eq '${operario_motor}'`)
+        return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Empleados', [], `$filter=ficha eq '${operario_hidraulico}'`)
             .then((results) => {
                 if (!results || results.length === 0) {
                     return context.executeAction({
@@ -135,12 +135,12 @@ export default function Registrar_Items_Aceite_Motor(context) {
                             tipo: tipoData,
                             kilometraje: kilometrajeNum,
                             consumo: consumo,
-                            op_ficha: operario_motorString,
+                            op_ficha: operario_hidraulicoString,
                             op_nombre: nombre_op,
                             contador_ini: contadorIniNum,
                             contador_fin: contadorFinNum,
                             observacion: observacionesData,
-                            obs_text : observacionesTxtData
+                            obs_text: observacionesTxtData
                         };
 
                         // Crear item

@@ -2,21 +2,21 @@
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
-export default function set_Contador_Inicial_Motor(context) {
+export default function set_Contador_Inicial_Diferencial(context) {
     const pageProxy = context.getPageProxy();
     var form_add = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0")
-    var cont_inicial_motor = form_add.getControl("cont_inicial_motor")
+    var cont_inicial_diferencial = form_add.getControl("cont_inicial_diferencial")
     var btn_agregar = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable0")
     //obtener los controlasdores del formulario
-    let equipo = form_add.getControl("equipo_motor")
-    let tipo = form_add.getControl("tipo_motor")
-    let kmh = form_add.getControl("kmh_motor")
-    let operario_motor = form_add.getControl("operario_motor")
-    let cont_final = form_add.getControl("con_final_motor")
-    let observaciones = form_add.getControl("observaciones_motor")
+    let equipo = form_add.getControl("equipo_diferencial")
+    let tipo = form_add.getControl("tipo_diferencial")
+    let kmh = form_add.getControl("kmh_diferencial")
+    let operario_diferencial = form_add.getControl("operario_diferencial")
+    let cont_final = form_add.getControl("con_final_diferencial")
+    let observaciones = form_add.getControl("observaciones_diferencial")
 
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
-    let id_planilla = clientData.data_planilla_motor.id;
+    let id_planilla = clientData.data_planilla_diferencial.id;
     let cantidad_ini;
 
     const filtro = `$filter=planilla_id eq ${id_planilla}`;
@@ -44,26 +44,26 @@ export default function set_Contador_Inicial_Motor(context) {
             if (ultimoItem && ultimoItem.contador_fin !== undefined && ultimoItem.contador_fin !== null) {
                 cantidad_ini = ultimoItem.contador_fin;
             } else {
-                cantidad_ini = clientData.data_planilla_motor.contador_ini;
+                cantidad_ini = clientData.data_planilla_diferencial.contador_ini;
             }
 
         } else {
 
             //alert(id_planilla);
-            cantidad_ini = clientData.data_planilla_motor.contador_ini;
+            cantidad_ini = clientData.data_planilla_diferencial.contador_ini;
         }
 
         form_add.setVisible(true);
 
         var cant_inicial_planilla = cantidad_ini;
         //alert(cant_inicial_planilla)
-        cont_inicial_motor.setValue(cant_inicial_planilla);
+        cont_inicial_diferencial.setValue(cant_inicial_planilla);
         //----
         equipo.setValue("");
         tipo.setValue("");
         observaciones.setValue("");
         kmh.setValue("");
-        operario_motor.setValue("");
+        operario_diferencial.setValue("");
         cont_final.setValue("");
         //----
 
@@ -81,4 +81,5 @@ export default function set_Contador_Inicial_Motor(context) {
                 }
             });
         });
+
 }

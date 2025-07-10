@@ -300,6 +300,7 @@
                 <Property Name="contador_ini" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="contador_fin" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="observacion" Type="Edm.String" MaxLength="5"/>
+                <Property Name="obs_text" Type="Edm.String" MaxLength="100"/>
             </EntityType>
             <EntityType Name="VerSolicitudesAbiertas">
                 <Key>
