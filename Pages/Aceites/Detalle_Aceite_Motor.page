@@ -1,0 +1,10 @@
+{
+	"_Type": "Page",
+	"_Name": "Detalle_Aceite_Motor",
+	"Controls": [
+		{
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	]
+}
