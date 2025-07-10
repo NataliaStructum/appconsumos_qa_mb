@@ -137,7 +137,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona un equipo",
-							"PlaceHolder": "PlaceHolder",
+							"PlaceHolder": "Ingrese Equipo",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
@@ -178,7 +178,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Seleccione el tipo",
-							"PlaceHolder": "PlaceHolder",
+							"PlaceHolder": "Ingrese Tipo",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
@@ -242,6 +242,134 @@
 							"KeyboardType": "Number",
 							"Enabled": true,
 							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "observaciones_motor",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Observación",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una observación",
+							"PlaceHolder": "Observación",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": [
+								{
+									"DisplayValue": "MANGUERA DESCOGOLLADOR",
+									"ReturnValue": "M1"
+								},
+								{
+									"DisplayValue": "MANGUERA DIVISOR / SIN FIN",
+									"ReturnValue": "M2"
+								},
+								{
+									"DisplayValue": "MANGUERA DISCO CORTE",
+									"ReturnValue": "M3"
+								},
+								{
+									"DisplayValue": "MANGUERA MARCHA / PARQUEO",
+									"ReturnValue": "M4"
+								},
+								{
+									"DisplayValue": "MANGUERA ELEVADOR",
+									"ReturnValue": "M5"
+								},
+								{
+									"DisplayValue": "MANGUERA PICADOR",
+									"ReturnValue": "M6"
+								},
+								{
+									"DisplayValue": "MANGUERA SUSPENSION / CANUTO",
+									"ReturnValue": "M7"
+								},
+								{
+									"DisplayValue": "MANGUERA ROLO",
+									"ReturnValue": "M8"
+								},
+								{
+									"DisplayValue": "MANGUERA EXTRACTOR PRIMARIO - SEGUNDARIO",
+									"ReturnValue": "M9"
+								},
+								{
+									"DisplayValue": "MANGUERA GATO GIRO / TORNAMESA",
+									"ReturnValue": "M10"
+								},
+								{
+									"DisplayValue": "MANGUERA PASAMURO",
+									"ReturnValue": "M11"
+								},
+								{
+									"DisplayValue": "MANGUERA BANCO LEVANTE",
+									"ReturnValue": "M12"
+								},
+								{
+									"DisplayValue": "MANGUERA SUCCION",
+									"ReturnValue": "M13"
+								},
+								{
+									"DisplayValue": "MANGUERA BANCO CONTROL HCO",
+									"ReturnValue": "M14"
+								},
+								{
+									"DisplayValue": "CONSUMO AUTOVOLTEO",
+									"ReturnValue": "M15"
+								},
+								{
+									"DisplayValue": "CONSUMO TRACTOR",
+									"ReturnValue": "M16"
+								},
+								{
+									"DisplayValue": "MANGUERA ENFRIADOR ACEITE",
+									"ReturnValue": "M17"
+								},
+								{
+									"DisplayValue": "MNGUERA ALIMENTACION",
+									"ReturnValue": "M18"
+								},
+								{
+									"DisplayValue": "COMPLETAR FULL",
+									"ReturnValue": "M19"
+								},
+								{
+									"DisplayValue": "TENSIONAR ORUGAS",
+									"ReturnValue": "M20"
+								},
+								{
+									"DisplayValue": "CAMBIO MOTOR HIDRAULICO",
+									"ReturnValue": "M21"
+								},
+								{
+									"DisplayValue": "MANGUERA CORTADOR BASE",
+									"ReturnValue": "M22"
+								},
+								{
+									"DisplayValue": "FUGA TANQUE HIDRAULICO",
+									"ReturnValue": "M23"
+								},
+								{
+									"DisplayValue": "ENFRIADOR ACEITE",
+									"ReturnValue": "M24"
+								},
+								{
+									"DisplayValue": "CAJA BASE",
+									"ReturnValue": "M25"
+								},
+								{
+									"DisplayValue": "MANGUERA BASCULANTE",
+									"ReturnValue": "M26"
+								}
+							]
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -333,6 +461,10 @@
 							{
 								"Color": "/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js",
 								"Text": "{tipo}"
+							},
+							{
+								"Color": "Grey",
+								"Text": "{observacion} - {obs_text} "
 							}
 						],
 						"AvatarStack": {
@@ -370,7 +502,7 @@
 	"_Name": "Registrar_Aceite_Motor",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar12",
+		"_Name": "ActionBar14",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

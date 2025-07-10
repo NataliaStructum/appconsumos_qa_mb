@@ -1,16 +1,14 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -22,28 +20,44 @@
 						{
 							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_ini} ",
 							"_Type": "KeyValue.Type.Item",
-							"_Name": "KeyValue0",
+							"_Name": "KeyValue_inicial",
 							"KeyName": "Contador Inicial",
 							"Visible": true
 						},
 						{
 							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_fin} ",
 							"_Type": "KeyValue.Type.Item",
-							"_Name": "KeyValue1",
+							"_Name": "KeyValue_final",
 							"KeyName": "Contador Final",
+							"Visible": true
+						},
+						{
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/estado} ",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue_estado",
+							"KeyName": "Estado",
+							"Visible": true
+						},
+						{
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/total} ",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue_consumo",
+							"KeyName": "Total Consumo",
 							"Visible": true
 						}
 					],
 					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
 					"Layout": {
 						"NumberOfColumns": 2
 					}
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -51,25 +65,444 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
-					"Controls": [],
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas_Hidraulico.js",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton_visible",
+							"Title": "Agregar Consumo",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://sys-add",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Hidraulico.js"
+						},
+						{
+							"Styles": {
+								"Image": "Button2",
+								"Button": "Button2"
+							},
+							"_Type": "ButtonTable.Type.Button",
+							"_Name": "ButtonTableTypeButton_enviar",
+							"Title": "Enviar Planilla",
+							"Alignment": "Right",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://open-command-field",
+							"ImagePosition": "Leading",
+							"FullWidth": true,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Hidraulico.js"
+						}
+					]
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "equipo_hidraulico",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Equipo",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"LoadingIndicatorText": "Cargando equipos...",
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona un equipo",
+							"PlaceHolder": "Ingrese Equipo",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true,
+								"Placeholder": "Equipo..."
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "Equipos",
+									"QueryOptions": "$filter=sociedad eq '{{#Page:Main/#ClientData/info_user/sociedad}}'&$orderby=equipo"
+								},
+								"ObjectCell": {
+									"Description": "{equipo_desc}",
+									"PreserveIconStackSpacing": false,
+									"StatusText": "{centro}",
+									"Subhead": "{tipo}",
+									"SubstatusText": "{sociedad}",
+									"Title": "{equipo}",
+									"Visible": true
+								},
+								"ReturnValue": "{equipo}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "tipo_hidraulico",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Tipo",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Seleccione el tipo",
+							"PlaceHolder": "Ingrese Tipo",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Placeholder": "Tipo..."
+							},
+							"PickerItems": [
+								{
+									"DisplayValue": "Full",
+									"ReturnValue": "Full"
+								},
+								{
+									"DisplayValue": "Cambio",
+									"ReturnValue": "Cambio"
+								}
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "kmh_hidraulico",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Kilometraje Horómetro",
+							"PlaceHolder": "Ingrese valor",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "operario_hidraulico",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Ficha Operario",
+							"PlaceHolder": "Ingrese ficha",
+							"KeyboardType": "Number",
+							"AlternateInput": "Barcode",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "cont_inicial_hidraulico",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Contador Inicial",
+							"PlaceHolder": "Ingrese contador Inicial",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "con_final_hidraulico",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Contador Final",
+							"PlaceHolder": "Ingrese contador final",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "observaciones_hidraulico",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Observación",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una observación",
+							"PlaceHolder": "Observación",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": [
+								{
+									"DisplayValue": "MANGUERA DESCOGOLLADOR",
+									"ReturnValue": "M1"
+								},
+								{
+									"DisplayValue": "MANGUERA DIVISOR / SIN FIN",
+									"ReturnValue": "M2"
+								},
+								{
+									"DisplayValue": "MANGUERA DISCO CORTE",
+									"ReturnValue": "M3"
+								},
+								{
+									"DisplayValue": "MANGUERA MARCHA / PARQUEO",
+									"ReturnValue": "M4"
+								},
+								{
+									"DisplayValue": "MANGUERA ELEVADOR",
+									"ReturnValue": "M5"
+								},
+								{
+									"DisplayValue": "MANGUERA PICADOR",
+									"ReturnValue": "M6"
+								},
+								{
+									"DisplayValue": "MANGUERA SUSPENSION / CANUTO",
+									"ReturnValue": "M7"
+								},
+								{
+									"DisplayValue": "MANGUERA ROLO",
+									"ReturnValue": "M8"
+								},
+								{
+									"DisplayValue": "MANGUERA EXTRACTOR PRIMARIO - SEGUNDARIO",
+									"ReturnValue": "M9"
+								},
+								{
+									"DisplayValue": "MANGUERA GATO GIRO / TORNAMESA",
+									"ReturnValue": "M10"
+								},
+								{
+									"DisplayValue": "MANGUERA PASAMURO",
+									"ReturnValue": "M11"
+								},
+								{
+									"DisplayValue": "MANGUERA BANCO LEVANTE",
+									"ReturnValue": "M12"
+								},
+								{
+									"DisplayValue": "MANGUERA SUCCION",
+									"ReturnValue": "M13"
+								},
+								{
+									"DisplayValue": "MANGUERA BANCO CONTROL HCO",
+									"ReturnValue": "M14"
+								},
+								{
+									"DisplayValue": "CONSUMO AUTOVOLTEO",
+									"ReturnValue": "M15"
+								},
+								{
+									"DisplayValue": "CONSUMO TRACTOR",
+									"ReturnValue": "M16"
+								},
+								{
+									"DisplayValue": "MANGUERA ENFRIADOR ACEITE",
+									"ReturnValue": "M17"
+								},
+								{
+									"DisplayValue": "MNGUERA ALIMENTACION",
+									"ReturnValue": "M18"
+								},
+								{
+									"DisplayValue": "COMPLETAR FULL",
+									"ReturnValue": "M19"
+								},
+								{
+									"DisplayValue": "TENSIONAR ORUGAS",
+									"ReturnValue": "M20"
+								},
+								{
+									"DisplayValue": "CAMBIO MOTOR HIDRAULICO",
+									"ReturnValue": "M21"
+								},
+								{
+									"DisplayValue": "MANGUERA CORTADOR BASE",
+									"ReturnValue": "M22"
+								},
+								{
+									"DisplayValue": "FUGA TANQUE HIDRAULICO",
+									"ReturnValue": "M23"
+								},
+								{
+									"DisplayValue": "ENFRIADOR ACEITE",
+									"ReturnValue": "M24"
+								},
+								{
+									"DisplayValue": "CAJA BASE",
+									"ReturnValue": "M25"
+								},
+								{
+									"DisplayValue": "MANGUERA BASCULANTE",
+									"ReturnValue": "M26"
+								}
+							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"Title": "Registrar Consumo",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://add-activity-2",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Hidraulico.js"
+						}
+					],
 					"Layout": {
 						"NumberOfColumns": 1
+					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Agregar Consumo de Aceite Hidraulico"
+					},
+					"Visible": false,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Consumos de Aceite Hidraulico"
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+						"EntitySet": "ItemPlanillasAceites",
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id_Hidraulico.js"
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No hay elementos para mostrar...",
+						"FooterVisible": false
+					},
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
+						"Title": "{equipo_equipo}",
+						"Subhead": "{op_ficha} - {op_nombre}",
+						"Footnote": "Consumo: {consumo}",
+						"Description": "{equipo/equipo_desc}",
+						"DisplayDescriptionInMobile": true,
+						"StatusText": "Cont Inicial: {contador_ini}",
+						"SubstatusText": "Cont Final: {contador_fin}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "None",
+						"Tags": [
+							{
+								"Color": "/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js",
+								"Text": "{tipo}"
+							},
+							{
+								"Color": "Grey",
+								"Text": "{observacion} - {obs_text} "
+							}
+						],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "sap-icon://measurement-document"
+								}
+							],
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"LoadingIndicatorText": "Cargando datos...",
+						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
 					}
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",
 	"_Name": "Registrar_Aceite_Hidraulico",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar15",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
