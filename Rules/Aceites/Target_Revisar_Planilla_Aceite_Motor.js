@@ -3,7 +3,7 @@
  * @param {IClientAPI} context
  */
 export default function Target_Revisar_Planilla_Aceite_Motor(context) {
-    let target = context.evaluateTargetPath("#Page:Registrar_Aceite_Motor/#ClientData/#Property:lista_revision_motor");
+    let target = context.evaluateTargetPath("#Page:Detalle_Aceite_Motor/#ClientData/#Property:lista_revision_motor");
     let searchString = context.searchString;
     
 
