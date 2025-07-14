@@ -107,19 +107,20 @@
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "btn_validar",
-							"IsVisible": "/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js",
+							"IsVisible": "/appconsumos_qa_mb/Rules/Aceites/isVisible_Btn_Validar_Registros.js",
 							"Separator": true,
 							"Styles": {
 								"Image": "Button",
 								"Button": "Button"
 							},
-							"Title": "Validar Consumos Aceites",
+							"Title": "Planillas Consumos Aceites",
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
 							"Image": "sap-icon://approvals",
 							"ImagePosition": "Leading",
-							"Enabled": false
+							"Enabled": false,
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/NavTo_Planillas_Consumo_Aceites.js"
 						}
 					],
 					"Layout": {
@@ -141,7 +142,7 @@
 	"OnResume": "/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Aceites y Lubricantes"
 	}
