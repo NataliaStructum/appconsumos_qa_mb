@@ -36,10 +36,12 @@
                 <EntitySet Name="PlanillasAceites" EntityType="appconsumos_qa.PlanillasAceites">
                     <NavigationPropertyBinding Path="almacen" Target="AlmacenesApp"/>
                     <NavigationPropertyBinding Path="operario" Target="EmpleadosApp"/>
+                    <NavigationPropertyBinding Path="aprobador" Target="EmpleadosApp"/>
                 </EntitySet>
                 <EntitySet Name="ItemPlanillasAceites" EntityType="appconsumos_qa.ItemPlanillasAceites">
                     <NavigationPropertyBinding Path="planilla" Target="PlanillasAceites"/>
                     <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
+                    <NavigationPropertyBinding Path="orden" Target="Ordenes"/>
                 </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
                 <ActionImport Name="generatePDF" Action="appconsumos_qa.generatePDF"/>
@@ -276,6 +278,11 @@
                 <Property Name="estado" Type="Edm.String" MaxLength="80"/>
                 <Property Name="total" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
+                <Property Name="fecha_revision" Type="Edm.DateTimeOffset" Precision="7"/>
+                <NavigationProperty Name="aprobador" Type="appconsumos_qa.EmpleadosApp">
+                    <ReferentialConstraint Property="aprobador_ficha" ReferencedProperty="ficha"/>
+                </NavigationProperty>
+                <Property Name="aprobador_ficha" Type="Edm.String" MaxLength="8"/>
             </EntityType>
             <EntityType Name="ItemPlanillasAceites">
                 <Key>
@@ -294,6 +301,11 @@
                 </NavigationProperty>
                 <Property Name="equipo_equipo" Type="Edm.String" MaxLength="18"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="7"/>
+                <NavigationProperty Name="orden" Type="appconsumos_qa.Ordenes">
+                    <ReferentialConstraint Property="orden_orden" ReferencedProperty="orden"/>
+                </NavigationProperty>
+                <Property Name="orden_orden" Type="Edm.String" MaxLength="12"/>
+                <Property Name="reserva" Type="Edm.String" MaxLength="10"/>
                 <Property Name="kilometraje" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="consumo" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="op_ficha" Type="Edm.String" MaxLength="8"/>

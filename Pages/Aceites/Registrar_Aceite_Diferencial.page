@@ -145,7 +145,8 @@
 							"IsEditable": true,
 							"Search": {
 								"Enabled": true,
-								"Placeholder": "Equipo..."
+								"Placeholder": "Equipo...",
+								"BarcodeScanner": true
 							},
 							"PickerItems": {
 								"Target": {
@@ -450,8 +451,8 @@
 						},
 						"Title": "{equipo_equipo}",
 						"Subhead": "{op_ficha} - {op_nombre}",
-						"Footnote": "Consumo: {consumo}",
-						"Description": "{equipo/equipo_desc}",
+						"Footnote": "{equipo/equipo_desc} ",
+						"Description": "{observacion} - {obs_text} ",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cont Inicial: {contador_ini}",
 						"SubstatusText": "Cont Final: {contador_fin}",
@@ -459,12 +460,12 @@
 						"AccessoryType": "None",
 						"Tags": [
 							{
-								"Color": "/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js",
-								"Text": "{tipo}"
+								"Color": "Grey",
+								"Text": "Consumo: {consumo} "
 							},
 							{
-								"Color": "Grey",
-								"Text": "{observacion} - {obs_text} "
+								"Color": "/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js",
+								"Text": "{tipo}"
 							}
 						],
 						"AvatarStack": {
@@ -502,7 +503,7 @@
 	"_Name": "Registrar_Aceite_Diferencial",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar15",
+		"_Name": "ActionBar16",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
