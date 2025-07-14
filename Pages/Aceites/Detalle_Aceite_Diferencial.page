@@ -51,7 +51,7 @@
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 						"EntitySet": "PlanillasAceites",
-						"QueryOptions": "$expand=almacen,operario&$filter=id eq {{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/id}}"
+						"QueryOptions": "$expand=almacen,operario&$filter=id eq {{#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/id}}"
 					},
 					"_Name": "SectionKeyValue0",
 					"Visible": true,
@@ -81,13 +81,13 @@
 						"_Name": "SectionCommonTypeHeader1",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Consumos de Aceite Motor"
+						"Caption": "Consumos de Aceite Diferencial"
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 						"EntitySet": "ItemPlanillasAceites",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Detalle_Planilla_Id_Motor.js"
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Detalle_Planilla_Id_Diferencial.js"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -154,7 +154,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Detalle_Aceite_Motor",
+	"_Name": "Detalle_Aceite_Diferencial",
 	"ActionBar": {
 		"Items": [],
 		"_Name": "ActionBar18",
