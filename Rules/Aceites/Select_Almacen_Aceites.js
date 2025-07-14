@@ -5,9 +5,6 @@
 import fechaFormateada from '../get_Now_DateTime_Col';
 
 export default async function Select_Almacen_Aceites(context) {
-    let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
-    let info_user = clientData.info_user.sociedad;
-    alert(info_user)
     const pageProxy = context.getPageProxy();
  
     const btn_crear = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("btn_crear");
