@@ -4,7 +4,7 @@
  */
 export default function Rechazar_Planilla_Aceite_Motor(context) {
     let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
-    let clientData = context.evaluateTargetPathForAPI('#Page:Registrar_Aceite_Motor').getClientData();
+    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Motor').getClientData();
 
     let obs = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Motor/#Control:FormCellNote0/#Value');
     clientDataFiltro.QueryRevisarPlanilla = clientDataFiltro.data_planilla_motor.id

@@ -503,24 +503,7 @@
 	"_Name": "Registrar_Aceite_Motor",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar19",
+		"_Name": "ActionBar20",
 		"_Type": "Control.Type.ActionBar"
-	},
-	"FioriToolbar": {
-		"_Type": "Control.Type.FioriToolbar",
-		"_Name": "FioriToolbar0",
-		"Items": [
-			{
-				"_Type": "FioriToolbarItem.Type.Button",
-				"_Name": "ToolbarItem0",
-				"Visible": true,
-				"Title": "Revisar",
-				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/NavTo_RevisarPlanillaAceiteMotor.js",
-				"Enabled": true,
-				"ButtonType": "Text",
-				"Semantic": "Tint",
-				"ImagePosition": "Leading"
-			}
-		]
 	}
 }

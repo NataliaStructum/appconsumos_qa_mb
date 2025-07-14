@@ -3,7 +3,7 @@
  * @param {IClientAPI} context
  */
 export default function NavTo_RevisarPlanillaAceiteMotor(context) {
-    let clientData = context.evaluateTargetPathForAPI('#Page:Registrar_Aceite_Motor').getClientData();
+    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Motor').getClientData();
     let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
     let id_planilla = clientDataFiltro.data_planilla_motor.id;
     let filtro = `$expand=equipo&$filter=planilla_id eq ${id_planilla}&$orderby=pos`
