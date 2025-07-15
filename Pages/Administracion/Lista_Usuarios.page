@@ -95,6 +95,10 @@
 							{
 								"Color": "/appconsumos_qa_mb/Rules/Administracion/Color_Estado_Usuarios.js",
 								"Text": "{estado}"
+							},
+							{
+								"Color": "Grey",
+								"Text": "{sapUsr}"
 							}
 						],
 						"AvatarStack": {
@@ -131,6 +135,12 @@
 						"ShowLoadingIndicator": true,
 						"LoadingIndicatorText": "Cargando usuarios...",
 						"PageSize": 50
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
 					},
 					"HighlightSelectedItem": false,
 					"Selection": {

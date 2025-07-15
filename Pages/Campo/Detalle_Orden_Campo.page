@@ -69,6 +69,12 @@
 						"UseTopPadding": true,
 						"Caption": "Detalle Reserva"
 					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
@@ -93,7 +99,7 @@
 						"Title": "Pos: {posicion}",
 						"Subhead": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Footnote": "{material_desc}",
-						"Description": "Cantidad tomada: {cant_tomada} de {cant_solicitada}",
+						"Description": "Cantidad tomada: {cant_tomada} de {cant_solicitada} {und}",
 						"DisplayDescriptionInMobile": true,
 						"SubstatusText": "Op: {operacion}",
 						"PreserveIconStackSpacing": false,
@@ -120,12 +126,6 @@
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
 					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
-					},
 					"HighlightSelectedItem": false,
 					"Selection": {
 						"ExitOnLastDeselect": true,
@@ -140,7 +140,7 @@
 	"_Name": "Detalle_Orden_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar7",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Orden"
 	},
