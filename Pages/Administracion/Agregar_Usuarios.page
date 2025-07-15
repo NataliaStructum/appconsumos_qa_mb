@@ -47,6 +47,7 @@
 								},
 								"ObjectCell": {
 									"Description": "{cargo}",
+									"Footnote": "{sapUsr}",
 									"PreserveIconStackSpacing": false,
 									"Subhead": "{nombre}",
 									"SubstatusText": "{sociedad}",
@@ -141,7 +142,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Button": "Button"
+								"Button": "Button",
+								"Image":"Button"
 							},
 							"Image": "sap-icon://add",
 							"Title": "Agregar Usuarios",

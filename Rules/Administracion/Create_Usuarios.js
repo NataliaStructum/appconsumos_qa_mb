@@ -48,7 +48,8 @@ export default async function Create_Usuarios(context) {
                                 "rol": rol_value,
                                 "isAdmin":isadmin,
                                 "cargo": nuevo_empleado.cargo,
-                                "sociedad": nuevo_empleado.sociedad
+                                "sociedad": nuevo_empleado.sociedad,
+                                "sapUsr": nuevo_empleado.sapUsr
                             }
                         }
                     }).then(() => {

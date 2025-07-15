@@ -57,6 +57,7 @@
                 <Property Name="correo" Type="Edm.String" MaxLength="50"/>
                 <Property Name="cargo" Type="Edm.String" MaxLength="25"/>
                 <Property Name="sociedad" Type="Edm.String" MaxLength="4"/>
+                <Property Name="sapUsr" Type="Edm.String" MaxLength="30"/>
             </EntityType>
             <EntityType Name="EmpleadosApp">
                 <Key>
@@ -70,6 +71,7 @@
                 <Property Name="cargo" Type="Edm.String" MaxLength="25"/>
                 <Property Name="sociedad" Type="Edm.String" MaxLength="4"/>
                 <Property Name="estado" Type="Edm.String" MaxLength="10" DefaultValue="Activo"/>
+                <Property Name="sapUsr" Type="Edm.String" MaxLength="30"/>
             </EntityType>
             <EntityType Name="Almacenes">
                 <Key>
@@ -106,6 +108,8 @@
                 <Property Name="centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
                 <Property Name="sociedad" Type="Edm.String" MaxLength="4" Nullable="false"/>
                 <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="und" Type="Edm.String" MaxLength="3"/>
+                <Property Name="almacen_desc" Type="Edm.String" MaxLength="16"/>
             </EntityType>
             <EntityType Name="Inventario">
                 <Key>
@@ -124,6 +128,7 @@
                 <Property Name="almacen_almacen" Type="Edm.String" MaxLength="4" Nullable="false"/>
                 <Property Name="almacen_centro" Type="Edm.String" MaxLength="4" Nullable="false"/>
                 <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="und" Type="Edm.String" MaxLength="3"/>
                 <Property Name="stock_disponible" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="stock_reservado" Type="Edm.Decimal" Precision="13" Scale="3"/>
             </EntityType>
@@ -166,6 +171,7 @@
                 <Property Name="orden" Type="Edm.String" MaxLength="12"/>
                 <Property Name="material" Type="Edm.String" MaxLength="18"/>
                 <Property Name="material_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="und" Type="Edm.String" MaxLength="3"/>
                 <Property Name="cant_solicitada" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="cant_tomada" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="tipo_mov" Type="Edm.String" MaxLength="1"/>
@@ -246,6 +252,7 @@
                 <Property Name="almacen_centro" Type="Edm.String" MaxLength="4"/>
                 <Property Name="mat_nuevo" Type="Edm.String" MaxLength="18"/>
                 <Property Name="mat_nuevo_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="mat_nuevo_und" Type="Edm.String" MaxLength="3"/>
                 <Property Name="cantidad_tomada" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="cantidad_aprobada" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="aprobado" Type="Edm.Boolean"/>
