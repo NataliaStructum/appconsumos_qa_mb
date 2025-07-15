@@ -46,7 +46,7 @@ export default function Crear_Planillas_Aceites(context) {
                     "contador_ini": material.contador_ini,
                     "operario_ficha": fichaOperario || "",
                     "material": material.material,
-                    "material_desc": "", 
+                    "material_desc": material.material_desc, 
                     "estado": "Pendiente"
                 }
             }

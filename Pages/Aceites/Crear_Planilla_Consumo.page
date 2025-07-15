@@ -74,7 +74,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "1546081",
+							"Value": "1691624",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_mat_motor",
 							"IsVisible": false,
@@ -105,7 +105,7 @@
 						"_Name": "SectionCommonTypeHeader1",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Aceite de Motor - 1546081"
+						"Caption": "Aceite Mobil Motor - 1691624"
 					},
 					"Visible": true,
 					"EmptySection": {
@@ -124,7 +124,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "1511617",
+							"Value": "1099689",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_material",
 							"IsVisible": false,
@@ -155,7 +155,7 @@
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Aceite Hidráulico - 1511617"
+						"Caption": "Aceite Hidráulico - 1099689"
 					},
 					"Visible": true,
 					"EmptySection": {
@@ -174,7 +174,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "1546082",
+							"Value": "1139592",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_mat_diferen",
 							"IsVisible": false,
@@ -205,14 +205,62 @@
 						"_Name": "SectionCommonTypeHeader2",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Aceite Diferencial - 1546082"
+						"Caption": "Aceite Diferencial - 1139592"
 					},
-					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Aceite_IC.js",
 					"EmptySection": {
 						"FooterVisible": false
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "SectionFormCell2"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "1139593",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_id_mat_reduc",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Aceites Diferenciales y Reductores",
+							"PlaceHolder": "PlaceHolder",
+							"AlternateInput": "None",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_cant_ini_reduc",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Contador Inicial",
+							"PlaceHolder": "Ingrese cantidad Inicial",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader3",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Aceites Diferenciales y Reductores - 1139593"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell3"
 				}
 			]
 		}
@@ -221,7 +269,7 @@
 	"_Name": "Crear_Planilla_Consumo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar10",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Planilla Control de Consumo"
 	},

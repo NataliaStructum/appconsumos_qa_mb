@@ -18,28 +18,28 @@
 					},
 					"KeyAndValues": [
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_ini} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/contador_ini} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_inicial",
 							"KeyName": "Contador Inicial",
 							"Visible": true
 						},
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_fin} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/contador_fin} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_final",
 							"KeyName": "Contador Final",
 							"Visible": true
 						},
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/estado} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/estado} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_estado",
 							"KeyName": "Estado",
 							"Visible": true
 						},
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/total} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/total} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_consumo",
 							"KeyName": "Total Consumo",
@@ -71,7 +71,7 @@
 					},
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
-					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas_Hidraulico.js",
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js",
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -92,7 +92,7 @@
 							"FullWidth": true,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Hidraulico.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Reductor.js"
 						},
 						{
 							"Styles": {
@@ -110,7 +110,7 @@
 							"FullWidth": true,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Hidraulico.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Reductor.js"
 						}
 					]
 				},
@@ -125,7 +125,7 @@
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "equipo_hidraulico",
+							"_Name": "equipo_reductor",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -167,7 +167,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "tipo_hidraulico",
+							"_Name": "tipo_reductor",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -200,7 +200,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "kmh_hidraulico",
+							"_Name": "kmh_reductor",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Kilometraje Horómetro",
@@ -211,7 +211,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "operario_hidraulico",
+							"_Name": "operario_reductor",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Ficha Operario",
@@ -223,7 +223,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "cont_inicial_hidraulico",
+							"_Name": "cont_inicial_reductor",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Contador Inicial",
@@ -234,7 +234,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "con_final_hidraulico",
+							"_Name": "con_final_reductor",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Contador Final",
@@ -245,7 +245,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "observaciones_hidraulico",
+							"_Name": "observaciones_reductor",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -387,7 +387,7 @@
 							"Image": "sap-icon://add-activity-2",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Hidraulico.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Reductor.js"
 						}
 					],
 					"Layout": {
@@ -398,7 +398,7 @@
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Agregar Consumo de Aceite Hidráulico"
+						"Caption": "Agregar Consumo de Aceite Reductor"
 					},
 					"Visible": false,
 					"EmptySection": {
@@ -426,13 +426,13 @@
 						"_Name": "SectionCommonTypeHeader1",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Consumos de Aceite Hidráulico"
+						"Caption": "Consumos de Aceite Reductor"
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 						"EntitySet": "ItemPlanillasAceites",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id_Hidraulico.js"
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id_Reductores.js"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -499,10 +499,10 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Registrar_Aceite_Hidraulico",
+	"_Name": "Registrar_Aceite_Reductores",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar16",
+		"_Name": "ActionBar15",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
