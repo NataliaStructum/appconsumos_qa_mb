@@ -41,6 +41,18 @@
 					"Caption": "Hidráulico",
 					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Hidraulico.page",
 					"_Name": "Hidra_Page"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Diferencial",
+					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Diferencial.page",
+					"_Name": "Diferencial_Page"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Reductores",
+					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Reductores.page",
+					"_Name": "Reductores_Page"
 				}
 			],
 			"Position": "Top",
@@ -52,7 +64,7 @@
 	"_Name": "Registrar_Planilla_Consumo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Planilla Consumos de Aceite"
 	}

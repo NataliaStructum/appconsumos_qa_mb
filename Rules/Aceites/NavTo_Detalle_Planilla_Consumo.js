@@ -10,6 +10,7 @@ export default function NavTo_Detalle_Planilla_Consumo(context) {
     clientData.data_planilla_motor = null
     clientData.data_planilla_hidraulico = null
     clientData.data_planilla_diferencial = null
+    clientData.data_planilla_reductor = null
 
     //alert(fechaHoy)
 
@@ -27,12 +28,14 @@ export default function NavTo_Detalle_Planilla_Consumo(context) {
             resultados.forEach((item) => {
                 const material = item.material;
 
-                if (material === '1546081') {
+                if (material === '1691624') {
                     clientData.data_planilla_motor = item;
-                } else if (material === '1511617') {
+                } else if (material === '1099689') {
                     clientData.data_planilla_hidraulico = item;
-                } else if (material === '1546082') {
+                } else if (material === '1139592') {
                     clientData.data_planilla_diferencial = item;
+                }else if (material === '1139593') {
+                    clientData.data_planilla_reductor = item;
                 }
             });
             // Navegar a la página después de guardar los datos

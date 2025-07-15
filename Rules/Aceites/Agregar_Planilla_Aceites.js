@@ -1,5 +1,5 @@
 /**
- * Agregar Planilla Aceites - Con validación de duplicados
+ * Agregar Planilla Aceites - Con validación de duplicados y aceite reductor
  * @param {IClientAPI} context
  */
 export default function Agregar_Planilla_Aceites(context) {
@@ -25,13 +25,14 @@ export default function Agregar_Planilla_Aceites(context) {
             });
         }
 
-
         let material_hidraulico = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_id_material/#Value');
         let cant_hidraulico = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_cant_ini_hid/#Value');
         let material_motor = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_id_mat_motor/#Value');
         let cant_motor = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_cant_ini_motor/#Value');
         let material_dif = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_id_mat_diferen/#Value');
         let cant_dif = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_cant_ini_dif/#Value');
+        let material_reduc = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_id_mat_reduc/#Value');
+        let cant_reduc = context.evaluateTargetPath('#Page:Crear_Planilla_Consumo/#Control:FormCellSimpleProperty_cant_ini_reduc/#Value');
 
         let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
 
@@ -40,10 +41,20 @@ export default function Agregar_Planilla_Aceites(context) {
             clientData.lista_aceites = [];
         }
 
-
         // Función para verificar si un material ya existe en la lista
         function materialYaExiste(materialId) {
             return clientData.lista_aceites.some(item => item.material === materialId);
+        }
+
+        // Función para obtener la descripción del material según el tipo
+        function obtenerDescripcionMaterial(tipo) {
+            const descripciones = {
+                'hidraulico': 'ACEITE HIDRAULICO 424 FLUID',
+                'motor': 'ACEITE MOBIL 15W-40 FULL PROTEC. MOTOR',
+                'diferencial': 'ACEITE MOBILUBE HD 85W-140',
+                'reductor': 'ACEITE MOBILUBE HD 80W-90 CAJA'
+            };
+            return descripciones[tipo] || '';
         }
 
         let materialesAgregados = [];
@@ -54,7 +65,8 @@ export default function Agregar_Planilla_Aceites(context) {
             if (!materialYaExiste(material_hidraulico)) {
                 clientData.lista_aceites.push({
                     material: material_hidraulico,
-                    contador_ini: cant_hidraulico
+                    contador_ini: cant_hidraulico,
+                    material_desc: obtenerDescripcionMaterial('hidraulico')
                 });
                 materialesAgregados.push(`Hidráulico: ${material_hidraulico}`);
             } else {
@@ -67,7 +79,8 @@ export default function Agregar_Planilla_Aceites(context) {
             if (!materialYaExiste(material_motor)) {
                 clientData.lista_aceites.push({
                     material: material_motor,
-                    contador_ini: cant_motor
+                    contador_ini: cant_motor,
+                    material_desc: obtenerDescripcionMaterial('motor')
                 });
                 materialesAgregados.push(`Motor: ${material_motor}`);
             } else {
@@ -75,16 +88,13 @@ export default function Agregar_Planilla_Aceites(context) {
             }
         }
 
-        // Verificar si la sección de diferencial está visible
-        let seccionDiferencial = context.getPageProxy().getControl("SectionedTable0").getSection("SectionFormCell2");
-        let seccionVisible = seccionDiferencial && seccionDiferencial.getVisible();
-
-        // Agregar material diferencial si tiene valor, no existe y la sección está visible
-        if (seccionVisible && material_dif && cant_dif) {
+        // Agregar material diferencial si tiene valor y no existe
+        if (material_dif && cant_dif) {
             if (!materialYaExiste(material_dif)) {
                 clientData.lista_aceites.push({
                     material: material_dif,
-                    contador_ini: cant_dif
+                    contador_ini: cant_dif,
+                    material_desc: obtenerDescripcionMaterial('diferencial')
                 });
                 materialesAgregados.push(`Diferencial: ${material_dif}`);
             } else {
@@ -92,8 +102,21 @@ export default function Agregar_Planilla_Aceites(context) {
             }
         }
 
-        // Determinar cantidad requerida según visibilidad del diferencial
-        let cantidadRequerida = seccionVisible ? 3 : 2;
+        // Agregar material reductor si tiene valor y no existe
+        if (material_reduc && cant_reduc) {
+            if (!materialYaExiste(material_reduc)) {
+                clientData.lista_aceites.push({
+                    material: material_reduc,
+                    contador_ini: cant_reduc,
+                    material_desc: obtenerDescripcionMaterial('reductor')
+                });
+                materialesAgregados.push(`Reductor: ${material_reduc}`);
+            } else {
+                materialesDuplicados.push(`Reductor: ${material_reduc}`);
+            }
+        }
+
+        let cantidadRequerida = 4; // Hidráulico, Motor, Diferencial, Reductor
         let cantidadActual = clientData.lista_aceites.length;
 
         //Verificar primero si ya está completa la lista
@@ -101,11 +124,9 @@ export default function Agregar_Planilla_Aceites(context) {
             // Lista ya completa - ir directamente a confirmación de creación
             let mensaje = "Lista completa. ¿Deseas crear las planillas?";
 
-
             if (materialesDuplicados.length > 0) {
                 mensaje = `Los materiales fueron agregados correctamente.\nLista completa (${cantidadActual}/${cantidadRequerida}). ¿Deseas crear las planillas?`;
             }
-
 
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",

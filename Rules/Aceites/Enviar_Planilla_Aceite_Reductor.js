@@ -1,0 +1,44 @@
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+export default function Enviar_Planilla_Aceite_Reductor(context) {
+    let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+    let id_planilla = clientData.data_planilla_reductor.id;
+    let filtro = `$filter=planilla_id eq ${id_planilla}`;
+ 
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async (results) => {
+        //si hay items en la planilla
+        if (results && results.length > 0) {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                "Properties": {
+                    "Title": "Confirmación",
+                    "Message": "¿Está seguro que desea enviar la planilla?",
+                    "OKCaption": "Aceptar",
+                    "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Reductor.action",
+                    "CancelCaption": "Cancelar"
+                }
+            });
+        } else {
+            //Si no hay items en la planilla
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                "Properties": {
+                    "Title": "Consumo no Enviado",
+                    "Message": "La planilla no tiene items registrados.",
+                    "OKCaption": "Aceptar",
+                }
+            });
+        }
+    }).catch((error) => {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Error",
+                "Message": `Error al consultar datos: ${error.message}`,
+                "OKCaption": "Cerrar"
+            }
+        });
+    });
+}
