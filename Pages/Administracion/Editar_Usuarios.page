@@ -11,6 +11,7 @@
 				{
 					"ObjectHeader": {
 						"Subhead": "{nombre}",
+						"Footnote": "{sapUsr}",
 						"Description": "{cargo}",
 						"StatusText": "{sociedad}",
 						"DetailImage": "sap-icon://customer",
@@ -107,7 +108,8 @@
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
-								"Button": "Button"
+								"Button": "Button",
+								"Image":"Button"
 							},
 							"Title": "Actualizar Usuario",
 							"Alignment": "Center",
