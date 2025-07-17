@@ -23,7 +23,7 @@
 							"_Name": "comentarios_aux",
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Observaciones *",
+							"Caption": "Observaciones",
 							"PlaceHolder": "Ingresa observaciones de la revisión",
 							"MinNumberOfLines": 3,
 							"Enabled": true,
@@ -39,6 +39,64 @@
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "SectionFormCell0"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "operacion",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Operación *",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una operación",
+							"PlaceHolder": "Selecciona una operación",
+							"HelperText": "La operación seleccionada se aplicará a todos los materiales de la solicitud. Si algún material requiere una operación diferente, selecciona 'Aprobar por ítems'.",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "OperacionesOrden",
+									"QueryOptions": "$filter=orden_orden eq '{orden}'",
+									"ReadLink": "{@odata.readLink}"
+								},
+								"ObjectCell": {
+									"AvatarStack": {
+										"ImageIsCircular": false
+									},
+									"PreserveIconStackSpacing": false,
+									"Subhead": "{op_desc}",
+									"Title": "{op_number}",
+									"Visible": true
+								},
+								"ReturnValue": "{op_number}"
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell3"
 				},
 				{
 					"Separators": {
@@ -260,6 +318,45 @@
 							"HelperText": "Haz clic en 'Agregar Material' para confirmar la revisión del material",
 							"Enabled": true,
 							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "operacion_item",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Operación *",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una operación",
+							"PlaceHolder": "Selecciona una operación",
+							"HelperText": "Esta operación se asignará al material que seleccionaste.",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "OperacionesOrden",
+									"QueryOptions": "$filter=orden_orden eq '{orden}'",
+									"ReadLink": "{@odata.readLink}"
+								},
+								"ObjectCell": {
+									"AvatarStack": {
+										"ImageIsCircular": false
+									},
+									"PreserveIconStackSpacing": false,
+									"Subhead": "{op_desc}",
+									"Title": "{op_number}",
+									"Visible": true
+								},
+								"ReturnValue": "{op_number}"
+							}
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",

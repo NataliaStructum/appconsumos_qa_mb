@@ -43,10 +43,14 @@
                     <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
                     <NavigationPropertyBinding Path="orden" Target="Ordenes"/>
                 </EntitySet>
+                <EntitySet Name="OperacionesOrden" EntityType="appconsumos_qa.OperacionesOrden">
+                    <NavigationPropertyBinding Path="orden" Target="Ordenes"/>
+                </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
                 <ActionImport Name="generatePDF" Action="appconsumos_qa.generatePDF"/>
                 <ActionImport Name="firmarPDF" Action="appconsumos_qa.firmarPDF"/>
                 <ActionImport Name="sendmail" Action="appconsumos_qa.sendmail"/>
+                <ActionImport Name="AddMaterialesRes" Action="appconsumos_qa.AddMaterialesRes"/>
             </EntityContainer>
             <EntityType Name="Empleados">
                 <Key>
@@ -253,6 +257,7 @@
                 <Property Name="mat_nuevo" Type="Edm.String" MaxLength="18"/>
                 <Property Name="mat_nuevo_desc" Type="Edm.String" MaxLength="40"/>
                 <Property Name="mat_nuevo_und" Type="Edm.String" MaxLength="3"/>
+                <Property Name="op_number" Type="Edm.String" MaxLength="4"/>
                 <Property Name="cantidad_tomada" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="cantidad_aprobada" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="aprobado" Type="Edm.Boolean"/>
@@ -313,6 +318,7 @@
                 </NavigationProperty>
                 <Property Name="orden_orden" Type="Edm.String" MaxLength="12"/>
                 <Property Name="reserva" Type="Edm.String" MaxLength="10"/>
+                <Property Name="op_number" Type="Edm.String" MaxLength="4"/>
                 <Property Name="kilometraje" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="consumo" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="op_ficha" Type="Edm.String" MaxLength="8"/>
@@ -321,6 +327,21 @@
                 <Property Name="contador_fin" Type="Edm.Decimal" Precision="13" Scale="3"/>
                 <Property Name="observacion" Type="Edm.String" MaxLength="5"/>
                 <Property Name="obs_text" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
+            <EntityType Name="OperacionesOrden">
+                <Key>
+                    <PropertyRef Name="op_number"/>
+                    <PropertyRef Name="orden_orden"/>
+                    <PropertyRef Name="op_pos"/>
+                </Key>
+                <Property Name="op_number" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <NavigationProperty Name="orden" Type="appconsumos_qa.Ordenes">
+                    <ReferentialConstraint Property="orden_orden" ReferencedProperty="orden"/>
+                </NavigationProperty>
+                <Property Name="orden_orden" Type="Edm.String" MaxLength="12" Nullable="false"/>
+                <Property Name="op_pos" Type="Edm.String" MaxLength="8" Nullable="false"/>
+                <Property Name="op_desc" Type="Edm.String" MaxLength="40"/>
+                <Property Name="hoja_ruta" Type="Edm.String" MaxLength="10"/>
             </EntityType>
             <EntityType Name="VerSolicitudesAbiertas">
                 <Key>
@@ -383,6 +404,20 @@
                 <Property Name="pAutoriza" Type="Edm.String"/>
                 <Property Name="pAutorizaficha" Type="Edm.String"/>
             </ComplexType>
+            <ComplexType Name="return_appconsumos_qa_AddMaterialesRes">
+                <Property Name="success" Type="Edm.Boolean"/>
+                <Property Name="message" Type="Edm.String"/>
+                <Property Name="item" Type="Edm.String"/>
+            </ComplexType>
+            <ComplexType Name="ap_appconsumos_qa_AddMaterialesRes_data">
+                <Property Name="ReservNo" Type="Edm.String"/>
+                <Property Name="Material" Type="Edm.String"/>
+                <Property Name="Plant" Type="Edm.String"/>
+                <Property Name="Activity" Type="Edm.String"/>
+                <Property Name="GrRcpt" Type="Edm.String"/>
+                <Property Name="RequirementQuantity" Type="Edm.String"/>
+                <Property Name="RequirementQuantityUnit" Type="Edm.String"/>
+            </ComplexType>
             <Action Name="generatePDF" IsBound="false">
                 <Parameter Name="data" Type="appconsumos_qa.header"/>
                 <Parameter Name="image" Type="Edm.String"/>
@@ -403,6 +438,12 @@
                 <Parameter Name="adj" Type="Edm.String"/>
                 <Parameter Name="nombre" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
+            </Action>
+            <Action Name="AddMaterialesRes" IsBound="false">
+                <Parameter Name="username" Type="Edm.String"/>
+                <Parameter Name="password" Type="Edm.String"/>
+                <Parameter Name="data" Type="appconsumos_qa.ap_appconsumos_qa_AddMaterialesRes_data"/>
+                <ReturnType Type="appconsumos_qa.return_appconsumos_qa_AddMaterialesRes"/>
             </Action>
             <Annotations Target="appconsumos_qa.Solicitudes/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
