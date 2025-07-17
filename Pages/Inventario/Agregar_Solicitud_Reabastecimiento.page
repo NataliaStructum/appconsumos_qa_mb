@@ -167,7 +167,7 @@
 								},
 								"ObjectCell": {
 									"Description": "{material_desc}",
-									"Footnote": "Disponible: {stock_disponible} / Reservado: {stock_disponible}",
+									"Footnote": "Disponible: {stock_disponible} {und} / Reservado: {stock_disponible} {und}",
 									"PreserveIconStackSpacing": false,
 									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 									"Visible": true
@@ -407,7 +407,7 @@
 						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Description": "{material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant. Solicitada: {cant}",
+						"StatusText": "Cant. Solicitada: {cant} {und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"AccessoryButtonIcon": "sap-icon://delete",
