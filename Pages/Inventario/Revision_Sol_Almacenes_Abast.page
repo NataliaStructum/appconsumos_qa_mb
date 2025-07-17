@@ -10,7 +10,7 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Subhead": "Cant. Solicitada: {cantidad_tomada}",
+						"Subhead": "/appconsumos_qa_mb/Rules/Inventario/get_unidad_Revisar.js",
 						"Description": "/appconsumos_qa_mb/Rules/Inventario/get_desc_Material_Revisar.js",
 						"DetailImageIsCircular": false,
 						"Tags": [
@@ -68,7 +68,7 @@
 								},
 								"ObjectCell": {
 									"Description": "{Txtmd}",
-									"Footnote": "Disponible: {Labst} / Reservado: {Klabs}",
+									"Footnote": "Disponible: {Labst} {Meins} / Reservado: {Klabs} {Meins}",
 									"PreserveIconStackSpacing": false,
 									"Subhead": "{Matnr}",
 									"Title": "{Lgort}",
@@ -203,7 +203,7 @@
 	"_Name": "Revision_Sol_Almacenes_Abast",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar2",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Seleccionar Almacen de Material"
 	}

@@ -29,6 +29,7 @@ export default function set_VisibleAgregarMaterialNuevo(context) {
                 ObjectCell: {
                     Title: item.Matnr,
                     Subhead: item.Txtmd,
+                    StatusText: item.Meins,
                     PreserveIconStackSpacing: false,
                     Visible: true
                 },

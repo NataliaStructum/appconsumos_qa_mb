@@ -28,6 +28,7 @@ export default function Create_Componentes_Solicitud_Ingenio(context) {
                         "id": guid(context),
                         "mat_nuevo": material.Matnr,
                         "mat_nuevo_desc": material.Txtmd,
+                        "mat_nuevo_und": material.Meins,
                         "almacen_sociedad": dataAlmacen.sociedad,
                         "almacen_almacen": material.Lgort,
                         "almacen_centro": material.Werks,

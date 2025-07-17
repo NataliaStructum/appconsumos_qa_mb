@@ -32,6 +32,7 @@ export default function Create_Solicitud_Abastecimiento(context) {
         if (material.tipo === "Nuevo") {
             props.mat_nuevo = material.material;
             props.mat_nuevo_desc = material.material_desc;
+            props.mat_nuevo_und = material.und;
         } else if (material.tipo === "Registrado") {
             Object.assign(props, {
                 material_material: material.material,

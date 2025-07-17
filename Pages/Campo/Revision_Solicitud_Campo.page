@@ -214,7 +214,7 @@
 									"Description": "{material/material_desc}",
 									"PreserveIconStackSpacing": false,
 									"StatusText": "{almacen_almacen} - {almacen/almacen_desc}",
-									"Subhead": "Cant. Solicitada: {cantidad_tomada}",
+									"Subhead": "Cant. Solicitada: {cantidad_tomada} {material/und}",
 									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 									"Visible": true
 								},
@@ -446,7 +446,7 @@
 						"Subhead": "Tomado de: {almacen_almacen}",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"SubstatusText": "Cant aprobada: {cant} de {cantidad_tomada}",
+						"SubstatusText": "Cant aprobada: {cant} de {cantidad_tomada} {material/und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"AccessoryButtonIcon": "sap-icon://delete",

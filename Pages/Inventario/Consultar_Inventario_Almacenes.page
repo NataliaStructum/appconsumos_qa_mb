@@ -60,11 +60,11 @@
 						"Tags": [
 							{
 								"Color": "Green",
-								"Text": "Disponible: {Labst} "
+								"Text": "Disponible: {Labst} {Meins}"
 							},
 							{
 								"Color": "Mango",
-								"Text": "Reservado: {Klabs}"
+								"Text": "Reservado: {Klabs} {Meins}"
 							}
 						],
 						"AvatarStack": {
@@ -107,7 +107,7 @@
 	"_Name": "Consultar_Inventario_Almacenes",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar5",
+		"_Name": "ActionBar7",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Consultar Inventario"
 	}
