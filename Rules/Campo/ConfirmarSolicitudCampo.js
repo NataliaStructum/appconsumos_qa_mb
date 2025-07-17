@@ -6,6 +6,7 @@ export default function ConfirmarSolicitudCampo(context) {
 
     const pageProxy = context.getPageProxy();
     var materiales = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell1")
+    let operacion = context.evaluateTargetPath('#Page:Revision_Solicitud_Campo/#Control:operacion/#Value') 
 
     let id_solicitud = context.binding.id;
     //let filtro = `$expand=almacen&$filter=solicitud_id eq ${id_solicitud}`;
@@ -75,11 +76,22 @@ export default function ConfirmarSolicitudCampo(context) {
 
     } else {
 
+        if (operacion.length < 1) {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                "Properties": {
+                    "Title": "Operación no seleccionada",
+                    "Message": "Debes seleccionar una operación antes de confirmar. Este campo es obligatorio.",
+                    "OKCaption": "Aceptar"
+                }
+            })
+        }
+
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Confirmación",
-                "Message": "¿Estás seguro de que deseas confirmar la solicitud con las cantidades originales solicitadas?",
+                "Title": "Confirmar Solicitud",
+                "Message": "¿Estás seguro de que deseas confirmar la solicitud con las cantidades originales solicitadas y la operación seleccionada?",
                 "OKCaption": "Aceptar",
                 "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action",
                 "CancelCaption": "Cancelar"

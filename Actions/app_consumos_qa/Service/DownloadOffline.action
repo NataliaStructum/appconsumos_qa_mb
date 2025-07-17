@@ -68,6 +68,11 @@
 			"Name": "ItemPlanillasAceites",
 			"Query": "ItemPlanillasAceites",
 			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "OperacionesOrden",
+			"Query": "OperacionesOrden",
+			"AutomaticallyRetrievesStreams": false
 		}
 	]
 }
