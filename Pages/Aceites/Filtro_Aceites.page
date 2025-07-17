@@ -142,7 +142,7 @@
 	"OnResume": "/appconsumos_qa_mb/Rules/Aceites/Select_Almacen_Aceites.js",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar6",
+		"_Name": "ActionBar7",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Aceites y Lubricantes"
 	}

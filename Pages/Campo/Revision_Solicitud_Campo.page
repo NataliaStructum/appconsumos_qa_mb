@@ -446,6 +446,7 @@
 						"Subhead": "Tomado de: {almacen_almacen}",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
+						"StatusText": "Op: {operacion}",
 						"SubstatusText": "Cant aprobada: {cant} de {cantidad_tomada} {material/und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",

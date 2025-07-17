@@ -6,6 +6,7 @@ export default function Agregar_Material_Revision_Campo(context) {
     const pageProxy = context.getPageProxy();
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
     //clientData.lista_mat_solicitud_ing
+    let operacion = context.evaluateTargetPath('#Page:Revision_Solicitud_Campo/#Control:operacion_item/#Value')
 
     let material = context.evaluateTargetPath('#Page:Revision_Solicitud_Campo/#Control:materiales_solicitud/#Value');
     let cant = context.evaluateTargetPath('#Page:Revision_Solicitud_Campo/#Control:cantidad_revision/#Value');
@@ -34,6 +35,17 @@ export default function Agregar_Material_Revision_Campo(context) {
         });
     }
 
+    if (operacion.length < 1) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Operación no seleccionada",
+                "Message": "Debes seleccionar una operación. Este campo es obligatorio.",
+                "OKCaption": "Aceptar"
+            }
+        })
+    }
+
     const duplicado = clientData.lista_mat_solicitud_campo.filter(m => m.material.material === data.material.material && m.almacen_almacen === data.almacen_almacen).length > 0
 
     if (duplicado) {
@@ -48,6 +60,7 @@ export default function Agregar_Material_Revision_Campo(context) {
 
     data.cant = cant
     data.aprobado = 'Aprobado'
+    data.operacion = operacion[0].ReturnValue
     clientData.lista_mat_solicitud_campo.push(data);
 
     list_component.redraw()
