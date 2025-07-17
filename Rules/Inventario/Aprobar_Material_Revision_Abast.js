@@ -63,11 +63,24 @@ export default function Aprobar_Material_Revision_Abast(context) {
 
     let tipo = data.mat_nuevo ? 'Nuevo' : 'Registrado';
 
+    let mat_nuevo = data.mat_nuevo
+    let material_data = data.material_material
+    let und = ""
+
+    if(mat_nuevo){
+       und = data.mat_nuevo_und
+    }
+
+    if(material_data){
+        und = data.material.und
+    }
+
     var nuevo = {
         id: data.id,
         material: material,
         material_desc: material_desc,
         cant_sol: data.cantidad_tomada,
+        und: und,
         cant_apro: cant,
         almacen: dataAlm.Lgort,
         aprobado: 'Aprobado',

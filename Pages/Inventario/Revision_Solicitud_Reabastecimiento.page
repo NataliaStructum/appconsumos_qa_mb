@@ -90,7 +90,7 @@
 								"ObjectCell": {
 									"Description": "/appconsumos_qa_mb/Rules/Inventario/get_desc_Material_Revisar.js",
 									"PreserveIconStackSpacing": false,
-									"Subhead": "Cant. Solicitada: {cantidad_tomada}",
+									"Subhead": "/appconsumos_qa_mb/Rules/Inventario/get_unidad_Revisar.js",
 									"Tags": [
 										{
 											"Color": "/appconsumos_qa_mb/Rules/Inventario/Color_Tipo_Material_Revisar.js",
@@ -173,7 +173,7 @@
 						"Subhead": "Tomado de: {almacen}",
 						"Description": "{material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"SubstatusText": "Cant aprobada: {cant_apro} de {cant_sol}",
+						"SubstatusText": "Cant aprobada: {cant_apro} de {cant_sol} {und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"AccessoryButtonIcon": "sap-icon://delete",

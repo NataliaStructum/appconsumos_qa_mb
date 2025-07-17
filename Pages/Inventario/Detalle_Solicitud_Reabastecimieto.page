@@ -165,8 +165,8 @@
 						"Footnote": "Tomado de: {almacen_almacen} - {almacen/almacen_desc}",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant. Solicitada: {cantidad_tomada}",
-						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada}",
+						"StatusText": "Cant. Solicitada: {cantidad_tomada} {material/und}",
+						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada} {material/und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"Tags": [
@@ -241,8 +241,8 @@
 						"Footnote": "Tomado de: {almacen_almacen} - {almacen/almacen_desc}",
 						"Description": "{mat_nuevo_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant. Solicitada: {cantidad_tomada}",
-						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada}",
+						"StatusText": "Cant. Solicitada: {cantidad_tomada} {mat_nuevo_und}",
+						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada} {mat_nuevo_und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"Tags": [
@@ -285,7 +285,7 @@
 	"_Name": "Detalle_Solicitud_Reabastecimieto",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar15",
+		"_Name": "ActionBar16",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Solicitud Abastecimiento"
 	},

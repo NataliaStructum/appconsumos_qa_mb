@@ -123,7 +123,7 @@
 								"ObjectCell": {
 									"Description": "{Txtmd}",
 									"DisplayDescriptionInMobile": true,
-									"Footnote": "Disponible: {Labst} / Reservado: {Klabs}",
+									"Footnote": "Disponible: {Labst} {Meins} / Reservado: {Klabs} {Meins}",
 									"PreserveIconStackSpacing": false,
 									"Subhead": "{Lgort}",
 									"Title": "{Matnr}",
@@ -215,7 +215,7 @@
 						"Subhead": "Tomado de: {Lgort}",
 						"Description": "{Txtmd}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant: {cant} de {Labst}",
+						"StatusText": "Cant: {cant} de {Labst} {Meins}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "DetailButton",
 						"AccessoryButtonIcon": "sap-icon://delete",
