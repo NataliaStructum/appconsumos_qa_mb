@@ -6,6 +6,7 @@ export default function Agregar_Material_Revision_Ingenio(context) {
     const pageProxy = context.getPageProxy();
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Ingenio').getClientData();
     //clientData.lista_mat_solicitud_ing
+    let operacion = context.evaluateTargetPath('#Page:Revision_Solicitud_Ingenio/#Control:operacion_item/#Value')
 
     let material = context.evaluateTargetPath('#Page:Revision_Solicitud_Ingenio/#Control:FormCellListPicker_Materiales/#Value');
     let cant = context.evaluateTargetPath('#Page:Revision_Solicitud_Ingenio/#Control:FormCellSimpleProperty_Cantidad/#Value');
@@ -24,6 +25,18 @@ export default function Agregar_Material_Revision_Ingenio(context) {
             }
         });
     }
+
+    if (operacion.length < 1) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Operación no seleccionada",
+                "Message": "Debes seleccionar una operación. Este campo es obligatorio.",
+                "OKCaption": "Aceptar"
+            }
+        })
+    }
+    
     if (cant > cantSolicitada) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -48,6 +61,7 @@ export default function Agregar_Material_Revision_Ingenio(context) {
 
     data.cant = cant
     data.aprobado = 'Aprobado'
+    data.operacion = operacion[0].ReturnValue
     clientData.lista_mat_solicitud_ing.push(data);
 
     list_component.redraw()

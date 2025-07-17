@@ -165,6 +165,7 @@
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
+						"Subhead": "Operación: {op_number}",
 						"Footnote": "Tomado de: {almacen_almacen} - {almacen/almacen_desc}",
 						"Description": "{mat_nuevo_desc}",
 						"DisplayDescriptionInMobile": true,
