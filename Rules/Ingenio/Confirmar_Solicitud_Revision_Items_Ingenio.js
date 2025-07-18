@@ -10,6 +10,8 @@ export default async function Confirmar_Solicitud_Revision_Items_Ingenio(context
     let exitosos = [];
     let errores = [];
     let id_solicitud = context.binding.id;
+    let operacion = context.evaluateTargetPath('#Page:Revision_Solicitud_Ingenio/#Control:operacion/#Value')
+ 
 
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Ingenio').getClientData();
     let filtro = `$expand=material,almacen&$filter=solicitud_id eq ${id_solicitud}`;
@@ -34,6 +36,7 @@ export default async function Confirmar_Solicitud_Revision_Items_Ingenio(context
 
             if (item.aprobado === 'Aprobado') {
                 materialData.cantidad_aprobada = item.cant;
+                materialData.operacion = item.operacion;
                 materialesAprobados.push(materialData);
             } else {
                
@@ -56,6 +59,7 @@ export default async function Confirmar_Solicitud_Revision_Items_Ingenio(context
                         almacen_sociedad: item.almacen.sociedad,
                         almacen_almacen: item.almacen.almacen,
                         id_componente: item.id,
+                        operacion: operacion[0].ReturnValue,
                         cantidad_aprobada: item.cantidad_tomada,
                         readLink: item["@odata.readLink"]
                     });
@@ -86,7 +90,8 @@ export default async function Confirmar_Solicitud_Revision_Items_Ingenio(context
                 "Properties": {
                     "id": material.id_componente,
                     "cantidad_aprobada": material.cantidad_aprobada,
-                    "aprobado": true
+                    "aprobado": true,
+                    "op_number" : material.operacion
                 }
             }
         }).then(() => {
@@ -108,7 +113,8 @@ export default async function Confirmar_Solicitud_Revision_Items_Ingenio(context
                     "id": material.id_componente,
                     "cantidad_aprobada": 0,
                     "aprobado": false,
-                    "confirmacion_tec": false
+                    "confirmacion_tec": false,
+                    "op_number" : null
                 }
             }
         }).then(() => {

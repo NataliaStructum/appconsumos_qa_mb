@@ -26,5 +26,10 @@
 		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 		"EntitySet": "PlanillasAceites",
 		"QueryOptions": "$filter=id eq {{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/id}}"
+	},
+	"Properties": {
+		"contador_fin": "/appconsumos_qa_mb/Rules/Aceites/get_contador_final_Motor.js",
+		"estado": "Enviado",
+		"total": "/appconsumos_qa_mb/Rules/Aceites/get_Total_Consumos_Motor.js"
 	}
 }

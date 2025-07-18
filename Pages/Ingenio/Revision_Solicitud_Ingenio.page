@@ -47,6 +47,64 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "operacion",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Operación *",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una operación",
+							"PlaceHolder": "Selecciona una operación",
+							"HelperText": "La operación seleccionada se aplicará a todos los materiales de la solicitud. Si algún material requiere una operación diferente, selecciona 'Aprobar por ítems'.",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "OperacionesOrden",
+									"QueryOptions": "$filter=orden_orden eq '{orden}'",
+									"ReadLink": "{@odata.readLink}"
+								},
+								"ObjectCell": {
+									"AvatarStack": {
+										"ImageIsCircular": false
+									},
+									"PreserveIconStackSpacing": false,
+									"Subhead": "{op_desc}",
+									"Title": "{op_number}",
+									"Visible": true
+								},
+								"ReturnValue": "{op_number}"
+							}
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell3"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
 					"Layout": {
 						"LayoutType": "Horizontal",
 						"HorizontalAlignment": "Trailing"
@@ -257,6 +315,45 @@
 							"IsEditable": true
 						},
 						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "operacion_item",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Operación *",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una operación",
+							"PlaceHolder": "Selecciona una operación",
+							"HelperText": "Esta operación se asignará al material que seleccionaste. ",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "OperacionesOrden",
+									"QueryOptions": "$filter=orden_orden eq '{orden}'",
+									"ReadLink": "{@odata.readLink}"
+								},
+								"ObjectCell": {
+									"AvatarStack": {
+										"ImageIsCircular": false
+									},
+									"PreserveIconStackSpacing": false,
+									"Subhead": "{op_desc}",
+									"Title": "{op_number}",
+									"Visible": true
+								},
+								"ReturnValue": "{op_number}"
+							}
+						},
+						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton0",
 							"IsVisible": true,
@@ -344,6 +441,7 @@
 						"Subhead": "Tomado de: {almacen_almacen}",
 						"Description": "{mat_nuevo_desc}",
 						"DisplayDescriptionInMobile": true,
+						"StatusText": "Op: {operacion}",
 						"SubstatusText": "Cant aprobada: {cant} de {cantidad_tomada} {mat_nuevo_und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",

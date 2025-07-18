@@ -20,8 +20,11 @@ export default function get_contador_final_Reductor(context) {
                 // Obtener y devolver contador_fin como decimal
                 const contadorFin = parseFloat(itemConPosMaxima.contador_fin);
                 return isNaN(contadorFin) ? 0 : contadorFin;
+            }else{
+                let contador_inicial =  clientData.data_planilla_reductor.contador_ini;
+                return contador_inicial
             }
-            return 0;
+            
         })
         .catch((error) => {
             console.error('Error al obtener el contador final:', error);
