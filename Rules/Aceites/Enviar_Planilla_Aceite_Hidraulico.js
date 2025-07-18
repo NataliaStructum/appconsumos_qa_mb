@@ -25,9 +25,11 @@ export default function Enviar_Planilla_Aceite_Hidraulico(context) {
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                 "Properties": {
-                    "Title": "Consumo no Enviado",
-                    "Message": "La planilla no tiene items registrados.",
+                    "Title": "Confirmación",
+                    "Message": "¿Está seguro que desea enviar la planilla sin ítems registrados?",
                     "OKCaption": "Aceptar",
+                    "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Hidraulico.action",
+                    "CancelCaption": "Cancelar"
                 }
             });
         }
