@@ -12,15 +12,12 @@ export default function onChange_Tipo_Aceite_Diferencial(context) {
 
     let equipo = context.evaluateTargetPath('#Page:Registrar_Aceite_Diferencial/#Control:equipo_diferencial/#Value');
 
-    let tipo = tipo_consumo_value[0].ReturnValue
-
-    if (tipo === "Cambio"){
+    
+    if (tipo_consumo_value.length > 0 && tipo_consumo_value[0]?.ReturnValue === "Cambio"){
         //set visible al lp de la orden
         orden_diferencial.setVisible(true);
         //obtener el filtro para la orden
-        alert(JSON.stringify(equipo[0]))
         let equipo_id = equipo[0].BindingObject.equipo
-        alert(equipo_id)
         let target = orden_diferencial.getTargetSpecifier()
         let res = target.setQueryOptions(`$filter=equipo eq '${equipo_id}'`)
     
