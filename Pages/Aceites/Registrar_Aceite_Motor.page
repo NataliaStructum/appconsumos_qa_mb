@@ -138,6 +138,7 @@
 							},
 							"PickerPrompt": "Selecciona un equipo",
 							"PlaceHolder": "Ingrese Equipo",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/setEnabled_Tipo_Aceite_Motor.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
@@ -180,6 +181,7 @@
 							},
 							"PickerPrompt": "Seleccione el tipo",
 							"PlaceHolder": "Ingrese Tipo",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/onChange_Tipo_Aceite_Motor.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
@@ -198,6 +200,45 @@
 									"ReturnValue": "Cambio"
 								}
 							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "orden_motor",
+							"IsVisible": false,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Órden",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"LoadingIndicatorText": "cargando...",
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una orden",
+							"PlaceHolder": "Ingrese orden",
+							"HelperText": "Elige una orden abierta vinculada al equipo seleccionado.",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+									"EntitySet": "Ordenes",
+									"QueryOptions": "$filter=equipo eq 'IP923384'"
+								},
+								"ObjectCell": {
+									"Description": "{orden_desc}",
+									"DisplayDescriptionInMobile": true,
+									"Footnote": "{equipo} - {equipo_desc}",
+									"PreserveIconStackSpacing": false,
+									"StatusText": "res: {reserva}",
+									"Subhead": "/appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js",
+									"Title": "/appconsumos_qa_mb/Rules/Aceites/getOrden_RevisarPlanilla.js",
+									"Visible": true
+								},
+								"ReturnValue": "{orden}"
+							}
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
@@ -503,7 +544,7 @@
 	"_Name": "Registrar_Aceite_Motor",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar20",
+		"_Name": "ActionBar23",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

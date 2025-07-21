@@ -206,7 +206,7 @@
 							"_Name": "orden_diferencial",
 							"IsVisible": false,
 							"Separator": true,
-							"AllowMultipleSelection": true,
+							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
 							"Caption": "Órden",
 							"DataPaging": {
@@ -218,9 +218,8 @@
 							"PlaceHolder": "PlaceHolder",
 							"HelperText": "Elige una orden abierta vinculada al equipo seleccionado.",
 							"IsSelectedSectionEnabled": false,
-							"IsPickerDismissedOnSelection": false,
-							"IsSearchCancelledAfterSelection": false,
-							"AllowDefaultValueIfOneItem": false,
+							"IsPickerDismissedOnSelection": true,
+							"AllowDefaultValueIfOneItem": true,
 							"IsEditable": true,
 							"PickerItems": {
 								"Target": {
@@ -545,7 +544,7 @@
 	"_Name": "Registrar_Aceite_Diferencial",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar17",
+		"_Name": "ActionBar18",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
