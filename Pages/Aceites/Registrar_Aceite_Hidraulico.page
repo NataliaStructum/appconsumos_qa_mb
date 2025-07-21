@@ -186,7 +186,7 @@
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
 							"AllowDefaultValueIfOneItem": false,
-							"IsEditable": true,
+							"IsEditable": false,
 							"Search": {
 								"Placeholder": "Tipo..."
 							},
@@ -298,7 +298,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una observación",
-							"PlaceHolder": "Observación",
+							"PlaceHolder": "Seleccionar observación",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
@@ -544,7 +544,7 @@
 	"_Name": "Registrar_Aceite_Hidraulico",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar18",
+		"_Name": "ActionBar19",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

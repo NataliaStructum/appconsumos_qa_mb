@@ -14,6 +14,7 @@ export default function set_Contador_Inicial_Reductor(context) {
     let operario_reductor = form_add.getControl("operario_reductor")
     let cont_final = form_add.getControl("con_final_reductor")
     let observaciones = form_add.getControl("observaciones_reductor")
+    let orden_reductor = form_add.getControl("orden_reductor")
 
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
     let id_planilla = clientData.data_planilla_reductor.id;
@@ -65,8 +66,9 @@ export default function set_Contador_Inicial_Reductor(context) {
         kmh.setValue("");
         operario_reductor.setValue("");
         cont_final.setValue("");
+        orden_reductor.setValue("");
         //----
-
+        orden_reductor.setVisible(false)
         btn_agregar.setVisible(false)
         
 

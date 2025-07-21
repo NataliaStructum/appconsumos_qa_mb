@@ -13,6 +13,8 @@ export default function Registrar_Items_Aceite_Reductor(context) {
         let cont_inicial = context.evaluateTargetPath('#Page:Registrar_Aceite_Reductores/#Control:cont_inicial_reductor/#Value');
         let cont_final = context.evaluateTargetPath('#Page:Registrar_Aceite_Reductores/#Control:con_final_reductor/#Value');
         let observaciones = context.evaluateTargetPath('#Page:Registrar_Aceite_Reductores/#Control:observaciones_reductor/#Value');
+        let orden = context.evaluateTargetPath('#Page:Registrar_Aceite_Reductores/#Control:orden_reductor/#Value');
+
         let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
         let id_planilla = clientData.data_planilla_reductor.id;
 
@@ -30,38 +32,63 @@ export default function Registrar_Items_Aceite_Reductor(context) {
         let tipoData = null;
         let observacionesData = null;
         let observacionesTxtData = null;
+        let ordenData = null;
+        let reservaData = null;
 
+        // Extraer datos de equipo
         if (equipo && Array.isArray(equipo) && equipo.length > 0 && equipo[0] && equipo[0].BindingObject) {
             equipoData = equipo[0].BindingObject.equipo;
         }
 
+        // Extraer datos de tipo
         if (tipo && Array.isArray(tipo) && tipo.length > 0 && tipo[0]) {
             tipoData = tipo[0].DisplayValue;
         }
 
+        // Extraer datos de observaciones
         if (observaciones && Array.isArray(observaciones) && observaciones.length > 0 && observaciones[0]) {
             observacionesData = observaciones[0].ReturnValue;
             observacionesTxtData = observaciones[0].DisplayValue;
         }
 
-
-        // Validación de campos obligatorios
+        // Validación de campos obligatorios básicos
         if (!equipoData || !tipoData || !kilometrajeNum || !contadorFinNum || !observacionesData) {
+            let camposFaltantes = [];
+            if (!equipoData) camposFaltantes.push("Equipo");
+            if (!tipoData) camposFaltantes.push("Tipo");
+            if (!kilometrajeNum) camposFaltantes.push("Kilometraje");
+            if (!contadorFinNum) camposFaltantes.push("Contador Final");
+            if (!observacionesData) camposFaltantes.push("Observaciones");
+
             return context.executeAction({
                 Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                 Properties: {
                     Title: "Error de validación",
-                    Message: "Faltan campos obligatorios: " +
-                        (!equipoData ? "Equipo " : "") +
-                        (!tipoData ? "Tipo " : "") +
-                        (!kilometrajeNum ? "Kilometraje " : "") +
-                        (!contadorFinNum ? "Contador Final " : "") +
-                        (!observacionesData ? "Observaciones " : ""),
+                    Message: `Faltan campos obligatorios: ${camposFaltantes.join(", ")}`,
                     CloseCaption: "Cerrar"
                 }
             });
         }
 
+        // Validación específica para tipo "Cambio"
+        if (tipoData === "Cambio") {
+            if (!orden || !Array.isArray(orden) || orden.length === 0 || !orden[0] || !orden[0].BindingObject) {
+                return context.executeAction({
+                    Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                    Properties: {
+                        Title: "Error de validación",
+                        Message: "Para tipo 'Cambio' es obligatorio seleccionar una Orden",
+                        CloseCaption: "Cerrar"
+                    }
+                });
+            }
+
+            // Extraer datos de orden y reserva solo si el tipo es "Cambio"
+            ordenData = orden[0].BindingObject.orden;
+            reservaData = orden[0].BindingObject.reserva;
+        }
+
+        // Validación de números negativos
         if (kilometrajeNum < 0 || contadorFinNum < 0) {
             return context.executeAction({
                 Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -72,6 +99,7 @@ export default function Registrar_Items_Aceite_Reductor(context) {
                 }
             });
         }
+
         // Validar contador inicial
         if (contadorIniNum <= 0) {
             return context.executeAction({
@@ -132,6 +160,8 @@ export default function Registrar_Items_Aceite_Reductor(context) {
                             planilla_id: id_planilla,
                             equipo_equipo: equipoData,
                             tipo: tipoData,
+                            orden_orden: ordenData, // null si no es tipo "Cambio"
+                            reserva: reservaData, // null si no es tipo "Cambio"
                             kilometraje: kilometrajeNum,
                             consumo: consumo,
                             op_ficha: operario_reductorString,
@@ -149,20 +179,28 @@ export default function Registrar_Items_Aceite_Reductor(context) {
                                 Properties: nuevoItem
                             }
                         }).then(() => {
+                            // Construir mensaje de éxito dinámico
+                            let mensajeExito = `Item creado exitosamente:\n` +
+                                `Equipo: ${equipoData}\n` +
+                                `Tipo: ${tipoData}\n`;
+
+                            if (tipoData === "Cambio") {
+                                mensajeExito += `Orden: ${ordenData}\n` +
+                                    `Reserva: ${reservaData}\n`;
+                            }
+
+                            mensajeExito += `Kilometraje: ${kilometrajeNum}\n` +
+                                `Consumo: ${consumo}\n` +
+                                `Contador inicial: ${contadorIniNum}\n` +
+                                `Contador final: ${contadorFinNum}\n` +
+                                `Observación: ${observacionesData}`;
+
                             // Mostrar mensaje de éxito
                             return context.executeAction({
                                 Name: "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                                 Properties: {
                                     Title: "Éxito",
-                                    Message:
-                                        `Item creado exitosamente:\n` +
-                                        `Equipo: ${equipoData}\n` +
-                                        `Tipo: ${tipoData}\n` +
-                                        `Kilometraje: ${kilometrajeNum}\n` +
-                                        `Consumo: ${consumo}\n` +
-                                        `Contador inicial: ${contadorIniNum}\n` +
-                                        `Contador final: ${contadorFinNum}\n` +
-                                        `Observación: ${observacionesData}`,
+                                    Message: mensajeExito,
                                     CloseCaption: "Cerrar"
                                 }
                             }).then(() => {
