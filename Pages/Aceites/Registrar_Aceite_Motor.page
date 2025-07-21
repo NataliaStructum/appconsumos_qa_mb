@@ -186,7 +186,7 @@
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
 							"AllowDefaultValueIfOneItem": false,
-							"IsEditable": true,
+							"IsEditable": false,
 							"Search": {
 								"Placeholder": "Tipo..."
 							},
@@ -298,7 +298,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una observación",
-							"PlaceHolder": "Observación",
+							"PlaceHolder": "Seleccionar observación",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
@@ -308,107 +308,107 @@
 							},
 							"PickerItems": [
 								{
-									"DisplayValue": "MANGUERA DESCOGOLLADOR",
+									"DisplayValue": "M1 - MANGUERA DESCOGOLLADOR",
 									"ReturnValue": "M1"
 								},
 								{
-									"DisplayValue": "MANGUERA DIVISOR / SIN FIN",
+									"DisplayValue": "M2 - MANGUERA DIVISOR / SIN FIN",
 									"ReturnValue": "M2"
 								},
 								{
-									"DisplayValue": "MANGUERA DISCO CORTE",
+									"DisplayValue": "M3 - MANGUERA DISCO CORTE",
 									"ReturnValue": "M3"
 								},
 								{
-									"DisplayValue": "MANGUERA MARCHA / PARQUEO",
+									"DisplayValue": "M4 - MANGUERA MARCHA / PARQUEO",
 									"ReturnValue": "M4"
 								},
 								{
-									"DisplayValue": "MANGUERA ELEVADOR",
+									"DisplayValue": "M5 - MANGUERA ELEVADOR",
 									"ReturnValue": "M5"
 								},
 								{
-									"DisplayValue": "MANGUERA PICADOR",
+									"DisplayValue": "M6 - MANGUERA PICADOR",
 									"ReturnValue": "M6"
 								},
 								{
-									"DisplayValue": "MANGUERA SUSPENSION / CANUTO",
+									"DisplayValue": "M7 - MANGUERA SUSPENSION / CANUTO",
 									"ReturnValue": "M7"
 								},
 								{
-									"DisplayValue": "MANGUERA ROLO",
+									"DisplayValue": "M8 - MANGUERA ROLO",
 									"ReturnValue": "M8"
 								},
 								{
-									"DisplayValue": "MANGUERA EXTRACTOR PRIMARIO - SEGUNDARIO",
+									"DisplayValue": "M9 - MANGUERA EXTRACTOR PRIMARIO - SEGUNDARIO",
 									"ReturnValue": "M9"
 								},
 								{
-									"DisplayValue": "MANGUERA GATO GIRO / TORNAMESA",
+									"DisplayValue": "M10 - MANGUERA GATO GIRO / TORNAMESA",
 									"ReturnValue": "M10"
 								},
 								{
-									"DisplayValue": "MANGUERA PASAMURO",
+									"DisplayValue": "M11 - MANGUERA PASAMURO",
 									"ReturnValue": "M11"
 								},
 								{
-									"DisplayValue": "MANGUERA BANCO LEVANTE",
+									"DisplayValue": "M12 - MANGUERA BANCO LEVANTE",
 									"ReturnValue": "M12"
 								},
 								{
-									"DisplayValue": "MANGUERA SUCCION",
+									"DisplayValue": "M13 - MANGUERA SUCCION",
 									"ReturnValue": "M13"
 								},
 								{
-									"DisplayValue": "MANGUERA BANCO CONTROL HCO",
+									"DisplayValue": "M14 - MANGUERA BANCO CONTROL HCO",
 									"ReturnValue": "M14"
 								},
 								{
-									"DisplayValue": "CONSUMO AUTOVOLTEO",
+									"DisplayValue": "M15 - CONSUMO AUTOVOLTEO",
 									"ReturnValue": "M15"
 								},
 								{
-									"DisplayValue": "CONSUMO TRACTOR",
+									"DisplayValue": "M16 - CONSUMO TRACTOR",
 									"ReturnValue": "M16"
 								},
 								{
-									"DisplayValue": "MANGUERA ENFRIADOR ACEITE",
+									"DisplayValue": "M17 - MANGUERA ENFRIADOR ACEITE",
 									"ReturnValue": "M17"
 								},
 								{
-									"DisplayValue": "MNGUERA ALIMENTACION",
+									"DisplayValue": "M18 - MNGUERA ALIMENTACION",
 									"ReturnValue": "M18"
 								},
 								{
-									"DisplayValue": "COMPLETAR FULL",
+									"DisplayValue": "M19 - COMPLETAR FULL",
 									"ReturnValue": "M19"
 								},
 								{
-									"DisplayValue": "TENSIONAR ORUGAS",
+									"DisplayValue": "M20 - TENSIONAR ORUGAS",
 									"ReturnValue": "M20"
 								},
 								{
-									"DisplayValue": "CAMBIO MOTOR HIDRAULICO",
+									"DisplayValue": "M21 - CAMBIO MOTOR HIDRAULICO",
 									"ReturnValue": "M21"
 								},
 								{
-									"DisplayValue": "MANGUERA CORTADOR BASE",
+									"DisplayValue": "M22 - MANGUERA CORTADOR BASE",
 									"ReturnValue": "M22"
 								},
 								{
-									"DisplayValue": "FUGA TANQUE HIDRAULICO",
+									"DisplayValue": "M23 - FUGA TANQUE HIDRAULICO",
 									"ReturnValue": "M23"
 								},
 								{
-									"DisplayValue": "ENFRIADOR ACEITE",
+									"DisplayValue": "M24 - ENFRIADOR ACEITE",
 									"ReturnValue": "M24"
 								},
 								{
-									"DisplayValue": "CAJA BASE",
+									"DisplayValue": "M25 - CAJA BASE",
 									"ReturnValue": "M25"
 								},
 								{
-									"DisplayValue": "MANGUERA BASCULANTE",
+									"DisplayValue": "M26 - MANGUERA BASCULANTE",
 									"ReturnValue": "M26"
 								}
 							]
@@ -544,7 +544,7 @@
 	"_Name": "Registrar_Aceite_Motor",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar23",
+		"_Name": "ActionBar25",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
