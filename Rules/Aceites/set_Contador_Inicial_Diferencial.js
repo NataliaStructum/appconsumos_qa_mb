@@ -14,6 +14,7 @@ export default function set_Contador_Inicial_Diferencial(context) {
     let operario_diferencial = form_add.getControl("operario_diferencial")
     let cont_final = form_add.getControl("con_final_diferencial")
     let observaciones = form_add.getControl("observaciones_diferencial")
+    let orden_dif = form_add.getControl("orden_diferencial")
 
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
     let id_planilla = clientData.data_planilla_diferencial.id;
@@ -65,8 +66,9 @@ export default function set_Contador_Inicial_Diferencial(context) {
         kmh.setValue("");
         operario_diferencial.setValue("");
         cont_final.setValue("");
+        orden_dif.setValue("");
         //----
-
+        orden_dif.setVisible(false);
         btn_agregar.setVisible(false)
         
 

@@ -299,7 +299,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una observación",
-							"PlaceHolder": "Observación",
+							"PlaceHolder": "Seleccionar observación",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
