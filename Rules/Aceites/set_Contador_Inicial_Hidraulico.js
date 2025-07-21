@@ -14,6 +14,7 @@ export default function set_Contador_Inicial_Hidraulico(context) {
     let operario_hidraulico = form_add.getControl("operario_hidraulico")
     let cont_final = form_add.getControl("con_final_hidraulico")
     let observaciones = form_add.getControl("observaciones_hidraulico")
+    let orden_hid = form_add.getControl("orden_hidraulico")
 
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
     let id_planilla = clientData.data_planilla_hidraulico.id;
@@ -65,7 +66,9 @@ export default function set_Contador_Inicial_Hidraulico(context) {
         kmh.setValue("");
         operario_hidraulico.setValue("");
         cont_final.setValue("");
+        orden_hid.setValue("");
         //----
+        orden_hid.setVisible(false)
 
         btn_agregar.setVisible(false)
         

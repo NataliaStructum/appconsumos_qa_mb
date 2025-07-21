@@ -14,6 +14,7 @@ export default function set_Contador_Inicial_Motor(context) {
     let operario_motor = form_add.getControl("operario_motor")
     let cont_final = form_add.getControl("con_final_motor")
     let observaciones = form_add.getControl("observaciones_motor")
+    let orden_motor = form_add.getControl("orden_motor")
 
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
     let id_planilla = clientData.data_planilla_motor.id;
@@ -66,10 +67,11 @@ export default function set_Contador_Inicial_Motor(context) {
         operario_motor.setValue("");
         cont_final.setValue("");
         //----
+        orden_motor.setValue("");
+        orden_motor.setVisible(false)
 
         btn_agregar.setVisible(false)
-        
-
+    
     })
         .catch((error) => {
             return context.executeAction({
