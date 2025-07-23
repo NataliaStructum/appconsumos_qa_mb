@@ -73,6 +73,11 @@
 			"Name": "OperacionesOrden",
 			"Query": "OperacionesOrden",
 			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "UnidadMedida",
+			"Query": "UnidadMedida",
+			"AutomaticallyRetrievesStreams": false
 		}
 	]
 }
