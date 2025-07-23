@@ -117,13 +117,13 @@
 								"Target": {
 									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 									"EntitySet": "Inventario",
-									"QueryOptions": "$expand=almacen&$filter=almacen/tipo eq 'CAMPO' and almacen_sociedad eq '{{#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/sociedad}}'&$orderby=almacen_almacen",
+									"QueryOptions": "$expand=almacen,und&$filter=almacen/tipo eq 'CAMPO' and almacen_sociedad eq '{{#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/sociedad}}'&$orderby=almacen_almacen",
 									"ReadLink": "{@odata.readLink}"
 								},
 								"ObjectCell": {
 									"Description": "{material_desc}",
 									"DisplayDescriptionInMobile": true,
-									"Footnote": "Disponible: {stock_disponible} {und}  / Reservado: {stock_disponible} {und}",
+									"Footnote": "Disponible: {stock_disponible} {und/und_vz} / Reservado: {stock_disponible} {und/und_vz}",
 									"PreserveIconStackSpacing": false,
 									"Subhead": "{almacen/almacen} - {almacen/almacen_desc}",
 									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",

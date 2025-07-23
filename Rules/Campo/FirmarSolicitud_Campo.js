@@ -7,6 +7,16 @@ import Rule_openDocumentoIOS from '../Rule_openDocumentoIOS.js';
 
 export default async function FirmarSolicitud_Campo(context) {
 
+    //manejar bien los errores del backend y la autenticación
+    //no se envia correo electronico
+    //1. Enviar los componentes a la orden - hay que validar si ya hay creados materiales con las cantidades solicitadas usar esos campos y no hay que crearlos 
+    //   - se debe guardar en los componentes de la solicitud las posiciones en la reserva de los materiales creados o escogidos
+    //2. liquidar los componentes de la orden - se debe guardar el numero de documento de material en cada componente y se debe mostrar en el detalle de los items de la solicitud
+    //3. actualizar los componentes como entregados en la bd y el estado de la solicitud 
+    //4. se debe obtener el pdf de la orden y mostrarlo con la firma del autorizador ingresada y guardar el pdf a la base de datos para luego poder consultarlo desde el historico
+
+
+
     function sendEmail(pdf) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
