@@ -21,6 +21,7 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
     let liquidar = [];
     let update = [];
     let filtro = `$expand=material,almacen&$filter=solicitud_id eq ${id_solicitud}`;
+    //traer los componnetes que todavia no tengan una posicion asociada
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then((results) => {
         if (!results || results.length === 0) {
             alert("No se encontraron componentes para la solicitud");
