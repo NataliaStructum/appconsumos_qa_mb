@@ -79,7 +79,7 @@
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 						"EntitySet": "DetalleReserva",
-						"QueryOptions": "$filter=reserva eq '{reserva}'&$orderby=posicion",
+						"QueryOptions": "$expand=und&$filter=reserva eq '{reserva}'&$orderby=posicion",
 						"ReadLink": "{@odata.readLink}"
 					},
 					"_Name": "SectionObjectTable0",
@@ -99,7 +99,7 @@
 						"Title": "Pos: {posicion}",
 						"Subhead": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 						"Footnote": "{material_desc}",
-						"Description": "Cantidad tomada: {cant_tomada} de {cant_solicitada} {und}",
+						"Description": "Cantidad tomada: {cant_tomada} de {cant_solicitada} {und/und_vz}",
 						"DisplayDescriptionInMobile": true,
 						"SubstatusText": "Op: {operacion}",
 						"PreserveIconStackSpacing": false,
@@ -140,7 +140,7 @@
 	"_Name": "Detalle_Orden_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar8",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Orden"
 	},

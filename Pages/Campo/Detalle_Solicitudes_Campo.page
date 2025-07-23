@@ -169,8 +169,8 @@
 						"Footnote": "Tomado de: {almacen_almacen} - {almacen/almacen_desc}",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant. Solicitada: {cantidad_tomada} {material/und}",
-						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada} {material/und}",
+						"StatusText": "Cant. Solicitada: {cantidad_tomada} {material/und/und_vz}",
+						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada} {material/und/und_vz}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"Tags": [
@@ -244,7 +244,9 @@
 				"OnPress": {
 					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
 					"Properties": {
-						"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page"
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page",
+						"ModalPage": true,
+						"ModalPageFullscreen": true
 					}
 				},
 				"Image": "sap-icon://accounting-document-verification",
