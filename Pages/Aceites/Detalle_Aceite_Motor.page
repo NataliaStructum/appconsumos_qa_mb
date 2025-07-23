@@ -106,7 +106,7 @@
 						"Title": "{equipo_equipo}",
 						"Subhead": "{op_ficha} - {op_nombre}",
 						"Footnote": "{equipo/equipo_desc} ",
-						"Description": "{observacion} - {obs_text} ",
+						"Description": "{obs_text} ",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cont Inicial: {contador_ini}",
 						"SubstatusText": "Cont Final: {contador_fin}",
