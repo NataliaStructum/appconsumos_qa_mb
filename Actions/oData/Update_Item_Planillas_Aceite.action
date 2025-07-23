@@ -1,0 +1,14 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Update_Item_Planillas_Aceite"
+	},
+	"Target": {
+		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+		"EntitySet": "ItemPlanillasAceites",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"id": ""
+	}
+}

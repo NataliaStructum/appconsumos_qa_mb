@@ -1,12 +1,12 @@
 /**
  * Describe this function...
- * @param {IClientAPI} context
+ * @param {IClientAPI} clientAPI
  */
-export default function Agregar_Consumos_Revision(context) {
+export default function Agregar_Consumos_Revision_Diferencial(context) {
     const pageProxy = context.getPageProxy();
-    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Motor').getClientData();
-    let registro_consumo_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Motor/#Control:registro_consumo/#Value');
-    let clmov_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Motor/#Control:orden_obj/#Value');
+    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Diferencial').getClientData();
+    let registro_consumo_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Diferencial/#Control:registro_consumo/#Value');
+    let clmov_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Diferencial/#Control:orden_obj/#Value');
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
     
     if(registro_consumo_value.length < 1){
@@ -34,7 +34,7 @@ export default function Agregar_Consumos_Revision(context) {
     //tipoData = tipo[0].DisplayValue;
     //tipoData = tipo[0].ReturnValue
 
-    const duplicado = clientData.lista_revision_motor.filter(m => m.pos === dataConsumo.pos).length > 0
+    const duplicado = clientData.lista_revision_diferencial.filter(m => m.pos === dataConsumo.pos).length > 0
 
     if (duplicado) {
         return context.executeAction({
@@ -47,7 +47,7 @@ export default function Agregar_Consumos_Revision(context) {
     }
     
     dataConsumo.clase_mov = clase_mov
-    clientData.lista_revision_motor.push(dataConsumo)
+    clientData.lista_revision_diferencial.push(dataConsumo)
     list_component.redraw()
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",

@@ -11,6 +11,7 @@ export default function NavTo_Detalle_Planilla_Consumo(context) {
     clientData.data_planilla_hidraulico = null
     clientData.data_planilla_diferencial = null
     clientData.data_planilla_reductor = null
+    clientData.data_planilla_servotrans = null
 
     //alert(fechaHoy)
 
@@ -25,19 +26,48 @@ export default function NavTo_Detalle_Planilla_Consumo(context) {
             let resultados = results;
 
             // Clasificar por material
-            resultados.forEach((item) => {
-                const material = item.material;
+            if (info.sociedad === 'AI08') {
+                resultados.forEach((item) => {
+                    const material = item.material;
 
-                if (material === '1691624') {
-                    clientData.data_planilla_motor = item;
-                } else if (material === '1099689') {
-                    clientData.data_planilla_hidraulico = item;
-                } else if (material === '1139592') {
-                    clientData.data_planilla_diferencial = item;
-                }else if (material === '1139593') {
-                    clientData.data_planilla_reductor = item;
-                }
-            });
+                    if (material === '1691624') {
+                        clientData.data_planilla_motor = item;
+                    } else if (material === '1099689') {
+                        clientData.data_planilla_hidraulico = item;
+                    } else if (material === '1139592') {
+                        clientData.data_planilla_diferencial = item;
+                    } else if (material === '1139593') {
+                        clientData.data_planilla_reductor = item;
+                    }
+                });
+            } else if (info.sociedad === 'AI01') {
+                resultados.forEach((item) => {
+                    const material = item.material;
+                    if (material === '1417680') {
+                        clientData.data_planilla_motor = item;
+                    } else if (material === '1102612') {
+                        clientData.data_planilla_hidraulico = item;
+                    } else if (material === '1715879') {
+                        clientData.data_planilla_diferencial = item;
+                    } else if (material === '1139592') {
+                        clientData.data_planilla_reductor = item;
+                    } else if (material === '1654068') {
+                        clientData.data_planilla_servotrans = item;
+                    }
+                });
+            }
+            else {
+                return context.executeAction({
+                    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                    "Properties": {
+                        "Title": "Error",
+                        "Message": `Error al consultar la sociedad`,
+                        "OKCaption": "Cerrar"
+                    }
+                });
+
+            }
+
             // Navegar a la página después de guardar los datos
             if (info.sociedad === 'AI01') {
                 return context.executeAction({

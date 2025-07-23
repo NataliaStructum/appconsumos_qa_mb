@@ -74,7 +74,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "1691624",
+							"Value": "1417680",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_mat_motor",
 							"IsVisible": false,
@@ -105,7 +105,7 @@
 						"_Name": "SectionCommonTypeHeader1",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Aceite Mobil 15W-40 Motor - 1691624"
+						"Caption": "Aceite Mobil Delvac 15W40 Motor - 1417680"
 					},
 					"Visible": true,
 					"EmptySection": {
@@ -124,7 +124,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "1099689",
+							"Value": "1102612",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_material",
 							"IsVisible": false,
@@ -155,7 +155,7 @@
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Aceite Fluid 424 Hidráulico - 1099689"
+						"Caption": "Aceite Fluid 424 Hidráulico - 1102612"
 					},
 					"Visible": true,
 					"EmptySection": {
@@ -174,7 +174,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "1139592",
+							"Value": "1715879",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_mat_diferen",
 							"IsVisible": false,
@@ -205,7 +205,7 @@
 						"_Name": "SectionCommonTypeHeader2",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Aceite Diferencial 85W-140 - 1139592"
+						"Caption": "Aceite 80W-90 Diferencial - 1715879"
 					},
 					"EmptySection": {
 						"FooterVisible": false
@@ -223,7 +223,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "1139593",
+							"Value": "1139592",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FormCellSimpleProperty_id_mat_reduc",
 							"IsVisible": false,
@@ -254,19 +254,68 @@
 						"_Name": "SectionCommonTypeHeader3",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Aceites Diferenciales y Reductores 80W-90 - 1139593"
+						"Caption": "Aceites Reductores, Caja 85W-140 - 1139592"
 					},
 					"EmptySection": {
 						"FooterVisible": false
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "SectionFormCell3"
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "1654068",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_id_mat_servotrans",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Aceites Servotransmisión",
+							"PlaceHolder": "PlaceHolder",
+							"AlternateInput": "None",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty_cant_ini_servotrans",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Contador Inicial",
+							"PlaceHolder": "Ingrese cantidad Inicial",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader4",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "Aceites Servotransmisión HD 30 - 1654068"
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell4"
 				}
 			]
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Crear_Planilla_Consumo",
+	"_Name": "Crear_Planilla_Consumo_Incauca",
 	"ActionBar": {
 		"Items": [],
 		"_Name": "ActionBar10",
@@ -286,7 +335,7 @@
 					"Image": "Button2",
 					"Button": "Button2"
 				},
-				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites.js",
+				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Agregar_Planilla_Aceites_Incauca.js",
 				"Image": "sap-icon://create",
 				"Enabled": true,
 				"ButtonType": "Primary",

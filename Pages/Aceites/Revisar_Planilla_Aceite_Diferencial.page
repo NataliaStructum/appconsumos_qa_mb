@@ -10,12 +10,12 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Subhead": "No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/numero}",
-						"Footnote": "{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen/almacen_desc}",
-						"StatusText": "Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_ini} ",
-						"SubstatusText": "Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_fin} ",
+						"Subhead": "No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/numero}",
+						"Footnote": "{#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/almacen/almacen_desc}",
+						"StatusText": "Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/contador_ini} ",
+						"SubstatusText": "Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/contador_fin} ",
 						"DetailImageIsCircular": false,
-						"HeadlineText": "Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/fecha}",
+						"HeadlineText": "Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/fecha}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
@@ -86,8 +86,8 @@
 							},
 							"PickerPrompt": "Selecciona un consumo",
 							"PlaceHolder": "Selecciona un consumo",
-							"HelperText": "Selecciona un consumo para vincular un movimiento",
-							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo.js",
+							"HelperText": "Selecciona un consumo para vincular una orden",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Diferencial.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": true,
@@ -96,7 +96,7 @@
 								"Target": {
 									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 									"EntitySet": "ItemPlanillasAceites",
-									"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos.js"
+									"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Diferencial.js"
 								},
 								"ObjectCell": {
 									"Description": "{equipo/equipo_desc}",
@@ -130,7 +130,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una clase de movimiento",
-							"PlaceHolder": "Selecciona una clase de movimiento ",
+							"PlaceHolder": "Selecciona una orden",
 							"HelperText": "Selecciona una clase de movimiento para el consumo selecccionado",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
@@ -235,13 +235,13 @@
 							"Image": "sap-icon://add-product",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Diferencial.js"
 						}
 					],
 					"Layout": {
 						"NumberOfColumns": 1
 					},
-					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio.js",
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Diferencial.js",
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -270,7 +270,7 @@
 						}
 					},
 					"_Type": "Section.Type.ObjectTable",
-					"Target": "/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Motor.js",
+					"Target": "/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Diferencial.js",
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
@@ -339,7 +339,7 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Revisar_Planilla_Aceite_Motor",
+	"_Name": "Revisar_Planilla_Aceite_Diferencial",
 	"ActionBar": {
 		"Items": [
 			{
@@ -355,7 +355,7 @@
 		],
 		"_Name": "ActionBar0",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Revisión Planilla Aceite de Motor"
+		"Caption": "Revisión Planilla Aceite de Diferencial"
 	},
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",
@@ -370,7 +370,7 @@
 					"Image": "Button2",
 					"Button": "Button2"
 				},
-				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Motor.js",
+				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Diferencial.js",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
@@ -385,7 +385,7 @@
 					"Image": "Button_Eliminar",
 					"Button": "Button_Eliminar"
 				},
-				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Motor.js",
+				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Diferencial.js",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",

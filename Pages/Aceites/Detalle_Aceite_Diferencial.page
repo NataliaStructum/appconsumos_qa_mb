@@ -106,7 +106,7 @@
 						"Title": "{equipo_equipo}",
 						"Subhead": "{op_ficha} - {op_nombre}",
 						"Footnote": "{equipo/equipo_desc} ",
-						"Description": "{observacion} - {obs_text} ",
+						"Description": "{obs_text} ",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Cont Inicial: {contador_ini}",
 						"SubstatusText": "Cont Final: {contador_fin}",
@@ -159,5 +159,27 @@
 		"Items": [],
 		"_Name": "ActionBar18",
 		"_Type": "Control.Type.ActionBar"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem0",
+				"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_RevisarAceiteDiferencial.js",
+				"Title": "Revisar ",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/NavTo_RevisarPlanillaAceiteDiferencial.js",
+				"Image": "sap-icon://write-new-document",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }
