@@ -18,28 +18,28 @@
 					},
 					"KeyAndValues": [
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_ini} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/contador_ini} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_inicial",
 							"KeyName": "Contador Inicial",
 							"Visible": true
 						},
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/contador_fin} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/contador_fin} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_final",
 							"KeyName": "Contador Final",
 							"Visible": true
 						},
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/estado} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/estado} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_estado",
 							"KeyName": "Estado",
 							"Visible": true
 						},
 						{
-							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/total} ",
+							"Value": " {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/total} ",
 							"_Type": "KeyValue.Type.Item",
 							"_Name": "KeyValue_consumo",
 							"KeyName": "Total Consumo",
@@ -71,7 +71,7 @@
 					},
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
-					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js",
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas_Servotransmisor.js",
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -92,7 +92,7 @@
 							"FullWidth": true,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Motor.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/set_Contador_Inicial_Servotransmisor.js"
 						},
 						{
 							"Styles": {
@@ -110,7 +110,7 @@
 							"FullWidth": true,
 							"Visible": true,
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Motor.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Enviar_Planilla_Aceite_Servotransmisor.js"
 						}
 					]
 				},
@@ -125,7 +125,7 @@
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "equipo_motor",
+							"_Name": "equipo_servotrans",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -138,7 +138,7 @@
 							},
 							"PickerPrompt": "Selecciona un equipo",
 							"PlaceHolder": "Ingrese Equipo",
-							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/setEnabled_Tipo_Aceite_Motor.js",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/setEnabled_Tipo_Aceite_Servotransmisor.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
@@ -169,7 +169,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "tipo_motor",
+							"_Name": "tipo_servotrans",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -181,7 +181,7 @@
 							},
 							"PickerPrompt": "Seleccione el tipo",
 							"PlaceHolder": "Ingrese Tipo",
-							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/onChange_Tipo_Aceite_Motor.js",
+							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/onChange_Tipo_Aceite_Servotransmisor.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": true,
@@ -203,7 +203,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "orden_motor",
+							"_Name": "orden_servotrans",
 							"IsVisible": false,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -215,7 +215,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una orden",
-							"PlaceHolder": "Ingrese orden",
+							"PlaceHolder": "PlaceHolder",
 							"HelperText": "Elige una orden abierta vinculada al equipo seleccionado.",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
@@ -242,7 +242,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "kmh_motor",
+							"_Name": "kmh_servotrans",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Kilometraje Horómetro",
@@ -253,7 +253,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "operario_motor",
+							"_Name": "operario_servotrans",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Ficha Operario",
@@ -265,7 +265,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "cont_inicial_motor",
+							"_Name": "cont_inicial_servotrans",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Contador Inicial",
@@ -276,7 +276,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "con_final_motor",
+							"_Name": "con_final_servotrans",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Contador Final",
@@ -287,7 +287,7 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
-							"_Name": "observaciones_motor",
+							"_Name": "observaciones_servotrans",
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -429,7 +429,7 @@
 							"Image": "sap-icon://add-activity-2",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Motor.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Servotransmisor.js"
 						}
 					],
 					"Layout": {
@@ -440,7 +440,7 @@
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Agregar Consumo de Aceite Motor"
+						"Caption": "Agregar Consumo de Aceite Servotransmisor"
 					},
 					"Visible": false,
 					"EmptySection": {
@@ -468,13 +468,13 @@
 						"_Name": "SectionCommonTypeHeader1",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Consumos de Aceite Motor"
+						"Caption": "Consumos de Aceite Servotransmisor"
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 						"EntitySet": "ItemPlanillasAceites",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id.js"
+						"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Registro_Planilla_Id_Servotransmisor.js"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -490,7 +490,7 @@
 							"TrailingItems": [],
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
-						"Title": "{pos}. {equipo_equipo}",
+						"Title": "{equipo_equipo}",
 						"Subhead": "{op_ficha} - {op_nombre}",
 						"Footnote": "{equipo/equipo_desc} ",
 						"Description": "{obs_text} ",
@@ -541,10 +541,10 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Registrar_Aceite_Motor",
+	"_Name": "Registrar_Aceite_Servotransmisor",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar25",
+		"_Name": "ActionBar19",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

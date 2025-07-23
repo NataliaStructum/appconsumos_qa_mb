@@ -13,6 +13,17 @@ export default function NavTo_Crear_Planilla(context) {
     clientData.aceite_num_planilla = ""
     clientData.lista_aceites = []
 
+    let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+    let info = clientData_user.info_user;
+
+    if (info.sociedad === 'AI01') {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+            "Properties": {
+                "PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Crear_Planilla_Consumo_Incauca.page"
+            }
+        });
+    }
 
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
@@ -20,4 +31,7 @@ export default function NavTo_Crear_Planilla(context) {
             "PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Crear_Planilla_Consumo.page"
         }
     });
+
+
+    
 }

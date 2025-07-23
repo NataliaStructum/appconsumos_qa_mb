@@ -10,20 +10,15 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Subhead": "Ficha: {operario_ficha} ",
-						"StatusText": "No. Planilla: {numero}",
-						"SubstatusText": "{almacen/almacen_desc}",
+						"Subhead": "Ficha: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/operario_ficha} ",
+						"StatusText": "No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/numero}",
+						"SubstatusText": "{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/almacen/almacen_desc}",
 						"DetailImageIsCircular": false,
-						"BodyText": "{operario/nombre}",
-						"HeadlineText": "Fecha: {fecha}",
+						"BodyText": "{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/operario/nombre}",
+						"HeadlineText": "Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_motor/fecha}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
-						"SubstatusImagePosition": "Leading",
-						"Target": {
-							"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
-							"EntitySet": "PlanillasAceites",
-							"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Query_Detalle_Planilla_Motor.js"
-						}
+						"SubstatusImagePosition": "Leading"
 					},
 					"_Type": "Section.Type.ObjectHeader",
 					"_Name": "SectionObjectHeader0",
@@ -38,31 +33,31 @@
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Motor",
-					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Motor.page",
+					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Motor.page",
 					"_Name": "Motor_Page"
 				},
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Hidráulico",
-					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Hidraulico.page",
+					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Hidraulico.page",
 					"_Name": "Hidra_Page"
 				},
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Diferencial",
-					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Diferencial.page",
-					"_Name": "Diferen_Page"
+					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Diferencial.page",
+					"_Name": "Diferencial_Page"
 				},
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Reductores",
-					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Reductor.page",
+					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Reductores.page",
 					"_Name": "Reductores_Page"
 				},
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Servotransmisión",
-					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Servotransmisor.page",
+					"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Registrar_Aceite_Servotransmisor.page",
 					"_Name": "Servotransmisores_Page"
 				}
 			],
@@ -72,11 +67,11 @@
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Detalle_Planilla_Consumo_Incauca",
+	"_Name": "Registrar_Planilla_Consumo_Incauca",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar6",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Detalle Planilla Consumos de Aceite"
+		"Caption": "Planilla Consumos de Aceite"
 	}
 }

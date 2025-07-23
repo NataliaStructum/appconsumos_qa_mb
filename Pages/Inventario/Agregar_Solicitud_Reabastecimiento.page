@@ -163,11 +163,11 @@
 								"Target": {
 									"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 									"EntitySet": "Inventario",
-									"QueryOptions": "$expand=almacen&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"
+									"QueryOptions": "$expand=almacen,und&$filter=almacen_almacen eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/almacen}}' and almacen_sociedad eq '{{#Page:Filtro_Almacen_Solicitud_Abast/#ClientData/almacen_abast/sociedad}}'&$orderby=material"
 								},
 								"ObjectCell": {
 									"Description": "{material_desc}",
-									"Footnote": "Disponible: {stock_disponible} {und} / Reservado: {stock_disponible} {und}",
+									"Footnote": "Disponible: {stock_disponible} {und/und_vz} / Reservado: {stock_disponible} {und/und_vz}",
 									"PreserveIconStackSpacing": false,
 									"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
 									"Visible": true

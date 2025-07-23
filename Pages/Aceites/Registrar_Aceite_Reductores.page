@@ -505,7 +505,7 @@
 							},
 							{
 								"Color": "Grey",
-								"Text": "{observacion} - {obs_text} "
+								"Text": "{obs_text} "
 							}
 						],
 						"AvatarStack": {

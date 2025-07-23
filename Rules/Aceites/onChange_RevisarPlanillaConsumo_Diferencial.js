@@ -1,14 +1,13 @@
 /**
  * Describe this function...
- * @param {IClientAPI} context
+ * @param {IClientAPI} clientAPI
  */
-export default function onChange_RevisarPlanillaConsumo(context) {
-
+export default function onChange_RevisarPlanillaConsumo_Diferencial(context) {
     const pageProxy = context.getPageProxy();
     var form_cell = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0")
     var registro_consumo = form_cell.getControl("registro_consumo")
     var orden_obj = form_cell.getControl("orden_obj")
-    let registro_consumo_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Motor/#Control:registro_consumo/#Value');
+    let registro_consumo_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Diferencial/#Control:registro_consumo/#Value');
 
     //alert(JSON.stringify(orden_obj.getTargetSpecifier()))
    

@@ -1,13 +1,13 @@
 /**
  * Describe this function...
- * @param {IClientAPI} context
+ * @param {IClientAPI} clientAPI
  */
-export default function NavTo_RevisarPlanillaAceiteMotor(context) {
-    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Motor').getClientData();
+export default function NavTo_RevisarPlanillaAceiteDiferencial(context) {
+    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Diferencial').getClientData();
     let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
-    let id_planilla = clientDataFiltro.data_planilla_motor.id;
+    let id_planilla = clientDataFiltro.data_planilla_diferencial.id;
     let filtro = `$expand=equipo&$filter=planilla_id eq ${id_planilla}&$orderby=pos`
-    clientData.lista_revision_motor = []
+    clientData.lista_revision_diferencial = []
     clientData.cantCambio = 0
     clientData.total = 0
 
@@ -25,11 +25,11 @@ export default function NavTo_RevisarPlanillaAceiteMotor(context) {
                 }
                 
             });
-            clientData.lista_revision_motor = cambio
+            clientData.lista_revision_diferencial = cambio
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
                 "Properties": {
-                    "PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Revisar_Planilla_Aceite_Motor.page",
+                    "PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Revisar_Planilla_Aceite_Diferencial.page",
                     "ModalPage": true,
                     "ModalPageFullscreen": true
                 }
@@ -46,5 +46,4 @@ export default function NavTo_RevisarPlanillaAceiteMotor(context) {
             });
         }
     })
-    
 }
