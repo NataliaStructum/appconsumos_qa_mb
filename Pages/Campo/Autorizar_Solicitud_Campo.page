@@ -75,9 +75,9 @@
 							"Alignment": "Center",
 							"ButtonType": "Primary",
 							"Semantic": "Tint",
-							"Image": "sap-icon://payment-approval",
+							"Image": "sap-icon://validate",
 							"ImagePosition": "Leading",
-							"Enabled": true,
+							"Enabled": "/appconsumos_qa_mb/Rules/Campo/getEnabledAutorizar_Campo.js",
 							"OnPress": "/appconsumos_qa_mb/Rules/Campo/ValidarAutorizar_Campo.js"
 						},
 						{
@@ -85,13 +85,18 @@
 							"_Name": "FormCellButton1",
 							"IsVisible": true,
 							"Separator": true,
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
 							"Title": "Liquidar",
 							"Alignment": "Center",
-							"ButtonType": "Text",
+							"ButtonType": "Primary",
 							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
+							"Image": "sap-icon://payment-approval",
 							"ImagePosition": "Leading",
-							"Enabled": true
+							"Enabled": "/appconsumos_qa_mb/Rules/Campo/getEnabledLiquidar_Campo.js",
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/LiquidarSolicitud_Campo_SAP.js"
 						}
 					],
 					"Layout": {

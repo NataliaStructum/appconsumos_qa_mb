@@ -207,6 +207,7 @@
 						"UseTopPadding": true,
 						"Caption": "Aceite 80W-90 Diferencial - 1715879"
 					},
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -256,6 +257,7 @@
 						"UseTopPadding": true,
 						"Caption": "Aceites Reductores, Caja 85W-140 - 1139592"
 					},
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -305,6 +307,7 @@
 						"UseTopPadding": true,
 						"Caption": "Aceites Servotransmisión HD 30 - 1654068"
 					},
+					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -318,7 +321,7 @@
 	"_Name": "Crear_Planilla_Consumo_Incauca",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar10",
+		"_Name": "ActionBar11",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Planilla Control de Consumo"
 	},

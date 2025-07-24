@@ -175,6 +175,10 @@
 						"AccessoryType": "None",
 						"Tags": [
 							{
+								"Color": "Blue",
+								"Text": "Pos: {posicion}"
+							},
+							{
 								"Color": "Grey",
 								"Text": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"
 							}
