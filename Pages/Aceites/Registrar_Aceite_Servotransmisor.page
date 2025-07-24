@@ -440,7 +440,7 @@
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Agregar Consumo de Aceite Servotransmisor"
+						"Caption": "Agregar Consumo de Aceite Servotransmisión"
 					},
 					"Visible": false,
 					"EmptySection": {
@@ -468,7 +468,7 @@
 						"_Name": "SectionCommonTypeHeader1",
 						"AccessoryType": "None",
 						"UseTopPadding": true,
-						"Caption": "Consumos de Aceite Servotransmisor"
+						"Caption": "Consumos de Aceite Servotransmisión"
 					},
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {

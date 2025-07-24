@@ -155,12 +155,14 @@
 	],
 	"_Type": "Page",
 	"_Name": "Detalle_Aceite_Diferencial",
+	"OnLoaded": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
+	"OnReturning": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
+	"OnResume": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar18",
+		"_Name": "ActionBar19",
 		"_Type": "Control.Type.ActionBar"
-	},
-	"FioriToolbar": {
+	},"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",
 		"_Name": "FioriToolbar0",
 		"Items": [
@@ -168,7 +170,7 @@
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem0",
 				"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_RevisarAceiteDiferencial.js",
-				"Title": "Revisar ",
+				"Title": "Revisar",
 				"Styles": {
 					"Image": "Button",
 					"Button": "Button"
