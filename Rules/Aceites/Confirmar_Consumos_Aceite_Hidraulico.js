@@ -2,16 +2,16 @@
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
-
-export default function Confirmar_Consumos_Aceite_Motor(context) {
+export default function Confirmar_Consumos_Aceite_Hidraulico(context) {
     let consumosAprobados = [];
     let exitosos = []; 
     let errores = [];  
     
-    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Motor').getClientData();
+    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Hidraulico').getClientData();
     let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
 
-    let listaDeAgregados = clientData.lista_revision_motor; 
+
+    let listaDeAgregados = clientData.lista_revision_hidraulico; 
 
     listaDeAgregados.forEach(item => {
         const consumoData = {
@@ -62,11 +62,12 @@ export default function Confirmar_Consumos_Aceite_Motor(context) {
                 "Message": mensaje
             }
         }).then(() => {
-            clientDataFiltro.data_planilla_motor.estado = 'Aprobado'
+            clientDataFiltro.data_planilla_hidraulico.estado = 'Aprobado'
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
-                "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Motor.page" 
+                "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Hidraulico.page" 
             });
         });
     });
+
 }

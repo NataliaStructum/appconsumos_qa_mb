@@ -67,9 +67,12 @@
 	],
 	"_Type": "Page",
 	"_Name": "Detalle_Planilla_Consumo",
+	"OnLoaded": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
+	"OnReturning": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
+	"OnResume": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar8",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Planilla Consumos de Aceite"
 	}

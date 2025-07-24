@@ -2,11 +2,10 @@
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
-export default function Query_Revisar_Planilla_Consumos_Diferencial(context) {
+export default function Query_Revisar_Planilla_Consumos_Servotransmisor(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
-    let id_planilla = clientData.data_planilla_diferencial.id;
+    let id_planilla = clientData.data_planilla_servotrans.id;
     //let filtro = `$expand=equipo&$filter=planilla_id eq ${id_planilla}&$orderby=pos`
-    let filtro = `$expand=equipo&$filter=planilla_id eq ${id_planilla} and tipo eq 'Full'&$orderby=pos`
-
+    let filtro = `$expand=equipo&$filter=planilla_id eq ${id_planilla} and tipo eq 'Full'&$orderby=pos` 
     return filtro
 }
