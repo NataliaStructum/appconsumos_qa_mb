@@ -15,22 +15,34 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
     let centro = info_solicitud.alm_centro;
     let alm_desc = info_solicitud.alm_desc;
     let pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:pass/#Value");
+    const pageProxy = context.getPageProxy();
+    var btn_liquidar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton1")
 
     let exitosos = [];
     let errores = [];
     let liquidar = [];
     let update = [];
-    let filtro = `$expand=material,almacen&$filter=solicitud_id eq ${id_solicitud}`;
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    let filtro = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion eq null and aprobado eq true`;
     //traer los componnetes que todavia no tengan una posicion asociada
-    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then((results) => {
+    //en liquidar traer todos los componentes que tengan una posicion y que no tengan un doc de movimiento 
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then(async (results) => {
         if (!results || results.length === 0) {
-            alert("No se encontraron componentes para la solicitud");
-            return;
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                "Properties": {
+                    "Title": "Componentes ya registrados",
+                    "Message": "Todos los componentes de esta solicitud ya se encuentran registrados en la reserva."
+                }
+            })
         }
 
         // Crear las promesas para cada componente
-        const promesasAddMat = results.map((e) => {
-            //alert(e.material_material.replace(/^0+/, ''))
+        for (const e of results) {
             const data = {
                 ReservNo: reserva.replace(/^0+/, ''),
                 Material: e.material_material.replace(/^0+/, ''),
@@ -38,196 +50,220 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
                 Activity: e.op_number,
                 GrRcpt: alm_desc,
                 RequirementQuantity: `${e.cantidad_aprobada}`,
-                //RequirementQuantityUnit: e.material.und,
-                RequirementQuantityUnit: "PZA"
+                RequirementQuantityUnit: e.material.und.und_vz,
             };
 
-            //Consultar si el material ya existe en alguna posicion de la reserva y tiene disponibilidad para tomar las cantidades de ahí
-            let filtro2 = `$filter=reserva eq '${reserva}' and orden eq '${orden}' and material eq '${e.material_material}' and operacion eq '${e.op_number}'`;
-            return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'DetalleReserva', [], filtro2).then((results) => {
-                if (results && results.length > 0) {
-                    let disponibles = results.filter(obj => {
-                        return (obj.cant_solicitada - obj.cant_tomada) >= e.cantidad_aprobada;
-                    });
+            //alert(JSON.stringify(e));
 
+            try {
+                const res = await context.executeAction({
+                    "Name": "/appconsumos_qa_mb/Actions/Call_AddMaterialesRes.action",
+                    "Properties": {
+                        "ShowActivityIndicator": true,
+                        "ActivityIndicatorText": "Cargando datos ...",
+                        "OnFailure": "",
+                        "OnSuccess": "",
+                        "Target": {
+                            "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                            "Path": "/AddMaterialRes",
+                            "RequestProperties": {
+                                "Method": "POST",
+                                "Body": {
+                                    "username": info_user.sapUsr,
+                                    "password": "Abaper072025",
+                                    "data": data
+                                }
+                            }
+                        }
+                    }
+                });
+
+                const resjson = res.data;
+                alert(resjson.item)
+                if (resjson.success) {
+                    exitosos.push(`${e.material.material_desc}`);
                     liquidar.push({
                         Material: e.material_material.replace(/^0+/, ''),
                         MOVE_TYPE: "261",
                         Plant: e.almacen.centro,
                         StgeLoc: e.almacen.almacen,
                         EntryQnt: `${e.cantidad_aprobada}`,
-                        EntryUom: "PZA",
-                        RES_ITEM: disponibles.getItem(0).posicion,
+                        EntryUom: e.material.und.und_vz,
+                        RES_ITEM: resjson.item,
                         RESERV_NO: reserva
-                    })
+                    });
                     update.push({
                         idComponente: e.id,
-                        posicion: disponibles.getItem(0).posicion,
-                        doc_material: null
-                    })
-                } else {
-                    //alert("No hay materiales en la orden con esas especificaciones se va a crear los componentes en la reserva");
-                    return context.executeAction({
-                        "Name": "/appconsumos_qa_mb/Actions/Call_AddMaterialesRes.action",
-                        "Properties": {
-                            "OnFailure": "",
-                            "OnSuccess": "",
-                            "Target": {
-                                "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-                                "Path": "/AddMaterialRes",
-                                "RequestProperties": {
-                                    "Method": "POST",
-                                    "Body": {
-                                        "username": info_user.sapUsr,
-                                        "password": "Abaper072025",
-                                        "data": data
-                                    }
-                                }
-                            }
-                        }
-                    }).then((res) => {
-
-                        let resjson = res.data
-                        let success = resjson.success
-                        let item = resjson.item
-                        if (success) {
-                            exitosos.push(`${e.material.material_desc}`);
-                            liquidar.push({
-                                Material: e.material_material.replace(/^0+/, ''),
-                                MOVE_TYPE: "261",
-                                Plant: e.almacen.centro,
-                                StgeLoc: e.almacen.almacen,
-                                EntryQnt: `${e.cantidad_aprobada}`,
-                                EntryUom: "PZA",
-                                RES_ITEM: item,
-                                RESERV_NO: reserva
-                            })
-                            update.push({
-                                idComponente: e.id,
-                                posicion: item,
-                                doc_material: null
-                            })
-                        } else {
-                            errores.push(`${e.material.material_desc}: ${resjson.message}`);
-                        }
-
-
-                    }).catch((error) => {
-                        alert(error)
-                        errores.push(`${e.material.material_desc}: ${error?.message || error}`);
+                        readLink: e["@odata.readLink"],
+                        material_desc: e.material.material_desc,
+                        material: e.material_material,
+                        posicion: resjson.item,
+                        cant: e.cantidad_aprobada
                     });
-
+                } else {
+                    errores.push(`${e.material.material_desc}: ${resjson.message}`);
                 }
-
-            }).catch((error) => {
-                alert(`Error ${error.message}`);
-            });
-
-
-
-        });
-
-        // Ejecutar todas las promesas
-        return Promise.allSettled(promesasAddMat).then(() => {
-            let mensaje = "";
-
-            if (errores.length === 0) {
-                mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
-            } else if (exitosos.length === 0) {
-                mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
-            } else {
-                mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
+            } catch (error) {
+                //alert(error);
+                errores.push(`${e.material.material_desc}: ${error?.message || error}`);
             }
 
-            //alert(JSON.stringify(liquidar))
-            //alert(JSON.stringify(update))
+            //await sleep(1000); // Esperar 2 segundos antes de la próxima iteración
+            // Ejecutar todas las promesas
+        }
 
-            // Segunda fase: liquidar
-            let exitososLiq = [];
-            let erroresLiq = [];
-            const promesasLiquidar = liquidar.map((item) => {
-                alert(JSON.stringify(item))
-                return context.executeAction({
-                    "Name": "/appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action",
+        let mensaje = "";
+
+        if (errores.length === 0) {
+            btn_liquidar.setEnabled(true)
+            mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
+        } else if (exitosos.length === 0) {
+            mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+        } else {
+            mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
+        }
+
+        alert(JSON.stringify(update))
+        //alert(JSON.stringify(liquidar))
+        let promises = update.map(material => {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action",
+                "Properties": {
+                    "Target": {
+                        "ReadLink": material.readLink
+                    },
                     "Properties": {
-                        "OnFailure": "",
-                        "OnSuccess": "",
-                        "Target": {
-                            "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-                            "Path": "/LiquidarMaterialRes",
-                            "RequestProperties": {
-                                "Method": "POST",
-                                "Body": {
-                                    "username": info_user.sapUsr,
-                                    "password": "Abaper072025",
-                                    "data": item
-                                }
-                            }
-                        }
+                        "id": material.idComponente,
+                        "posicion": material.posicion,
+                        "cantidad_aprobada": material.cant,
+                        "aprobado": true,
                     }
-                }).then((res) => {
-
-                    alert(JSON.stringify(res))
-                    let resjson = res.data
-                    let success = resjson.success
-                    let doc_material = resjson.doc_material
-                    if (success) {
-                        exitososLiq.push(`${item.Material}`);
-                        /*update.push({
-                            idComponente: e.id,
-                            posicion: item,
-                            doc_material: null
-                        })*/
-                        update.forEach(u => {
-                            if (u.posicion === item.RES_ITEM) {
-                                u.doc_material = doc_material;
-                            }
-                        });
-                    } else {
-                        erroresLiq.push(`${item.Material}: ${resjson.message}`);
-                    }
-                }).catch((err) => {
-                    erroresLiq.push(`Error al liquidar material ${item.Material}: ${err.message || err}`);
-                });
-            });
-
-            return Promise.allSettled(promesasLiquidar).then(() => {
-                let mensajeFinal = '';
-                if (erroresLiq.length > 0) {
-                    mensajeFinal = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
-                } else {
-                    mensajeFinal = 'Todos los materiales fueron liquidados correctamente en SAP.';
                 }
-
-                alert(JSON.stringify(update))
-                return context.executeAction({
-                    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-                    "Properties": {
-                        "Title": "Resultado de la operación",
-                        "Message": mensaje
-                    }
-                }).then(() => {
-                    return context.executeAction({
-                        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-                        "Properties": {
-
-                            "Title": "Resultado de la liquidación",
-                            "Message": mensajeFinal
-                        }
-                    }).then(() => {
-
-                    });
-                });
+            }).catch((error) => {
+                alert(`Error actualizando material ${material.material}: ${error}`);
             });
         });
 
 
-
+        return Promise.allSettled(promises).then(() => {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                "Properties": {
+                    "Title": "Resultado de la operación",
+                    "Message": mensaje
+                }
+            })
+        })
 
     }).catch((error) => {
         alert(`Error general: ${error.message || JSON.stringify(error)}`);
     });
-
-
-
 }
+/*return Promise.allSettled(promesasAddMat).then(() => {
+    let mensaje = "";
+
+    if (errores.length === 0) {
+        btn_liquidar.setEnabled(true)
+        mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
+    } else if (exitosos.length === 0) {
+        mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+    } else {
+        mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
+    }
+
+    alert(JSON.stringify(liquidar))
+    //alert(JSON.stringify(update))
+
+    // Segunda fase: liquidar
+    /*
+    let exitososLiq = [];
+    let erroresLiq = [];
+    const promesasLiquidar = liquidar.map((item) => {
+        alert(JSON.stringify(item))
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action",
+            "Properties": {
+                "OnFailure": "",
+                "OnSuccess": "",
+                "Target": {
+                    "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                    "Path": "/LiquidarMaterialRes",
+                    "RequestProperties": {
+                        "Method": "POST",
+                        "Body": {
+                            "username": info_user.sapUsr,
+                            "password": "Abaper072025",
+                            "data": item
+                        }
+                    }
+                }
+            }
+        }).then((res) => {
+
+            alert(JSON.stringify(res))
+            let resjson = res.data
+            let success = resjson.success
+            let doc_material = resjson.doc_material
+            if (success) {
+                exitososLiq.push(`${item.Material}`);
+                update.forEach(u => {
+                    if (u.posicion === item.RES_ITEM) {
+                        u.doc_material = doc_material;
+                    }
+                });
+            } else {
+                erroresLiq.push(`${item.Material}: ${resjson.message}`);
+            }
+        }).catch((err) => {
+            erroresLiq.push(`Error al liquidar material ${item.Material}: ${err.message || err}`);
+        });
+    });
+
+    return Promise.allSettled(promesasLiquidar).then(() => {
+        let mensajeFinal = '';
+        if (erroresLiq.length > 0) {
+            mensajeFinal = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
+        } else {
+            mensajeFinal = 'Todos los materiales fueron liquidados correctamente en SAP.';
+        }
+
+        alert(JSON.stringify(update))
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Resultado de la operación",
+                "Message": mensaje
+            }
+        }).then(() => {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                "Properties": {
+
+                    "Title": "Resultado de la liquidación",
+                    "Message": mensajeFinal
+                }
+            }).then(() => {
+
+            });
+        });
+    });
+
+    */
+
+//Falta actualizar el campo de posicion en los componentes en la bd y luego hacer la otra regla para liquidar
+/*return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+        "Title": "Resultado de la operación",
+        "Message": mensaje
+    }
+})
+});
+
+*/
+
+
+
+
+
+

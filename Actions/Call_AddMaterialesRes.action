@@ -3,6 +3,8 @@
 	"ActionResult": {
 		"_Name": "Call_AddMaterialesRes"
 	},
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Cargando datos ...",
 	"Target": {
 		"Service": "/appconsumos_qa_mb/Services/backend_REST.service",
 		"Path": "/AddMaterialRes",
