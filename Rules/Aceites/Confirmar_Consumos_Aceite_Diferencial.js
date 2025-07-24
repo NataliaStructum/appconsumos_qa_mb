@@ -8,6 +8,8 @@ export default function Confirmar_Consumos_Aceite_Diferencial(context) {
     let errores = [];  
     
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Diferencial').getClientData();
+    let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+
 
     let listaDeAgregados = clientData.lista_revision_diferencial; 
 
@@ -60,6 +62,7 @@ export default function Confirmar_Consumos_Aceite_Diferencial(context) {
                 "Message": mensaje
             }
         }).then(() => {
+            clientDataFiltro.data_planilla_diferencial.estado = 'Aprobado'
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
                 "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Diferencial.page" 

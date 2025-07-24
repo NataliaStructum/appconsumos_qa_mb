@@ -155,9 +155,34 @@
 	],
 	"_Type": "Page",
 	"_Name": "Detalle_Aceite_Servotransmisor",
+	"OnLoaded": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
+	"OnReturning": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
+	"OnResume": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar18",
+		"_Name": "ActionBar21",
 		"_Type": "Control.Type.ActionBar"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem0",
+				"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_RevisarAceiteServotransmisor.js",
+				"Title": "Revisar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/NavTo_RevisarPlanillaAceiteServotransmisor.js",
+				"Image": "sap-icon://write-new-document",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }

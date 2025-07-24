@@ -8,7 +8,7 @@ export default function setVisible_RevisarAceiteMotor(context) {
     //clientDataFiltro.data_planilla_motor.estado
     let info = clientData.info_user;
 
-    return clientDataFiltro.data_planilla_motor.estado === 'Enviado' && info.rol === 'Auxiliar';
+    return clientDataFiltro.data_planilla_motor.estado === 'Enviado' && info.rol === 'Auxiliar' &&  clientDataFiltro.data_planilla_motor.total > 0;
     /*let binding = context.binding
 
     alert(clientDataFiltro.data_planilla_motor.estado)
