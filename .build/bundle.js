@@ -9815,7 +9815,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 function Query_Detalle_Componentes_Campo(context) {
   let id_solicitud = context.binding.id;
-  let filtro = `$expand=material,material/und,almacen&$filter=solicitud_id eq ${id_solicitud}`;
+  let filtro = `$expand=material($expand=und),almacen&$filter=solicitud_id eq ${id_solicitud}`;
   return filtro;
 }
 
@@ -17467,7 +17467,7 @@ module.exports = {"_Type":"Action.Type.ToastMessage","Message":"El servicio de d
   \****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false},{"Name":"PlanillasAceites","Query":"PlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"ItemPlanillasAceites","Query":"ItemPlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"OperacionesOrden","Query":"OperacionesOrden","AutomaticallyRetrievesStreams":false}]}
+module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false},{"Name":"PlanillasAceites","Query":"PlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"ItemPlanillasAceites","Query":"ItemPlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"OperacionesOrden","Query":"OperacionesOrden","AutomaticallyRetrievesStreams":false},{"Name":"UnidadMedida","Query":"UnidadMedida","AutomaticallyRetrievesStreams":false}]}
 
 /***/ }),
 
