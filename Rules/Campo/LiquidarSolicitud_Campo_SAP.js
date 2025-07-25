@@ -4,14 +4,15 @@
  */
 export default function LiquidarSolicitud_Campo_SAP(context) {
 
+    //falta validar que el campo de contraseña si este diligenciado
     let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
     let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Campo').getClientData();
     
     let info_user = clientData_user.info_user;
     let info_solicitud = context.binding;
     let orden = info_solicitud.orden;
-    clientData.idOrden = orden
     let id_solicitud = info_solicitud.id;
+    clientData.id_solicitud = id_solicitud
     let reserva = info_solicitud.reserva;
     let centro = info_solicitud.alm_centro;
     let alm_desc = info_solicitud.alm_desc;
@@ -99,17 +100,6 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
             //await sleep(1000); // Esperar 2 segundos antes de la próxima iteración
         }
 
-        let mensaje = "";
-
-        if (errores.length === 0) {
-            //Si esto se cumple cambiar el estado de la solicitud a autorizado y generar el pdf, de lo contrario no se cambia ni se guarda el pdf
-            mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
-        } else if (exitosos.length === 0) {
-            mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
-        } else {
-            mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
-        }
-
         alert(JSON.stringify(update))
         //alert(JSON.stringify(liquidar))
         let promises = update.map(material => {
@@ -130,6 +120,20 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                 alert(`Error actualizando material ${material.material}: ${error}`);
             });
         });
+
+        let mensaje = "";
+
+        if (errores.length === 0) {
+            //Si esto se cumple cambiar el estado de la solicitud a autorizado y generar el pdf, de lo contrario no se cambia ni se guarda el pdf
+            //en el return o resume de la pagina que el boton de autorizar valide si si hay cosas para autoriza si no que quite el boton
+            context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
+            mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
+        } else if (exitosos.length === 0) {
+            
+            mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+        } else {
+            mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
+        }
 
 
         return Promise.allSettled(promises).then(() => {

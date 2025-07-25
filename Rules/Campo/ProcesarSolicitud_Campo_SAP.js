@@ -82,7 +82,7 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
                 alert(resjson.item)
                 if (resjson.success) {
                     exitosos.push(`${e.material.material_desc}`);
-                    liquidar.push({
+                    /*liquidar.push({
                         Material: e.material_material.replace(/^0+/, ''),
                         MOVE_TYPE: "261",
                         Plant: e.almacen.centro,
@@ -91,7 +91,7 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
                         EntryUom: e.material.und.und_vz,
                         RES_ITEM: resjson.item,
                         RESERV_NO: reserva
-                    });
+                    });*/
                     update.push({
                         idComponente: e.id,
                         readLink: e["@odata.readLink"],

@@ -96,7 +96,7 @@
 							"Image": "sap-icon://payment-approval",
 							"ImagePosition": "Leading",
 							"Enabled": "/appconsumos_qa_mb/Rules/Campo/getEnabledLiquidar_Campo.js",
-							"OnPress": "/appconsumos_qa_mb/Rules/Campo/LiquidarSolicitud_Campo_SAP.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js"
 						}
 					],
 					"Layout": {

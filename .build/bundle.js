@@ -104,6 +104,7 @@ let appconsumos_qa_mb_actions_odata_update_planilla_aceite_servotransmisor_actio
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_aprobar_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Aprobar_Campo.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_autorizar_abast_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Abast.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Abast.action")
+let appconsumos_qa_mb_actions_odata_update_solicitudesapp_autorizar_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_abast_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Abast.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Abast.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_ingenio_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Ingenio.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Confirmar_Ingenio.action")
 let appconsumos_qa_mb_actions_odata_update_solicitudesapp_recepcion_abast_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Recepcion_Abast.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Recepcion_Abast.action")
@@ -367,6 +368,7 @@ let appconsumos_qa_mb_rules_campo_navto_list_historico_sol_campo_js = __webpack_
 let appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_List_Sol_Campo.js")
 let appconsumos_qa_mb_rules_campo_navto_revisionsolicitudcampo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js")
 let appconsumos_qa_mb_rules_campo_onchange_materialesrevision_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/onChange_MaterialesRevision.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/onChange_MaterialesRevision.js")
+let appconsumos_qa_mb_rules_campo_pdf_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/PDF_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/PDF_Campo.js")
 let appconsumos_qa_mb_rules_campo_procesarsolicitud_campo_sap_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ProcesarSolicitud_Campo_SAP.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ProcesarSolicitud_Campo_SAP.js")
 let appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js")
 let appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js")
@@ -598,6 +600,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_aprobar_campo_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_aprobar_campo_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_autorizar_abast_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_autorizar_abast_action,
+	appconsumos_qa_mb_actions_odata_update_solicitudesapp_autorizar_campo_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_autorizar_campo_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_abast_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_abast_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_ingenio_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_confirmar_ingenio_action,
 	appconsumos_qa_mb_actions_odata_update_solicitudesapp_recepcion_abast_action : appconsumos_qa_mb_actions_odata_update_solicitudesapp_recepcion_abast_action,
@@ -861,6 +864,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js : appconsumos_qa_mb_rules_campo_navto_list_sol_campo_js,
 	appconsumos_qa_mb_rules_campo_navto_revisionsolicitudcampo_js : appconsumos_qa_mb_rules_campo_navto_revisionsolicitudcampo_js,
 	appconsumos_qa_mb_rules_campo_onchange_materialesrevision_js : appconsumos_qa_mb_rules_campo_onchange_materialesrevision_js,
+	appconsumos_qa_mb_rules_campo_pdf_campo_js : appconsumos_qa_mb_rules_campo_pdf_campo_js,
 	appconsumos_qa_mb_rules_campo_procesarsolicitud_campo_sap_js : appconsumos_qa_mb_rules_campo_procesarsolicitud_campo_sap_js,
 	appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js : appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js,
 	appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js : appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js,
@@ -9417,6 +9421,7 @@ __webpack_require__.r(__webpack_exports__);
  * @param {IClientAPI} context
  */
 function LiquidarSolicitud_Campo_SAP(context) {
+  //falta validar que el campo de contraseña si este diligenciado
   let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
   let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Campo').getClientData();
   let info_user = clientData_user.info_user;
@@ -9424,6 +9429,7 @@ function LiquidarSolicitud_Campo_SAP(context) {
   let orden = info_solicitud.orden;
   clientData.idOrden = orden;
   let id_solicitud = info_solicitud.id;
+  clientData.id_solicitud = id_solicitud;
   let reserva = info_solicitud.reserva;
   let centro = info_solicitud.alm_centro;
   let alm_desc = info_solicitud.alm_desc;
@@ -9510,6 +9516,7 @@ function LiquidarSolicitud_Campo_SAP(context) {
       //Si esto se cumple cambiar el estado de la solicitud a autorizado y generar el pdf, de lo contrario no se cambia ni se guarda el pdf
       mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
     } else if (exitosos.length === 0) {
+      context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
       mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
     } else {
       mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
@@ -9768,6 +9775,27 @@ function NavTo_RevisionSolicitudCampo(context) {
       "ModalPageFullscreen": true
     }
   });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/PDF_Campo.js":
+/*!**********************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/PDF_Campo.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PDF_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function PDF_Campo(context) {
+  alert("Generar y abrir PDF");
 }
 
 /***/ }),
@@ -18277,6 +18305,16 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Autorizar_Abast"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al autorizar la solicitud de abastecimiento - {#ActionResults:Update_SolicitudesApp_Autorizar_Abast/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Inventario/FirmarSolicitud_Abast.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","ReadLink":"{@odata.readLink}"},"Properties":{"autorizador_ficha":"#Page:Main/#ClientData/info_user/ficha","estado":"Autorizado","fecha_autorizado":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js"}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action":
+/*!********************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action ***!
+  \********************************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Autorizar_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al actualizar la solicitud - {#ActionResults:Update_SolicitudesApp_Autorizar_Campo/error}","Title":"Error"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/PDF_Campo.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Autorizar_Solicitud_Campo/#ClientData/id_solicitud}}"},"Properties":{"autorizador_ficha":"#Page:Main/#ClientData/info_user/ficha","estado":"Autorizado","fecha_autorizado":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js"}}
 
 /***/ }),
 
