@@ -86,7 +86,7 @@
 							},
 							"PickerPrompt": "Selecciona un consumo",
 							"PlaceHolder": "Selecciona un consumo",
-							"HelperText": "Selecciona un consumo para vincular una orden",
+							"HelperText": "Selecciona un consumo para vincular un movimiento",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Reductor.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
@@ -130,7 +130,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una clase de movimiento",
-							"PlaceHolder": "Selecciona una orden",
+							"PlaceHolder": "Selecciona un movimiento",
 							"HelperText": "Selecciona una clase de movimiento para el consumo selecccionado",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,

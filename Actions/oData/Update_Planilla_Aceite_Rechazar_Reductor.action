@@ -6,7 +6,7 @@
 	"OnFailure": {
 		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 		"Properties": {
-			"Message": "Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Aprobar/error}",
+			"Message": "Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Rechazar_Reductor/error}",
 			"Title": "Error",
 			"OKCaption": "Aceptar"
 		}
@@ -14,7 +14,7 @@
 	"OnSuccess": {
 		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 		"Properties": {
-			"OnSuccess": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+			"OnSuccess": "/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js",
 			"Message": "La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/numero}} de Aceite Reductor fue rechazada exitosamente",
 			"Title": "Planilla Rechazada",
 			"OKCaption": "Aceptar"

@@ -287,6 +287,7 @@ let appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_hidraulico_js = __w
 let appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_motor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Motor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Motor.js")
 let appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_reductor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Reductor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Reductor.js")
 let appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_servotransmisor_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Servotransmisor.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Servotransmisor.js")
+let appconsumos_qa_mb_rules_aceites_rechazar_planillas_clientdata_aceites_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js")
 let appconsumos_qa_mb_rules_aceites_redraw_detalle_planillas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js")
 let appconsumos_qa_mb_rules_aceites_registrar_items_aceite_diferencial_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Diferencial.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Diferencial.js")
 let appconsumos_qa_mb_rules_aceites_registrar_items_aceite_hidraulico_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Hidraulico.js */ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Registrar_Items_Aceite_Hidraulico.js")
@@ -782,6 +783,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_motor_js : appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_motor_js,
 	appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_reductor_js : appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_reductor_js,
 	appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_servotransmisor_js : appconsumos_qa_mb_rules_aceites_rechazar_planilla_aceite_servotransmisor_js,
+	appconsumos_qa_mb_rules_aceites_rechazar_planillas_clientdata_aceites_js : appconsumos_qa_mb_rules_aceites_rechazar_planillas_clientdata_aceites_js,
 	appconsumos_qa_mb_rules_aceites_redraw_detalle_planillas_js : appconsumos_qa_mb_rules_aceites_redraw_detalle_planillas_js,
 	appconsumos_qa_mb_rules_aceites_registrar_items_aceite_diferencial_js : appconsumos_qa_mb_rules_aceites_registrar_items_aceite_diferencial_js,
 	appconsumos_qa_mb_rules_aceites_registrar_items_aceite_hidraulico_js : appconsumos_qa_mb_rules_aceites_registrar_items_aceite_hidraulico_js,
@@ -4481,6 +4483,45 @@ function Rechazar_Planilla_Aceite_Servotransmisor(context) {
       "CancelCaption": "Cancelar"
     }
   });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js":
+/*!****************************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js ***!
+  \****************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Rechazar_Planillas_ClientData_Aceites)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Rechazar_Planillas_ClientData_Aceites(context) {
+  let page = context.getPageProxy();
+  let titulo = page.getName();
+  let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+  if (titulo == "Revisar_Planilla_Aceite_Diferencial") {
+    clientDataFiltro.data_planilla_diferencial.estado = 'Rechazada';
+  }
+  if (titulo == "Revisar_Planilla_Aceite_Hidraulico") {
+    clientDataFiltro.data_planilla_hidraulico.estado = 'Rechazada';
+  }
+  if (titulo == "Revisar_Planilla_Aceite_Reductor") {
+    clientDataFiltro.data_planilla_reductor.estado = 'Rechazada';
+  }
+  if (titulo == "Revisar_Planilla_Aceite_Servotransmisor") {
+    clientDataFiltro.data_planilla_servotrans.estado = 'Rechazada';
+  }
+  if (titulo == "Revisar_Planilla_Aceite_Motor") {
+    clientDataFiltro.data_planilla_motor.estado = 'Rechazada';
+  }
+  return context.executeAction("/appconsumos_qa_mb/Actions/ClosePage.action");
 }
 
 /***/ }),
@@ -9386,6 +9427,7 @@ function LiquidarSolicitud_Campo_SAP(context) {
   let info_user = clientData_user.info_user;
   let info_solicitud = context.binding;
   let orden = info_solicitud.orden;
+  clientData.idOrden = orden;
   let id_solicitud = info_solicitud.id;
   clientData.id_solicitud = id_solicitud;
   let reserva = info_solicitud.reserva;
@@ -18172,7 +18214,7 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
   \**************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Aprobar/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/numero}} de Aceite Motor fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Rechazar/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_motor/numero}} de Aceite Motor fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
 
 /***/ }),
 
@@ -18182,7 +18224,7 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
   \**************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Diferencial"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Aprobar/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/numero}} de Aceite Diferencial fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Diferencial"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Rechazar_Diferencial/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/numero}} de Aceite Diferencial fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
 
 /***/ }),
 
@@ -18192,7 +18234,7 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
   \*************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Hidraulico"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Aprobar/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/numero}} de Aceite Hidraulico fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Hidraulico"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Rechazar_Hidraulico/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/numero}} de Aceite Hidraulico fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
 
 /***/ }),
 
@@ -18202,7 +18244,7 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
   \***********************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Reductor"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Aprobar/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/numero}} de Aceite Reductor fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Reductor"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Rechazar_Reductor/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/numero}} de Aceite Reductor fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
 
 /***/ }),
 
@@ -18212,7 +18254,7 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
   \******************************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Servotransmisor"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Aprobar/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/numero}} de Aceite Servotransmisor fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_Planilla_Aceite_Rechazar_Servotransmisor"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error rechazando la planilla - {#ActionResults:Update_Planilla_Aceite_Rechazar_Servotransmisor/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"OnSuccess":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planillas_ClientData_Aceites.js","Message":"La planilla No.{{#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/numero}} de Aceite Servotransmisor fue rechazada exitosamente","Title":"Planilla Rechazada","OKCaption":"Aceptar"}},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"PlanillasAceites","QueryOptions":"$filter=id eq {{#Page:Filtro_Aceites/#ClientData/QueryRevisarPlanilla}}"},"Properties":{"estado":"Rechazada","comentarios_aux":"#Page:Filtro_Aceites/#ClientData/obsRevisarPlanilla","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha"}}
 
 /***/ }),
 
