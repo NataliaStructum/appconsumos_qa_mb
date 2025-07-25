@@ -2,7 +2,8 @@
  * Describe this function...
  * @param {IClientAPI} context
  */
-export default function ValidarAutorizar_Campo(context) {
+export default function ValidarLiquidar_Campo(context) {
+
     let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Campo').getClientData();
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
     const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:pass/#Value");
@@ -32,10 +33,10 @@ export default function ValidarAutorizar_Campo(context) {
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
         "Properties": {
-            "Message": "¿Estás seguro de que deseas autorizar la solicitud? Al autorizarla, los componentes se enviarán a la reserva.",
+            "Message": "¿Estás seguro de que deseas liquidar la solicitud? Se relizara la liquidación del material en SAP",
             "Title": "Autorizar Solicitud",
             "OKCaption": "Aceptar",
-            "OnOK": "/appconsumos_qa_mb/Rules/Campo/ProcesarSolicitud_Campo_SAP.js",
+            "OnOK": "/appconsumos_qa_mb/Rules/Campo/LiquidarSolicitud_Campo_SAP.js",
             "CancelCaption": "Cancelar"
         }
     });
