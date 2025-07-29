@@ -8,6 +8,7 @@ import Rule_openDocumentoIOS from '../Rule_openDocumentoIOS.js';
 export default async function PDF_Ingenio(context) {
     const platform = context.nativescript.platformModule;
 
+    let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
     let signatureContent;
 
@@ -47,6 +48,8 @@ export default async function PDF_Ingenio(context) {
             const result = await context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/Call_FirmarPDF.action",
                 "Properties": {
+                    "ShowActivityIndicator": true,
+                    "ActivityIndicatorText": "Cargando ...",
                     "OnFailure": "",
                     "OnSuccess": "",
                     "Target": {
@@ -71,6 +74,8 @@ export default async function PDF_Ingenio(context) {
                 await context.executeAction({
                     "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
                     "Properties": {
+                        "ShowActivityIndicator": true,
+                        "ActivityIndicatorText": "Enviando correo ...",
                         "OnFailure": "",
                         "OnSuccess": "",
                         "Target": {
@@ -79,8 +84,7 @@ export default async function PDF_Ingenio(context) {
                             "RequestProperties": {
                                 "Method": "POST",
                                 "Body": {
-                                    "sender": "natalia.lopez@structum-co.com",
-                                    "to": "nlopez8066@outlook.com",
+                                    "to": "scanob@incauca.com",
                                     "subject": "PDF Ingenio - Autorización",
                                     "body": "Adjunto PDF firmado desde aplicación Ingenio.",
                                     "nombre": "ingenio_firmado.pdf",
@@ -104,7 +108,7 @@ export default async function PDF_Ingenio(context) {
 
                 // Intentar abrir el PDF
                 try {
-                    
+
                     if (platform.isAndroid) {
                         await Rule_openDocumentoAnd(context);
                     } else if (platform.isIOS) {

@@ -173,7 +173,12 @@
 						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada} {mat_nuevo_und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
-						"Tags": [],
+						"Tags": [
+							{
+								"Color": "Blue",
+								"Text": "Pos: {posicion}"
+							}
+						],
 						"AvatarStack": {
 							"Avatars": [
 								{
