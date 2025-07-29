@@ -165,21 +165,17 @@
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "/appconsumos_qa_mb/Rules/formatMaterialId.js",
-						"Subhead": "Operación: {op_number}",
+						"Subhead": "Cant. Apro: {cantidad_aprobada} de {cantidad_tomada} {material/und/und_vz}",
 						"Footnote": "Tomado de: {almacen_almacen} - {almacen/almacen_desc}",
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"StatusText": "Cant. Solicitada: {cantidad_tomada} {material/und/und_vz}",
-						"SubstatusText": "Cant. Aprobada: {cantidad_aprobada} {material/und/und_vz}",
+						"StatusText": "Pos: {posicion}",
+						"SubstatusText": "Op: {op_number} ",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"Tags": [
 							{
 								"Color": "Blue",
-								"Text": "Pos: {posicion}"
-							},
-							{
-								"Color": "Teal",
 								"Text": "Doc. Material: {doc_material}"
 							},
 							{

@@ -52,6 +52,9 @@
                     <NavigationPropertyBinding Path="orden" Target="Ordenes"/>
                 </EntitySet>
                 <EntitySet Name="UnidadMedida" EntityType="appconsumos_qa.UnidadMedida"/>
+                <EntitySet Name="Pdf" EntityType="appconsumos_qa.Pdf">
+                    <NavigationPropertyBinding Path="solicitud" Target="Solicitudes"/>
+                </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
                 <ActionImport Name="generatePDF" Action="appconsumos_qa.generatePDF"/>
                 <ActionImport Name="firmarPDF" Action="appconsumos_qa.firmarPDF"/>
@@ -371,6 +374,21 @@
                 <Property Name="und_alm" Type="Edm.String" MaxLength="3" Nullable="false"/>
                 <Property Name="und_vz" Type="Edm.String" MaxLength="3"/>
             </EntityType>
+            <EntityType Name="Pdf">
+                <Key>
+                    <PropertyRef Name="id"/>
+                </Key>
+                <Property Name="id" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="tipo" Type="Edm.String" MaxLength="20"/>
+                <Property Name="orden" Type="Edm.String" MaxLength="12"/>
+                <NavigationProperty Name="solicitud" Type="appconsumos_qa.Solicitudes">
+                    <ReferentialConstraint Property="solicitud_id" ReferencedProperty="id"/>
+                </NavigationProperty>
+                <Property Name="solicitud_id" Type="Edm.Guid"/>
+                <Property Name="fecha" Type="Edm.DateTimeOffset" Precision="7"/>
+                <Property Name="PDFData" Type="Edm.String"/>
+                <Property Name="FileName" Type="Edm.String" MaxLength="100"/>
+            </EntityType>
             <EntityType Name="VerSolicitudesAbiertas">
                 <Key>
                     <PropertyRef Name="id"/>
@@ -474,7 +492,6 @@
                 <ReturnType Type="Edm.String"/>
             </Action>
             <Action Name="sendmail" IsBound="false">
-                <Parameter Name="sender" Type="Edm.String"/>
                 <Parameter Name="to" Type="Edm.String"/>
                 <Parameter Name="subject" Type="Edm.String"/>
                 <Parameter Name="body" Type="Edm.String"/>
@@ -508,6 +525,12 @@
             </Annotations>
             <Annotations Target="appconsumos_qa.ItemPlanillasAceites/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="appconsumos_qa.Pdf/id">
+                <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="appconsumos_qa.Pdf/fecha">
+                <Annotation Term="Core.Computed" Bool="true"/>
             </Annotations>
             <Annotations Target="appconsumos_qa.VerSolicitudesAbiertas/id">
                 <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>

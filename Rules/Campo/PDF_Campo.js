@@ -67,9 +67,21 @@ export default async function PDF_Campo(context) {
                         }
                     }
                 }
-            }).then((result) => {
+            }).then(async (result) => {
                 if (result && result.data) {
 
+                    // Navegar a página anterior
+                    await context.executeAction({
+                        "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+                        "Properties": {
+                            "NavigateBackToPage": "Detalle_Solicitud_Campo"
+                        }
+                    });
+
+                    // Esperar más tiempo para asegurar renderizado
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+
+                    // Intentar abrir el PDF
                     //alert(result.data.value)//el pdf en base64
                     context.b64Data = result.data.value
                     if (platform.isAndroid) {
@@ -88,5 +100,5 @@ export default async function PDF_Campo(context) {
         alert(`No se pudo obtener el pdf de la orden ${error}`);
     }
 
-   
+
 }

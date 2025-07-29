@@ -46,6 +46,8 @@ export default function FirmarSolicitud_Abast(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
             "Properties": {
+                "ShowActivityIndicator": true,
+                "ActivityIndicatorText": "Enviando correo ...",
                 "OnFailure": "",
                 "OnSuccess": "",
                 "Target": {
@@ -54,11 +56,10 @@ export default function FirmarSolicitud_Abast(context) {
                     "RequestProperties": {
                         "Method": "POST",
                         "Body": {
-                            "sender": "scanob@incauca.com",
                             "to": "scanob@incauca.com",
-                            "subject": "CONTROL DE SALIDA DE REPUESTOS, HERRAMIENTAS Y EQUIPOS",
-                            "body": `FYI`,
-                            "nombre": "salidaCampo.pdf",
+                            "subject": "PDF Abastecimiento - Salida",
+                            "body": `Adjunto PDF salida de materiales desde aplicación Abastecimiento.`,
+                            "nombre": "salida_campo.pdf",
                             "adj": `${pdf}`
                         },
 
@@ -143,11 +144,13 @@ export default function FirmarSolicitud_Abast(context) {
                 }
             }).then((result) => {
                 if (result && result.data) {
+                    let error = false
 
                     //context.b64Data = result.data.value
                     clientDataAutorizar.b64Data = result.data.value
                     return sendEmail(result.data.value)
                         .catch((error) => {
+                            error = true
                             alert(`Error al enviar correo - ${error}`)
                             return;
                             /*return context.executeAction({
@@ -160,14 +163,17 @@ export default function FirmarSolicitud_Abast(context) {
                         })
                         .then((result) => {
 
-                            context.executeAction({
-                                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-                                "Properties": {
-                                    "Title": "Correo enviado exitosamente",
-                                    "Message": "La orden de salida fue enviada correctamente al correo.",
-                                    "OKCaption": "Aceptar"
-                                }
-                            });
+                            if (!error) {
+                                context.executeAction({
+                                    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                                    "Properties": {
+                                        "Title": "Correo enviado exitosamente",
+                                        "Message": "La orden de salida fue enviada correctamente al correo.",
+                                        "OKCaption": "Aceptar"
+                                    }
+                                });
+                            }
+
                             // Este bloque se ejecutará tanto si sendEmail fue exitoso como si falló
                             if (platform.isAndroid) {
                                 return context.executeAction({
