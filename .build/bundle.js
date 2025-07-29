@@ -55,7 +55,11 @@ let appconsumos_qa_mb_actions_call_firmarpdf_action = __webpack_require__(/*! ./
 let appconsumos_qa_mb_actions_call_generatepdf_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_generatePDF.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_generatePDF.action")
 let appconsumos_qa_mb_actions_call_liquidarmaterialres_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action")
 let appconsumos_qa_mb_actions_call_sendmail_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_Sendmail.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_Sendmail.action")
+<<<<<<< HEAD
 let appconsumos_qa_mb_actions_call_zammst_ordrinsuset_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action")
+=======
+let appconsumos_qa_mb_actions_call_zammst_reservaset_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action")
+>>>>>>> develop
 let appconsumos_qa_mb_actions_closemodalpage_cancel_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action")
 let appconsumos_qa_mb_actions_closemodalpage_complete_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Complete.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action")
 let appconsumos_qa_mb_actions_closepage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ClosePage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ClosePage.action")
@@ -185,6 +189,7 @@ let appconsumos_qa_mb_pages_campo_revision_solicitud_campo_page = __webpack_requ
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
 let appconsumos_qa_mb_pages_ingenio_agregar_solicitud_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Agregar_Solicitud_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Agregar_Solicitud_Ingenio.page")
+let appconsumos_qa_mb_pages_ingenio_autorizar_solicitud_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page")
 let appconsumos_qa_mb_pages_ingenio_detalle_historico_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page")
 let appconsumos_qa_mb_pages_ingenio_detalle_orden_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Detalle_Orden_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Orden_Ingenio.page")
 let appconsumos_qa_mb_pages_ingenio_detalle_solicitudes_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Detalle_Solicitudes_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Solicitudes_Ingenio.page")
@@ -413,6 +418,7 @@ let appconsumos_qa_mb_rules_ingenio_get_date_creacion_js = __webpack_require__(/
 let appconsumos_qa_mb_rules_ingenio_get_date_ref_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_Date_ref.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_Date_ref.js")
 let appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js")
 let appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js")
+let appconsumos_qa_mb_rules_ingenio_getenabledautorizar_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_CrearSolicitudes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_CrearSolicitudes.js")
 let appconsumos_qa_mb_rules_ingenio_isvisible_btn_historicosolicitudes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js")
 let appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Agregar_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Agregar_Solicitud_Ingenio.js")
@@ -422,6 +428,8 @@ let appconsumos_qa_mb_rules_ingenio_navto_list_ingenio_js = __webpack_require__(
 let appconsumos_qa_mb_rules_ingenio_navto_list_sol_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Sol_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Sol_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_navto_revision_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_onchange_materiales_revision_ing_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js")
+let appconsumos_qa_mb_rules_ingenio_pdf_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js")
+let appconsumos_qa_mb_rules_ingenio_procesarsolicitud_ingenio_sap_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js")
 let appconsumos_qa_mb_rules_ingenio_query_detalle_componentes_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_query_materiales_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Query_Materiales_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Materiales_Solicitud_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_rechazar_material_revision_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js")
@@ -435,6 +443,7 @@ let appconsumos_qa_mb_rules_ingenio_target_lista_ingenio_js = __webpack_require_
 let appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Materiales.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Materiales.js")
 let appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_target_materiales_revision_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js")
+let appconsumos_qa_mb_rules_ingenio_validarautorizar_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js")
 let appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js")
 let appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js")
@@ -554,7 +563,11 @@ module.exports = {
 	appconsumos_qa_mb_actions_call_generatepdf_action : appconsumos_qa_mb_actions_call_generatepdf_action,
 	appconsumos_qa_mb_actions_call_liquidarmaterialres_action : appconsumos_qa_mb_actions_call_liquidarmaterialres_action,
 	appconsumos_qa_mb_actions_call_sendmail_action : appconsumos_qa_mb_actions_call_sendmail_action,
+<<<<<<< HEAD
 	appconsumos_qa_mb_actions_call_zammst_ordrinsuset_action : appconsumos_qa_mb_actions_call_zammst_ordrinsuset_action,
+=======
+	appconsumos_qa_mb_actions_call_zammst_reservaset_action : appconsumos_qa_mb_actions_call_zammst_reservaset_action,
+>>>>>>> develop
 	appconsumos_qa_mb_actions_closemodalpage_cancel_action : appconsumos_qa_mb_actions_closemodalpage_cancel_action,
 	appconsumos_qa_mb_actions_closemodalpage_complete_action : appconsumos_qa_mb_actions_closemodalpage_complete_action,
 	appconsumos_qa_mb_actions_closepage_action : appconsumos_qa_mb_actions_closepage_action,
@@ -684,6 +697,7 @@ module.exports = {
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
 	appconsumos_qa_mb_pages_ingenio_agregar_solicitud_ingenio_page : appconsumos_qa_mb_pages_ingenio_agregar_solicitud_ingenio_page,
+	appconsumos_qa_mb_pages_ingenio_autorizar_solicitud_ingenio_page : appconsumos_qa_mb_pages_ingenio_autorizar_solicitud_ingenio_page,
 	appconsumos_qa_mb_pages_ingenio_detalle_historico_ingenio_page : appconsumos_qa_mb_pages_ingenio_detalle_historico_ingenio_page,
 	appconsumos_qa_mb_pages_ingenio_detalle_orden_ingenio_page : appconsumos_qa_mb_pages_ingenio_detalle_orden_ingenio_page,
 	appconsumos_qa_mb_pages_ingenio_detalle_solicitudes_ingenio_page : appconsumos_qa_mb_pages_ingenio_detalle_solicitudes_ingenio_page,
@@ -912,6 +926,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_get_date_ref_js : appconsumos_qa_mb_rules_ingenio_get_date_ref_js,
 	appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js : appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js,
 	appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js : appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js,
+	appconsumos_qa_mb_rules_ingenio_getenabledautorizar_ingenio_js : appconsumos_qa_mb_rules_ingenio_getenabledautorizar_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js : appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js,
 	appconsumos_qa_mb_rules_ingenio_isvisible_btn_historicosolicitudes_js : appconsumos_qa_mb_rules_ingenio_isvisible_btn_historicosolicitudes_js,
 	appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js,
@@ -921,6 +936,8 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_navto_list_sol_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_list_sol_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_navto_revision_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_revision_solicitud_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_onchange_materiales_revision_ing_js : appconsumos_qa_mb_rules_ingenio_onchange_materiales_revision_ing_js,
+	appconsumos_qa_mb_rules_ingenio_pdf_ingenio_js : appconsumos_qa_mb_rules_ingenio_pdf_ingenio_js,
+	appconsumos_qa_mb_rules_ingenio_procesarsolicitud_ingenio_sap_js : appconsumos_qa_mb_rules_ingenio_procesarsolicitud_ingenio_sap_js,
 	appconsumos_qa_mb_rules_ingenio_query_detalle_componentes_ingenio_js : appconsumos_qa_mb_rules_ingenio_query_detalle_componentes_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_query_materiales_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_query_materiales_solicitud_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_rechazar_material_revision_ingenio_js : appconsumos_qa_mb_rules_ingenio_rechazar_material_revision_ingenio_js,
@@ -934,6 +951,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js : appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js,
 	appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js : appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_target_materiales_revision_ingenio_js : appconsumos_qa_mb_rules_ingenio_target_materiales_revision_ingenio_js,
+	appconsumos_qa_mb_rules_ingenio_validarautorizar_ingenio_js : appconsumos_qa_mb_rules_ingenio_validarautorizar_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js,
 	appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js : appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js,
 	appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js : appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js,
@@ -9547,10 +9565,16 @@ function LiquidarSolicitud_Campo_SAP(context) {
       context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
       mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
     } else if (exitosos.length === 0) {
+<<<<<<< HEAD
       context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
       mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
     } else {
       mensaje = `Liquidación completada con errores:\n${errores.join('\n')}`;
+=======
+      mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+    } else {
+      mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
+>>>>>>> develop
     }
     return Promise.allSettled(promises).then(() => {
       return context.executeAction({
@@ -9809,8 +9833,13 @@ __webpack_require__.r(__webpack_exports__);
  * Describe this function...
  * @param {IClientAPI} context
  */
+<<<<<<< HEAD
 async function PDF_Campo(context) {
   //alert("Generar y abrir PDF")
+=======
+function PDF_Campo(context) {
+  alert("Generar y abrir PDF");
+>>>>>>> develop
 
   //let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
   //firma 
@@ -9823,6 +9852,7 @@ async function PDF_Campo(context) {
   } else if (platform.isIOS) {
     signatureContent = signatureObject.content.base64Encoding();
   }
+<<<<<<< HEAD
   let info_solicitud = context.binding;
   let orden = info_solicitud.orden;
 
@@ -9885,6 +9915,116 @@ async function PDF_Campo(context) {
   } catch (error) {
     alert(`No se pudo obtener el pdf de la orden ${error}`);
   }
+=======
+
+  //items de la solicitud
+  //Obtener el pdf en b64 y colocar la firma, cerrar la pagina y abrir el pdf
+  /*const datajson = []
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], `$expand=material,almacen&$filter=solicitud_id eq ${BindingData.id}`).then(async (results) => {
+      if (results && results.length > 0) {
+          results.forEach(e => {
+              let sap = ""
+              let desc = ""
+              if (typeof e.mat_nuevo_desc === 'string') {
+                  sap = e.mat_nuevo
+                  desc = e.mat_nuevo_desc
+              }
+              if (typeof e.material_material === 'string') {
+                  sap = e.material_material
+                  desc = e.material.material_desc
+              }
+              if (e.aprobado) {
+                  datajson.push({
+                      alce: almacen,
+                      sap: sap.replace(/^0+/, ''),
+                      desc: desc,
+                      cant: String(e.cantidad_aprobada),
+                      um: ""
+                  })
+              }
+          });
+           return context.executeAction({
+              "Name": "/appconsumos_qa_mb/Actions/Call_generatePDF.action",
+              "Properties": {
+                  "OnFailure": "",
+                  "OnSuccess": "",
+                  "Target": {
+                      "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                      "Path": "/generatePDF",
+                      "RequestProperties": {
+                          "Method": "POST",
+                          "Body": {
+                              "data": reqdata,
+                              "image": `${signatureContent}`,
+                              "items": datajson,
+                              "logo": `${logo}`
+                          },
+                       }
+                  }
+              }
+          }).then((result) => {
+              if (result && result.data) {
+                   //context.b64Data = result.data.value
+                  clientDataAutorizar.b64Data = result.data.value
+                  return sendEmail(result.data.value)
+                      .catch((error) => {
+                          alert(`Error al enviar correo - ${error}`)
+                      })
+                      .then((result) => {
+                           context.executeAction({
+                              "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                              "Properties": {
+                                  "Title": "Correo enviado exitosamente",
+                                  "Message": "La orden de salida fue enviada correctamente al correo.",
+                                  "OKCaption": "Aceptar"
+                              }
+                          });
+                          // Este bloque se ejecutará tanto si sendEmail fue exitoso como si falló
+                          if (platform.isAndroid) {
+                              return context.executeAction({
+                                  "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+                                  "Properties": {
+                                      "NavigateBackToPage": "Detalle_Solicitud_Reabastecimieto",
+                                  }
+                              }).then(() => {
+                                  return new Promise((resolve) => setTimeout(resolve, 500));
+                              }).then(() => {
+                                  try {
+                                      return Rule_openDocumentoAnd(context);
+                                  } catch (errorOpen) {
+                                      alert("Error al abrir documento en Android:\n" + (errorOpen.message || errorOpen));
+                                  }
+                              }).catch((errorClose) => {
+                                  alert("Error al cerrar modal:\n" + (errorClose.message || errorClose));
+                              });
+                          } else if (platform.isIOS) {
+                              return context.executeAction({
+                                  "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+                                  "Properties": {
+                                      "NavigateBackToPage": "Detalle_Solicitud_Reabastecimieto"
+                                  }
+                              }).then(() => {
+                                  setTimeout(() => {
+                                      try {
+                                          return Rule_openDocumentoIOS(context)
+                                      } catch (errorOpen) {
+                                          alert("Error al abrir documento en IOS:\n" + (errorOpen.message || errorOpen));
+                                      }
+                                  }, 500);
+                              }).catch((errorClose) => {
+                                  alert("Error al cerrar modal:\n" + (errorClose.message || errorClose));
+                              });
+                          }
+                      });
+              }
+           }).catch((error) => {
+              alert(error)
+          });
+      }
+  }).catch((error) => {
+       alert(`Error ${error.message}`)
+  });*/
+>>>>>>> develop
 }
 
 /***/ }),
@@ -12190,6 +12330,312 @@ function NavTo_Revision_Solicitud_Ingenio(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js":
+/*!**************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PDF_Ingenio)
+/* harmony export */ });
+/* harmony import */ var _Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Rule_openDocumentoAnd.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js");
+/* harmony import */ var _Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Rule_openDocumentoIOS.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js");
+
+
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+
+async function PDF_Ingenio(context) {
+  const platform = context.nativescript.platformModule;
+  const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
+  let signatureContent;
+  if (platform.isAndroid) {
+    signatureContent = android.util.Base64.encodeToString(signatureObject.content, android.util.Base64.DEFAULT);
+  } else if (platform.isIOS) {
+    signatureContent = signatureObject.content.base64Encoding();
+  }
+  const info_solicitud = context.binding;
+  const orden = info_solicitud.orden;
+  const reserva = info_solicitud.reserva;
+  try {
+    const res = await context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action",
+      "Properties": {
+        "ShowActivityIndicator": true,
+        "ActivityIndicatorText": "Cargando datos ...",
+        "OnFailure": "",
+        "OnSuccess": "",
+        "Target": {
+          "Service": "/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service",
+          "Path": `/ZAMMST_RESERVASet?$filter=(Rsnum eq '${reserva}')&$format=json`,
+          "RequestProperties": {
+            "Method": "GET"
+          }
+        }
+      }
+    });
+    const resjson = res.data;
+    if (resjson?.d?.results?.[0]?.Pdf) {
+      const pdfData = resjson.d.results[0].Pdf;
+      const result = await context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/Call_FirmarPDF.action",
+        "Properties": {
+          "OnFailure": "",
+          "OnSuccess": "",
+          "Target": {
+            "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+            "Path": "/firmarPDF",
+            "RequestProperties": {
+              "Method": "POST",
+              "Body": {
+                "pdf": `${pdfData}`,
+                "image": `${signatureContent}`
+              }
+            }
+          }
+        }
+      });
+      if (result && result.data) {
+        const pdfFirmado = result.data.value;
+        context.b64Data = pdfFirmado;
+
+        // Enviar correo
+        await context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+          "Properties": {
+            "OnFailure": "",
+            "OnSuccess": "",
+            "Target": {
+              "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+              "Path": "/sendmail",
+              "RequestProperties": {
+                "Method": "POST",
+                "Body": {
+                  "sender": "natalia.lopez@structum-co.com",
+                  "to": "nlopez8066@outlook.com",
+                  "subject": "PDF Ingenio - Autorización",
+                  "body": "Adjunto PDF firmado desde aplicación Ingenio.",
+                  "nombre": "ingenio_firmado.pdf",
+                  "adj": `${pdfFirmado}`
+                }
+              }
+            }
+          }
+        });
+
+        // Navegar a página anterior
+        await context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+          "Properties": {
+            "NavigateBackToPage": "Detalle_Solicitud_Ingenio"
+          }
+        });
+
+        // Esperar más tiempo para asegurar renderizado
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // Intentar abrir el PDF
+        try {
+          if (platform.isAndroid) {
+            await (0,_Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+          } else if (platform.isIOS) {
+            await (0,_Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
+          }
+        } catch (errorOpen) {
+          alert("No se pudo abrir el documento:\n" + (errorOpen.message || errorOpen));
+        }
+      }
+    }
+  } catch (error) {
+    alert(`Error al procesar el PDF: ${error.message || error}`);
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ProcesarSolicitud_Ingenio_SAP)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function ProcesarSolicitud_Ingenio_SAP(context) {
+  //1. Enviar los componentes a la orden - hay que validar si ya hay creados materiales con las cantidades solicitadas usar esos campos y no hay que crearlos 
+  //   - se debe guardar en los componentes de la solicitud las posiciones en la reserva de los materiales creados o escogidos
+  //2. liquidar los componentes de la orden - se debe guardar el numero de documento de material en cada componente y se debe mostrar en el detalle de los items de la solicitud
+  let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info_user = clientData_user.info_user;
+  let info_solicitud = context.binding;
+  let orden = info_solicitud.orden;
+  let id_solicitud = info_solicitud.id;
+  let reserva = info_solicitud.reserva;
+  let centro = info_solicitud.alm_centro;
+  let alm_desc = info_solicitud.alm_desc;
+  let pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
+  const pageProxy = context.getPageProxy();
+  //var btn_liquidar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton1")
+
+  let exitosos = [];
+  let errores = [];
+  let liquidar = [];
+  let update = [];
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  let filtro = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion eq null and aprobado eq true`;
+  //traer los componnetes que todavia no tengan una posicion asociada
+  //en liquidar traer todos los componentes que tengan una posicion y que no tengan un doc de movimiento 
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then(async results => {
+    if (!results || results.length === 0) {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Componentes ya registrados",
+          "Message": "Todos los componentes de esta solicitud ya se encuentran registrados en la reserva."
+        }
+      });
+    }
+
+    // Crear las promesas para cada componente
+    for (const e of results) {
+      const data = {
+        ReservNo: reserva.replace(/^0+/, ''),
+        Material: e.mat_nuevo.replace(/^0+/, ''),
+        Plant: centro,
+        Activity: e.op_number,
+        GrRcpt: e.alm_desc,
+        //alm_desc
+        RequirementQuantity: `${e.cantidad_aprobada}`,
+        RequirementQuantityUnit: e.mat_nuevo_und
+      };
+
+      //alert(JSON.stringify(e));
+
+      try {
+        const res = await context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/Call_AddMaterialesRes.action",
+          "Properties": {
+            "ShowActivityIndicator": true,
+            "ActivityIndicatorText": "Cargando datos ...",
+            "OnFailure": "",
+            "OnSuccess": "",
+            "Target": {
+              "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+              "Path": "/AddMaterialRes",
+              "RequestProperties": {
+                "Method": "POST",
+                "Body": {
+                  "username": info_user.sapUsr,
+                  "password": "Abaper072025",
+                  "data": data
+                }
+              }
+            }
+          }
+        });
+        const resjson = res.data;
+        //alert(resjson.item)
+        if (resjson.success) {
+          exitosos.push(`${e.mat_nuevo_desc}`);
+          /*liquidar.push({
+              Material: e.mat_nuevo.replace(/^0+/, ''),
+              MOVE_TYPE: "261",
+              Plant: e.almacen.centro,
+              StgeLoc: e.almacen.almacen,
+              EntryQnt: `${e.cantidad_aprobada}`,
+              EntryUom: e.mat_nuevo_und,
+              RES_ITEM: resjson.item,
+              RESERV_NO: reserva
+          });*/
+          update.push({
+            idComponente: e.id,
+            readLink: e["@odata.readLink"],
+            material_desc: e.mat_nuevo_desc,
+            material: e.mat_nuevo,
+            posicion: resjson.item,
+            cant: e.cantidad_aprobada
+          });
+        } else {
+          errores.push(`${e.mat_nuevo_desc}: ${resjson.message}`);
+        }
+      } catch (error) {
+        //alert(error);
+        if (error?.responseCode === 401) {
+          await context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+              "Title": "Credenciales inválidas",
+              "Message": "El usuario o la contraseña de SAP son incorrectos. Verifícalos e inténtalo nuevamente. Ten en cuenta que después de 3 intentos fallidos tu usuario será bloqueado."
+            }
+          });
+          return; // ← detiene toda la regla aquí
+        }
+        errores.push(`${e.mat_nuevo_desc}: ${error?.message || error}`);
+      }
+
+      //await sleep(1000); // Esperar 2 segundos antes de la próxima iteración
+      // Ejecutar todas las promesas
+    }
+    let mensaje = "";
+    if (errores.length === 0) {
+      //btn_liquidar.setEnabled(true)
+      mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
+    } else if (exitosos.length === 0) {
+      mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+    } else {
+      mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
+    }
+
+    //alert(JSON.stringify(update))
+    //alert(JSON.stringify(liquidar))
+    let promises = update.map(material => {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action",
+        "Properties": {
+          "Target": {
+            "ReadLink": material.readLink
+          },
+          "Properties": {
+            "id": material.idComponente,
+            "posicion": material.posicion,
+            "cantidad_aprobada": material.cant,
+            "aprobado": true
+          }
+        }
+      }).catch(error => {
+        alert(`Error actualizando material ${material.material}: ${error}`);
+      });
+    });
+    return Promise.allSettled(promises).then(() => {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Resultado de la operación",
+          "Message": mensaje
+        }
+      });
+    });
+  }).catch(error => {
+    alert(`Error general: ${error.message || JSON.stringify(error)}`);
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js":
 /*!************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js ***!
@@ -12636,6 +13082,59 @@ function Target_Materiales_Revision_Ingenio(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ValidarAutorizar_Ingenio)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function ValidarAutorizar_Ingenio(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Ingenio').getClientData();
+  const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
+  const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
+  //clientData.b64Data = ""
+
+  if (!pass || pass == '') {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Contraseña Requerida",
+        "Message": "Falta ingresar la contraseña. Verifícala y vuelve a intentarlo."
+      }
+    });
+  }
+  if (!signatureObject) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Pendiente por firmar",
+        "Message": "La firma es obligatoria para continuar. Asegúrate de presionar “Save/Guardar” para registrar correctamente tu firma."
+      }
+    });
+  }
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+      "Message": "¿Estás seguro de que deseas autorizar la solicitud? Al autorizarla, los componentes se enviarán a la reserva.",
+      "Title": "Autorizar Solicitud",
+      "OKCaption": "Aceptar",
+      "OnOK": "/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js",
+      "CancelCaption": "Cancelar"
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js":
 /*!****************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js ***!
@@ -12696,6 +13195,35 @@ function Validate_Req_Create_Solicitud_Ingenio(context) {
       "Title": "Alerta",
       "Message": `Debes ingresar el número de ficha para continuar`
     }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ getEnabledAutorizar_Ingenio)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function getEnabledAutorizar_Ingenio(context) {
+  let info_solicitud = context.binding;
+  let id_solicitud = info_solicitud.id;
+  let filtro = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion eq null and aprobado eq true`;
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then(async results => {
+    if (results && results.length > 0) {
+      return true;
+    }
+    return false;
   });
 }
 
@@ -17274,6 +17802,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ProfileHeader","_Name":"SectionProfileHeader0","Visible":true,"ProfileHeader":{"DetailImage":"sap-icon://my-view","DetailImageIsCircular":false,"Headline":"Usuario SAP :","Subheadline":"{#Page:Main/#ClientData/info_user/sapUsr}","Description":""}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"pass","IsVisible":true,"Separator":true,"Caption":"Contraseña SAP *","PlaceHolder":"Ingrese sus credenciales SAP","KeyboardType":"Password","AlternateInput":"None","HelperText":"*Verifica cuidadosamente la contraseña antes de enviarla. Después de 3 intentos fallidos, el usuario será bloqueado.","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar Orden Mantenimiento *","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Autorizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://validate","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js","OnPress":"/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Enviar Email","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://email-read","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Seguro que desea cancelar la autorización? Se perderán todos los datos registrados","Title":"Confirmación","OKCaption":"Aceptar","OnOK":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","CancelCaption":"Cancelar"}}}],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Ingenio"}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page":
 /*!******************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page ***!
@@ -17300,7 +17838,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Operación: {op_number}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada} {mat_nuevo_und}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada} {mat_nuevo_und}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Sincronizar","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/SyncRevisarIngenio.js"}],"_Name":"ActionBar10","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Ingenio"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Netear","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Netear","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://inspect-down","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Operación: {op_number}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada} {mat_nuevo_und}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada} {mat_nuevo_und}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Sincronizar","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/SyncRevisarIngenio.js"}],"_Name":"ActionBar10","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Ingenio"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Netear","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Netear","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://inspect-down","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -17644,6 +18182,7 @@ module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action":
 /*!************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action ***!
@@ -17651,6 +18190,15 @@ module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_ZAMMST_ORDRINSUSet"},"ShowActivityIndicator":true,"ActivityIndicatorText":"Cargando PDF...","Target":{"Service":"/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service","Path":"/ZAMMST_ORDRINSUSet","RequestProperties":{"Method":"GET","FetchCSRF":true}}}
+=======
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_ZAMMST_RESERVASet"},"Target":{"Service":"/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service","Path":"/ZAMMST_RESERVASet","RequestProperties":{"Method":"GET","FetchCSRF":true}}}
+>>>>>>> develop
 
 /***/ }),
 
