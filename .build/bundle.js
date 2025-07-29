@@ -55,6 +55,7 @@ let appconsumos_qa_mb_actions_call_firmarpdf_action = __webpack_require__(/*! ./
 let appconsumos_qa_mb_actions_call_generatepdf_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_generatePDF.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_generatePDF.action")
 let appconsumos_qa_mb_actions_call_liquidarmaterialres_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action")
 let appconsumos_qa_mb_actions_call_sendmail_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_Sendmail.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_Sendmail.action")
+let appconsumos_qa_mb_actions_call_zammst_reservaset_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action")
 let appconsumos_qa_mb_actions_closemodalpage_cancel_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action")
 let appconsumos_qa_mb_actions_closemodalpage_complete_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Complete.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action")
 let appconsumos_qa_mb_actions_closepage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ClosePage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ClosePage.action")
@@ -183,6 +184,7 @@ let appconsumos_qa_mb_pages_campo_revision_solicitud_campo_page = __webpack_requ
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
 let appconsumos_qa_mb_pages_ingenio_agregar_solicitud_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Agregar_Solicitud_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Agregar_Solicitud_Ingenio.page")
+let appconsumos_qa_mb_pages_ingenio_autorizar_solicitud_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page")
 let appconsumos_qa_mb_pages_ingenio_detalle_historico_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page")
 let appconsumos_qa_mb_pages_ingenio_detalle_orden_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Detalle_Orden_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Orden_Ingenio.page")
 let appconsumos_qa_mb_pages_ingenio_detalle_solicitudes_ingenio_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Ingenio/Detalle_Solicitudes_Ingenio.page */ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Solicitudes_Ingenio.page")
@@ -385,6 +387,7 @@ let appconsumos_qa_mb_rules_campo_target_lista_materiales_js = __webpack_require
 let appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js")
 let appconsumos_qa_mb_rules_campo_target_materiales_revision_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js")
 let appconsumos_qa_mb_rules_campo_validarautorizar_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ValidarAutorizar_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarAutorizar_Campo.js")
+let appconsumos_qa_mb_rules_campo_validarliquidar_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js")
 let appconsumos_qa_mb_rules_campo_validate_req_create_solicitud_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js")
 let appconsumos_qa_mb_rules_color_aprobado_solicitud_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js */ "./build.definitions/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js")
 let appconsumos_qa_mb_rules_filter_estado_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/filter_Estado.js */ "./build.definitions/appconsumos_qa_mb/Rules/filter_Estado.js")
@@ -410,6 +413,7 @@ let appconsumos_qa_mb_rules_ingenio_get_date_creacion_js = __webpack_require__(/
 let appconsumos_qa_mb_rules_ingenio_get_date_ref_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_Date_ref.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_Date_ref.js")
 let appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_List_Ingenio_Equipo.js")
 let appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/get_SolicitudesOrdenesAbiertasIngenio.js")
+let appconsumos_qa_mb_rules_ingenio_getenabledautorizar_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_CrearSolicitudes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_CrearSolicitudes.js")
 let appconsumos_qa_mb_rules_ingenio_isvisible_btn_historicosolicitudes_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js")
 let appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Agregar_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Agregar_Solicitud_Ingenio.js")
@@ -419,6 +423,8 @@ let appconsumos_qa_mb_rules_ingenio_navto_list_ingenio_js = __webpack_require__(
 let appconsumos_qa_mb_rules_ingenio_navto_list_sol_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Sol_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_List_Sol_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_navto_revision_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_onchange_materiales_revision_ing_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js")
+let appconsumos_qa_mb_rules_ingenio_pdf_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js")
+let appconsumos_qa_mb_rules_ingenio_procesarsolicitud_ingenio_sap_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js")
 let appconsumos_qa_mb_rules_ingenio_query_detalle_componentes_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_query_materiales_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Query_Materiales_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Materiales_Solicitud_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_rechazar_material_revision_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Rechazar_Material_Revision_Ingenio.js")
@@ -432,6 +438,7 @@ let appconsumos_qa_mb_rules_ingenio_target_lista_ingenio_js = __webpack_require_
 let appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Materiales.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Materiales.js")
 let appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Lista_Solicitudes_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_target_materiales_revision_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Target_Materiales_Revision_Ingenio.js")
+let appconsumos_qa_mb_rules_ingenio_validarautorizar_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js")
 let appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Nuevos_Reabas.js")
 let appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js */ "./build.definitions/appconsumos_qa_mb/Rules/Inventario/Agregar_Materiales_Solicitud_Reabas.js")
@@ -551,6 +558,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_call_generatepdf_action : appconsumos_qa_mb_actions_call_generatepdf_action,
 	appconsumos_qa_mb_actions_call_liquidarmaterialres_action : appconsumos_qa_mb_actions_call_liquidarmaterialres_action,
 	appconsumos_qa_mb_actions_call_sendmail_action : appconsumos_qa_mb_actions_call_sendmail_action,
+	appconsumos_qa_mb_actions_call_zammst_reservaset_action : appconsumos_qa_mb_actions_call_zammst_reservaset_action,
 	appconsumos_qa_mb_actions_closemodalpage_cancel_action : appconsumos_qa_mb_actions_closemodalpage_cancel_action,
 	appconsumos_qa_mb_actions_closemodalpage_complete_action : appconsumos_qa_mb_actions_closemodalpage_complete_action,
 	appconsumos_qa_mb_actions_closepage_action : appconsumos_qa_mb_actions_closepage_action,
@@ -679,6 +687,7 @@ module.exports = {
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
 	appconsumos_qa_mb_pages_ingenio_agregar_solicitud_ingenio_page : appconsumos_qa_mb_pages_ingenio_agregar_solicitud_ingenio_page,
+	appconsumos_qa_mb_pages_ingenio_autorizar_solicitud_ingenio_page : appconsumos_qa_mb_pages_ingenio_autorizar_solicitud_ingenio_page,
 	appconsumos_qa_mb_pages_ingenio_detalle_historico_ingenio_page : appconsumos_qa_mb_pages_ingenio_detalle_historico_ingenio_page,
 	appconsumos_qa_mb_pages_ingenio_detalle_orden_ingenio_page : appconsumos_qa_mb_pages_ingenio_detalle_orden_ingenio_page,
 	appconsumos_qa_mb_pages_ingenio_detalle_solicitudes_ingenio_page : appconsumos_qa_mb_pages_ingenio_detalle_solicitudes_ingenio_page,
@@ -881,6 +890,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js : appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js,
 	appconsumos_qa_mb_rules_campo_target_materiales_revision_campo_js : appconsumos_qa_mb_rules_campo_target_materiales_revision_campo_js,
 	appconsumos_qa_mb_rules_campo_validarautorizar_campo_js : appconsumos_qa_mb_rules_campo_validarautorizar_campo_js,
+	appconsumos_qa_mb_rules_campo_validarliquidar_campo_js : appconsumos_qa_mb_rules_campo_validarliquidar_campo_js,
 	appconsumos_qa_mb_rules_campo_validate_req_create_solicitud_campo_js : appconsumos_qa_mb_rules_campo_validate_req_create_solicitud_campo_js,
 	appconsumos_qa_mb_rules_color_aprobado_solicitud_js : appconsumos_qa_mb_rules_color_aprobado_solicitud_js,
 	appconsumos_qa_mb_rules_filter_estado_js : appconsumos_qa_mb_rules_filter_estado_js,
@@ -906,6 +916,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_get_date_ref_js : appconsumos_qa_mb_rules_ingenio_get_date_ref_js,
 	appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js : appconsumos_qa_mb_rules_ingenio_get_list_ingenio_equipo_js,
 	appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js : appconsumos_qa_mb_rules_ingenio_get_solicitudesordenesabiertasingenio_js,
+	appconsumos_qa_mb_rules_ingenio_getenabledautorizar_ingenio_js : appconsumos_qa_mb_rules_ingenio_getenabledautorizar_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js : appconsumos_qa_mb_rules_ingenio_isvisible_btn_crearsolicitudes_js,
 	appconsumos_qa_mb_rules_ingenio_isvisible_btn_historicosolicitudes_js : appconsumos_qa_mb_rules_ingenio_isvisible_btn_historicosolicitudes_js,
 	appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_agregar_solicitud_ingenio_js,
@@ -915,6 +926,8 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_navto_list_sol_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_list_sol_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_navto_revision_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_navto_revision_solicitud_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_onchange_materiales_revision_ing_js : appconsumos_qa_mb_rules_ingenio_onchange_materiales_revision_ing_js,
+	appconsumos_qa_mb_rules_ingenio_pdf_ingenio_js : appconsumos_qa_mb_rules_ingenio_pdf_ingenio_js,
+	appconsumos_qa_mb_rules_ingenio_procesarsolicitud_ingenio_sap_js : appconsumos_qa_mb_rules_ingenio_procesarsolicitud_ingenio_sap_js,
 	appconsumos_qa_mb_rules_ingenio_query_detalle_componentes_ingenio_js : appconsumos_qa_mb_rules_ingenio_query_detalle_componentes_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_query_materiales_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_query_materiales_solicitud_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_rechazar_material_revision_ingenio_js : appconsumos_qa_mb_rules_ingenio_rechazar_material_revision_ingenio_js,
@@ -928,6 +941,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js : appconsumos_qa_mb_rules_ingenio_target_lista_materiales_js,
 	appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js : appconsumos_qa_mb_rules_ingenio_target_lista_solicitudes_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_target_materiales_revision_ingenio_js : appconsumos_qa_mb_rules_ingenio_target_materiales_revision_ingenio_js,
+	appconsumos_qa_mb_rules_ingenio_validarautorizar_ingenio_js : appconsumos_qa_mb_rules_ingenio_validarautorizar_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js : appconsumos_qa_mb_rules_ingenio_validate_req_create_solicitud_ingenio_js,
 	appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js : appconsumos_qa_mb_rules_inventario_agregar_materiales_nuevos_reabas_js,
 	appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js : appconsumos_qa_mb_rules_inventario_agregar_materiales_solicitud_reabas_js,
@@ -9427,7 +9441,6 @@ function LiquidarSolicitud_Campo_SAP(context) {
   let info_user = clientData_user.info_user;
   let info_solicitud = context.binding;
   let orden = info_solicitud.orden;
-  clientData.idOrden = orden;
   let id_solicitud = info_solicitud.id;
   clientData.id_solicitud = id_solicitud;
   let reserva = info_solicitud.reserva;
@@ -9511,16 +9524,6 @@ function LiquidarSolicitud_Campo_SAP(context) {
 
       //await sleep(1000); // Esperar 2 segundos antes de la próxima iteración
     }
-    let mensaje = "";
-    if (errores.length === 0) {
-      //Si esto se cumple cambiar el estado de la solicitud a autorizado y generar el pdf, de lo contrario no se cambia ni se guarda el pdf
-      mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
-    } else if (exitosos.length === 0) {
-      context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
-      mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
-    } else {
-      mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
-    }
     alert(JSON.stringify(update));
     //alert(JSON.stringify(liquidar))
     let promises = update.map(material => {
@@ -9541,6 +9544,17 @@ function LiquidarSolicitud_Campo_SAP(context) {
         alert(`Error actualizando material ${material.material}: ${error}`);
       });
     });
+    let mensaje = "";
+    if (errores.length === 0) {
+      //Si esto se cumple cambiar el estado de la solicitud a autorizado y generar el pdf, de lo contrario no se cambia ni se guarda el pdf
+      //en el return o resume de la pagina que el boton de autorizar valide si si hay cosas para autoriza si no que quite el boton
+      context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
+      mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
+    } else if (exitosos.length === 0) {
+      mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+    } else {
+      mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
+    }
     return Promise.allSettled(promises).then(() => {
       return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -9796,6 +9810,126 @@ __webpack_require__.r(__webpack_exports__);
  */
 function PDF_Campo(context) {
   alert("Generar y abrir PDF");
+
+  //let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+  //firma 
+  //const pageProxy = context.getPageProxy();
+  const platform = context.nativescript.platformModule;
+  const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
+  let signatureContent;
+  if (platform.isAndroid) {
+    signatureContent = android.util.Base64.encodeToString(signatureObject.content, android.util.Base64.DEFAULT);
+  } else if (platform.isIOS) {
+    signatureContent = signatureObject.content.base64Encoding();
+  }
+
+  //items de la solicitud
+  //Obtener el pdf en b64 y colocar la firma, cerrar la pagina y abrir el pdf
+  /*const datajson = []
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], `$expand=material,almacen&$filter=solicitud_id eq ${BindingData.id}`).then(async (results) => {
+      if (results && results.length > 0) {
+          results.forEach(e => {
+              let sap = ""
+              let desc = ""
+              if (typeof e.mat_nuevo_desc === 'string') {
+                  sap = e.mat_nuevo
+                  desc = e.mat_nuevo_desc
+              }
+              if (typeof e.material_material === 'string') {
+                  sap = e.material_material
+                  desc = e.material.material_desc
+              }
+              if (e.aprobado) {
+                  datajson.push({
+                      alce: almacen,
+                      sap: sap.replace(/^0+/, ''),
+                      desc: desc,
+                      cant: String(e.cantidad_aprobada),
+                      um: ""
+                  })
+              }
+          });
+           return context.executeAction({
+              "Name": "/appconsumos_qa_mb/Actions/Call_generatePDF.action",
+              "Properties": {
+                  "OnFailure": "",
+                  "OnSuccess": "",
+                  "Target": {
+                      "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                      "Path": "/generatePDF",
+                      "RequestProperties": {
+                          "Method": "POST",
+                          "Body": {
+                              "data": reqdata,
+                              "image": `${signatureContent}`,
+                              "items": datajson,
+                              "logo": `${logo}`
+                          },
+                       }
+                  }
+              }
+          }).then((result) => {
+              if (result && result.data) {
+                   //context.b64Data = result.data.value
+                  clientDataAutorizar.b64Data = result.data.value
+                  return sendEmail(result.data.value)
+                      .catch((error) => {
+                          alert(`Error al enviar correo - ${error}`)
+                      })
+                      .then((result) => {
+                           context.executeAction({
+                              "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                              "Properties": {
+                                  "Title": "Correo enviado exitosamente",
+                                  "Message": "La orden de salida fue enviada correctamente al correo.",
+                                  "OKCaption": "Aceptar"
+                              }
+                          });
+                          // Este bloque se ejecutará tanto si sendEmail fue exitoso como si falló
+                          if (platform.isAndroid) {
+                              return context.executeAction({
+                                  "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+                                  "Properties": {
+                                      "NavigateBackToPage": "Detalle_Solicitud_Reabastecimieto",
+                                  }
+                              }).then(() => {
+                                  return new Promise((resolve) => setTimeout(resolve, 500));
+                              }).then(() => {
+                                  try {
+                                      return Rule_openDocumentoAnd(context);
+                                  } catch (errorOpen) {
+                                      alert("Error al abrir documento en Android:\n" + (errorOpen.message || errorOpen));
+                                  }
+                              }).catch((errorClose) => {
+                                  alert("Error al cerrar modal:\n" + (errorClose.message || errorClose));
+                              });
+                          } else if (platform.isIOS) {
+                              return context.executeAction({
+                                  "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+                                  "Properties": {
+                                      "NavigateBackToPage": "Detalle_Solicitud_Reabastecimieto"
+                                  }
+                              }).then(() => {
+                                  setTimeout(() => {
+                                      try {
+                                          return Rule_openDocumentoIOS(context)
+                                      } catch (errorOpen) {
+                                          alert("Error al abrir documento en IOS:\n" + (errorOpen.message || errorOpen));
+                                      }
+                                  }, 500);
+                              }).catch((errorClose) => {
+                                  alert("Error al cerrar modal:\n" + (errorClose.message || errorClose));
+                              });
+                          }
+                      });
+              }
+           }).catch((error) => {
+              alert(error)
+          });
+      }
+  }).catch((error) => {
+       alert(`Error ${error.message}`)
+  });*/
 }
 
 /***/ }),
@@ -9891,16 +10025,16 @@ function ProcesarSolicitud_Campo_SAP(context) {
         alert(resjson.item);
         if (resjson.success) {
           exitosos.push(`${e.material.material_desc}`);
-          liquidar.push({
-            Material: e.material_material.replace(/^0+/, ''),
-            MOVE_TYPE: "261",
-            Plant: e.almacen.centro,
-            StgeLoc: e.almacen.almacen,
-            EntryQnt: `${e.cantidad_aprobada}`,
-            EntryUom: e.material.und.und_vz,
-            RES_ITEM: resjson.item,
-            RESERV_NO: reserva
-          });
+          /*liquidar.push({
+              Material: e.material_material.replace(/^0+/, ''),
+              MOVE_TYPE: "261",
+              Plant: e.almacen.centro,
+              StgeLoc: e.almacen.almacen,
+              EntryQnt: `${e.cantidad_aprobada}`,
+              EntryUom: e.material.und.und_vz,
+              RES_ITEM: resjson.item,
+              RESERV_NO: reserva
+          });*/
           update.push({
             idComponente: e.id,
             readLink: e["@odata.readLink"],
@@ -10549,7 +10683,8 @@ function ValidarAutorizar_Campo(context) {
   let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Campo').getClientData();
   const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
   const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:pass/#Value");
-  clientData.b64Data = "";
+  //clientData.b64Data = ""
+
   if (!pass || pass == '') {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -10571,10 +10706,63 @@ function ValidarAutorizar_Campo(context) {
   return context.executeAction({
     "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
     "Properties": {
-      "Message": "¿Estás seguro de que deseas autorizar la solicitud? Al autorizarla, los componentes se enviarán a la reserva y se realizará la liquidación en SAP.",
+      "Message": "¿Estás seguro de que deseas autorizar la solicitud? Al autorizarla, los componentes se enviarán a la reserva.",
       "Title": "Autorizar Solicitud",
       "OKCaption": "Aceptar",
       "OnOK": "/appconsumos_qa_mb/Rules/Campo/ProcesarSolicitud_Campo_SAP.js",
+      "CancelCaption": "Cancelar"
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js":
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ValidarLiquidar_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function ValidarLiquidar_Campo(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Campo').getClientData();
+  const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
+  const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:pass/#Value");
+  //clientData.b64Data = ""
+
+  if (!pass || pass == '') {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Contraseña Requerida",
+        "Message": "Falta ingresar la contraseña. Verifícala y vuelve a intentarlo."
+      }
+    });
+  }
+  if (!signatureObject) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Pendiente por firmar",
+        "Message": "La firma es obligatoria para continuar. Asegúrate de presionar “Save/Guardar” para registrar correctamente tu firma."
+      }
+    });
+  }
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+      "Message": "¿Estás seguro de que deseas liquidar la solicitud? Se relizara la liquidación del material en SAP",
+      "Title": "Autorizar Solicitud",
+      "OKCaption": "Aceptar",
+      "OnOK": "/appconsumos_qa_mb/Rules/Campo/LiquidarSolicitud_Campo_SAP.js",
       "CancelCaption": "Cancelar"
     }
   });
@@ -12020,6 +12208,312 @@ function NavTo_Revision_Solicitud_Ingenio(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js":
+/*!**************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PDF_Ingenio)
+/* harmony export */ });
+/* harmony import */ var _Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Rule_openDocumentoAnd.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js");
+/* harmony import */ var _Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Rule_openDocumentoIOS.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js");
+
+
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+
+async function PDF_Ingenio(context) {
+  const platform = context.nativescript.platformModule;
+  const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
+  let signatureContent;
+  if (platform.isAndroid) {
+    signatureContent = android.util.Base64.encodeToString(signatureObject.content, android.util.Base64.DEFAULT);
+  } else if (platform.isIOS) {
+    signatureContent = signatureObject.content.base64Encoding();
+  }
+  const info_solicitud = context.binding;
+  const orden = info_solicitud.orden;
+  const reserva = info_solicitud.reserva;
+  try {
+    const res = await context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action",
+      "Properties": {
+        "ShowActivityIndicator": true,
+        "ActivityIndicatorText": "Cargando datos ...",
+        "OnFailure": "",
+        "OnSuccess": "",
+        "Target": {
+          "Service": "/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service",
+          "Path": `/ZAMMST_RESERVASet?$filter=(Rsnum eq '${reserva}')&$format=json`,
+          "RequestProperties": {
+            "Method": "GET"
+          }
+        }
+      }
+    });
+    const resjson = res.data;
+    if (resjson?.d?.results?.[0]?.Pdf) {
+      const pdfData = resjson.d.results[0].Pdf;
+      const result = await context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/Call_FirmarPDF.action",
+        "Properties": {
+          "OnFailure": "",
+          "OnSuccess": "",
+          "Target": {
+            "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+            "Path": "/firmarPDF",
+            "RequestProperties": {
+              "Method": "POST",
+              "Body": {
+                "pdf": `${pdfData}`,
+                "image": `${signatureContent}`
+              }
+            }
+          }
+        }
+      });
+      if (result && result.data) {
+        const pdfFirmado = result.data.value;
+        context.b64Data = pdfFirmado;
+
+        // Enviar correo
+        await context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+          "Properties": {
+            "OnFailure": "",
+            "OnSuccess": "",
+            "Target": {
+              "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+              "Path": "/sendmail",
+              "RequestProperties": {
+                "Method": "POST",
+                "Body": {
+                  "sender": "natalia.lopez@structum-co.com",
+                  "to": "nlopez8066@outlook.com",
+                  "subject": "PDF Ingenio - Autorización",
+                  "body": "Adjunto PDF firmado desde aplicación Ingenio.",
+                  "nombre": "ingenio_firmado.pdf",
+                  "adj": `${pdfFirmado}`
+                }
+              }
+            }
+          }
+        });
+
+        // Navegar a página anterior
+        await context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+          "Properties": {
+            "NavigateBackToPage": "Detalle_Solicitud_Ingenio"
+          }
+        });
+
+        // Esperar más tiempo para asegurar renderizado
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // Intentar abrir el PDF
+        try {
+          if (platform.isAndroid) {
+            await (0,_Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+          } else if (platform.isIOS) {
+            await (0,_Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
+          }
+        } catch (errorOpen) {
+          alert("No se pudo abrir el documento:\n" + (errorOpen.message || errorOpen));
+        }
+      }
+    }
+  } catch (error) {
+    alert(`Error al procesar el PDF: ${error.message || error}`);
+  }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ProcesarSolicitud_Ingenio_SAP)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function ProcesarSolicitud_Ingenio_SAP(context) {
+  //1. Enviar los componentes a la orden - hay que validar si ya hay creados materiales con las cantidades solicitadas usar esos campos y no hay que crearlos 
+  //   - se debe guardar en los componentes de la solicitud las posiciones en la reserva de los materiales creados o escogidos
+  //2. liquidar los componentes de la orden - se debe guardar el numero de documento de material en cada componente y se debe mostrar en el detalle de los items de la solicitud
+  let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info_user = clientData_user.info_user;
+  let info_solicitud = context.binding;
+  let orden = info_solicitud.orden;
+  let id_solicitud = info_solicitud.id;
+  let reserva = info_solicitud.reserva;
+  let centro = info_solicitud.alm_centro;
+  let alm_desc = info_solicitud.alm_desc;
+  let pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
+  const pageProxy = context.getPageProxy();
+  //var btn_liquidar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton1")
+
+  let exitosos = [];
+  let errores = [];
+  let liquidar = [];
+  let update = [];
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  let filtro = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion eq null and aprobado eq true`;
+  //traer los componnetes que todavia no tengan una posicion asociada
+  //en liquidar traer todos los componentes que tengan una posicion y que no tengan un doc de movimiento 
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then(async results => {
+    if (!results || results.length === 0) {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Componentes ya registrados",
+          "Message": "Todos los componentes de esta solicitud ya se encuentran registrados en la reserva."
+        }
+      });
+    }
+
+    // Crear las promesas para cada componente
+    for (const e of results) {
+      const data = {
+        ReservNo: reserva.replace(/^0+/, ''),
+        Material: e.mat_nuevo.replace(/^0+/, ''),
+        Plant: centro,
+        Activity: e.op_number,
+        GrRcpt: e.alm_desc,
+        //alm_desc
+        RequirementQuantity: `${e.cantidad_aprobada}`,
+        RequirementQuantityUnit: e.mat_nuevo_und
+      };
+
+      //alert(JSON.stringify(e));
+
+      try {
+        const res = await context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/Call_AddMaterialesRes.action",
+          "Properties": {
+            "ShowActivityIndicator": true,
+            "ActivityIndicatorText": "Cargando datos ...",
+            "OnFailure": "",
+            "OnSuccess": "",
+            "Target": {
+              "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+              "Path": "/AddMaterialRes",
+              "RequestProperties": {
+                "Method": "POST",
+                "Body": {
+                  "username": info_user.sapUsr,
+                  "password": "Abaper072025",
+                  "data": data
+                }
+              }
+            }
+          }
+        });
+        const resjson = res.data;
+        //alert(resjson.item)
+        if (resjson.success) {
+          exitosos.push(`${e.mat_nuevo_desc}`);
+          /*liquidar.push({
+              Material: e.mat_nuevo.replace(/^0+/, ''),
+              MOVE_TYPE: "261",
+              Plant: e.almacen.centro,
+              StgeLoc: e.almacen.almacen,
+              EntryQnt: `${e.cantidad_aprobada}`,
+              EntryUom: e.mat_nuevo_und,
+              RES_ITEM: resjson.item,
+              RESERV_NO: reserva
+          });*/
+          update.push({
+            idComponente: e.id,
+            readLink: e["@odata.readLink"],
+            material_desc: e.mat_nuevo_desc,
+            material: e.mat_nuevo,
+            posicion: resjson.item,
+            cant: e.cantidad_aprobada
+          });
+        } else {
+          errores.push(`${e.mat_nuevo_desc}: ${resjson.message}`);
+        }
+      } catch (error) {
+        //alert(error);
+        if (error?.responseCode === 401) {
+          await context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+              "Title": "Credenciales inválidas",
+              "Message": "El usuario o la contraseña de SAP son incorrectos. Verifícalos e inténtalo nuevamente. Ten en cuenta que después de 3 intentos fallidos tu usuario será bloqueado."
+            }
+          });
+          return; // ← detiene toda la regla aquí
+        }
+        errores.push(`${e.mat_nuevo_desc}: ${error?.message || error}`);
+      }
+
+      //await sleep(1000); // Esperar 2 segundos antes de la próxima iteración
+      // Ejecutar todas las promesas
+    }
+    let mensaje = "";
+    if (errores.length === 0) {
+      //btn_liquidar.setEnabled(true)
+      mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
+    } else if (exitosos.length === 0) {
+      mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+    } else {
+      mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
+    }
+
+    //alert(JSON.stringify(update))
+    //alert(JSON.stringify(liquidar))
+    let promises = update.map(material => {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action",
+        "Properties": {
+          "Target": {
+            "ReadLink": material.readLink
+          },
+          "Properties": {
+            "id": material.idComponente,
+            "posicion": material.posicion,
+            "cantidad_aprobada": material.cant,
+            "aprobado": true
+          }
+        }
+      }).catch(error => {
+        alert(`Error actualizando material ${material.material}: ${error}`);
+      });
+    });
+    return Promise.allSettled(promises).then(() => {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+        "Properties": {
+          "Title": "Resultado de la operación",
+          "Message": mensaje
+        }
+      });
+    });
+  }).catch(error => {
+    alert(`Error general: ${error.message || JSON.stringify(error)}`);
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js":
 /*!************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js ***!
@@ -12466,6 +12960,59 @@ function Target_Materiales_Revision_Ingenio(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js":
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ValidarAutorizar_Ingenio)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function ValidarAutorizar_Ingenio(context) {
+  let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Ingenio').getClientData();
+  const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
+  const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
+  //clientData.b64Data = ""
+
+  if (!pass || pass == '') {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Contraseña Requerida",
+        "Message": "Falta ingresar la contraseña. Verifícala y vuelve a intentarlo."
+      }
+    });
+  }
+  if (!signatureObject) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Pendiente por firmar",
+        "Message": "La firma es obligatoria para continuar. Asegúrate de presionar “Save/Guardar” para registrar correctamente tu firma."
+      }
+    });
+  }
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+      "Message": "¿Estás seguro de que deseas autorizar la solicitud? Al autorizarla, los componentes se enviarán a la reserva.",
+      "Title": "Autorizar Solicitud",
+      "OKCaption": "Aceptar",
+      "OnOK": "/appconsumos_qa_mb/Rules/Ingenio/ProcesarSolicitud_Ingenio_SAP.js",
+      "CancelCaption": "Cancelar"
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js":
 /*!****************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Validate_Req_Create_Solicitud_Ingenio.js ***!
@@ -12526,6 +13073,35 @@ function Validate_Req_Create_Solicitud_Ingenio(context) {
       "Title": "Alerta",
       "Message": `Debes ingresar el número de ficha para continuar`
     }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ getEnabledAutorizar_Ingenio)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function getEnabledAutorizar_Ingenio(context) {
+  let info_solicitud = context.binding;
+  let id_solicitud = info_solicitud.id;
+  let filtro = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion eq null and aprobado eq true`;
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then(async results => {
+    if (results && results.length > 0) {
+      return true;
+    }
+    return false;
   });
 }
 
@@ -16804,7 +17380,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular una orden","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Diferencial.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Diferencial.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona una orden","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Diferencial.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Diferencial.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Diferencial.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Diferencial","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Diferencial"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Diferencial.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Diferencial.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_diferencial/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular un movimiento","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Diferencial.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Diferencial.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona un movimiento","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Diferencial.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Diferencial.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Diferencial.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Diferencial","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Diferencial"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Diferencial.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Diferencial.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -16814,7 +17390,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \***************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular una orden","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Hidraulico.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Hidraulico.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona una orden","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Hidraulico.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Hidraulico.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Hidraulico.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Hidraulico","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Hidraulico"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Hidraulico.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Hidraulico.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_hidraulico/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular un movimiento","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Hidraulico.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Hidraulico.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona un movimiento","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Hidraulico.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Hidraulico.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Hidraulico.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Hidraulico","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Hidraulico"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Hidraulico.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Hidraulico.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -16834,7 +17410,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular una orden","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Reductor.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Reductor.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona una orden","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Reductor.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Reductor.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Reductor.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Reductor","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Reductor"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Reductor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Reductor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_reductor/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular un movimiento","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Reductor.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Reductor.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona un movimiento","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Reductor.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Reductor.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Reductor.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Reductor","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Reductor"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Reductor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Reductor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -16844,7 +17420,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \********************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular una orden","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Servotransmisor.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Servotransmisor.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona una orden","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Servotransmisor.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Servotransmisor.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Servotransmisor.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Servotransmisor","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Servotransmisión"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Servotransmisor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Servotransmisor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Planilla: {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/numero}","Footnote":"{#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/almacen_almacen} - {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/almacen/almacen_desc}","StatusText":"Inicial:  {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/contador_ini} ","SubstatusText":"Fin:  {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/contador_fin} ","DetailImageIsCircular":false,"HeadlineText":"Fecha: {#Page:Filtro_Aceites/#ClientData/data_planilla_servotrans/fecha}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones de la revisión","MinNumberOfLines":3,"Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Consumos tipo Full","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"registro_consumo","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Listado de consumos tipo Full","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona un consumo","PlaceHolder":"Selecciona un consumo","HelperText":"Selecciona un consumo para vincular un movimiento","OnValueChange":"/appconsumos_qa_mb/Rules/Aceites/onChange_RevisarPlanillaConsumo_Servotransmisor.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":true,"IsEditable":true,"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites","QueryOptions":"/appconsumos_qa_mb/Rules/Aceites/Query_Revisar_Planilla_Consumos_Servotransmisor.js"},"ObjectCell":{"Description":"{equipo/equipo_desc}","Footnote":"Consumo: {consumo}","PreserveIconStackSpacing":false,"StatusText":"Cont Inicial: {contador_ini}","Subhead":"{op_ficha} - {op_nombre}","SubstatusText":"Cont Final: {contador_fin}","Tags":[{"Color":"Mango","Text":"{tipo}"}],"Title":"{pos}. {equipo_equipo}","Visible":true},"ReturnValue":"{id}"}},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"orden_obj","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Clases de Movimiento","DataPaging":{"ShowLoadingIndicator":true,"PageSize":50},"PickerPrompt":"Selecciona una clase de movimiento","PlaceHolder":"Selecciona un movimiento","HelperText":"Selecciona una clase de movimiento para el consumo selecccionado","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"Search":{"Enabled":true,"Placeholder":" Buscar clase movimiento..."},"PickerItems":[{"DisplayValue":"261 - SM para orden","ReturnValue":"261"},{"DisplayValue":"Y01 - SM C.Costos Admon.","ReturnValue":"Y01"},{"DisplayValue":"Y03 - SM CeCo Obsequios.","ReturnValue":"Y03"},{"DisplayValue":"Y05 - SM Ceco Mercad.y vta","ReturnValue":"Y05"},{"DisplayValue":"Y09 - SM CeCo Campo","ReturnValue":"Y09"},{"DisplayValue":"Y11 - SM CeCo Indir.Campo","ReturnValue":"Y11"},{"DisplayValue":"Y13 - SM cobros a terceros","ReturnValue":"Y13"},{"DisplayValue":"Y17 - SM C.Costos cosecha","ReturnValue":"Y17"},{"DisplayValue":"Y21 - SM C.Costos m.p.fab.","ReturnValue":"Y21"},{"DisplayValue":"Y25 - SM CeCo fábr.operac.","ReturnValue":"Y25"},{"DisplayValue":"Y37 - SM CeCo C.Serv Oper.","ReturnValue":"Y37"},{"DisplayValue":"Y47 - SM CeCo serv.ingen.","ReturnValue":"Y47"},{"DisplayValue":"Y49 - SM orden costo maqui","ReturnValue":"Y49"},{"DisplayValue":"Y63 - SM Daños Inventario","ReturnValue":"Y63"},{"DisplayValue":"Y67 - SM CeCo.No Operación","ReturnValue":"Y67"},{"DisplayValue":"YA5 - SM sal.mrcías p/perd","ReturnValue":"YA5"},{"DisplayValue":"YB1 - SM para Activo Fijo","ReturnValue":"YB1"},{"DisplayValue":"YB7 - SM CeCo.Museo Ipsa","ReturnValue":"YB7"},{"DisplayValue":"YD7 - SM Dota.contr.Campo","ReturnValue":"YD7"}]},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Consumo","Alignment":"Right","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Agregar_Consumos_Revision_Servotransmisor.js"}],"Layout":{"NumberOfColumns":1},"Visible":"/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Servotransmisor.js","EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Revisión"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Aceites/Target_Revisar_Planilla_Aceite_Servotransmisor.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{pos}. {equipo_equipo}","Subhead":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Footnote":"res: {reserva}","Description":"{equipo/equipo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cont Inicial: {contador_ini}","SubstatusText":"Cont Final: {contador_fin}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Grey","Text":"Consumo: {consumo} "},{"Color":"/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js","Text":"{tipo}"},{"Color":"Indigo","Text":"{clase_mov}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://measurement-document"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Revisar_Planilla_Aceite_Servotransmisor","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Revisión Planilla Aceite de Servotransmisión"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Confirmar","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Confirmar_Planilla_Aceite_Servotransmisor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem1","Visible":true,"Title":"Rechazar","Styles":{"Image":"Button_Eliminar","Button":"Button_Eliminar"},"OnPress":"/appconsumos_qa_mb/Rules/Aceites/Rechazar_Planilla_Aceite_Servotransmisor.js","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -16964,7 +17540,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ProfileHeader","_Name":"SectionProfileHeader0","Visible":true,"ProfileHeader":{"DetailImage":"sap-icon://my-view","DetailImageIsCircular":false,"Headline":"Usuario SAP :","Subheadline":"{#Page:Main/#ClientData/info_user/sapUsr}","Description":""}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"pass","IsVisible":true,"Separator":true,"Caption":"Contraseña SAP *","PlaceHolder":"Ingrese sus credenciales SAP","KeyboardType":"Password","AlternateInput":"None","HelperText":"*Verifica cuidadosamente la contraseña antes de enviarla. Después de 3 intentos fallidos, el usuario será bloqueado.","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar Orden Mantenimiento *","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Autorizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://validate","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Campo/getEnabledAutorizar_Campo.js","OnPress":"/appconsumos_qa_mb/Rules/Campo/ValidarAutorizar_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Liquidar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://payment-approval","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Campo/getEnabledLiquidar_Campo.js","OnPress":"/appconsumos_qa_mb/Rules/Campo/LiquidarSolicitud_Campo_SAP.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Seguro que desea cancelar la autorización? Se perderán todos los datos registrados","Title":"Confirmación","OKCaption":"Aceptar","OnOK":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","CancelCaption":"Cancelar"}}}],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Campo"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ProfileHeader","_Name":"SectionProfileHeader0","Visible":true,"ProfileHeader":{"DetailImage":"sap-icon://my-view","DetailImageIsCircular":false,"Headline":"Usuario SAP :","Subheadline":"{#Page:Main/#ClientData/info_user/sapUsr}","Description":""}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"pass","IsVisible":true,"Separator":true,"Caption":"Contraseña SAP *","PlaceHolder":"Ingrese sus credenciales SAP","KeyboardType":"Password","AlternateInput":"None","HelperText":"*Verifica cuidadosamente la contraseña antes de enviarla. Después de 3 intentos fallidos, el usuario será bloqueado.","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar Orden Mantenimiento *","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Autorizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://validate","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Campo/getEnabledAutorizar_Campo.js","OnPress":"/appconsumos_qa_mb/Rules/Campo/ValidarAutorizar_Campo.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Liquidar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://payment-approval","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Campo/getEnabledLiquidar_Campo.js","OnPress":"/appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Seguro que desea cancelar la autorización? Se perderán todos los datos registrados","Title":"Confirmación","OKCaption":"Aceptar","OnOK":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","CancelCaption":"Cancelar"}}}],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Campo"}}
 
 /***/ }),
 
@@ -17078,6 +17654,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page":
+/*!********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page ***!
+  \********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ProfileHeader","_Name":"SectionProfileHeader0","Visible":true,"ProfileHeader":{"DetailImage":"sap-icon://my-view","DetailImageIsCircular":false,"Headline":"Usuario SAP :","Subheadline":"{#Page:Main/#ClientData/info_user/sapUsr}","Description":""}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"pass","IsVisible":true,"Separator":true,"Caption":"Contraseña SAP *","PlaceHolder":"Ingrese sus credenciales SAP","KeyboardType":"Password","AlternateInput":"None","HelperText":"*Verifica cuidadosamente la contraseña antes de enviarla. Después de 3 intentos fallidos, el usuario será bloqueado.","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar Orden Mantenimiento *","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Autorizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://validate","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js","OnPress":"/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton1","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Enviar Email","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://email-read","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Seguro que desea cancelar la autorización? Se perderán todos los datos registrados","Title":"Confirmación","OKCaption":"Aceptar","OnOK":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","CancelCaption":"Cancelar"}}}],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Ingenio"}}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page":
 /*!******************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Pages/Ingenio/Detalle_Historico_Ingenio.page ***!
@@ -17104,7 +17690,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Operación: {op_number}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada} {mat_nuevo_und}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada} {mat_nuevo_und}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Sincronizar","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/SyncRevisarIngenio.js"}],"_Name":"ActionBar10","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Ingenio"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Netear","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Netear","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://inspect-down","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Ingenio/Query_Detalle_Componentes_Ingenio.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Operación: {op_number}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{mat_nuevo_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada} {mat_nuevo_und}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada} {mat_nuevo_und}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Sincronizar","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/SyncRevisarIngenio.js"}],"_Name":"ActionBar10","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Ingenio"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Ingenio/Autorizar_Solicitud_Ingenio.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Netear","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Netear","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://inspect-down","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -17445,6 +18031,16 @@ module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_Sendmail"},"Target":{"Service":"/appconsumos_qa_mb/Services/backend_REST.service","Path":"/sendmail","RequestProperties":{"Method":"POST","FetchCSRF":true}}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_ZAMMST_RESERVASet"},"Target":{"Service":"/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service","Path":"/ZAMMST_RESERVASet","RequestProperties":{"Method":"GET","FetchCSRF":true}}}
 
 /***/ }),
 
