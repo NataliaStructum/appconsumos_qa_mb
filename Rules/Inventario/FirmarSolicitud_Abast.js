@@ -18,6 +18,7 @@ export default function FirmarSolicitud_Abast(context) {
     let sociedad = info_user.sociedad
     let BindingData = context.binding
     let almacen = BindingData.almacen.almacen_desc
+    let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
     let logo;
     if (sociedad == 'AI08') {
         let logo_pro = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/logo_pro.global');
@@ -53,8 +54,8 @@ export default function FirmarSolicitud_Abast(context) {
                     "RequestProperties": {
                         "Method": "POST",
                         "Body": {
-                            "sender": "natalia.lopez@structum-co.com",
-                            "to": "nlopez8066@outlook.com",
+                            "sender": "scanob@incauca.com",
+                            "to": "scanob@incauca.com",
                             "subject": "CONTROL DE SALIDA DE REPUESTOS, HERRAMIENTAS Y EQUIPOS",
                             "body": `FYI`,
                             "nombre": "salidaCampo.pdf",
@@ -99,11 +100,11 @@ export default function FirmarSolicitud_Abast(context) {
             results.forEach(e => {
                 let sap = ""
                 let desc = ""
-                if(typeof e.mat_nuevo_desc === 'string'){
+                if (typeof e.mat_nuevo_desc === 'string') {
                     sap = e.mat_nuevo
                     desc = e.mat_nuevo_desc
                 }
-                if(typeof e.material_material === 'string'){
+                if (typeof e.material_material === 'string') {
                     sap = e.material_material
                     desc = e.material.material_desc
                 }
@@ -121,6 +122,8 @@ export default function FirmarSolicitud_Abast(context) {
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/Call_generatePDF.action",
                 "Properties": {
+                    "ShowActivityIndicator": true,
+                    "ActivityIndicatorText": "Cargando datos ...",
                     "OnFailure": "",
                     "OnSuccess": "",
                     "Target": {
@@ -146,6 +149,7 @@ export default function FirmarSolicitud_Abast(context) {
                     return sendEmail(result.data.value)
                         .catch((error) => {
                             alert(`Error al enviar correo - ${error}`)
+                            return;
                             /*return context.executeAction({
                                 "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
                                 "Properties": {

@@ -55,7 +55,11 @@ let appconsumos_qa_mb_actions_call_firmarpdf_action = __webpack_require__(/*! ./
 let appconsumos_qa_mb_actions_call_generatepdf_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_generatePDF.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_generatePDF.action")
 let appconsumos_qa_mb_actions_call_liquidarmaterialres_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action")
 let appconsumos_qa_mb_actions_call_sendmail_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_Sendmail.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_Sendmail.action")
+<<<<<<< HEAD
+let appconsumos_qa_mb_actions_call_zammst_ordrinsuset_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action")
+=======
 let appconsumos_qa_mb_actions_call_zammst_reservaset_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action */ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action")
+>>>>>>> develop
 let appconsumos_qa_mb_actions_closemodalpage_cancel_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action")
 let appconsumos_qa_mb_actions_closemodalpage_complete_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/CloseModalPage_Complete.action */ "./build.definitions/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action")
 let appconsumos_qa_mb_actions_closepage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ClosePage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ClosePage.action")
@@ -133,6 +137,7 @@ let appconsumos_qa_mb_globals_application_supportemail_global = __webpack_requir
 let appconsumos_qa_mb_globals_application_supportphone_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportPhone.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportPhone.global")
 let appconsumos_qa_mb_globals_logo_inc_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/logo_inc.global */ "./build.definitions/appconsumos_qa_mb/Globals/logo_inc.global")
 let appconsumos_qa_mb_globals_logo_pro_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/logo_pro.global */ "./build.definitions/appconsumos_qa_mb/Globals/logo_pro.global")
+let appconsumos_qa_mb_globals_sender_user_email_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/sender_user_email.global */ "./build.definitions/appconsumos_qa_mb/Globals/sender_user_email.global")
 let appconsumos_qa_mb_i18n_i18n_properties = __webpack_require__(/*! ./appconsumos_qa_mb/i18n/i18n.properties */ "./build.definitions/appconsumos_qa_mb/i18n/i18n.properties")
 let appconsumos_qa_mb_images_logo_both_png = __webpack_require__(/*! ./appconsumos_qa_mb/Images/logo_both.png */ "./build.definitions/appconsumos_qa_mb/Images/logo_both.png")
 let appconsumos_qa_mb_images_logo_inc_png = __webpack_require__(/*! ./appconsumos_qa_mb/Images/logo_inc.png */ "./build.definitions/appconsumos_qa_mb/Images/logo_inc.png")
@@ -558,7 +563,11 @@ module.exports = {
 	appconsumos_qa_mb_actions_call_generatepdf_action : appconsumos_qa_mb_actions_call_generatepdf_action,
 	appconsumos_qa_mb_actions_call_liquidarmaterialres_action : appconsumos_qa_mb_actions_call_liquidarmaterialres_action,
 	appconsumos_qa_mb_actions_call_sendmail_action : appconsumos_qa_mb_actions_call_sendmail_action,
+<<<<<<< HEAD
+	appconsumos_qa_mb_actions_call_zammst_ordrinsuset_action : appconsumos_qa_mb_actions_call_zammst_ordrinsuset_action,
+=======
 	appconsumos_qa_mb_actions_call_zammst_reservaset_action : appconsumos_qa_mb_actions_call_zammst_reservaset_action,
+>>>>>>> develop
 	appconsumos_qa_mb_actions_closemodalpage_cancel_action : appconsumos_qa_mb_actions_closemodalpage_cancel_action,
 	appconsumos_qa_mb_actions_closemodalpage_complete_action : appconsumos_qa_mb_actions_closemodalpage_complete_action,
 	appconsumos_qa_mb_actions_closepage_action : appconsumos_qa_mb_actions_closepage_action,
@@ -636,6 +645,7 @@ module.exports = {
 	appconsumos_qa_mb_globals_application_supportphone_global : appconsumos_qa_mb_globals_application_supportphone_global,
 	appconsumos_qa_mb_globals_logo_inc_global : appconsumos_qa_mb_globals_logo_inc_global,
 	appconsumos_qa_mb_globals_logo_pro_global : appconsumos_qa_mb_globals_logo_pro_global,
+	appconsumos_qa_mb_globals_sender_user_email_global : appconsumos_qa_mb_globals_sender_user_email_global,
 	appconsumos_qa_mb_i18n_i18n_properties : appconsumos_qa_mb_i18n_i18n_properties,
 	appconsumos_qa_mb_images_logo_both_png : appconsumos_qa_mb_images_logo_both_png,
 	appconsumos_qa_mb_images_logo_inc_png : appconsumos_qa_mb_images_logo_inc_png,
@@ -9486,6 +9496,8 @@ function LiquidarSolicitud_Campo_SAP(context) {
         const res = await context.executeAction({
           "Name": "/appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action",
           "Properties": {
+            "ShowActivityIndicator": true,
+            "ActivityIndicatorText": "Cargando datos ...",
             "OnFailure": "",
             "OnSuccess": "",
             "Target": {
@@ -9519,6 +9531,7 @@ function LiquidarSolicitud_Campo_SAP(context) {
         }
       } catch (error) {
         alert(error);
+        //agregar validacion autenticacion
         errores.push(`${e.material.material_desc}: ${error?.message || error}`);
       }
 
@@ -9537,7 +9550,8 @@ function LiquidarSolicitud_Campo_SAP(context) {
             "id": material.idComponente,
             "doc_material": material.doc_material,
             "cantidad_aprobada": material.cant,
-            "aprobado": true
+            "aprobado": true,
+            "confirmacion_tec": true
           }
         }
       }).catch(error => {
@@ -9551,9 +9565,16 @@ function LiquidarSolicitud_Campo_SAP(context) {
       context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
       mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
     } else if (exitosos.length === 0) {
+<<<<<<< HEAD
+      context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
+      mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+    } else {
+      mensaje = `Liquidación completada con errores:\n${errores.join('\n')}`;
+=======
       mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
     } else {
       mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
+>>>>>>> develop
     }
     return Promise.allSettled(promises).then(() => {
       return context.executeAction({
@@ -9804,12 +9825,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ PDF_Campo)
 /* harmony export */ });
+/* harmony import */ var _Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Rule_openDocumentoAnd.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js");
+/* harmony import */ var _Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Rule_openDocumentoIOS.js */ "./build.definitions/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js");
+
+
 /**
  * Describe this function...
  * @param {IClientAPI} context
  */
+<<<<<<< HEAD
+async function PDF_Campo(context) {
+  //alert("Generar y abrir PDF")
+=======
 function PDF_Campo(context) {
   alert("Generar y abrir PDF");
+>>>>>>> develop
 
   //let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
   //firma 
@@ -9822,6 +9852,70 @@ function PDF_Campo(context) {
   } else if (platform.isIOS) {
     signatureContent = signatureObject.content.base64Encoding();
   }
+<<<<<<< HEAD
+  let info_solicitud = context.binding;
+  let orden = info_solicitud.orden;
+
+  //alert(orden)
+  //obtener el pdf de la orden
+  try {
+    const res = await context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action",
+      "Properties": {
+        "ShowActivityIndicator": true,
+        "ActivityIndicatorText": "Cargando datos ...",
+        "OnFailure": "",
+        "OnSuccess": "",
+        "Target": {
+          "Service": "/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service",
+          "Path": `/ZAMMST_ORDRINSUSet?$filter=(Aufnr eq '${orden}')&$format=json`,
+          "RequestProperties": {
+            "Method": "GET"
+          }
+        }
+      }
+    });
+    const resjson = res.data;
+    //resjson.d.results[0].Pdf
+    //alert(JSON.stringify(resjson))
+    if (resjson?.d?.results?.[0]?.Pdf) {
+      const pdfData = resjson.d.results[0].Pdf;
+      // Usa pdfData aquí
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/Call_FirmarPDF.action",
+        "Properties": {
+          "OnFailure": "",
+          "OnSuccess": "",
+          "Target": {
+            "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+            "Path": "/firmarPDF",
+            "RequestProperties": {
+              "Method": "POST",
+              "Body": {
+                "pdf": `${pdfData}`,
+                "image": `${signatureContent}`
+              }
+            }
+          }
+        }
+      }).then(result => {
+        if (result && result.data) {
+          //alert(result.data.value)//el pdf en base64
+          context.b64Data = result.data.value;
+          if (platform.isAndroid) {
+            return (0,_Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+          } else if (platform.isIOS) {
+            return (0,_Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
+          }
+        }
+      }).catch(error => {
+        alert(error);
+      });
+    }
+  } catch (error) {
+    alert(`No se pudo obtener el pdf de la orden ${error}`);
+  }
+=======
 
   //items de la solicitud
   //Obtener el pdf en b64 y colocar la firma, cerrar la pagina y abrir el pdf
@@ -9930,6 +10024,7 @@ function PDF_Campo(context) {
   }).catch((error) => {
        alert(`Error ${error.message}`)
   });*/
+>>>>>>> develop
 }
 
 /***/ }),
@@ -9963,6 +10058,7 @@ function ProcesarSolicitud_Campo_SAP(context) {
   let alm_desc = info_solicitud.alm_desc;
   let pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:pass/#Value");
   const pageProxy = context.getPageProxy();
+  var btn_autorizar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton0");
   var btn_liquidar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton1");
   let exitosos = [];
   let errores = [];
@@ -10022,7 +10118,7 @@ function ProcesarSolicitud_Campo_SAP(context) {
           }
         });
         const resjson = res.data;
-        alert(resjson.item);
+        //alert(resjson.item)
         if (resjson.success) {
           exitosos.push(`${e.material.material_desc}`);
           /*liquidar.push({
@@ -10047,7 +10143,20 @@ function ProcesarSolicitud_Campo_SAP(context) {
           errores.push(`${e.material.material_desc}: ${resjson.message}`);
         }
       } catch (error) {
-        //alert(error);
+        //error.error.code
+        //error.error.message
+        //responseCode
+
+        if (error?.responseCode === 401) {
+          await context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+              "Title": "Credenciales inválidas",
+              "Message": "El usuario o la contraseña de SAP son incorrectos. Verifícalos e inténtalo nuevamente. Ten en cuenta que después de 3 intentos fallidos tu usuario será bloqueado."
+            }
+          });
+          return; // ← detiene toda la regla aquí
+        }
         errores.push(`${e.material.material_desc}: ${error?.message || error}`);
       }
 
@@ -10055,15 +10164,19 @@ function ProcesarSolicitud_Campo_SAP(context) {
       // Ejecutar todas las promesas
     }
     let mensaje = "";
+
+    //alert("siguio")
     if (errores.length === 0) {
       btn_liquidar.setEnabled(true);
+      btn_autorizar.setEnabled(false);
       mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
     } else if (exitosos.length === 0) {
       mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
     } else {
       mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
     }
-    alert(JSON.stringify(update));
+
+    //alert(JSON.stringify(update))
     //alert(JSON.stringify(liquidar))
     let promises = update.map(material => {
       return context.executeAction({
@@ -10880,14 +10993,23 @@ __webpack_require__.r(__webpack_exports__);
  * @param {IClientAPI} context
  */
 function getEnabledLiquidar_Campo(context) {
+  //primero validar que todas los componentes de la solicitud ya tengan posiciones
+  //para que sea true validar si hay componentes con doc_material null
   let info_solicitud = context.binding;
   let id_solicitud = info_solicitud.id;
-  let filtro = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion ne null and aprobado eq true and doc_material eq null`;
+  let filtro = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion eq null and aprobado eq true`;
+  let filtro2 = `$expand=material,almacen,material/und&$filter=solicitud_id eq ${id_solicitud} and posicion ne null and aprobado eq true and doc_material eq null`;
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro).then(async results => {
     if (results && results.length > 0) {
-      return true;
+      return false;
+    } else {
+      return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtro2).then(async results => {
+        if (results && results.length > 0) {
+          return true;
+        }
+        return false;
+      });
     }
-    return false;
   });
 }
 
@@ -14398,6 +14520,7 @@ function FirmarSolicitud_Abast(context) {
   let sociedad = info_user.sociedad;
   let BindingData = context.binding;
   let almacen = BindingData.almacen.almacen_desc;
+  let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
   let logo;
   if (sociedad == 'AI08') {
     let logo_pro = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/logo_pro.global');
@@ -14430,8 +14553,8 @@ function FirmarSolicitud_Abast(context) {
           "RequestProperties": {
             "Method": "POST",
             "Body": {
-              "sender": "natalia.lopez@structum-co.com",
-              "to": "nlopez8066@outlook.com",
+              "sender": `${sender_email}`,
+              "to": "scanob@incauca.com",
               "subject": "CONTROL DE SALIDA DE REPUESTOS, HERRAMIENTAS Y EQUIPOS",
               "body": `FYI`,
               "nombre": "salidaCampo.pdf",
@@ -14515,6 +14638,7 @@ function FirmarSolicitud_Abast(context) {
           clientDataAutorizar.b64Data = result.data.value;
           return sendEmail(result.data.value).catch(error => {
             alert(`Error al enviar correo - ${error}`);
+            return;
             /*return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
                 "Properties": {
@@ -16136,13 +16260,21 @@ __webpack_require__.r(__webpack_exports__);
 //import { isAndroid } from "@nativescript/core/platform";
 
 function Rule_openDocumentoAnd(context) {
-  let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+  let page = context.getPageProxy();
+  let titulo = page.getName();
+  let b64Data = '';
+  if (titulo == "Autorizar_Solicitud_Reabastecimiento") {
+    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+    b64Data = clientDataAutorizar.b64Data;
+  }
+  if (titulo == "Autorizar_Solicitud_Campo" || titulo == "Autorizar_Solicitud_Ingenio") {
+    b64Data = context.b64Data;
+  }
   const fs = context.nativescript.fileSystemModule;
   //const platform = context.nativescript.platformModule;  
   //let actionResult = context.getActionResult("GetArchivo");
   //let b64Data = actionResult.data.Archivo;
   //let formato = actionResult.data.FormatoArc.toLowerCase();
-  let b64Data = clientDataAutorizar.b64Data;
   let formato = "pdf";
 
   //Para generar un nombre aleatorio al documento
@@ -16181,31 +16313,35 @@ function Rule_openDocumentoAnd(context) {
       mimeType = "text/plain";
   }
   ;
-  let docConver = _Cover(b64Data);
-  let filename = `${generateRandomWithSpecialChars()}.${formato}`;
-  var tempDir = fs.knownFolders.documents();
-  var folder = "Files";
-  if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
-    fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
-  }
-  var filePath = fs.path.join(tempDir.path, folder, filename);
-  var productFile = fs.File.fromPath(filePath);
-  //alert("Saving the file at: " + filePath);
-
-  try {
-    productFile.writeSync(docConver);
-  } catch (err) {
-    productFile.remove();
-    alert("WRITE SYNC FAILED: " + err);
-  }
-  return context.executeAction({
-    "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
-    "Properties": {
-      "Path": filePath,
-      "MimeType": mimeType,
-      "OnSuccess": ""
+  if (b64Data != '') {
+    let docConver = _Cover(b64Data);
+    let filename = `${generateRandomWithSpecialChars()}.${formato}`;
+    var tempDir = fs.knownFolders.documents();
+    var folder = "Files";
+    if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
+      fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
     }
-  });
+    var filePath = fs.path.join(tempDir.path, folder, filename);
+    var productFile = fs.File.fromPath(filePath);
+    //alert("Saving the file at: " + filePath);
+
+    try {
+      productFile.writeSync(docConver);
+    } catch (err) {
+      productFile.remove();
+      alert("WRITE SYNC FAILED: " + err);
+    }
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
+      "Properties": {
+        "Path": filePath,
+        "MimeType": mimeType,
+        "OnSuccess": ""
+      }
+    });
+  } else {
+    alert("no hay base64");
+  }
 }
 
 /***/ }),
@@ -16226,13 +16362,21 @@ __webpack_require__.r(__webpack_exports__);
  * @param {IClientAPI} clientAPI
  */
 async function Rule_openDocumentoIOS(context) {
-  let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+  let page = context.getPageProxy();
+  let titulo = page.getName();
+  let b64Data = '';
+  if (titulo == "Autorizar_Solicitud_Reabastecimiento") {
+    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+    b64Data = clientDataAutorizar.b64Data;
+  }
+  if (titulo == "Autorizar_Solicitud_Campo" || titulo == "Autorizar_Solicitud_Ingenio") {
+    b64Data = context.b64Data;
+  }
   const fs = context.nativescript.fileSystemModule;
 
   //let actionResult = context.getActionResult("GetArchivo");
   //let b64Data = actionResult.data.Archivo;
   //let formato = actionResult.data.FormatoArc.toLowerCase();
-  let b64Data = clientDataAutorizar.b64Data;
   let formato = "pdf";
   function generateRandomWithSpecialChars() {
     const specialChars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', '<', '>', '?', '/', '.', ',', '`', '~'];
@@ -16260,41 +16404,45 @@ async function Rule_openDocumentoIOS(context) {
       mimeType = "text/plain";
   }
   ;
-  let docConver = null;
-  //let imageData = `data:${mimeType};base64,${b64Data}`;
+  if (b64Data != '') {
+    let docConver = null;
+    //let imageData = `data:${mimeType};base64,${b64Data}`;
 
-  await context.base64StringToBinary(b64Data).then(result => {
-    docConver = Cover(result);
-  }).catch(error => {
-    alert("Error: " + error.message);
-    throw error;
-  });
-  let filename = `${generateRandomWithSpecialChars()}.${formato}`;
-  var tempDir = fs.knownFolders.documents();
-  var folder = "Files";
-  if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
-    fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
-  }
-  var filePath = fs.path.join(tempDir.path, folder, filename);
-  var productFile = fs.File.fromPath(filePath);
-  //alert("Saving the file at: " + filePath);
-
-  if (docConver != null) {
-    try {
-      productFile.writeSync(docConver);
-    } catch (err) {
-      productFile.remove();
-      alert("WRITE SYNC FAILED: " + err);
-    }
-    return context.executeAction({
-      "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
-      "Properties": {
-        "Path": filePath,
-        "MimeType": mimeType
-      }
+    await context.base64StringToBinary(b64Data).then(result => {
+      docConver = Cover(result);
+    }).catch(error => {
+      alert("Error: " + error.message);
+      throw error;
     });
+    let filename = `${generateRandomWithSpecialChars()}.${formato}`;
+    var tempDir = fs.knownFolders.documents();
+    var folder = "Files";
+    if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
+      fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
+    }
+    var filePath = fs.path.join(tempDir.path, folder, filename);
+    var productFile = fs.File.fromPath(filePath);
+    //alert("Saving the file at: " + filePath);
+
+    if (docConver != null) {
+      try {
+        productFile.writeSync(docConver);
+      } catch (err) {
+        productFile.remove();
+        alert("WRITE SYNC FAILED: " + err);
+      }
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
+        "Properties": {
+          "Path": filePath,
+          "MimeType": mimeType
+        }
+      });
+    } else {
+      alert("Hubo un problema al abrir el PDF.");
+    }
   } else {
-    alert("No OK");
+    alert("No fue posible obtener el PDF.");
   }
 }
 
@@ -17570,7 +17718,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Operación: {op_number}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada} {material/und/und_vz}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada} {material/und/und_vz}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Blue","Text":"Pos: {posicion}"},{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Operación: {op_number}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant. Solicitada: {cantidad_tomada} {material/und/und_vz}","SubstatusText":"Cant. Aprobada: {cantidad_aprobada} {material/und/und_vz}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Blue","Text":"Pos: {posicion}"},{"Color":"Teal","Text":"Doc. Material: {doc_material}"},{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -18034,6 +18182,15 @@ module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action":
+/*!************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action ***!
+  \************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_ZAMMST_ORDRINSUSet"},"ShowActivityIndicator":true,"ActivityIndicatorText":"Cargando PDF...","Target":{"Service":"/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service","Path":"/ZAMMST_ORDRINSUSet","RequestProperties":{"Method":"GET","FetchCSRF":true}}}
+=======
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action":
 /*!***********************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action ***!
@@ -18041,6 +18198,7 @@ module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.RestService.SendRequest","ActionResult":{"_Name":"Call_ZAMMST_RESERVASet"},"Target":{"Service":"/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service","Path":"/ZAMMST_RESERVASet","RequestProperties":{"Method":"GET","FetchCSRF":true}}}
+>>>>>>> develop
 
 /***/ }),
 
@@ -18910,7 +19068,7 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
   \********************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Autorizar_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al actualizar la solicitud - {#ActionResults:Update_SolicitudesApp_Autorizar_Campo/error}","Title":"Error"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/PDF_Campo.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Autorizar_Solicitud_Campo/#ClientData/id_solicitud}}"},"Properties":{"autorizador_ficha":"#Page:Main/#ClientData/info_user/ficha","estado":"Autorizado","fecha_autorizado":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Autorizar_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error al actualizar la solicitud - {#ActionResults:Update_SolicitudesApp_Autorizar_Campo/error}","Title":"Error"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/PDF_Campo.js","ShowActivityIndicator":true,"ActivityIndicatorText":"Actualizando Solicitud ...","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Autorizar_Solicitud_Campo/#ClientData/id_solicitud}}"},"Properties":{"autorizador_ficha":"#Page:Main/#ClientData/info_user/ficha","estado":"Autorizado","fecha_autorizado":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js"}}
 
 /***/ }),
 
@@ -19031,6 +19189,16 @@ module.exports = {"_Type":"String","Value":"iVBORw0KGgoAAAANSUhEUgAAAo8AAAB6CAYA
 /***/ ((module) => {
 
 module.exports = {"_Type":"String","Value":"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"}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Globals/sender_user_email.global":
+/*!******************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Globals/sender_user_email.global ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"String","Value":"scanob@incauca.com"}
 
 /***/ }),
 

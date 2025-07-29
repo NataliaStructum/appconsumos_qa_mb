@@ -60,6 +60,8 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                 const res = await context.executeAction({
                     "Name": "/appconsumos_qa_mb/Actions/Call_LiquidarMaterialRes.action",
                     "Properties": {
+                        "ShowActivityIndicator": true,
+                        "ActivityIndicatorText": "Cargando datos ...",
                         "OnFailure": "",
                         "OnSuccess": "",
                         "Target": {
@@ -87,13 +89,14 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                         material_desc: e.material.material_desc,
                         material: e.material_material,
                         doc_material: resjson.doc_material,
-                        cant: e.cantidad_aprobada
+                        cant: e.cantidad_aprobada,
                     });
                 } else {
                     errores.push(`${e.material.material_desc}: ${resjson.message}`);
                 }
             } catch (error) {
                 alert(error);
+                //agregar validacion autenticacion
                 errores.push(`${e.material.material_desc}: ${error?.message || error}`);
             }
 
@@ -114,6 +117,7 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                         "doc_material": material.doc_material,
                         "cantidad_aprobada": material.cant,
                         "aprobado": true,
+                        "confirmacion_tec":true
                     }
                 }
             }).catch((error) => {
@@ -129,10 +133,10 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
             context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
             mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
         } else if (exitosos.length === 0) {
-            
+            context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
             mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
         } else {
-            mensaje = `Liquidación completada con errores:\n${erroresLiq.join('\n')}`;
+            mensaje = `Liquidación completada con errores:\n${errores.join('\n')}`;
         }
 
 

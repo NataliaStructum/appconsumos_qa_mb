@@ -3,13 +3,23 @@
 
 export default function Rule_openDocumentoAnd(context) {
 
-    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+    let page = context.getPageProxy();
+    let titulo = page.getName();
+    let b64Data = ''
+    if (titulo == "Autorizar_Solicitud_Reabastecimiento") {
+        let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+        b64Data = clientDataAutorizar.b64Data
+    }
+
+    if (titulo == "Autorizar_Solicitud_Campo" || titulo == "Autorizar_Solicitud_Ingenio") {
+        b64Data = context.b64Data
+    }
+
     const fs = context.nativescript.fileSystemModule;
     //const platform = context.nativescript.platformModule;  
     //let actionResult = context.getActionResult("GetArchivo");
     //let b64Data = actionResult.data.Archivo;
     //let formato = actionResult.data.FormatoArc.toLowerCase();
-    let b64Data = clientDataAutorizar.b64Data
     let formato = "pdf"
 
     //Para generar un nombre aleatorio al documento
@@ -36,49 +46,55 @@ export default function Rule_openDocumentoAnd(context) {
         return array;
     }
 
-    let mimeType="";
+    let mimeType = "";
 
-    switch(formato){
+    switch (formato) {
         case "pdf":
             mimeType = "application/pdf"
-        break;
+            break;
         case "png":
             mimeType = "image/png"
-        break;
+            break;
         case "jpg":
             mimeType = "image/jpeg"
         default:
             mimeType = "text/plain"
     };
 
-    let docConver = _Cover(b64Data);
-    
+    if (b64Data != '') {
+        let docConver = _Cover(b64Data);
 
-    let filename = `${generateRandomWithSpecialChars()}.${formato}`;
-    var tempDir = fs.knownFolders.documents();
-    var folder = "Files";
 
-    if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
-        fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
-    }
+        let filename = `${generateRandomWithSpecialChars()}.${formato}`;
+        var tempDir = fs.knownFolders.documents();
+        var folder = "Files";
 
-    var filePath = fs.path.join(tempDir.path, folder, filename);
-    var productFile = fs.File.fromPath(filePath);
-    //alert("Saving the file at: " + filePath);
-
-    try {
-        productFile.writeSync(docConver);
-    } catch (err) {
-        productFile.remove();
-        alert("WRITE SYNC FAILED: " + err);
-    }
-
-    return context.executeAction({
-        "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
-        "Properties":{
-            "Path": filePath,
-            "MimeType": mimeType,
-            "OnSuccess":""
+        if (!fs.Folder.exists(fs.path.join(tempDir.path, folder))) {
+            fs.Folder.fromPath(fs.path.join(tempDir.path, folder));
         }
-    });
+
+        var filePath = fs.path.join(tempDir.path, folder, filename);
+        var productFile = fs.File.fromPath(filePath);
+        //alert("Saving the file at: " + filePath);
+
+        try {
+            productFile.writeSync(docConver);
+        } catch (err) {
+            productFile.remove();
+            alert("WRITE SYNC FAILED: " + err);
+        }
+
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/openDocument.action",
+            "Properties": {
+                "Path": filePath,
+                "MimeType": mimeType,
+                "OnSuccess": ""
+            }
+        });
+
+    }else{
+        alert("no hay base64")
+    }
+
 }

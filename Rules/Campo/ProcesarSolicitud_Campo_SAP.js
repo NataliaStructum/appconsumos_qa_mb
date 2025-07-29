@@ -16,6 +16,7 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
     let alm_desc = info_solicitud.alm_desc;
     let pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:pass/#Value");
     const pageProxy = context.getPageProxy();
+    var btn_autorizar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton0")
     var btn_liquidar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton1")
 
     let exitosos = [];
@@ -79,7 +80,7 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
                 });
 
                 const resjson = res.data;
-                alert(resjson.item)
+                //alert(resjson.item)
                 if (resjson.success) {
                     exitosos.push(`${e.material.material_desc}`);
                     /*liquidar.push({
@@ -104,7 +105,20 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
                     errores.push(`${e.material.material_desc}: ${resjson.message}`);
                 }
             } catch (error) {
-                //alert(error);
+                //error.error.code
+                //error.error.message
+                //responseCode
+                
+                if (error?.responseCode === 401) {
+                    await context.executeAction({
+                      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                      "Properties": {
+                        "Title": "Credenciales inválidas",
+                        "Message": "El usuario o la contraseña de SAP son incorrectos. Verifícalos e inténtalo nuevamente. Ten en cuenta que después de 3 intentos fallidos tu usuario será bloqueado."
+                      }
+                    });
+                    return; // ← detiene toda la regla aquí
+                  }
                 errores.push(`${e.material.material_desc}: ${error?.message || error}`);
             }
 
@@ -114,8 +128,10 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
 
         let mensaje = "";
 
+        //alert("siguio")
         if (errores.length === 0) {
             btn_liquidar.setEnabled(true)
+            btn_autorizar.setEnabled(false)
             mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
         } else if (exitosos.length === 0) {
             mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
@@ -123,7 +139,7 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
             mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
         }
 
-        alert(JSON.stringify(update))
+        //alert(JSON.stringify(update))
         //alert(JSON.stringify(liquidar))
         let promises = update.map(material => {
             return context.executeAction({

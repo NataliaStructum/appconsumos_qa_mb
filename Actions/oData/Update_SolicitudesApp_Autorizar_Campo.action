@@ -11,6 +11,8 @@
 		}
 	},
 	"OnSuccess": "/appconsumos_qa_mb/Rules/Campo/PDF_Campo.js",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Actualizando Solicitud ...",
 	"Target": {
 		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 		"EntitySet": "Solicitudes",

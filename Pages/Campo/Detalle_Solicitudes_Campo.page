@@ -179,6 +179,10 @@
 								"Text": "Pos: {posicion}"
 							},
 							{
+								"Color": "Teal",
+								"Text": "Doc. Material: {doc_material}"
+							},
+							{
 								"Color": "Grey",
 								"Text": "/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"
 							}
