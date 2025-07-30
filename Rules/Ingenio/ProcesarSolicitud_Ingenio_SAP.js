@@ -16,6 +16,8 @@ export default function ProcesarSolicitud_Ingenio_SAP(context) {
     let alm_desc = info_solicitud.alm_desc;
     let pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
     const pageProxy = context.getPageProxy();
+    let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Ingenio').getClientData();
+    clientData.id_solicitud = id_solicitud
     //var btn_liquidar = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0").getControl("FormCellButton1")
 
     let exitosos = [];
@@ -48,12 +50,10 @@ export default function ProcesarSolicitud_Ingenio_SAP(context) {
                 Material: e.mat_nuevo.replace(/^0+/, ''),
                 Plant: centro,
                 Activity: e.op_number,
-                GrRcpt: e.alm_desc, //alm_desc
+                GrRcpt: info_solicitud.alm_almacen,
                 RequirementQuantity: `${e.cantidad_aprobada}`,
                 RequirementQuantityUnit: e.mat_nuevo_und,
             };
-
-            //alert(JSON.stringify(e));
 
             try {
                 const res = await context.executeAction({
@@ -126,6 +126,7 @@ export default function ProcesarSolicitud_Ingenio_SAP(context) {
 
         if (errores.length === 0) {
             //btn_liquidar.setEnabled(true)
+            context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Ingenio.action") //CREAR
             mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
         } else if (exitosos.length === 0) {
             mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
@@ -133,8 +134,6 @@ export default function ProcesarSolicitud_Ingenio_SAP(context) {
             mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
         }
 
-        //alert(JSON.stringify(update))
-        //alert(JSON.stringify(liquidar))
         let promises = update.map(material => {
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/oData/Update_ComponentesSolicitudApp.action",

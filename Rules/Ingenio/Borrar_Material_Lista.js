@@ -3,6 +3,7 @@
  * @param {IClientAPI} context
  */
 export default function Borrar_Material_Lista(context) {
+
     var data = context.binding
     const pageProxy = context.getPageProxy();
 
@@ -10,7 +11,7 @@ export default function Borrar_Material_Lista(context) {
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0")
 
 
-    const index = clientData.lista_materiales.findIndex(item => item.material === data.material && item.almacen.almacen === data.almacen.almacen);
+    const index = clientData.lista_materiales.findIndex(item => item.Matnr === data.Matnr && item.Lgort === data.Lgort);
 
 
     if (index !== -1) {
@@ -22,7 +23,7 @@ export default function Borrar_Material_Lista(context) {
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericToastMessage.action",
         "Properties": {
-            "Message": `Material '${data.material_desc}' del ${data.almacen.almacen_desc} eliminado`,
+            "Message": `Material '${data.Txtmd}' del ${data.Lgort} eliminado`,
             "Duration": 1,
             "ShowActivityIndicator": true,
         }

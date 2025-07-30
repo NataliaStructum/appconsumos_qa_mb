@@ -214,7 +214,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una orden",
-							"PlaceHolder": "PlaceHolder",
+							"PlaceHolder": "Ingrese orden",
 							"HelperText": "Elige una orden abierta vinculada al equipo seleccionado.",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,

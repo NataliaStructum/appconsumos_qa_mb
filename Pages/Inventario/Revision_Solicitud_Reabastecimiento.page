@@ -69,7 +69,6 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona un material",
-							"PlaceHolder": "PlaceHolder",
 							"HelperText": "Selecciona un material de la solicitud",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/Select_Material_Revisar_Abast.js",
 							"IsSelectedSectionEnabled": false,

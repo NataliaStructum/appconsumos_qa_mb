@@ -7,6 +7,7 @@ import Rule_openDocumentoIOS from '../Rule_openDocumentoIOS.js';
 
 export default async function PDF_Ingenio(context) {
     const platform = context.nativescript.platformModule;
+    
 
     let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
@@ -106,7 +107,14 @@ export default async function PDF_Ingenio(context) {
                 // Esperar más tiempo para asegurar renderizado
                 await new Promise(resolve => setTimeout(resolve, 1000));
 
+                if (platform.isAndroid) {
+                    await Rule_openDocumentoAnd(context);
+                } else if (platform.isIOS) {
+                    await Rule_openDocumentoIOS(context);
+                }
+
                 // Intentar abrir el PDF
+                /* 
                 try {
 
                     if (platform.isAndroid) {
@@ -117,6 +125,7 @@ export default async function PDF_Ingenio(context) {
                 } catch (errorOpen) {
                     alert("No se pudo abrir el documento:\n" + (errorOpen.message || errorOpen));
                 }
+                    */
             }
         }
 
