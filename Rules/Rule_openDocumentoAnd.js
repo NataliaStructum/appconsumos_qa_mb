@@ -11,7 +11,12 @@ export default function Rule_openDocumentoAnd(context) {
         b64Data = clientDataAutorizar.b64Data
     }
 
-    if (titulo == "Autorizar_Solicitud_Campo" || titulo == "Autorizar_Solicitud_Ingenio") {
+    if (titulo == "Detalle_Solicitudes_Campo") {
+        let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
+        b64Data = clientDataAutorizar.b64Data
+    }
+
+    if (titulo == "Autorizar_Solicitud_Ingenio") {
         b64Data = context.b64Data
     }
 
@@ -94,7 +99,7 @@ export default function Rule_openDocumentoAnd(context) {
         });
 
     }else{
-        alert("no hay base64")
+        alert("No fue posible obtener el PDF.")
     }
 
 }

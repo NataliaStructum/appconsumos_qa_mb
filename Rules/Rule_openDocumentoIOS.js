@@ -12,7 +12,12 @@ export default async function Rule_openDocumentoIOS(context) {
         b64Data = clientDataAutorizar.b64Data
     }
 
-    if (titulo == "Autorizar_Solicitud_Campo" || titulo == "Autorizar_Solicitud_Ingenio") {
+    if (titulo == "Detalle_Solicitudes_Campo") {
+        let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
+        b64Data = clientDataAutorizar.b64Data
+    }
+
+    if (titulo == "Autorizar_Solicitud_Ingenio") {
         b64Data = context.b64Data
     }
 

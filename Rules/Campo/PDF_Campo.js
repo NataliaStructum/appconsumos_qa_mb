@@ -7,7 +7,7 @@ import Rule_openDocumentoIOS from '../Rule_openDocumentoIOS.js';
 export default async function PDF_Campo(context) {
     //alert("Generar y abrir PDF")
 
-    //let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
     //firma 
     //const pageProxy = context.getPageProxy();
     const platform = context.nativescript.platformModule;
@@ -83,12 +83,14 @@ export default async function PDF_Campo(context) {
 
                     // Intentar abrir el PDF
                     //alert(result.data.value)//el pdf en base64
-                    context.b64Data = result.data.value
-                    if (platform.isAndroid) {
+                    //context.b64Data = result.data.value
+                    clientDataAutorizar.b64Data = result.data.value
+                    return context.executeAction("/appconsumos_qa_mb/Actions/oData/Create_Pdf_Campo.action")
+                    /*if (platform.isAndroid) {
                         return Rule_openDocumentoAnd(context)
                     } else if (platform.isIOS) {
                         return Rule_openDocumentoIOS(context)
-                    }
+                    }*/
                 }
 
             }).catch((error) => {

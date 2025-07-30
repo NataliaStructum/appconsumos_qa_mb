@@ -76,6 +76,7 @@ let appconsumos_qa_mb_actions_odata_create_almacenesapp_action = __webpack_requi
 let appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action")
 let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
 let appconsumos_qa_mb_actions_odata_create_items_planillas_aceites_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Items_Planillas_Aceites.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Items_Planillas_Aceites.action")
+let appconsumos_qa_mb_actions_odata_create_pdf_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Pdf_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Pdf_Campo.action")
 let appconsumos_qa_mb_actions_odata_create_planilla_aceites_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Planilla_Aceites.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Planilla_Aceites.action")
 let appconsumos_qa_mb_actions_odata_create_solicitud_campo_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Solicitud_Campo.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Solicitud_Campo.action")
 let appconsumos_qa_mb_actions_odata_create_solicitud_ingenio_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_Solicitud_Ingenio.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Solicitud_Ingenio.action")
@@ -378,6 +379,7 @@ let appconsumos_qa_mb_rules_campo_query_detalle_componentes_campo_js = __webpack
 let appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Material_Revision_Campo.js")
 let appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js")
 let appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/RechazarSolicitudCampo.js")
+let appconsumos_qa_mb_rules_campo_redraw_detalle_solicitud_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js")
 let appconsumos_qa_mb_rules_campo_response_firmarpdf_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Response_firmarPDF.js")
 let appconsumos_qa_mb_rules_campo_select_almacen_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Select_almacen.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Select_almacen.js")
 let appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/setVisible_CantAprobadaRevision.js")
@@ -581,6 +583,7 @@ module.exports = {
 	appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action : appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action,
 	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
 	appconsumos_qa_mb_actions_odata_create_items_planillas_aceites_action : appconsumos_qa_mb_actions_odata_create_items_planillas_aceites_action,
+	appconsumos_qa_mb_actions_odata_create_pdf_campo_action : appconsumos_qa_mb_actions_odata_create_pdf_campo_action,
 	appconsumos_qa_mb_actions_odata_create_planilla_aceites_action : appconsumos_qa_mb_actions_odata_create_planilla_aceites_action,
 	appconsumos_qa_mb_actions_odata_create_solicitud_campo_action : appconsumos_qa_mb_actions_odata_create_solicitud_campo_action,
 	appconsumos_qa_mb_actions_odata_create_solicitud_ingenio_action : appconsumos_qa_mb_actions_odata_create_solicitud_ingenio_action,
@@ -883,6 +886,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js : appconsumos_qa_mb_rules_campo_rechazar_material_revision_campo_js,
 	appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js : appconsumos_qa_mb_rules_campo_rechazar_solicitud_revision_componentes_campo_js,
 	appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js : appconsumos_qa_mb_rules_campo_rechazarsolicitudcampo_js,
+	appconsumos_qa_mb_rules_campo_redraw_detalle_solicitud_campo_js : appconsumos_qa_mb_rules_campo_redraw_detalle_solicitud_campo_js,
 	appconsumos_qa_mb_rules_campo_response_firmarpdf_js : appconsumos_qa_mb_rules_campo_response_firmarpdf_js,
 	appconsumos_qa_mb_rules_campo_select_almacen_js : appconsumos_qa_mb_rules_campo_select_almacen_js,
 	appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js : appconsumos_qa_mb_rules_campo_setvisible_cantaprobadarevision_js,
@@ -9508,8 +9512,10 @@ function LiquidarSolicitud_Campo_SAP(context) {
             }
           }
         });
+        //actualizar el inventario de la bd tambien
+
         const resjson = res.data;
-        alert(resjson.doc_material);
+        //alert(resjson.doc_material)
         if (resjson.success) {
           exitosos.push(`${e.material.material_desc}`);
           update.push({
@@ -9524,14 +9530,15 @@ function LiquidarSolicitud_Campo_SAP(context) {
           errores.push(`${e.material.material_desc}: ${resjson.message}`);
         }
       } catch (error) {
-        alert(error);
+        //alert(error);
         //agregar validacion autenticacion
         errores.push(`${e.material.material_desc}: ${error?.message || error}`);
       }
 
       //await sleep(1000); // Esperar 2 segundos antes de la próxima iteración
     }
-    alert(JSON.stringify(update));
+
+    //alert(JSON.stringify(update))
     //alert(JSON.stringify(liquidar))
     let promises = update.map(material => {
       return context.executeAction({
@@ -9559,10 +9566,10 @@ function LiquidarSolicitud_Campo_SAP(context) {
       context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
       mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
     } else if (exitosos.length === 0) {
-      context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action");
-      mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+      //context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
+      mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}. Intentalo nuevamente`;
     } else {
-      mensaje = `Liquidación completada con errores:\n${errores.join('\n')}`;
+      mensaje = `Liquidación completada con errores:\n${errores.join('\n')}. Intentalo nuevamente`;
     }
     return Promise.allSettled(promises).then(() => {
       return context.executeAction({
@@ -9824,7 +9831,7 @@ __webpack_require__.r(__webpack_exports__);
 async function PDF_Campo(context) {
   //alert("Generar y abrir PDF")
 
-  //let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
+  let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
   //firma 
   //const pageProxy = context.getPageProxy();
   const platform = context.nativescript.platformModule;
@@ -9895,12 +9902,14 @@ async function PDF_Campo(context) {
 
           // Intentar abrir el PDF
           //alert(result.data.value)//el pdf en base64
-          context.b64Data = result.data.value;
-          if (platform.isAndroid) {
-            return (0,_Rule_openDocumentoAnd_js__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+          //context.b64Data = result.data.value
+          clientDataAutorizar.b64Data = result.data.value;
+          return context.executeAction("/appconsumos_qa_mb/Actions/oData/Create_Pdf_Campo.action");
+          /*if (platform.isAndroid) {
+              return Rule_openDocumentoAnd(context)
           } else if (platform.isIOS) {
-            return (0,_Rule_openDocumentoIOS_js__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
-          }
+              return Rule_openDocumentoIOS(context)
+          }*/
         }
       }).catch(error => {
         alert(error);
@@ -10055,9 +10064,9 @@ function ProcesarSolicitud_Campo_SAP(context) {
       btn_autorizar.setEnabled(false);
       mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
     } else if (exitosos.length === 0) {
-      mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+      mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}. Intentalo nuevamente`;
     } else {
-      mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
+      mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}. Intentalo nuevamente`;
     }
 
     //alert(JSON.stringify(update))
@@ -10400,6 +10409,42 @@ function Rechazar_Solicitud_Revision_Componentes_Campo(context) {
     });
   }).catch(error => {
     alert(`Error ${error.message}`);
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js":
+/*!*******************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Redraw_Detalle_Solicitud_Campo)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} context
+ */
+function Redraw_Detalle_Solicitud_Campo(context) {
+  let info_solicitud = context.binding;
+  let id_solicitud = info_solicitud.id;
+  const pageProxy = context.getPageProxy();
+  let filtro = `$expand=almacen&$filter=id eq ${id_solicitud}`;
+  return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Solicitudes', [], filtro).then(async results => {
+    if (results && results.length > 0) {
+      let solicitud = results.getItem(0);
+      if (solicitud.estado == 'Autorizado') {
+        info_solicitud.estado = 'Autorizado';
+        pageProxy.redraw();
+      } else if (solicitud.estado == 'Aprobado' || solicitud.estado == 'Rechazado') {
+        info_solicitud.estado = solicitud.estado;
+        pageProxy.redraw();
+      }
+    }
   });
 }
 
@@ -16164,7 +16209,12 @@ function Rule_openDocumentoAnd(context) {
     let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
     b64Data = clientDataAutorizar.b64Data;
   }
-  if (titulo == "Autorizar_Solicitud_Campo" || titulo == "Autorizar_Solicitud_Ingenio") {
+  if (titulo == "Detalle_Solicitudes_Campo") {
+    alert("entro");
+    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
+    b64Data = clientDataAutorizar.b64Data;
+  }
+  if (titulo == "Autorizar_Solicitud_Ingenio") {
     b64Data = context.b64Data;
   }
   const fs = context.nativescript.fileSystemModule;
@@ -16237,7 +16287,7 @@ function Rule_openDocumentoAnd(context) {
       }
     });
   } else {
-    alert("no hay base64");
+    alert("No fue posible obtener el PDF.");
   }
 }
 
@@ -16266,7 +16316,11 @@ async function Rule_openDocumentoIOS(context) {
     let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
     b64Data = clientDataAutorizar.b64Data;
   }
-  if (titulo == "Autorizar_Solicitud_Campo" || titulo == "Autorizar_Solicitud_Ingenio") {
+  if (titulo == "Detalle_Solicitudes_Campo") {
+    let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
+    b64Data = clientDataAutorizar.b64Data;
+  }
+  if (titulo == "Autorizar_Solicitud_Ingenio") {
     b64Data = context.b64Data;
   }
   const fs = context.nativescript.fileSystemModule;
@@ -17615,7 +17669,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Cant. Apro: {cantidad_aprobada} de {cantidad_tomada} {material/und/und_vz}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Pos: {posicion}","SubstatusText":"Op: {op_number} ","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Blue","Text":"Doc. Material: {doc_material}"},{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Cant. Apro: {cantidad_aprobada} de {cantidad_tomada} {material/und/und_vz}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Pos: {posicion}","SubstatusText":"Op: {op_number} ","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Blue","Text":"Doc. Material: {doc_material}"},{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","OnLoaded":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","OnReturning":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","OnResume":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":false,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -18445,7 +18499,7 @@ module.exports = {"_Type":"Action.Type.ToastMessage","Message":"El servicio de d
   \****************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false},{"Name":"PlanillasAceites","Query":"PlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"ItemPlanillasAceites","Query":"ItemPlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"OperacionesOrden","Query":"OperacionesOrden","AutomaticallyRetrievesStreams":false},{"Name":"UnidadMedida","Query":"UnidadMedida","AutomaticallyRetrievesStreams":false}]}
+module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/app_consumos_qa/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","DefiningRequests":[{"Name":"Almacenes","Query":"Almacenes"},{"Name":"AlmacenesApp","Query":"AlmacenesApp"},{"Name":"Empleados","Query":"Empleados"},{"Name":"EmpleadosApp","Query":"EmpleadosApp"},{"Name":"Equipos","Query":"Equipos"},{"Name":"Inventario","Query":"Inventario"},{"Name":"MaterialesAlmacen","Query":"MaterialesAlmacen"},{"Name":"Ordenes","Query":"Ordenes"},{"Name":"Solicitudes","Query":"Solicitudes","AutomaticallyRetrievesStreams":false},{"Name":"ComponentesSolicitud","Query":"ComponentesSolicitud","AutomaticallyRetrievesStreams":false},{"Name":"DetalleReserva","Query":"DetalleReserva","AutomaticallyRetrievesStreams":false},{"Name":"VerSolicitudesAbiertas","Query":"VerSolicitudesAbiertas","AutomaticallyRetrievesStreams":false},{"Name":"PlanillasAceites","Query":"PlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"ItemPlanillasAceites","Query":"ItemPlanillasAceites","AutomaticallyRetrievesStreams":false},{"Name":"OperacionesOrden","Query":"OperacionesOrden","AutomaticallyRetrievesStreams":false},{"Name":"UnidadMedida","Query":"UnidadMedida","AutomaticallyRetrievesStreams":false},{"Name":"Pdf","Query":"Pdf","AutomaticallyRetrievesStreams":false}]}
 
 /***/ }),
 
@@ -18656,6 +18710,16 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_Items_Planillas_Aceites"},"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ItemPlanillasAceites"},"Properties":{"id":""}}
+
+/***/ }),
+
+/***/ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Pdf_Campo.action":
+/*!***********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Actions/oData/Create_Pdf_Campo.action ***!
+  \***********************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_Pdf_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error guardando el PDF en la bd - {#ActionResults:Create_Pdf_Campo/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":"$(PLT,'/appconsumos_qa_mb/Rules/Rule_openDocumentoIOS.js','/appconsumos_qa_mb/Rules/Rule_openDocumentoAnd.js',)","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Pdf"},"Properties":{"id":"/appconsumos_qa_mb/Rules/guid.js","tipo":"Campo","orden":"{orden}","solicitud_id":"{id}","fecha":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","PDFData":"#Page:Detalle_Solicitudes_Campo/#ClientData/b64Data","FileName":"orden_campo.pdf"}}
 
 /***/ }),
 

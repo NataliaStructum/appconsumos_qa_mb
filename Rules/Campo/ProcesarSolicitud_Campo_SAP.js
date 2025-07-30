@@ -134,9 +134,9 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
             btn_autorizar.setEnabled(false)
             mensaje = 'Solicitud gestionada correctamente. Los materiales fueron añadidos a la reserva.';
         } else if (exitosos.length === 0) {
-            mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+            mensaje = `Solicitud no gestionada. Fallaron todos los materiales:\n\n${errores.join('\n')}. Intentalo nuevamente`;
         } else {
-            mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}`;
+            mensaje = `Solicitud parcialmente gestionada.\n\nErrores:\n${errores.join('\n')}. Intentalo nuevamente`;
         }
 
         //alert(JSON.stringify(update))

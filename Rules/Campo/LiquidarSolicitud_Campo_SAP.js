@@ -78,9 +78,10 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                         }
                     }
                 })
+                //actualizar el inventario de la bd tambien
 
                 const resjson = res.data;
-                alert(resjson.doc_material)
+                //alert(resjson.doc_material)
                 if (resjson.success) {
                     exitosos.push(`${e.material.material_desc}`);
                     update.push({
@@ -95,7 +96,7 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                     errores.push(`${e.material.material_desc}: ${resjson.message}`);
                 }
             } catch (error) {
-                alert(error);
+                //alert(error);
                 //agregar validacion autenticacion
                 errores.push(`${e.material.material_desc}: ${error?.message || error}`);
             }
@@ -103,7 +104,7 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
             //await sleep(1000); // Esperar 2 segundos antes de la próxima iteración
         }
 
-        alert(JSON.stringify(update))
+        //alert(JSON.stringify(update))
         //alert(JSON.stringify(liquidar))
         let promises = update.map(material => {
             return context.executeAction({
@@ -133,10 +134,10 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
             context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
             mensaje = 'Todos los materiales fueron liquidados correctamente en SAP.';
         } else if (exitosos.length === 0) {
-            context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
-            mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}`;
+            //context.executeAction("/appconsumos_qa_mb/Actions/oData/Update_SolicitudesApp_Autorizar_Campo.action")
+            mensaje = `Solicitud no liquidada. Fallaron todos los materiales:\n\n${errores.join('\n')}. Intentalo nuevamente`;
         } else {
-            mensaje = `Liquidación completada con errores:\n${errores.join('\n')}`;
+            mensaje = `Liquidación completada con errores:\n${errores.join('\n')}. Intentalo nuevamente`;
         }
 
 
