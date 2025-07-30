@@ -52,7 +52,6 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona un material",
-							"PlaceHolder": "PlaceHolder",
 							"HelperText": "Debes seleccionar el almacén desde el cual se tomará el material.",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/onChange_Materiales_Revision_Abast.js",
 							"IsSelectedSectionEnabled": false,

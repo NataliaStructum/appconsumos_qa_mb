@@ -46,7 +46,6 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona un Almacén",
-							"PlaceHolder": "PlaceHolder",
 							"HelperText": "Debes seleccionar un almacén para continuar",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Inventario/Select_Almacen_Filtro_Inventario.js",
 							"IsSelectedSectionEnabled": false,

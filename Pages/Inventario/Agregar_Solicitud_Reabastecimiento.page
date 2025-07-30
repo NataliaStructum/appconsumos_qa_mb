@@ -301,7 +301,6 @@
 								"PageSize": 25
 							},
 							"PickerPrompt": "Selecciona un material",
-							"PlaceHolder": "PlaceHolder",
 							"HelperText": "Espera un segundo mientras se cargan las opciones disponibles.",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
