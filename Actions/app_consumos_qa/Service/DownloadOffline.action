@@ -78,6 +78,11 @@
 			"Name": "UnidadMedida",
 			"Query": "UnidadMedida",
 			"AutomaticallyRetrievesStreams": false
+		},
+		{
+			"Name": "Pdf",
+			"Query": "Pdf",
+			"AutomaticallyRetrievesStreams": false
 		}
 	]
 }

@@ -215,6 +215,9 @@
 	],
 	"_Type": "Page",
 	"_Name": "Detalle_Solicitudes_Campo",
+	"OnLoaded": "/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js",
+	"OnReturning": "/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js",
+	"OnResume": "/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js",
 	"ActionBar": {
 		"Items": [
 			{
@@ -285,7 +288,7 @@
 					"Button": "Button"
 				},
 				"Image": "sap-icon://paid-leave",
-				"Enabled": true,
+				"Enabled": false,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
 				"ImagePosition": "Leading"
