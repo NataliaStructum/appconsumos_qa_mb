@@ -21,10 +21,10 @@ export default function Agregar_Materiales_Solicitud(context) {
     }
 
     let data = material[0].BindingObject
-    let stock = data.stock_disponible
+    let stock = data.Labst
 
-    //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*if(stock == 0){
+    
+    if(stock == 0){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
@@ -32,7 +32,7 @@ export default function Agregar_Materiales_Solicitud(context) {
                 "Message": `No hay stock disponible para este material`
             }
         });
-    }*/
+    }
 
 
     if (!cant || cant < 0) {
@@ -45,8 +45,8 @@ export default function Agregar_Materiales_Solicitud(context) {
         });
     }
 
-    //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*if(cant > stock){
+
+    if(cant > stock){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
@@ -54,7 +54,7 @@ export default function Agregar_Materiales_Solicitud(context) {
                 "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und`
             }
         });
-    }*/
+    }
 
 
 

@@ -79,24 +79,6 @@
 							"ImagePosition": "Leading",
 							"Enabled": "/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js",
 							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js"
-						},
-						{
-							"_Type": "Control.Type.FormCell.Button",
-							"_Name": "FormCellButton1",
-							"IsVisible": true,
-							"Separator": true,
-							"Styles": {
-								"Image": "Button",
-								"Button": "Button"
-							},
-							"Title": "Enviar Email",
-							"Alignment": "Center",
-							"ButtonType": "Primary",
-							"Semantic": "Tint",
-							"Image": "sap-icon://email-read",
-							"ImagePosition": "Leading",
-							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/PDF_Ingenio.js"
 						}
 					],
 					"Layout": {

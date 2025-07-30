@@ -5,7 +5,7 @@
 export default function Confirmar_Revision_Ingenio(context) {
     const pageProxy = context.getPageProxy();
     var materiales = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell1")
-    let operacion = context.evaluateTargetPath('#Page:Revision_Solicitud_Ingenio/#Control:operacion_item/#Value')
+    let operacion = context.evaluateTargetPath('#Page:Revision_Solicitud_Ingenio/#Control:operacion/#Value')
 
     let id_solicitud = context.binding.id;
     //let filtro = `$expand=almacen&$filter=solicitud_id eq ${id_solicitud}`;

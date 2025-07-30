@@ -211,6 +211,9 @@
 	],
 	"_Type": "Page",
 	"_Name": "Detalle_Solicitudes_Ingenio",
+	"OnLoaded": "/appconsumos_qa_mb/Rules/Ingenio/Redraw_Detalle_Solicitud_Ingenio.js",
+	"OnReturning": "/appconsumos_qa_mb/Rules/Ingenio/Redraw_Detalle_Solicitud_Ingenio.js",
+	"OnResume": "/appconsumos_qa_mb/Rules/Ingenio/Redraw_Detalle_Solicitud_Ingenio.js",
 	"ActionBar": {
 		"Items": [
 			{
@@ -266,21 +269,6 @@
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/NavTo_Revision_Solicitud_Ingenio.js",
 				"Image": "sap-icon://write-new-document",
-				"Enabled": true,
-				"ButtonType": "Primary",
-				"Semantic": "Tint",
-				"ImagePosition": "Leading"
-			},
-			{
-				"_Type": "FioriToolbarItem.Type.Button",
-				"_Name": "btn_Netear",
-				"Visible": "/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js",
-				"Title": "Netear",
-				"Styles": {
-					"Image": "Button",
-					"Button": "Button"
-				},
-				"Image": "sap-icon://inspect-down",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
