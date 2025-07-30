@@ -190,7 +190,6 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona un material",
-							"PlaceHolder": "PlaceHolder",
 							"HelperText": "Selecciona un material de la solicitud  ",
 							"OnValueChange": "/appconsumos_qa_mb/Rules/Ingenio/onChange_Materiales_Revision_Ing.js",
 							"IsSelectedSectionEnabled": false,
