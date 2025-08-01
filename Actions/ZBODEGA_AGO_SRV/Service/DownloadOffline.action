@@ -11,6 +11,11 @@
 			"Name": "ZBIW_MARDTSet",
 			"Query": "ZBIW_MARDTSet",
 			"AutomaticallyRetrievesStreams": true
+		},
+		{
+			"Name": "getcompreserSet",
+			"Query": "getcompreserSet",
+			"AutomaticallyRetrievesStreams": false
 		}
 	]
 }

@@ -10,6 +10,10 @@ export default function onChange_RevisarPlanillaConsumo(context) {
     //var registro_consumo = form_cell.getControl("registro_consumo")
     var orden_obj = form_cell.getControl("orden_obj")
     var pos_obj = form_cell.getControl("pos_obj")
+
+    let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
+    let material = clientData.data_planilla_motor.material
+
     let registro_consumo_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Motor/#Control:registro_consumo/#Value');
 
     //alert(JSON.stringify(orden_obj.getTargetSpecifier()))
@@ -33,11 +37,14 @@ export default function onChange_RevisarPlanillaConsumo(context) {
             orden_obj.setVisible(false);
             pos_obj.redraw()
             //obtener el filtro para la orden
-            let orden = registro_consumo_value[0].BindingObject.orden
+            let orden = registro_consumo_value[0].BindingObject.orden_orden
+            alert(material)
+            /*
             let target = pos_obj.getTargetSpecifier()
-            let res = target.setQueryOptions(`$filter=Aufnr eq '${orden}'`)
+            let res = target.setQueryOptions(`$filter=Aufnr eq '${orden}' and Matnr eq '${material}'`)
         
             pos_obj.setTargetSpecifier(res,true)
+             */
             //orden_obj.setEditable(true)
             pos_obj.redraw()
             return;

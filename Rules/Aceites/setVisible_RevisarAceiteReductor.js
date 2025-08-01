@@ -8,6 +8,8 @@ export default function setVisible_RevisarAceiteReductor(context) {
     //clientDataFiltro.data_planilla_reductor.estado
     let info = clientData.info_user;
 
-    return clientDataFiltro.data_planilla_reductor.estado === 'Enviado' && info.rol === 'Auxiliar' &&  clientDataFiltro.data_planilla_reductor.total > 0;
+    return clientDataFiltro.data_planilla_reductor.estado === 'Enviado' 
+    && (info.rol === 'Auxiliar' || info.rol === 'Autorizador') 
+    && clientDataFiltro.data_planilla_reductor.total > 0;
 
 }
