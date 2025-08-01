@@ -79,20 +79,6 @@
 							"ImagePosition": "Leading",
 							"Enabled": "/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js",
 							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js"
-						},
-						{
-							"_Type": "Control.Type.FormCell.Button",
-							"_Name": "FormCellButton1",
-							"IsVisible": true,
-							"Separator": true,
-							"Title": "PDF",
-							"Alignment": "Center",
-							"ButtonType": "Text",
-							"Semantic": "Tint",
-							"Image": "res://mdk_logo.png",
-							"ImagePosition": "Leading",
-							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Ingenio/PDFPRUEBA.js"
 						}
 					],
 					"Layout": {
