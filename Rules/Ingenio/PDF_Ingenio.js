@@ -7,10 +7,11 @@ import Rule_openDocumentoIOS from '../Rule_openDocumentoIOS.js';
 
 export default async function PDF_Ingenio(context) {
     const platform = context.nativescript.platformModule;
-    
 
     let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
+    const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar/#Value");
+    
     let signatureContent;
     let tipo;
 
@@ -89,7 +90,7 @@ export default async function PDF_Ingenio(context) {
                             "RequestProperties": {
                                 "Method": "POST",
                                 "Body": {
-                                    "to": "scanob@incauca.com",
+                                    "to": `${correo_enviar}`,
                                     "subject": "PDF Ingenio - Autorización",
                                     "body": "Adjunto PDF firmado desde aplicación Ingenio.",
                                     "nombre": "ingenio_firmado.pdf",

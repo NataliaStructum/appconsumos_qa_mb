@@ -6,6 +6,9 @@ export default function ValidarAutorizar_Ingenio(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Ingenio').getClientData();
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
     const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
+    const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar/#Value");
+
+
     //clientData.b64Data = ""
 
     if (!pass || pass == '') {
@@ -14,6 +17,28 @@ export default function ValidarAutorizar_Ingenio(context) {
             "Properties": {
                 "Title": "Contraseña Requerida",
                 "Message": "Falta ingresar la contraseña. Verifícala y vuelve a intentarlo."
+            }
+        });
+    }
+
+    if (!correo_enviar || correo_enviar.trim() === '') {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Correo Requerido",
+                "Message": "Falta ingresar el correo. Verifícalo y vuelve a intentarlo."
+            }
+        });
+    }
+    
+    // Validación de formato de correo
+    const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regexCorreo.test(correo_enviar)) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Correo Inválido",
+                "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
             }
         });
     }

@@ -79,7 +79,7 @@
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
-							"Caption": "Listado de consumos tipo Full",
+							"Caption": "Listado de consumos",
 							"DataPaging": {
 								"ShowLoadingIndicator": true,
 								"PageSize": 50
@@ -120,7 +120,7 @@
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "orden_obj",
-							"IsVisible": true,
+							"IsVisible": false,
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
@@ -135,7 +135,7 @@
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
-							"IsEditable": false,
+							"IsEditable": true,
 							"Search": {
 								"Enabled": true,
 								"Placeholder": " Buscar clase movimiento..."
@@ -150,6 +150,43 @@
 									"ReturnValue": "Y49"
 								}
 							]
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "pos_obj",
+							"IsVisible": false,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Posición",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una posición",
+							"PlaceHolder": "Selecciona una posición",
+							"HelperText": "Selecciona una posición para el consumo selecccionado",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true,
+								"Placeholder": " Buscar posición..."
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
+									"EntitySet": "getcompreserSet",
+									"QueryOptions": "$filter=Aufnr eq '100000000002'&$orderby=Rspos"
+								},
+								"ObjectCell": {
+									"PreserveIconStackSpacing": true,
+									"Visible": true
+								},
+								"ReturnValue": "{Rspos}"
+							}
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
