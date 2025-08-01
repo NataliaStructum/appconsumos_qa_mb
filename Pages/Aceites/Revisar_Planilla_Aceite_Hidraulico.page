@@ -146,76 +146,8 @@
 									"ReturnValue": "261"
 								},
 								{
-									"DisplayValue": "Y01 - SM C.Costos Admon.",
-									"ReturnValue": "Y01"
-								},
-								{
-									"DisplayValue": "Y03 - SM CeCo Obsequios.",
-									"ReturnValue": "Y03"
-								},
-								{
-									"DisplayValue": "Y05 - SM Ceco Mercad.y vta",
-									"ReturnValue": "Y05"
-								},
-								{
-									"DisplayValue": "Y09 - SM CeCo Campo",
-									"ReturnValue": "Y09"
-								},
-								{
-									"DisplayValue": "Y11 - SM CeCo Indir.Campo",
-									"ReturnValue": "Y11"
-								},
-								{
-									"DisplayValue": "Y13 - SM cobros a terceros",
-									"ReturnValue": "Y13"
-								},
-								{
-									"DisplayValue": "Y17 - SM C.Costos cosecha",
-									"ReturnValue": "Y17"
-								},
-								{
-									"DisplayValue": "Y21 - SM C.Costos m.p.fab.",
-									"ReturnValue": "Y21"
-								},
-								{
-									"DisplayValue": "Y25 - SM CeCo fábr.operac.",
-									"ReturnValue": "Y25"
-								},
-								{
-									"DisplayValue": "Y37 - SM CeCo C.Serv Oper.",
-									"ReturnValue": "Y37"
-								},
-								{
-									"DisplayValue": "Y47 - SM CeCo serv.ingen.",
-									"ReturnValue": "Y47"
-								},
-								{
 									"DisplayValue": "Y49 - SM orden costo maqui",
 									"ReturnValue": "Y49"
-								},
-								{
-									"DisplayValue": "Y63 - SM Daños Inventario",
-									"ReturnValue": "Y63"
-								},
-								{
-									"DisplayValue": "Y67 - SM CeCo.No Operación",
-									"ReturnValue": "Y67"
-								},
-								{
-									"DisplayValue": "YA5 - SM sal.mrcías p/perd",
-									"ReturnValue": "YA5"
-								},
-								{
-									"DisplayValue": "YB1 - SM para Activo Fijo",
-									"ReturnValue": "YB1"
-								},
-								{
-									"DisplayValue": "YB7 - SM CeCo.Museo Ipsa",
-									"ReturnValue": "YB7"
-								},
-								{
-									"DisplayValue": "YD7 - SM Dota.contr.Campo",
-									"ReturnValue": "YD7"
 								}
 							]
 						},

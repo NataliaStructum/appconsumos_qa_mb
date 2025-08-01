@@ -25,7 +25,7 @@ export default function NavTo_RevisarPlanillaAceiteMotor(context) {
                 }
                 
             });
-            clientData.lista_revision_motor = cambio
+            //clientData.lista_revision_motor = cambio
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
                 "Properties": {
