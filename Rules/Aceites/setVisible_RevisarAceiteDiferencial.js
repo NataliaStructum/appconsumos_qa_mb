@@ -8,5 +8,7 @@ export default function setVisible_RevisarAceiteDiferencial(context) {
     //clientDataFiltro.data_planilla_diferencial.estado
     let info = clientData.info_user;
 
-    return clientDataFiltro.data_planilla_diferencial.estado === 'Enviado' && info.rol === 'Auxiliar' &&  clientDataFiltro.data_planilla_diferencial.total > 0;
+    return clientDataFiltro.data_planilla_diferencial.estado === 'Enviado' 
+    && (info.rol === 'Auxiliar' || info.rol === 'Autorizador') 
+    && clientDataFiltro.data_planilla_diferencial.total > 0;
 }

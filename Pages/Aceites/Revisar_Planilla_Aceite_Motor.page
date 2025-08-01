@@ -69,7 +69,7 @@
 							"_Name": "FormCellLabel0",
 							"IsVisible": true,
 							"Separator": true,
-							"Text": "Agregar Consumos tipo Full",
+							"Text": "Agregar Consumos",
 							"TextWrap": true
 						},
 						{
@@ -107,7 +107,7 @@
 									"SubstatusText": "Cont Final: {contador_fin}",
 									"Tags": [
 										{
-											"Color": "Mango",
+											"Color": "/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js",
 											"Text": "{tipo}"
 										}
 									],
@@ -169,7 +169,7 @@
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"IsSearchCancelledAfterSelection": false,
-							"AllowDefaultValueIfOneItem": false,
+							"AllowDefaultValueIfOneItem": true,
 							"IsEditable": true,
 							"Search": {
 								"Enabled": true,
@@ -179,10 +179,16 @@
 								"Target": {
 									"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
 									"EntitySet": "getcompreserSet",
-									"QueryOptions": "$filter=Aufnr eq '100000000002'&$orderby=Rspos"
+									"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Filtro_Pos_Orden_Aceites.js"
 								},
 								"ObjectCell": {
-									"PreserveIconStackSpacing": true,
+									"Description": "Reserva: {Rsnum}",
+									"Footnote": "/appconsumos_qa_mb/Rules/Aceites/get_Cantidad_Disponible_Aceite.js",
+									"PreserveIconStackSpacing": false,
+									"StatusText": "Cant sol: {Bdmng}",
+									"Subhead": "Material: {Matnr}",
+									"SubstatusText": "Cant tomada: {Enmng}",
+									"Title": "Pos: {Rspos}",
 									"Visible": true
 								},
 								"ReturnValue": "{Rspos}"
