@@ -13,11 +13,14 @@ export default async function PDF_Ingenio(context) {
     const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar/#Value");
     
     let signatureContent;
+    let tipo;
 
     if (platform.isAndroid) {
         signatureContent = android.util.Base64.encodeToString(signatureObject.content, android.util.Base64.DEFAULT);
+        tipo = "And"
     } else if (platform.isIOS) {
         signatureContent = signatureObject.content.base64Encoding();
+        tipo = "IOS"
     }
 
     const info_solicitud = context.binding;
@@ -56,12 +59,13 @@ export default async function PDF_Ingenio(context) {
                     "OnSuccess": "",
                     "Target": {
                         "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-                        "Path": "/firmarPDF",
+                        "Path": "/firmarPDFRes",
                         "RequestProperties": {
                             "Method": "POST",
                             "Body": {
                                 "pdf": `${pdfData}`,
-                                "image": `${signatureContent}`
+                                "image": `${signatureContent}`,
+                                "tipo": tipo
                             }
                         }
                     }

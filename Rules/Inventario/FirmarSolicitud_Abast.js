@@ -19,6 +19,7 @@ export default function FirmarSolicitud_Abast(context) {
     let BindingData = context.binding
     let almacen = BindingData.almacen.almacen_desc
     let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
+    const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Rebastecimiento/#Control:correo_enviar/#Value");
     let logo;
     if (sociedad == 'AI08') {
         let logo_pro = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/logo_pro.global');
@@ -35,12 +36,16 @@ export default function FirmarSolicitud_Abast(context) {
     const platform = context.nativescript.platformModule;
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:FormCellInlineSignatureCapture0/#Value");
     let signatureContent;
+    let tipo;
 
     if (platform.isAndroid) {
         signatureContent = android.util.Base64.encodeToString(signatureObject.content, android.util.Base64.DEFAULT);
+        tipo = "And"
     } else if (platform.isIOS) {
         signatureContent = signatureObject.content.base64Encoding();
+        tipo = "IOS"
     }
+
 
     function sendEmail(pdf) {
         return context.executeAction({
@@ -56,7 +61,7 @@ export default function FirmarSolicitud_Abast(context) {
                     "RequestProperties": {
                         "Method": "POST",
                         "Body": {
-                            "to": "scanob@incauca.com",
+                            "to": `${correo_enviar}`,
                             "subject": "PDF Abastecimiento - Salida",
                             "body": `Adjunto PDF salida de materiales desde aplicación Abastecimiento.`,
                             "nombre": "salida_campo.pdf",
@@ -136,7 +141,8 @@ export default function FirmarSolicitud_Abast(context) {
                                 "data": reqdata,
                                 "image": `${signatureContent}`,
                                 "items": datajson,
-                                "logo": `${logo}`
+                                "logo": `${logo}`,
+                                "tipo": tipo
                             },
 
                         }

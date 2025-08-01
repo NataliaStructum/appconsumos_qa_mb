@@ -31,6 +31,18 @@
 							"HelperText": "Toque para firmar"
 						},
 						{
+							"Value": "#Page:Main/#ClientData/info_user/correo",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "correo_enviar",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Correo Destinatario",
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton0",
 							"IsVisible": true,

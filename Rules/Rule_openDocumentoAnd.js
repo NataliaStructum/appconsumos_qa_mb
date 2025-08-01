@@ -11,12 +11,12 @@ export default function Rule_openDocumentoAnd(context) {
         b64Data = clientDataAutorizar.b64Data
     }
 
-    if (titulo == "Detalle_Solicitudes_Campo") {
+    if (titulo == "Detalle_Solicitudes_Campo" || titulo == "Autorizar_Solicitud_Campo" ) {
         let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
         b64Data = clientDataAutorizar.b64Data
     }
 
-    if (titulo == "Autorizar_Solicitud_Ingenio") {
+    if (titulo == "Autorizar_Solicitud_Ingenio" || titulo == "Detalle_Historico_Campo") {
         b64Data = context.b64Data
     }
 

@@ -231,5 +231,27 @@
 		"_Name": "ActionBar10",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Histórico Campo"
+	},
+	"FioriToolbar": {
+		"_Type": "Control.Type.FioriToolbar",
+		"_Name": "FioriToolbar0",
+		"Items": [
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem0",
+				"Visible": "/appconsumos_qa_mb/Rules/Campo/set_VisibleBtnAbrirDocumento.js",
+				"Title": "Abrir documento",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/AbrirDocumento_Campo.js",
+				"Image": "sap-icon://pdf-attachment",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			}
+		]
 	}
 }
