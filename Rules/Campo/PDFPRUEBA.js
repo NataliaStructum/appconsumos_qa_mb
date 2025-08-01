@@ -9,9 +9,11 @@ export default async function PDFPRUEBA(context) {
 
     const platform = context.nativescript.platformModule;
 
-
+    let info_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData().info_user;
+    const palabras = info_user.nombre.split(" ");
+    const nombre = palabras.slice(0, -1).join(" ");
     let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
-    const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
+    const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
     let signatureContent;
     let tipo;
 
@@ -29,7 +31,7 @@ export default async function PDFPRUEBA(context) {
 
     try {
         const res = await context.executeAction({
-            "Name": "/appconsumos_qa_mb/Actions/Call_ZAMMST_RESERVASet.action",
+            "Name": "/appconsumos_qa_mb/Actions/Call_ZAMMST_ORDRINSUSet.action",
             "Properties": {
                 "ShowActivityIndicator": true,
                 "ActivityIndicatorText": "Cargando datos ...",
@@ -37,13 +39,13 @@ export default async function PDFPRUEBA(context) {
                 "OnSuccess": "",
                 "Target": {
                     "Service": "/appconsumos_qa_mb/Services/ZAMANAGE_LOGISTIC.service",
-                    "Path": `/ZAMMST_RESERVASet?$filter=(Rsnum eq '${reserva}')&$format=json`,
+                    "Path": `/ZAMMST_ORDRINSUSet?$filter=(Aufnr eq '${orden}')&$format=json`,
                     "RequestProperties": {
                         "Method": "GET"
                     }
                 }
             }
-        });
+        })
 
         const resjson = res.data;
 
@@ -59,13 +61,15 @@ export default async function PDFPRUEBA(context) {
                     "OnSuccess": "",
                     "Target": {
                         "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-                        "Path": "/firmarPDFRes",
+                        "Path": "/firmarPDF",
                         "RequestProperties": {
                             "Method": "POST",
                             "Body": {
                                 "pdf": `${pdfData}`,
                                 "image": `${signatureContent}`,
-                                "tipo":tipo
+                                "tipo": tipo,
+                                "nombre":`${info_user.nombre}`,
+                                "ficha":`${info_user.ficha}`
                             }
                         }
                     }
@@ -95,11 +99,11 @@ export default async function PDFPRUEBA(context) {
                     }
                 }
             });*/
+            let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
 
             if (result && result.data) {
-                const pdfFirmado = result.data.value;
-                context.b64Data = pdfFirmado;
-
+                
+                clientDataAutorizar.b64Data = result.data.value
                 if (platform.isAndroid) {
                     await Rule_openDocumentoAnd(context);
                 } else if (platform.isIOS) {

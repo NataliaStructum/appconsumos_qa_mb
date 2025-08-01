@@ -8,16 +8,20 @@ export default async function PDF_Campo(context) {
     //alert("Generar y abrir PDF")
 
     let clientDataAutorizar = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
+    let info_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData().info_user;
     //firma 
     //const pageProxy = context.getPageProxy();
     const platform = context.nativescript.platformModule;
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Campo/#Control:FormCellInlineSignatureCapture0/#Value");
     let signatureContent;
+    let tipo;
 
     if (platform.isAndroid) {
         signatureContent = android.util.Base64.encodeToString(signatureObject.content, android.util.Base64.DEFAULT);
+        tipo = "And"
     } else if (platform.isIOS) {
         signatureContent = signatureObject.content.base64Encoding();
+        tipo = "IOS"
     }
 
     let info_solicitud = context.binding;
@@ -61,7 +65,10 @@ export default async function PDF_Campo(context) {
                             "Method": "POST",
                             "Body": {
                                 "pdf": `${pdfData}`,
-                                "image": `${signatureContent}`
+                                "image": `${signatureContent}`,
+                                "tipo": tipo,
+                                "nombre":`${info_user.nombre}`,
+                                "ficha":`${info_user.ficha}`
                             },
 
                         }

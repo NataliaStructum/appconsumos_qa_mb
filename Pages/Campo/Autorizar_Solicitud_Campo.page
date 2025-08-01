@@ -97,6 +97,20 @@
 							"ImagePosition": "Leading",
 							"Enabled": "/appconsumos_qa_mb/Rules/Campo/getEnabledLiquidar_Campo.js",
 							"OnPress": "/appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton2",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "PDF",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"Enabled": true,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/PDFPRUEBA.js"
 						}
 					],
 					"Layout": {
