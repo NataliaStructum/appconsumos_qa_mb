@@ -7,7 +7,7 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
     //falta validar que el campo de contraseña si este diligenciado
     let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
     let clientData = context.evaluateTargetPathForAPI('#Page:Autorizar_Solicitud_Campo').getClientData();
-    
+
     let info_user = clientData_user.info_user;
     let info_solicitud = context.binding;
     let orden = info_solicitud.orden;
@@ -90,6 +90,9 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                         material_desc: e.material.material_desc,
                         material: e.material_material,
                         doc_material: resjson.doc_material,
+                        almacen: e.almacen.almacen,
+                        centro: e.almacen.centro,
+                        sociedad: e.almacen.sociedad,
                         cant: e.cantidad_aprobada,
                     });
                 } else {
@@ -118,9 +121,30 @@ export default function LiquidarSolicitud_Campo_SAP(context) {
                         "doc_material": material.doc_material,
                         "cantidad_aprobada": material.cant,
                         "aprobado": true,
-                        "confirmacion_tec":true
+                        "confirmacion_tec": true
                     }
                 }
+            }).then(() => {
+
+                let filtroInv = `$filter=material eq '${material.material}' and almacen_almacen eq '${material.almacen}' and almacen_centro eq '${material.centro}' and almacen_sociedad eq '${material.sociedad}'`;
+                return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Inventario', [], filtroInv).then(async (results) => {
+                    if (results && results.length > 0) {
+                        let inventario = results.getItem(0)
+                        let nueva_cant = inventario.stock_disponible - material.cant
+                        return context.executeAction({
+                            "Name": "/appconsumos_qa_mb/Actions/oData/Update_Inventario.action",
+                            "Properties": {
+                                "Target": {
+                                    "ReadLink": inventario["@odata.readLink"]
+                                },
+                                "Properties": {
+                                    "stock_disponible": nueva_cant
+                                }
+                            }
+                        })
+
+                    }
+                })
             }).catch((error) => {
                 alert(`Error actualizando material ${material.material}: ${error}`);
             });

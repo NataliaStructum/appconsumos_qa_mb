@@ -17,7 +17,7 @@ export default async function Rule_openDocumentoIOS(context) {
         b64Data = clientDataAutorizar.b64Data
     }
 
-    if (titulo == "Autorizar_Solicitud_Ingenio") {
+    if (titulo == "Autorizar_Solicitud_Ingenio" || titulo == "Detalle_Historico_Campo") {
         b64Data = context.b64Data
     }
 
