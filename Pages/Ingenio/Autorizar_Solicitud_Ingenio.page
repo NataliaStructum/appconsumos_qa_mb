@@ -50,6 +50,18 @@
 							"IsEditable": true
 						},
 						{
+							"Value": "#Page:Main/#ClientData/info_user/correo",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "correo_enviar",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Correo Destinatario",
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
 							"_Type": "Control.Type.FormCell.InlineSignatureCapture",
 							"_Name": "FormCellInlineSignatureCapture0",
 							"IsVisible": true,
