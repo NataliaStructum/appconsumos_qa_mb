@@ -9,9 +9,8 @@ export default function setVisible_CantAprobadaRevision_Abast(context) {
     var cant_field = cantSolicitada.getControl("FormCellSimpleProperty_Cantidad")
     var btn_aprobar = pageProxy.getControl("SectionedTable0").getSection("SectionButtonTable0")
     let clientData = context.evaluateTargetPathForAPI('#Page:Revision_Solicitud_Reabastecimiento').getClientData();
-
- 
     let almacen = context.evaluateTargetPath('#Page:Revision_Sol_Almacenes_Abast/#Control:almacen/#Value')
+    
  
     if (almacen.length < 1) {
         return context.executeAction({
@@ -23,7 +22,10 @@ export default function setVisible_CantAprobadaRevision_Abast(context) {
         });
     }
 
-    var data = almacen[0].BindingObject
+    //alert(JSON.stringify(almacen[0]))
+    var index = almacen[0].SelectedIndex
+    var data = clientData.listaInventario[index].BindingObject
+    //alert(JSON.stringify(data))
 
     if (data.Labst < 1) {
         return context.executeAction({

@@ -20,7 +20,8 @@ export default function Agregar_Materiales_Solicitud(context) {
         });
     }
 
-    let data = material[0].BindingObject
+    var index = material[0].SelectedIndex
+    let data = clientData.lista_inventario[index].BindingObject
     let stock = data.Labst
 
     

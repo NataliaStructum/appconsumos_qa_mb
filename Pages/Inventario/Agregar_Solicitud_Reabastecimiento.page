@@ -108,7 +108,7 @@
 							"Image": "sap-icon://add-document",
 							"ImagePosition": "Leading",
 							"Enabled": true,
-							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/filter_Read_ZBIW_MARDT.js"
+							"OnPress": "/appconsumos_qa_mb/Rules/Inventario/Read_ZBIW_MARDT.js"
 						}
 					],
 					"Layout": {

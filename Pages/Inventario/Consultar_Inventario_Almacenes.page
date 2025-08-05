@@ -30,11 +30,7 @@
 						"Caption": "Materiales"
 					},
 					"_Type": "Section.Type.ObjectTable",
-					"Target": {
-						"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
-						"EntitySet": "ZBIW_MARDTSet",
-						"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js"
-					},
+					"Target": "/appconsumos_qa_mb/Rules/Inventario/Filtro_Material_Almacenes.js",
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
@@ -107,7 +103,7 @@
 	"_Name": "Consultar_Inventario_Almacenes",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar7",
+		"_Name": "ActionBar8",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Consultar Inventario"
 	}

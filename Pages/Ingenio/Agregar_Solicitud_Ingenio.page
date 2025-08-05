@@ -10,15 +10,15 @@
 			"Sections": [
 				{
 					"ObjectHeader": {
-						"Subhead": "No. Res: {reserva}",
+						"Subhead": "No. Res: {#Page:Detalle_Orden_Ingenio/#ClientData/context_binding/reserva}",
 						"Footnote": "/appconsumos_qa_mb/Rules/formatOrdenId.js",
-						"Description": "{orden_desc}",
+						"Description": "{#Page:Detalle_Orden_Ingenio/#ClientData/context_binding/orden_desc}",
 						"SubstatusText": "Centro: {#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#Value/#First/BindingObject/centro}",
 						"DetailImageIsCircular": false,
 						"Tags": [
 							"#Page:Main/#ClientData/info_user/correo"
 						],
-						"BodyText": "{equipo} - {equipo_desc} ",
+						"BodyText": "{#Page:Detalle_Orden_Ingenio/#ClientData/context_binding/equipo} -  {#Page:Detalle_Orden_Ingenio/#ClientData/context_binding/equipo_desc} ",
 						"HeadlineText": "Almacen: {#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#Value/#First/BindingObject/almacen} - {#Page:Filtro_Ingenio/#Control:FormCellListPicker_Almacen_O/#Value/#First/BindingObject/almacen_desc}",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
@@ -113,24 +113,7 @@
 								"Placeholder": "Buscar Material...",
 								"BarcodeScanner": true
 							},
-							"PickerItems": {
-								"Target": {
-									"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
-									"EntitySet": "ZBIW_MARDTSet",
-									"QueryOptions": "/appconsumos_qa_mb/Rules/Ingenio/Filter_Materiales_Almacenes_Ingenio.js",
-									"ReadLink": "{@odata.readLink}"
-								},
-								"ObjectCell": {
-									"Description": "{Txtmd}",
-									"DisplayDescriptionInMobile": true,
-									"Footnote": "Disponible: {Labst} {Meins} / Reservado: {Klabs} {Meins}",
-									"PreserveIconStackSpacing": false,
-									"Subhead": "{Lgort}",
-									"Title": "{Matnr}",
-									"Visible": true
-								},
-								"ReturnValue": "{Lgort} - {Matnr}"
-							}
+							"PickerItems": "/appconsumos_qa_mb/Rules/Ingenio/get_Materiales_Almacenes_Ingenio.js"
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",

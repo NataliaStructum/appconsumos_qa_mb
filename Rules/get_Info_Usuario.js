@@ -8,7 +8,7 @@ export default function get_Info_Usuario(context) {
     clientData.info_user = {}
 
     //Syncroniza el servicio de datos del ERP
-    context.executeAction( "/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action");
+    //context.executeAction( "/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action");
 
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=correo eq '${email}'`).then(async (results) => {
         if (results && results.length > 0) {

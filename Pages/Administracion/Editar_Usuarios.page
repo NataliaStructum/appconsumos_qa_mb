@@ -82,7 +82,19 @@
 					},
 					"Controls": [
 						{
-							"Value": "/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js",
+							"Value": "{correo}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "correo_enviar",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Correo usuario",
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js}",
 							"_Type": "Control.Type.FormCell.Switch",
 							"_Name": "estado_edit",
 							"IsVisible": true,

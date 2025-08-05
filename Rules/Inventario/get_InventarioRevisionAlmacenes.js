@@ -2,13 +2,12 @@
  * Describe this function...
  * @param {IClientAPI} context
  */
-export default function NavTo_RevisionAlmacenes(context) {
+export default function get_InventarioRevisionAlmacenes(context) {
 
     let clientData = context.evaluateTargetPathForAPI('#Page:Revision_Solicitud_Reabastecimiento').getClientData();
-    let materialLP = context.evaluateTargetPath('#Page:Revision_Solicitud_Reabastecimiento/#Control:materiales_revision_abast/#Value')
-    clientData.infoMaterial = materialLP[0].BindingObject
-    let clientDataAlm = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Solicitud_Abast').getClientData();
-    //var inventario_form = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0")
+    return clientData.listaInventario
+    /*let clientDataAlm = context.evaluateTargetPathForAPI('#Page:Filtro_Almacen_Solicitud_Abast').getClientData();
+    var inventario_form = pageProxy.getControl("SectionedTable0").getSection("SectionFormCell0")
 
     let mat_nuevo = clientData.infoMaterial.mat_nuevo
     let material = clientData.infoMaterial.material_material
@@ -42,7 +41,7 @@ export default function NavTo_RevisionAlmacenes(context) {
                 "Name": "/appconsumos_qa_mb/Actions/Call_ZBIW_MARDTSet.action",
                 "Properties": {
                     "ShowActivityIndicator": true,
-                    "ActivityIndicatorText": "Cargando inventario de almacenes ...",
+                    "ActivityIndicatorText": "Cargando datos ...",
                     "OnFailure": "",
                     "OnSuccess": "",
                     "Target": {
@@ -60,7 +59,7 @@ export default function NavTo_RevisionAlmacenes(context) {
                 const resultadoListPicker = [];
 
                 for (const item of resjson) {
-                    //alert(JSON.stringify(item))
+                    alert(JSON.stringify(item))
 
                     resultadoListPicker.push({
                         ObjectCell: {
@@ -77,24 +76,20 @@ export default function NavTo_RevisionAlmacenes(context) {
 
                 }
 
-                clientData.listaInventario = resultadoListPicker
-                return context.executeAction({
-                    "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
-                    "Properties": {
-                        "PageToOpen": "/appconsumos_qa_mb/Pages/Inventario/Revision_Sol_Almacenes_Abast.page",
-                        "BackStackVisible": true
-                    }
-                });
+                inventario_form.redraw()
+                return resultadoListPicker
 
             }).catch((error) => {
                 alert(`Error al consultar el inventario: ${error.message || error}`);
             });
 
+
         }
+        return [];
     }).catch((error) => {
 
         alert(`Error al obtener los almacenes ${error.message}`)
-    });
+    });*/
 
-    
+    //return `$filter=Matnr eq '${value}' and Spras eq 'ES' and contains(Txtmd, 'BORRADO') eq false and contains(Txtmd, 'BORRAR') eq false and contains(Txtmd, 'BORRAD_') eq false and Werks eq '${clientDataAlm.almacen_abast.centro}'&$orderby=Lgort`
 }
