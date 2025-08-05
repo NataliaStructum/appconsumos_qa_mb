@@ -181,6 +181,27 @@
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
 				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem1",
+				"Visible": "/appconsumos_qa_mb/Rules/Aceites/set_VisibleBtnAutorizar_Aceites.js",
+				"Title": "Autorizar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Aprobar_Aceite_Hidraulico.page"
+					}
+				},
+				"Image": "sap-icon://accounting-document-verification",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
 			}
 		]
 	}
