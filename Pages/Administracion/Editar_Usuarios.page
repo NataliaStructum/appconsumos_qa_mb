@@ -84,7 +84,7 @@
 						{
 							"Value": "{correo}",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "correo_enviar",
+							"_Name": "correo_user",
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Correo usuario",
@@ -94,7 +94,7 @@
 							"IsEditable": true
 						},
 						{
-							"Value": "{/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js}",
+							"Value": "/appconsumos_qa_mb/Rules/Administracion/Bool_Estado_Usuarios.js",
 							"_Type": "Control.Type.FormCell.Switch",
 							"_Name": "estado_edit",
 							"IsVisible": true,

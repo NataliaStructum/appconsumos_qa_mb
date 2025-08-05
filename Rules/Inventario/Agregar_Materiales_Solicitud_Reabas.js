@@ -61,7 +61,7 @@ export default function Agregar_Materiales_Solicitud_Reabas(context) {
         material: data.material,
         material_desc: data.material_desc,
         cant : cant,
-        und: data.und,
+        und: data.und.und_vz,
         stock_disponible: data.stock_disponible,
         stock_reservado: data.stock_reservado,
         tipo: "Registrado"

@@ -12,11 +12,13 @@ export default function get_Info_Usuario(context) {
 
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=correo eq '${email}'`).then(async (results) => {
         if (results && results.length > 0) {
+            //alert(JSON.stringify(results.getItem(0)))
             clientData.info_user = results.getItem(0)
         } 
     }).catch((error) => {
+        alert(`Error info usuario sincroniza ${error.message}`)
+        //return context.executeAction( "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action");
         
-        alert(`Error ${error.message}`)
     });
 
 }
