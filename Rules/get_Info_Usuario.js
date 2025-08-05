@@ -16,7 +16,7 @@ export default function get_Info_Usuario(context) {
             clientData.info_user = results.getItem(0)
         } 
     }).catch((error) => {
-        alert(`Error info usuario sincroniza ${error.message}`)
+        alert(`Error info usuario ${error.message}`)
         //return context.executeAction( "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action");
         
     });
