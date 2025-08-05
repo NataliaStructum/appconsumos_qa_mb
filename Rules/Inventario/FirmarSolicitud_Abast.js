@@ -19,7 +19,7 @@ export default function FirmarSolicitud_Abast(context) {
     let BindingData = context.binding
     let almacen = BindingData.almacen.almacen_desc
     let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
-    const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Rebastecimiento/#Control:correo_enviar/#Value");
+    const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar/#Value");
     let logo;
     if (sociedad == 'AI08') {
         let logo_pro = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/logo_pro.global');

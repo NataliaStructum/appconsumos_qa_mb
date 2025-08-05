@@ -1,5 +1,6 @@
 {
 	"DestinationName": "ZBODEGA_AGO_SRV",
-	"OfflineEnabled": true,
-	"SourceType": "Mobile"
+	"OfflineEnabled": false,
+	"SourceType": "Mobile",
+	"RestService": true
 }

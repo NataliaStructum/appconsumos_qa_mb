@@ -58,23 +58,7 @@
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
-							"PickerItems": {
-								"Target": {
-									"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
-									"EntitySet": "ZBIW_MARDTSet",
-									"QueryOptions": "/appconsumos_qa_mb/Rules/Inventario/get_Matnr_QueryRevisionAlmacenes.js",
-									"ReadLink": "{@odata.readLink}"
-								},
-								"ObjectCell": {
-									"Description": "{Txtmd}",
-									"Footnote": "Disponible: {Labst} {Meins} / Reservado: {Klabs} {Meins}",
-									"PreserveIconStackSpacing": false,
-									"Subhead": "{Matnr}",
-									"Title": "{Lgort}",
-									"Visible": true
-								},
-								"ReturnValue": "{Lgort}"
-							}
+							"PickerItems": "/appconsumos_qa_mb/Rules/Inventario/get_InventarioRevisionAlmacenes.js"
 						}
 					],
 					"Layout": {
@@ -202,7 +186,7 @@
 	"_Name": "Revision_Sol_Almacenes_Abast",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar4",
+		"_Name": "ActionBar5",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Seleccionar Almacen de Material"
 	}

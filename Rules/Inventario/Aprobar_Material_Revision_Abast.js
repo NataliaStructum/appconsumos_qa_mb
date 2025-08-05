@@ -22,7 +22,9 @@ export default function Aprobar_Material_Revision_Abast(context) {
         });
     }
 
-    let dataAlm = almacen[0].BindingObject
+    var index = almacen[0].SelectedIndex
+    //var data = clientData.listaInventario[index].BindingObject
+    let dataAlm = clientDataMaterial.listaInventario[index].BindingObject
     let stock = dataAlm.Labst
 
     if (!cant || cant < 0) {
@@ -72,7 +74,7 @@ export default function Aprobar_Material_Revision_Abast(context) {
     }
 
     if(material_data){
-        und = data.material.und
+        und = data.material.und.und_vz
     }
 
     var nuevo = {

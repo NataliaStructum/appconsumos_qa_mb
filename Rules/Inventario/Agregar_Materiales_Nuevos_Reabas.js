@@ -34,7 +34,7 @@ export default function Agregar_Materiales_Nuevos_Reabas(context) {
   
     var nuevo = {
         material: data.ReturnValue,
-        material_desc: data.DisplayValue.Subhead,
+        material_desc: data.DisplayValue.Description,
         cant : cant,
         und: data.DisplayValue.StatusText,
         stock_disponible: null,

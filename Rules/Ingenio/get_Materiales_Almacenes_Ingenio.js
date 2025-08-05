@@ -2,8 +2,11 @@
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
-export default function Filter_Materiales_Almacenes_Ingenio(context) {
-    let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
+export default function get_Materiales_Almacenes_Ingenio(context) {
+    let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Orden_Ingenio').getClientData();
+    return clientData.lista_inventario
+    
+    /*let clientDataFiltro = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
  
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'AlmacenesApp', [], `$filter=tipo eq 'INGENIO'`).then(async (results) => {
        
@@ -25,5 +28,5 @@ export default function Filter_Materiales_Almacenes_Ingenio(context) {
     }).catch((error) => {
        
         alert(`Error al obtener los almacenes ${error.message}`)
-    });
+    });*/
 }

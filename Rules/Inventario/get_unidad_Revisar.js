@@ -9,12 +9,13 @@ export default function get_unidad_Revisar(context) {
 
     //Cant. Solicitada: {cantidad_tomada}
 
+    
     if(mat_nuevo){
         return `Cant.Solicitada ${cantidad_tomada} ${context.binding.mat_nuevo_und}`
     }
 
     if(material){
-        return `Cant.Solicitada ${cantidad_tomada} ${context.binding.material.und}`
+        return `Cant.Solicitada ${cantidad_tomada} ${context.binding.material.und.und_vz}`
     }
 
 }
