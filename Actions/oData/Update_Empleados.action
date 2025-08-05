@@ -32,6 +32,7 @@
 		"ReadLink": "{@odata.readLink}"
 	},
 	"Properties": {
+		"correo": "/appconsumos_qa_mb/Rules/Administracion/getCorreo_Admin.js",
 		"rol": "#Page:Editar_Usuarios/#Control:rol_edit/#Value/#First/DisplayValue",
 		"isAdmin": "#Page:Editar_Usuarios/#Control:isadmin_edit/#Value",
 		"estado": "/appconsumos_qa_mb/Rules/Administracion/get_Estado.js"
