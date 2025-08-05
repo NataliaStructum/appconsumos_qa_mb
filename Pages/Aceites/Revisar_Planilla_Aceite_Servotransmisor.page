@@ -69,7 +69,7 @@
 							"_Name": "FormCellLabel0",
 							"IsVisible": true,
 							"Separator": true,
-							"Text": "Agregar Consumos tipo Full",
+							"Text": "Agregar Consumos",
 							"TextWrap": true
 						},
 						{
@@ -79,7 +79,7 @@
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
-							"Caption": "Listado de consumos tipo Full",
+							"Caption": "Listado de consumos",
 							"DataPaging": {
 								"ShowLoadingIndicator": true,
 								"PageSize": 50
@@ -107,7 +107,7 @@
 									"SubstatusText": "Cont Final: {contador_fin}",
 									"Tags": [
 										{
-											"Color": "Mango",
+											"Color": "/appconsumos_qa_mb/Rules/Aceites/Color_Aceites_Tipo.js",
 											"Text": "{tipo}"
 										}
 									],
@@ -120,7 +120,7 @@
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "orden_obj",
-							"IsVisible": true,
+							"IsVisible": false,
 							"Separator": true,
 							"AllowMultipleSelection": false,
 							"AllowEmptySelection": true,
@@ -130,12 +130,12 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Selecciona una clase de movimiento",
-							"PlaceHolder": "Selecciona un movimiento",
+							"PlaceHolder": "Selecciona una clase de movimiento ",
 							"HelperText": "Selecciona una clase de movimiento para el consumo selecccionado",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": true,
 							"AllowDefaultValueIfOneItem": false,
-							"IsEditable": false,
+							"IsEditable": true,
 							"Search": {
 								"Enabled": true,
 								"Placeholder": " Buscar clase movimiento..."
@@ -144,12 +144,64 @@
 								{
 									"DisplayValue": "261 - SM para orden",
 									"ReturnValue": "261"
-								},								
+								},
 								{
 									"DisplayValue": "Y49 - SM orden costo maqui",
 									"ReturnValue": "Y49"
 								}
 							]
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio.js",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell2",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "pos_obj",
+							"IsVisible": false,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Posición",
+							"DataPaging": {
+								"ShowLoadingIndicator": true,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Selecciona una posición",
+							"PlaceHolder": "Selecciona una posición",
+							"HelperText": "Selecciona una posición para el consumo selecccionado",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": true,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": true,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true,
+								"Placeholder": " Buscar posición..."
+							},
+							"PickerItems": "/appconsumos_qa_mb/Rules/Aceites/get_Pos_Orden_Aceites.js"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -172,13 +224,7 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					},
-					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio_Servotransmisor.js",
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0"
+					}
 				},
 				{
 					"Header": {
@@ -287,7 +333,7 @@
 		],
 		"_Name": "ActionBar0",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Revisión Planilla Aceite de Servotransmisión"
+		"Caption": "Revisión Planilla Aceite de Servotransmisor"
 	},
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",

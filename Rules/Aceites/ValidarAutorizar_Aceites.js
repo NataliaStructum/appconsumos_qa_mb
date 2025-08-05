@@ -3,9 +3,27 @@
  * @param {IClientAPI} clientAPI
  */
 export default function ValidarAutorizar_Aceites(context) {    
-    const pass = context.evaluateTargetPath("#Page:Aprobar_Aceite_Motor/#Control:pass/#Value")
 
+    let page = context.getPageProxy();
+    let titulo = page.getName();
+    let pass;
 
+    if (titulo == "Aprobar_Aceite_Motor" ){
+        pass = context.evaluateTargetPath("#Page:Aprobar_Aceite_Motor/#Control:pass/#Value")
+    }
+    if (titulo == "Aprobar_Aceite_Diferencial" ){
+        pass = context.evaluateTargetPath("#Page:Aprobar_Aceite_Diferencial/#Control:pass/#Value")
+    }
+    if (titulo == "Aprobar_Aceite_Hidraulico" ){
+        pass = context.evaluateTargetPath("#Page:Aprobar_Aceite_Hidraulico/#Control:pass/#Value")
+    }
+    if (titulo == "Aprobar_Aceite_Reductor" ){
+        pass = context.evaluateTargetPath("#Page:Aprobar_Aceite_Reductor/#Control:pass/#Value")
+    }
+    if (titulo == "Aprobar_Aceite_Servotransmisor" ){
+        pass = context.evaluateTargetPath("#Page:Aprobar_Aceite_Servotransmisor/#Control:pass/#Value")
+    }
+    
     if (!pass || pass == '') {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -22,7 +40,7 @@ export default function ValidarAutorizar_Aceites(context) {
             "Message": "¿Estás seguro de que deseas autorizar la planilla? Al autorizarla, generará el movimiento correspondiente en el ERP.",
             "Title": "Autorizar Solicitud",
             "OKCaption": "Aceptar",
-            "OnOK": "/appconsumos_qa_mb/Rules/Aceites/LiquidarSolicitud_Motor_SAP.js",
+            "OnOK": "/appconsumos_qa_mb/Rules/Aceites/LiquidarSolicitud_Aceites_SAP.js",
             "CancelCaption": "Cancelar"
         }
     });

@@ -16,6 +16,7 @@ export default function Confirmar_Consumos_Aceite_Reductor(context) {
         const consumoData = {
             clase_mov: item.clase_mov,
             id_componente: item.id,
+            posicion: item.posicion,
             readLink: item["@odata.readLink"]
         };
         consumosAprobados.push(consumoData);
@@ -31,6 +32,7 @@ export default function Confirmar_Consumos_Aceite_Reductor(context) {
                 "Properties": {
                     "id": consumo.id_componente,
                     "clase_mov": consumo.clase_mov,
+                    "posicion": consumo.posicion
                 }
             }
         }).then(() => {
@@ -66,7 +68,14 @@ export default function Confirmar_Consumos_Aceite_Reductor(context) {
                 "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
                 "NavigateBackToPage": "/appconsumos_qa_mb/Pages/Aceites/Detalle_Aceite_Reductor.page" 
             });
+        }).then(() => {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+                "Properties": {
+                    "PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Aprobar_Aceite_Reductor.page"
+                }
+            });
         });
+       
     });
-
 }

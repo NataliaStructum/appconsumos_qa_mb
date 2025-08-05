@@ -71,7 +71,7 @@
 					},
 					"_Type": "Section.Type.ButtonTable",
 					"_Name": "SectionButtonTable0",
-					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas.js",
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_Botones_Planillas_Reductor.js",
 					"EmptySection": {
 						"FooterVisible": false
 					},
@@ -543,7 +543,7 @@
 	"_Name": "Registrar_Aceite_Reductores",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar18",
+		"_Name": "ActionBar19",
 		"_Type": "Control.Type.ActionBar"
 	}
 }
