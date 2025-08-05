@@ -150,7 +150,33 @@
 									"ReturnValue": "Y49"
 								}
 							]
-						},
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 1
+					},
+					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio.js",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				},
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell2",
+					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "pos_obj",
@@ -175,24 +201,7 @@
 								"Enabled": true,
 								"Placeholder": " Buscar posición..."
 							},
-							"PickerItems": {
-								"Target": {
-									"Service": "/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service",
-									"EntitySet": "getcompreserSet",
-									"QueryOptions": "/appconsumos_qa_mb/Rules/Aceites/Filtro_Pos_Orden_Aceites.js"
-								},
-								"ObjectCell": {
-									"Description": "Reserva: {Rsnum}",
-									"Footnote": "/appconsumos_qa_mb/Rules/Aceites/get_Cantidad_Disponible_Aceite.js",
-									"PreserveIconStackSpacing": false,
-									"StatusText": "Cant sol: {Bdmng}",
-									"Subhead": "Material: {Matnr}",
-									"SubstatusText": "Cant tomada: {Enmng}",
-									"Title": "Pos: {Rspos}",
-									"Visible": true
-								},
-								"ReturnValue": "{Rspos}"
-							}
+							"PickerItems": "/appconsumos_qa_mb/Rules/Aceites/get_Pos_Orden_Aceites_Motor.js"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -215,13 +224,7 @@
 					],
 					"Layout": {
 						"NumberOfColumns": 1
-					},
-					"Visible": "/appconsumos_qa_mb/Rules/Aceites/setVisible_formConsumosCambio.js",
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0"
+					}
 				},
 				{
 					"Header": {

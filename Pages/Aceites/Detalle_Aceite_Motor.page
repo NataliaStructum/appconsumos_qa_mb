@@ -160,7 +160,7 @@
 	"OnResume": "/appconsumos_qa_mb/Rules/Aceites/Redraw_Detalle_Planillas.js",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar19",
+		"_Name": "ActionBar20",
 		"_Type": "Control.Type.ActionBar"
 	},
 	"FioriToolbar": {
@@ -178,6 +178,27 @@
 				},
 				"OnPress": "/appconsumos_qa_mb/Rules/Aceites/NavTo_RevisarPlanillaAceiteMotor.js",
 				"Image": "sap-icon://write-new-document",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "ToolbarItem1",
+				"Visible": "/appconsumos_qa_mb/Rules/Aceites/set_VisibleBtnAutorizar_Motor.js",
+				"Title": "Autorizar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Aceites/Aprobar_Aceite_Motor.page"
+					}
+				},
+				"Image": "sap-icon://accounting-document-verification",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",

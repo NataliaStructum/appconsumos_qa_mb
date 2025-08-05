@@ -23,8 +23,8 @@ export default function Confirmar_Planilla_Aceite_Motor(context) {
     return context.executeAction({
         "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
         "Properties": {
-            "Title": `Rechazar Planilla`,
-            "Message": `¿Estás seguro de que deseas rechazar la planilla No.${clientDataFiltro.data_planilla_diferencial.numero} de Aceite Diferencial?`,
+            "Title": `Confirmar Planilla`,
+            "Message": `¿Estás seguro de que deseas confirmar la planilla No.${clientDataFiltro.data_planilla_motor.numero} de Aceite motor?`,
             "OKCaption": "Aceptar",
             "OnOK": "/appconsumos_qa_mb/Actions/oData/Update_Planilla_Aceite_Aprobar.action",
             "CancelCaption": "Cancelar"
