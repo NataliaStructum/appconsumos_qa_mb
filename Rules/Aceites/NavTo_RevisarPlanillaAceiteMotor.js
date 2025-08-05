@@ -11,6 +11,8 @@ export default function NavTo_RevisarPlanillaAceiteMotor(context) {
     clientData.cantCambio = 0
     clientData.total = 0
 
+    clientData.materiales_lista =[]
+
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async (results) => {
         clientData.total = results.length
         if (results && results.length > 0) {
