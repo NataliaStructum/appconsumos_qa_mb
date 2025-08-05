@@ -2,14 +2,41 @@
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
-export default function LiquidarSolicitud_Diferencial_SAP(context) {
+export default function LiquidarSolicitud_Aceites_SAP(context) {
+    
     //falta validar que el campo de contraseña si este diligenciado
     let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
 
-    let info_user = clientData_user.info_user;
-    let info_solicitud = clientData.data_planilla_motor;
+    let page = context.getPageProxy();
+    let titulo = page.getName();
+    let info_solicitud;
+    let pagina_Detalle;
+
+    if (titulo == "Aprobar_Aceite_Motor" ){
+        info_solicitud = clientData.data_planilla_motor;
+        pagina_Detalle = "Detalle_Aceite_Motor"
+    }
+    if (titulo == "Aprobar_Aceite_Diferencial" ){
+        info_solicitud = clientData.data_planilla_diferencial;
+        pagina_Detalle = "Detalle_Aceite_Diferencial"
+    }
+    if (titulo == "Aprobar_Aceite_Hidraulico" ){
+        info_solicitud = clientData.data_planilla_hidraulico;
+        pagina_Detalle = "Detalle_Aceite_Hidraulico"
+    }
+    if (titulo == "Aprobar_Aceite_Reductor" ){
+        info_solicitud = clientData.data_planilla_reductor;
+        pagina_Detalle = "Detalle_Aceite_Reductor"
+    }
+    if (titulo == "Aprobar_Aceite_Servotransmisor" ){
+        info_solicitud = clientData.data_planilla_servotrans;
+        pagina_Detalle = "Detalle_Aceite_Servotransmisor"
+    }
+    
     let id_solicitud = info_solicitud.id;
+    let info_user = clientData_user.info_user;
+
     let material = info_solicitud.material;
     let sociedad = info_solicitud.almacen_sociedad
     let centro;
@@ -205,7 +232,7 @@ export default function LiquidarSolicitud_Diferencial_SAP(context) {
                     return context.executeAction({
                         "Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
                         "Properties": {
-                            "NavigateBackToPage": "Detalle_Aceite_Diferencial"
+                            "NavigateBackToPage": pagina_Detalle
                         }
                     });
                 }
@@ -216,6 +243,5 @@ export default function LiquidarSolicitud_Diferencial_SAP(context) {
     }).catch((error) => {
         alert(`Error general liquidar: ${error.message || JSON.stringify(error)}`);
     });
-
 
 }

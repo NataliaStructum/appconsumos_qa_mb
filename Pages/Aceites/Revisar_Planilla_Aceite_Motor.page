@@ -201,7 +201,7 @@
 								"Enabled": true,
 								"Placeholder": " Buscar posición..."
 							},
-							"PickerItems": "/appconsumos_qa_mb/Rules/Aceites/get_Pos_Orden_Aceites_Motor.js"
+							"PickerItems": "/appconsumos_qa_mb/Rules/Aceites/get_Pos_Orden_Aceites.js"
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",

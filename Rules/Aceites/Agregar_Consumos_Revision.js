@@ -13,8 +13,6 @@ export default function Agregar_Consumos_Revision(context) {
     let clase_mov;
     let posicion;
 
-    
-
     if (registro_consumo_value.length < 1) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -42,7 +40,7 @@ export default function Agregar_Consumos_Revision(context) {
 
     if (registro_consumo_value[0].BindingObject.tipo === "Full") {
         clase_mov = "Y49"
-        posicion = ""
+        posicion = null
     }
 
 

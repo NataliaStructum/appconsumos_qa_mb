@@ -6,10 +6,14 @@ export default function Agregar_Consumos_Revision_Diferencial(context) {
     const pageProxy = context.getPageProxy();
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Aceite_Diferencial').getClientData();
     let registro_consumo_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Diferencial/#Control:registro_consumo/#Value');
-    let clmov_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Diferencial/#Control:orden_obj/#Value');
+    //let clmov_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Diferencial/#Control:orden_obj/#Value');
+
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
-    
-    if(registro_consumo_value.length < 1){
+
+    let clase_mov;
+    let posicion;
+
+    if (registro_consumo_value.length < 1) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
@@ -17,22 +21,30 @@ export default function Agregar_Consumos_Revision_Diferencial(context) {
                 "Message": `Debes seleccionar un consumo para continuar`
             }
         });
+
+    }
+    if (registro_consumo_value[0].BindingObject.tipo === "Cambio") {
+        let posicion_value = context.evaluateTargetPath('#Page:Revisar_Planilla_Aceite_Diferencial/#Control:pos_obj/#Value');
+        if (posicion_value.length < 1) {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+                "Properties": {
+                    "Title": "Posición No Seleccionada",
+                    "Message": `Debes seleccionar una posición para continuar`
+                }
+            });
+        }
+        clase_mov = "261"
+        posicion = posicion_value[0].ReturnValue
     }
 
-    if(clmov_value.length < 1){
-        return context.executeAction({
-            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-            "Properties": {
-                "Title": "Orden No Seleccionada",
-                "Message": `Debes seleccionar una clase de movimiento para continuar`
-            }
-        });
+    if (registro_consumo_value[0].BindingObject.tipo === "Full") {
+        clase_mov = "Y49"
+        posicion = null
     }
+
 
     let dataConsumo = registro_consumo_value[0].BindingObject
-    let clase_mov = clmov_value[0].ReturnValue
-    //tipoData = tipo[0].DisplayValue;
-    //tipoData = tipo[0].ReturnValue
 
     const duplicado = clientData.lista_revision_diferencial.filter(m => m.pos === dataConsumo.pos).length > 0
 
@@ -45,8 +57,9 @@ export default function Agregar_Consumos_Revision_Diferencial(context) {
             }
         });
     }
-    
+
     dataConsumo.clase_mov = clase_mov
+    dataConsumo.posicion = posicion
     clientData.lista_revision_diferencial.push(dataConsumo)
     list_component.redraw()
     return context.executeAction({
