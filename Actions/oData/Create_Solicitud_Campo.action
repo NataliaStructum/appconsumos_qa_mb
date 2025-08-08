@@ -31,6 +31,7 @@
 		"estado": "Enviado",
 		"correo_creacion": "#Page:Main/#ClientData/info_user/correo",
 		"tipo": "CAMPO",
-		"horometro": "#Page:Agregar_Solicitud_Campo/#Control:horometro/#Value"
+		"horometro": "#Page:Agregar_Solicitud_Campo/#Control:horometro/#Value",
+		"reabastecer": "#Page:Agregar_Solicitud_Campo/#Control:switch_reabastecer/#Value"
 	}
 }
