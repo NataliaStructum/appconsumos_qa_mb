@@ -121,9 +121,22 @@
 							"IsEditable": true,
 							"Search": {
 								"Mode": "Persistent",
+								"AdditionalProperties": [
+									"material",
+									"material_desc"
+								],
 								"Enabled": true,
 								"Placeholder": "Buscar Material...",
-								"BarcodeScanner": true
+								"BarcodeScanner": true,
+								"Options": {
+									"CaseSensitive": false,
+									"NumberSearch": {
+										"Enabled": false
+									},
+									"UseSearchOverFilter": {
+										"Enabled": false
+									}
+								}
 							},
 							"PickerItems": {
 								"Target": {
