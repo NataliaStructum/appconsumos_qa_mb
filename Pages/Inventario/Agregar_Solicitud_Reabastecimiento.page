@@ -156,6 +156,10 @@
 							"AllowDefaultValueIfOneItem": false,
 							"IsEditable": true,
 							"Search": {
+								"AdditionalProperties": [
+									"material",
+									"material_desc"
+								],
 								"Enabled": true,
 								"Placeholder": "Buscar Material ..."
 							},
