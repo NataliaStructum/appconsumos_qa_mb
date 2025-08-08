@@ -373,6 +373,7 @@ let appconsumos_qa_mb_rules_campo_borrar_material_lista_js = __webpack_require__
 let appconsumos_qa_mb_rules_campo_borrar_materiales_revision_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Borrar_Materiales_Revision_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Borrar_Materiales_Revision_Campo.js")
 let appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js")
 let appconsumos_qa_mb_rules_campo_confirmarsolicitudcampo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ConfirmarSolicitudCampo.js")
+let appconsumos_qa_mb_rules_campo_crear_solicitud_reabast_automatica_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Crear_Solicitud_Reabast_Automatica.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Crear_Solicitud_Reabast_Automatica.js")
 let appconsumos_qa_mb_rules_campo_create_componentes_solicitud_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js")
 let appconsumos_qa_mb_rules_campo_firmarsolicitud_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/FirmarSolicitud_Campo.js")
 let appconsumos_qa_mb_rules_campo_get_date_creacion_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/get_Date_creacion.js")
@@ -899,6 +900,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_borrar_materiales_revision_campo_js : appconsumos_qa_mb_rules_campo_borrar_materiales_revision_campo_js,
 	appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js : appconsumos_qa_mb_rules_campo_color_estado_sol_campo_js,
 	appconsumos_qa_mb_rules_campo_confirmarsolicitudcampo_js : appconsumos_qa_mb_rules_campo_confirmarsolicitudcampo_js,
+	appconsumos_qa_mb_rules_campo_crear_solicitud_reabast_automatica_js : appconsumos_qa_mb_rules_campo_crear_solicitud_reabast_automatica_js,
 	appconsumos_qa_mb_rules_campo_create_componentes_solicitud_js : appconsumos_qa_mb_rules_campo_create_componentes_solicitud_js,
 	appconsumos_qa_mb_rules_campo_firmarsolicitud_campo_js : appconsumos_qa_mb_rules_campo_firmarsolicitud_campo_js,
 	appconsumos_qa_mb_rules_campo_get_date_creacion_js : appconsumos_qa_mb_rules_campo_get_date_creacion_js,
@@ -10392,6 +10394,176 @@ function ConfirmarSolicitudCampo(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Crear_Solicitud_Reabast_Automatica.js":
+/*!***********************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Crear_Solicitud_Reabast_Automatica.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Crear_Solicitud_Reabast_Automatica)
+/* harmony export */ });
+/* harmony import */ var _guid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../guid */ "./build.definitions/appconsumos_qa_mb/Rules/guid.js");
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+
+
+async function Crear_Solicitud_Reabast_Automatica(context) {
+  try {
+    const info_solicitud = context.binding;
+    const id_solicitud_campo = info_solicitud.id;
+    const filtroSolicitud = `$filter=id eq ${id_solicitud_campo}`;
+    const filtroComponentes = `$filter=solicitud_id eq ${id_solicitud_campo}`;
+
+    // Función optimizada para agrupar por almacén
+    function agruparPorAlmacen(lista) {
+      return lista.reduce((acc, item) => {
+        const almacen = item.almacen_almacen;
+        if (!acc[almacen]) {
+          acc[almacen] = [];
+        }
+        acc[almacen].push(item);
+        return acc;
+      }, {});
+    }
+
+    // Leer solicitud principal
+    const resultsSolicitud = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Solicitudes', [], filtroSolicitud);
+    if (resultsSolicitud.length === 0) {
+      alert('No se encontró la solicitud');
+      return;
+    }
+    const solicitud = resultsSolicitud.getItem(0);
+
+    // Leer componentes de la solicitud
+    const resultsComponentes = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtroComponentes);
+    if (resultsComponentes.length === 0) {
+      alert('No se encontraron componentes para la solicitud');
+      return;
+    }
+
+    // Agrupar componentes por almacén
+    const componentesAgrupados = agruparPorAlmacen(resultsComponentes);
+    const almacenes = Object.keys(componentesAgrupados);
+
+    // Procesar cada almacén en paralelo
+    const promesasSolicitudes = almacenes.map(async almacen => {
+      const itemsDelAlmacen = componentesAgrupados[almacen];
+      try {
+        // Crear solicitud de abastecimiento
+        let id_creacion = (0,_guid__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+        const nuevaSolicitud = await context.executeAction({
+          Name: "/appconsumos_qa_mb/Actions/oData/Create_SolicitudApp_Abastecimiento.action",
+          Properties: {
+            "Properties": {
+              "id": id_creacion,
+              "operario_ficha": solicitud.operario_ficha,
+              "almacen_sociedad": solicitud.almacen_sociedad,
+              "almacen_almacen": almacen,
+              "almacen_centro": solicitud.almacen_centro,
+              "observaciones_tec": `Solicitud creada con reabastecimiento automático de materiales consumidos en CAMPO en el almacén ${solicitud.almacen_almacen}.`,
+              "estado": "Enviado",
+              "correo_creacion": solicitud.correo_creacion,
+              "tipo": "ABASTECIMIENTO"
+            },
+            "OnSuccess": ""
+          }
+        });
+
+        //const idSolicitud_reabast = nuevaSolicitud.id;
+
+        // Crear todos los componentes en paralelo
+        const promesasComponentes = itemsDelAlmacen.map(async item => {
+          alert(`Procesando item ${item.id} (${item.material_material})`);
+          const props = {
+            id: (0,_guid__WEBPACK_IMPORTED_MODULE_0__["default"])(context),
+            solicitud_id: id_creacion,
+            cantidad_tomada: item.cantidad_aprobada,
+            material_material: item.material_material,
+            material_almacen: item.material_almacen,
+            material_centro: item.material_centro,
+            material_sociedad: item.material_sociedad
+          };
+          return context.executeAction({
+            Name: "/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action",
+            Properties: {
+              Properties: props
+            }
+          });
+        });
+
+        // Esperar a que todos los componentes se creen
+        const componentesCreados = await Promise.all(promesasComponentes);
+        return {
+          almacen,
+          solicitud: nuevaSolicitud,
+          componentes: componentesCreados
+        };
+      } catch (error) {
+        alert(`Error procesando almacén ${almacen}: ${error}`);
+        throw error;
+      }
+    });
+
+    // Esperar a que todas las solicitudes se procesen
+    const resultados = await Promise.all(promesasSolicitudes);
+    alert(`Procesamiento completado. Se crearon ${resultados.length} solicitudes de reabastecimiento.`);
+    return resultados;
+  } catch (error) {
+    alert(`Error en Crear_Solicitud_Reabast_Automatica: ${error}`);
+    throw error;
+  }
+}
+/*
+return context.executeAction({
+    Name: "/appconsumos_qa_mb/Actions/oData/Create_SolicitudApp_Abastecimiento.action",
+    Properties: {
+        "Properties": {
+            "id": guid(context),
+            "operario_ficha": solicitud.operario_ficha,
+            "almacen_sociedad": solicitud.almacen_sociedad,
+            "almacen_almacen": "solicitud.almacen_almacen",
+            "almacen_centro": solicitud.almacen_centro,
+            "observaciones_tec": `Solicitud creada con reabastecimiento automático de materiales consumidos en CAMPO en el almacén ${solicitud.almacen_almacen}.`,
+            "estado": "Enviado",
+            "correo_creacion": solicitud.correo_creacion,
+            "tipo": "ABASTECIMIENTO"
+        }
+    }
+}).then(async () => {
+    //Crear los componentes de solicitud de abast con componentes de solicitud de campo
+    const resultsComponentes = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ComponentesSolicitud', [], filtroComponentes);
+    if (resultsComponentes.length > 0) {
+        let promises = resultsComponentes.map(material => {
+            let props = {
+                id: guid(context),
+                solicitud_id: idSolicitud_reabast,
+                cantidad_tomada: material.cant,
+                material_material: material.material,
+                material_almacen: dataAlmacen.almacen,
+                material_centro: dataAlmacen.centro,
+                material_sociedad: dataAlmacen.sociedad,
+
+            };
+
+            return context.executeAction({
+                Name: "/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action",
+                Properties: {
+                    Properties: props
+                }
+            })
+        });
+    }
+})
+}
+*/
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js":
 /*!*****************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js ***!
@@ -11210,6 +11382,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ProcesarSolicitud_Campo_SAP)
 /* harmony export */ });
+/* harmony import */ var _Crear_Solicitud_Reabast_Automatica__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Crear_Solicitud_Reabast_Automatica */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Crear_Solicitud_Reabast_Automatica.js");
+
+
 /**
  * Describe this function...
  * @param {IClientAPI} context
@@ -11374,6 +11549,16 @@ function ProcesarSolicitud_Campo_SAP(context) {
           "Message": mensaje
         }
       });
+    }).then(async () => {
+      let filtroSolicitud = `$filter=id eq ${id_solicitud}`;
+      const results = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Solicitudes', [], filtroSolicitud);
+      if (results.length > 0) {
+        let value_reabastecer = results.getItem(0).reabastecer;
+        if (value_reabastecer) {
+          //se crea la solicitud de reabastecimiento
+          return (0,_Crear_Solicitud_Reabast_Automatica__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+        }
+      }
     });
   }).catch(error => {
     alert(`Error general: ${error.message || JSON.stringify(error)}`);
@@ -19472,7 +19657,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \**************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Res: {reserva}","Footnote":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Description":"{orden_desc}","SubstatusText":"Centro: {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/centro}","DetailImageIsCircular":false,"Tags":["#Page:Main/#ClientData/info_user/correo"],"BodyText":"{equipo} - {equipo_desc} ","HeadlineText":"Almacen: {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen} - {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Técnico *","PlaceHolder":"Ingresa el número de ficha","KeyboardType":"Number","AlternateInput":"Barcode","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Note","_Name":"observaciones","IsVisible":true,"Separator":false,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones en la solicitud","MinNumberOfLines":3,"Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"horometro","IsVisible":true,"Separator":true,"Caption":"Horometro","PlaceHolder":"Ingrese el horometro del equipo","KeyboardType":"Number","AlternateInput":"Barcode","Enabled":true,"IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Material","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"material","IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","Label":"Selecciona un material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleciona un material","HelperText":"Verifica que el material seleccionado provenga del almacén donde se realizó el consumo.","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","AdditionalProperties":["material","material_desc"],"Enabled":true,"Placeholder":"Buscar Material...","BarcodeScanner":true,"Options":{"CaseSensitive":false,"NumberSearch":{"Enabled":false},"UseSearchOverFilter":{"Enabled":false}}},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Inventario","QueryOptions":"$expand=almacen,und&$filter=almacen/tipo eq 'CAMPO' and almacen_sociedad eq '{{#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/sociedad}}'&$orderby=almacen_almacen","ReadLink":"{@odata.readLink}"},"ObjectCell":{"Description":"{material_desc}","DisplayDescriptionInMobile":true,"Footnote":"Disponible: {stock_disponible} {und/und_vz} / Reservado: {stock_disponible} {und/und_vz}","PreserveIconStackSpacing":false,"Subhead":"{almacen/almacen} - {almacen/almacen_desc}","Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Visible":true},"ReturnValue":"{almacen/almacen_desc} - {material}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"cantidad","IsVisible":true,"Separator":false,"Caption":"Cantidad *","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","AlternateInput":"None","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":false,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Agregar_Materiales_Solicitud.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay materiales aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Tomado de: {almacen/almacen_desc} ({almacen/almacen})","Description":"{material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant: {cant} de {stock_disponible} {und/und_vz}","PreserveIconStackSpacing":false,"AccessoryType":"DetailButton","AccessoryButtonIcon":"sap-icon://delete","AccessoryButtonText":"Borrar","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Campo/Borrar_Material_Lista.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Agregar_Solicitud_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"close","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estás seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Orden_Campo"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Solicitud de Formalización"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Formalización Campo","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js","Image":"sap-icon://save","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"No. Res: {reserva}","Footnote":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Description":"{orden_desc}","SubstatusText":"Centro: {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/centro}","DetailImageIsCircular":false,"Tags":["#Page:Main/#ClientData/info_user/correo"],"BodyText":"{equipo} - {equipo_desc} ","HeadlineText":"Almacen: {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen} - {#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen_desc}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"ficha","IsVisible":true,"Separator":false,"Caption":"Ficha Técnico *","PlaceHolder":"Ingresa el número de ficha","KeyboardType":"Number","AlternateInput":"Barcode","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Note","_Name":"observaciones","IsVisible":true,"Separator":false,"Caption":"Observaciones","PlaceHolder":"Ingresa observaciones en la solicitud","MinNumberOfLines":3,"Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"horometro","IsVisible":true,"Separator":true,"Caption":"Horometro","PlaceHolder":"Ingrese el horometro del equipo","KeyboardType":"Number","AlternateInput":"Barcode","Enabled":true,"IsEditable":true},{"Value":true,"_Type":"Control.Type.FormCell.Switch","_Name":"switch_reabastecer","IsVisible":true,"Separator":true,"Caption":"¿Reabastecer Automáticamente?","HelperText":"Marca esta opción para que, al autorizar la solicitud, se genere automáticamente una solicitud de abastecimiento con los materiales consumidos.","IsEditable":true}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Agregar Material","TextWrap":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"material","IsVisible":true,"Separator":false,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Material *","Label":"Selecciona un material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Seleciona un material","HelperText":"Verifica que el material seleccionado provenga del almacén donde se realizó el consumo.","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar Material...","BarcodeScanner":true},"PickerItems":{"Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Inventario","QueryOptions":"$expand=almacen,und&$filter=almacen/tipo eq 'CAMPO' and almacen_sociedad eq '{{#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/sociedad}}'&$orderby=almacen_almacen","ReadLink":"{@odata.readLink}"},"ObjectCell":{"Description":"{material_desc}","DisplayDescriptionInMobile":true,"Footnote":"Disponible: {stock_disponible} {und/und_vz} / Reservado: {stock_disponible} {und/und_vz}","PreserveIconStackSpacing":false,"Subhead":"{almacen/almacen} - {almacen/almacen_desc}","Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Visible":true},"ReturnValue":"{almacen/almacen_desc} - {material}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"cantidad","IsVisible":true,"Separator":false,"Caption":"Cantidad *","PlaceHolder":"Ingresa la cantidad del material","KeyboardType":"Number","AlternateInput":"None","HelperText":"Debe ser un número mayor a 0","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":false,"Styles":{"Image":"Button","Button":"Button"},"Title":"Agregar Material","Alignment":"Right","ButtonType":"Text","Semantic":"Tint","Image":"sap-icon://add-product","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/Agregar_Materiales_Solicitud.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Materiales.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay materiales aún","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Tomado de: {almacen/almacen_desc} ({almacen/almacen})","Description":"{material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Cant: {cant} de {stock_disponible} {und/und_vz}","PreserveIconStackSpacing":false,"AccessoryType":"DetailButton","AccessoryButtonIcon":"sap-icon://delete","AccessoryButtonText":"Borrar","Tags":[],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnAccessoryButtonPress":"/appconsumos_qa_mb/Rules/Campo/Borrar_Material_Lista.js","_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Expandable","Enabled":true,"Placeholder":"Buscar Material..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Agregar_Solicitud_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"close","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Estás seguro que quieres salir?","Title":"Confirmación","OKCaption":"Aceptar","OnOK":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Orden_Campo"}},"CancelCaption":"Cancelar"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Solicitud de Formalización"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Crear Formalización Campo","Styles":{"Image":"Button2","Button":"Button2"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js","Image":"sap-icon://save","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -20602,7 +20787,7 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
   \*****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_Solicitud_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error - {#ActionResults:Create_Solicitud_Campo/error}  ","Title":"Error al crear la solicitud ","OKCaption":"Ok"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js","ShowActivityIndicator":true,"ActivityIndicatorText":"Creando Solicitud de Campo","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes"},"Properties":{"id":"/appconsumos_qa_mb/Rules/guid.js","operario_ficha":"#Page:Agregar_Solicitud_Campo/#Control:ficha/#Value","almacen_sociedad":"#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/sociedad","almacen_almacen":"#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen","almacen_centro":"#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/centro","equipo_equipo":"{equipo}","orden_orden":"{orden}","reserva":"{reserva}","observaciones_tec":"#Page:Agregar_Solicitud_Campo/#Control:observaciones/#Value","estado":"Enviado","correo_creacion":"#Page:Main/#ClientData/info_user/correo","tipo":"CAMPO","horometro":"#Page:Agregar_Solicitud_Campo/#Control:horometro/#Value"}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Create_Solicitud_Campo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error - {#ActionResults:Create_Solicitud_Campo/error}  ","Title":"Error al crear la solicitud ","OKCaption":"Ok"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/Create_Componentes_Solicitud.js","ShowActivityIndicator":true,"ActivityIndicatorText":"Creando Solicitud de Campo","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes"},"Properties":{"id":"/appconsumos_qa_mb/Rules/guid.js","operario_ficha":"#Page:Agregar_Solicitud_Campo/#Control:ficha/#Value","almacen_sociedad":"#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/sociedad","almacen_almacen":"#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/almacen","almacen_centro":"#Page:Filtro_Campo/#Control:almacen_campo/#Value/#First/BindingObject/centro","equipo_equipo":"{equipo}","orden_orden":"{orden}","reserva":"{reserva}","observaciones_tec":"#Page:Agregar_Solicitud_Campo/#Control:observaciones/#Value","estado":"Enviado","correo_creacion":"#Page:Main/#ClientData/info_user/correo","tipo":"CAMPO","horometro":"#Page:Agregar_Solicitud_Campo/#Control:horometro/#Value","reabastecer":"#Page:Agregar_Solicitud_Campo/#Control:switch_reabastecer/#Value"}}
 
 /***/ }),
 

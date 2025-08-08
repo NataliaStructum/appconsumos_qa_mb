@@ -26,7 +26,7 @@
                     <NavigationPropertyBinding Path="und" Target="UnidadMedida"/>
                 </EntitySet>
                 <EntitySet Name="Solicitudes" EntityType="appconsumos_qa.Solicitudes">
-                    <NavigationPropertyBinding Path="operario" Target="EmpleadosApp"/>
+                    <NavigationPropertyBinding Path="operario" Target="Empleados"/>
                     <NavigationPropertyBinding Path="almacen" Target="AlmacenesApp"/>
                     <NavigationPropertyBinding Path="equipo" Target="Equipos"/>
                     <NavigationPropertyBinding Path="orden" Target="Ordenes"/>
@@ -209,7 +209,7 @@
                     <PropertyRef Name="id"/>
                 </Key>
                 <Property Name="id" Type="Edm.Guid" Nullable="false"/>
-                <NavigationProperty Name="operario" Type="appconsumos_qa.EmpleadosApp">
+                <NavigationProperty Name="operario" Type="appconsumos_qa.Empleados">
                     <ReferentialConstraint Property="operario_ficha" ReferencedProperty="ficha"/>
                 </NavigationProperty>
                 <Property Name="operario_ficha" Type="Edm.String" MaxLength="8"/>
@@ -247,6 +247,7 @@
                 <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="16"/>
                 <Property Name="horometro" Type="Edm.Decimal" Precision="13" Scale="3"/>
+                <Property Name="reabastecer" Type="Edm.Boolean"/>
             </EntityType>
             <EntityType Name="ComponentesSolicitud">
                 <Key>
@@ -398,8 +399,6 @@
                 <Property Name="id" Type="Edm.Guid" Nullable="false"/>
                 <Property Name="op_ficha" Type="Edm.String" MaxLength="8"/>
                 <Property Name="op_nombre" Type="Edm.String" MaxLength="100"/>
-                <Property Name="op_rol" Type="Edm.String"/>
-                <Property Name="op_isAdmin" Type="Edm.Boolean" DefaultValue="false"/>
                 <Property Name="op_cargo" Type="Edm.String" MaxLength="25"/>
                 <Property Name="op_sociedad" Type="Edm.String" MaxLength="4"/>
                 <Property Name="alm_sociedad" Type="Edm.String" MaxLength="4"/>
@@ -437,6 +436,7 @@
                 <Property Name="fecha_autorizado" Type="Edm.DateTimeOffset" Precision="7"/>
                 <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="16"/>
+                <Property Name="horometro" Type="Edm.Decimal" Precision="13" Scale="3"/>
             </EntityType>
             <ComplexType Name="item">
                 <Property Name="alce" Type="Edm.String"/>

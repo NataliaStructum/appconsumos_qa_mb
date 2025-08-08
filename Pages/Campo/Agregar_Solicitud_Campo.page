@@ -71,6 +71,16 @@
 							"AlternateInput": "Barcode",
 							"Enabled": true,
 							"IsEditable": true
+						},
+						{
+							"Value": true,
+							"_Type": "Control.Type.FormCell.Switch",
+							"_Name": "switch_reabastecer",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "¿Reabastecer Automáticamente?",
+							"HelperText": "Marca esta opción para que, al autorizar la solicitud, se genere automáticamente una solicitud de abastecimiento con los materiales consumidos.",
+							"IsEditable": true
 						}
 					],
 					"Layout": {
@@ -121,22 +131,9 @@
 							"IsEditable": true,
 							"Search": {
 								"Mode": "Persistent",
-								"AdditionalProperties": [
-									"material",
-									"material_desc"
-								],
 								"Enabled": true,
 								"Placeholder": "Buscar Material...",
-								"BarcodeScanner": true,
-								"Options": {
-									"CaseSensitive": false,
-									"NumberSearch": {
-										"Enabled": false
-									},
-									"UseSearchOverFilter": {
-										"Enabled": false
-									}
-								}
+								"BarcodeScanner": true
 							},
 							"PickerItems": {
 								"Target": {
