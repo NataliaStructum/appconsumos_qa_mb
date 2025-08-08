@@ -172,7 +172,7 @@
 						"Subhead": "Tomado de: {almacen}",
 						"Description": "{material_desc}",
 						"DisplayDescriptionInMobile": true,
-						"SubstatusText": "Cant aprobada: {cant_apro} de {cant_sol} {und}",
+						"SubstatusText": "Cant apro: {cant_apro} de {cant_sol} {und}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"AccessoryButtonIcon": "sap-icon://delete",

@@ -10,7 +10,7 @@ export default function Initialize(context) {
 
     //You can add more service initialize actions here
 
-    return Promise.all([_app_consumos_qa, ZBODEGA_AGO_SRV, _app_consumos_qa_v2, ZAMANAGE_LOGISTIC]).then(() => {
+    return Promise.allSettled([_app_consumos_qa, ZBODEGA_AGO_SRV, _app_consumos_qa_v2, ZAMANAGE_LOGISTIC]).then(() => {
         // After Initializing the DB connections
 
         // Display successful initialization  message to the user

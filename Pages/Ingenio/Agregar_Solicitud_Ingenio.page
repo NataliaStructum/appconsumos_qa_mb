@@ -42,7 +42,7 @@
 							"_Name": "ficha",
 							"IsVisible": true,
 							"Separator": false,
-							"Caption": "Ficha Operario *",
+							"Caption": "Ficha Técnico *",
 							"PlaceHolder": "Ingresa el número de ficha",
 							"KeyboardType": "Number",
 							"AlternateInput": "Barcode",

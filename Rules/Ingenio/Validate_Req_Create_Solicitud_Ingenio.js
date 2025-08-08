@@ -7,7 +7,7 @@ export default function Validate_Req_Create_Solicitud_Ingenio(context) {
     clientDataDetalle.lista_materiales
     let ficha = context.evaluateTargetPath('#Page:Agregar_Solicitud_Ingenio/#Control:ficha/#Value');
     if(ficha){
-        return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=ficha eq '${ficha}'`).then(async (results) => {
+        return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Empleados', [], `$filter=ficha eq '${ficha}'`).then(async (results) => {
             if (results && results.length > 0) {
                 
                 if(clientDataDetalle.lista_materiales && clientDataDetalle.lista_materiales.length > 0 ){

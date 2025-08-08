@@ -11,6 +11,7 @@
 				{
 					"ObjectHeader": {
 						"Subhead": "Reserva: {reserva}",
+						"Footnote": "Horometro: {horometro}",
 						"Description": "{equipo_equipo} - {equipo/equipo_desc}",
 						"StatusText": "{almacen_almacen}- {almacen/almacen_desc}",
 						"SubstatusText": "Sociedad: {almacen_sociedad}",

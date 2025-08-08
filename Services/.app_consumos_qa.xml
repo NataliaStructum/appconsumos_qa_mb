@@ -57,6 +57,7 @@
                 </EntitySet>
                 <EntitySet Name="VerSolicitudesAbiertas" EntityType="appconsumos_qa.VerSolicitudesAbiertas"/>
                 <ActionImport Name="generatePDF" Action="appconsumos_qa.generatePDF"/>
+                <ActionImport Name="firmarPDFRes" Action="appconsumos_qa.firmarPDFRes"/>
                 <ActionImport Name="firmarPDF" Action="appconsumos_qa.firmarPDF"/>
                 <ActionImport Name="sendmail" Action="appconsumos_qa.sendmail"/>
                 <ActionImport Name="AddMaterialRes" Action="appconsumos_qa.AddMaterialRes"/>
@@ -245,6 +246,7 @@
                 <Property Name="fecha_autorizado" Type="Edm.DateTimeOffset" Precision="7"/>
                 <Property Name="comentarios_aux" Type="Edm.String" MaxLength="240"/>
                 <Property Name="tipo" Type="Edm.String" MaxLength="16"/>
+                <Property Name="horometro" Type="Edm.Decimal" Precision="13" Scale="3"/>
             </EntityType>
             <EntityType Name="ComponentesSolicitud">
                 <Key>
@@ -478,17 +480,30 @@
                 <Property Name="EntryUom" Type="Edm.String"/>
                 <Property Name="RES_ITEM" Type="Edm.String"/>
                 <Property Name="RESERV_NO" Type="Edm.String"/>
+                <Property Name="ORDERID" Type="Edm.String"/>
+                <Property Name="SGTXT" Type="Edm.String"/>
+                <Property Name="BKTXT" Type="Edm.String"/>
             </ComplexType>
             <Action Name="generatePDF" IsBound="false">
                 <Parameter Name="data" Type="appconsumos_qa.header"/>
                 <Parameter Name="image" Type="Edm.String"/>
                 <Parameter Name="items" Type="Collection(appconsumos_qa.item)" Nullable="false"/>
                 <Parameter Name="logo" Type="Edm.String"/>
+                <Parameter Name="tipo" Type="Edm.String"/>
+                <ReturnType Type="Edm.String"/>
+            </Action>
+            <Action Name="firmarPDFRes" IsBound="false">
+                <Parameter Name="pdf" Type="Edm.String"/>
+                <Parameter Name="image" Type="Edm.String"/>
+                <Parameter Name="tipo" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
             </Action>
             <Action Name="firmarPDF" IsBound="false">
                 <Parameter Name="pdf" Type="Edm.String"/>
                 <Parameter Name="image" Type="Edm.String"/>
+                <Parameter Name="tipo" Type="Edm.String"/>
+                <Parameter Name="nombre" Type="Edm.String"/>
+                <Parameter Name="ficha" Type="Edm.String"/>
                 <ReturnType Type="Edm.String"/>
             </Action>
             <Action Name="sendmail" IsBound="false">
