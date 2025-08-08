@@ -140,7 +140,7 @@
 	"_Name": "Detalle_Orden_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar8",
+		"_Name": "ActionBar9",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Detalle Orden"
 	},
@@ -152,7 +152,7 @@
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem0",
 				"Visible": true,
-				"Title": "Crear Solicitud",
+				"Title": "Crear Formalización ",
 				"Styles": {
 					"Image": "Button",
 					"Button": "Button"

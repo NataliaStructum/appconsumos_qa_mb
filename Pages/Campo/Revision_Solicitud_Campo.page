@@ -446,7 +446,7 @@
 						"Description": "{material/material_desc}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "Op: {operacion}",
-						"SubstatusText": "Cant aprobada: {cant} de {cantidad_tomada} {material/und}",
+						"SubstatusText": "Cant apro: {cant} de {cantidad_tomada} {material/und/und_vz}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"AccessoryButtonIcon": "sap-icon://delete",

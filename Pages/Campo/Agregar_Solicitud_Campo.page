@@ -42,7 +42,7 @@
 							"_Name": "ficha",
 							"IsVisible": true,
 							"Separator": false,
-							"Caption": "Ficha Operario *",
+							"Caption": "Ficha Técnico *",
 							"PlaceHolder": "Ingresa el número de ficha",
 							"KeyboardType": "Number",
 							"AlternateInput": "Barcode",
@@ -57,6 +57,18 @@
 							"Caption": "Observaciones",
 							"PlaceHolder": "Ingresa observaciones en la solicitud",
 							"MinNumberOfLines": 3,
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "horometro",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Horometro",
+							"PlaceHolder": "Ingrese el horometro del equipo",
+							"KeyboardType": "Number",
+							"AlternateInput": "Barcode",
 							"Enabled": true,
 							"IsEditable": true
 						}
@@ -288,7 +300,7 @@
 		],
 		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar",
-		"Caption": "Nueva Solicitud Campo"
+		"Caption": "Solicitud de Formalización"
 	},
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",
@@ -298,7 +310,7 @@
 				"_Type": "FioriToolbarItem.Type.Button",
 				"_Name": "ToolbarItem0",
 				"Visible": true,
-				"Title": "Crear Solicitud Campo",
+				"Title": "Crear Formalización Campo",
 				"Styles": {
 					"Image": "Button2",
 					"Button": "Button2"

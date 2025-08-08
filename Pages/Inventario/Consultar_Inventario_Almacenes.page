@@ -46,7 +46,7 @@
 							"_Type": "ObjectCell.Type.ContextMenu"
 						},
 						"Title": "{Matnr}",
-						"Subhead": "Almacén: {Lgort}",
+						"Subhead": "Almacén: {Lgort} - {Lgobe}",
 						"Description": "{Txtmd}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{Werks}",
@@ -103,7 +103,7 @@
 	"_Name": "Consultar_Inventario_Almacenes",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar8",
+		"_Name": "ActionBar9",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Consultar Inventario"
 	}
