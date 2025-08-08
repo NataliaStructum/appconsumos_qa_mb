@@ -30,6 +30,7 @@
 		"observaciones_tec": "#Page:Agregar_Solicitud_Campo/#Control:observaciones/#Value",
 		"estado": "Enviado",
 		"correo_creacion": "#Page:Main/#ClientData/info_user/correo",
-		"tipo": "CAMPO"
+		"tipo": "CAMPO",
+		"horometro": "#Page:Agregar_Solicitud_Campo/#Control:horometro/#Value"
 	}
 }
