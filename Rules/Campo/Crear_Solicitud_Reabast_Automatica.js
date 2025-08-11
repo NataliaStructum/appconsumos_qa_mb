@@ -85,7 +85,7 @@ export default async function Crear_Solicitud_Reabast_Automatica(context) {
 
                 // Crear todos los componentes en paralelo
                 const promesasComponentes = itemsDelAlmacen.map(async (item) => {
-                    alert(`Procesando item ${item.id} (${item.material_material})`);
+                    
                     
                     const props = {
                         id: guid(context),
