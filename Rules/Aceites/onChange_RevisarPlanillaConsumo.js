@@ -58,15 +58,16 @@ export default async function onChange_RevisarPlanillaConsumo(context) {
             })
         
             const resjson = res.data.d.results;
-            alert(JSON.stringify(resjson))
+            //alert(JSON.stringify(resjson))
         
             const resultadoListPicker = [];
         
             for (const item of resjson) {
                 var solicitada = item.Bdmng
                 var tomada = item.Enmng
-                var unidad = item.Erfme
-                let disponible = solicitada - tomada;
+                var unidad = item.Meins
+                let disponible = parseFloat(solicitada) - parseFloat(tomada);
+                //alert(disponible)
                 let value_disponible;
                 if (disponible > 0) {
                     value_disponible = `Disponible: ${disponible} ${unidad}`;
@@ -87,7 +88,7 @@ export default async function onChange_RevisarPlanillaConsumo(context) {
                     ReturnValue: item.Rspos
                 });
             }
-            alert(resultadoListPicker)
+            //alert(resultadoListPicker)
             clientDataDetalle.materiales_lista = resultadoListPicker
             form_cell_dos.redraw()
             pos_obj.redraw()

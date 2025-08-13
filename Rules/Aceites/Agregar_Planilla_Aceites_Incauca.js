@@ -14,7 +14,7 @@ export default function Agregar_Planilla_Aceites_Incauca(context) {
             }
         });
     }
-    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'EmpleadosApp', [], `$filter=ficha eq '${fichaOperario}'`).then((results) => {
+    return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Empleados', [], `$filter=ficha eq '${fichaOperario}'`).then((results) => {
         if (!results || results.length === 0) {
             return context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
