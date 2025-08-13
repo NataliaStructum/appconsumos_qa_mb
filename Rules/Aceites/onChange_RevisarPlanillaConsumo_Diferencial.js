@@ -64,8 +64,8 @@ export default async function onChange_RevisarPlanillaConsumo_Diferencial(contex
             for (const item of resjson) {
                 var solicitada = item.Bdmng
                 var tomada = item.Enmng
-                var unidad = item.Erfme
-                let disponible = solicitada - tomada;
+                var unidad = item.Meins
+                let disponible = parseFloat(solicitada) - parseFloat(tomada);
                 let value_disponible;
                 if (disponible > 0) {
                     value_disponible = `Disponible: ${disponible} ${unidad}`;
