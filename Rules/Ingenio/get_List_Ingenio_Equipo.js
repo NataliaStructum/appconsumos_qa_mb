@@ -4,6 +4,10 @@ export default function get_List_Ingenio_Equipo(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
 
+    let clienDataUser = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+    let info_user = clienDataUser.info_user
+    let sociedad = info_user.sociedad
+
     if (equipos.length < 1) {
         clientData.lista_ingenio = [];
         return list_component.redraw();
@@ -18,8 +22,13 @@ export default function get_List_Ingenio_Equipo(context) {
 
     filtro = filtro.slice(0, -4); // Elimina último ' or '
 
-    // Agrega condición para excluir orden_desc que contiene 'CAMPO, INSPECCION Y MTTO'
-    filtro += ") and not contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+    if (sociedad === 'AI01') {
+        filtro += ")";
+    }
+    if (sociedad === 'AI08') {
+        // Agrega condición para excluir orden_desc que contiene 'CAMPO, INSPECCION Y MTTO'
+        filtro += ") and not contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+    }
 
     let query = filtro + "&$orderby=fecha_creacion desc";
 

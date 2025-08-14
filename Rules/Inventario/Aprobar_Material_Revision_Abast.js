@@ -25,7 +25,10 @@ export default function Aprobar_Material_Revision_Abast(context) {
     var index = almacen[0].SelectedIndex
     //var data = clientData.listaInventario[index].BindingObject
     let dataAlm = clientDataMaterial.listaInventario[index].BindingObject
-    let stock = dataAlm.Labst
+    let stock = parseFloat(dataAlm.Labst)
+    cant = parseFloat(cant)
+    
+
 
     if (!cant || cant < 0) {
         return context.executeAction({
@@ -37,22 +40,22 @@ export default function Aprobar_Material_Revision_Abast(context) {
         });
     }
 
-    if(cant > stock){
-        return context.executeAction({
-            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-            "Properties": {
-                "Title": "Alerta",
-                "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und y la solicitada es de ${data.cantidad_tomada}`
-            }
-        });
-    }
-
     if(cant > data.cantidad_tomada){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
                 "Title": "Alerta",
-                "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und y la solicitada es de ${data.cantidad_tomada}`
+                "Message": `La cantidad ingresada excede la solicitada. Intentas aprobar ${cant} und, pero la solicitud es de ${data.cantidad_tomada}`
+            }
+        });
+    }
+
+    if(stock < cant){
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "No hay stock disponible",
+                "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible en stock es de ${stock} und y la cantidad a aprobar es de ${cant}`
             }
         });
     }

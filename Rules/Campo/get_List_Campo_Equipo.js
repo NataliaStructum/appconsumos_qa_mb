@@ -7,6 +7,9 @@ export default function get_List_Campo_Equipo(context) {
     let equipos = context.evaluateTargetPath('#Page:Lista_Ordenes_Campo/#Control:filtro_equipos/#Value');
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
     var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
+    let clienDataUser = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+    let info_user = clienDataUser.info_user
+    let sociedad = info_user.sociedad
 
     if (equipos.length < 1) {
         clientData.lista_campo = [];
@@ -21,7 +24,15 @@ export default function get_List_Campo_Equipo(context) {
     });
     filtro = filtro.slice(0, -4); // Eliminar el último ' or '
 
-    filtro += ") and contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+    if (sociedad === 'AI01') {
+        filtro += ")";
+    }
+
+    if (sociedad === 'AI08') {
+        filtro += ") and contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+    }
+
+
 
     let query = filtro + "&$orderby=fecha_creacion desc";
 
