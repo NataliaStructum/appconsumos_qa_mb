@@ -20,6 +20,7 @@ export default function FirmarSolicitud_Abast(context) {
     let almacen = BindingData.almacen.almacen_desc
     let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
     const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar/#Value");
+    const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar_aux/#Value");
     let logo;
     if (sociedad == 'AI08') {
         let logo_pro = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/logo_pro.global');
@@ -48,47 +49,42 @@ export default function FirmarSolicitud_Abast(context) {
 
 
     function sendEmail(pdf) {
-        return context.executeAction({
-            "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
-            "Properties": {
-                "ShowActivityIndicator": true,
-                "ActivityIndicatorText": "Enviando correo ...",
-                "OnFailure": "",
-                "OnSuccess": "",
-                "Target": {
-                    "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-                    "Path": "/sendmail",
-                    "RequestProperties": {
-                        "Method": "POST",
-                        "Body": {
-                            "to": `${correo_enviar}`,
-                            "subject": "PDF Abastecimiento - Salida",
-                            "body": `Adjunto PDF salida de materiales desde aplicación Abastecimiento.`,
-                            "nombre": "salida_campo.pdf",
-                            "adj": `${pdf}`
-                        },
-
+        const enviar = (correo) => {
+            return context.executeAction({
+                "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+                "Properties": {
+                    "ShowActivityIndicator": true,
+                    "ActivityIndicatorText": "Enviando correos ...",
+                    "OnFailure": "",
+                    "OnSuccess": "",
+                    "Target": {
+                        "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                        "Path": "/sendmail",
+                        "RequestProperties": {
+                            "Method": "POST",
+                            "Body": {
+                                "to": correo,
+                                "subject": "PDF Abastecimiento - Salida",
+                                "body": `Adjunto PDF salida de materiales desde aplicación Abastecimiento.`,
+                                "nombre": "salida_campo.pdf",
+                                "adj": `${pdf}`
+                            }
+                        }
                     }
                 }
-            }
-        })/*.then((result) => {
-            if (result && result.data) {
-                //alert(JSON.stringify(result))
-                return;
-            }
+            });
+        };
 
-        }).catch((error) => {
-            //alert("Error al enviar correo1:\n" + (error.message || error));
-            return context.executeAction({
-                "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-                "Properties": {
-                    "Title": "Error al enviar correo",
-                    "Message": error.error.message,
-                    "OKCaption": "Aceptar"
+        // Enviar al primer correo
+        return enviar(correo_enviar)
+            .then(() => {
+                // Si existe el segundo correo, enviar también
+                if (correo_enviar_aux) {
+                    return enviar(correo_enviar_aux);
                 }
             });
-        });*/
     }
+
 
 
     const reqdata = {
@@ -110,6 +106,7 @@ export default function FirmarSolicitud_Abast(context) {
                     sap = e.mat_nuevo
                     desc = e.mat_nuevo_desc
                 }
+                //alert(JSON.stringify(e))
                 if (typeof e.material_material === 'string') {
                     sap = e.material_material
                     desc = e.material.material_desc
@@ -150,13 +147,13 @@ export default function FirmarSolicitud_Abast(context) {
                 }
             }).then((result) => {
                 if (result && result.data) {
-                    let error = false
+                    let iserror = false
 
                     //context.b64Data = result.data.value
                     clientDataAutorizar.b64Data = result.data.value
                     return sendEmail(result.data.value)
                         .catch((error) => {
-                            error = true
+                            iserror = true
                             alert(`Error al enviar correo - ${error}`)
                             return;
                             /*return context.executeAction({
@@ -169,7 +166,7 @@ export default function FirmarSolicitud_Abast(context) {
                         })
                         .then((result) => {
 
-                            if (!error) {
+                            if (!iserror) {
                                 context.executeAction({
                                     "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                                     "Properties": {

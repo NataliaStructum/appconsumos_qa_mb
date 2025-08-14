@@ -7,6 +7,7 @@ export default function Autorizar_Solicitud_Abast(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:FormCellInlineSignatureCapture0/#Value");
     const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar/#Value");
+    const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar_aux/#Value");
     clientData.b64Data = ""
     if (!signatureObject) {
         return context.executeAction({
@@ -34,7 +35,17 @@ export default function Autorizar_Solicitud_Abast(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Correo Inválido",
+                "Title": "Correo Inválido Autorizador",
+                "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
+            }
+        });
+    }
+
+    if (!regexCorreo.test(correo_enviar_aux)) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Correo Inválido Auxiliar",
                 "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
             }
         });

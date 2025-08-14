@@ -22,6 +22,16 @@ export default function set_Contador_Inicial_Reductor(context) {
 
     const filtro = `$filter=planilla_id eq ${id_planilla}`;
 
+    if (!clientData.esHoy) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Acción No Permitida",
+                "Message": `No es posible registrar consumos. Esta planilla corresponde al día de ayer. Por favor, envie la planilla.`,
+                "OKCaption": "Cerrar"
+            }
+        });
+    }
     //Leer los datos de items planilla
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async (results) => {
         //si hay items en la planilla
