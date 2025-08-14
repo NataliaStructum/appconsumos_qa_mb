@@ -422,6 +422,7 @@ let appconsumos_qa_mb_rules_get_fechahoracol_js = __webpack_require__(/*! ./appc
 let appconsumos_qa_mb_rules_get_info_usuario_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Info_Usuario.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Info_Usuario.js")
 let appconsumos_qa_mb_rules_get_now_datetime_col_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Now_DateTime_Col.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Now_DateTime_Col.js")
 let appconsumos_qa_mb_rules_get_now_datetime_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Now_Datetime.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Now_Datetime.js")
+let appconsumos_qa_mb_rules_get_yest_datetime_col_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/get_Yest_DateTime_Col.js */ "./build.definitions/appconsumos_qa_mb/Rules/get_Yest_DateTime_Col.js")
 let appconsumos_qa_mb_rules_guid_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/guid.js */ "./build.definitions/appconsumos_qa_mb/Rules/guid.js")
 let appconsumos_qa_mb_rules_ingenio_agregar_material_revision_ingenio_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Agregar_Material_Revision_Ingenio.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Agregar_Material_Revision_Ingenio.js")
 let appconsumos_qa_mb_rules_ingenio_agregar_materiales_solicitud_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Ingenio/Agregar_Materiales_Solicitud.js */ "./build.definitions/appconsumos_qa_mb/Rules/Ingenio/Agregar_Materiales_Solicitud.js")
@@ -949,6 +950,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_get_info_usuario_js : appconsumos_qa_mb_rules_get_info_usuario_js,
 	appconsumos_qa_mb_rules_get_now_datetime_col_js : appconsumos_qa_mb_rules_get_now_datetime_col_js,
 	appconsumos_qa_mb_rules_get_now_datetime_js : appconsumos_qa_mb_rules_get_now_datetime_js,
+	appconsumos_qa_mb_rules_get_yest_datetime_col_js : appconsumos_qa_mb_rules_get_yest_datetime_col_js,
 	appconsumos_qa_mb_rules_guid_js : appconsumos_qa_mb_rules_guid_js,
 	appconsumos_qa_mb_rules_ingenio_agregar_material_revision_ingenio_js : appconsumos_qa_mb_rules_ingenio_agregar_material_revision_ingenio_js,
 	appconsumos_qa_mb_rules_ingenio_agregar_materiales_solicitud_js : appconsumos_qa_mb_rules_ingenio_agregar_materiales_solicitud_js,
@@ -3972,12 +3974,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ NavTo_Crear_Registro_Consumo)
 /* harmony export */ });
 /* harmony import */ var _get_Now_DateTime_Col__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../get_Now_DateTime_Col */ "./build.definitions/appconsumos_qa_mb/Rules/get_Now_DateTime_Col.js");
+/* harmony import */ var _get_Yest_DateTime_Col__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../get_Yest_DateTime_Col */ "./build.definitions/appconsumos_qa_mb/Rules/get_Yest_DateTime_Col.js");
 /**
  * Describe this function...
  * @param {IClientAPI} clientAPI
  */
 
-function NavTo_Crear_Registro_Consumo(context) {
+
+async function NavTo_Crear_Registro_Consumo(context) {
   let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
   const almacen_aceites = context.evaluateTargetPath('#Page:Filtro_Aceites/#Control:almacen_aceites/#Value');
   clientData.centro_aceite_registro = almacen_aceites[0].BindingObject.centro;
@@ -3990,9 +3994,18 @@ function NavTo_Crear_Registro_Consumo(context) {
   clientData.data_planilla_servotrans = null;
   let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
   let info = clientData_user.info_user;
+  clientData.esHoy = true;
   const dataAlmacen = almacen_aceites[0].BindingObject;
   const fechaHoy = (0,_get_Now_DateTime_Col__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
-  const filtro = `$expand=almacen,operario&$filter=cast('${fechaHoy}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
+  const fechaAyer = (0,_get_Yest_DateTime_Col__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
+  const filtroAyerPendiente = `$filter=cast('${fechaAyer}', Edm.Date) eq fecha and ` + `almacen_almacen eq '${dataAlmacen.almacen}' and ` + `almacen_centro eq '${dataAlmacen.centro}' and ` + `estado eq 'Pendiente'`;
+  const resAyer = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'PlanillasAceites', [], filtroAyerPendiente);
+  let filtro = `$expand=almacen,operario&$filter=cast('${fechaHoy}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
+  const hayPendientesAyer = resAyer && resAyer.length > 0;
+  if (hayPendientesAyer) {
+    filtro = `$expand=almacen,operario&$filter=cast('${fechaAyer}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
+    clientData.esHoy = false;
+  }
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'PlanillasAceites', [], filtro).then(async results => {
     if (results && results.length > 0) {
       let resultados = results;
@@ -6350,10 +6363,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Select_Almacen_Aceites)
 /* harmony export */ });
 /* harmony import */ var _get_Now_DateTime_Col__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../get_Now_DateTime_Col */ "./build.definitions/appconsumos_qa_mb/Rules/get_Now_DateTime_Col.js");
+/* harmony import */ var _get_Yest_DateTime_Col__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../get_Yest_DateTime_Col */ "./build.definitions/appconsumos_qa_mb/Rules/get_Yest_DateTime_Col.js");
 /**
  * Describe this function...
  * @param {IClientAPI} context
  */
+
 
 async function Select_Almacen_Aceites(context) {
   const pageProxy = context.getPageProxy();
@@ -6371,16 +6386,48 @@ async function Select_Almacen_Aceites(context) {
   }
   const dataAlmacen = almacen_aceites[0].BindingObject;
   const fechaHoy = (0,_get_Now_DateTime_Col__WEBPACK_IMPORTED_MODULE_0__["default"])(context);
+  const fechaAyer = (0,_get_Yest_DateTime_Col__WEBPACK_IMPORTED_MODULE_1__["default"])(context);
   const filtro = `$filter=cast('${fechaHoy}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
-
+  const filtroAyerPendiente = `$filter=cast('${fechaAyer}', Edm.Date) eq fecha and ` + `almacen_almacen eq '${dataAlmacen.almacen}' and ` + `almacen_centro eq '${dataAlmacen.centro}' and ` + `estado eq 'Pendiente'`;
   // Habilita boton validar por defecto
   //btn_registrar.setEnabled(true);
   btn_validar.setEnabled(true);
   try {
-    const results = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'PlanillasAceites', [], filtro);
-    const tieneDatos = results && results.length > 0;
-    btn_crear.setEnabled(!tieneDatos);
-    btn_registrar.setEnabled(tieneDatos);
+    //Hacer solo si es un técnico
+
+    let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+    let info_user = clientData.info_user;
+    if (info_user.rol == 'Técnico') {
+      // 1) Validar si hay pendientes del día anterior
+      const resAyer = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'PlanillasAceites', [], filtroAyerPendiente);
+
+      //alert(JSON.stringify(resAyer))
+      //alert( resAyer.length)
+
+      const hayPendientesAyer = resAyer && resAyer.length > 0;
+      if (hayPendientesAyer) {
+        // Bloquear creación y avisar
+        btn_crear.setEnabled(false);
+        btn_registrar.setEnabled(true); // opcional: si quieres bloquear todo
+        return context.executeAction({
+          "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+          "Properties": {
+            "Title": "Planillas pendientes",
+            "Message": "No puedes crear planillas para hoy hasta enviar todas las planillas del día anterior que están en estado Pendiente.",
+            "OKCaption": "Aceptar"
+          }
+        });
+        // No continuamos con la validación de hoy
+      }
+
+      // 2) Si no hay pendientes de ayer, aplicar la lógica de hoy
+      const results = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'PlanillasAceites', [], filtro);
+      const tieneDatos = results && results.length > 0;
+      //alert(tieneDatos)
+      //alert(JSON.stringify(results))
+      btn_crear.setEnabled(!tieneDatos);
+      btn_registrar.setEnabled(tieneDatos);
+    }
   } catch (error) {
     btn_crear.setEnabled(false);
     btn_registrar.setEnabled(false);
@@ -8556,6 +8603,16 @@ function set_Contador_Inicial_Diferencial(context) {
   let id_planilla = clientData.data_planilla_diferencial.id;
   let cantidad_ini;
   const filtro = `$filter=planilla_id eq ${id_planilla}`;
+  if (!clientData.esHoy) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Acción No Permitida",
+        "Message": `No es posible registrar consumos. Esta planilla corresponde al día de ayer. Por favor, envie la planilla.`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  }
 
   //Leer los datos de items planilla
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async results => {
@@ -8646,6 +8703,16 @@ function set_Contador_Inicial_Hidraulico(context) {
   let id_planilla = clientData.data_planilla_hidraulico.id;
   let cantidad_ini;
   const filtro = `$filter=planilla_id eq ${id_planilla}`;
+  if (!clientData.esHoy) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Acción No Permitida",
+        "Message": `No es posible registrar consumos. Esta planilla corresponde al día de ayer. Por favor, envie la planilla.`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  }
 
   //Leer los datos de items planilla
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async results => {
@@ -8736,6 +8803,16 @@ function set_Contador_Inicial_Motor(context) {
   let id_planilla = clientData.data_planilla_motor.id;
   let cantidad_ini;
   const filtro = `$filter=planilla_id eq ${id_planilla}`;
+  if (!clientData.esHoy) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Acción No Permitida",
+        "Message": `No es posible registrar consumos. La planilla corresponde al día de ayer. Esta planilla corresponde al día de ayer. Por favor, cierre la planilla.`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  }
 
   //Leer los datos de items planilla
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async results => {
@@ -8826,7 +8903,16 @@ function set_Contador_Inicial_Reductor(context) {
   let id_planilla = clientData.data_planilla_reductor.id;
   let cantidad_ini;
   const filtro = `$filter=planilla_id eq ${id_planilla}`;
-
+  if (!clientData.esHoy) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Acción No Permitida",
+        "Message": `No es posible registrar consumos. Esta planilla corresponde al día de ayer. Por favor, envie la planilla.`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  }
   //Leer los datos de items planilla
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async results => {
     //si hay items en la planilla
@@ -8916,6 +9002,16 @@ function set_Contador_Inicial_Servotransmisor(context) {
   let id_planilla = clientData.data_planilla_servotrans.id;
   let cantidad_ini;
   const filtro = `$filter=planilla_id eq ${id_planilla}`;
+  if (!clientData.esHoy) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Acción No Permitida",
+        "Message": `No es posible registrar consumos. Esta planilla corresponde al día de ayer. Por favor, envie la planilla.`,
+        "OKCaption": "Cerrar"
+      }
+    });
+  }
 
   //Leer los datos de items planilla
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'ItemPlanillasAceites', [], filtro).then(async results => {
@@ -13819,6 +13915,7 @@ async function PDF_Ingenio(context) {
   let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
   const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
   const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar/#Value");
+  const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar_aux/#Value");
   let signatureContent;
   let tipo;
   if (platform.isAndroid) {
@@ -13877,27 +13974,38 @@ async function PDF_Ingenio(context) {
         context.b64Data = pdfFirmado;
 
         // Enviar correo
-        await context.executeAction({
-          "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
-          "Properties": {
-            "ShowActivityIndicator": true,
-            "ActivityIndicatorText": "Enviando correo ...",
-            "OnFailure": "",
-            "OnSuccess": "",
-            "Target": {
-              "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-              "Path": "/sendmail",
-              "RequestProperties": {
-                "Method": "POST",
-                "Body": {
-                  "to": `${correo_enviar}`,
-                  "subject": "PDF Ingenio - Autorización",
-                  "body": "Adjunto PDF firmado desde aplicación Ingenio.",
-                  "nombre": "ingenio_firmado.pdf",
-                  "adj": `${pdfFirmado}`
+
+        const enviar = correo => {
+          return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+            "Properties": {
+              "ShowActivityIndicator": true,
+              "ActivityIndicatorText": "Enviando correo ...",
+              "OnFailure": "",
+              "OnSuccess": "",
+              "Target": {
+                "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                "Path": "/sendmail",
+                "RequestProperties": {
+                  "Method": "POST",
+                  "Body": {
+                    "to": `${correo}`,
+                    "subject": "PDF Ingenio - Autorización",
+                    "body": "Adjunto PDF firmado desde aplicación Ingenio.",
+                    "nombre": "ingenio_firmado.pdf",
+                    "adj": `${pdfFirmado}`
+                  }
                 }
               }
             }
+          });
+        };
+
+        // Enviar al primer correo
+        enviar(correo_enviar).then(() => {
+          // Si existe el segundo correo, enviar también
+          if (correo_enviar_aux) {
+            return enviar(correo_enviar_aux);
           }
         });
 
@@ -14614,6 +14722,7 @@ function ValidarAutorizar_Ingenio(context) {
   const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
   const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
   const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar/#Value");
+  const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar_aux/#Value");
 
   //clientData.b64Data = ""
 
@@ -14642,7 +14751,16 @@ function ValidarAutorizar_Ingenio(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
       "Properties": {
-        "Title": "Correo Inválido",
+        "Title": "Correo Inválido Autorizador",
+        "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
+      }
+    });
+  }
+  if (!regexCorreo.test(correo_enviar_aux)) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Correo Inválido Auxiliar",
         "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
       }
     });
@@ -15414,6 +15532,7 @@ function Autorizar_Solicitud_Abast(context) {
   let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitud_Reabastecimieto').getClientData();
   const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:FormCellInlineSignatureCapture0/#Value");
   const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar/#Value");
+  const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar_aux/#Value");
   clientData.b64Data = "";
   if (!signatureObject) {
     return context.executeAction({
@@ -15440,7 +15559,16 @@ function Autorizar_Solicitud_Abast(context) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
       "Properties": {
-        "Title": "Correo Inválido",
+        "Title": "Correo Inválido Autorizador",
+        "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
+      }
+    });
+  }
+  if (!regexCorreo.test(correo_enviar_aux)) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Correo Inválido Auxiliar",
         "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
       }
     });
@@ -16120,6 +16248,7 @@ function FirmarSolicitud_Abast(context) {
   let almacen = BindingData.almacen.almacen_desc;
   let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
   const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar/#Value");
+  const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Reabastecimiento/#Control:correo_enviar_aux/#Value");
   let logo;
   if (sociedad == 'AI08') {
     let logo_pro = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/logo_pro.global');
@@ -16144,44 +16273,39 @@ function FirmarSolicitud_Abast(context) {
     tipo = "IOS";
   }
   function sendEmail(pdf) {
-    return context.executeAction({
-      "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
-      "Properties": {
-        "ShowActivityIndicator": true,
-        "ActivityIndicatorText": "Enviando correo ...",
-        "OnFailure": "",
-        "OnSuccess": "",
-        "Target": {
-          "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-          "Path": "/sendmail",
-          "RequestProperties": {
-            "Method": "POST",
-            "Body": {
-              "to": `${correo_enviar}`,
-              "subject": "PDF Abastecimiento - Salida",
-              "body": `Adjunto PDF salida de materiales desde aplicación Abastecimiento.`,
-              "nombre": "salida_campo.pdf",
-              "adj": `${pdf}`
+    const enviar = correo => {
+      return context.executeAction({
+        "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+        "Properties": {
+          "ShowActivityIndicator": true,
+          "ActivityIndicatorText": "Enviando correos ...",
+          "OnFailure": "",
+          "OnSuccess": "",
+          "Target": {
+            "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+            "Path": "/sendmail",
+            "RequestProperties": {
+              "Method": "POST",
+              "Body": {
+                "to": correo,
+                "subject": "PDF Abastecimiento - Salida",
+                "body": `Adjunto PDF salida de materiales desde aplicación Abastecimiento.`,
+                "nombre": "salida_campo.pdf",
+                "adj": `${pdf}`
+              }
             }
           }
         }
+      });
+    };
+
+    // Enviar al primer correo
+    return enviar(correo_enviar).then(() => {
+      // Si existe el segundo correo, enviar también
+      if (correo_enviar_aux) {
+        return enviar(correo_enviar_aux);
       }
-    }); /*.then((result) => {
-          if (result && result.data) {
-              //alert(JSON.stringify(result))
-              return;
-          }
-        }).catch((error) => {
-          //alert("Error al enviar correo1:\n" + (error.message || error));
-          return context.executeAction({
-              "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-              "Properties": {
-                  "Title": "Error al enviar correo",
-                  "Message": error.error.message,
-                  "OKCaption": "Aceptar"
-              }
-          });
-        });*/
+    });
   }
   const reqdata = {
     fecha: (0,_get_FechaHoraCol_js__WEBPACK_IMPORTED_MODULE_2__["default"])(),
@@ -16202,6 +16326,7 @@ function FirmarSolicitud_Abast(context) {
           sap = e.mat_nuevo;
           desc = e.mat_nuevo_desc;
         }
+        //alert(JSON.stringify(e))
         if (typeof e.material_material === 'string') {
           sap = e.material_material;
           desc = e.material.material_desc;
@@ -16240,12 +16365,12 @@ function FirmarSolicitud_Abast(context) {
         }
       }).then(result => {
         if (result && result.data) {
-          let error = false;
+          let iserror = false;
 
           //context.b64Data = result.data.value
           clientDataAutorizar.b64Data = result.data.value;
           return sendEmail(result.data.value).catch(error => {
-            error = true;
+            iserror = true;
             alert(`Error al enviar correo - ${error}`);
             return;
             /*return context.executeAction({
@@ -16256,7 +16381,7 @@ function FirmarSolicitud_Abast(context) {
                 }
             });*/
           }).then(result => {
-            if (!error) {
+            if (!iserror) {
               context.executeAction({
                 "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                 "Properties": {
@@ -18780,6 +18905,37 @@ function get_Now_Datetime(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/get_Yest_DateTime_Col.js":
+/*!****************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/get_Yest_DateTime_Col.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ get_Yest_DateTime_Col)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function get_Yest_DateTime_Col(context) {
+  let fecha = new Date();
+
+  // Restar 1 día
+  fecha.setDate(fecha.getDate() - 1);
+  let dia = fecha.getDate().toString().padStart(2, '0');
+  let mes = (fecha.getMonth() + 1).toString().padStart(2, '0');
+  let anio = fecha.getFullYear();
+
+  // Formato YYYY-MM-DD
+  let fechaFormateada = `${anio}-${mes}-${dia}`;
+  return fechaFormateada;
+}
+
+/***/ }),
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/guid.js":
 /*!***********************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/guid.js ***!
@@ -19805,7 +19961,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ProfileHeader","_Name":"SectionProfileHeader0","Visible":true,"ProfileHeader":{"DetailImage":"sap-icon://my-view","DetailImageIsCircular":false,"Headline":"Usuario SAP :","Subheadline":"{#Page:Main/#ClientData/info_user/sapUsr}","Description":""}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"pass","IsVisible":true,"Separator":true,"Caption":"Contraseña SAP *","PlaceHolder":"Ingrese sus credenciales SAP","KeyboardType":"Password","AlternateInput":"None","HelperText":"*Verifica cuidadosamente la contraseña antes de enviarla. Después de 3 intentos fallidos, el usuario será bloqueado.","Enabled":true,"IsEditable":true},{"Value":"#Page:Main/#ClientData/info_user/correo","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo_enviar","IsVisible":true,"Separator":true,"Caption":"Correo Destinatario","PlaceHolder":"PlaceHolder","KeyboardType":"Email","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar Orden Mantenimiento *","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Autorizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://validate","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js","OnPress":"/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Seguro que desea cancelar la autorización? Se perderán todos los datos registrados","Title":"Confirmación","OKCaption":"Aceptar","OnOK":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","CancelCaption":"Cancelar"}}}],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Ingenio"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ProfileHeader","_Name":"SectionProfileHeader0","Visible":true,"ProfileHeader":{"DetailImage":"sap-icon://my-view","DetailImageIsCircular":false,"Headline":"Usuario SAP :","Subheadline":"{#Page:Main/#ClientData/info_user/sapUsr}","Description":""}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"pass","IsVisible":true,"Separator":true,"Caption":"Contraseña SAP *","PlaceHolder":"Ingrese sus credenciales SAP","KeyboardType":"Password","AlternateInput":"None","HelperText":"*Verifica cuidadosamente la contraseña antes de enviarla. Después de 3 intentos fallidos, el usuario será bloqueado.","Enabled":true,"IsEditable":true},{"Value":"#Page:Main/#ClientData/info_user/correo","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo_enviar","IsVisible":true,"Separator":true,"Caption":"Correo Destinatario del Autorizador","PlaceHolder":"Ingresa correo del autorizador","KeyboardType":"Email","Enabled":true,"IsEditable":true},{"Value":"{ap_correo}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo_enviar_aux","IsVisible":true,"Separator":true,"Caption":"Correo Destinatario del Auxiliar","PlaceHolder":"Ingresa correo del auxiliar","KeyboardType":"Email","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar Orden Mantenimiento *","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Autorizar","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://validate","ImagePosition":"Leading","Enabled":"/appconsumos_qa_mb/Rules/Ingenio/getEnabledAutorizar_Ingenio.js","OnPress":"/appconsumos_qa_mb/Rules/Ingenio/ValidarAutorizar_Ingenio.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Ingenio","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"¿Seguro que desea cancelar la autorización? Se perderán todos los datos registrados","Title":"Confirmación","OKCaption":"Aceptar","OnOK":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","CancelCaption":"Cancelar"}}}],"_Name":"ActionBar4","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Ingenio"}}
 
 /***/ }),
 
@@ -19905,7 +20061,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \********************************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar documento","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"Value":"#Page:Main/#ClientData/info_user/correo","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo_enviar","IsVisible":true,"Separator":true,"Caption":"Correo Destinatario","PlaceHolder":"PlaceHolder","KeyboardType":"Email","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Generar Documento Salida","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://arrow-right","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Autorizar_Solicitud_Abast.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitud_Reabastecimieto"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Abastecimiento"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.InlineSignatureCapture","_Name":"FormCellInlineSignatureCapture0","IsVisible":true,"Separator":true,"Caption":"Firmar documento","ShowTimestampInImage":true,"ShowXMark":true,"ShowUnderline":false,"WatermarkText":"","WatermarkTextMaxLines":3,"HelperText":"Toque para firmar"},{"Value":"#Page:Main/#ClientData/info_user/correo","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo_enviar","IsVisible":true,"Separator":true,"Caption":"Correo Destinatario del Autorizador","PlaceHolder":"Ingresa correo del autorizador","KeyboardType":"Email","Enabled":true,"IsEditable":true},{"Value":"{aprobador/correo}","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"correo_enviar_aux","IsVisible":true,"Separator":true,"Caption":"Correo Destinatario del Auxiliar","PlaceHolder":"Ingresa correo del auxiliar","KeyboardType":"Email","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Generar Documento Salida","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://arrow-right","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Inventario/Autorizar_Solicitud_Abast.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Autorizar_Solicitud_Reabastecimiento","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://decline","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":{"Name":"/appconsumos_qa_mb/Actions/CloseModalPage_Cancel.action","Properties":{"NavigateBackToPage":"Detalle_Solicitud_Reabastecimieto"}}}],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Autorizar Solicitud Abastecimiento"}}
 
 /***/ }),
 
@@ -20015,7 +20171,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = {"MainPage":"/appconsumos_qa_mb/Pages/Main.page","OnLaunch":["/appconsumos_qa_mb/Rules/Service/Initialize.js"],"OnWillUpdate":"/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/appconsumos_qa_mb/Rules/Service/Initialize.js","Styles":"/appconsumos_qa_mb/Styles/Styles.css","Version":"/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global","OnSuspend":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","OnResume":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","Localization":"/appconsumos_qa_mb/i18n/i18n.properties","_SchemaVersion":"24.11","_Name":"appconsumos_qa_mb","StyleSheets":{"Styles":{"css":"/appconsumos_qa_mb/Styles/Styles.light.css","ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}},"SDKStyles":{"ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}}
+module.exports = {"MainPage":"/appconsumos_qa_mb/Pages/Main.page","OnLaunch":["/appconsumos_qa_mb/Rules/Service/Initialize.js"],"OnExit":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","OnWillUpdate":"/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/appconsumos_qa_mb/Rules/Service/Initialize.js","Styles":"/appconsumos_qa_mb/Styles/Styles.css","Version":"/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global","OnSuspend":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","OnResume":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action","Localization":"/appconsumos_qa_mb/i18n/i18n.properties","_SchemaVersion":"24.11","_Name":"appconsumos_qa_mb","StyleSheets":{"Styles":{"css":"/appconsumos_qa_mb/Styles/Styles.light.css","ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}},"SDKStyles":{"ios":"/appconsumos_qa_mb/Styles/Styles.light.nss","android":"/appconsumos_qa_mb/Styles/Styles.light.json"}}
 
 /***/ }),
 

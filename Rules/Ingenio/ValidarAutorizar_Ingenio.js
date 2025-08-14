@@ -7,6 +7,7 @@ export default function ValidarAutorizar_Ingenio(context) {
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
     const pass = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:pass/#Value");
     const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar/#Value");
+    const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar_aux/#Value");
 
 
     //clientData.b64Data = ""
@@ -37,7 +38,17 @@ export default function ValidarAutorizar_Ingenio(context) {
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
             "Properties": {
-                "Title": "Correo Inválido",
+                "Title": "Correo Inválido Autorizador",
+                "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
+            }
+        });
+    }
+
+    if (!regexCorreo.test(correo_enviar_aux)) {
+        return context.executeAction({
+            "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+            "Properties": {
+                "Title": "Correo Inválido Auxiliar",
                 "Message": "El correo ingresado no es válido. Verifícalo e inténtalo de nuevo."
             }
         });

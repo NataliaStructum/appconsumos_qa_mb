@@ -3,7 +3,8 @@
  * @param {IClientAPI} clientAPI
  */
 import fechaFormateada from '../get_Now_DateTime_Col';
-export default function NavTo_Crear_Registro_Consumo(context) {
+import ayerfecha from '../get_Yest_DateTime_Col';
+export default async function NavTo_Crear_Registro_Consumo(context) {
     let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Aceites').getClientData();
     const almacen_aceites = context.evaluateTargetPath('#Page:Filtro_Aceites/#Control:almacen_aceites/#Value');
     clientData.centro_aceite_registro = almacen_aceites[0].BindingObject.centro
@@ -17,10 +18,34 @@ export default function NavTo_Crear_Registro_Consumo(context) {
     let clientData_user = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
     let info = clientData_user.info_user;
 
+    clientData.esHoy = true
 
     const dataAlmacen = almacen_aceites[0].BindingObject;
     const fechaHoy = fechaFormateada(context);
-    const filtro = `$expand=almacen,operario&$filter=cast('${fechaHoy}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
+    const fechaAyer = ayerfecha(context);
+
+    const filtroAyerPendiente =
+        `$filter=cast('${fechaAyer}', Edm.Date) eq fecha and ` +
+        `almacen_almacen eq '${dataAlmacen.almacen}' and ` +
+        `almacen_centro eq '${dataAlmacen.centro}' and ` +
+        `estado eq 'Pendiente'`;
+
+    const resAyer = await context.read(
+        '/appconsumos_qa_mb/Services/app_consumos_qa.service',
+        'PlanillasAceites',
+        [],
+        filtroAyerPendiente
+    );
+
+    let filtro = `$expand=almacen,operario&$filter=cast('${fechaHoy}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
+
+    const hayPendientesAyer = resAyer && resAyer.length > 0;
+
+    if(hayPendientesAyer){
+        filtro = `$expand=almacen,operario&$filter=cast('${fechaAyer}', Edm.Date) eq fecha and almacen_almacen eq '${dataAlmacen.almacen}' and almacen_centro eq '${dataAlmacen.centro}'`;
+        clientData.esHoy = false
+    }
+    
 
 
     return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'PlanillasAceites', [], filtro).then(async (results) => {
@@ -42,7 +67,7 @@ export default function NavTo_Crear_Registro_Consumo(context) {
                         clientData.data_planilla_reductor = item;
                     }
                 });
-            }else if (info.sociedad === 'AI01') {
+            } else if (info.sociedad === 'AI01') {
                 resultados.forEach((item) => {
                     const material = item.material;
                     if (material === '1417680') {
@@ -58,7 +83,7 @@ export default function NavTo_Crear_Registro_Consumo(context) {
                     }
                 });
             }
-            else{
+            else {
                 return context.executeAction({
                     "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
                     "Properties": {

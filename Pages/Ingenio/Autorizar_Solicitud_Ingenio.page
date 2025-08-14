@@ -55,8 +55,20 @@
 							"_Name": "correo_enviar",
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Correo Destinatario",
-							"PlaceHolder": "PlaceHolder",
+							"Caption": "Correo Destinatario del Autorizador",
+							"PlaceHolder": "Ingresa correo del autorizador",
+							"KeyboardType": "Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{ap_correo}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "correo_enviar_aux",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Correo Destinatario del Auxiliar",
+							"PlaceHolder": "Ingresa correo del auxiliar",
 							"KeyboardType": "Email",
 							"Enabled": true,
 							"IsEditable": true

@@ -3,6 +3,7 @@
 	"OnLaunch": [
 		"/appconsumos_qa_mb/Rules/Service/Initialize.js"
 	],
+	"OnExit": "/appconsumos_qa_mb/Actions/app_consumos_qa/Service/UploadOffline.action",
 	"OnWillUpdate": "/appconsumos_qa_mb/Rules/Application/OnWillUpdate.js",
 	"OnDidUpdate": "/appconsumos_qa_mb/Rules/Service/Initialize.js",
 	"Styles": "/appconsumos_qa_mb/Styles/Styles.less",

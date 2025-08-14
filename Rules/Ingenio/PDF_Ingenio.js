@@ -11,7 +11,8 @@ export default async function PDF_Ingenio(context) {
     let sender_email = context.getGlobalDefinition('/appconsumos_qa_mb/Globals/sender_user_email.global');
     const signatureObject = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:FormCellInlineSignatureCapture0/#Value");
     const correo_enviar = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar/#Value");
-    
+    const correo_enviar_aux = context.evaluateTargetPath("#Page:Autorizar_Solicitud_Ingenio/#Control:correo_enviar_aux/#Value");
+
     let signatureContent;
     let tipo;
 
@@ -77,29 +78,43 @@ export default async function PDF_Ingenio(context) {
                 context.b64Data = pdfFirmado;
 
                 // Enviar correo
-                await context.executeAction({
-                    "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
-                    "Properties": {
-                        "ShowActivityIndicator": true,
-                        "ActivityIndicatorText": "Enviando correo ...",
-                        "OnFailure": "",
-                        "OnSuccess": "",
-                        "Target": {
-                            "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
-                            "Path": "/sendmail",
-                            "RequestProperties": {
-                                "Method": "POST",
-                                "Body": {
-                                    "to": `${correo_enviar}`,
-                                    "subject": "PDF Ingenio - Autorización",
-                                    "body": "Adjunto PDF firmado desde aplicación Ingenio.",
-                                    "nombre": "ingenio_firmado.pdf",
-                                    "adj": `${pdfFirmado}`
+
+                const enviar = (correo) => {
+                    return context.executeAction({
+                        "Name": "/appconsumos_qa_mb/Actions/Call_Sendmail.action",
+                        "Properties": {
+                            "ShowActivityIndicator": true,
+                            "ActivityIndicatorText": "Enviando correo ...",
+                            "OnFailure": "",
+                            "OnSuccess": "",
+                            "Target": {
+                                "Service": "/appconsumos_qa_mb/Services/backend_REST.service",
+                                "Path": "/sendmail",
+                                "RequestProperties": {
+                                    "Method": "POST",
+                                    "Body": {
+                                        "to": `${correo}`,
+                                        "subject": "PDF Ingenio - Autorización",
+                                        "body": "Adjunto PDF firmado desde aplicación Ingenio.",
+                                        "nombre": "ingenio_firmado.pdf",
+                                        "adj": `${pdfFirmado}`
+                                    }
                                 }
                             }
                         }
-                    }
-                });
+                    });
+                };
+
+                // Enviar al primer correo
+                enviar(correo_enviar)
+                    .then(() => {
+                        // Si existe el segundo correo, enviar también
+                        if (correo_enviar_aux) {
+                            return enviar(correo_enviar_aux);
+                        }
+                    });
+
+
 
                 // Navegar a página anterior
                 await context.executeAction({
