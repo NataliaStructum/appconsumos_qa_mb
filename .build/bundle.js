@@ -12475,6 +12475,9 @@ function get_List_Campo_Equipo(context) {
   let equipos = context.evaluateTargetPath('#Page:Lista_Ordenes_Campo/#Control:filtro_equipos/#Value');
   let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Campo').getClientData();
   var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
+  let clienDataUser = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info_user = clienDataUser.info_user;
+  let sociedad = info_user.sociedad;
   if (equipos.length < 1) {
     clientData.lista_campo = [];
     return list_component.redraw();
@@ -12487,7 +12490,12 @@ function get_List_Campo_Equipo(context) {
   });
   filtro = filtro.slice(0, -4); // Eliminar el último ' or '
 
-  filtro += ") and contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+  if (sociedad === 'AI01') {
+    filtro += ")";
+  }
+  if (sociedad === 'AI08') {
+    filtro += ") and contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+  }
   let query = filtro + "&$orderby=fecha_creacion desc";
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Ordenes', [], query).then(async results => {
     if (results && results.length > 0) {
@@ -14820,6 +14828,9 @@ function get_List_Ingenio_Equipo(context) {
   let equipos = context.evaluateTargetPath('#Page:Lista_Ordenes_Ingenio/#Control:FormCellListPicker_Equipos_Ord/#Value');
   let clientData = context.evaluateTargetPathForAPI('#Page:Filtro_Ingenio').getClientData();
   var list_component = pageProxy.getControl("SectionedTable0").getSection("SectionObjectTable0");
+  let clienDataUser = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
+  let info_user = clienDataUser.info_user;
+  let sociedad = info_user.sociedad;
   if (equipos.length < 1) {
     clientData.lista_ingenio = [];
     return list_component.redraw();
@@ -14832,8 +14843,13 @@ function get_List_Ingenio_Equipo(context) {
   });
   filtro = filtro.slice(0, -4); // Elimina último ' or '
 
-  // Agrega condición para excluir orden_desc que contiene 'CAMPO, INSPECCION Y MTTO'
-  filtro += ") and not contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+  if (sociedad === 'AI01') {
+    filtro += ")";
+  }
+  if (sociedad === 'AI08') {
+    // Agrega condición para excluir orden_desc que contiene 'CAMPO, INSPECCION Y MTTO'
+    filtro += ") and not contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+  }
   let query = filtro + "&$orderby=fecha_creacion desc";
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Ordenes', [], query).then(async results => {
     if (results && results.length > 0) {
@@ -15287,7 +15303,8 @@ function Aprobar_Material_Revision_Abast(context) {
   var index = almacen[0].SelectedIndex;
   //var data = clientData.listaInventario[index].BindingObject
   let dataAlm = clientDataMaterial.listaInventario[index].BindingObject;
-  let stock = dataAlm.Labst;
+  let stock = parseFloat(dataAlm.Labst);
+  cant = parseFloat(cant);
   if (!cant || cant < 0) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -15297,21 +15314,21 @@ function Aprobar_Material_Revision_Abast(context) {
       }
     });
   }
-  if (cant > stock) {
-    return context.executeAction({
-      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-      "Properties": {
-        "Title": "Alerta",
-        "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und y la solicitada es de ${data.cantidad_tomada}`
-      }
-    });
-  }
   if (cant > data.cantidad_tomada) {
     return context.executeAction({
       "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
       "Properties": {
         "Title": "Alerta",
-        "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible es de ${stock} und y la solicitada es de ${data.cantidad_tomada}`
+        "Message": `La cantidad ingresada excede la solicitada. Intentas aprobar ${cant} und, pero la solicitud es de ${data.cantidad_tomada}`
+      }
+    });
+  }
+  if (stock < cant) {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "No hay stock disponible",
+        "Message": `Debes ingresar una cantidad menor para continuar. La cantidad disponible en stock es de ${stock} und y la cantidad a aprobar es de ${cant}`
       }
     });
   }
