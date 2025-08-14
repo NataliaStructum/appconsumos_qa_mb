@@ -174,7 +174,7 @@ export default function ProcesarSolicitud_Campo_SAP(context) {
         }).then(async () => {
             let filtroSolicitud = `$filter=id eq ${id_solicitud}`
             const results = await context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Solicitudes', [], filtroSolicitud);
-            if (results.length > 0) {
+            if (results.length > 0 && errores.length === 0) {
                 let value_reabastecer = results.getItem(0).reabastecer;
                 if (value_reabastecer) {
                     //se crea la solicitud de reabastecimiento
