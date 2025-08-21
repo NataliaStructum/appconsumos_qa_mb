@@ -72,7 +72,6 @@ let appconsumos_qa_mb_actions_logging_loguploadfailure_action = __webpack_requir
 let appconsumos_qa_mb_actions_logging_loguploadsuccessful_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/LogUploadSuccessful.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/LogUploadSuccessful.action")
 let appconsumos_qa_mb_actions_logging_uploadlog_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/UploadLog.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/UploadLog.action")
 let appconsumos_qa_mb_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action */ "./build.definitions/appconsumos_qa_mb/Actions/Logging/UploadLogProgress.action")
-let appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action")
 let appconsumos_qa_mb_actions_odata_create_almacenesapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_AlmacenesApp.action")
 let appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_ComponentesSolicitudApp.action")
 let appconsumos_qa_mb_actions_odata_create_empleadosapp_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action */ "./build.definitions/appconsumos_qa_mb/Actions/oData/Create_EmpleadosApp.action")
@@ -124,13 +123,8 @@ let appconsumos_qa_mb_actions_zamanage_logistic_service_initializeofflinefailure
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOffline.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineFailureMessage.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/CloseOfflineSuccessMessage.action")
-let appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action")
-let appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadstartedmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action")
 let appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeofflinefailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOfflineFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOfflineFailureMessage.action")
-let appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncfailuremessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action")
-let appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncstartedmessage_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action")
-let appconsumos_qa_mb_actions_zbodega_ago_srv_service_uploadoffline_action = __webpack_require__(/*! ./appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action */ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action")
 let appconsumos_qa_mb_globals_application_appdefinition_version_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/AppDefinition_Version.global")
 let appconsumos_qa_mb_globals_application_applicationname_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/ApplicationName.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/ApplicationName.global")
 let appconsumos_qa_mb_globals_application_supportemail_global = __webpack_require__(/*! ./appconsumos_qa_mb/Globals/Application/SupportEmail.global */ "./build.definitions/appconsumos_qa_mb/Globals/Application/SupportEmail.global")
@@ -600,7 +594,6 @@ module.exports = {
 	appconsumos_qa_mb_actions_logging_loguploadsuccessful_action : appconsumos_qa_mb_actions_logging_loguploadsuccessful_action,
 	appconsumos_qa_mb_actions_logging_uploadlog_action : appconsumos_qa_mb_actions_logging_uploadlog_action,
 	appconsumos_qa_mb_actions_logging_uploadlogprogress_action : appconsumos_qa_mb_actions_logging_uploadlogprogress_action,
-	appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action : appconsumos_qa_mb_actions_mensajes_ms_errorcreateempleadoapp_action,
 	appconsumos_qa_mb_actions_odata_create_almacenesapp_action : appconsumos_qa_mb_actions_odata_create_almacenesapp_action,
 	appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action : appconsumos_qa_mb_actions_odata_create_componentessolicitudapp_action,
 	appconsumos_qa_mb_actions_odata_create_empleadosapp_action : appconsumos_qa_mb_actions_odata_create_empleadosapp_action,
@@ -652,13 +645,8 @@ module.exports = {
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeoffline_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinefailuremessage_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_closeofflinesuccessmessage_action,
-	appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadoffline_action,
-	appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadstartedmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_downloadstartedmessage_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeoffline_action,
 	appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeofflinefailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_initializeofflinefailuremessage_action,
-	appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncfailuremessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncfailuremessage_action,
-	appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncstartedmessage_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_syncstartedmessage_action,
-	appconsumos_qa_mb_actions_zbodega_ago_srv_service_uploadoffline_action : appconsumos_qa_mb_actions_zbodega_ago_srv_service_uploadoffline_action,
 	appconsumos_qa_mb_globals_application_appdefinition_version_global : appconsumos_qa_mb_globals_application_appdefinition_version_global,
 	appconsumos_qa_mb_globals_application_applicationname_global : appconsumos_qa_mb_globals_application_applicationname_global,
 	appconsumos_qa_mb_globals_application_supportemail_global : appconsumos_qa_mb_globals_application_supportemail_global,
@@ -20297,7 +20285,7 @@ module.exports = {"_Type":"Action.Type.Message","Message":"Esta acción eliminar
   \****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"PopoverItems":[{"Enabled":true,"Icon":"sap-icon://synchronize","OnPress":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncStartedMessage.action","Title":"Sync Changes","Visible":"$(PLT,true,true,false)"},{"Enabled":true,"Icon":"sap-icon://headset","OnPress":"/appconsumos_qa_mb/Actions/Application/NavToSupport.action","Title":"Support","Visible":true},{"Enabled":true,"Icon":"sap-icon://refresh","OnPress":"/appconsumos_qa_mb/Actions/Application/AppUpdateProgressBanner.action","Title":"Check for Updates","Visible":"$(PLT,true,true,false)"},{"Enabled":true,"Icon":"sap-icon://hint","OnPress":"/appconsumos_qa_mb/Actions/Application/NavToAbout.action","Title":"About","Visible":true},{"Enabled":true,"Icon":"sap-icon://reset","OnPress":"/appconsumos_qa_mb/Actions/Application/ResetMessage.action","Title":"Reset","Visible":true},{"Enabled":true,"Icon":"sap-icon://log","OnPress":"/appconsumos_qa_mb/Actions/Application/Logout.action","Title":"Logout","Visible":"/appconsumos_qa_mb/Rules/Application/ClientIsMultiUserMode.js"}],"_Type":"Action.Type.PopoverMenu"}
+module.exports = {"_Type":"Action.Type.PopoverMenu","PopoverItems":[{"Enabled":true,"Icon":"sap-icon://synchronize","OnPress":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/SyncStartedMessage.action","Title":"Sincronizar","Visible":"$(PLT,true,true,false)"},{"Enabled":true,"Icon":"sap-icon://headset","OnPress":"/appconsumos_qa_mb/Actions/Application/NavToSupport.action","Title":"Ayuda","Visible":true},{"Enabled":true,"Icon":"sap-icon://refresh","OnPress":"/appconsumos_qa_mb/Actions/Application/AppUpdateProgressBanner.action","Title":"Buscar Actualizar","Visible":"$(PLT,true,true,false)"},{"Enabled":true,"Icon":"sap-icon://hint","OnPress":"/appconsumos_qa_mb/Actions/Application/NavToAbout.action","Title":"Acerca de","Visible":true},{"Enabled":true,"Icon":"sap-icon://reset","OnPress":"/appconsumos_qa_mb/Actions/Application/ResetMessage.action","Title":"Salir App","Visible":true},{"Enabled":true,"Icon":"sap-icon://log","OnPress":"/appconsumos_qa_mb/Actions/Application/Logout.action","Title":"Cerrar Sesión","Visible":"/appconsumos_qa_mb/Rules/Application/ClientIsMultiUserMode.js"}]}
 
 /***/ }),
 
@@ -20521,16 +20509,6 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
 
 /***/ }),
 
-/***/ "./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action":
-/*!***********************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Actions/Mensajes/ms_errorCreateEmpleadoApp.action ***!
-  \***********************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"ms_errorCreateEmpleadoApp"},"Message":"Falló en Crear el empleado - {#ActionResults:Create_EmpleadosApp/error}  ","Title":"Error","OKCaption":"Ok"}
-
-/***/ }),
-
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/ZAMANAGE_LOGISTIC/Service/CloseOffline.action":
 /*!***************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/ZAMANAGE_LOGISTIC/Service/CloseOffline.action ***!
@@ -20611,26 +20589,6 @@ module.exports = {"_Type":"Action.Type.ToastMessage","Message":" El servicio de 
 
 /***/ }),
 
-/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action":
-/*!****************************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action ***!
-  \****************************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.OfflineOData.Download","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Rules/ZBODEGA_AGO_SRV/ErrorArchive_CheckForSyncError.js","Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service","DefiningRequests":[{"Name":"ZBIW_MARDTSet","Query":"ZBIW_MARDTSet","AutomaticallyRetrievesStreams":true}]}
-
-/***/ }),
-
-/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action":
-/*!***********************************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action ***!
-  \***********************************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.ProgressBanner","OnSuccess":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadOffline.action","Message":"Descarga en proceso (ERP)...","CompletionMessage":"Descarga Exitosa","CompletionTimeout":3}
-
-/***/ }),
-
 /***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action":
 /*!******************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/InitializeOffline.action ***!
@@ -20648,36 +20606,6 @@ module.exports = {"_Type":"Action.Type.ODataService.Initialize","ActionResult":{
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.BannerMessage","Message":"No se pudo inicializar el servicio de datos de la aplicación - {#ActionResults:init/error}","Duration":7,"Animated":true}
-
-/***/ }),
-
-/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action":
-/*!*******************************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action ***!
-  \*******************************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.BannerMessage","Message":"La sincronización de los datos (ERP) falló - {#ActionResults:sync/error}","Duration":7,"Animated":true}
-
-/***/ }),
-
-/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action":
-/*!*******************************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncStartedMessage.action ***!
-  \*******************************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.ProgressBanner","OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action","Message":"Carga de datos del ERP en proceso...","CompletionMessage":"Sincronización Completa","CompletionTimeout":7}
-
-/***/ }),
-
-/***/ "./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action":
-/*!**************************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/UploadOffline.action ***!
-  \**************************************************************************************************/
-/***/ ((module) => {
-
-module.exports = {"_Type":"Action.Type.OfflineOData.Upload","ActionResult":{"_Name":"sync"},"OnFailure":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/SyncFailureMessage.action","OnSuccess":"/appconsumos_qa_mb/Actions/ZBODEGA_AGO_SRV/Service/DownloadStartedMessage.action","Service":"/appconsumos_qa_mb/Services/ZBODEGA_AGO_SRV.service"}
 
 /***/ }),
 
