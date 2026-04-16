@@ -7,29 +7,17 @@
 	},
 	"CF": {
 		"Target": "https://api.cf.us10-001.hana.ondemand.com",
-		"Organization": "7aeb1051-f376-490a-a497-6e09537a9c72",
-		"Space": "ff8da7b4-ab68-4732-bc64-7b7042519716",
-		"Deploy": {
-			"Description": "",
-			"WebClient": {
-				"Runtime": "",
-				"URL": ""
-			},
-			"Destination": [
-				{
-					"CF": "",
-					"MDK": "app.consumos.qa",
-					"URL": ""
-				}
-			]
-		}
+		"Organization": "727b9559-b976-4cc8-b1cd-a9b1e9e24745",
+		"Space": "ed6aae4a-0532-4da6-80d5-644d2bb4cfb9"
 	},
 	"MobileService": {
 		"Type": "standard",
-		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/7aeb1051-f376-490a-a497-6e09537a9c72/space/ff8da7b4-ab68-4732-bc64-7b7042519716",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/727b9559-b976-4cc8-b1cd-a9b1e9e24745/space/ed6aae4a-0532-4da6-80d5-644d2bb4cfb9",
 		"AppId": "app.consumos.qa",
 		"Destination": [
-			"app.consumos.qa"
+			"app.consumos.qa",
+			"ZBODEGA_AGO_SRV",
+			"ZAMANAGE_LOGISTIC"
 		]
 	},
 	"Onboarding": {

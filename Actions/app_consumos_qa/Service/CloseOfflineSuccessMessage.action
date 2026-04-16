@@ -1,8 +1,8 @@
 {
-    "Message": "Data service closed successfully",
-    "NumberOfLines": 1,
-    "Duration": 3,
-    "Animated": true,
-    "IsIconHidden": true,
-    "_Type": "Action.Type.ToastMessage"
+	"_Type": "Action.Type.ToastMessage",
+	"Message": "El servicio de datos se cerró correctamente",
+	"NumberOfLines": 1,
+	"Duration": 3,
+	"IsIconHidden": true,
+	"Animated": true
 }

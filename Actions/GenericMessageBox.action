@@ -1,8 +1,12 @@
 {
-    "_Type": "Action.Type.Message",
-    "ActionResult": {
-        "_Name": "GenericMessageBox"
-    },
-    "Message": "Message",
-    "OKCaption": "OK"
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "GenericMessageBox"
+	},
+	"Message": "Message",
+	"OKCaption": "OK",
+	"Styles": {
+		"OKButton": "ButtonText2",
+		"CancelButton": "ButtonText2"
+	}
 }

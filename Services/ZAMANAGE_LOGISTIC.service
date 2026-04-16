@@ -1,0 +1,6 @@
+{
+	"DestinationName": "ZAMANAGE_LOGISTIC",
+	"OfflineEnabled": false,
+	"SourceType": "Mobile",
+	"RestService": true
+}

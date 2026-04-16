@@ -1,3 +1,22 @@
 {
-    "css.customData": ["./.vscode/my-less.css-data.json"]
+    "css.customData": [
+        "./.vscode/my-less.css-data.json"
+    ],
+    "mdk.uieditor": {
+        "left": {
+            "visible": true,
+            "width": 308
+        },
+        "right": {
+            "visible": true,
+<<<<<<< HEAD
+            "width": 367
+        },
+        "device": "phone"
+=======
+            "width": 504
+        },
+        "device": "tablet"
+>>>>>>> develop
+    }
 }
