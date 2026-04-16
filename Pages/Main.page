@@ -34,7 +34,7 @@
 						"Subhead": "{#Application/#AppData/UserId}",
 						"Description": "Aplicación para llevar trazabilidad de consumos en Campo e Ingenio",
 						"DetailImageIsCircular": false,
-						"HeadlineText": "Consumos APP",
+						"HeadlineText": "Consumos APP QA",
 						"StatusPosition": "Stacked",
 						"StatusImagePosition": "Leading",
 						"SubstatusImagePosition": "Leading"
