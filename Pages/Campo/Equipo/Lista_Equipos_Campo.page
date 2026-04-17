@@ -132,12 +132,7 @@
 							"Avatars": [],
 							"ImageIsCircular": false
 						},
-						"OnPress": {
-							"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
-							"Properties": {
-								"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Equipo/Agregar_Solicitud_Equipos_Campo.page"
-							}
-						},
+						"OnPress": "/appconsumos_qa_mb/Rules/Campo/Equipo/NavTo_Agregar_Solicitud_CampoEquipo.js",
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
@@ -159,7 +154,7 @@
 	"_Name": "Lista_Equipos_Campo",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar3",
+		"_Name": "ActionBar4",
 		"_Type": "Control.Type.ActionBar",
 		"Caption": "Lista Equipos Campo"
 	}
