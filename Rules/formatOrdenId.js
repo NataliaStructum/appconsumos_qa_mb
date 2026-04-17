@@ -5,7 +5,7 @@
 export default function formatOrdenId(context) {
     let page = context.getPageProxy();
     let titulo = page.getName();
-    if (titulo == "Agregar_Solicitud_Campo" || titulo == "Detalle_Solicitudes_Campo" || titulo == "Detalle_Solicitudes_Ingenio") {
+    if (titulo == "Agregar_Solicitud_Campo" || titulo == "Detalle_Solicitudes_Ingenio") {
         //alert(JSON.stringify(context.binding.orden))
         let valor = context.binding.orden;
 
@@ -25,12 +25,19 @@ export default function formatOrdenId(context) {
     }
 
 
-    if (titulo == "Detalle_Orden_Campo" || titulo == "Lista_Ordenes_Campo" || titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Orden_Ingenio" || titulo == "Lista_Ordenes_Ingenio" || titulo == "Lista_Solicitudes_Ingenio") {
+    if (titulo == "Detalle_Orden_Campo" || titulo == "Lista_Ordenes_Campo" || titulo == "Detalle_Orden_Ingenio" || titulo == "Lista_Ordenes_Ingenio" || titulo == "Lista_Solicitudes_Ingenio") {
         let valor = context.binding.orden;
         let limpio = valor.replace(/^0+/, '');
 
         return limpio;
 
+    }
+
+    if (titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Solicitudes_Campo") {
+        let valor = context.binding.orden || context.binding.orden_orden;
+        if (!valor) return 'CONSUMO_EQ';
+        let limpio = valor.replace(/^0+/, '');
+        return `Orden: ${limpio}`;
     }
 
     if (titulo == "Lista_Historico_Ingenio" || titulo == "Detalle_Historico_Ingenio" || titulo == "Lista_Historico_Campo" || titulo == "Detalle_Historico_Campo") {

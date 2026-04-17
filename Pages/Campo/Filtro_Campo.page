@@ -36,6 +36,7 @@
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "almacen_campo",
+							"RequiredIndicator": false,
 							"IsVisible": true,
 							"Separator": true,
 							"AllowMultipleSelection": false,
@@ -72,6 +73,7 @@
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton0",
+							"RequiredIndicator": false,
 							"IsVisible": "/appconsumos_qa_mb/Rules/Campo/isVisible_Btn_CrearSolicitudes.js",
 							"Separator": true,
 							"Styles": {
@@ -89,7 +91,27 @@
 						},
 						{
 							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton3",
+							"RequiredIndicator": false,
+							"IsVisible": "/appconsumos_qa_mb/Rules/Campo/Equipo/isVisible_Btn_CrearSolicitudesEquipo.js",
+							"Separator": true,
+							"Styles": {
+								"Image": "Button",
+								"Button": "Button"
+							},
+							"Title": "Equipos y Crear Solicitudes",
+							"Alignment": "Center",
+							"ButtonType": "Primary",
+							"Semantic": "Tint",
+							"Image": "sap-icon://create-form",
+							"ImagePosition": "Leading",
+							"Enabled": false,
+							"OnPress": "/appconsumos_qa_mb/Rules/Campo/Equipo/NavTo_List_CampoEquipo.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton1",
+							"RequiredIndicator": false,
 							"IsVisible": true,
 							"Separator": true,
 							"Styles": {
@@ -108,6 +130,7 @@
 						{
 							"_Type": "Control.Type.FormCell.Button",
 							"_Name": "FormCellButton2",
+							"RequiredIndicator": false,
 							"IsVisible": "/appconsumos_qa_mb/Rules/Ingenio/isVisible_Btn_HistoricoSolicitudes.js",
 							"Separator": true,
 							"Styles": {

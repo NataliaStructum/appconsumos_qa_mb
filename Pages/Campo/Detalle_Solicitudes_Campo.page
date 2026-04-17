@@ -94,6 +94,7 @@
 							"Value": "{observaciones_tec}",
 							"_Type": "Control.Type.FormCell.Note",
 							"_Name": "FormCellNote0",
+							"RequiredIndicator": false,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones Técnico",
@@ -105,6 +106,7 @@
 							"Value": "{comentarios_aux}",
 							"_Type": "Control.Type.FormCell.Note",
 							"_Name": "FormCellNote1",
+							"RequiredIndicator": false,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Observaciones Auxiliar",
@@ -290,6 +292,29 @@
 				},
 				"Image": "sap-icon://paid-leave",
 				"Enabled": false,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Autorizar_Equipo",
+				"Visible": "/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnAutorizarEquipo.js",
+				"Title": "Autorizar Consumo",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Equipo/Autorizar_Solicitud_CampoEquipo.page",
+						"ModalPage": true,
+						"ModalPageFullscreen": true
+					}
+				},
+				"Image": "sap-icon://accounting-document-verification",
+				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
 				"ImagePosition": "Leading"
