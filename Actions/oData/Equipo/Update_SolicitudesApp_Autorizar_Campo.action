@@ -1,0 +1,31 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "Update_SolicitudesApp_Autorizar_Campo"
+	},
+	"OnFailure": {
+		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Error al actualizar la solicitud - {#ActionResults:Update_SolicitudesApp_Autorizar_Campo/error}",
+			"Title": "Error"
+		}
+	},
+	"OnSuccess": {
+		"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
+		"Properties": {
+			"NavigateBackToPage": "Detalle_Solicitudes_Campo"
+		}
+	},
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Actualizando Solicitud ...",
+	"Target": {
+		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
+		"EntitySet": "Solicitudes",
+		"QueryOptions": "$filter=id eq {{#Page:Autorizar_Solicitud_Campo/#ClientData/id_solicitud}}"
+	},
+	"Properties": {
+		"autorizador_ficha": "#Page:Main/#ClientData/info_user/ficha",
+		"estado": "Autorizado",
+		"fecha_autorizado": "/appconsumos_qa_mb/Rules/get_Now_Datetime.js"
+	}
+}
