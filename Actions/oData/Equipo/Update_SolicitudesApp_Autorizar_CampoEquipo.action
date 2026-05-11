@@ -1,18 +1,19 @@
 {
 	"_Type": "Action.Type.ODataService.UpdateEntity",
 	"ActionResult": {
-		"_Name": "Update_SolicitudesApp_Autorizar_Campo"
+		"_Name": "Update_SolicitudesApp_Autorizar_CampoEquipo"
 	},
 	"OnFailure": {
 		"Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
 		"Properties": {
-			"Message": "Error al actualizar la solicitud - {#ActionResults:Update_SolicitudesApp_Autorizar_Campo/error}",
+			"Message": "Error al actualizar la solicitud - {#ActionResults:Update_SolicitudesApp_Autorizar_CampoEquipo/error}",
 			"Title": "Error"
 		}
 	},
 	"OnSuccess": {
 		"Name": "/appconsumos_qa_mb/Actions/CloseModalPage_Complete.action",
 		"Properties": {
+			"DismissModal": "Action.Type.ClosePage.Completed",
 			"NavigateBackToPage": "Detalle_Solicitudes_Campo"
 		}
 	},
@@ -21,7 +22,7 @@
 	"Target": {
 		"Service": "/appconsumos_qa_mb/Services/app_consumos_qa.service",
 		"EntitySet": "Solicitudes",
-		"QueryOptions": "$filter=id eq {{#Page:Autorizar_Solicitud_Campo/#ClientData/id_solicitud}}"
+		"QueryOptions": "$filter=id eq {{#Page:Autorizar_Solicitud_CampoEquipo/#ClientData/id_solicitud}}"
 	},
 	"Properties": {
 		"autorizador_ficha": "#Page:Main/#ClientData/info_user/ficha",
