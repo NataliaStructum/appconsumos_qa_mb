@@ -259,11 +259,6 @@
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
-					"Search": {
-						"Mode": "Expandable",
-						"Enabled": true,
-						"Placeholder": "Buscar Material..."
-					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
@@ -313,6 +308,7 @@
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",
 		"_Name": "FioriToolbar0",
+		"Visible": true,
 		"Items": [
 			{
 				"_Type": "FioriToolbarItem.Type.Button",
