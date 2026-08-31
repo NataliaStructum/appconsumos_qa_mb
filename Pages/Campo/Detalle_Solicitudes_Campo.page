@@ -227,6 +227,7 @@
 				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
 				"Caption": "Item",
+				"Width": 18,
 				"Icon": "sap-icon://synchronize",
 				"Position": "Right",
 				"IsIconCircular": false,
@@ -314,6 +315,22 @@
 					}
 				},
 				"Image": "sap-icon://accounting-document-verification",
+				"Enabled": true,
+				"ButtonType": "Primary",
+				"Semantic": "Tint",
+				"ImagePosition": "Leading"
+			},
+			{
+				"_Type": "FioriToolbarItem.Type.Button",
+				"_Name": "btn_Rechazar_Equipo",
+				"Visible": "/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnRechazarEquipo.js",
+				"Title": "Rechazar",
+				"Styles": {
+					"Image": "Button",
+					"Button": "Button"
+				},
+				"OnPress": "/appconsumos_qa_mb/Rules/Campo/Equipo/Rechazar_Solicitud_CampoEquipo.js",
+				"Image": "sap-icon://sys-cancel",
 				"Enabled": true,
 				"ButtonType": "Primary",
 				"Semantic": "Tint",
