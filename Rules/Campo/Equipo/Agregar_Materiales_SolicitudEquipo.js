@@ -21,10 +21,7 @@ export default function Agregar_Materiales_SolicitudEquipo(context) {
     }
     
     let data = material[0].BindingObject
-    //let stock = data.stock_disponible
-
-    //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*
+    let stock = data.stock_disponible
      if(stock == 0){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -34,7 +31,7 @@ export default function Agregar_Materiales_SolicitudEquipo(context) {
             }
         });
     }
-    */
+    
    
 
     if (!cant || cant < 0) {
@@ -46,9 +43,6 @@ export default function Agregar_Materiales_SolicitudEquipo(context) {
             }
         });
     }
-
-    //TODO DESCOMENTAR CUANDO HAYA INVENTARIO
-    /*
     if(cant > stock){
         return context.executeAction({
             "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
@@ -58,9 +52,6 @@ export default function Agregar_Materiales_SolicitudEquipo(context) {
             }
         });
     }
-    
-    */
-    
     
     const duplicado = clientData.lista_materiales.filter(m => m.material === data.material && m.almacen.almacen === data.almacen.almacen).length > 0
     

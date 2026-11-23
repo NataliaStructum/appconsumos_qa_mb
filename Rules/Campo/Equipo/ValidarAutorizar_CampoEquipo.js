@@ -22,7 +22,7 @@ export default function ValidarAutorizar_CampoEquipo(context) {
             "Title": "Autorizar Solicitud",
             "OKCaption": "Aceptar",
             "OnOK": "/appconsumos_qa_mb/Rules/Campo/Equipo/LiquidarSolicitud_CampoEquipo_SAP.js",
-            "CancelCaption": "Cancelar"
+            "CancelCaption": "Cancelar" 
         }
     });
 
