@@ -329,7 +329,14 @@
 					"Image": "Button",
 					"Button": "Button"
 				},
-				"OnPress": "/appconsumos_qa_mb/Rules/Campo/Equipo/Rechazar_Solicitud_CampoEquipo.js",
+				"OnPress": {
+					"Name": "/appconsumos_qa_mb/Actions/GenericNavigation.action",
+					"Properties": {
+						"PageToOpen": "/appconsumos_qa_mb/Pages/Campo/Rechazar_Solicitud_Campo.page",
+						"ModalPage": true,
+						"ModalPageFullscreen": true
+					}
+				},
 				"Image": "sap-icon://sys-cancel",
 				"Enabled": true,
 				"ButtonType": "Primary",

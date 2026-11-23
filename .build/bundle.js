@@ -10045,38 +10045,6 @@ function NavTo_List_CampoEquipo(context) {
 
 /***/ },
 
-/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/Rechazar_Solicitud_CampoEquipo.js"
-/*!**************************************************************************************************!*\
-  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/Rechazar_Solicitud_CampoEquipo.js ***!
-  \**************************************************************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Rechazar_Solicitud_CampoEquipo)
-/* harmony export */ });
-/**
- * Describe this function...
- * @param {IClientAPI} context
- */
-function Rechazar_Solicitud_CampoEquipo(context) {
-  let clientData = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
-  clientData.id_de_solicitud = context.binding.id;
-  return context.executeAction({
-    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
-    "Properties": {
-      "Title": "Confirmación",
-      "Message": "¿Estás seguro de que deseas rechazar la solicitud?",
-      "OKCaption": "Aceptar",
-      "OnOK": "/appconsumos_qa_mb/Actions/oData/Equipo/Update_SolicitudesApp_Rechazar_CampoEquipo.action",
-      "CancelCaption": "Cancelar"
-    }
-  });
-}
-
-/***/ },
-
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/Target_Lista_CampoEquipo.js"
 /*!********************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/Target_Lista_CampoEquipo.js ***!
@@ -10381,8 +10349,10 @@ function set_VisibleBtnRechazarEquipo(context) {
   var estado = object.estado;
   let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
   let info = clientData.info_user;
-  let valor = object.orden;
-  return estado === 'Aprobado' && info.rol === 'Autorizador' && !valor;
+  //let valor = object.orden;
+
+  //return estado === 'Aprobado' && info.rol === 'Autorizador' && (!valor);
+  return estado === 'Aprobado' && info.rol === 'Autorizador';
 }
 
 /***/ },
@@ -12017,6 +11987,56 @@ function ValidarLiquidar_Campo(context) {
 
 /***/ },
 
+/***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarRechazar_Campo.js"
+/*!**********************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarRechazar_Campo.js ***!
+  \**********************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ValidarRechazar_Campo)
+/* harmony export */ });
+/**
+ * Valida el motivo de rechazo, guarda los datos y confirma el rechazo.
+ * @param {IClientAPI} context
+ */
+function ValidarRechazar_Campo(context) {
+  const observaciones = context.evaluateTargetPath('#Page:Rechazar_Solicitud_Campo/#Control:observaciones/#Value');
+
+  // 1. Validación
+  if (!observaciones || observaciones.trim() === '') {
+    return context.executeAction({
+      "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+      "Properties": {
+        "Title": "Motivo de Rechazo Requerido",
+        "Message": "Falta escribir el motivo de rechazo, vuelve a intentarlo."
+      }
+    });
+  }
+
+  // 2. Guardar datos en ClientData (mantén las mismas páginas que usa tu action de Update)
+  const clientDataDetalle = context.evaluateTargetPathForAPI('#Page:Detalle_Solicitudes_Campo').getClientData();
+  clientDataDetalle.id_de_solicitud = context.binding.id;
+  const clientDataRechazo = context.evaluateTargetPathForAPI('#Page:Rechazar_Solicitud_Campo').getClientData();
+  clientDataRechazo.observaciones = observaciones.trim();
+
+  // 3. Una sola confirmación que ejecuta el Update
+  return context.executeAction({
+    "Name": "/appconsumos_qa_mb/Actions/GenericMessageBox.action",
+    "Properties": {
+      "Title": "Rechazar Solicitud",
+      "Message": "¿Estás seguro que deseas rechazar el consumo? Al rechazarlo, deberás generar nuevamente la solicitud completa.",
+      "OKCaption": "Aceptar",
+      "CancelCaption": "Cancelar",
+      "OnOK": "/appconsumos_qa_mb/Actions/oData/Equipo/Update_SolicitudesApp_Rechazar_CampoEquipo.action"
+    }
+  });
+}
+
+/***/ },
+
 /***/ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js"
 /*!************************************************************************************************!*\
   !*** ./build.definitions/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js ***!
@@ -12236,7 +12256,8 @@ function get_List_Campo_Equipo(context) {
     filtro += ")";
   }
   if (sociedad === 'AI08') {
-    filtro += ") and contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+    //filtro += ") and contains(orden_desc, 'CAMPO, INSPECCION Y MTTO')";
+    filtro += ")";
   }
   let query = filtro + "&$orderby=fecha_creacion desc";
   return context.read('/appconsumos_qa_mb/Services/app_consumos_qa.service', 'Ordenes', [], query).then(async results => {
@@ -18357,9 +18378,21 @@ function formatOrdenId(context) {
     let limpio = valor.replace(/^0+/, '');
     return limpio;
   }
+
+  /* 
+  if (titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Solicitudes_Campo") {
+      let valor = context.binding.orden || context.binding.orden_orden;
+      if (!valor) return 'CONSUMO_EQ';
+      let limpio = valor.replace(/^0+/, '');
+      return `Orden: ${limpio}`;
+  }
+      */
+
   if (titulo == "Lista_Solicitudes_Campo" || titulo == "Detalle_Solicitudes_Campo") {
     let valor = context.binding.orden || context.binding.orden_orden;
-    if (!valor) return 'CONSUMO_EQ';
+    if (!valor || valor === 'CONSUMO_EQ') {
+      return context.binding.equipo_solicitud ? `Consumo por equipo: ${context.binding.equipo_solicitud}` : 'Consumo por equipo';
+    }
     let limpio = valor.replace(/^0+/, '');
     return `Orden: ${limpio}`;
   }
@@ -18675,8 +18708,8 @@ function set_VisibleBtnRevisar(context) {
 (module, __unused_webpack_exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
@@ -18746,8 +18779,8 @@ module.exports = ___CSS_LOADER_EXPORT___;
 (module, __unused_webpack_exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
@@ -18825,43 +18858,43 @@ module.exports = ___CSS_LOADER_EXPORT___;
 (module, __unused_webpack_exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.ns-light ActionBar {
-	color: white;
-	background-color: #72BE44;
+  color: white ;
+  background-color: #72BE44;
 }
 .ns-light .HeaderAdmin {
-	color: white;
-	background-color: #72BE44;
+  color: white;
+  background-color: #72BE44;
 }
 .ns-light .HeaderAdminTitle {
-	color: white;
+  color: white;
 }
 .ns-light .Button {
-	color: white;
-	background-color: #174087;
+  color: white;
+  background-color: #174087;
 }
 .ns-light .ButtonText {
-	color: #174087;
+  color: #174087;
 }
 .ns-light .ButtonText2 {
-	color: #72BE44;
+  color: #72BE44;
 }
 .ns-light .Button2 {
-	color: white;
-	background-color: #72BE44;
+  color: white;
+  background-color: #72BE44;
 }
 .ns-light .Button_Eliminar {
-	color: white;
-	background-color: #b22222;
+  color: white;
+  background-color: #b22222;
 }
 .ns-light .fondoForm {
-	background-color: gray;
+  background-color: gray;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;AACb;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,cAAc;AACf;AACA;CACC,cAAc;AACf;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,YAAY;CACZ,yBAAyB;AAC1B;AACA;CACC,sBAAsB;AACvB","sourcesContent":[".ns-light ActionBar {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdmin {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .HeaderAdminTitle {\n\tcolor: white;\n}\n.ns-light .Button {\n\tcolor: white;\n\tbackground-color: #174087;\n}\n.ns-light .ButtonText {\n\tcolor: #174087;\n}\n.ns-light .ButtonText2 {\n\tcolor: #72BE44;\n}\n.ns-light .Button2 {\n\tcolor: white;\n\tbackground-color: #72BE44;\n}\n.ns-light .Button_Eliminar {\n\tcolor: white;\n\tbackground-color: #b22222;\n}\n.ns-light .fondoForm {\n\tbackground-color: gray;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/appconsumos_qa_mb/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;AACd;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,cAAc;AAChB;AACA;EACE,cAAc;AAChB;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,YAAY;EACZ,yBAAyB;AAC3B;AACA;EACE,sBAAsB;AACxB","sourcesContent":[".ns-light ActionBar {\n  color: white ;\n  background-color: #72BE44;\n}\n.ns-light .HeaderAdmin {\n  color: white;\n  background-color: #72BE44;\n}\n.ns-light .HeaderAdminTitle {\n  color: white;\n}\n.ns-light .Button {\n  color: white;\n  background-color: #174087;\n}\n.ns-light .ButtonText {\n  color: #174087;\n}\n.ns-light .ButtonText2 {\n  color: #72BE44;\n}\n.ns-light .Button2 {\n  color: white;\n  background-color: #72BE44;\n}\n.ns-light .Button_Eliminar {\n  color: white;\n  background-color: #b22222;\n}\n.ns-light .fondoForm {\n  background-color: gray;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -18875,8 +18908,8 @@ module.exports = ___CSS_LOADER_EXPORT___;
 (module, __unused_webpack_exports, __webpack_require__) {
 
 // Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js");
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js */ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `ActionBar {
@@ -18918,10 +18951,10 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ },
 
-/***/ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js"
-/*!*****************************************************************************************************************************!*\
-  !*** ../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************************************************************************************/
+/***/ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js"
+/*!************************************************************************************************************************************!*\
+  !*** ../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/api.js ***!
+  \************************************************************************************************************************************/
 (module) {
 
 "use strict";
@@ -19013,10 +19046,10 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ },
 
-/***/ "../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js"
-/*!************************************************************************************************************************************!*\
-  !*** ../../../home/user/.vscode/data/User/globalStorage/sapse.mdk-editor/tools/node_modules/css-loader/dist/runtime/sourceMaps.js ***!
-  \************************************************************************************************************************************/
+/***/ "../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js"
+/*!*******************************************************************************************************************************************!*\
+  !*** ../../../home/user/.vscode/data/User/globalStorage/sapse.vsc-extension-mdk/tools/node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \*******************************************************************************************************************************************/
 (module) {
 
 "use strict";
@@ -19465,7 +19498,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************************/
 (module) {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Footnote":"Horometro: {horometro}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Cant. Apro: {cantidad_aprobada} de {cantidad_tomada} {material/und/und_vz}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Pos: {posicion}","SubstatusText":"Op: {op_number} ","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Blue","Text":"Doc. Material: {doc_material}"},{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","OnLoaded":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","OnReturning":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","OnResume":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Width":18,"Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":false,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar_Equipo","Visible":"/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnAutorizarEquipo.js","Title":"Autorizar Consumo","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Equipo/Autorizar_Solicitud_CampoEquipo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Rechazar_Equipo","Visible":"/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnRechazarEquipo.js","Title":"Rechazar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/Equipo/Rechazar_Solicitud_CampoEquipo.js","Image":"sap-icon://sys-cancel","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"Reserva: {reserva}","Footnote":"Horometro: {horometro}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","StatusText":"{alm_almacen} - {alm_desc}","SubstatusText":"Sociedad: {alm_sociedad}","DetailImageIsCircular":false,"Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"Estado: {estado}"}],"BodyText":"{or_desc}","HeadlineText":"/appconsumos_qa_mb/Rules/formatOrdenId.js","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"por {op_ficha} - {op_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"Solicitado el $(DT,{fecha_creacion},'es-CO','',{format:'medium'})","Visible":true},{"Value":"{correo_creacion}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Correo de Creación Solicitud","Visible":true},{"Value":"por {ap_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Revisado el $(DT,{fecha_revision},'es-CO','',{format:'medium'})","Visible":true},{"Value":"por {au_nombre}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"Autorizado el $(DT,{fecha_autorizado},'es-CO','',{format:'medium'})","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":1}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"{observaciones_tec}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote0","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Observaciones Técnico","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false},{"Value":"{comentarios_aux}","_Type":"Control.Type.FormCell.Note","_Name":"FormCellNote1","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Observaciones Auxiliar","PlaceHolder":"No hay comentarios registrados","Enabled":true,"IsEditable":false}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Materiales de la Solicitud"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"ComponentesSolicitud","QueryOptions":"/appconsumos_qa_mb/Rules/Campo/Query_Detalle_Componentes_Campo.js","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No hay elementos para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatMaterialId.js","Subhead":"Cant. Apro: {cantidad_aprobada} de {cantidad_tomada} {material/und/und_vz}","Footnote":"Tomado de: {almacen_almacen} - {almacen/almacen_desc}","Description":"{material/material_desc}","DisplayDescriptionInMobile":true,"StatusText":"Pos: {posicion}","SubstatusText":"Op: {op_number} ","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"Blue","Text":"Doc. Material: {doc_material}"},{"Color":"Grey","Text":"/appconsumos_qa_mb/Rules/get_ConfirmacionTec.js"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://product"}],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Detalle_Solicitudes_Campo","OnLoaded":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","OnReturning":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","OnResume":"/appconsumos_qa_mb/Rules/Campo/Redraw_Detalle_Solicitud_Campo.js","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Width":18,"Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/SyncRevisarCampo.js"}],"_Name":"ActionBar11","_Type":"Control.Type.ActionBar","Caption":"Detalle Solicitud Campo"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnAutorizar.js","Title":"Autorizar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Autorizar_Solicitud_Campo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Revisar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnRevisar.js","Title":"Revisar","Styles":{"Image":"Button","Button":"Button"},"OnPress":"/appconsumos_qa_mb/Rules/Campo/NavTo_RevisionSolicitudCampo.js","Image":"sap-icon://write-new-document","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Liquidar","Visible":"/appconsumos_qa_mb/Rules/set_VisibleBtnNetear.js","Title":"Liquidar","Styles":{"Image":"Button","Button":"Button"},"Image":"sap-icon://paid-leave","Enabled":false,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Autorizar_Equipo","Visible":"/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnAutorizarEquipo.js","Title":"Autorizar Consumo","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Equipo/Autorizar_Solicitud_CampoEquipo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://accounting-document-verification","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"},{"_Type":"FioriToolbarItem.Type.Button","_Name":"btn_Rechazar_Equipo","Visible":"/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnRechazarEquipo.js","Title":"Rechazar","Styles":{"Image":"Button","Button":"Button"},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Rechazar_Solicitud_Campo.page","ModalPage":true,"ModalPageFullscreen":true}},"Image":"sap-icon://sys-cancel","Enabled":true,"ButtonType":"Primary","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ },
 
@@ -19536,6 +19569,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
 (module) {
 
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Solicitudes"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","Target":"/appconsumos_qa_mb/Rules/Campo/Target_Lista_Solicitudes_Campo.js","_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No tienes solicitudes para mostrar","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"/appconsumos_qa_mb/Rules/formatOrdenId.js","Subhead":"$(DT,{fecha_creacion})","Footnote":"{or_desc}","Description":"{equipo_solicitud} - {eq_desc_solicitud}","DisplayDescriptionInMobile":true,"StatusText":"res: {reserva}","SubstatusText":"{alm_almacen} - {alm_sociedad}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[{"Color":"/appconsumos_qa_mb/Rules/Campo/Color_Estado_Sol_Campo.js","Text":"{estado}"}],"AvatarStack":{"Avatars":[{"Image":"sap-icon://form"}],"ImageIsCircular":false,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/appconsumos_qa_mb/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/appconsumos_qa_mb/Pages/Campo/Detalle_Solicitudes_Campo.page"}},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"Search":{"Mode":"Persistent","Enabled":true,"Placeholder":"Buscar solicitud..."},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"Lista_Solicitudes_Campo","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Icon":"sap-icon://synchronize","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/appconsumos_qa_mb/Actions/app_consumos_qa/Service/OnlySyncStartedMessage.action"}],"_Name":"ActionBar6","_Type":"Control.Type.ActionBar","Caption":"Solicitudes Campo"}}
+
+/***/ },
+
+/***/ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Rechazar_Solicitud_Campo.page"
+/*!***************************************************************************************!*\
+  !*** ./build.definitions/appconsumos_qa_mb/Pages/Campo/Rechazar_Solicitud_Campo.page ***!
+  \***************************************************************************************/
+(module) {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"RequiredIndicator":false,"_Type":"Control.Type.FormCell.Label","_Name":"FormCellLabel0","IsVisible":true,"Separator":true,"Text":"Motivo Rechazo *","TextWrap":true},{"_Type":"Control.Type.FormCell.Note","_Name":"observaciones","RequiredIndicator":false,"IsVisible":true,"Separator":true,"PlaceHolder":"Escriba el motivo de rechazo","Enabled":true,"IsEditable":true},{"RequiredIndicator":false,"_Type":"Control.Type.FormCell.Button","_Name":"FormCellButton0","IsVisible":true,"Separator":true,"Styles":{"Image":"Button","Button":"Button"},"Title":"Rechazar Solicitud","Alignment":"Center","ButtonType":"Primary","Semantic":"Tint","Image":"sap-icon://decline","ImagePosition":"Leading","Enabled":true,"OnPress":"/appconsumos_qa_mb/Rules/Campo/ValidarRechazar_Campo.js"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Rechazar_Solicitud_Campo","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar","Caption":"Rechazar Solicitud"}}
 
 /***/ },
 
@@ -20635,7 +20678,7 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
   \********************************************************************************************************************/
 (module) {
 
-module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Rechazar_CampoEquipo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error actualizando la solicitud - {#ActionResults:Update_SolicitudesApp_Rechazar_CampoEquipo/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Detalle_Solicitudes_Campo/#ClientData/id_de_solicitud}}"},"Properties":{"aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha","estado":"Rechazado","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js"}}
+module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Update_SolicitudesApp_Rechazar_CampoEquipo"},"OnFailure":{"Name":"/appconsumos_qa_mb/Actions/GenericMessageBox.action","Properties":{"Message":"Error actualizando la solicitud - {#ActionResults:Update_SolicitudesApp_Rechazar_CampoEquipo/error}","Title":"Error","OKCaption":"Aceptar"}},"OnSuccess":"/appconsumos_qa_mb/Rules/Campo/Rechazar_Solicitud_Revision_Componentes_Campo.js","Target":{"Service":"/appconsumos_qa_mb/Services/app_consumos_qa.service","EntitySet":"Solicitudes","QueryOptions":"$filter=id eq {{#Page:Detalle_Solicitudes_Campo/#ClientData/id_de_solicitud}}"},"Properties":{"aprobador_ficha":"#Page:Main/#ClientData/info_user/ficha","estado":"Rechazado","fecha_revision":"/appconsumos_qa_mb/Rules/get_Now_Datetime.js","comentarios_aux":"#Page:Rechazar_Solicitud_Campo/#ClientData/observaciones"}}
 
 /***/ },
 
@@ -21264,6 +21307,7 @@ let appconsumos_qa_mb_pages_campo_filtro_campo_page = __webpack_require__(/*! ./
 let appconsumos_qa_mb_pages_campo_lista_historico_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Lista_Historico_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Historico_Campo.page")
 let appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Ordenes_Campo.page")
 let appconsumos_qa_mb_pages_campo_lista_solicitudes_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Lista_Solicitudes_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Lista_Solicitudes_Campo.page")
+let appconsumos_qa_mb_pages_campo_rechazar_solicitud_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Rechazar_Solicitud_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Rechazar_Solicitud_Campo.page")
 let appconsumos_qa_mb_pages_campo_revision_solicitud_campo_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/Campo/Revision_Solicitud_Campo.page */ "./build.definitions/appconsumos_qa_mb/Pages/Campo/Revision_Solicitud_Campo.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/appconsumos_qa_mb/Pages/ErrorArchive/ErrorArchive_List.page")
@@ -21458,7 +21502,6 @@ let appconsumos_qa_mb_rules_campo_equipo_isvisible_btn_crearsolicitudesequipo_js
 let appconsumos_qa_mb_rules_campo_equipo_liquidarsolicitud_campoequipo_sap_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Equipo/LiquidarSolicitud_CampoEquipo_SAP.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/LiquidarSolicitud_CampoEquipo_SAP.js")
 let appconsumos_qa_mb_rules_campo_equipo_navto_agregar_solicitud_campoequipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Equipo/NavTo_Agregar_Solicitud_CampoEquipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/NavTo_Agregar_Solicitud_CampoEquipo.js")
 let appconsumos_qa_mb_rules_campo_equipo_navto_list_campoequipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Equipo/NavTo_List_CampoEquipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/NavTo_List_CampoEquipo.js")
-let appconsumos_qa_mb_rules_campo_equipo_rechazar_solicitud_campoequipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Equipo/Rechazar_Solicitud_CampoEquipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/Rechazar_Solicitud_CampoEquipo.js")
 let appconsumos_qa_mb_rules_campo_equipo_set_visiblebtnautorizarequipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnAutorizarEquipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnAutorizarEquipo.js")
 let appconsumos_qa_mb_rules_campo_equipo_set_visiblebtnrechazarequipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnRechazarEquipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/set_VisibleBtnRechazarEquipo.js")
 let appconsumos_qa_mb_rules_campo_equipo_target_lista_campoequipo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Equipo/Target_Lista_CampoEquipo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Equipo/Target_Lista_CampoEquipo.js")
@@ -21502,6 +21545,7 @@ let appconsumos_qa_mb_rules_campo_target_lista_solicitudes_campo_js = __webpack_
 let appconsumos_qa_mb_rules_campo_target_materiales_revision_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Target_Materiales_Revision_Campo.js")
 let appconsumos_qa_mb_rules_campo_validarautorizar_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ValidarAutorizar_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarAutorizar_Campo.js")
 let appconsumos_qa_mb_rules_campo_validarliquidar_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarLiquidar_Campo.js")
+let appconsumos_qa_mb_rules_campo_validarrechazar_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/ValidarRechazar_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/ValidarRechazar_Campo.js")
 let appconsumos_qa_mb_rules_campo_validate_req_create_solicitud_campo_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js */ "./build.definitions/appconsumos_qa_mb/Rules/Campo/Validate_Req_Create_Solicitud_Campo.js")
 let appconsumos_qa_mb_rules_color_aprobado_solicitud_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js */ "./build.definitions/appconsumos_qa_mb/Rules/Color_Aprobado_Solicitud.js")
 let appconsumos_qa_mb_rules_filter_estado_js = __webpack_require__(/*! ./appconsumos_qa_mb/Rules/filter_Estado.js */ "./build.definitions/appconsumos_qa_mb/Rules/filter_Estado.js")
@@ -21813,6 +21857,7 @@ module.exports = {
 	appconsumos_qa_mb_pages_campo_lista_historico_campo_page : appconsumos_qa_mb_pages_campo_lista_historico_campo_page,
 	appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page : appconsumos_qa_mb_pages_campo_lista_ordenes_campo_page,
 	appconsumos_qa_mb_pages_campo_lista_solicitudes_campo_page : appconsumos_qa_mb_pages_campo_lista_solicitudes_campo_page,
+	appconsumos_qa_mb_pages_campo_rechazar_solicitud_campo_page : appconsumos_qa_mb_pages_campo_rechazar_solicitud_campo_page,
 	appconsumos_qa_mb_pages_campo_revision_solicitud_campo_page : appconsumos_qa_mb_pages_campo_revision_solicitud_campo_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_detail_page,
 	appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page : appconsumos_qa_mb_pages_errorarchive_errorarchive_list_page,
@@ -22007,7 +22052,6 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_equipo_liquidarsolicitud_campoequipo_sap_js : appconsumos_qa_mb_rules_campo_equipo_liquidarsolicitud_campoequipo_sap_js,
 	appconsumos_qa_mb_rules_campo_equipo_navto_agregar_solicitud_campoequipo_js : appconsumos_qa_mb_rules_campo_equipo_navto_agregar_solicitud_campoequipo_js,
 	appconsumos_qa_mb_rules_campo_equipo_navto_list_campoequipo_js : appconsumos_qa_mb_rules_campo_equipo_navto_list_campoequipo_js,
-	appconsumos_qa_mb_rules_campo_equipo_rechazar_solicitud_campoequipo_js : appconsumos_qa_mb_rules_campo_equipo_rechazar_solicitud_campoequipo_js,
 	appconsumos_qa_mb_rules_campo_equipo_set_visiblebtnautorizarequipo_js : appconsumos_qa_mb_rules_campo_equipo_set_visiblebtnautorizarequipo_js,
 	appconsumos_qa_mb_rules_campo_equipo_set_visiblebtnrechazarequipo_js : appconsumos_qa_mb_rules_campo_equipo_set_visiblebtnrechazarequipo_js,
 	appconsumos_qa_mb_rules_campo_equipo_target_lista_campoequipo_js : appconsumos_qa_mb_rules_campo_equipo_target_lista_campoequipo_js,
@@ -22051,6 +22095,7 @@ module.exports = {
 	appconsumos_qa_mb_rules_campo_target_materiales_revision_campo_js : appconsumos_qa_mb_rules_campo_target_materiales_revision_campo_js,
 	appconsumos_qa_mb_rules_campo_validarautorizar_campo_js : appconsumos_qa_mb_rules_campo_validarautorizar_campo_js,
 	appconsumos_qa_mb_rules_campo_validarliquidar_campo_js : appconsumos_qa_mb_rules_campo_validarliquidar_campo_js,
+	appconsumos_qa_mb_rules_campo_validarrechazar_campo_js : appconsumos_qa_mb_rules_campo_validarrechazar_campo_js,
 	appconsumos_qa_mb_rules_campo_validate_req_create_solicitud_campo_js : appconsumos_qa_mb_rules_campo_validate_req_create_solicitud_campo_js,
 	appconsumos_qa_mb_rules_color_aprobado_solicitud_js : appconsumos_qa_mb_rules_color_aprobado_solicitud_js,
 	appconsumos_qa_mb_rules_filter_estado_js : appconsumos_qa_mb_rules_filter_estado_js,
@@ -22343,47 +22388,24 @@ module.exports = /*#__PURE__*/JSON.parse('{"compilerOptions":{"module":"esnext",
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter/value functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			if(Array.isArray(definition)) {
-/******/ 				var i = 0;
-/******/ 				while(i < definition.length) {
-/******/ 					var key = definition[i++];
-/******/ 					var binding = definition[i++];
-/******/ 					if(!__webpack_require__.o(exports, key)) {
-/******/ 						if(binding === 0) {
-/******/ 							Object.defineProperty(exports, key, { enumerable: true, value: definition[i++] });
-/******/ 						} else {
-/******/ 							Object.defineProperty(exports, key, { enumerable: true, get: binding });
-/******/ 						}
-/******/ 					} else if(binding === 0) { i++; }
-/******/ 				}
-/******/ 			} else {
-/******/ 				for(var key in definition) {
-/******/ 					if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 						Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 					}
-/******/ 				}
+/******/ 	// define getter/value functions for harmony exports
+/******/ 	__webpack_require__.d = (exports, definition) => {
+/******/ 		for(var key in definition) {
+/******/ 			if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
-/******/ 		};
-/******/ 	})();
+/******/ 		}
+/******/ 	};
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop));
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = (exports) => {
+/******/ 		Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
 /******/ 	
 /******/ 	/* webpack/runtime/sharing */
 /******/ 	(() => {

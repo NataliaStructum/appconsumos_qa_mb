@@ -7,7 +7,9 @@ export default function set_VisibleBtnAprobarEquipo(context) {
     var estado = object.estado
     let clientData = context.evaluateTargetPathForAPI('#Page:Main').getClientData();
     let info = clientData.info_user;
-    let valor = object.orden;
+    let reserva = object.reserva;
 
-    return estado === 'Aprobado' && info.rol === 'Autorizador' && (!valor);
+    // Consumo por equipo: nunca tiene reserva
+    return estado === 'Aprobado' && info.rol === 'Autorizador' && !reserva;
+
 }
